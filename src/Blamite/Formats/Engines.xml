@@ -1042,5 +1042,26 @@
 		<shortName>HaloOnlineTU12</shortName>
 	</engine>
 
+	<engine name="Halo Online TU13" version="13" build="10.1.430475 Live">
+		<shortName>HaloOnlineTU13</shortName>
+		<plugins>HaloOnlineTU13</plugins>
+		<fallbackPlugins>HaloOnline</fallbackPlugins>
+		<engineInfo>
+			<generation>fourth</generation>
+			<endian>big</endian>
+			<headerSize>0x3390</headerSize>
+			<segmentAlignment>0x1</segmentAlignment>
+		</engineInfo>
+		<databases>
+			<stringIds type="stringIds" path="Formats/HaloOnline/HaloOnlineTU13/HO_StringIDs.xml" />
+			<scripting type="scripting" path="Formats/HaloOnline/HaloOnlineTU13/HO_Scripting.xml" />
+			<localeSymbols type="localeSymbols" path="Formats/HaloOnline/HaloOnlineTU13/HO_LocaleSymbols.xml" />
+			<layouts type="layouts" path="Formats/HaloOnline/Layouts" />
+		</databases>
+	</engine>
 	
+	<engine name="Halo Online TU14" version="14" build="10.1.430653 Live" inherits="Halo Online TU13">
+		<shortName>HaloOnlineTU14</shortName>
+	</engine>
+
 </engines>
