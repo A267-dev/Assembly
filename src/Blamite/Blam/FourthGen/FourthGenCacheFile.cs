@@ -93,7 +93,7 @@ namespace Blamite.Blam.FourthGen
 
 		public EngineType Engine
 		{
-			get { return EngineType.ThirdGeneration; }
+			get { return EngineType.FourthGeneration; }
 		}
 
 		public string InternalName
@@ -270,5 +270,232 @@ namespace Blamite.Blam.FourthGen
 			reader.SeekTo(0);
 			StructureValueCollection values = StructureReader.ReadStructure(reader, _buildInfo.Layouts.GetLayout("header"));
 			_header = FourthGenHeader(values, _buildInfo, _segmenter, _expander);
+        }
+
+        private void LoadTags(IReader reader)
+		{
+			if (_header.IndexHeaderLocation == null)
+			{
+                _tags = FourthGenTagTable();
+                return;
+            }
+
+            _tags = FourthGenTagTable(reader, _header.IndexHeaderLocation, _header.MetaArea, Allocator, _buildInfo, _expander);
+            _resourceMetaLoader = FourthGenResourceMetaLoader(_buildInfo, _header.MetaArea);
+        }
+
+        private void LoadFileNames(IReader reader)
+		{
+			if (_header.FileNameCount > 0)
+			{
+				var stringTable = IndexedStringTable(reader, _header.FileNameCount, _header.FileNameIndexTable,
+					_header.FileNameData, _buildInfo.TagNameKey);
+				_fileNames = IndexedFileNameSource(stringTable);
+			}
+		}
+
+        private StringIDNamespaceResolver LoadStringIDNamespaces(IReader reader)
+		{
+			// making some assumptions here based on all current stringid xmls
+			if (_header.StringIDNamespaceCount > 1)
+			{
+				int[] namespaces = new int[_header.StringIDNamespaceCount];
+				reader.SeekTo(_header.StringIDNamespaceTable.Offset);
+				for (int i = 0; i < namespaces.Length; i++)
+					namespaces[i] = reader.ReadInt32();
+
+				// shift our way to the namespace bits, assuming index is always at least 16 bits
+				int firstNamespaceBit = -1;
+				for (int i = 16; i < 32; i++)
+					if (namespaces[1] >> i == 1)
+					{
+						firstNamespaceBit = i;
+						break;
+					}
+
+				if (firstNamespaceBit == -1)
+					return null;
+
+				// assuming here that the namespace is always 8 bits
+				var resolver = StringIDNamespaceResolver(StringIDLayout(firstNamespaceBit, 8, 32 - 8 - firstNamespaceBit));
+				int indexMask = (1 << firstNamespaceBit) - 1;
+
+				// register all but the first namespace as that needs the final count
+				int counter = namespaces[0] & indexMask;
+				for (int i = 1; i < namespaces.Length; i++)
+				{
+					resolver.RegisterSet(i, 0, counter);
+					counter += namespaces[i] & indexMask;
+				}
+				resolver.RegisterSet(0, namespaces[0] & indexMask, counter);
+				return resolver;
+			}
+			else
+				return null;
+		}
+
+        private void LoadStringIDs(IReader reader, StringIDNamespaceResolver resolver = null)
+		{
+			if (_header.StringIDCount > 0)
+			{
+				var stringTable = IndexedStringTable(reader, _header.StringIDCount, _header.StringIDIndexTable,
+					_header.StringIDData, _buildInfo.StringIDKey);
+				_stringIds = IndexedStringIDSource(stringTable, resolver != null ? resolver : _buildInfo.StringIDs);
+			}
+		}
+
+        private void LoadLanguageGlobals(IReader reader)
+		{
+			// Find the language data
+			ITag languageTag;
+			StructureLayout tagLayout;
+			if (!FindLanguageTable(out languageTag, out tagLayout))
+			{
+				// No language data
+				_languageLoader = FourthGenLanguagePackLoader();
+				return;
+			}
+
+			// Read it
+			reader.SeekTo(languageTag.MetaLocation.AsOffset());
+			StructureValueCollection values = StructureReader.ReadStructure(reader, tagLayout);
+			_languageInfo = FourthGenLanguageGlobals(values, _segmenter, _header.LocalePointerConverter, _buildInfo);
+			_languageLoader = FourthGenLanguagePackLoader(this, _languageInfo, _buildInfo, reader);
+		}
+
+        private bool FindLanguageTable(out ITag tag, out StructureLayout layout)
+		{
+			tag = null;
+			layout = null;
+
+			if (_tags == null)
+				return false;
+
+			// Check for a PATG tag, and if one isn't found, then use MATG
+			if (_buildInfo.Layouts.HasLayout("patg"))
+			{
+				tag = _tags.FindTagByGroup("patg");
+				layout = _buildInfo.Layouts.GetLayout("patg");
+			}
+			if (tag == null)
+			{
+				tag = _tags.FindTagByGroup("matg");
+				layout = _buildInfo.Layouts.GetLayout("matg");
+			}
+			return (tag != null && layout != null);
+		}
+
+        private void LoadResourceManager(IReader reader)
+		{
+			ITag zoneTag = _tags.FindTagByGroup("zone");
+			ITag playTag = _tags.FindTagByGroup("play");
+			bool haveZoneLayout = _buildInfo.Layouts.HasLayout("resource gestalt");
+			bool havePlayLayout = _buildInfo.Layouts.HasLayout("resource layout table");
+			bool haveAltPlayLayout = _buildInfo.Layouts.HasLayout("resource layout table alt");
+			bool canLoadZone = (zoneTag != null && zoneTag.MetaLocation != null && haveZoneLayout);
+			bool canLoadPlay = (playTag != null && playTag.MetaLocation != null && havePlayLayout);
+			if (canLoadZone || canLoadPlay)
+			{
+				FourthGenResourceGestalt gestalt = null;
+				FourthGenResourceLayoutTable layoutTable = null;
+				if (canLoadZone)
+					gestalt = FourthGenResourceGestalt(reader, zoneTag, MetaArea, Allocator, StringIDs, _buildInfo, _expander);
+
+				if (canLoadPlay)
+					layoutTable = FourthGenResourceLayoutTable(playTag, MetaArea, Allocator, _buildInfo, _expander);
+				else if (canLoadZone && haveAltPlayLayout)
+				{
+					layoutTable = FourthGenResourceLayoutTable(zoneTag, MetaArea, Allocator, _buildInfo, _expander);
+					_zoneOnly = true;
+				}
+					
+
+				_resources = FourthGenResourceManager(gestalt, layoutTable, _tags, MetaArea, Allocator, _buildInfo, _expander);
+			}
+		}
+
+        private void LoadSoundResourceManager(IReader reader)
+		{
+			ITag ughTag = _tags.FindTagByGroup("ugh!");
+			bool haveUghLayout = _buildInfo.Layouts.HasLayout("sound resource gestalt");
+			bool canLoadUgh = (ughTag != null && ughTag.MetaLocation != null && haveUghLayout);
+
+			if (ughTag != null && ughTag.MetaLocation != null && haveUghLayout)
+			{
+				SoundResourceGestalt gestalt = null;
+				if (canLoadUgh)
+					gestalt = SoundResourceGestalt(reader, ughTag, MetaArea, Allocator, _buildInfo, _expander);
+
+				_soundGestalt = SoundResourceManager(gestalt, _tags, MetaArea, Allocator, _buildInfo, _expander);
+			}
+		}
+
+        private void LoadScriptFiles()
+		{
+			if (_tags != null)
+			{
+				if (_buildInfo.Layouts.HasLayout("hsdt"))
+				{
+					ScriptFiles = _tags.FindTagsByGroup("hsdt").Select(t => HsdtScriptFile(t, _fileNames.GetTagName(t.Index), MetaArea, _buildInfo, StringIDs, _expander)).ToArray();
+				}
+				else if (_buildInfo.Layouts.HasLayout("scnr"))
+				{
+					ScriptFiles = _tags.FindTagsByGroup("scnr").Select(t => ScnrScriptFile(t, _fileNames.GetTagName(t.Index), MetaArea, _buildInfo, StringIDs, _expander, Allocator)).ToArray();
+				}
+				else
+                {
+					ScriptFiles = IScriptFile[0];
+				}
+			}
+		}
+
+        private void LoadSimulationDefinitions(IReader reader)
+		{
+			if (_tags != null && _buildInfo.Layouts.HasLayout("scnr") && _buildInfo.Layouts.HasLayout("simulation definition table element"))
+			{
+				ITag scnr = _tags.FindTagByGroup("scnr");
+				if (scnr != null)
+					_simulationDefinitions = FourthGenSimulationDefinitionTable(scnr, _tags, reader, MetaArea, Allocator, _buildInfo, _expander);
+			}
+		}
+
+        private void LoadEffects(IReader reader)
+		{
+			if (_tags != null && _buildInfo.Layouts.HasLayout("scnr") && _buildInfo.Layouts.HasLayout("structured effect interop element"))
+			{
+				ITag scnr = _tags.GetGlobalTag(CharConstant.FromString("scnr"));
+				if (scnr != null)
+					_effects = EffectInterop(scnr, reader, MetaArea, Allocator, _buildInfo, _expander);
+			}
+		}
+
+        private int WriteHeader(IWriter writer)
+		{
+			_header.FileNameCount = _fileNames.Count;
+			_header.StringIDCount = _stringIds.Count;
+         
+			StructureValueCollection values = _header.Serialize(_languageInfo.LocaleArea);
+			StructureLayout headerLayout = _buildInfo.Layouts.GetLayout("header");
+			writer.SeekTo(0);
+			StructureWriter.WriteStructure(values, headerLayout, writer);
+			int checksumOffset = -1;
+			if (headerLayout.HasField("checksum"))
+				checksumOffset = headerLayout.GetFieldOffset("checksum");
+			return checksumOffset;
+		}
+
+        private void WriteLanguageInfo(IWriter writer)
+		{
+			// Find the language data
+			ITag languageTag;
+			StructureLayout tagLayout;
+			if (!FindLanguageTable(out languageTag, out tagLayout))
+				return;
+
+			// Write it
+			StructureValueCollection values = _languageInfo.Serialize();
+			writer.SeekTo(languageTag.MetaLocation.AsOffset());
+			StructureWriter.WriteStructure(values, tagLayout, writer);
+		}
     }
 }
