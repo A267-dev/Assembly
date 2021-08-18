@@ -42,6 +42,22 @@ namespace Blamite.Blam.FourthGen
         public FourthGenCacheFile(IReader reader, EngineDescription buildInfo, string filePath)
         {
             FilePath = filePath;
+            _endianness = reader.Endianness;
+            _buildInfo = buildInfo;
+            _segmenter = FileSegmenter(buildInfo.SegmentAlignment);
+            _expander = FourthGenPointerExpander(buildInfo.ExpandMagic);
+
+            Load(reader);
+        }
+
+        public FourthGenHeader FullHeader
+        {
+            get { return _header; }
+        }
+
+        public void SaveChanges(Istream stream)
+        {
+            _tags.SaveChanges(stream);
         }
     }
 }
