@@ -1064,4 +1064,207 @@
 		<shortName>HaloOnlineTU14</shortName>
 	</engine>
 
+	<engine name="Halo Online TU15" version="15" build="10.1.454665 Live">
+		<shortName>HaloOnlineTU15</shortName>
+		<plugins>HaloOnlineTU15</plugins>
+		<fallbackPlugins>HaloOnline</fallbackPlugins>
+		<engineInfo>
+			<generation>fourth</generation>
+			<endian>big</endian>
+			<headerSize>0x3390</headerSize>
+			<segmentAlignment>0x1</segmentAlignment>
+		</engineInfo>
+		<databases>
+			<stringIds type="stringIds" path="Formats/HaloOnline/HaloOnlineTU15/HO_StringIDs.xml" />
+			<scripting type="scripting" path="Formats/HaloOnline/HaloOnlineTU15/HO_Scripting.xml" />
+			<localeSymbols type="localeSymbols" path="Formats/HaloOnline/HaloOnlineTU15/HO_LocaleSymbols.xml" />
+			<layouts type="layouts" path="Formats/HaloOnline/Layouts" />
+		</databases>
+	</engine>
+
+	<engine name="Halo Online TU16" version="16" build="10.1.449175 Live">
+		<shortName>HaloOnlineTU16</shortName>
+		<plugins>HaloOnlineTU16</plugins>
+		<fallbackPlugins>HaloOnline</fallbackPlugins>
+		<engineInfo>
+			<generation>fourth</generation>
+			<endian>big</endian>
+			<headerSize>0x3390</headerSize>
+			<segmentAlignment>0x1</segmentAlignment>
+		</engineInfo>
+		<databases>
+			<stringIds type="stringIds" path="Formats/HaloOnline/HaloOnlineTU16/HO_StringIDs.xml" />
+			<scripting type="scripting" path="Formats/HaloOnline/HaloOnlineTU16/HO_Scripting.xml" />
+			<localeSymbols type="localeSymbols" path="Formats/HaloOnline/HaloOnlineTU16/HO_LocaleSymbols.xml" />
+			<layouts type="layouts" path="Formats/HaloOnline/Layouts" />
+		</databases>
+	</engine>
+
+	<engine name="Halo Online TU17" version="17" build="10.1.479394 Live" inherits="Halo Online TU16">
+		<shortName>HaloOnlineTU17</shortName>
+	</engine>
+
+	<engine name="Halo Online TU18" version="18" build="11.1.498295 Live">
+		<shortName>HaloOnlineTU18</shortName>
+		<plugins>HaloOnlineTU18</plugins>
+		<fallbackPlugins>HaloOnline</fallbackPlugins>
+		<engineInfo>
+			<generation>fourth</generation>
+			<endian>big</endian>
+			<headerSize>0x3390</headerSize>
+			<segmentAlignment>0x1</segmentAlignment>
+		</engineInfo>
+		<databases>
+			<stringIds type="stringIds" path="Formats/HaloOnline/HaloOnlineTU18/HO_StringIDs.xml" />
+			<scripting type="scripting" path="Formats/HaloOnline/HaloOnlineTU18/HO_Scripting.xml" />
+			<localeSymbols type="localeSymbols" path="Formats/HaloOnline/HaloOnlineTU18/HO_LocaleSymbols.xml" />
+			<layouts type="layouts" path="Formats/HaloOnline/Layouts" />
+		</databases>
+	</engine>
+
+	<engine name="Halo Online TU19" version="19" build="11.1.530605 Live">
+		<shortName>HaloOnlineTU19</shortName>
+		<plugins>HaloOnlineTU19</plugins>
+		<fallbackPlugins>HaloOnline</fallbackPlugins>
+		<engineInfo>
+			<generation>fourth</generation>
+			<endian>big</endian>
+			<headerSize>0x3390</headerSize>
+			<segmentAlignment>0x1</segmentAlignment>
+		</engineInfo>
+		<databases>
+			<stringIds type="stringIds" path="Formats/HaloOnline/HaloOnlineTU19/HO_StringIDs.xml" />
+			<scripting type="scripting" path="Formats/HaloOnline/HaloOnlineTU19/HO_Scripting.xml" />
+			<localeSymbols type="localeSymbols" path="Formats/HaloOnline/HaloOnlineTU19/HO_LocaleSymbols.xml" />
+			<layouts type="layouts" path="Formats/HaloOnline/Layouts" />
+		</databases>
+	</engine>
+
+	<engine name="Halo Online TU20" version="20" build="11.1.530945 Live" inherits="Halo Online TU19">
+		<shortName>HaloOnlineTU20</shortName>
+	</engine>
+
+	<engine name="Halo Online TU21" version="21" build="11.1.532911 Live">
+		<shortName>HaloOnlineTU21</shortName>
+		<plugins>HaloOnlineTU21</plugins>
+		<fallbackPlugins>HaloOnline</fallbackPlugins>
+		<engineInfo>
+			<generation>fourth</generation>
+			<endian>big</endian>
+			<headerSize>0x3390</headerSize>
+			<segmentAlignment>0x1</segmentAlignment>
+		</engineInfo>
+		<databases>
+			<stringIds type="stringIds" path="Formats/HaloOnline/HaloOnlineTU21/HO_StringIDs.xml" />
+			<scripting type="scripting" path="Formats/HaloOnline/HaloOnlineTU21/HO_Scripting.xml" />
+			<localeSymbols type="localeSymbols" path="Formats/HaloOnline/HaloOnlineTU21/HO_LocaleSymbols.xml" />
+			<layouts type="layouts" path="Formats/HaloOnline/Layouts" />
+		</databases>
+	</engine>
+
+	<engine name="Halo Online TU22" version="22" build="11.1.533032 Live" inherits="Halo Online TU21">
+		<shortName>HaloOnlineTU22</shortName>
+	</engine>
+
+	<engine name="Halo Online TU23" version="23" build="11.1.554482 Live">
+		<shortName>HaloOnlineTU23</shortName>
+		<plugins>HaloOnlineTU23</plugins>
+		<fallbackPlugins>HaloOnline</fallbackPlugins>
+		<engineInfo>
+			<generation>fourth</generation>
+			<endian>big</endian>
+			<headerSize>0x3390</headerSize>
+			<segmentAlignment>0x1</segmentAlignment>
+		</engineInfo>
+		<databases>
+			<stringIds type="stringIds" path="Formats/HaloOnline/HaloOnlineTU23/HO_StringIDs.xml" />
+			<scripting type="scripting" path="Formats/HaloOnline/HaloOnlineTU23/HO_Scripting.xml" />
+			<localeSymbols type="localeSymbols" path="Formats/HaloOnline/HaloOnlineTU23/HO_LocaleSymbols.xml" />
+			<layouts type="layouts" path="Formats/HaloOnline/Layouts" />
+		</databases>
+	</engine>
+
+	<engine name="Halo Online TU24" version="24" build="11.1.571627 Live">
+		<shortName>HaloOnlineTU24</shortName>
+		<plugins>HaloOnlineTU24</plugins>
+		<fallbackPlugins>HaloOnline</fallbackPlugins>
+		<engineInfo>
+			<generation>fourth</generation>
+			<endian>big</endian>
+			<headerSize>0x3390</headerSize>
+			<segmentAlignment>0x1</segmentAlignment>
+		</engineInfo>
+		<databases>
+			<stringIds type="stringIds" path="Formats/HaloOnline/HaloOnlineTU24/HO_StringIDs.xml" />
+			<scripting type="scripting" path="Formats/HaloOnline/HaloOnlineTU24/HO_Scripting.xml" />
+			<localeSymbols type="localeSymbols" path="Formats/HaloOnline/HaloOnlineTU24/HO_LocaleSymbols.xml" />
+			<layouts type="layouts" path="Formats/HaloOnline/Layouts" />
+		</databases>
+	</engine>
+
+	<engine name="Halo Online TU25" version="25" build="11.1.571698 Live" inherits="Halo Online TU24">
+		<shortName>HaloOnlineTU25</shortName>
+	</engine>
+
+	<engine name="Halo Online TU26" version="26" build="11.1.601838 Live">
+		<shortName>HaloOnlineTU26</shortName>
+		<plugins>HaloOnlineTU26</plugins>
+		<fallbackPlugins>HaloOnline</fallbackPlugins>
+		<engineInfo>
+			<generation>fourth</generation>
+			<endian>big</endian>
+			<headerSize>0x3390</headerSize>
+			<segmentAlignment>0x1</segmentAlignment>
+		</engineInfo>
+		<databases>
+			<stringIds type="stringIds" path="Formats/HaloOnline/HaloOnlineTU26/HO_StringIDs.xml" />
+			<scripting type="scripting" path="Formats/HaloOnline/HaloOnlineTU26/HO_Scripting.xml" />
+			<localeSymbols type="localeSymbols" path="Formats/HaloOnline/HaloOnlineTU26/HO_LocaleSymbols.xml" />
+			<layouts type="layouts" path="Formats/HaloOnline/Layouts" />
+		</databases>
+	</engine>
+
+	<engine name="Halo Online TU27" version="27" build="11.1.604673 Live" inherits="Halo Online TU26">
+		<shortName>HaloOnlineTU27</shortName>
+	</engine>
+
+	<engine name="Halo Online TU28" version="28" build="11.1.601838 Live">
+		<shortName>HaloOnlineTU28</shortName>
+		<plugins>HaloOnlineTU28</plugins>
+		<fallbackPlugins>HaloOnline</fallbackPlugins>
+		<engineInfo>
+			<generation>fourth</generation>
+			<endian>big</endian>
+			<headerSize>0x3390</headerSize>
+			<segmentAlignment>0x1</segmentAlignment>
+		</engineInfo>
+		<databases>
+			<stringIds type="stringIds" path="Formats/HaloOnline/HaloOnlineTU28/HO_StringIDs.xml" />
+			<scripting type="scripting" path="Formats/HaloOnline/HaloOnlineTU28/HO_Scripting.xml" />
+			<localeSymbols type="localeSymbols" path="Formats/HaloOnline/HaloOnlineTU28/HO_LocaleSymbols.xml" />
+			<layouts type="layouts" path="Formats/HaloOnline/Layouts" />
+		</databases>
+	</engine>
+
+	<engine name="Halo Online TU29" version="29" build="11.1.604673 Live" inherits="Halo Online TU29">
+		<shortName>HaloOnlineTU29</shortName>
+	</engine>
+
+	<engine name="Halo Online TU30" version="30" build="2.5.537430 staging_MS27">
+		<shortName>HaloOnlineTU30</shortName>
+		<plugins>HaloOnlineTU30</plugins>
+		<fallbackPlugins>HaloOnline</fallbackPlugins>
+		<engineInfo>
+			<generation>fourth</generation>
+			<endian>big</endian>
+			<headerSize>0x3390</headerSize>
+			<segmentAlignment>0x1</segmentAlignment>
+		</engineInfo>
+		<databases>
+			<stringIds type="stringIds" path="Formats/HaloOnline/HaloOnlineTU30/HO_StringIDs.xml" />
+			<scripting type="scripting" path="Formats/HaloOnline/HaloOnlineTU30/HO_Scripting.xml" />
+			<localeSymbols type="localeSymbols" path="Formats/HaloOnline/HaloOnlineTU30/HO_LocaleSymbols.xml" />
+			<layouts type="layouts" path="Formats/HaloOnline/Layouts" />
+		</databases>
+	</engine>
 </engines>
