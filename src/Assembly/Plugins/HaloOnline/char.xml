@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x1F8">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<uint32 name="Flags" visible="true" offset="0x0"/>
+	<tagref name="Parent Character" visible="true" offset="0x4"/>
+	<tagref name="Unit" visible="true" offset="0x14"/>
+	<tagref name="Creature" visible="true" offset="0x24"/>
+	<tagref name="Style" visible="true" offset="0x34"/>
+	<tagref name="Major Character" visible="true" offset="0x44"/>
+	<reflexive name="Variants" visible="true" offset="0x54" entrySize="0x14">
+		<stringId name="Variant Name" visible="true" offset="0x0"/>
+		<int16 name="Variant Index" visible="true" offset="0x4"/>
+		<uint8 name="Unused Padding 0" visible="false" offset="0x6"/>
+		<uint8 name="Unused Padding 1" visible="false" offset="0x7"/>
+		<reflexive name="Dialogue Variations" visible="true" offset="0x8" entrySize="0x18">
+			<tagref name="Dialogue" visible="true" offset="0x0"/>
+			<stringId name="Name" visible="true" offset="0x10"/>
+			<float32 name="Weight" visible="true" offset="0x14"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Unit Dialogue" visible="true" offset="0x60" entrySize="0xC">
+		<reflexive name="Dialogue Variations" visible="true" offset="0x0" entrySize="0x18">
+			<tagref name="Dialogue" visible="true" offset="0x0"/>
+			<stringId name="Name" visible="true" offset="0x10"/>
+			<float32 name="Weight" visible="true" offset="0x14"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="General Properties" visible="true" offset="0x6C" entrySize="0x1C">
+		<bitfield32 name="Flags" visible="true" offset="0x0">
+			<bit name="Swarm" index="0"/>
+			<bit name="Flying" index="1"/>
+			<bit name="Dual Wields" index="2"/>
+			<bit name="Uses Gravemind" index="3"/>
+			<bit name="Do Not Trade Weapon" index="4"/>
+			<bit name="Do Not Stow Weapon" index="5"/>
+			<bit name="Hero Character" index="6"/>
+			<bit name="Leader Independent Positioning" index="7"/>
+			<bit name="Has Active Camo" index="8"/>
+			<bit name="Use Head Marker For Looking" index="9"/>
+			<bit name="Space Character" index="10"/>
+			<bit name="Do Not Drop Equipment" index="11"/>
+			<bit name="Do Not Allow Crouch" index="12"/>
+			<bit name="Do Not Allow Moving Crouch" index="13"/>
+			<bit name="Critical Betrayal" index="14"/>
+			<bit name="Deathless Critical Betrayal" index="15"/>
+			<bit name="Armor Prevents Assassination" index="16"/>
+			<bit name="Drop All Weapons On Death" index="17"/>
+			<bit name="Drop No Weapons On Death" index="18"/>
+			<bit name="Shield Prevents Assassination" index="19"/>
+			<bit name="Cannot Be Assassinated" index="20"/>
+		</bitfield32>
+		<enum16 name="Actor Type" visible="true" offset="0x4">
+			<option name="Elite" value="0x0"/>
+			<option name="Jackal" value="0x1"/>
+			<option name="Grunt" value="0x2"/>
+			<option name="Hunter" value="0x3"/>
+			<option name="Engineer" value="0x4"/>
+			<option name="Assassin" value="0x5"/>
+			<option name="Player" value="0x6"/>
+			<option name="Marine" value="0x7"/>
+			<option name="Crew" value="0x8"/>
+			<option name="Combat Form" value="0x9"/>
+			<option name="Infection Form" value="0xA"/>
+			<option name="Carrier Form" value="0xB"/>
+			<option name="Monitor" value="0xC"/>
+			<option name="Sentinel" value="0xD"/>
+			<option name="None" value="0xE"/>
+			<option name="Mounted Weapon" value="0xF"/>
+			<option name="Brute" value="0x10"/>
+			<option name="Prophet" value="0x11"/>
+			<option name="Bugger" value="0x12"/>
+			<option name="Juggernaut" value="0x13"/>
+			<option name="Pure Form Stealth" value="0x14"/>
+			<option name="Pure Form Tank" value="0x15"/>
+			<option name="Pure Form Ranged" value="0x16"/>
+			<option name="Scarab" value="0x17"/>
+			<option name="Guardian" value="0x18"/>
+		</enum16>
+		<int16 name="Rank" visible="true" offset="0x6"/>
+		<enum16 name="Follower Positioning" visible="true" offset="0x8">
+			<option name="In Front Of Me" value="0x0"/>
+			<option name="Behind Me" value="0x1"/>
+			<option name="Tight" value="0x2"/>
+		</enum16>
+		<uint8 name="Unused Padding 0" visible="false" offset="0xA"/>
+		<uint8 name="Unused Padding 1" visible="false" offset="0xB"/>
+		<float32 name="Maximum Leader Distance" visible="true" offset="0xC"/>
+		<float32 name="Maximum Player Dialogue Distance" visible="true" offset="0x10"/>
+		<float32 name="Scariness" visible="true" offset="0x14"/>
+		<enum16 name="Default Grenade Type" visible="true" offset="0x18">
+			<option name="None" value="0x0"/>
+			<option name="Human Fragmentation" value="0x1"/>
+			<option name="Covenant Plasma" value="0x2"/>
+			<option name="Brute Claymore" value="0x3"/>
+			<option name="Firebomb" value="0x4"/>
+		</enum16>
+		<enum16 name="Behavior Tree Root" visible="true" offset="0x1A">
+			<option name="Default" value="0x0"/>
+			<option name="Flying" value="0x1"/>
+		</enum16>
+	</reflexive>
+	<reflexive name="Vitality Properties" visible="true" offset="0x78" entrySize="0x80">
+		<bitfield32 name="Flags" visible="true" offset="0x0">
+			<bit name="Auto Resurrect" index="0"/>
+		</bitfield32>
+		<float32 name="Normal Body Vitality" visible="true" offset="0x4"/>
+		<float32 name="Normal Shield Vitality" visible="true" offset="0x8"/>
+		<float32 name="Legendary Body Vitality" visible="true" offset="0xC"/>
+		<float32 name="Legendary Shield Vitality" visible="true" offset="0x10"/>
+		<float32 name="Body Recharge Fraction" visible="true" offset="0x14"/>
+		<float32 name="Soft Ping Shield Threshold" visible="true" offset="0x18"/>
+		<float32 name="Soft Ping Noshield Threshold" visible="true" offset="0x1C"/>
+		<float32 name="Soft Ping Cooldown Time" visible="true" offset="0x20"/>
+		<float32 name="Hard Ping Shield Threshold" visible="true" offset="0x24"/>
+		<float32 name="Hard Ping No Shield Threshold" visible="true" offset="0x28"/>
+		<float32 name="Hard Ping Cooldown Time" visible="true" offset="0x2C"/>
+		<float32 name="Current Damage Decay Delay" visible="true" offset="0x30"/>
+		<float32 name="Current Damage Decay Time" visible="true" offset="0x34"/>
+		<float32 name="Recent Damage Decay Delay" visible="true" offset="0x38"/>
+		<float32 name="Recent Damage Decay Time" visible="true" offset="0x3C"/>
+		<float32 name="Body Recharge Delay Time" visible="true" offset="0x40"/>
+		<float32 name="Body Recharge Time" visible="true" offset="0x44"/>
+		<float32 name="Shield Recharge Delay Time" visible="true" offset="0x48"/>
+		<float32 name="Shield Recharge Time" visible="true" offset="0x4C"/>
+		<float32 name="Stun Threshold" visible="true" offset="0x50"/>
+		<float32 name="Stun Time Bounds Min" visible="true" offset="0x54"/>
+		<float32 name="Stun Time Bounds Max" visible="true" offset="0x58"/>
+		<float32 name="Extended Shield Damage Threshold" visible="true" offset="0x5C"/>
+		<float32 name="Extended Body Damage Threshold" visible="true" offset="0x60"/>
+		<float32 name="Suicide Radius" visible="true" offset="0x64"/>
+		<float32 name="Runtime Body Recharge Velocity" visible="true" offset="0x68"/>
+		<float32 name="Runtime Shield Recharge Velocity" visible="true" offset="0x6C"/>
+		<tagref name="Resurrect Weapon" visible="true" offset="0x70"/>
+	</reflexive>
+	<reflexive name="Placement Properties" visible="true" offset="0x84" entrySize="0x34">
+		<uint8 name="Unused Padding 0" visible="false" offset="0x0"/>
+		<uint8 name="Unused Padding 1" visible="false" offset="0x1"/>
+		<uint8 name="Unused Padding 2" visible="false" offset="0x2"/>
+		<uint8 name="Unused Padding 3" visible="false" offset="0x3"/>
+		<float32 name="Few Upgrade Chance Easy" visible="true" offset="0x4"/>
+		<float32 name="Few Upgrade Chance Normal" visible="true" offset="0x8"/>
+		<float32 name="Few Upgrade Chance Heroic" visible="true" offset="0xC"/>
+		<float32 name="Few Upgrade Chance Legendary" visible="true" offset="0x10"/>
+		<float32 name="Normal Upgrade Chance Easy" visible="true" offset="0x14"/>
+		<float32 name="Normal Upgrade Chance Normal" visible="true" offset="0x18"/>
+		<float32 name="Normal Upgrade Chance Heroic" visible="true" offset="0x1C"/>
+		<float32 name="Normal Upgrade Chance Legendary" visible="true" offset="0x20"/>
+		<float32 name="Many Upgrade Chance Easy" visible="true" offset="0x24"/>
+		<float32 name="Many Upgrade Chance Normal" visible="true" offset="0x28"/>
+		<float32 name="Many Upgrade Chance Heroic" visible="true" offset="0x2C"/>
+		<float32 name="Many Upgrade Chance Legendary" visible="true" offset="0x30"/>
+	</reflexive>
+	<reflexive name="Perception Properties" visible="true" offset="0x90" entrySize="0x2C">
+		<enum16 name="Mode" visible="true" offset="0x0">
+			<option name="Idle" value="0x0"/>
+			<option name="Alert" value="0x1"/>
+			<option name="Combat" value="0x2"/>
+			<option name="Search" value="0x3"/>
+			<option name="Patrol" value="0x4"/>
+			<option name="Vehicle Idle" value="0x5"/>
+			<option name="Vehicle Alert" value="0x6"/>
+			<option name="Vehicle Combat" value="0x7"/>
+		</enum16>
+		<bitfield16 name="Flags" visible="true" offset="0x2">
+			<bit name="Character Can See In Darkness" index="0"/>
+			<bit name="Ignore Tracking Projectiles" index="1"/>
+			<bit name="Ignore Minor Tracking Projectiles" index="2"/>
+		</bitfield16>
+		<float32 name="Max Vision Distance" visible="true" offset="0x4"/>
+		<degree name="Central Vision Angle" visible="true" offset="0x8"/>
+		<degree name="Max Vision Angle" visible="true" offset="0xC"/>
+		<degree name="Peripheral Vision Angle" visible="true" offset="0x10"/>
+		<float32 name="Peripheral Distance" visible="true" offset="0x14"/>
+		<float32 name="Hearing Distance" visible="true" offset="0x18"/>
+		<float32 name="Notice Projectile Chance" visible="true" offset="0x1C"/>
+		<float32 name="Notice Vehicle Chance" visible="true" offset="0x20"/>
+		<float32 name="Perception Time" visible="true" offset="0x24"/>
+		<float32 name="First Acknowledge Surprise Distance" visible="true" offset="0x28"/>
+	</reflexive>
+	<reflexive name="Look Properties" visible="true" offset="0x9C" entrySize="0x50">
+		<degree name="Maximum Aiming Deviation Yaw" visible="true" offset="0x0"/>
+		<degree name="Maximum Aiming Deviation Pitch" visible="true" offset="0x4"/>
+		<degree name="Maximum Looking Deviation Yaw" visible="true" offset="0x8"/>
+		<degree name="Maximum Looking Deviation Pitch" visible="true" offset="0xC"/>
+		<degree name="Runtime Aiming Deviation Cosines Yaw" visible="true" offset="0x10"/>
+		<degree name="Runtime Aiming Deviation Cosines Pitch" visible="true" offset="0x14"/>
+		<degree name="Runtime Looking Deviation Cosines Yaw" visible="true" offset="0x18"/>
+		<degree name="Runtime Looking Deviation Cosines Pitch" visible="true" offset="0x1C"/>
+		<degree name="Noncombat Look Delta Left" visible="true" offset="0x20"/>
+		<degree name="Noncombat Look Delta Right" visible="true" offset="0x24"/>
+		<degree name="Combat Look Delta Left" visible="true" offset="0x28"/>
+		<degree name="Combat Look Delta Right" visible="true" offset="0x2C"/>
+		<float32 name="Noncombat Idle Looking Min" visible="true" offset="0x30"/>
+		<float32 name="Noncombat Idle Looking Max" visible="true" offset="0x34"/>
+		<float32 name="Noncombat Idle Aiming Min" visible="true" offset="0x38"/>
+		<float32 name="Noncombat Idle Aiming Max" visible="true" offset="0x3C"/>
+		<float32 name="Combat Idle Looking Min" visible="true" offset="0x40"/>
+		<float32 name="Combat Idle Looking Max" visible="true" offset="0x44"/>
+		<float32 name="Combat Idle Aiming Min" visible="true" offset="0x48"/>
+		<float32 name="Combat Idle Aiming Max" visible="true" offset="0x4C"/>
+	</reflexive>
+	<reflexive name="Movement Properties" visible="true" offset="0xA8" entrySize="0x2C">
+		<bitfield32 name="Flags" visible="true" offset="0x0">
+			<bit name="Danger Crouch Allow Movement" index="0"/>
+			<bit name="No Side Step" index="1"/>
+			<bit name="Prefer To Combat Near Friends" index="2"/>
+			<bit name="Allow Boosted Jump" index="3"/>
+			<bit name="Perch" index="4"/>
+			<bit name="Climb" index="5"/>
+			<bit name="Prefer Wall Movement" index="6"/>
+			<bit name="Has Flying Mode" index="7"/>
+			<bit name="Disallow Crouch" index="8"/>
+			<bit name="Disallow All Movement" index="9"/>
+			<bit name="Always Use Search Points" index="10"/>
+			<bit name="Keep Moving" index="11"/>
+			<bit name="Cure Isolation Jump" index="12"/>
+			<bit name="Gain Elevation" index="13"/>
+			<bit name="Reposition Distant" index="14"/>
+			<bit name="Only Use Aerial Firing Positions" index="15"/>
+			<bit name="Use High Priority Path Finding" index="16"/>
+			<bit name="Lower Weapon When No Alert Movement Override" index="17"/>
+			<bit name="Phase" index="18"/>
+			<bit name="No Override When Firing" index="19"/>
+			<bit name="No Stow During Idle Activities" index="20"/>
+			<bit name="Flip Any Vehicle" index="21"/>
+			<bit name="Bound Along Path" index="22"/>
+		</bitfield32>
+		<float32 name="Pathfinding Radius" visible="true" offset="0x4"/>
+		<float32 name="Destination Radius" visible="true" offset="0x8"/>
+		<float32 name="Dive Grenade Chance" visible="true" offset="0xC"/>
+		<enum16 name="Obstacle Leap Minimum Size" visible="true" offset="0x10">
+			<option name="None" value="0x0"/>
+			<option name="Tiny" value="0x1"/>
+			<option name="Small" value="0x2"/>
+			<option name="Medium" value="0x3"/>
+			<option name="Large" value="0x4"/>
+			<option name="Huge" value="0x5"/>
+			<option name="Immobile" value="0x6"/>
+		</enum16>
+		<enum16 name="Obstacle Leap Maximum Size" visible="true" offset="0x12">
+			<option name="None" value="0x0"/>
+			<option name="Tiny" value="0x1"/>
+			<option name="Small" value="0x2"/>
+			<option name="Medium" value="0x3"/>
+			<option name="Large" value="0x4"/>
+			<option name="Huge" value="0x5"/>
+			<option name="Immobile" value="0x6"/>
+		</enum16>
+		<enum16 name="Obstacle Ignore Size" visible="true" offset="0x14">
+			<option name="None" value="0x0"/>
+			<option name="Tiny" value="0x1"/>
+			<option name="Small" value="0x2"/>
+			<option name="Medium" value="0x3"/>
+			<option name="Large" value="0x4"/>
+			<option name="Huge" value="0x5"/>
+			<option name="Immobile" value="0x6"/>
+		</enum16>
+		<enum16 name="Obstace Smashable Size" visible="true" offset="0x16">
+			<option name="None" value="0x0"/>
+			<option name="Tiny" value="0x1"/>
+			<option name="Small" value="0x2"/>
+			<option name="Medium" value="0x3"/>
+			<option name="Large" value="0x4"/>
+			<option name="Huge" value="0x5"/>
+			<option name="Immobile" value="0x6"/>
+		</enum16>
+		<uint8 name="Unused Padding 0" visible="false" offset="0x18"/>
+		<uint8 name="Unused Padding 1" visible="false" offset="0x19"/>
+		<enum16 name="Jump Height" visible="true" offset="0x1A">
+			<option name="None" value="0x0"/>
+			<option name="Down" value="0x1"/>
+			<option name="Step" value="0x2"/>
+			<option name="Crouch" value="0x3"/>
+			<option name="Stand" value="0x4"/>
+			<option name="Storey" value="0x5"/>
+			<option name="Tower" value="0x6"/>
+			<option name="Infinite" value="0x7"/>
+		</enum16>
+		<bitfield32 name="Hint Flags" visible="true" offset="0x1C">
+			<bit name="Vault Step" index="0"/>
+			<bit name="Vault Crouch" index="1"/>
+			<bit name="Unused0" index="2"/>
+			<bit name="Unused1" index="3"/>
+			<bit name="Unused2" index="4"/>
+			<bit name="Mount Step" index="5"/>
+			<bit name="Mount Crouch" index="6"/>
+			<bit name="Mount Stand" index="7"/>
+			<bit name="Unused3" index="8"/>
+			<bit name="Unused4" index="9"/>
+			<bit name="Unused5" index="10"/>
+			<bit name="Hoist Crouch" index="11"/>
+			<bit name="Hoist Stand" index="12"/>
+			<bit name="Unused6" index="13"/>
+			<bit name="Unused7" index="14"/>
+			<bit name="Unused8" index="15"/>
+		</bitfield32>
+		<float32 name="Unknown1" visible="true" offset="0x20"/>
+		<float32 name="Unknown2" visible="true" offset="0x24"/>
+		<float32 name="Unknown3" visible="true" offset="0x28"/>
+	</reflexive>
+	<reflexive name="Flocking Properties" visible="true" offset="0xB4" entrySize="0x18">
+		<float32 name="Deceleration Distance" visible="true" offset="0x0"/>
+		<float32 name="Normalized Speed" visible="true" offset="0x4"/>
+		<float32 name="Buffer Distance" visible="true" offset="0x8"/>
+		<float32 name="Throttle Threshold BOunds Min" visible="true" offset="0xC"/>
+		<float32 name="Throttle Threshold BOunds Max" visible="true" offset="0x10"/>
+		<float32 name="Deceleration Stop Time" visible="true" offset="0x14"/>
+	</reflexive>
+	<reflexive name="Swarm Properties" visible="true" offset="0xC0" entrySize="0x38">
+		<int16 name="Scatter Killed Count" visible="true" offset="0x0"/>
+		<uint8 name="Unused Padding 0" visible="false" offset="0x2"/>
+		<uint8 name="Unused Padding 1" visible="false" offset="0x3"/>
+		<float32 name="Scatter Radius" visible="true" offset="0x4"/>
+		<float32 name="Scatter Time" visible="true" offset="0x8"/>
+		<float32 name="Hound Distance Min" visible="true" offset="0xC"/>
+		<float32 name="Hound Distance Max" visible="true" offset="0x10"/>
+		<float32 name="Infection Time Min" visible="true" offset="0x14"/>
+		<float32 name="Infection Time Max" visible="true" offset="0x18"/>
+		<float32 name="Perlin Offset Scale" visible="true" offset="0x1C"/>
+		<float32 name="Offset Period Min" visible="true" offset="0x20"/>
+		<float32 name="Offset Period Max" visible="true" offset="0x24"/>
+		<float32 name="Perlin Idle Movement Threshold" visible="true" offset="0x28"/>
+		<float32 name="Perlin Combat Movement Threshold" visible="true" offset="0x2C"/>
+		<float32 name="Stuck Time" visible="true" offset="0x30"/>
+		<float32 name="Stuck Distance" visible="true" offset="0x34"/>
+	</reflexive>
+	<reflexive name="Ready Properties" visible="true" offset="0xCC" entrySize="0x8">
+		<float32 name="Read Time Bounds Min" visible="true" offset="0x0"/>
+		<float32 name="Read Time Bounds Max" visible="true" offset="0x4"/>
+	</reflexive>
+	<reflexive name="Engage Properties" visible="true" offset="0xD8" entrySize="0x38">
+		<bitfield32 name="Flags" visible="true" offset="0x0">
+			<bit name="Defend Threat Axis" index="0"/>
+			<bit name="Fight Constant Movement" index="1"/>
+			<bit name="Flight Fight Constant Movement" index="2"/>
+			<bit name="Disallow Combat Crouching" index="3"/>
+			<bit name="Disallow Crouch Shooting" index="4"/>
+			<bit name="Fight Stable" index="5"/>
+			<bit name="Throw Should Lob" index="6"/>
+			<bit name="Allow Positioning Beyond Ideal Range" index="7"/>
+			<bit name="Can Suppress" index="8"/>
+			<bit name="Prefers Bunker" index="9"/>
+			<bit name="Burst Inhibits Evasion" index="10"/>
+		</bitfield32>
+		<uint32 name="Unknown" visible="true" offset="0x4"/>
+		<float32 name="Crouch Danger Threshold" visible="true" offset="0x8"/>
+		<float32 name="Stand Danger Threshold" visible="true" offset="0xC"/>
+		<float32 name="Fight Danger Move Threshold" visible="true" offset="0x10"/>
+		<float32 name="Fight Danger Move Threshold Cooldown" visible="true" offset="0x14"/>
+		<tagref name="Override Grenade Projectile" visible="true" offset="0x18"/>
+		<uint32 name="Unknown4" visible="true" offset="0x28"/>
+		<uint32 name="Unknown5" visible="true" offset="0x2C"/>
+		<uint32 name="Unknown6" visible="true" offset="0x30"/>
+		<uint32 name="Unknown7" visible="true" offset="0x34"/>
+	</reflexive>
+	<reflexive name="Charge Properties" visible="true" offset="0xE4" entrySize="0x7C">
+		<bitfield32 name="Flags" visible="true" offset="0x0">
+			<bit name="Offhand Melee Allowed" index="0"/>
+			<bit name="Berserk Whenever Charge" index="1"/>
+			<bit name="Do Not Use Berserk Mode" index="2"/>
+			<bit name="Do Not Stow Weapon During Berserk" index="3"/>
+			<bit name="Allow Dialogue While Berserking" index="4"/>
+			<bit name="Do Not Play Berserk Animation" index="5"/>
+			<bit name="Do Not Shoot During Charge" index="6"/>
+			<bit name="Allow Leap With Ranged Weapons" index="7"/>
+			<bit name="Permanent Berserk Once Initiated" index="8"/>
+		</bitfield32>
+		<float32 name="Melee Consider Range" visible="true" offset="0x4"/>
+		<float32 name="Melee Chance" visible="true" offset="0x8"/>
+		<float32 name="Melee Attack Range" visible="true" offset="0xC"/>
+		<float32 name="Melee Abort Range" visible="true" offset="0x10"/>
+		<float32 name="Melee Attack Timeout" visible="true" offset="0x14"/>
+		<float32 name="Melee Attack Delay Timer" visible="true" offset="0x18"/>
+		<float32 name="Melee Leap Range Min" visible="true" offset="0x1C"/>
+		<float32 name="Melee Leap Range Max" visible="true" offset="0x20"/>
+		<float32 name="Melee Leap Chance" visible="true" offset="0x24"/>
+		<float32 name="Ideal Leap Velocity" visible="true" offset="0x28"/>
+		<float32 name="Max Leap Velocity" visible="true" offset="0x2C"/>
+		<float32 name="Melee Leap Ballistic" visible="true" offset="0x30"/>
+		<float32 name="Melee Delay Timer" visible="true" offset="0x34"/>
+		<uint32 name="Unknown" visible="true" offset="0x38"/>
+		<uint32 name="Unknown2" visible="true" offset="0x3C"/>
+		<uint32 name="Unknown3" visible="true" offset="0x40"/>
+		<uint32 name="Unknown4" visible="true" offset="0x44"/>
+		<uint32 name="Unknown5" visible="true" offset="0x48"/>
+		<tagref name="Berserk Weapon" visible="true" offset="0x4C"/>
+		<uint32 name="Unknown6" visible="true" offset="0x5C"/>
+		<uint32 name="Unknown7" visible="true" offset="0x60"/>
+		<uint32 name="Unknown8" visible="true" offset="0x64"/>
+		<uint32 name="Unknown9" visible="true" offset="0x68"/>
+		<uint32 name="Unknown10" visible="true" offset="0x6C"/>
+		<reflexive name="Difficulty Limits" visible="true" offset="0x70" entrySize="0x6">
+			<int16 name="Maximum Kamikaze Count" visible="true" offset="0x0"/>
+			<int16 name="Maximum Berserk Count" visible="true" offset="0x2"/>
+			<int16 name="Minimum Berserk Count" visible="true" offset="0x4"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Evasion Properties" visible="true" offset="0xF0" entrySize="0x14">
+		<float32 name="Evasion Danger Threshold" visible="true" offset="0x0"/>
+		<float32 name="Evasion Delay Timer" visible="true" offset="0x4"/>
+		<float32 name="Evasion Chance" visible="true" offset="0x8"/>
+		<float32 name="Evasion Proximity Threshold" visible="true" offset="0xC"/>
+		<float32 name="Dive Retreat Chance" visible="true" offset="0x10"/>
+	</reflexive>
+	<reflexive name="Cover Properties" visible="true" offset="0xFC" entrySize="0x54">
+		<bitfield32 name="Flags" visible="true" offset="0x0">
+			<bit name="Use Phasing" index="0"/>
+		</bitfield32>
+		<float32 name="Hide Behind Cover Time Min" visible="true" offset="0x4"/>
+		<float32 name="Hide Behind Cover Time Max" visible="true" offset="0x8"/>
+		<float32 name="Cover Vitality Threshold" visible="true" offset="0xC"/>
+		<float32 name="Cover Shield Fraction" visible="true" offset="0x10"/>
+		<float32 name="Cover Check Delay" visible="true" offset="0x14"/>
+		<float32 name="Cover Danger Threshold" visible="true" offset="0x18"/>
+		<float32 name="Danger Upper Threshold" visible="true" offset="0x1C"/>
+		<float32 name="Cover Chance Bounds Min" visible="true" offset="0x20"/>
+		<float32 name="Cover Chance Bounds Max" visible="true" offset="0x24"/>
+		<uint32 name="Unknown" visible="true" offset="0x28"/>
+		<uint32 name="Unknown2" visible="true" offset="0x2C"/>
+		<uint32 name="Unknown3" visible="true" offset="0x30"/>
+		<float32 name="Proximity Self Preserve" visible="true" offset="0x34"/>
+		<float32 name="Disallow Cover Distance" visible="true" offset="0x38"/>
+		<float32 name="Proximity Melee Distance" visible="true" offset="0x3C"/>
+		<float32 name="Unreachable Enemy Danger Threashold" visible="true" offset="0x40"/>
+		<float32 name="Scary Target Threshold" visible="true" offset="0x44"/>
+		<float32 name="Vitality Fraction Shield Equipment" visible="true" offset="0x48"/>
+		<float32 name="Recent Damage Shield Equipment" visible="true" offset="0x4C"/>
+		<float32 name="Minimum Enemy Distance" visible="true" offset="0x50"/>
+	</reflexive>
+	<reflexive name="Retreat Properties" visible="true" offset="0x108" entrySize="0x58">
+		<bitfield32 name="Flags" visible="true" offset="0x0">
+			<bit name="Zig Zag When Fleeing" index="0"/>
+		</bitfield32>
+		<float32 name="Shield Threshold" visible="true" offset="0x4"/>
+		<float32 name="Scary Target Threshold" visible="true" offset="0x8"/>
+		<float32 name="Danger Threshold" visible="true" offset="0xC"/>
+		<float32 name="Proximity Threshold" visible="true" offset="0x10"/>
+		<float32 name="Forced Cower Time Bounds Min" visible="true" offset="0x14"/>
+		<float32 name="Forced Cower Time Bounds Max" visible="true" offset="0x18"/>
+		<float32 name="Cower Time Bounds Min" visible="true" offset="0x1C"/>
+		<float32 name="Cower Time Bounds Max" visible="true" offset="0x20"/>
+		<float32 name="Proximity Ambush Threshold" visible="true" offset="0x24"/>
+		<float32 name="Awareness Ambush Threshold" visible="true" offset="0x28"/>
+		<float32 name="Leader Dead Retreat Chance" visible="true" offset="0x2C"/>
+		<float32 name="Peer Dead Retreat Chance" visible="true" offset="0x30"/>
+		<float32 name="Second Peer Dead Retreat Chance" visible="true" offset="0x34"/>
+		<float32 name="Flee Timeout" visible="true" offset="0x38"/>
+		<degree name="Zig Zag Angle" visible="true" offset="0x3C"/>
+		<float32 name="Zig Zag Period" visible="true" offset="0x40"/>
+		<float32 name="Retreat Grenade Chance" visible="true" offset="0x44"/>
+		<tagref name="Backup Weapon" visible="true" offset="0x48"/>
+	</reflexive>
+	<reflexive name="Search Properties" visible="true" offset="0x114" entrySize="0x20">
+		<bitfield32 name="Flags" visible="true" offset="0x0">
+			<bit name="Crouch On Investigate" index="0"/>
+			<bit name="Walk On Pursuit" index="1"/>
+			<bit name="Search Forever" index="2"/>
+			<bit name="Search Exclusively" index="3"/>
+			<bit name="Search Points Only While Walking" index="4"/>
+		</bitfield32>
+		<float32 name="Search Time Min" visible="true" offset="0x4"/>
+		<float32 name="Search Time Max" visible="true" offset="0x8"/>
+		<float32 name="Search Distance" visible="true" offset="0xC"/>
+		<float32 name="Uncover Distance Bounds Min" visible="true" offset="0x10"/>
+		<float32 name="Uncover Distance Bounds Max" visible="true" offset="0x14"/>
+		<float32 name="Vocalization Time Min" visible="true" offset="0x18"/>
+		<float32 name="Vocalization Time Max" visible="true" offset="0x1C"/>
+	</reflexive>
+	<reflexive name="Pre Search Properties" visible="true" offset="0x120" entrySize="0x28">
+		<bitfield32 name="Flags" visible="true" offset="0x0">
+			<bit name="Flag1" index="0"/>
+		</bitfield32>
+		<float32 name="Minimum Pre Search Time Min" visible="true" offset="0x4"/>
+		<float32 name="Minimum Pre Search Time Max" visible="true" offset="0x8"/>
+		<float32 name="Maximum Pre Search Time Min" visible="true" offset="0xC"/>
+		<float32 name="Maximum Pre Search Time Max" visible="true" offset="0x10"/>
+		<float32 name="Minimum Certainty Radius" visible="true" offset="0x14"/>
+		<uint32 name="Unknown" visible="true" offset="0x18"/>
+		<float32 name="Minimum Suppressing Time Min" visible="true" offset="0x1C"/>
+		<float32 name="Minimum Suppressing Time Max" visible="true" offset="0x20"/>
+		<int16 name="Unknown2" visible="true" offset="0x24"/>
+		<int16 name="Unknown3" visible="true" offset="0x26"/>
+	</reflexive>
+	<reflexive name="Idle Properties" visible="true" offset="0x12C" entrySize="0x14">
+		<uint8 name="Unused Padding 0" visible="false" offset="0x0"/>
+		<uint8 name="Unused Padding 1" visible="false" offset="0x1"/>
+		<uint8 name="Unused Padding 2" visible="false" offset="0x2"/>
+		<uint8 name="Unused Padding 3" visible="false" offset="0x3"/>
+		<float32 name="Idle Pose Delay Time Min" visible="true" offset="0x4"/>
+		<float32 name="Idle Pose Delay Time Max" visible="true" offset="0x8"/>
+		<float32 name="Wander Delay Time Min" visible="true" offset="0xC"/>
+		<float32 name="Wander Delay Time Max" visible="true" offset="0x10"/>
+	</reflexive>
+	<reflexive name="Vocalization Properties" visible="true" offset="0x138" entrySize="0xC">
+		<float32 name="Character Skip Fraction" visible="true" offset="0x0"/>
+		<float32 name="Look Comment Time" visible="true" offset="0x4"/>
+		<float32 name="Look Long Comment Time" visible="true" offset="0x8"/>
+	</reflexive>
+	<reflexive name="Boarding Properties" visible="true" offset="0x144" entrySize="0x14">
+		<bitfield32 name="Flags" visible="true" offset="0x0">
+			<bit name="Airborne Boarding" index="0"/>
+		</bitfield32>
+		<float32 name="Maximum Distance" visible="true" offset="0x4"/>
+		<float32 name="Abort Distance" visible="true" offset="0x8"/>
+		<float32 name="Maximum Speed" visible="true" offset="0xC"/>
+		<float32 name="Board Time" visible="true" offset="0x10"/>
+	</reflexive>
+	<reflexive name="Bunker Properties" visible="true" offset="0x150" entrySize="0x8">
+		<float32 name="Unknown1" visible="true" offset="0x0"/>
+		<int32 name="Unknown2" visible="true" offset="0x4"/>
+	</reflexive>
+	<reflexive name="Guardian Properties" visible="true" offset="0x15C" entrySize="0x18">
+		<float32 name="Surgetime" visible="true" offset="0x0"/>
+		<float32 name="Surgedelay" visible="true" offset="0x4"/>
+		<float32 name="Proximity Surge" visible="true" offset="0x8"/>
+		<float32 name="Phasetime" visible="true" offset="0xC"/>
+		<float32 name="Phasedistance" visible="true" offset="0x10"/>
+		<float32 name="Targetphasedistance" visible="true" offset="0x14"/>
+	</reflexive>
+	<reflexive name="Combatform Properties" visible="true" offset="0x168" entrySize="0x8">
+		<float32 name="Berserk Distance" visible="true" offset="0x0"/>
+		<float32 name="Berserk Chance" visible="true" offset="0x4"/>
+	</reflexive>
+	<reflexive name="Engineer Properties" visible="true" offset="0x174" entrySize="0x38">
+		<float32 name="Death Height" visible="true" offset="0x0"/>
+		<float32 name="Death Rise Time" visible="true" offset="0x4"/>
+		<float32 name="Death Detonation Time" visible="true" offset="0x8"/>
+		<float32 name="Shield Boost Radius" visible="true" offset="0xC"/>
+		<float32 name="Shield Boost Period" visible="true" offset="0x10"/>
+		<float32 name="Shield Boost Strenght" visible="true" offset="0x14"/>
+		<float32 name="Detonation Shield Threshold" visible="true" offset="0x18"/>
+		<float32 name="Detonation Body Vitality" visible="true" offset="0x1C"/>
+		<float32 name="Proximity Radius" visible="true" offset="0x20"/>
+		<float32 name="Proximity Detonation Chance" visible="true" offset="0x24"/>
+		<tagref name="Proximity Equipment" visible="true" offset="0x28"/>
+	</reflexive>
+	<reflexive name="Inspect Properties" visible="true" offset="0x180" entrySize="0x14">
+		<float32 name="Stop Distance" visible="true" offset="0x0"/>
+		<float32 name="Inspect Time Min" visible="true" offset="0x4"/>
+		<float32 name="Inspect Time Max" visible="true" offset="0x8"/>
+		<float32 name="Search Range Min" visible="true" offset="0xC"/>
+		<float32 name="Search Range Max" visible="true" offset="0x10"/>
+	</reflexive>
+	<reflexive name="Scarab Properties" visible="true" offset="0x18C" entrySize="0x18">
+		<float32 name="Unknown1" visible="true" offset="0x0"/>
+		<float32 name="Unknown2" visible="true" offset="0x4"/>
+		<float32 name="Unknown3" visible="true" offset="0x8"/>
+		<float32 name="Unknown4" visible="true" offset="0xC"/>
+		<float32 name="Unknown5" visible="true" offset="0x10"/>
+		<float32 name="Unknown6" visible="true" offset="0x14"/>
+	</reflexive>
+	<reflexive name="Weapons Properties" visible="true" offset="0x198" entrySize="0xE0">
+		<bitfield32 name="Flags" visible="true" offset="0x0">
+			<bit name="Bursting Inhibits Movement" index="0"/>
+			<bit name="Must Crouch To Shoot" index="1"/>
+			<bit name="Use Extended Safe To Save Range" index="2"/>
+			<bit name="Fixed Aiming Vector" index="3"/>
+			<bit name="Aim At Feet" index="4"/>
+			<bit name="Force Aim From Barrel Position" index="5"/>
+			<bit name="Favor For Long Range" index="6"/>
+			<bit name="Favor For Close Range" index="7"/>
+			<bit name="Favor Against Vehicles" index="8"/>
+			<bit name="Favored Special Weapon" index="9"/>
+			<bit name="Bursting Inhibits Evasion" index="10"/>
+		</bitfield32>
+		<tagref name="Weapon" visible="true" offset="0x4"/>
+		<float32 name="Maximum Firing Range" visible="true" offset="0x14"/>
+		<float32 name="Minimum Firing Range" visible="true" offset="0x18"/>
+		<float32 name="Normal Combat Range Min" visible="true" offset="0x1C"/>
+		<float32 name="Normal Combat Range Max" visible="true" offset="0x20"/>
+		<float32 name="Bombardment Range" visible="true" offset="0x24"/>
+		<float32 name="Max Special Target Distance" visible="true" offset="0x28"/>
+		<float32 name="Timid Combat Range Min" visible="true" offset="0x2C"/>
+		<float32 name="Timid Combat Range Max" visible="true" offset="0x30"/>
+		<float32 name="Aggressive Combat Range Min" visible="true" offset="0x34"/>
+		<float32 name="Aggressive Combat Range Max" visible="true" offset="0x38"/>
+		<float32 name="Super Ballistic Range" visible="true" offset="0x3C"/>
+		<float32 name="Ballistic Firing Bounds Min" visible="true" offset="0x40"/>
+		<float32 name="Ballistic Firing Bounds Max" visible="true" offset="0x44"/>
+		<float32 name="Ballistic Fraction Bounds Min" visible="true" offset="0x48"/>
+		<float32 name="Ballistic Fraction Bounds Max" visible="true" offset="0x4C"/>
+		<float32 name="First Burst Delay Time Bounds Min" visible="true" offset="0x50"/>
+		<float32 name="First Burst Delay Time Bounds Max" visible="true" offset="0x54"/>
+		<float32 name="Surprise Delay Time" visible="true" offset="0x58"/>
+		<float32 name="Surprise Fire Wildly Time" visible="true" offset="0x5C"/>
+		<float32 name="Death Fire Wildly Chance" visible="true" offset="0x60"/>
+		<float32 name="Death Fire Wildly Time" visible="true" offset="0x64"/>
+		<float name="Custom Stand Gun Offset I" visible="true" offset="0x68"/>
+		<float name="Custom Stand Gun Offset J" visible="true" offset="0x6C"/>
+		<float name="Custom Stand Gun Offset K" visible="true" offset="0x70"/>
+		<float name="Custom Crouch Gun Offset I" visible="true" offset="0x74"/>
+		<float name="Custom Crouch Gun Offset J" visible="true" offset="0x78"/>
+		<float name="Custom Crouch Gun Offset K" visible="true" offset="0x7C"/>
+		<enum16 name="Special Fire Mode" visible="true" offset="0x80">
+			<option name="None" value="0x0"/>
+			<option name="Overcharge" value="0x1"/>
+			<option name="Secondary Trigger" value="0x2"/>
+		</enum16>
+		<enum16 name="Special Fire Situation" visible="true" offset="0x82">
+			<option name="Never" value="0x0"/>
+			<option name="Enemy Visible" value="0x1"/>
+			<option name="Enemy Out Of Sight" value="0x2"/>
+			<option name="Strafing" value="0x3"/>
+		</enum16>
+		<float32 name="Special Fire Chance" visible="true" offset="0x84"/>
+		<float32 name="Special Fire Delay" visible="true" offset="0x88"/>
+		<float32 name="Special Damage Modifier" visible="true" offset="0x8C"/>
+		<degree name="Special Projectile Error" visible="true" offset="0x90"/>
+		<float32 name="Drop Weapon Loaded Bounds Min" visible="true" offset="0x94"/>
+		<float32 name="Drop Weapon Loaded Bounds Max" visible="true" offset="0x98"/>
+		<int16 name="Drop Weapon Ammo Bounds Min" visible="true" offset="0x9C"/>
+		<int16 name="Drop Weapon Ammo Bounds Max" visible="true" offset="0x9E"/>
+		<float32 name="Normal Accuracy Bounds Min" visible="true" offset="0xA0"/>
+		<float32 name="Normal Accuracy Bounds Max" visible="true" offset="0xA4"/>
+		<float32 name="Normal Accuracy Time" visible="true" offset="0xA8"/>
+		<float32 name="Heroic Accuracy Bounds Min" visible="true" offset="0xAC"/>
+		<float32 name="Heroic Accuracy Bounds Max" visible="true" offset="0xB0"/>
+		<float32 name="Heroic Accuracy Time" visible="true" offset="0xB4"/>
+		<float32 name="Legendary Accuracy Bounds Min" visible="true" offset="0xB8"/>
+		<float32 name="Legendary Accuracy Bounds Max" visible="true" offset="0xBC"/>
+		<float32 name="Legendary Accuracy Time" visible="true" offset="0xC0"/>
+		<reflexive name="Firing Patterns" visible="true" offset="0xC4" entrySize="0x40">
+			<float32 name="Rate Of Fire" visible="true" offset="0x0"/>
+			<float32 name="Target Tracking" visible="true" offset="0x4"/>
+			<float32 name="Target Leading" visible="true" offset="0x8"/>
+			<float32 name="Burst Origin Radius" visible="true" offset="0xC"/>
+			<degree name="Burst Origin Angle" visible="true" offset="0x10"/>
+			<float32 name="Burst Return Length Bounds Min" visible="true" offset="0x14"/>
+			<float32 name="Burst Return Length Bounds Max" visible="true" offset="0x18"/>
+			<degree name="Burst Return Angle" visible="true" offset="0x1C"/>
+			<float32 name="Burst Duration Bounds Min" visible="true" offset="0x20"/>
+			<float32 name="Burst Duration Bounds Max" visible="true" offset="0x24"/>
+			<float32 name="Burst Separation Bounds Min" visible="true" offset="0x28"/>
+			<float32 name="Burst Separation Bounds Max" visible="true" offset="0x2C"/>
+			<float32 name="Weapon Damage Modifier" visible="true" offset="0x30"/>
+			<degree name="Projectile Error" visible="true" offset="0x34"/>
+			<degree name="Burst Angular Velocity" visible="true" offset="0x38"/>
+			<degree name="Maximum Error Angle" visible="true" offset="0x3C"/>
+		</reflexive>
+		<tagref name="Weapon Melee Damage" visible="true" offset="0xD0"/>
+	</reflexive>
+	<reflexive name="Firing Pattern Properties" visible="true" offset="0x1A4" entrySize="0x1C">
+		<tagref name="Weapon" visible="true" offset="0x0"/>
+		<reflexive name="Firing Patterns" visible="true" offset="0x10" entrySize="0x40">
+			<float32 name="Rate Of Fire" visible="true" offset="0x0"/>
+			<float32 name="Target Tracking" visible="true" offset="0x4"/>
+			<float32 name="Target Leading" visible="true" offset="0x8"/>
+			<float32 name="Burst Origin Radius" visible="true" offset="0xC"/>
+			<degree name="Burst Origin Angle" visible="true" offset="0x10"/>
+			<float32 name="Burst Return Length Bounds Min" visible="true" offset="0x14"/>
+			<float32 name="Burst Return Length Bounds Max" visible="true" offset="0x18"/>
+			<degree name="Burst Return Angle" visible="true" offset="0x1C"/>
+			<float32 name="Burst Duration Bounds Min" visible="true" offset="0x20"/>
+			<float32 name="Burst Duration Bounds Max" visible="true" offset="0x24"/>
+			<float32 name="Burst Separation Bounds Min" visible="true" offset="0x28"/>
+			<float32 name="Burst Separation Bounds Max" visible="true" offset="0x2C"/>
+			<float32 name="Weapon Damage Modifier" visible="true" offset="0x30"/>
+			<degree name="Projectile Error" visible="true" offset="0x34"/>
+			<degree name="Burst Angular Velocity" visible="true" offset="0x38"/>
+			<degree name="Maximum Error Angle" visible="true" offset="0x3C"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Grenades Properties" visible="true" offset="0x1B0" entrySize="0x3C">
+		<int32 name="Grenades Flags" visible="true" offset="0x0"/>
+		<enum16 name="Grenade Type" visible="true" offset="0x4">
+			<option name="Human Fragmentation" value="0x0"/>
+			<option name="Covenant Plasma" value="0x1"/>
+			<option name="Brute Claymore" value="0x2"/>
+			<option name="Firebomb" value="0x3"/>
+		</enum16>
+		<enum16 name="Trajectory Type" visible="true" offset="0x6">
+			<option name="Toss" value="0x0"/>
+			<option name="Lob" value="0x1"/>
+			<option name="Bounce" value="0x2"/>
+		</enum16>
+		<int32 name="Minimum Enemy Count" visible="true" offset="0x8"/>
+		<float32 name="Enemy Radius" visible="true" offset="0xC"/>
+		<float32 name="Grenade Ideal Velocity" visible="true" offset="0x10"/>
+		<float32 name="Grenade Velocity" visible="true" offset="0x14"/>
+		<float32 name="Grenade Range Min" visible="true" offset="0x18"/>
+		<float32 name="Grenade Range Max" visible="true" offset="0x1C"/>
+		<float32 name="Collateral Damage Radius" visible="true" offset="0x20"/>
+		<float32 name="Grenade Chance" visible="true" offset="0x24"/>
+		<float32 name="Grenade Throw Delay" visible="true" offset="0x28"/>
+		<float32 name="Grenade Uncover Chance" visible="true" offset="0x2C"/>
+		<float32 name="Anti Vehicle Grenade Chance" visible="true" offset="0x30"/>
+		<int16 name="Dropped Grenade Count Bounds Min" visible="true" offset="0x34"/>
+		<int16 name="Dropped Grenade Count Bounds Max" visible="true" offset="0x36"/>
+		<float32 name="Don TDrop Grenades Chance" visible="true" offset="0x38"/>
+	</reflexive>
+	<reflexive name="Vehicle Properties" visible="true" offset="0x1BC" entrySize="0xD0">
+		<tagref name="Unit" visible="true" offset="0x0"/>
+		<tagref name="Style" visible="true" offset="0x10"/>
+		<uint32 name="Vehicle Flags" visible="true" offset="0x20"/>
+		<float32 name="Ai Pathfinding Radius" visible="true" offset="0x24"/>
+		<float32 name="Ai Destination Radius" visible="true" offset="0x28"/>
+		<float32 name="Ai Deceleration Distance" visible="true" offset="0x2C"/>
+		<float32 name="Ai Turning Radius" visible="true" offset="0x30"/>
+		<float32 name="Ai Inner Turning Radius" visible="true" offset="0x34"/>
+		<float32 name="Ai Ideal Turning Radius" visible="true" offset="0x38"/>
+		<degree name="Ai Banshee Steering Maximum" visible="true" offset="0x3C"/>
+		<float32 name="Ai Max Steering Angle" visible="true" offset="0x40"/>
+		<float32 name="Ai Max Steering Delta" visible="true" offset="0x44"/>
+		<float32 name="Ai Oversteering Scale" visible="true" offset="0x48"/>
+		<degree name="Ai Oversteering Bounds Min" visible="true" offset="0x4C"/>
+		<degree name="Ai Oversteering Bounds Max" visible="true" offset="0x50"/>
+		<float32 name="Ai Side Slip Distance" visible="true" offset="0x54"/>
+		<float32 name="Ai Avoidance Distance" visible="true" offset="0x58"/>
+		<float32 name="Ai Minimum Urgency" visible="true" offset="0x5C"/>
+		<degree name="Unknown" visible="true" offset="0x60"/>
+		<uint32 name="Unknown2" visible="true" offset="0x64"/>
+		<float32 name="Ai Throttle Maximum" visible="true" offset="0x68"/>
+		<float32 name="Ai Goal Minimum Throttle Scale" visible="true" offset="0x6C"/>
+		<float32 name="Ai Turn Minimum Throttle Scale" visible="true" offset="0x70"/>
+		<float32 name="Ai Direction Minimum Throttle Scale" visible="true" offset="0x74"/>
+		<float32 name="Ai Acceleration Scale" visible="true" offset="0x78"/>
+		<float32 name="Ai Throttle Blend" visible="true" offset="0x7C"/>
+		<float32 name="Theoretical Max Speed" visible="true" offset="0x80"/>
+		<float32 name="Error Scale" visible="true" offset="0x84"/>
+		<degree name="Ai Allowable Aim Deviation Angle" visible="true" offset="0x88"/>
+		<float32 name="Ai Charge Tight Angle Distance" visible="true" offset="0x8C"/>
+		<float32 name="Ai Charge Tight Angle" visible="true" offset="0x90"/>
+		<float32 name="Ai Charge Repeat Timeout" visible="true" offset="0x94"/>
+		<float32 name="Ai Charge Look Ahead Time" visible="true" offset="0x98"/>
+		<float32 name="Ai Consider Distance" visible="true" offset="0x9C"/>
+		<float32 name="Ai Charge Abort Distance" visible="true" offset="0xA0"/>
+		<float32 name="Vehicle Ram Timeout" visible="true" offset="0xA4"/>
+		<float32 name="Ram Paralysis Time" visible="true" offset="0xA8"/>
+		<float32 name="Ai Cover Damage Threshold" visible="true" offset="0xAC"/>
+		<float32 name="Ai Cover Minimum Distance" visible="true" offset="0xB0"/>
+		<float32 name="Ai Cover Time" visible="true" offset="0xB4"/>
+		<float32 name="Ai Cover Minimum Boost Distance" visible="true" offset="0xB8"/>
+		<float32 name="Turtling Recent Damage Threshold" visible="true" offset="0xBC"/>
+		<float32 name="Turtling Minimum Time" visible="true" offset="0xC0"/>
+		<float32 name="Turtling Timeout" visible="true" offset="0xC4"/>
+		<enum16 name="Obstacle Ignore Size" visible="true" offset="0xC8">
+			<option name="None" value="0x0"/>
+			<option name="Tiny" value="0x1"/>
+			<option name="Small" value="0x2"/>
+			<option name="Medium" value="0x3"/>
+			<option name="Large" value="0x4"/>
+			<option name="Huge" value="0x5"/>
+			<option name="Immobile" value="0x6"/>
+		</enum16>
+		<int16 name="Unknown3" visible="true" offset="0xCA"/>
+		<int16 name="Unknown4" visible="true" offset="0xCC"/>
+		<int16 name="Unknown5" visible="true" offset="0xCE"/>
+	</reflexive>
+	<reflexive name="Morph Properties" visible="true" offset="0x1C8" entrySize="0xE4">
+		<tagref name="Morph Character1" visible="true" offset="0x0"/>
+		<tagref name="Morph Character2" visible="true" offset="0x10"/>
+		<tagref name="Morph Character3" visible="true" offset="0x20"/>
+		<tagref name="Morph Muffin" visible="true" offset="0x30"/>
+		<tagref name="Morph Weapon1" visible="true" offset="0x40"/>
+		<tagref name="Morph Weapon2" visible="true" offset="0x50"/>
+		<tagref name="Morph Weapon3" visible="true" offset="0x60"/>
+		<uint32 name="Unknown" visible="true" offset="0x70"/>
+		<uint32 name="Unknown2" visible="true" offset="0x74"/>
+		<uint32 name="Unknown3" visible="true" offset="0x78"/>
+		<uint32 name="Unknown4" visible="true" offset="0x7C"/>
+		<uint32 name="Unknown5" visible="true" offset="0x80"/>
+		<uint32 name="Unknown6" visible="true" offset="0x84"/>
+		<uint32 name="Unknown7" visible="true" offset="0x88"/>
+		<uint32 name="Unknown8" visible="true" offset="0x8C"/>
+		<tagref name="Character" visible="true" offset="0x90"/>
+		<uint32 name="Unknown9" visible="true" offset="0xA0"/>
+		<stringId name="Unknown10" visible="true" offset="0xA4"/>
+		<uint32 name="Unknown11" visible="true" offset="0xA8"/>
+		<uint32 name="Unknown12" visible="true" offset="0xAC"/>
+		<uint32 name="Unknown13" visible="true" offset="0xB0"/>
+		<uint32 name="Unknown14" visible="true" offset="0xB4"/>
+		<uint32 name="Unknown15" visible="true" offset="0xB8"/>
+		<uint32 name="Unknown16" visible="true" offset="0xBC"/>
+		<uint32 name="Unknown17" visible="true" offset="0xC0"/>
+		<uint32 name="Unknown18" visible="true" offset="0xC4"/>
+		<uint32 name="Unknown19" visible="true" offset="0xC8"/>
+		<uint32 name="Unknown20" visible="true" offset="0xCC"/>
+		<uint32 name="Unknown21" visible="true" offset="0xD0"/>
+		<uint32 name="Unknown22" visible="true" offset="0xD4"/>
+		<uint32 name="Unknown23" visible="true" offset="0xD8"/>
+		<uint32 name="Unknown24" visible="true" offset="0xDC"/>
+		<uint32 name="Unknown25" visible="true" offset="0xE0"/>
+	</reflexive>
+	<reflexive name="Equipment Properties" visible="true" offset="0x1D4" entrySize="0x24">
+		<tagref name="Equipment" visible="true" offset="0x0"/>
+		<uint32 name="Unknown" visible="true" offset="0x10"/>
+		<float32 name="Usage Chance" visible="true" offset="0x14"/>
+		<reflexive name="Usage Conditions" visible="true" offset="0x18" entrySize="0xC">
+			<int16 name="Unknown" visible="true" offset="0x0"/>
+			<int16 name="Unknown2" visible="true" offset="0x2"/>
+			<uint32 name="Unknown3" visible="true" offset="0x4"/>
+			<uint32 name="Unknown4" visible="true" offset="0x8"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Metagame Properties" visible="true" offset="0x1E0" entrySize="0x8">
+		<bitfield8 name="Flags" visible="true" offset="0x0">
+			<bit name="Must Have Active Seats" index="0"/>
+		</bitfield8>
+		<enum8 name="Unit" visible="true" offset="0x1">
+			<option name="Brute" value="0x0"/>
+			<option name="Grunt" value="0x1"/>
+			<option name="Jackal" value="0x2"/>
+			<option name="Marine" value="0x3"/>
+			<option name="Bugger" value="0x4"/>
+			<option name="Hunter" value="0x5"/>
+			<option name="Flood Infection" value="0x6"/>
+			<option name="Flood Carrier" value="0x7"/>
+			<option name="Flood Combat" value="0x8"/>
+			<option name="Flood Pureform" value="0x9"/>
+			<option name="Sentinel" value="0xA"/>
+			<option name="Elite" value="0xB"/>
+			<option name="Turret" value="0xC"/>
+			<option name="Mongoose" value="0xD"/>
+			<option name="Warthog" value="0xE"/>
+			<option name="Scorpion" value="0xF"/>
+			<option name="Hornet" value="0x10"/>
+			<option name="Pelican" value="0x11"/>
+			<option name="Shade" value="0x12"/>
+			<option name="Watchtower" value="0x13"/>
+			<option name="Ghost" value="0x14"/>
+			<option name="Chopper" value="0x15"/>
+			<option name="Mauler" value="0x16"/>
+			<option name="Wraith" value="0x17"/>
+			<option name="Banshee" value="0x18"/>
+			<option name="Phantom" value="0x19"/>
+			<option name="Scarab" value="0x1A"/>
+			<option name="Guntower" value="0x1B"/>
+			<option name="Engineer" value="0x1C"/>
+			<option name="Engineer Recharge Station" value="0x1D"/>
+		</enum8>
+		<enum8 name="Classification" visible="true" offset="0x2">
+			<option name="Infantry" value="0x0"/>
+			<option name="Leader" value="0x1"/>
+			<option name="Hero" value="0x2"/>
+			<option name="Specialist" value="0x3"/>
+			<option name="Light Vehicle" value="0x4"/>
+			<option name="Heavy Vehicle" value="0x5"/>
+			<option name="Giant Vehicle" value="0x6"/>
+			<option name="Standard Vehicle" value="0x7"/>
+		</enum8>
+		<uint8 name="pad0 Padding 0" visible="false" offset="0x3"/>
+		<int16 name="Points" visible="true" offset="0x4"/>
+		<uint8 name="pad1 Padding 0" visible="false" offset="0x6"/>
+		<uint8 name="pad1 Padding 1" visible="false" offset="0x7"/>
+	</reflexive>
+	<reflexive name="Act Attachments" visible="true" offset="0x1EC" entrySize="0x1C">
+		<stringId name="Activity Name" visible="true" offset="0x0"/>
+		<tagref name="Crate" visible="true" offset="0x4"/>
+		<stringId name="Crate Marker Name" visible="true" offset="0x14"/>
+		<stringId name="Unit Marker Name" visible="true" offset="0x18"/>
+	</reflexive>
+</plugin>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x5C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<float32 name="Forward Scale" visible="true" offset="0x0"/>
+	<float32 name="Sink Scale" visible="true" offset="0x4"/>
+	<float32 name="Average Throttle" visible="true" offset="0x8"/>
+	<float32 name="Maximum Throttle" visible="true" offset="0xC"/>
+	<float32 name="Movement Weight Threshold" visible="true" offset="0x10"/>
+	<float32 name="Danger Radius" visible="true" offset="0x14"/>
+	<float32 name="Danger Scale" visible="true" offset="0x18"/>
+	<float32 name="Target Scale" visible="true" offset="0x1C"/>
+	<float32 name="Target Distance" visible="true" offset="0x20"/>
+	<float32 name="Target Delay Time" visible="true" offset="0x24"/>
+	<float32 name="Target Kill Chance" visible="true" offset="0x28"/>
+	<float32 name="Ai Destroy Chance" visible="true" offset="0x2C"/>
+	<float32 name="Random Offset Scale" visible="true" offset="0x30"/>
+	<float32 name="Random Offset Period Min" visible="true" offset="0x34"/>
+	<float32 name="Random Offset Period Max" visible="true" offset="0x38"/>
+	<float32 name="Neighborhood Radius" visible="true" offset="0x3C"/>
+	<degree name="Perception Angle" visible="true" offset="0x40"/>
+	<float32 name="Avoidance Scale" visible="true" offset="0x44"/>
+	<float32 name="Avoidance Radius" visible="true" offset="0x48"/>
+	<float32 name="Alignment Scale" visible="true" offset="0x4C"/>
+	<float32 name="Position Scale" visible="true" offset="0x50"/>
+	<float32 name="Position Radii Min" visible="true" offset="0x54"/>
+	<float32 name="Position Radii Max" visible="true" offset="0x58"/>
+</plugin>

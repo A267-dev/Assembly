@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x48">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<tagref name="Underwater Environment" visible="true" offset="0x0"/>
+	<tagref name="Underwater Loop" visible="true" offset="0x10"/>
+	<uint32 name="Unknown" visible="true" offset="0x20"/>
+	<uint32 name="Unknown2" visible="true" offset="0x24"/>
+	<tagref name="Enter Underater" visible="true" offset="0x28"/>
+	<tagref name="Exit Underwater" visible="true" offset="0x38"/>
+</plugin>

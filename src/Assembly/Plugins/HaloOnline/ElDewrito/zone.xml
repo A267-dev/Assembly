@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x212">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<bitfield16 name="Flags" visible="true" offset="0x0">
+		<bit name="Bit0" index="0"/>
+		<bit name="Bit1" index="1"/>
+		<bit name="Bit2" index="2"/>
+		<bit name="Bit3" index="3"/>
+		<bit name="Bit4" index="4"/>
+		<bit name="Characters Use Previous Mission Weapons" index="5"/>
+	</bitfield16>
+	<reflexive name="Resource Definitions" visible="true" offset="0x2" entrySize="0x1C">
+		<uint32 name="Guid 0" visible="true" offset="0x0"/>
+		<uint32 name="Guid 1" visible="true" offset="0x4"/>
+		<uint32 name="Guid 2" visible="true" offset="0x8"/>
+		<uint32 name="Guid 3" visible="true" offset="0xC"/>
+		<int16 name="Unknown" visible="true" offset="0x10"/>
+		<int16 name="Unknown2" visible="true" offset="0x12"/>
+		<int16 name="Unknown3" visible="true" offset="0x14"/>
+		<int16 name="Unknown4" visible="true" offset="0x16"/>
+		<stringId name="Name" visible="true" offset="0x18"/>
+	</reflexive>
+	<reflexive name="Interop Definitions" visible="true" offset="0xE" entrySize="0x14">
+		<uint32 name="Guid 0" visible="true" offset="0x0"/>
+		<uint32 name="Guid 1" visible="true" offset="0x4"/>
+		<uint32 name="Guid 2" visible="true" offset="0x8"/>
+		<uint32 name="Guid 3" visible="true" offset="0xC"/>
+		<stringId name="Name" visible="true" offset="0x10"/>
+	</reflexive>
+	<comment title="Layout  Table"></comment>
+
+	<reflexive name="Codec Definitions" visible="true" offset="0x1A" entrySize="0x10">
+		<uint8 name="Guid 0" visible="true" offset="0x0"/>
+		<uint8 name="Guid 1" visible="true" offset="0x1"/>
+		<uint8 name="Guid 2" visible="true" offset="0x2"/>
+		<uint8 name="Guid 3" visible="true" offset="0x3"/>
+		<uint8 name="Guid 4" visible="true" offset="0x4"/>
+		<uint8 name="Guid 5" visible="true" offset="0x5"/>
+		<uint8 name="Guid 6" visible="true" offset="0x6"/>
+		<uint8 name="Guid 7" visible="true" offset="0x7"/>
+		<uint8 name="Guid 8" visible="true" offset="0x8"/>
+		<uint8 name="Guid 9" visible="true" offset="0x9"/>
+		<uint8 name="Guid 10" visible="true" offset="0xA"/>
+		<uint8 name="Guid 11" visible="true" offset="0xB"/>
+		<uint8 name="Guid 12" visible="true" offset="0xC"/>
+		<uint8 name="Guid 13" visible="true" offset="0xD"/>
+		<uint8 name="Guid 14" visible="true" offset="0xE"/>
+		<uint8 name="Guid 15" visible="true" offset="0xF"/>
+	</reflexive>
+	<reflexive name="Shared Files" visible="true" offset="0x26" entrySize="0x108">
+		<ascii name="Map Path" visible="true" offset="0x0" length="0x100"/>
+		<int16 name="Unknown" visible="true" offset="0x100"/>
+		<uint16 name="Flags" visible="true" offset="0x102"/>
+		<uint32 name="Block Offset" visible="true" offset="0x104"/>
+	</reflexive>
+	<reflexive name="Pages" visible="true" offset="0x32" entrySize="0x24">
+		<int16 name="Salt" visible="true" offset="0x0"/>
+		<bitfield8 name="Old Flags" visible="true" offset="0x2">
+			<bit name="Use Checksum" index="0"/>
+			<bit name="In Resources" index="1"/>
+			<bit name="In Textures" index="2"/>
+			<bit name="In Textures B" index="3"/>
+			<bit name="In Audio" index="4"/>
+			<bit name="In Resources B" index="5"/>
+			<bit name="Location Mask" index="6"/>
+			<bit name="In Mods" index="7"/>
+			<bit name="Use Checksum2" index="8"/>
+		</bitfield8>
+		<int8 name="Compression Codec Index" visible="true" offset="0x3"/>
+		<int32 name="Index" visible="true" offset="0x4"/>
+		<uint32 name="Compressed Block Size" visible="true" offset="0x8"/>
+		<uint32 name="Uncompressed Block Size" visible="true" offset="0xC"/>
+		<int32 name="Crc Checksum" visible="true" offset="0x10"/>
+		<uint32 name="Unknown Size" visible="true" offset="0x14"/>
+		<uint32 name="Unknown4" visible="true" offset="0x18"/>
+		<uint32 name="Unknown5" visible="true" offset="0x1C"/>
+		<uint32 name="Unknown6" visible="true" offset="0x20"/>
+	</reflexive>
+	<reflexive name="Subpage Tables" visible="true" offset="0x3E" entrySize="0x10">
+		<int32 name="Total Size" visible="true" offset="0x0"/>
+		<reflexive name="Subpages" visible="true" offset="0x4" entrySize="0x8">
+			<int32 name="Offset" visible="true" offset="0x0"/>
+			<int32 name="Size" visible="true" offset="0x4"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Sections" visible="true" offset="0x4A" entrySize="0x10">
+		<int16 name="Required Page Index" visible="true" offset="0x0"/>
+		<int16 name="Optional Page Index" visible="true" offset="0x2"/>
+		<int32 name="Required Segment Offset" visible="true" offset="0x4"/>
+		<int32 name="Optional Segment Offset" visible="true" offset="0x8"/>
+		<int16 name="Required Size Index" visible="true" offset="0xC"/>
+		<int16 name="Optional Size Index" visible="true" offset="0xE"/>
+	</reflexive>
+	<reflexive name="Tag Resources" visible="true" offset="0x56" entrySize="0x50">
+		<tagref name="Parent Tag" visible="true" offset="0x0"/>
+		<uint16 name="Salt" visible="true" offset="0x10"/>
+		<enum8 name="Resource Type" visible="true" offset="0x12">
+			<option name="Collision" value="0x0"/>
+			<option name="Bitmap" value="0x1"/>
+			<option name="Bitmap Interleaved" value="0x2"/>
+			<option name="Sound" value="0x3"/>
+			<option name="Animation" value="0x4"/>
+			<option name="Render Geometry" value="0x5"/>
+			<option name="Bink" value="0x6"/>
+			<option name="Pathfinding" value="0x7"/>
+			<option name="None" value="0xFFFFFFFF"/>
+		</enum8>
+		<uint8 name="Flags" visible="true" offset="0x13"/>
+		<dataRef name="Definition Data" visible="true" offset="0x14"/>
+		<comment title="Definition  Address"></comment>
+
+		<uint32 name="< Value>k__ Backing Field" visible="true" offset="0x28"/>
+		<int32 name="Type Shift" visible="true" offset="0x2C"/>
+		<uint32 name="Offset Mask" visible="true" offset="0x30"/>
+		<reflexive name="Fixup Locations" visible="true" offset="0x34" entrySize="0x10">
+			<uint32 name="Block Offset" visible="true" offset="0x0"/>
+			<comment title="Address"></comment>
+
+			<uint32 name="< Value>k__ Backing Field" visible="true" offset="0x4"/>
+			<int32 name="Type Shift" visible="true" offset="0x8"/>
+			<uint32 name="Offset Mask" visible="true" offset="0xC"/>
+		</reflexive>
+		<reflexive name="Interop Locations" visible="true" offset="0x40" entrySize="0x10">
+			<comment title="Address"></comment>
+
+			<uint32 name="< Value>k__ Backing Field" visible="true" offset="0x0"/>
+			<int32 name="Type Shift" visible="true" offset="0x4"/>
+			<uint32 name="Offset Mask" visible="true" offset="0x8"/>
+			<int32 name="Resource Structure Type Index" visible="true" offset="0xC"/>
+		</reflexive>
+		<int32 name="Unknown2" visible="true" offset="0x4C"/>
+	</reflexive>
+	<reflexive name="Designer Zone Manifests" visible="true" offset="0x62" entrySize="0x74">
+		<comment title="Required  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x0" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Unused  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0xC" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Optional  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x18" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Streamed  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x24" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Overall  Usage"></comment>
+
+		<uint32 name="Required Pageable Size" visible="true" offset="0x30"/>
+		<uint32 name="Deferred Required Size" visible="true" offset="0x34"/>
+		<uint32 name="Optional Memory Size" visible="true" offset="0x38"/>
+		<uint32 name="Streamed Size" visible="true" offset="0x3C"/>
+		<uint32 name="Dvd Memory Size" visible="true" offset="0x40"/>
+		<reflexive name="Resource Usage" visible="true" offset="0x44" entrySize="0x14">
+			<uint32 name="Required Pageable Size" visible="true" offset="0x0"/>
+			<uint32 name="Deferred Required Size" visible="true" offset="0x4"/>
+			<uint32 name="Optional Memory Size" visible="true" offset="0x8"/>
+			<uint32 name="Streamed Size" visible="true" offset="0xC"/>
+			<uint32 name="Dvd Memory Size" visible="true" offset="0x10"/>
+		</reflexive>
+		<comment title="Active  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x50" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Top  Level  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x5C" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Visitation Heirarchy" visible="true" offset="0x68" entrySize="0x0"/>
+	</reflexive>
+	<reflexive name="Global Zone Manifests" visible="true" offset="0x6E" entrySize="0x74">
+		<comment title="Required  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x0" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Unused  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0xC" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Optional  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x18" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Streamed  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x24" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Overall  Usage"></comment>
+
+		<uint32 name="Required Pageable Size" visible="true" offset="0x30"/>
+		<uint32 name="Deferred Required Size" visible="true" offset="0x34"/>
+		<uint32 name="Optional Memory Size" visible="true" offset="0x38"/>
+		<uint32 name="Streamed Size" visible="true" offset="0x3C"/>
+		<uint32 name="Dvd Memory Size" visible="true" offset="0x40"/>
+		<reflexive name="Resource Usage" visible="true" offset="0x44" entrySize="0x14">
+			<uint32 name="Required Pageable Size" visible="true" offset="0x0"/>
+			<uint32 name="Deferred Required Size" visible="true" offset="0x4"/>
+			<uint32 name="Optional Memory Size" visible="true" offset="0x8"/>
+			<uint32 name="Streamed Size" visible="true" offset="0xC"/>
+			<uint32 name="Dvd Memory Size" visible="true" offset="0x10"/>
+		</reflexive>
+		<comment title="Active  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x50" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Top  Level  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x5C" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Visitation Heirarchy" visible="true" offset="0x68" entrySize="0x0"/>
+	</reflexive>
+	<reflexive name="Hs Zone Manifests" visible="true" offset="0x7A" entrySize="0x74">
+		<comment title="Required  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x0" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Unused  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0xC" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Optional  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x18" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Streamed  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x24" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Overall  Usage"></comment>
+
+		<uint32 name="Required Pageable Size" visible="true" offset="0x30"/>
+		<uint32 name="Deferred Required Size" visible="true" offset="0x34"/>
+		<uint32 name="Optional Memory Size" visible="true" offset="0x38"/>
+		<uint32 name="Streamed Size" visible="true" offset="0x3C"/>
+		<uint32 name="Dvd Memory Size" visible="true" offset="0x40"/>
+		<reflexive name="Resource Usage" visible="true" offset="0x44" entrySize="0x14">
+			<uint32 name="Required Pageable Size" visible="true" offset="0x0"/>
+			<uint32 name="Deferred Required Size" visible="true" offset="0x4"/>
+			<uint32 name="Optional Memory Size" visible="true" offset="0x8"/>
+			<uint32 name="Streamed Size" visible="true" offset="0xC"/>
+			<uint32 name="Dvd Memory Size" visible="true" offset="0x10"/>
+		</reflexive>
+		<comment title="Active  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x50" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Top  Level  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x5C" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Visitation Heirarchy" visible="true" offset="0x68" entrySize="0x0"/>
+	</reflexive>
+	<reflexive name="Unattached Designer Zone Manifests" visible="true" offset="0x86" entrySize="0x74">
+		<comment title="Required  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x0" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Unused  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0xC" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Optional  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x18" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Streamed  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x24" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Overall  Usage"></comment>
+
+		<uint32 name="Required Pageable Size" visible="true" offset="0x30"/>
+		<uint32 name="Deferred Required Size" visible="true" offset="0x34"/>
+		<uint32 name="Optional Memory Size" visible="true" offset="0x38"/>
+		<uint32 name="Streamed Size" visible="true" offset="0x3C"/>
+		<uint32 name="Dvd Memory Size" visible="true" offset="0x40"/>
+		<reflexive name="Resource Usage" visible="true" offset="0x44" entrySize="0x14">
+			<uint32 name="Required Pageable Size" visible="true" offset="0x0"/>
+			<uint32 name="Deferred Required Size" visible="true" offset="0x4"/>
+			<uint32 name="Optional Memory Size" visible="true" offset="0x8"/>
+			<uint32 name="Streamed Size" visible="true" offset="0xC"/>
+			<uint32 name="Dvd Memory Size" visible="true" offset="0x10"/>
+		</reflexive>
+		<comment title="Active  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x50" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Top  Level  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x5C" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Visitation Heirarchy" visible="true" offset="0x68" entrySize="0x0"/>
+	</reflexive>
+	<reflexive name="Dvd Forbidden Zone Manifests" visible="true" offset="0x92" entrySize="0x74">
+		<comment title="Required  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x0" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Unused  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0xC" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Optional  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x18" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Streamed  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x24" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Overall  Usage"></comment>
+
+		<uint32 name="Required Pageable Size" visible="true" offset="0x30"/>
+		<uint32 name="Deferred Required Size" visible="true" offset="0x34"/>
+		<uint32 name="Optional Memory Size" visible="true" offset="0x38"/>
+		<uint32 name="Streamed Size" visible="true" offset="0x3C"/>
+		<uint32 name="Dvd Memory Size" visible="true" offset="0x40"/>
+		<reflexive name="Resource Usage" visible="true" offset="0x44" entrySize="0x14">
+			<uint32 name="Required Pageable Size" visible="true" offset="0x0"/>
+			<uint32 name="Deferred Required Size" visible="true" offset="0x4"/>
+			<uint32 name="Optional Memory Size" visible="true" offset="0x8"/>
+			<uint32 name="Streamed Size" visible="true" offset="0xC"/>
+			<uint32 name="Dvd Memory Size" visible="true" offset="0x10"/>
+		</reflexive>
+		<comment title="Active  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x50" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Top  Level  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x5C" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Visitation Heirarchy" visible="true" offset="0x68" entrySize="0x0"/>
+	</reflexive>
+	<reflexive name="Dvd Always Streaming Zone Manifests" visible="true" offset="0x9E" entrySize="0x74">
+		<comment title="Required  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x0" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Unused  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0xC" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Optional  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x18" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Streamed  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x24" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Overall  Usage"></comment>
+
+		<uint32 name="Required Pageable Size" visible="true" offset="0x30"/>
+		<uint32 name="Deferred Required Size" visible="true" offset="0x34"/>
+		<uint32 name="Optional Memory Size" visible="true" offset="0x38"/>
+		<uint32 name="Streamed Size" visible="true" offset="0x3C"/>
+		<uint32 name="Dvd Memory Size" visible="true" offset="0x40"/>
+		<reflexive name="Resource Usage" visible="true" offset="0x44" entrySize="0x14">
+			<uint32 name="Required Pageable Size" visible="true" offset="0x0"/>
+			<uint32 name="Deferred Required Size" visible="true" offset="0x4"/>
+			<uint32 name="Optional Memory Size" visible="true" offset="0x8"/>
+			<uint32 name="Streamed Size" visible="true" offset="0xC"/>
+			<uint32 name="Dvd Memory Size" visible="true" offset="0x10"/>
+		</reflexive>
+		<comment title="Active  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x50" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Top  Level  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x5C" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Visitation Heirarchy" visible="true" offset="0x68" entrySize="0x0"/>
+	</reflexive>
+	<reflexive name="Default Bsp Zone Manifests" visible="true" offset="0xAA" entrySize="0x74">
+		<comment title="Required  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x0" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Unused  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0xC" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Optional  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x18" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Streamed  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x24" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Overall  Usage"></comment>
+
+		<uint32 name="Required Pageable Size" visible="true" offset="0x30"/>
+		<uint32 name="Deferred Required Size" visible="true" offset="0x34"/>
+		<uint32 name="Optional Memory Size" visible="true" offset="0x38"/>
+		<uint32 name="Streamed Size" visible="true" offset="0x3C"/>
+		<uint32 name="Dvd Memory Size" visible="true" offset="0x40"/>
+		<reflexive name="Resource Usage" visible="true" offset="0x44" entrySize="0x14">
+			<uint32 name="Required Pageable Size" visible="true" offset="0x0"/>
+			<uint32 name="Deferred Required Size" visible="true" offset="0x4"/>
+			<uint32 name="Optional Memory Size" visible="true" offset="0x8"/>
+			<uint32 name="Streamed Size" visible="true" offset="0xC"/>
+			<uint32 name="Dvd Memory Size" visible="true" offset="0x10"/>
+		</reflexive>
+		<comment title="Active  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x50" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Top  Level  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x5C" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Visitation Heirarchy" visible="true" offset="0x68" entrySize="0x0"/>
+	</reflexive>
+	<reflexive name="Static Bsp Zone Manifests" visible="true" offset="0xB6" entrySize="0x74">
+		<comment title="Required  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x0" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Unused  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0xC" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Optional  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x18" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Streamed  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x24" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Overall  Usage"></comment>
+
+		<uint32 name="Required Pageable Size" visible="true" offset="0x30"/>
+		<uint32 name="Deferred Required Size" visible="true" offset="0x34"/>
+		<uint32 name="Optional Memory Size" visible="true" offset="0x38"/>
+		<uint32 name="Streamed Size" visible="true" offset="0x3C"/>
+		<uint32 name="Dvd Memory Size" visible="true" offset="0x40"/>
+		<reflexive name="Resource Usage" visible="true" offset="0x44" entrySize="0x14">
+			<uint32 name="Required Pageable Size" visible="true" offset="0x0"/>
+			<uint32 name="Deferred Required Size" visible="true" offset="0x4"/>
+			<uint32 name="Optional Memory Size" visible="true" offset="0x8"/>
+			<uint32 name="Streamed Size" visible="true" offset="0xC"/>
+			<uint32 name="Dvd Memory Size" visible="true" offset="0x10"/>
+		</reflexive>
+		<comment title="Active  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x50" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Top  Level  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x5C" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Visitation Heirarchy" visible="true" offset="0x68" entrySize="0x0"/>
+	</reflexive>
+	<reflexive name="Dynamic Bsp Zone Manifests" visible="true" offset="0xC2" entrySize="0x74">
+		<comment title="Required  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x0" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Unused  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0xC" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Optional  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x18" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Streamed  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x24" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Overall  Usage"></comment>
+
+		<uint32 name="Required Pageable Size" visible="true" offset="0x30"/>
+		<uint32 name="Deferred Required Size" visible="true" offset="0x34"/>
+		<uint32 name="Optional Memory Size" visible="true" offset="0x38"/>
+		<uint32 name="Streamed Size" visible="true" offset="0x3C"/>
+		<uint32 name="Dvd Memory Size" visible="true" offset="0x40"/>
+		<reflexive name="Resource Usage" visible="true" offset="0x44" entrySize="0x14">
+			<uint32 name="Required Pageable Size" visible="true" offset="0x0"/>
+			<uint32 name="Deferred Required Size" visible="true" offset="0x4"/>
+			<uint32 name="Optional Memory Size" visible="true" offset="0x8"/>
+			<uint32 name="Streamed Size" visible="true" offset="0xC"/>
+			<uint32 name="Dvd Memory Size" visible="true" offset="0x10"/>
+		</reflexive>
+		<comment title="Active  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x50" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Top  Level  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x5C" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Visitation Heirarchy" visible="true" offset="0x68" entrySize="0x0"/>
+	</reflexive>
+	<reflexive name="Cinematic Zone Manifests" visible="true" offset="0xCE" entrySize="0x74">
+		<comment title="Required  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x0" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Unused  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0xC" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Optional  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x18" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Streamed  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x24" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Overall  Usage"></comment>
+
+		<uint32 name="Required Pageable Size" visible="true" offset="0x30"/>
+		<uint32 name="Deferred Required Size" visible="true" offset="0x34"/>
+		<uint32 name="Optional Memory Size" visible="true" offset="0x38"/>
+		<uint32 name="Streamed Size" visible="true" offset="0x3C"/>
+		<uint32 name="Dvd Memory Size" visible="true" offset="0x40"/>
+		<reflexive name="Resource Usage" visible="true" offset="0x44" entrySize="0x14">
+			<uint32 name="Required Pageable Size" visible="true" offset="0x0"/>
+			<uint32 name="Deferred Required Size" visible="true" offset="0x4"/>
+			<uint32 name="Optional Memory Size" visible="true" offset="0x8"/>
+			<uint32 name="Streamed Size" visible="true" offset="0xC"/>
+			<uint32 name="Dvd Memory Size" visible="true" offset="0x10"/>
+		</reflexive>
+		<comment title="Active  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x50" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Top  Level  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x5C" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Visitation Heirarchy" visible="true" offset="0x68" entrySize="0x0"/>
+	</reflexive>
+	<reflexive name="Zones Only Zone Set Manifests" visible="true" offset="0xDA" entrySize="0x74">
+		<comment title="Required  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x0" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Unused  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0xC" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Optional  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x18" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Streamed  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x24" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Overall  Usage"></comment>
+
+		<uint32 name="Required Pageable Size" visible="true" offset="0x30"/>
+		<uint32 name="Deferred Required Size" visible="true" offset="0x34"/>
+		<uint32 name="Optional Memory Size" visible="true" offset="0x38"/>
+		<uint32 name="Streamed Size" visible="true" offset="0x3C"/>
+		<uint32 name="Dvd Memory Size" visible="true" offset="0x40"/>
+		<reflexive name="Resource Usage" visible="true" offset="0x44" entrySize="0x14">
+			<uint32 name="Required Pageable Size" visible="true" offset="0x0"/>
+			<uint32 name="Deferred Required Size" visible="true" offset="0x4"/>
+			<uint32 name="Optional Memory Size" visible="true" offset="0x8"/>
+			<uint32 name="Streamed Size" visible="true" offset="0xC"/>
+			<uint32 name="Dvd Memory Size" visible="true" offset="0x10"/>
+		</reflexive>
+		<comment title="Active  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x50" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Top  Level  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x5C" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Visitation Heirarchy" visible="true" offset="0x68" entrySize="0x0"/>
+	</reflexive>
+	<reflexive name="Expected Zone Manifests" visible="true" offset="0xE6" entrySize="0x74">
+		<comment title="Required  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x0" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Unused  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0xC" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Optional  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x18" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Streamed  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x24" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Overall  Usage"></comment>
+
+		<uint32 name="Required Pageable Size" visible="true" offset="0x30"/>
+		<uint32 name="Deferred Required Size" visible="true" offset="0x34"/>
+		<uint32 name="Optional Memory Size" visible="true" offset="0x38"/>
+		<uint32 name="Streamed Size" visible="true" offset="0x3C"/>
+		<uint32 name="Dvd Memory Size" visible="true" offset="0x40"/>
+		<reflexive name="Resource Usage" visible="true" offset="0x44" entrySize="0x14">
+			<uint32 name="Required Pageable Size" visible="true" offset="0x0"/>
+			<uint32 name="Deferred Required Size" visible="true" offset="0x4"/>
+			<uint32 name="Optional Memory Size" visible="true" offset="0x8"/>
+			<uint32 name="Streamed Size" visible="true" offset="0xC"/>
+			<uint32 name="Dvd Memory Size" visible="true" offset="0x10"/>
+		</reflexive>
+		<comment title="Active  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x50" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Top  Level  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x5C" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Visitation Heirarchy" visible="true" offset="0x68" entrySize="0x0"/>
+	</reflexive>
+	<reflexive name="Fully Populated Zone Manifests" visible="true" offset="0xF2" entrySize="0x74">
+		<comment title="Required  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x0" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Unused  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0xC" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Optional  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x18" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Streamed  Resources  Bit  Vector"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x24" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Overall  Usage"></comment>
+
+		<uint32 name="Required Pageable Size" visible="true" offset="0x30"/>
+		<uint32 name="Deferred Required Size" visible="true" offset="0x34"/>
+		<uint32 name="Optional Memory Size" visible="true" offset="0x38"/>
+		<uint32 name="Streamed Size" visible="true" offset="0x3C"/>
+		<uint32 name="Dvd Memory Size" visible="true" offset="0x40"/>
+		<reflexive name="Resource Usage" visible="true" offset="0x44" entrySize="0x14">
+			<uint32 name="Required Pageable Size" visible="true" offset="0x0"/>
+			<uint32 name="Deferred Required Size" visible="true" offset="0x4"/>
+			<uint32 name="Optional Memory Size" visible="true" offset="0x8"/>
+			<uint32 name="Streamed Size" visible="true" offset="0xC"/>
+			<uint32 name="Dvd Memory Size" visible="true" offset="0x10"/>
+		</reflexive>
+		<comment title="Active  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x50" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<comment title="Top  Level  Resource  Owners"></comment>
+
+		<reflexive name="Words" visible="true" offset="0x5C" entrySize="0x4">
+			<uint32 name="Value" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Visitation Heirarchy" visible="true" offset="0x68" entrySize="0x0"/>
+	</reflexive>
+	<reflexive name="Zone Set Zone Usages" visible="true" offset="0xFE" entrySize="0x24">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<int32 name="Bsp Group Index" visible="true" offset="0x4"/>
+		<bitfield32 name="Import Loaded Bsps" visible="true" offset="0x8">
+			<bit name="Bsp0" index="0"/>
+			<bit name="Bsp1" index="1"/>
+			<bit name="Bsp2" index="2"/>
+			<bit name="Bsp3" index="3"/>
+			<bit name="Bsp4" index="4"/>
+			<bit name="Bsp5" index="5"/>
+			<bit name="Bsp6" index="6"/>
+			<bit name="Bsp7" index="7"/>
+			<bit name="Bsp8" index="8"/>
+			<bit name="Bsp9" index="9"/>
+			<bit name="Bsp10" index="10"/>
+			<bit name="Bsp11" index="11"/>
+			<bit name="Bsp12" index="12"/>
+			<bit name="Bsp13" index="13"/>
+			<bit name="Bsp14" index="14"/>
+			<bit name="Bsp15" index="15"/>
+			<bit name="Bsp16" index="16"/>
+			<bit name="Bsp17" index="17"/>
+			<bit name="Bsp18" index="18"/>
+			<bit name="Bsp19" index="19"/>
+			<bit name="Bsp20" index="20"/>
+			<bit name="Bsp21" index="21"/>
+			<bit name="Bsp22" index="22"/>
+			<bit name="Bsp23" index="23"/>
+			<bit name="Bsp24" index="24"/>
+			<bit name="Bsp25" index="25"/>
+			<bit name="Bsp26" index="26"/>
+			<bit name="Bsp27" index="27"/>
+			<bit name="Bsp28" index="28"/>
+			<bit name="Bsp29" index="29"/>
+			<bit name="Bsp30" index="30"/>
+			<bit name="Bsp31" index="31"/>
+		</bitfield32>
+		<bitfield32 name="Loaded Bsps" visible="true" offset="0xC">
+			<bit name="Bsp0" index="0"/>
+			<bit name="Bsp1" index="1"/>
+			<bit name="Bsp2" index="2"/>
+			<bit name="Bsp3" index="3"/>
+			<bit name="Bsp4" index="4"/>
+			<bit name="Bsp5" index="5"/>
+			<bit name="Bsp6" index="6"/>
+			<bit name="Bsp7" index="7"/>
+			<bit name="Bsp8" index="8"/>
+			<bit name="Bsp9" index="9"/>
+			<bit name="Bsp10" index="10"/>
+			<bit name="Bsp11" index="11"/>
+			<bit name="Bsp12" index="12"/>
+			<bit name="Bsp13" index="13"/>
+			<bit name="Bsp14" index="14"/>
+			<bit name="Bsp15" index="15"/>
+			<bit name="Bsp16" index="16"/>
+			<bit name="Bsp17" index="17"/>
+			<bit name="Bsp18" index="18"/>
+			<bit name="Bsp19" index="19"/>
+			<bit name="Bsp20" index="20"/>
+			<bit name="Bsp21" index="21"/>
+			<bit name="Bsp22" index="22"/>
+			<bit name="Bsp23" index="23"/>
+			<bit name="Bsp24" index="24"/>
+			<bit name="Bsp25" index="25"/>
+			<bit name="Bsp26" index="26"/>
+			<bit name="Bsp27" index="27"/>
+			<bit name="Bsp28" index="28"/>
+			<bit name="Bsp29" index="29"/>
+			<bit name="Bsp30" index="30"/>
+			<bit name="Bsp31" index="31"/>
+		</bitfield32>
+		<bitfield32 name="Loaded Designer Zonesets" visible="true" offset="0x10">
+			<bit name="Set0" index="0"/>
+			<bit name="Set1" index="1"/>
+			<bit name="Set2" index="2"/>
+			<bit name="Set3" index="3"/>
+			<bit name="Set4" index="4"/>
+			<bit name="Set5" index="5"/>
+			<bit name="Set6" index="6"/>
+			<bit name="Set7" index="7"/>
+			<bit name="Set8" index="8"/>
+			<bit name="Set9" index="9"/>
+			<bit name="Set10" index="10"/>
+			<bit name="Set11" index="11"/>
+			<bit name="Set12" index="12"/>
+			<bit name="Set13" index="13"/>
+			<bit name="Set14" index="14"/>
+			<bit name="Set15" index="15"/>
+			<bit name="Set16" index="16"/>
+			<bit name="Set17" index="17"/>
+			<bit name="Set18" index="18"/>
+			<bit name="Set19" index="19"/>
+			<bit name="Set20" index="20"/>
+			<bit name="Set21" index="21"/>
+			<bit name="Set22" index="22"/>
+			<bit name="Set23" index="23"/>
+			<bit name="Set24" index="24"/>
+			<bit name="Set25" index="25"/>
+			<bit name="Set26" index="26"/>
+			<bit name="Set27" index="27"/>
+			<bit name="Set28" index="28"/>
+			<bit name="Set29" index="29"/>
+			<bit name="Set30" index="30"/>
+			<bit name="Set31" index="31"/>
+		</bitfield32>
+		<bitfield32 name="Unknown Loaded Designer Zonesets" visible="true" offset="0x14">
+			<bit name="Set0" index="0"/>
+			<bit name="Set1" index="1"/>
+			<bit name="Set2" index="2"/>
+			<bit name="Set3" index="3"/>
+			<bit name="Set4" index="4"/>
+			<bit name="Set5" index="5"/>
+			<bit name="Set6" index="6"/>
+			<bit name="Set7" index="7"/>
+			<bit name="Set8" index="8"/>
+			<bit name="Set9" index="9"/>
+			<bit name="Set10" index="10"/>
+			<bit name="Set11" index="11"/>
+			<bit name="Set12" index="12"/>
+			<bit name="Set13" index="13"/>
+			<bit name="Set14" index="14"/>
+			<bit name="Set15" index="15"/>
+			<bit name="Set16" index="16"/>
+			<bit name="Set17" index="17"/>
+			<bit name="Set18" index="18"/>
+			<bit name="Set19" index="19"/>
+			<bit name="Set20" index="20"/>
+			<bit name="Set21" index="21"/>
+			<bit name="Set22" index="22"/>
+			<bit name="Set23" index="23"/>
+			<bit name="Set24" index="24"/>
+			<bit name="Set25" index="25"/>
+			<bit name="Set26" index="26"/>
+			<bit name="Set27" index="27"/>
+			<bit name="Set28" index="28"/>
+			<bit name="Set29" index="29"/>
+			<bit name="Set30" index="30"/>
+			<bit name="Set31" index="31"/>
+		</bitfield32>
+		<bitfield32 name="Unloaded Designer Zonesets" visible="true" offset="0x18">
+			<bit name="Set0" index="0"/>
+			<bit name="Set1" index="1"/>
+			<bit name="Set2" index="2"/>
+			<bit name="Set3" index="3"/>
+			<bit name="Set4" index="4"/>
+			<bit name="Set5" index="5"/>
+			<bit name="Set6" index="6"/>
+			<bit name="Set7" index="7"/>
+			<bit name="Set8" index="8"/>
+			<bit name="Set9" index="9"/>
+			<bit name="Set10" index="10"/>
+			<bit name="Set11" index="11"/>
+			<bit name="Set12" index="12"/>
+			<bit name="Set13" index="13"/>
+			<bit name="Set14" index="14"/>
+			<bit name="Set15" index="15"/>
+			<bit name="Set16" index="16"/>
+			<bit name="Set17" index="17"/>
+			<bit name="Set18" index="18"/>
+			<bit name="Set19" index="19"/>
+			<bit name="Set20" index="20"/>
+			<bit name="Set21" index="21"/>
+			<bit name="Set22" index="22"/>
+			<bit name="Set23" index="23"/>
+			<bit name="Set24" index="24"/>
+			<bit name="Set25" index="25"/>
+			<bit name="Set26" index="26"/>
+			<bit name="Set27" index="27"/>
+			<bit name="Set28" index="28"/>
+			<bit name="Set29" index="29"/>
+			<bit name="Set30" index="30"/>
+			<bit name="Set31" index="31"/>
+		</bitfield32>
+		<bitfield32 name="Loaded Cinematic Zonesets" visible="true" offset="0x1C">
+			<bit name="Set0" index="0"/>
+			<bit name="Set1" index="1"/>
+			<bit name="Set2" index="2"/>
+			<bit name="Set3" index="3"/>
+			<bit name="Set4" index="4"/>
+			<bit name="Set5" index="5"/>
+			<bit name="Set6" index="6"/>
+			<bit name="Set7" index="7"/>
+			<bit name="Set8" index="8"/>
+			<bit name="Set9" index="9"/>
+			<bit name="Set10" index="10"/>
+			<bit name="Set11" index="11"/>
+			<bit name="Set12" index="12"/>
+			<bit name="Set13" index="13"/>
+			<bit name="Set14" index="14"/>
+			<bit name="Set15" index="15"/>
+			<bit name="Set16" index="16"/>
+			<bit name="Set17" index="17"/>
+			<bit name="Set18" index="18"/>
+			<bit name="Set19" index="19"/>
+			<bit name="Set20" index="20"/>
+			<bit name="Set21" index="21"/>
+			<bit name="Set22" index="22"/>
+			<bit name="Set23" index="23"/>
+			<bit name="Set24" index="24"/>
+			<bit name="Set25" index="25"/>
+			<bit name="Set26" index="26"/>
+			<bit name="Set27" index="27"/>
+			<bit name="Set28" index="28"/>
+			<bit name="Set29" index="29"/>
+			<bit name="Set30" index="30"/>
+			<bit name="Set31" index="31"/>
+		</bitfield32>
+		<int32 name="Bsp Atlas Index" visible="true" offset="0x20"/>
+	</reflexive>
+	<reflexive name="Bsp References" visible="true" offset="0x10A" entrySize="0x10">
+		<tagref name="tagref" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Tag References" visible="true" offset="0x116" entrySize="0x10">
+		<tagref name="Instance" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Model Variant Usages" visible="true" offset="0x122" entrySize="0x0"/>
+	<reflexive name="Character Usages" visible="true" offset="0x12E" entrySize="0x0"/>
+	<dataRef name="Definition Data" visible="true" offset="0x13A"/>
+	<uint32 name="Minimum Complete Pageable Data Size" visible="true" offset="0x14E"/>
+	<uint32 name="Minimum Required Pageable Data Size" visible="true" offset="0x152"/>
+	<uint32 name="Minimum Required Dvd Data Size" visible="true" offset="0x156"/>
+	<uint32 name="Global Pageable Data Size" visible="true" offset="0x15A"/>
+	<uint32 name="Optional Control Data Size" visible="true" offset="0x15E"/>
+	<reflexive name="Global Resource Usage" visible="true" offset="0x162" entrySize="0x14">
+		<uint32 name="Required Pageable Size" visible="true" offset="0x0"/>
+		<uint32 name="Deferred Required Size" visible="true" offset="0x4"/>
+		<uint32 name="Optional Memory Size" visible="true" offset="0x8"/>
+		<uint32 name="Streamed Size" visible="true" offset="0xC"/>
+		<uint32 name="Dvd Memory Size" visible="true" offset="0x10"/>
+	</reflexive>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x16E"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x16F"/>
+	<uint8 name="Unused Padding 2" visible="false" offset="0x170"/>
+	<uint8 name="Unused Padding 3" visible="false" offset="0x171"/>
+	<uint8 name="Unused Padding 4" visible="false" offset="0x172"/>
+	<uint8 name="Unused Padding 5" visible="false" offset="0x173"/>
+	<uint8 name="Unused Padding 6" visible="false" offset="0x174"/>
+	<uint8 name="Unused Padding 7" visible="false" offset="0x175"/>
+	<uint8 name="Unused Padding 8" visible="false" offset="0x176"/>
+	<uint8 name="Unused Padding 9" visible="false" offset="0x177"/>
+	<uint8 name="Unused Padding 10" visible="false" offset="0x178"/>
+	<uint8 name="Unused Padding 11" visible="false" offset="0x179"/>
+	<uint8 name="Unused Padding 12" visible="false" offset="0x17A"/>
+	<uint8 name="Unused Padding 13" visible="false" offset="0x17B"/>
+	<uint8 name="Unused Padding 14" visible="false" offset="0x17C"/>
+	<uint8 name="Unused Padding 15" visible="false" offset="0x17D"/>
+	<uint8 name="Unused Padding 16" visible="false" offset="0x17E"/>
+	<uint8 name="Unused Padding 17" visible="false" offset="0x17F"/>
+	<uint8 name="Unused Padding 18" visible="false" offset="0x180"/>
+	<uint8 name="Unused Padding 19" visible="false" offset="0x181"/>
+	<uint8 name="Unused Padding 20" visible="false" offset="0x182"/>
+	<uint8 name="Unused Padding 21" visible="false" offset="0x183"/>
+	<uint8 name="Unused Padding 22" visible="false" offset="0x184"/>
+	<uint8 name="Unused Padding 23" visible="false" offset="0x185"/>
+	<uint8 name="Unused Padding 24" visible="false" offset="0x186"/>
+	<uint8 name="Unused Padding 25" visible="false" offset="0x187"/>
+	<uint8 name="Unused Padding 26" visible="false" offset="0x188"/>
+	<uint8 name="Unused Padding 27" visible="false" offset="0x189"/>
+	<uint8 name="Unused Padding 28" visible="false" offset="0x18A"/>
+	<uint8 name="Unused Padding 29" visible="false" offset="0x18B"/>
+	<uint8 name="Unused Padding 30" visible="false" offset="0x18C"/>
+	<uint8 name="Unused Padding 31" visible="false" offset="0x18D"/>
+	<uint8 name="Unused Padding 32" visible="false" offset="0x18E"/>
+	<uint8 name="Unused Padding 33" visible="false" offset="0x18F"/>
+	<uint8 name="Unused Padding 34" visible="false" offset="0x190"/>
+	<uint8 name="Unused Padding 35" visible="false" offset="0x191"/>
+	<uint8 name="Unused Padding 36" visible="false" offset="0x192"/>
+	<uint8 name="Unused Padding 37" visible="false" offset="0x193"/>
+	<uint8 name="Unused Padding 38" visible="false" offset="0x194"/>
+	<uint8 name="Unused Padding 39" visible="false" offset="0x195"/>
+	<uint8 name="Unused Padding 40" visible="false" offset="0x196"/>
+	<uint8 name="Unused Padding 41" visible="false" offset="0x197"/>
+	<uint8 name="Unused Padding 42" visible="false" offset="0x198"/>
+	<uint8 name="Unused Padding 43" visible="false" offset="0x199"/>
+	<uint8 name="Unused Padding 44" visible="false" offset="0x19A"/>
+	<uint8 name="Unused Padding 45" visible="false" offset="0x19B"/>
+	<uint8 name="Unused Padding 46" visible="false" offset="0x19C"/>
+	<uint8 name="Unused Padding 47" visible="false" offset="0x19D"/>
+	<uint8 name="Unused Padding 48" visible="false" offset="0x19E"/>
+	<uint8 name="Unused Padding 49" visible="false" offset="0x19F"/>
+	<uint8 name="Unused Padding 50" visible="false" offset="0x1A0"/>
+	<uint8 name="Unused Padding 51" visible="false" offset="0x1A1"/>
+	<uint8 name="Unused Padding 52" visible="false" offset="0x1A2"/>
+	<uint8 name="Unused Padding 53" visible="false" offset="0x1A3"/>
+	<uint8 name="Unused Padding 54" visible="false" offset="0x1A4"/>
+	<uint8 name="Unused Padding 55" visible="false" offset="0x1A5"/>
+	<uint8 name="Unused Padding 56" visible="false" offset="0x1A6"/>
+	<uint8 name="Unused Padding 57" visible="false" offset="0x1A7"/>
+	<uint8 name="Unused Padding 58" visible="false" offset="0x1A8"/>
+	<uint8 name="Unused Padding 59" visible="false" offset="0x1A9"/>
+	<uint8 name="Unused Padding 60" visible="false" offset="0x1AA"/>
+	<uint8 name="Unused Padding 61" visible="false" offset="0x1AB"/>
+	<uint8 name="Unused Padding 62" visible="false" offset="0x1AC"/>
+	<uint8 name="Unused Padding 63" visible="false" offset="0x1AD"/>
+	<uint8 name="Unused Padding 64" visible="false" offset="0x1AE"/>
+	<uint8 name="Unused Padding 65" visible="false" offset="0x1AF"/>
+	<uint8 name="Unused Padding 66" visible="false" offset="0x1B0"/>
+	<uint8 name="Unused Padding 67" visible="false" offset="0x1B1"/>
+	<uint8 name="Unused Padding 68" visible="false" offset="0x1B2"/>
+	<uint8 name="Unused Padding 69" visible="false" offset="0x1B3"/>
+	<uint8 name="Unused Padding 70" visible="false" offset="0x1B4"/>
+	<uint8 name="Unused Padding 71" visible="false" offset="0x1B5"/>
+	<uint8 name="Unused Padding 72" visible="false" offset="0x1B6"/>
+	<uint8 name="Unused Padding 73" visible="false" offset="0x1B7"/>
+	<uint8 name="Unused Padding 74" visible="false" offset="0x1B8"/>
+	<uint8 name="Unused Padding 75" visible="false" offset="0x1B9"/>
+	<uint8 name="Unused Padding 76" visible="false" offset="0x1BA"/>
+	<uint8 name="Unused Padding 77" visible="false" offset="0x1BB"/>
+	<uint8 name="Unused Padding 78" visible="false" offset="0x1BC"/>
+	<uint8 name="Unused Padding 79" visible="false" offset="0x1BD"/>
+	<uint8 name="Unused Padding 80" visible="false" offset="0x1BE"/>
+	<uint8 name="Unused Padding 81" visible="false" offset="0x1BF"/>
+	<uint8 name="Unused Padding 82" visible="false" offset="0x1C0"/>
+	<uint8 name="Unused Padding 83" visible="false" offset="0x1C1"/>
+	<uint8 name="Unused Padding 84" visible="false" offset="0x1C2"/>
+	<uint8 name="Unused Padding 85" visible="false" offset="0x1C3"/>
+	<uint8 name="Unused Padding 86" visible="false" offset="0x1C4"/>
+	<uint8 name="Unused Padding 87" visible="false" offset="0x1C5"/>
+	<uint8 name="Unused Padding 88" visible="false" offset="0x1C6"/>
+	<uint8 name="Unused Padding 89" visible="false" offset="0x1C7"/>
+	<uint8 name="Unused Padding 90" visible="false" offset="0x1C8"/>
+	<uint8 name="Unused Padding 91" visible="false" offset="0x1C9"/>
+	<uint8 name="Unused Padding 92" visible="false" offset="0x1CA"/>
+	<uint8 name="Unused Padding 93" visible="false" offset="0x1CB"/>
+	<uint8 name="Unused Padding 94" visible="false" offset="0x1CC"/>
+	<uint8 name="Unused Padding 95" visible="false" offset="0x1CD"/>
+	<reflexive name="Prediction Quanta" visible="true" offset="0x1CE" entrySize="0x4">
+		<uint16 name="Resource Handle  Index" visible="true" offset="0x0"/>
+		<uint16 name="Resource Handle  Identifier" visible="true" offset="0x2"/>
+	</reflexive>
+	<reflexive name="Prediction Atoms" visible="true" offset="0x1DA" entrySize="0x8">
+		<uint16 name="Identifier" visible="true" offset="0x0"/>
+		<int16 name="Quantum Count" visible="true" offset="0x2"/>
+		<int32 name="First Quantum Index" visible="true" offset="0x4"/>
+	</reflexive>
+	<reflexive name="Prediction Molecule Atoms" visible="true" offset="0x1E6" entrySize="0x4">
+		<uint16 name="Atom Handle  Index" visible="true" offset="0x0"/>
+		<uint16 name="Atom Handle  Identifier" visible="true" offset="0x2"/>
+	</reflexive>
+	<reflexive name="Prediction Molecules" visible="true" offset="0x1F2" entrySize="0x8">
+		<int16 name="Molecule Atom Count" visible="true" offset="0x0"/>
+		<int16 name="First Molecule Atom Index" visible="true" offset="0x2"/>
+		<int16 name="Quantum Count" visible="true" offset="0x4"/>
+		<int16 name="First Quantum Index" visible="true" offset="0x6"/>
+	</reflexive>
+	<reflexive name="Prediction Molecule Keys" visible="true" offset="0x1FE" entrySize="0x18">
+		<tagref name="Owner" visible="true" offset="0x0"/>
+		<int32 name="First Value" visible="true" offset="0x10"/>
+		<int32 name="Second Value" visible="true" offset="0x14"/>
+	</reflexive>
+	<int32 name="Campaign Id" visible="true" offset="0x20A"/>
+	<int32 name="Map Id" visible="true" offset="0x20E"/>
+</plugin>

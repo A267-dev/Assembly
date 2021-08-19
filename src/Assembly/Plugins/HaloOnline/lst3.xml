@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x70">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<bitfield32 name="Flags" visible="true" offset="0x0">
+		<bit name="Bit0" index="0"/>
+		<bit name="Bit1" index="1"/>
+		<bit name="Bit2" index="2"/>
+		<bit name="Bit3" index="3"/>
+		<bit name="Horizontal" index="4"/>
+		<bit name="Loops" index="5"/>
+		<bit name="Bit6" index="6"/>
+		<bit name="Bit7" index="7"/>
+		<bit name="Bit8" index="8"/>
+		<bit name="Bit9" index="9"/>
+		<bit name="Bit10" index="10"/>
+		<bit name="Bit11" index="11"/>
+		<bit name="Bit12" index="12"/>
+		<bit name="Bit13" index="13"/>
+		<bit name="Bit14" index="14"/>
+		<bit name="Bit15" index="15"/>
+		<bit name="Bit16" index="16"/>
+		<bit name="Bit17" index="17"/>
+		<bit name="Bit18" index="18"/>
+		<bit name="Bit19" index="19"/>
+		<bit name="Bit20" index="20"/>
+		<bit name="Bit21" index="21"/>
+		<bit name="Bit22" index="22"/>
+		<bit name="Bit23" index="23"/>
+		<bit name="Bit24" index="24"/>
+		<bit name="Bit25" index="25"/>
+		<bit name="Bit26" index="26"/>
+		<bit name="Bit27" index="27"/>
+		<bit name="Bit28" index="28"/>
+		<bit name="Bit29" index="29"/>
+		<bit name="Bit30" index="30"/>
+		<bit name="Bit31" index="31"/>
+	</bitfield32>
+	<comment title="Gui  Render  Block"></comment>
+
+	<stringId name="Name" visible="true" offset="0x4"/>
+	<int16 name="Unknown" visible="true" offset="0x8"/>
+	<int16 name="Layer" visible="true" offset="0xA"/>
+	<int16 name="Widescreen YMin" visible="true" offset="0xC"/>
+	<int16 name="Widescreen XMin" visible="true" offset="0xE"/>
+	<int16 name="Widescreen YMax" visible="true" offset="0x10"/>
+	<int16 name="Widescreen XMax" visible="true" offset="0x12"/>
+	<int16 name="Standard YMin" visible="true" offset="0x14"/>
+	<int16 name="Standard XMin" visible="true" offset="0x16"/>
+	<int16 name="Standard YMax" visible="true" offset="0x18"/>
+	<int16 name="Standard XMax" visible="true" offset="0x1A"/>
+	<tagref name="Animation" visible="true" offset="0x1C"/>
+	<stringId name="Data Source Name" visible="true" offset="0x2C"/>
+	<tagref name="Skin" visible="true" offset="0x30"/>
+	<int32 name="Row Count" visible="true" offset="0x40"/>
+	<reflexive name="List Widget Items" visible="true" offset="0x44" entrySize="0x30">
+		<uint32 name="Flags" visible="true" offset="0x0"/>
+		<comment title="Gui  Render  Block"></comment>
+
+		<stringId name="Name" visible="true" offset="0x4"/>
+		<int16 name="Unknown" visible="true" offset="0x8"/>
+		<int16 name="Layer" visible="true" offset="0xA"/>
+		<int16 name="Widescreen YMin" visible="true" offset="0xC"/>
+		<int16 name="Widescreen XMin" visible="true" offset="0xE"/>
+		<int16 name="Widescreen YMax" visible="true" offset="0x10"/>
+		<int16 name="Widescreen XMax" visible="true" offset="0x12"/>
+		<int16 name="Standard YMin" visible="true" offset="0x14"/>
+		<int16 name="Standard XMin" visible="true" offset="0x16"/>
+		<int16 name="Standard YMax" visible="true" offset="0x18"/>
+		<int16 name="Standard XMax" visible="true" offset="0x1A"/>
+		<tagref name="Animation" visible="true" offset="0x1C"/>
+		<stringId name="Target" visible="true" offset="0x2C"/>
+	</reflexive>
+	<tagref name="Up Arrow Bitmap" visible="true" offset="0x50"/>
+	<tagref name="Down Arrow Bitmap" visible="true" offset="0x60"/>
+</plugin>

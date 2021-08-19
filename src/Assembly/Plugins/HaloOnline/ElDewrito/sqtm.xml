@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x10">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<stringId name="Name" visible="true" offset="0x0"/>
+	<reflexive name="Cell Templates" visible="true" offset="0x4" entrySize="0x60">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<bitfield16 name="Difficulty Flags" visible="true" offset="0x4">
+			<bit name="Easy" index="0"/>
+			<bit name="Normal" index="1"/>
+			<bit name="Heroic" index="2"/>
+			<bit name="Legendary" index="3"/>
+		</bitfield16>
+		<uint8 name="Padding1 Padding 0" visible="false" offset="0x6"/>
+		<uint8 name="Padding1 Padding 1" visible="false" offset="0x7"/>
+		<int16 name="Minimum Round" visible="true" offset="0x8"/>
+		<int16 name="Maximum Round" visible="true" offset="0xA"/>
+		<int16 name="Unknown2" visible="true" offset="0xC"/>
+		<int16 name="Unknown3" visible="true" offset="0xE"/>
+		<int16 name="Count" visible="true" offset="0x10"/>
+		<int16 name="Unknown4" visible="true" offset="0x12"/>
+		<reflexive name="Characters" visible="true" offset="0x14" entrySize="0x20">
+			<bitfield16 name="Difficulty Flags" visible="true" offset="0x0">
+				<bit name="Easy" index="0"/>
+				<bit name="Normal" index="1"/>
+				<bit name="Heroic" index="2"/>
+				<bit name="Legendary" index="3"/>
+			</bitfield16>
+			<uint8 name="Padding1 Padding 0" visible="false" offset="0x2"/>
+			<uint8 name="Padding1 Padding 1" visible="false" offset="0x3"/>
+			<int16 name="Minimum Round" visible="true" offset="0x4"/>
+			<int16 name="Maximum Round" visible="true" offset="0x6"/>
+			<uint32 name="Unknown3" visible="true" offset="0x8"/>
+			<tagref name="Object" visible="true" offset="0xC"/>
+			<int16 name="Probability" visible="true" offset="0x1C"/>
+			<uint8 name="Padding2 Padding 0" visible="false" offset="0x1E"/>
+			<uint8 name="Padding2 Padding 1" visible="false" offset="0x1F"/>
+		</reflexive>
+		<reflexive name="Initial Weapons" visible="true" offset="0x20" entrySize="0x20">
+			<bitfield16 name="Difficulty Flags" visible="true" offset="0x0">
+				<bit name="Easy" index="0"/>
+				<bit name="Normal" index="1"/>
+				<bit name="Heroic" index="2"/>
+				<bit name="Legendary" index="3"/>
+			</bitfield16>
+			<uint8 name="Padding1 Padding 0" visible="false" offset="0x2"/>
+			<uint8 name="Padding1 Padding 1" visible="false" offset="0x3"/>
+			<int16 name="Minimum Round" visible="true" offset="0x4"/>
+			<int16 name="Maximum Round" visible="true" offset="0x6"/>
+			<uint32 name="Unknown3" visible="true" offset="0x8"/>
+			<tagref name="Object" visible="true" offset="0xC"/>
+			<int16 name="Probability" visible="true" offset="0x1C"/>
+			<uint8 name="Padding2 Padding 0" visible="false" offset="0x1E"/>
+			<uint8 name="Padding2 Padding 1" visible="false" offset="0x1F"/>
+		</reflexive>
+		<reflexive name="Initial Secondary Weapons" visible="true" offset="0x2C" entrySize="0x20">
+			<bitfield16 name="Difficulty Flags" visible="true" offset="0x0">
+				<bit name="Easy" index="0"/>
+				<bit name="Normal" index="1"/>
+				<bit name="Heroic" index="2"/>
+				<bit name="Legendary" index="3"/>
+			</bitfield16>
+			<uint8 name="Padding1 Padding 0" visible="false" offset="0x2"/>
+			<uint8 name="Padding1 Padding 1" visible="false" offset="0x3"/>
+			<int16 name="Minimum Round" visible="true" offset="0x4"/>
+			<int16 name="Maximum Round" visible="true" offset="0x6"/>
+			<uint32 name="Unknown3" visible="true" offset="0x8"/>
+			<tagref name="Object" visible="true" offset="0xC"/>
+			<int16 name="Probability" visible="true" offset="0x1C"/>
+			<uint8 name="Padding2 Padding 0" visible="false" offset="0x1E"/>
+			<uint8 name="Padding2 Padding 1" visible="false" offset="0x1F"/>
+		</reflexive>
+		<reflexive name="Initial Equipment" visible="true" offset="0x38" entrySize="0x20">
+			<bitfield16 name="Difficulty Flags" visible="true" offset="0x0">
+				<bit name="Easy" index="0"/>
+				<bit name="Normal" index="1"/>
+				<bit name="Heroic" index="2"/>
+				<bit name="Legendary" index="3"/>
+			</bitfield16>
+			<uint8 name="Padding1 Padding 0" visible="false" offset="0x2"/>
+			<uint8 name="Padding1 Padding 1" visible="false" offset="0x3"/>
+			<int16 name="Minimum Round" visible="true" offset="0x4"/>
+			<int16 name="Maximum Round" visible="true" offset="0x6"/>
+			<uint32 name="Unknown3" visible="true" offset="0x8"/>
+			<tagref name="Object" visible="true" offset="0xC"/>
+			<int16 name="Probability" visible="true" offset="0x1C"/>
+			<uint8 name="Padding2 Padding 0" visible="false" offset="0x1E"/>
+			<uint8 name="Padding2 Padding 1" visible="false" offset="0x1F"/>
+		</reflexive>
+		<enum16 name="Grenade Type" visible="true" offset="0x44">
+			<option name="Human Fragmentation" value="0x0"/>
+			<option name="Covenant Plasma" value="0x1"/>
+			<option name="Brute Claymore" value="0x2"/>
+			<option name="Firebomb" value="0x3"/>
+		</enum16>
+		<uint8 name="Padding2 Padding 0" visible="false" offset="0x46"/>
+		<uint8 name="Padding2 Padding 1" visible="false" offset="0x47"/>
+		<tagref name="Vehicle" visible="true" offset="0x48"/>
+		<stringId name="Vehicle Variant" visible="true" offset="0x58"/>
+		<stringId name="Activity Name" visible="true" offset="0x5C"/>
+	</reflexive>
+</plugin>

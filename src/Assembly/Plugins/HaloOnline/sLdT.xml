@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x4C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<uint32 name="Unknown" visible="true" offset="0x0"/>
+	<reflexive name="Lightmap Data References" visible="true" offset="0x4" entrySize="0x10">
+		<tagref name="tagref" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Unknown2" visible="true" offset="0x10" entrySize="0x10">
+		<tagref name="tagref" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Airprobes" visible="true" offset="0x1C" entrySize="0x5C">
+		<vector3 name="Position" visible="true" offset="0x0"/>
+		<stringId name="Name" visible="true" offset="0xC"/>
+		<bitfield32 name="Flags" visible="true" offset="0x10"/>
+		<comment title="Light  Probe"></comment>
+
+		<int16 name="Dominant Light Direction 0" visible="true" offset="0x14"/>
+		<int16 name="Dominant Light Direction 1" visible="true" offset="0x16"/>
+		<int16 name="Dominant Light Direction 2" visible="true" offset="0x18"/>
+		<int16 name="Padding1" visible="true" offset="0x1A"/>
+		<int16 name="Dominant Light Intensity 0" visible="true" offset="0x1C"/>
+		<int16 name="Dominant Light Intensity 1" visible="true" offset="0x1E"/>
+		<int16 name="Dominant Light Intensity 2" visible="true" offset="0x20"/>
+		<int16 name="Padding2" visible="true" offset="0x22"/>
+		<int16 name="SHRed 0" visible="true" offset="0x24"/>
+		<int16 name="SHRed 1" visible="true" offset="0x26"/>
+		<int16 name="SHRed 2" visible="true" offset="0x28"/>
+		<int16 name="SHRed 3" visible="true" offset="0x2A"/>
+		<int16 name="SHRed 4" visible="true" offset="0x2C"/>
+		<int16 name="SHRed 5" visible="true" offset="0x2E"/>
+		<int16 name="SHRed 6" visible="true" offset="0x30"/>
+		<int16 name="SHRed 7" visible="true" offset="0x32"/>
+		<int16 name="SHRed 8" visible="true" offset="0x34"/>
+		<int16 name="SHGreen 0" visible="true" offset="0x36"/>
+		<int16 name="SHGreen 1" visible="true" offset="0x38"/>
+		<int16 name="SHGreen 2" visible="true" offset="0x3A"/>
+		<int16 name="SHGreen 3" visible="true" offset="0x3C"/>
+		<int16 name="SHGreen 4" visible="true" offset="0x3E"/>
+		<int16 name="SHGreen 5" visible="true" offset="0x40"/>
+		<int16 name="SHGreen 6" visible="true" offset="0x42"/>
+		<int16 name="SHGreen 7" visible="true" offset="0x44"/>
+		<int16 name="SHGreen 8" visible="true" offset="0x46"/>
+		<int16 name="SHBlue 0" visible="true" offset="0x48"/>
+		<int16 name="SHBlue 1" visible="true" offset="0x4A"/>
+		<int16 name="SHBlue 2" visible="true" offset="0x4C"/>
+		<int16 name="SHBlue 3" visible="true" offset="0x4E"/>
+		<int16 name="SHBlue 4" visible="true" offset="0x50"/>
+		<int16 name="SHBlue 5" visible="true" offset="0x52"/>
+		<int16 name="SHBlue 6" visible="true" offset="0x54"/>
+		<int16 name="SHBlue 7" visible="true" offset="0x56"/>
+		<int16 name="SHBlue 8" visible="true" offset="0x58"/>
+		<int16 name="Padding3" visible="true" offset="0x5A"/>
+	</reflexive>
+	<reflexive name="Scenery Light Probes" visible="true" offset="0x28" entrySize="0x50">
+		<int32 name="Unknown1" visible="true" offset="0x0"/>
+		<int16 name="Unknown2" visible="true" offset="0x4"/>
+		<uint8 name="Unknown3" visible="true" offset="0x6"/>
+		<uint8 name="Unknown4" visible="true" offset="0x7"/>
+		<comment title="Light  Probe"></comment>
+
+		<int16 name="Dominant Light Direction 0" visible="true" offset="0x8"/>
+		<int16 name="Dominant Light Direction 1" visible="true" offset="0xA"/>
+		<int16 name="Dominant Light Direction 2" visible="true" offset="0xC"/>
+		<int16 name="Padding1" visible="true" offset="0xE"/>
+		<int16 name="Dominant Light Intensity 0" visible="true" offset="0x10"/>
+		<int16 name="Dominant Light Intensity 1" visible="true" offset="0x12"/>
+		<int16 name="Dominant Light Intensity 2" visible="true" offset="0x14"/>
+		<int16 name="Padding2" visible="true" offset="0x16"/>
+		<int16 name="SHRed 0" visible="true" offset="0x18"/>
+		<int16 name="SHRed 1" visible="true" offset="0x1A"/>
+		<int16 name="SHRed 2" visible="true" offset="0x1C"/>
+		<int16 name="SHRed 3" visible="true" offset="0x1E"/>
+		<int16 name="SHRed 4" visible="true" offset="0x20"/>
+		<int16 name="SHRed 5" visible="true" offset="0x22"/>
+		<int16 name="SHRed 6" visible="true" offset="0x24"/>
+		<int16 name="SHRed 7" visible="true" offset="0x26"/>
+		<int16 name="SHRed 8" visible="true" offset="0x28"/>
+		<int16 name="SHGreen 0" visible="true" offset="0x2A"/>
+		<int16 name="SHGreen 1" visible="true" offset="0x2C"/>
+		<int16 name="SHGreen 2" visible="true" offset="0x2E"/>
+		<int16 name="SHGreen 3" visible="true" offset="0x30"/>
+		<int16 name="SHGreen 4" visible="true" offset="0x32"/>
+		<int16 name="SHGreen 5" visible="true" offset="0x34"/>
+		<int16 name="SHGreen 6" visible="true" offset="0x36"/>
+		<int16 name="SHGreen 7" visible="true" offset="0x38"/>
+		<int16 name="SHGreen 8" visible="true" offset="0x3A"/>
+		<int16 name="SHBlue 0" visible="true" offset="0x3C"/>
+		<int16 name="SHBlue 1" visible="true" offset="0x3E"/>
+		<int16 name="SHBlue 2" visible="true" offset="0x40"/>
+		<int16 name="SHBlue 3" visible="true" offset="0x42"/>
+		<int16 name="SHBlue 4" visible="true" offset="0x44"/>
+		<int16 name="SHBlue 5" visible="true" offset="0x46"/>
+		<int16 name="SHBlue 6" visible="true" offset="0x48"/>
+		<int16 name="SHBlue 7" visible="true" offset="0x4A"/>
+		<int16 name="SHBlue 8" visible="true" offset="0x4C"/>
+		<int16 name="Padding3" visible="true" offset="0x4E"/>
+	</reflexive>
+	<reflexive name="Machine Light Probes" visible="true" offset="0x34" entrySize="0x2C">
+		<uint32 name="Unknown" visible="true" offset="0x0"/>
+		<int16 name="Unknown2" visible="true" offset="0x4"/>
+		<int16 name="Unknown3" visible="true" offset="0x6"/>
+		<float32 name="Unknown4" visible="true" offset="0x8"/>
+		<float32 name="Unknown5" visible="true" offset="0xC"/>
+		<float32 name="Unknown6" visible="true" offset="0x10"/>
+		<float32 name="Unknown7" visible="true" offset="0x14"/>
+		<float32 name="Unknown8" visible="true" offset="0x18"/>
+		<float32 name="Unknown9" visible="true" offset="0x1C"/>
+		<reflexive name="Light Probes" visible="true" offset="0x20" entrySize="0x54">
+			<vector3 name="Position" visible="true" offset="0x0"/>
+			<comment title="Light  Probe"></comment>
+
+			<int16 name="Dominant Light Direction 0" visible="true" offset="0xC"/>
+			<int16 name="Dominant Light Direction 1" visible="true" offset="0xE"/>
+			<int16 name="Dominant Light Direction 2" visible="true" offset="0x10"/>
+			<int16 name="Padding1" visible="true" offset="0x12"/>
+			<int16 name="Dominant Light Intensity 0" visible="true" offset="0x14"/>
+			<int16 name="Dominant Light Intensity 1" visible="true" offset="0x16"/>
+			<int16 name="Dominant Light Intensity 2" visible="true" offset="0x18"/>
+			<int16 name="Padding2" visible="true" offset="0x1A"/>
+			<int16 name="SHRed 0" visible="true" offset="0x1C"/>
+			<int16 name="SHRed 1" visible="true" offset="0x1E"/>
+			<int16 name="SHRed 2" visible="true" offset="0x20"/>
+			<int16 name="SHRed 3" visible="true" offset="0x22"/>
+			<int16 name="SHRed 4" visible="true" offset="0x24"/>
+			<int16 name="SHRed 5" visible="true" offset="0x26"/>
+			<int16 name="SHRed 6" visible="true" offset="0x28"/>
+			<int16 name="SHRed 7" visible="true" offset="0x2A"/>
+			<int16 name="SHRed 8" visible="true" offset="0x2C"/>
+			<int16 name="SHGreen 0" visible="true" offset="0x2E"/>
+			<int16 name="SHGreen 1" visible="true" offset="0x30"/>
+			<int16 name="SHGreen 2" visible="true" offset="0x32"/>
+			<int16 name="SHGreen 3" visible="true" offset="0x34"/>
+			<int16 name="SHGreen 4" visible="true" offset="0x36"/>
+			<int16 name="SHGreen 5" visible="true" offset="0x38"/>
+			<int16 name="SHGreen 6" visible="true" offset="0x3A"/>
+			<int16 name="SHGreen 7" visible="true" offset="0x3C"/>
+			<int16 name="SHGreen 8" visible="true" offset="0x3E"/>
+			<int16 name="SHBlue 0" visible="true" offset="0x40"/>
+			<int16 name="SHBlue 1" visible="true" offset="0x42"/>
+			<int16 name="SHBlue 2" visible="true" offset="0x44"/>
+			<int16 name="SHBlue 3" visible="true" offset="0x46"/>
+			<int16 name="SHBlue 4" visible="true" offset="0x48"/>
+			<int16 name="SHBlue 5" visible="true" offset="0x4A"/>
+			<int16 name="SHBlue 6" visible="true" offset="0x4C"/>
+			<int16 name="SHBlue 7" visible="true" offset="0x4E"/>
+			<int16 name="SHBlue 8" visible="true" offset="0x50"/>
+			<int16 name="Padding3" visible="true" offset="0x52"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Unknown5" visible="true" offset="0x40" entrySize="0x4">
+		<int32 name="int32" visible="true" offset="0x0"/>
+	</reflexive>
+</plugin>

@@ -286,6 +286,7 @@
     <Compile Include="RTE\ThirdGen\ThirdGenMapPointerReader.cs" />
     <Compile Include="RTE\ThirdGen\ThirdGenMCCRTEProvider.cs" />
     <Compile Include="RTE\FourthGen\FourthGenMapPointerReader.cs" />
+    <Compile Include="RTE\FourthGen\FourthGenRTEProvider.cs" />
     <Compile Include="Serialization\CacheStructureReader.cs" />
     <Compile Include="Serialization\ICacheStructureLayoutVisitor.cs" />
     <Compile Include="Serialization\PokingCollection.cs" />

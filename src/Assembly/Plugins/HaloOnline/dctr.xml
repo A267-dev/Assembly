@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x80">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<tagref name="Model" visible="true" offset="0x0"/>
+	<reflexive name="Valid Render Model Instance Names" visible="true" offset="0x10" entrySize="0x4">
+		<stringId name="string Id" visible="true" offset="0x0"/>
+	</reflexive>
+	<int32 name="Valid Render Model Instances" visible="true" offset="0x1C"/>
+	<tagref name="Texture" visible="true" offset="0x20"/>
+	<bitfield8 name="Render Flags" visible="true" offset="0x30">
+		<bit name="bit1" index="0"/>
+		<bit name="Enabled Via Preferences" index="1"/>
+	</bitfield8>
+	<enum8 name="Render Shader" visible="true" offset="0x31">
+		<option name="Default" value="0x0"/>
+		<option name="No Wind" value="0x1"/>
+		<option name="Static" value="0x2"/>
+		<option name="Sun" value="0x3"/>
+		<option name="Wavy" value="0x4"/>
+		<option name="Shaded" value="0x5"/>
+	</enum8>
+	<enum8 name="Light Sampling Pattern" visible="true" offset="0x32">
+		<option name="Default" value="0x0"/>
+		<option name="Hanging" value="0x1"/>
+	</enum8>
+	<uint8 name="Unused1 Padding 0" visible="false" offset="0x33"/>
+	<colorf name="Translucency ABC" visible="true" offset="0x34" format="rgb"/>
+	<float32 name="Material Translucency" visible="true" offset="0x40"/>
+	<float32 name="Wavelength XYMin" visible="true" offset="0x44"/>
+	<float32 name="Wavelength XYMax" visible="true" offset="0x48"/>
+	<float32 name="Wave Speed" visible="true" offset="0x4C"/>
+	<float32 name="Wave Frequency" visible="true" offset="0x50"/>
+	<float32 name="Darkness" visible="true" offset="0x54"/>
+	<float32 name="Brightness" visible="true" offset="0x58"/>
+	<uint8 name="Unused2 Padding 0" visible="false" offset="0x5C"/>
+	<uint8 name="Unused2 Padding 1" visible="false" offset="0x5D"/>
+	<uint8 name="Unused2 Padding 2" visible="false" offset="0x5E"/>
+	<uint8 name="Unused2 Padding 3" visible="false" offset="0x5F"/>
+	<uint8 name="Unused2 Padding 4" visible="false" offset="0x60"/>
+	<uint8 name="Unused2 Padding 5" visible="false" offset="0x61"/>
+	<uint8 name="Unused2 Padding 6" visible="false" offset="0x62"/>
+	<uint8 name="Unused2 Padding 7" visible="false" offset="0x63"/>
+	<comment title="Lod  Settings"></comment>
+
+	<float32 name="Start Distance" visible="true" offset="0x64"/>
+	<float32 name="End Distance" visible="true" offset="0x68"/>
+	<float32 name="Scale" visible="true" offset="0x6C"/>
+	<float32 name="Offset" visible="true" offset="0x70"/>
+	<uint8 name="Unused3 Padding 0" visible="false" offset="0x74"/>
+	<uint8 name="Unused3 Padding 1" visible="false" offset="0x75"/>
+	<uint8 name="Unused3 Padding 2" visible="false" offset="0x76"/>
+	<uint8 name="Unused3 Padding 3" visible="false" offset="0x77"/>
+	<uint8 name="Unused3 Padding 4" visible="false" offset="0x78"/>
+	<uint8 name="Unused3 Padding 5" visible="false" offset="0x79"/>
+	<uint8 name="Unused3 Padding 6" visible="false" offset="0x7A"/>
+	<uint8 name="Unused3 Padding 7" visible="false" offset="0x7B"/>
+	<uint8 name="Unused3 Padding 8" visible="false" offset="0x7C"/>
+	<uint8 name="Unused3 Padding 9" visible="false" offset="0x7D"/>
+	<uint8 name="Unused3 Padding 10" visible="false" offset="0x7E"/>
+	<uint8 name="Unused3 Padding 11" visible="false" offset="0x7F"/>
+</plugin>

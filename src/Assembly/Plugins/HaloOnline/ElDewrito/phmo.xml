@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x198">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<bitfield32 name="Flags" visible="true" offset="0x0">
+		<bit name="Serialized Havok Data" index="0"/>
+		<bit name="Make Physical Children Keyframed" index="1"/>
+		<bit name="Shrink Radius By Havok Complex Radius" index="2"/>
+		<bit name="Use Physics For Collision" index="3"/>
+	</bitfield32>
+	<float32 name="Mass" visible="true" offset="0x4"/>
+	<float32 name="Low Frequency Deactivation Scale" visible="true" offset="0x8"/>
+	<float32 name="High Frequency Deactivation Scale" visible="true" offset="0xC"/>
+	<float32 name="Custom Shape Radius" visible="true" offset="0x10"/>
+	<float32 name="Maximum Penetration Depth Scale" visible="true" offset="0x14"/>
+	<int8 name="Import Version" visible="true" offset="0x18"/>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x19"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x1A"/>
+	<uint8 name="Unused Padding 2" visible="false" offset="0x1B"/>
+	<reflexive name="Damped Spring Motors" visible="true" offset="0x1C" entrySize="0x18">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<float32 name="Maximum Force" visible="true" offset="0x4"/>
+		<float32 name="Minimum Force" visible="true" offset="0x8"/>
+		<float32 name="Spring K" visible="true" offset="0xC"/>
+		<float32 name="Damping" visible="true" offset="0x10"/>
+		<float32 name="Initial Position" visible="true" offset="0x14"/>
+	</reflexive>
+	<reflexive name="Position Motors" visible="true" offset="0x28" entrySize="0x20">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<float32 name="Maximum Force" visible="true" offset="0x4"/>
+		<float32 name="Minimum Force" visible="true" offset="0x8"/>
+		<float32 name="Tau" visible="true" offset="0xC"/>
+		<float32 name="Damping" visible="true" offset="0x10"/>
+		<float32 name="Proportion Recover Velocity" visible="true" offset="0x14"/>
+		<float32 name="Constant Recover Velocity" visible="true" offset="0x18"/>
+		<float32 name="Initial Position" visible="true" offset="0x1C"/>
+	</reflexive>
+	<reflexive name="Phantom Types" visible="true" offset="0x34" entrySize="0x68">
+		<comment title="Flags"></comment>
+
+		<bitfield32 name="Halo3 ODST" visible="true" offset="0x0">
+			<bit name="Generates Effects" index="0"/>
+			<bit name="Use Acceleration As Force" index="1"/>
+			<bit name="Negates Gravity" index="2"/>
+			<bit name="Ignores Players" index="3"/>
+			<bit name="Ignores Non Players" index="4"/>
+			<bit name="Ignores Bipeds" index="5"/>
+			<bit name="Ignores Vehicles" index="6"/>
+			<bit name="Ignores Weapons" index="7"/>
+			<bit name="Ignores Equipement" index="8"/>
+			<bit name="Ignores ARGDevices" index="9"/>
+			<bit name="Ignores Terminals" index="10"/>
+			<bit name="Ignores Projectiles" index="11"/>
+			<bit name="Ignores Scenery" index="12"/>
+			<bit name="Ignores Machines" index="13"/>
+			<bit name="Ignores Controls" index="14"/>
+			<bit name="Ignores Sound Scenery" index="15"/>
+			<bit name="Ignores Crates" index="16"/>
+			<bit name="Ignores Creatures" index="17"/>
+			<bit name="Ignores Giants" index="18"/>
+			<bit name="Ignores Effect Scenery" index="19"/>
+			<bit name="Unknown1" index="20"/>
+			<bit name="Unknown2" index="21"/>
+			<bit name="Unknown3" index="22"/>
+			<bit name="Unknown4" index="23"/>
+			<bit name="Localizes Physics" index="24"/>
+			<bit name="Disable Linear Damping" index="25"/>
+			<bit name="Disable Angular Damping" index="26"/>
+			<bit name="Ignores Dead Bipeds" index="27"/>
+			<bit name="Unknown5" index="28"/>
+			<bit name="Unknown6" index="29"/>
+			<bit name="Unknown7" index="30"/>
+			<bit name="Accelerate Along Input Direction" index="31"/>
+		</bitfield32>
+		<enum8 name="Minimum Size" visible="true" offset="0x4">
+			<option name="Default" value="0x0"/>
+			<option name="Tiny" value="0x1"/>
+			<option name="Small" value="0x2"/>
+			<option name="Medium" value="0x3"/>
+			<option name="Large" value="0x4"/>
+			<option name="Huge" value="0x5"/>
+			<option name="Extra Huge" value="0x6"/>
+		</enum8>
+		<enum8 name="Maximum Size" visible="true" offset="0x5">
+			<option name="Default" value="0x0"/>
+			<option name="Tiny" value="0x1"/>
+			<option name="Small" value="0x2"/>
+			<option name="Medium" value="0x3"/>
+			<option name="Large" value="0x4"/>
+			<option name="Huge" value="0x5"/>
+			<option name="Extra Huge" value="0x6"/>
+		</enum8>
+		<uint8 name="Unused1 Padding 0" visible="false" offset="0x6"/>
+		<uint8 name="Unused1 Padding 1" visible="false" offset="0x7"/>
+		<stringId name="Marker Name" visible="true" offset="0x8"/>
+		<stringId name="Alignment Marker Name" visible="true" offset="0xC"/>
+		<uint8 name="Unused2 Padding 0" visible="false" offset="0x10"/>
+		<uint8 name="Unused2 Padding 1" visible="false" offset="0x11"/>
+		<uint8 name="Unused2 Padding 2" visible="false" offset="0x12"/>
+		<uint8 name="Unused2 Padding 3" visible="false" offset="0x13"/>
+		<uint8 name="Unused2 Padding 4" visible="false" offset="0x14"/>
+		<uint8 name="Unused2 Padding 5" visible="false" offset="0x15"/>
+		<uint8 name="Unused2 Padding 6" visible="false" offset="0x16"/>
+		<uint8 name="Unused2 Padding 7" visible="false" offset="0x17"/>
+		<float32 name="Hookes Law E" visible="true" offset="0x18"/>
+		<float32 name="Linear Dead Radius" visible="true" offset="0x1C"/>
+		<float32 name="Center Acceleration" visible="true" offset="0x20"/>
+		<float32 name="Center Max Level" visible="true" offset="0x24"/>
+		<float32 name="Axis Acceleration" visible="true" offset="0x28"/>
+		<float32 name="Axis Max Velocity" visible="true" offset="0x2C"/>
+		<float32 name="Direction Acceleration" visible="true" offset="0x30"/>
+		<float32 name="Direction Max Velocity" visible="true" offset="0x34"/>
+		<uint8 name="Unused3 Padding 0" visible="false" offset="0x38"/>
+		<uint8 name="Unused3 Padding 1" visible="false" offset="0x39"/>
+		<uint8 name="Unused3 Padding 2" visible="false" offset="0x3A"/>
+		<uint8 name="Unused3 Padding 3" visible="false" offset="0x3B"/>
+		<uint8 name="Unused3 Padding 4" visible="false" offset="0x3C"/>
+		<uint8 name="Unused3 Padding 5" visible="false" offset="0x3D"/>
+		<uint8 name="Unused3 Padding 6" visible="false" offset="0x3E"/>
+		<uint8 name="Unused3 Padding 7" visible="false" offset="0x3F"/>
+		<uint8 name="Unused3 Padding 8" visible="false" offset="0x40"/>
+		<uint8 name="Unused3 Padding 9" visible="false" offset="0x41"/>
+		<uint8 name="Unused3 Padding 10" visible="false" offset="0x42"/>
+		<uint8 name="Unused3 Padding 11" visible="false" offset="0x43"/>
+		<uint8 name="Unused3 Padding 12" visible="false" offset="0x44"/>
+		<uint8 name="Unused3 Padding 13" visible="false" offset="0x45"/>
+		<uint8 name="Unused3 Padding 14" visible="false" offset="0x46"/>
+		<uint8 name="Unused3 Padding 15" visible="false" offset="0x47"/>
+		<uint8 name="Unused3 Padding 16" visible="false" offset="0x48"/>
+		<uint8 name="Unused3 Padding 17" visible="false" offset="0x49"/>
+		<uint8 name="Unused3 Padding 18" visible="false" offset="0x4A"/>
+		<uint8 name="Unused3 Padding 19" visible="false" offset="0x4B"/>
+		<uint8 name="Unused3 Padding 20" visible="false" offset="0x4C"/>
+		<uint8 name="Unused3 Padding 21" visible="false" offset="0x4D"/>
+		<uint8 name="Unused3 Padding 22" visible="false" offset="0x4E"/>
+		<uint8 name="Unused3 Padding 23" visible="false" offset="0x4F"/>
+		<uint8 name="Unused3 Padding 24" visible="false" offset="0x50"/>
+		<uint8 name="Unused3 Padding 25" visible="false" offset="0x51"/>
+		<uint8 name="Unused3 Padding 26" visible="false" offset="0x52"/>
+		<uint8 name="Unused3 Padding 27" visible="false" offset="0x53"/>
+		<float32 name="Alignment Hookes Law E" visible="true" offset="0x54"/>
+		<float32 name="Alignment Acceleration" visible="true" offset="0x58"/>
+		<float32 name="Alignment Max Velocity" visible="true" offset="0x5C"/>
+		<uint8 name="Unused4 Padding 0" visible="false" offset="0x60"/>
+		<uint8 name="Unused4 Padding 1" visible="false" offset="0x61"/>
+		<uint8 name="Unused4 Padding 2" visible="false" offset="0x62"/>
+		<uint8 name="Unused4 Padding 3" visible="false" offset="0x63"/>
+		<uint8 name="Unused4 Padding 4" visible="false" offset="0x64"/>
+		<uint8 name="Unused4 Padding 5" visible="false" offset="0x65"/>
+		<uint8 name="Unused4 Padding 6" visible="false" offset="0x66"/>
+		<uint8 name="Unused4 Padding 7" visible="false" offset="0x67"/>
+	</reflexive>
+	<reflexive name="Powered Chains" visible="true" offset="0x40" entrySize="0x18">
+		<reflexive name="Nodes" visible="true" offset="0x0" entrySize="0x2">
+			<int16 name="Node Index" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Constraints" visible="true" offset="0xC" entrySize="0x10">
+			<enum16 name="Constraint Type" visible="true" offset="0x0">
+				<option name="Hinge" value="0x0"/>
+				<option name="Limited Hinge" value="0x1"/>
+				<option name="Ragdoll" value="0x2"/>
+				<option name="Stiff Spring" value="0x3"/>
+				<option name="Ball And Socket" value="0x4"/>
+				<option name="Prismatic" value="0x5"/>
+				<option name="Powered Chain" value="0x6"/>
+			</enum16>
+			<int16 name="Constraint Index" visible="true" offset="0x2"/>
+			<comment title="Motor  X"></comment>
+
+			<enum16 name="Type" visible="true" offset="0x4">
+				<option name="None" value="0x0"/>
+				<option name="Damped Sprint" value="0x1"/>
+				<option name="Strongest Force" value="0x2"/>
+			</enum16>
+			<int16 name="Index" visible="true" offset="0x6"/>
+			<comment title="Motor  Y"></comment>
+
+			<enum16 name="Type" visible="true" offset="0x8">
+				<option name="None" value="0x0"/>
+				<option name="Damped Sprint" value="0x1"/>
+				<option name="Strongest Force" value="0x2"/>
+			</enum16>
+			<int16 name="Index" visible="true" offset="0xA"/>
+			<comment title="Motor  Z"></comment>
+
+			<enum16 name="Type" visible="true" offset="0xC">
+				<option name="None" value="0x0"/>
+				<option name="Damped Sprint" value="0x1"/>
+				<option name="Strongest Force" value="0x2"/>
+			</enum16>
+			<int16 name="Index" visible="true" offset="0xE"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Node Edges" visible="true" offset="0x4C" entrySize="0x1C">
+		<int16 name="Node AGlobal Material Index" visible="true" offset="0x0"/>
+		<int16 name="Node BGlobal Material Index" visible="true" offset="0x2"/>
+		<int16 name="Node A" visible="true" offset="0x4"/>
+		<int16 name="Node B" visible="true" offset="0x6"/>
+		<reflexive name="Constraints" visible="true" offset="0x8" entrySize="0x24">
+			<enum16 name="Type" visible="true" offset="0x0">
+				<option name="Hinge" value="0x0"/>
+				<option name="Limited Hinge" value="0x1"/>
+				<option name="Ragdoll" value="0x2"/>
+				<option name="Stiff Spring" value="0x3"/>
+				<option name="Ball And Socket" value="0x4"/>
+				<option name="Prismatic" value="0x5"/>
+				<option name="Powered Chain" value="0x6"/>
+			</enum16>
+			<int16 name="Index" visible="true" offset="0x2"/>
+			<bitfield32 name="Flags" visible="true" offset="0x4">
+				<bit name="Is Physical Child" index="0"/>
+				<bit name="Is Rigid" index="1"/>
+				<bit name="Disable Effects" index="2"/>
+				<bit name="Not Created Automatically" index="3"/>
+			</bitfield32>
+			<float32 name="Friction" visible="true" offset="0x8"/>
+			<reflexive name="Ragdoll Motors" visible="true" offset="0xC" entrySize="0xC">
+				<comment title="Twist  Motor"></comment>
+
+				<enum16 name="Type" visible="true" offset="0x0">
+					<option name="None" value="0x0"/>
+					<option name="Damped Sprint" value="0x1"/>
+					<option name="Strongest Force" value="0x2"/>
+				</enum16>
+				<int16 name="Index" visible="true" offset="0x2"/>
+				<comment title="Cone  Motor"></comment>
+
+				<enum16 name="Type" visible="true" offset="0x4">
+					<option name="None" value="0x0"/>
+					<option name="Damped Sprint" value="0x1"/>
+					<option name="Strongest Force" value="0x2"/>
+				</enum16>
+				<int16 name="Index" visible="true" offset="0x6"/>
+				<comment title="Plane  Motor"></comment>
+
+				<enum16 name="Type" visible="true" offset="0x8">
+					<option name="None" value="0x0"/>
+					<option name="Damped Sprint" value="0x1"/>
+					<option name="Strongest Force" value="0x2"/>
+				</enum16>
+				<int16 name="Index" visible="true" offset="0xA"/>
+			</reflexive>
+			<reflexive name="Limited Hinge Motors" visible="true" offset="0x18" entrySize="0x4">
+				<comment title="Motor"></comment>
+
+				<enum16 name="Type" visible="true" offset="0x0">
+					<option name="None" value="0x0"/>
+					<option name="Damped Sprint" value="0x1"/>
+					<option name="Strongest Force" value="0x2"/>
+				</enum16>
+				<int16 name="Index" visible="true" offset="0x2"/>
+			</reflexive>
+		</reflexive>
+		<stringId name="Node AMaterial" visible="true" offset="0x14"/>
+		<stringId name="Node BMaterial" visible="true" offset="0x18"/>
+	</reflexive>
+	<reflexive name="Rigid Bodies" visible="true" offset="0x58" entrySize="0xB0">
+		<int16 name="Node" visible="true" offset="0x0"/>
+		<int16 name="Region" visible="true" offset="0x2"/>
+		<int16 name="Permutation" visible="true" offset="0x4"/>
+		<int16 name="Serialized Shapes" visible="true" offset="0x6"/>
+		<vector3 name="Bounding Sphere Offset" visible="true" offset="0x8"/>
+		<float32 name="Bounding Sphere Radius" visible="true" offset="0x14"/>
+		<bitfield16 name="Flags" visible="true" offset="0x18">
+			<bit name="No Collisions With Self" index="0"/>
+			<bit name="Only Collide With Environment" index="1"/>
+			<bit name="Disable Effects" index="2"/>
+			<bit name="Does Not Interact With Environment" index="3"/>
+			<bit name="Best Early Mover Body" index="4"/>
+			<bit name="Has No Phantom Power Version" index="5"/>
+		</bitfield16>
+		<enum16 name="Motion Type" visible="true" offset="0x1A">
+			<option name="Sphere" value="0x0"/>
+			<option name="Stabilized Sphere" value="0x1"/>
+			<option name="Box" value="0x2"/>
+			<option name="Stabilized Box" value="0x3"/>
+			<option name="Keyframed" value="0x4"/>
+			<option name="Fixed" value="0x5"/>
+		</enum16>
+		<int16 name="No Phantom Power Alt Rigid Body" visible="true" offset="0x1C"/>
+		<enum16 name="Size" visible="true" offset="0x1E">
+			<option name="Default" value="0x0"/>
+			<option name="Tiny" value="0x1"/>
+			<option name="Small" value="0x2"/>
+			<option name="Medium" value="0x3"/>
+			<option name="Large" value="0x4"/>
+			<option name="Huge" value="0x5"/>
+			<option name="Extra Huge" value="0x6"/>
+		</enum16>
+		<float32 name="Inertia Tensor Scale" visible="true" offset="0x20"/>
+		<float32 name="Linear Dampening" visible="true" offset="0x24"/>
+		<float32 name="Angular Dampening" visible="true" offset="0x28"/>
+		<float name="Center Of Mass Offset I" visible="true" offset="0x2C"/>
+		<float name="Center Of Mass Offset J" visible="true" offset="0x30"/>
+		<float name="Center Of Mass Offset K" visible="true" offset="0x34"/>
+		<float32 name="Water Physics X0" visible="true" offset="0x38"/>
+		<float32 name="Water Physics X1" visible="true" offset="0x3C"/>
+		<float32 name="Water Physics Y0" visible="true" offset="0x40"/>
+		<float32 name="Water Physics Y1" visible="true" offset="0x44"/>
+		<float32 name="Water Physics Z0" visible="true" offset="0x48"/>
+		<float32 name="Water Physics Z1" visible="true" offset="0x4C"/>
+		<uint32 name="Runtime Shape Pointer" visible="true" offset="0x50"/>
+		<uint32 name="Unknown9" visible="true" offset="0x54"/>
+		<enum16 name="Shape Type" visible="true" offset="0x58">
+			<option name="Sphere" value="0x0"/>
+			<option name="Pill" value="0x1"/>
+			<option name="Box" value="0x2"/>
+			<option name="Triangle" value="0x3"/>
+			<option name="Polyhedron" value="0x4"/>
+			<option name="Multi Sphere" value="0x5"/>
+			<option name="Triangle Mesh" value="0x6"/>
+			<option name="Compound Shape" value="0x7"/>
+			<option name="Unused0" value="0x8"/>
+			<option name="Unused1" value="0x9"/>
+			<option name="Unused2" value="0xA"/>
+			<option name="Unused3" value="0xB"/>
+			<option name="Unused4" value="0xC"/>
+			<option name="Unused5" value="0xD"/>
+			<option name="List" value="0xE"/>
+			<option name="Mopp" value="0xF"/>
+		</enum16>
+		<int16 name="Shape Index" visible="true" offset="0x5A"/>
+		<float32 name="Mass" visible="true" offset="0x5C"/>
+		<float name="Center Of Mass I" visible="true" offset="0x60"/>
+		<float name="Center Of Mass J" visible="true" offset="0x64"/>
+		<float name="Center Of Mass K" visible="true" offset="0x68"/>
+		<float32 name="Center Of Mass Radius" visible="true" offset="0x6C"/>
+		<float name="Inertia Tensor XI" visible="true" offset="0x70"/>
+		<float name="Inertia Tensor XJ" visible="true" offset="0x74"/>
+		<float name="Inertia Tensor XK" visible="true" offset="0x78"/>
+		<float32 name="Inertia Tensor XRadius" visible="true" offset="0x7C"/>
+		<float name="Inertia Tensor YI" visible="true" offset="0x80"/>
+		<float name="Inertia Tensor YJ" visible="true" offset="0x84"/>
+		<float name="Inertia Tensor YK" visible="true" offset="0x88"/>
+		<float32 name="Inertia Tensor YRadius" visible="true" offset="0x8C"/>
+		<float name="Inertia Tensor ZI" visible="true" offset="0x90"/>
+		<float name="Inertia Tensor ZJ" visible="true" offset="0x94"/>
+		<float name="Inertia Tensor ZK" visible="true" offset="0x98"/>
+		<float32 name="Inertia Tensor ZRadius" visible="true" offset="0x9C"/>
+		<uint32 name="Runtime Havok Group Mask" visible="true" offset="0xA0"/>
+		<uint32 name="Unknown10" visible="true" offset="0xA4"/>
+		<float32 name="Bounding Sphere Pad" visible="true" offset="0xA8"/>
+		<uint8 name="Collision Quality Override Type" visible="true" offset="0xAC"/>
+		<uint8 name="Pad3 Padding 0" visible="false" offset="0xAD"/>
+		<int16 name="Runtime Flags" visible="true" offset="0xAE"/>
+	</reflexive>
+	<reflexive name="Materials" visible="true" offset="0x64" entrySize="0xC">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<stringId name="Material Name" visible="true" offset="0x4"/>
+		<int16 name="Phantom Type" visible="true" offset="0x8"/>
+		<uint8 name="Proxy Collision Group" visible="true" offset="0xA"/>
+		<uint8 name="Runtime Collision Group" visible="true" offset="0xB"/>
+	</reflexive>
+	<reflexive name="Spheres" visible="true" offset="0x70" entrySize="0x84">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<int16 name="Material Index" visible="true" offset="0x4"/>
+		<int16 name="Runtime Material Type" visible="true" offset="0x6"/>
+		<float32 name="Relative Mass Scale" visible="true" offset="0x8"/>
+		<float32 name="Friction" visible="true" offset="0xC"/>
+		<float32 name="Restitution" visible="true" offset="0x10"/>
+		<float32 name="Volume" visible="true" offset="0x14"/>
+		<float32 name="Mass" visible="true" offset="0x18"/>
+		<int16 name="Mass Distribution Index" visible="true" offset="0x1C"/>
+		<int8 name="Phantom Index" visible="true" offset="0x1E"/>
+		<int8 name="Proxy Collision Group" visible="true" offset="0x1F"/>
+		<comment title="Shape  Base"></comment>
+
+		<comment title="Field  Pointer  Skip"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x20"/>
+		<uint32 name="Value 1" visible="true" offset="0x24"/>
+		<int16 name="Size" visible="true" offset="0x28"/>
+		<int16 name="Count" visible="true" offset="0x2A"/>
+		<comment title="Userdata"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x2C"/>
+		<uint32 name="Value 1" visible="true" offset="0x30"/>
+		<int32 name="Shape Type" visible="true" offset="0x34"/>
+		<float32 name="Radius" visible="true" offset="0x38"/>
+		<uint8 name="Pad Padding 0" visible="false" offset="0x3C"/>
+		<uint8 name="Pad Padding 1" visible="false" offset="0x3D"/>
+		<uint8 name="Pad Padding 2" visible="false" offset="0x3E"/>
+		<uint8 name="Pad Padding 3" visible="false" offset="0x3F"/>
+		<uint8 name="Pad Padding 4" visible="false" offset="0x40"/>
+		<uint8 name="Pad Padding 5" visible="false" offset="0x41"/>
+		<uint8 name="Pad Padding 6" visible="false" offset="0x42"/>
+		<uint8 name="Pad Padding 7" visible="false" offset="0x43"/>
+		<uint8 name="Pad Padding 8" visible="false" offset="0x44"/>
+		<uint8 name="Pad Padding 9" visible="false" offset="0x45"/>
+		<uint8 name="Pad Padding 10" visible="false" offset="0x46"/>
+		<uint8 name="Pad Padding 11" visible="false" offset="0x47"/>
+		<comment title="Convex  Base"></comment>
+
+		<comment title="Field  Pointer  Skip"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x48"/>
+		<uint32 name="Value 1" visible="true" offset="0x4C"/>
+		<int16 name="Size" visible="true" offset="0x50"/>
+		<int16 name="Count" visible="true" offset="0x52"/>
+		<comment title="Userdata"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x54"/>
+		<uint32 name="Value 1" visible="true" offset="0x58"/>
+		<int32 name="Shape Type" visible="true" offset="0x5C"/>
+		<float32 name="Radius" visible="true" offset="0x60"/>
+		<comment title="Field  Pointer  Skip"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x64"/>
+		<uint32 name="Value 1" visible="true" offset="0x68"/>
+		<comment title="Shape  Reference"></comment>
+
+		<enum16 name="Shapetype" visible="true" offset="0x6C">
+			<option name="Sphere" value="0x0"/>
+			<option name="Pill" value="0x1"/>
+			<option name="Box" value="0x2"/>
+			<option name="Triangle" value="0x3"/>
+			<option name="Polyhedron" value="0x4"/>
+			<option name="Multi Sphere" value="0x5"/>
+			<option name="Triangle Mesh" value="0x6"/>
+			<option name="Compound Shape" value="0x7"/>
+			<option name="Unused0" value="0x8"/>
+			<option name="Unused1" value="0x9"/>
+			<option name="Unused2" value="0xA"/>
+			<option name="Unused3" value="0xB"/>
+			<option name="Unused4" value="0xC"/>
+			<option name="Unused5" value="0xD"/>
+			<option name="List" value="0xE"/>
+			<option name="Mopp" value="0xF"/>
+		</enum16>
+		<int16 name="Shape Index" visible="true" offset="0x6E"/>
+		<uint32 name="Child Shape Size" visible="true" offset="0x70"/>
+		<float name="Translation I" visible="true" offset="0x74"/>
+		<float name="Translation J" visible="true" offset="0x78"/>
+		<float name="Translation K" visible="true" offset="0x7C"/>
+		<float32 name="Translation Radius" visible="true" offset="0x80"/>
+	</reflexive>
+	<uint8 name="Unused Multi Spheres Padding 0" visible="false" offset="0x7C"/>
+	<uint8 name="Unused Multi Spheres Padding 1" visible="false" offset="0x7D"/>
+	<uint8 name="Unused Multi Spheres Padding 2" visible="false" offset="0x7E"/>
+	<uint8 name="Unused Multi Spheres Padding 3" visible="false" offset="0x7F"/>
+	<uint8 name="Unused Multi Spheres Padding 4" visible="false" offset="0x80"/>
+	<uint8 name="Unused Multi Spheres Padding 5" visible="false" offset="0x81"/>
+	<uint8 name="Unused Multi Spheres Padding 6" visible="false" offset="0x82"/>
+	<uint8 name="Unused Multi Spheres Padding 7" visible="false" offset="0x83"/>
+	<uint8 name="Unused Multi Spheres Padding 8" visible="false" offset="0x84"/>
+	<uint8 name="Unused Multi Spheres Padding 9" visible="false" offset="0x85"/>
+	<uint8 name="Unused Multi Spheres Padding 10" visible="false" offset="0x86"/>
+	<uint8 name="Unused Multi Spheres Padding 11" visible="false" offset="0x87"/>
+	<reflexive name="Pills" visible="true" offset="0x88" entrySize="0x68">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<int16 name="Material Index" visible="true" offset="0x4"/>
+		<int16 name="Runtime Material Type" visible="true" offset="0x6"/>
+		<float32 name="Relative Mass Scale" visible="true" offset="0x8"/>
+		<float32 name="Friction" visible="true" offset="0xC"/>
+		<float32 name="Restitution" visible="true" offset="0x10"/>
+		<float32 name="Volume" visible="true" offset="0x14"/>
+		<float32 name="Mass" visible="true" offset="0x18"/>
+		<int16 name="Mass Distribution Index" visible="true" offset="0x1C"/>
+		<int8 name="Phantom Index" visible="true" offset="0x1E"/>
+		<int8 name="Proxy Collision Group" visible="true" offset="0x1F"/>
+		<comment title="Shape  Base"></comment>
+
+		<comment title="Field  Pointer  Skip"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x20"/>
+		<uint32 name="Value 1" visible="true" offset="0x24"/>
+		<int16 name="Size" visible="true" offset="0x28"/>
+		<int16 name="Count" visible="true" offset="0x2A"/>
+		<comment title="Userdata"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x2C"/>
+		<uint32 name="Value 1" visible="true" offset="0x30"/>
+		<int32 name="Shape Type" visible="true" offset="0x34"/>
+		<float32 name="Radius" visible="true" offset="0x38"/>
+		<uint8 name="Pad Padding 0" visible="false" offset="0x3C"/>
+		<uint8 name="Pad Padding 1" visible="false" offset="0x3D"/>
+		<uint8 name="Pad Padding 2" visible="false" offset="0x3E"/>
+		<uint8 name="Pad Padding 3" visible="false" offset="0x3F"/>
+		<uint8 name="Pad Padding 4" visible="false" offset="0x40"/>
+		<uint8 name="Pad Padding 5" visible="false" offset="0x41"/>
+		<uint8 name="Pad Padding 6" visible="false" offset="0x42"/>
+		<uint8 name="Pad Padding 7" visible="false" offset="0x43"/>
+		<uint8 name="Pad Padding 8" visible="false" offset="0x44"/>
+		<uint8 name="Pad Padding 9" visible="false" offset="0x45"/>
+		<uint8 name="Pad Padding 10" visible="false" offset="0x46"/>
+		<uint8 name="Pad Padding 11" visible="false" offset="0x47"/>
+		<float name="Bottom I" visible="true" offset="0x48"/>
+		<float name="Bottom J" visible="true" offset="0x4C"/>
+		<float name="Bottom K" visible="true" offset="0x50"/>
+		<float32 name="Bottom Radius" visible="true" offset="0x54"/>
+		<float name="Top I" visible="true" offset="0x58"/>
+		<float name="Top J" visible="true" offset="0x5C"/>
+		<float name="Top K" visible="true" offset="0x60"/>
+		<float32 name="Top Radius" visible="true" offset="0x64"/>
+	</reflexive>
+	<reflexive name="Boxes" visible="true" offset="0x94" entrySize="0xC4">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<int16 name="Material Index" visible="true" offset="0x4"/>
+		<int16 name="Runtime Material Type" visible="true" offset="0x6"/>
+		<float32 name="Relative Mass Scale" visible="true" offset="0x8"/>
+		<float32 name="Friction" visible="true" offset="0xC"/>
+		<float32 name="Restitution" visible="true" offset="0x10"/>
+		<float32 name="Volume" visible="true" offset="0x14"/>
+		<float32 name="Mass" visible="true" offset="0x18"/>
+		<int16 name="Mass Distribution Index" visible="true" offset="0x1C"/>
+		<int8 name="Phantom Index" visible="true" offset="0x1E"/>
+		<int8 name="Proxy Collision Group" visible="true" offset="0x1F"/>
+		<comment title="Shape  Base"></comment>
+
+		<comment title="Field  Pointer  Skip"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x20"/>
+		<uint32 name="Value 1" visible="true" offset="0x24"/>
+		<int16 name="Size" visible="true" offset="0x28"/>
+		<int16 name="Count" visible="true" offset="0x2A"/>
+		<comment title="Userdata"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x2C"/>
+		<uint32 name="Value 1" visible="true" offset="0x30"/>
+		<int32 name="Shape Type" visible="true" offset="0x34"/>
+		<float32 name="Radius" visible="true" offset="0x38"/>
+		<uint8 name="Pad Padding 0" visible="false" offset="0x3C"/>
+		<uint8 name="Pad Padding 1" visible="false" offset="0x3D"/>
+		<uint8 name="Pad Padding 2" visible="false" offset="0x3E"/>
+		<uint8 name="Pad Padding 3" visible="false" offset="0x3F"/>
+		<uint8 name="Pad Padding 4" visible="false" offset="0x40"/>
+		<uint8 name="Pad Padding 5" visible="false" offset="0x41"/>
+		<uint8 name="Pad Padding 6" visible="false" offset="0x42"/>
+		<uint8 name="Pad Padding 7" visible="false" offset="0x43"/>
+		<uint8 name="Pad Padding 8" visible="false" offset="0x44"/>
+		<uint8 name="Pad Padding 9" visible="false" offset="0x45"/>
+		<uint8 name="Pad Padding 10" visible="false" offset="0x46"/>
+		<uint8 name="Pad Padding 11" visible="false" offset="0x47"/>
+		<float name="Half Extents I" visible="true" offset="0x48"/>
+		<float name="Half Extents J" visible="true" offset="0x4C"/>
+		<float name="Half Extents K" visible="true" offset="0x50"/>
+		<float32 name="Half Extents Radius" visible="true" offset="0x54"/>
+		<comment title="Convex  Base"></comment>
+
+		<comment title="Field  Pointer  Skip"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x58"/>
+		<uint32 name="Value 1" visible="true" offset="0x5C"/>
+		<int16 name="Size" visible="true" offset="0x60"/>
+		<int16 name="Count" visible="true" offset="0x62"/>
+		<comment title="Userdata"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x64"/>
+		<uint32 name="Value 1" visible="true" offset="0x68"/>
+		<int32 name="Shape Type" visible="true" offset="0x6C"/>
+		<float32 name="Radius" visible="true" offset="0x70"/>
+		<comment title="Field  Pointer  Skip"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x74"/>
+		<uint32 name="Value 1" visible="true" offset="0x78"/>
+		<comment title="Shape  Reference"></comment>
+
+		<enum16 name="Shapetype" visible="true" offset="0x7C">
+			<option name="Sphere" value="0x0"/>
+			<option name="Pill" value="0x1"/>
+			<option name="Box" value="0x2"/>
+			<option name="Triangle" value="0x3"/>
+			<option name="Polyhedron" value="0x4"/>
+			<option name="Multi Sphere" value="0x5"/>
+			<option name="Triangle Mesh" value="0x6"/>
+			<option name="Compound Shape" value="0x7"/>
+			<option name="Unused0" value="0x8"/>
+			<option name="Unused1" value="0x9"/>
+			<option name="Unused2" value="0xA"/>
+			<option name="Unused3" value="0xB"/>
+			<option name="Unused4" value="0xC"/>
+			<option name="Unused5" value="0xD"/>
+			<option name="List" value="0xE"/>
+			<option name="Mopp" value="0xF"/>
+		</enum16>
+		<int16 name="Shape Index" visible="true" offset="0x7E"/>
+		<uint32 name="Child Shape Size" visible="true" offset="0x80"/>
+		<float name="Rotation II" visible="true" offset="0x84"/>
+		<float name="Rotation IJ" visible="true" offset="0x88"/>
+		<float name="Rotation IK" visible="true" offset="0x8C"/>
+		<float32 name="Rotation IRadius" visible="true" offset="0x90"/>
+		<float name="Rotation JI" visible="true" offset="0x94"/>
+		<float name="Rotation JJ" visible="true" offset="0x98"/>
+		<float name="Rotation JK" visible="true" offset="0x9C"/>
+		<float32 name="Rotation JRadius" visible="true" offset="0xA0"/>
+		<float name="Rotation KI" visible="true" offset="0xA4"/>
+		<float name="Rotation KJ" visible="true" offset="0xA8"/>
+		<float name="Rotation KK" visible="true" offset="0xAC"/>
+		<float32 name="Rotation KRadius" visible="true" offset="0xB0"/>
+		<float name="Translation I" visible="true" offset="0xB4"/>
+		<float name="Translation J" visible="true" offset="0xB8"/>
+		<float name="Translation K" visible="true" offset="0xBC"/>
+		<float32 name="Translation Radius" visible="true" offset="0xC0"/>
+	</reflexive>
+	<reflexive name="Triangles" visible="true" offset="0xA0" entrySize="0x88">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<int16 name="Material Index" visible="true" offset="0x4"/>
+		<int16 name="Runtime Material Type" visible="true" offset="0x6"/>
+		<float32 name="Relative Mass Scale" visible="true" offset="0x8"/>
+		<float32 name="Friction" visible="true" offset="0xC"/>
+		<float32 name="Restitution" visible="true" offset="0x10"/>
+		<float32 name="Volume" visible="true" offset="0x14"/>
+		<float32 name="Mass" visible="true" offset="0x18"/>
+		<int16 name="Mass Distribution Index" visible="true" offset="0x1C"/>
+		<int8 name="Phantom Index" visible="true" offset="0x1E"/>
+		<int8 name="Proxy Collision Group" visible="true" offset="0x1F"/>
+		<comment title="Shape  Base"></comment>
+
+		<comment title="Field  Pointer  Skip"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x20"/>
+		<uint32 name="Value 1" visible="true" offset="0x24"/>
+		<int16 name="Size" visible="true" offset="0x28"/>
+		<int16 name="Count" visible="true" offset="0x2A"/>
+		<comment title="Userdata"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x2C"/>
+		<uint32 name="Value 1" visible="true" offset="0x30"/>
+		<int32 name="Shape Type" visible="true" offset="0x34"/>
+		<float32 name="Radius" visible="true" offset="0x38"/>
+		<uint8 name="Pad Padding 0" visible="false" offset="0x3C"/>
+		<uint8 name="Pad Padding 1" visible="false" offset="0x3D"/>
+		<uint8 name="Pad Padding 2" visible="false" offset="0x3E"/>
+		<uint8 name="Pad Padding 3" visible="false" offset="0x3F"/>
+		<uint8 name="Pad Padding 4" visible="false" offset="0x40"/>
+		<uint8 name="Pad Padding 5" visible="false" offset="0x41"/>
+		<uint8 name="Pad Padding 6" visible="false" offset="0x42"/>
+		<uint8 name="Pad Padding 7" visible="false" offset="0x43"/>
+		<uint8 name="Pad Padding 8" visible="false" offset="0x44"/>
+		<uint8 name="Pad Padding 9" visible="false" offset="0x45"/>
+		<uint8 name="Pad Padding 10" visible="false" offset="0x46"/>
+		<uint8 name="Pad Padding 11" visible="false" offset="0x47"/>
+		<float name="Point AI" visible="true" offset="0x48"/>
+		<float name="Point AJ" visible="true" offset="0x4C"/>
+		<float name="Point AK" visible="true" offset="0x50"/>
+		<float32 name="Havokw Point A" visible="true" offset="0x54"/>
+		<float name="Point BI" visible="true" offset="0x58"/>
+		<float name="Point BJ" visible="true" offset="0x5C"/>
+		<float name="Point BK" visible="true" offset="0x60"/>
+		<float32 name="Havokw Point B" visible="true" offset="0x64"/>
+		<float name="Point CI" visible="true" offset="0x68"/>
+		<float name="Point CJ" visible="true" offset="0x6C"/>
+		<float name="Point CK" visible="true" offset="0x70"/>
+		<float32 name="Havokw Point C" visible="true" offset="0x74"/>
+		<float name="Extrusion I" visible="true" offset="0x78"/>
+		<float name="Extrusion J" visible="true" offset="0x7C"/>
+		<float name="Extrusion K" visible="true" offset="0x80"/>
+		<float32 name="Havokw Extrusion" visible="true" offset="0x84"/>
+	</reflexive>
+	<reflexive name="Polyhedra" visible="true" offset="0xAC" entrySize="0x90">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<int16 name="Material Index" visible="true" offset="0x4"/>
+		<int16 name="Runtime Material Type" visible="true" offset="0x6"/>
+		<float32 name="Relative Mass Scale" visible="true" offset="0x8"/>
+		<float32 name="Friction" visible="true" offset="0xC"/>
+		<float32 name="Restitution" visible="true" offset="0x10"/>
+		<float32 name="Volume" visible="true" offset="0x14"/>
+		<float32 name="Mass" visible="true" offset="0x18"/>
+		<int16 name="Mass Distribution Index" visible="true" offset="0x1C"/>
+		<int8 name="Phantom Index" visible="true" offset="0x1E"/>
+		<int8 name="Proxy Collision Group" visible="true" offset="0x1F"/>
+		<comment title="Shape  Base"></comment>
+
+		<comment title="Field  Pointer  Skip"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x20"/>
+		<uint32 name="Value 1" visible="true" offset="0x24"/>
+		<int16 name="Size" visible="true" offset="0x28"/>
+		<int16 name="Count" visible="true" offset="0x2A"/>
+		<comment title="Userdata"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x2C"/>
+		<uint32 name="Value 1" visible="true" offset="0x30"/>
+		<int32 name="Shape Type" visible="true" offset="0x34"/>
+		<float32 name="Radius" visible="true" offset="0x38"/>
+		<uint8 name="Pad Padding 0" visible="false" offset="0x3C"/>
+		<uint8 name="Pad Padding 1" visible="false" offset="0x3D"/>
+		<uint8 name="Pad Padding 2" visible="false" offset="0x3E"/>
+		<uint8 name="Pad Padding 3" visible="false" offset="0x3F"/>
+		<uint8 name="Pad Padding 4" visible="false" offset="0x40"/>
+		<uint8 name="Pad Padding 5" visible="false" offset="0x41"/>
+		<uint8 name="Pad Padding 6" visible="false" offset="0x42"/>
+		<uint8 name="Pad Padding 7" visible="false" offset="0x43"/>
+		<uint8 name="Pad Padding 8" visible="false" offset="0x44"/>
+		<uint8 name="Pad Padding 9" visible="false" offset="0x45"/>
+		<uint8 name="Pad Padding 10" visible="false" offset="0x46"/>
+		<uint8 name="Pad Padding 11" visible="false" offset="0x47"/>
+		<float name="Aabb Half Extents I" visible="true" offset="0x48"/>
+		<float name="Aabb Half Extents J" visible="true" offset="0x4C"/>
+		<float name="Aabb Half Extents K" visible="true" offset="0x50"/>
+		<float32 name="Aabb Half Extents Radius" visible="true" offset="0x54"/>
+		<float name="Aabb Center I" visible="true" offset="0x58"/>
+		<float name="Aabb Center J" visible="true" offset="0x5C"/>
+		<float name="Aabb Center K" visible="true" offset="0x60"/>
+		<float32 name="Aabb Center Radius" visible="true" offset="0x64"/>
+		<comment title="Field  Pointer  Skip"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x68"/>
+		<uint32 name="Value 1" visible="true" offset="0x6C"/>
+		<int32 name="Four Vectors Size" visible="true" offset="0x70"/>
+		<uint32 name="Four Vectors Capacity" visible="true" offset="0x74"/>
+		<int32 name="Num Vertices" visible="true" offset="0x78"/>
+		<comment title="Another  Field  Pointer  Skip"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x7C"/>
+		<uint32 name="Value 1" visible="true" offset="0x80"/>
+		<int32 name="Plane Equations Size" visible="true" offset="0x84"/>
+		<uint32 name="Plane Equations Capacity" visible="true" offset="0x88"/>
+		<uint32 name="Connectivity" visible="true" offset="0x8C"/>
+	</reflexive>
+	<reflexive name="Polyhedron Four Vectors" visible="true" offset="0xB8" entrySize="0x30">
+		<float name="Four Vectors XI" visible="true" offset="0x0"/>
+		<float name="Four Vectors XJ" visible="true" offset="0x4"/>
+		<float name="Four Vectors XK" visible="true" offset="0x8"/>
+		<float32 name="Four Vectors XRadius" visible="true" offset="0xC"/>
+		<float name="Four Vectors YI" visible="true" offset="0x10"/>
+		<float name="Four Vectors YJ" visible="true" offset="0x14"/>
+		<float name="Four Vectors YK" visible="true" offset="0x18"/>
+		<float32 name="Four Vectors YRadius" visible="true" offset="0x1C"/>
+		<float name="Four Vectors ZI" visible="true" offset="0x20"/>
+		<float name="Four Vectors ZJ" visible="true" offset="0x24"/>
+		<float name="Four Vectors ZK" visible="true" offset="0x28"/>
+		<float32 name="Four Vectors ZRadius" visible="true" offset="0x2C"/>
+	</reflexive>
+	<reflexive name="Polyhedron Plane Equations" visible="true" offset="0xC4" entrySize="0x10">
+		<float name="Plane Equation I" visible="true" offset="0x0"/>
+		<float name="Plane Equation J" visible="true" offset="0x4"/>
+		<float name="Plane Equation K" visible="true" offset="0x8"/>
+		<float name="Plane Equation Distance" visible="true" offset="0xC"/>
+	</reflexive>
+	<uint8 name="Unused Mass Distributions Padding 0" visible="false" offset="0xD0"/>
+	<uint8 name="Unused Mass Distributions Padding 1" visible="false" offset="0xD1"/>
+	<uint8 name="Unused Mass Distributions Padding 2" visible="false" offset="0xD2"/>
+	<uint8 name="Unused Mass Distributions Padding 3" visible="false" offset="0xD3"/>
+	<uint8 name="Unused Mass Distributions Padding 4" visible="false" offset="0xD4"/>
+	<uint8 name="Unused Mass Distributions Padding 5" visible="false" offset="0xD5"/>
+	<uint8 name="Unused Mass Distributions Padding 6" visible="false" offset="0xD6"/>
+	<uint8 name="Unused Mass Distributions Padding 7" visible="false" offset="0xD7"/>
+	<uint8 name="Unused Mass Distributions Padding 8" visible="false" offset="0xD8"/>
+	<uint8 name="Unused Mass Distributions Padding 9" visible="false" offset="0xD9"/>
+	<uint8 name="Unused Mass Distributions Padding 10" visible="false" offset="0xDA"/>
+	<uint8 name="Unused Mass Distributions Padding 11" visible="false" offset="0xDB"/>
+	<reflexive name="Lists" visible="true" offset="0xDC" entrySize="0x58">
+		<comment title="Field  Pointer  Skip"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x0"/>
+		<uint32 name="Value 1" visible="true" offset="0x4"/>
+		<int16 name="Size" visible="true" offset="0x8"/>
+		<int16 name="Count" visible="true" offset="0xA"/>
+		<comment title="Offset"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0xC"/>
+		<uint32 name="Value 1" visible="true" offset="0x10"/>
+		<comment title="User  Data"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x14"/>
+		<uint32 name="Value 1" visible="true" offset="0x18"/>
+		<comment title="Field  Pointer  Skip0"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x1C"/>
+		<uint32 name="Value 1" visible="true" offset="0x20"/>
+		<uint8 name="Disable Welding" visible="true" offset="0x24"/>
+		<uint8 name="Collection Type" visible="true" offset="0x25"/>
+		<uint8 name="Pad0 Padding 0" visible="false" offset="0x26"/>
+		<uint8 name="Pad0 Padding 1" visible="false" offset="0x27"/>
+		<comment title="Field  Pointer  Skip1"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x28"/>
+		<uint32 name="Value 1" visible="true" offset="0x2C"/>
+		<int32 name="Child Shapes Size" visible="true" offset="0x30"/>
+		<uint32 name="Child Shapes Capacity" visible="true" offset="0x34"/>
+		<float name="Aabb Half Extents I" visible="true" offset="0x38"/>
+		<float name="Aabb Half Extents J" visible="true" offset="0x3C"/>
+		<float name="Aabb Half Extents K" visible="true" offset="0x40"/>
+		<float32 name="Aabb Half Extents Radius" visible="true" offset="0x44"/>
+		<float name="Aabb Center I" visible="true" offset="0x48"/>
+		<float name="Aabb Center J" visible="true" offset="0x4C"/>
+		<float name="Aabb Center K" visible="true" offset="0x50"/>
+		<float32 name="Aabb Center Radius" visible="true" offset="0x54"/>
+	</reflexive>
+	<reflexive name="List Shapes" visible="true" offset="0xE8" entrySize="0x10">
+		<comment title="Shape"></comment>
+
+		<enum16 name="Type" visible="true" offset="0x0">
+			<option name="Sphere" value="0x0"/>
+			<option name="Pill" value="0x1"/>
+			<option name="Box" value="0x2"/>
+			<option name="Triangle" value="0x3"/>
+			<option name="Polyhedron" value="0x4"/>
+			<option name="Multi Sphere" value="0x5"/>
+			<option name="Triangle Mesh" value="0x6"/>
+			<option name="Compound Shape" value="0x7"/>
+			<option name="Unused0" value="0x8"/>
+			<option name="Unused1" value="0x9"/>
+			<option name="Unused2" value="0xA"/>
+			<option name="Unused3" value="0xB"/>
+			<option name="Unused4" value="0xC"/>
+			<option name="Unused5" value="0xD"/>
+			<option name="List" value="0xE"/>
+			<option name="Mopp" value="0xF"/>
+		</enum16>
+		<int16 name="Index" visible="true" offset="0x2"/>
+		<uint32 name="Collision Filter" visible="true" offset="0x4"/>
+		<uint32 name="Shape Size" visible="true" offset="0x8"/>
+		<uint32 name="Num Child Shapes" visible="true" offset="0xC"/>
+	</reflexive>
+	<reflexive name="Mopps" visible="true" offset="0xF4" entrySize="0x30">
+		<comment title="Vf  Table  Address"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x0"/>
+		<uint32 name="Value 1" visible="true" offset="0x4"/>
+		<comment title="Referenced  Object"></comment>
+
+		<uint16 name="Size And Flags" visible="true" offset="0x8"/>
+		<uint16 name="Reference Count" visible="true" offset="0xA"/>
+		<comment title="User  Data  Address"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0xC"/>
+		<uint32 name="Value 1" visible="true" offset="0x10"/>
+		<uint32 name="Type" visible="true" offset="0x14"/>
+		<comment title="Child"></comment>
+
+		<comment title="VTable  Address"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x18"/>
+		<uint32 name="Value 1" visible="true" offset="0x1C"/>
+		<comment title="Shape"></comment>
+
+		<enum16 name="Type" visible="true" offset="0x20">
+			<option name="Sphere" value="0x0"/>
+			<option name="Pill" value="0x1"/>
+			<option name="Box" value="0x2"/>
+			<option name="Triangle" value="0x3"/>
+			<option name="Polyhedron" value="0x4"/>
+			<option name="Multi Sphere" value="0x5"/>
+			<option name="Triangle Mesh" value="0x6"/>
+			<option name="Compound Shape" value="0x7"/>
+			<option name="Unused0" value="0x8"/>
+			<option name="Unused1" value="0x9"/>
+			<option name="Unused2" value="0xA"/>
+			<option name="Unused3" value="0xB"/>
+			<option name="Unused4" value="0xC"/>
+			<option name="Unused5" value="0xD"/>
+			<option name="List" value="0xE"/>
+			<option name="Mopp" value="0xF"/>
+		</enum16>
+		<int16 name="Index" visible="true" offset="0x22"/>
+		<comment title="Mopp  Code  Address"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x24"/>
+		<uint32 name="Value 1" visible="true" offset="0x28"/>
+		<float32 name="Scale" visible="true" offset="0x2C"/>
+	</reflexive>
+	<dataRef name="Mopp Data" visible="true" offset="0x100"/>
+	<reflexive name="Hinge Constraints" visible="true" offset="0x114" entrySize="0x78">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<int16 name="Node A" visible="true" offset="0x4"/>
+		<int16 name="Node B" visible="true" offset="0x6"/>
+		<float32 name="AScale" visible="true" offset="0x8"/>
+		<float name="AForward I" visible="true" offset="0xC"/>
+		<float name="AForward J" visible="true" offset="0x10"/>
+		<float name="AForward K" visible="true" offset="0x14"/>
+		<float name="ALeft I" visible="true" offset="0x18"/>
+		<float name="ALeft J" visible="true" offset="0x1C"/>
+		<float name="ALeft K" visible="true" offset="0x20"/>
+		<float name="AUp I" visible="true" offset="0x24"/>
+		<float name="AUp J" visible="true" offset="0x28"/>
+		<float name="AUp K" visible="true" offset="0x2C"/>
+		<vector3 name="APosition" visible="true" offset="0x30"/>
+		<float32 name="BScale" visible="true" offset="0x3C"/>
+		<float name="BForward I" visible="true" offset="0x40"/>
+		<float name="BForward J" visible="true" offset="0x44"/>
+		<float name="BForward K" visible="true" offset="0x48"/>
+		<float name="BLeft I" visible="true" offset="0x4C"/>
+		<float name="BLeft J" visible="true" offset="0x50"/>
+		<float name="BLeft K" visible="true" offset="0x54"/>
+		<float name="BUp I" visible="true" offset="0x58"/>
+		<float name="BUp J" visible="true" offset="0x5C"/>
+		<float name="BUp K" visible="true" offset="0x60"/>
+		<vector3 name="BPosition" visible="true" offset="0x64"/>
+		<int16 name="Edge Index" visible="true" offset="0x70"/>
+		<int16 name="Unknown" visible="true" offset="0x72"/>
+		<uint32 name="Unknown2" visible="true" offset="0x74"/>
+	</reflexive>
+	<reflexive name="Ragdoll Constraints" visible="true" offset="0x120" entrySize="0x94">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<int16 name="Node A" visible="true" offset="0x4"/>
+		<int16 name="Node B" visible="true" offset="0x6"/>
+		<float32 name="AScale" visible="true" offset="0x8"/>
+		<float name="AForward I" visible="true" offset="0xC"/>
+		<float name="AForward J" visible="true" offset="0x10"/>
+		<float name="AForward K" visible="true" offset="0x14"/>
+		<float name="ALeft I" visible="true" offset="0x18"/>
+		<float name="ALeft J" visible="true" offset="0x1C"/>
+		<float name="ALeft K" visible="true" offset="0x20"/>
+		<float name="AUp I" visible="true" offset="0x24"/>
+		<float name="AUp J" visible="true" offset="0x28"/>
+		<float name="AUp K" visible="true" offset="0x2C"/>
+		<vector3 name="APosition" visible="true" offset="0x30"/>
+		<float32 name="BScale" visible="true" offset="0x3C"/>
+		<float name="BForward I" visible="true" offset="0x40"/>
+		<float name="BForward J" visible="true" offset="0x44"/>
+		<float name="BForward K" visible="true" offset="0x48"/>
+		<float name="BLeft I" visible="true" offset="0x4C"/>
+		<float name="BLeft J" visible="true" offset="0x50"/>
+		<float name="BLeft K" visible="true" offset="0x54"/>
+		<float name="BUp I" visible="true" offset="0x58"/>
+		<float name="BUp J" visible="true" offset="0x5C"/>
+		<float name="BUp K" visible="true" offset="0x60"/>
+		<vector3 name="BPosition" visible="true" offset="0x64"/>
+		<int16 name="Edge Index" visible="true" offset="0x70"/>
+		<int16 name="Unknown" visible="true" offset="0x72"/>
+		<uint32 name="Unknown2" visible="true" offset="0x74"/>
+		<float32 name="Twist Range Min" visible="true" offset="0x78"/>
+		<float32 name="Twist Range Max" visible="true" offset="0x7C"/>
+		<float32 name="Cone Range Min" visible="true" offset="0x80"/>
+		<float32 name="Cone Range Max" visible="true" offset="0x84"/>
+		<float32 name="Plane Range Min" visible="true" offset="0x88"/>
+		<float32 name="Plane Range Max" visible="true" offset="0x8C"/>
+		<float32 name="Max Friction Torque" visible="true" offset="0x90"/>
+	</reflexive>
+	<reflexive name="Regions" visible="true" offset="0x12C" entrySize="0x10">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<reflexive name="Permutations" visible="true" offset="0x4" entrySize="0x10">
+			<stringId name="Name" visible="true" offset="0x0"/>
+			<reflexive name="Rigid Bodies" visible="true" offset="0x4" entrySize="0x2">
+				<int16 name="Rigid Body Index" visible="true" offset="0x0"/>
+			</reflexive>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Nodes" visible="true" offset="0x138" entrySize="0xC">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<uint16 name="Flags" visible="true" offset="0x4"/>
+		<int16 name="Parent" visible="true" offset="0x6"/>
+		<int16 name="Sibling" visible="true" offset="0x8"/>
+		<int16 name="Child" visible="true" offset="0xA"/>
+	</reflexive>
+	<uint8 name="Unused Errors Padding 0" visible="false" offset="0x144"/>
+	<uint8 name="Unused Errors Padding 1" visible="false" offset="0x145"/>
+	<uint8 name="Unused Errors Padding 2" visible="false" offset="0x146"/>
+	<uint8 name="Unused Errors Padding 3" visible="false" offset="0x147"/>
+	<uint8 name="Unused Errors Padding 4" visible="false" offset="0x148"/>
+	<uint8 name="Unused Errors Padding 5" visible="false" offset="0x149"/>
+	<uint8 name="Unused Errors Padding 6" visible="false" offset="0x14A"/>
+	<uint8 name="Unused Errors Padding 7" visible="false" offset="0x14B"/>
+	<uint8 name="Unused Errors Padding 8" visible="false" offset="0x14C"/>
+	<uint8 name="Unused Errors Padding 9" visible="false" offset="0x14D"/>
+	<uint8 name="Unused Errors Padding 10" visible="false" offset="0x14E"/>
+	<uint8 name="Unused Errors Padding 11" visible="false" offset="0x14F"/>
+	<uint8 name="Unused Point To Path Curves Padding 0" visible="false" offset="0x150"/>
+	<uint8 name="Unused Point To Path Curves Padding 1" visible="false" offset="0x151"/>
+	<uint8 name="Unused Point To Path Curves Padding 2" visible="false" offset="0x152"/>
+	<uint8 name="Unused Point To Path Curves Padding 3" visible="false" offset="0x153"/>
+	<uint8 name="Unused Point To Path Curves Padding 4" visible="false" offset="0x154"/>
+	<uint8 name="Unused Point To Path Curves Padding 5" visible="false" offset="0x155"/>
+	<uint8 name="Unused Point To Path Curves Padding 6" visible="false" offset="0x156"/>
+	<uint8 name="Unused Point To Path Curves Padding 7" visible="false" offset="0x157"/>
+	<uint8 name="Unused Point To Path Curves Padding 8" visible="false" offset="0x158"/>
+	<uint8 name="Unused Point To Path Curves Padding 9" visible="false" offset="0x159"/>
+	<uint8 name="Unused Point To Path Curves Padding 10" visible="false" offset="0x15A"/>
+	<uint8 name="Unused Point To Path Curves Padding 11" visible="false" offset="0x15B"/>
+	<reflexive name="Limited Hinge Constraints" visible="true" offset="0x15C" entrySize="0x84">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<int16 name="Node A" visible="true" offset="0x4"/>
+		<int16 name="Node B" visible="true" offset="0x6"/>
+		<float32 name="AScale" visible="true" offset="0x8"/>
+		<float name="AForward I" visible="true" offset="0xC"/>
+		<float name="AForward J" visible="true" offset="0x10"/>
+		<float name="AForward K" visible="true" offset="0x14"/>
+		<float name="ALeft I" visible="true" offset="0x18"/>
+		<float name="ALeft J" visible="true" offset="0x1C"/>
+		<float name="ALeft K" visible="true" offset="0x20"/>
+		<float name="AUp I" visible="true" offset="0x24"/>
+		<float name="AUp J" visible="true" offset="0x28"/>
+		<float name="AUp K" visible="true" offset="0x2C"/>
+		<vector3 name="APosition" visible="true" offset="0x30"/>
+		<float32 name="BScale" visible="true" offset="0x3C"/>
+		<float name="BForward I" visible="true" offset="0x40"/>
+		<float name="BForward J" visible="true" offset="0x44"/>
+		<float name="BForward K" visible="true" offset="0x48"/>
+		<float name="BLeft I" visible="true" offset="0x4C"/>
+		<float name="BLeft J" visible="true" offset="0x50"/>
+		<float name="BLeft K" visible="true" offset="0x54"/>
+		<float name="BUp I" visible="true" offset="0x58"/>
+		<float name="BUp J" visible="true" offset="0x5C"/>
+		<float name="BUp K" visible="true" offset="0x60"/>
+		<vector3 name="BPosition" visible="true" offset="0x64"/>
+		<int16 name="Edge Index" visible="true" offset="0x70"/>
+		<int16 name="Unknown" visible="true" offset="0x72"/>
+		<uint32 name="Unknown2" visible="true" offset="0x74"/>
+		<float32 name="Limit Friction" visible="true" offset="0x78"/>
+		<degree name="Limit Angle Bounds Min" visible="true" offset="0x7C"/>
+		<degree name="Limit Angle Bounds Max" visible="true" offset="0x80"/>
+	</reflexive>
+	<uint8 name="Unused Ball And Socket Constraints Padding 0" visible="false" offset="0x168"/>
+	<uint8 name="Unused Ball And Socket Constraints Padding 1" visible="false" offset="0x169"/>
+	<uint8 name="Unused Ball And Socket Constraints Padding 2" visible="false" offset="0x16A"/>
+	<uint8 name="Unused Ball And Socket Constraints Padding 3" visible="false" offset="0x16B"/>
+	<uint8 name="Unused Ball And Socket Constraints Padding 4" visible="false" offset="0x16C"/>
+	<uint8 name="Unused Ball And Socket Constraints Padding 5" visible="false" offset="0x16D"/>
+	<uint8 name="Unused Ball And Socket Constraints Padding 6" visible="false" offset="0x16E"/>
+	<uint8 name="Unused Ball And Socket Constraints Padding 7" visible="false" offset="0x16F"/>
+	<uint8 name="Unused Ball And Socket Constraints Padding 8" visible="false" offset="0x170"/>
+	<uint8 name="Unused Ball And Socket Constraints Padding 9" visible="false" offset="0x171"/>
+	<uint8 name="Unused Ball And Socket Constraints Padding 10" visible="false" offset="0x172"/>
+	<uint8 name="Unused Ball And Socket Constraints Padding 11" visible="false" offset="0x173"/>
+	<uint8 name="Unused Stiff Spring Constraints Padding 0" visible="false" offset="0x174"/>
+	<uint8 name="Unused Stiff Spring Constraints Padding 1" visible="false" offset="0x175"/>
+	<uint8 name="Unused Stiff Spring Constraints Padding 2" visible="false" offset="0x176"/>
+	<uint8 name="Unused Stiff Spring Constraints Padding 3" visible="false" offset="0x177"/>
+	<uint8 name="Unused Stiff Spring Constraints Padding 4" visible="false" offset="0x178"/>
+	<uint8 name="Unused Stiff Spring Constraints Padding 5" visible="false" offset="0x179"/>
+	<uint8 name="Unused Stiff Spring Constraints Padding 6" visible="false" offset="0x17A"/>
+	<uint8 name="Unused Stiff Spring Constraints Padding 7" visible="false" offset="0x17B"/>
+	<uint8 name="Unused Stiff Spring Constraints Padding 8" visible="false" offset="0x17C"/>
+	<uint8 name="Unused Stiff Spring Constraints Padding 9" visible="false" offset="0x17D"/>
+	<uint8 name="Unused Stiff Spring Constraints Padding 10" visible="false" offset="0x17E"/>
+	<uint8 name="Unused Stiff Spring Constraints Padding 11" visible="false" offset="0x17F"/>
+	<uint8 name="Unused Prismatic Constraints Padding 0" visible="false" offset="0x180"/>
+	<uint8 name="Unused Prismatic Constraints Padding 1" visible="false" offset="0x181"/>
+	<uint8 name="Unused Prismatic Constraints Padding 2" visible="false" offset="0x182"/>
+	<uint8 name="Unused Prismatic Constraints Padding 3" visible="false" offset="0x183"/>
+	<uint8 name="Unused Prismatic Constraints Padding 4" visible="false" offset="0x184"/>
+	<uint8 name="Unused Prismatic Constraints Padding 5" visible="false" offset="0x185"/>
+	<uint8 name="Unused Prismatic Constraints Padding 6" visible="false" offset="0x186"/>
+	<uint8 name="Unused Prismatic Constraints Padding 7" visible="false" offset="0x187"/>
+	<uint8 name="Unused Prismatic Constraints Padding 8" visible="false" offset="0x188"/>
+	<uint8 name="Unused Prismatic Constraints Padding 9" visible="false" offset="0x189"/>
+	<uint8 name="Unused Prismatic Constraints Padding 10" visible="false" offset="0x18A"/>
+	<uint8 name="Unused Prismatic Constraints Padding 11" visible="false" offset="0x18B"/>
+	<reflexive name="Phantoms" visible="true" offset="0x18C" entrySize="0x44">
+		<comment title="Shape  Base"></comment>
+
+		<comment title="Field  Pointer  Skip"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x0"/>
+		<uint32 name="Value 1" visible="true" offset="0x4"/>
+		<int16 name="Size" visible="true" offset="0x8"/>
+		<int16 name="Count" visible="true" offset="0xA"/>
+		<comment title="Userdata"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0xC"/>
+		<uint32 name="Value 1" visible="true" offset="0x10"/>
+		<int32 name="Type" visible="true" offset="0x14"/>
+		<enum16 name="Shape Type" visible="true" offset="0x18">
+			<option name="Sphere" value="0x0"/>
+			<option name="Pill" value="0x1"/>
+			<option name="Box" value="0x2"/>
+			<option name="Triangle" value="0x3"/>
+			<option name="Polyhedron" value="0x4"/>
+			<option name="Multi Sphere" value="0x5"/>
+			<option name="Triangle Mesh" value="0x6"/>
+			<option name="Compound Shape" value="0x7"/>
+			<option name="Unused0" value="0x8"/>
+			<option name="Unused1" value="0x9"/>
+			<option name="Unused2" value="0xA"/>
+			<option name="Unused3" value="0xB"/>
+			<option name="Unused4" value="0xC"/>
+			<option name="Unused5" value="0xD"/>
+			<option name="List" value="0xE"/>
+			<option name="Mopp" value="0xF"/>
+		</enum16>
+		<int16 name="Shape Index" visible="true" offset="0x1A"/>
+		<comment title="Unknown4"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x1C"/>
+		<uint32 name="Value 1" visible="true" offset="0x20"/>
+		<comment title="Unknown5"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x24"/>
+		<uint32 name="Value 1" visible="true" offset="0x28"/>
+		<comment title="Phantom  Shape"></comment>
+
+		<comment title="Field  Pointer  Skip"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x2C"/>
+		<uint32 name="Value 1" visible="true" offset="0x30"/>
+		<int16 name="Size" visible="true" offset="0x34"/>
+		<int16 name="Count" visible="true" offset="0x36"/>
+		<comment title="Userdata"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x38"/>
+		<uint32 name="Value 1" visible="true" offset="0x3C"/>
+		<int32 name="Type" visible="true" offset="0x40"/>
+	</reflexive>
+</plugin>

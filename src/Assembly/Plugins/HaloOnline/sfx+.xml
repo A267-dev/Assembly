@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0xC">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Sound Effects" visible="true" offset="0x0" entrySize="0x4C">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<uint32 name="Unknown" visible="true" offset="0x4"/>
+		<uint32 name="Unknown2" visible="true" offset="0x8"/>
+		<uint32 name="Unknown3" visible="true" offset="0xC"/>
+		<uint32 name="Flags" visible="true" offset="0x10"/>
+		<uint32 name="Unknown4" visible="true" offset="0x14"/>
+		<uint32 name="Unknown5" visible="true" offset="0x18"/>
+		<reflexive name="Filter" visible="true" offset="0x1C" entrySize="0x48">
+			<int32 name="Filter Type" visible="true" offset="0x0"/>
+			<int32 name="Filter Width" visible="true" offset="0x4"/>
+			<float32 name="Left Frequency Scale Min" visible="true" offset="0x8"/>
+			<float32 name="Left Frequency Scale Max" visible="true" offset="0xC"/>
+			<float32 name="Left Frequency Random Base Variance Min" visible="true" offset="0x10"/>
+			<float32 name="Left Frequency Random Base Variance Max" visible="true" offset="0x14"/>
+			<float32 name="Left Gain Scale Min" visible="true" offset="0x18"/>
+			<float32 name="Left Gain Scale Max" visible="true" offset="0x1C"/>
+			<float32 name="Left Gain Random Base Variance Min" visible="true" offset="0x20"/>
+			<float32 name="Left Gain Random Base Variance Max" visible="true" offset="0x24"/>
+			<float32 name="Right Frequency Scale Min" visible="true" offset="0x28"/>
+			<float32 name="Right Frequency Scale Max" visible="true" offset="0x2C"/>
+			<float32 name="Right Frequency Random Base Variance Min" visible="true" offset="0x30"/>
+			<float32 name="Right Frequency Random Base Variance Max" visible="true" offset="0x34"/>
+			<float32 name="Right Gain Scale Min" visible="true" offset="0x38"/>
+			<float32 name="Right Gain Scale Max" visible="true" offset="0x3C"/>
+			<float32 name="Right Gain Random Base Variance Min" visible="true" offset="0x40"/>
+			<float32 name="Right Gain Random Base Variance Max" visible="true" offset="0x44"/>
+		</reflexive>
+		<reflexive name="Pitch LFO" visible="true" offset="0x28" entrySize="0x30">
+			<float32 name="Delay Scale Min" visible="true" offset="0x0"/>
+			<float32 name="Delay Scale Max" visible="true" offset="0x4"/>
+			<float32 name="Delay Random Base Variance Min" visible="true" offset="0x8"/>
+			<float32 name="Delay Random Base Variance Max" visible="true" offset="0xC"/>
+			<float32 name="Frequency Scale Min" visible="true" offset="0x10"/>
+			<float32 name="Frequency Scale Max" visible="true" offset="0x14"/>
+			<float32 name="Frequency Random Base Variance Min" visible="true" offset="0x18"/>
+			<float32 name="Frequency Random Base Variance Max" visible="true" offset="0x1C"/>
+			<float32 name="Pitch Modulation Scale Min" visible="true" offset="0x20"/>
+			<float32 name="Pitch Modulation Scale Max" visible="true" offset="0x24"/>
+			<float32 name="Pitch Modulation Random Base Variance Min" visible="true" offset="0x28"/>
+			<float32 name="Pitch Modulation Random Base Variance Max" visible="true" offset="0x2C"/>
+		</reflexive>
+		<reflexive name="Filter LFO" visible="true" offset="0x34" entrySize="0x40">
+			<float32 name="Delay Scale Min" visible="true" offset="0x0"/>
+			<float32 name="Delay Scale Max" visible="true" offset="0x4"/>
+			<float32 name="Delay Random Base Variance Min" visible="true" offset="0x8"/>
+			<float32 name="Delay Random Base Variance Max" visible="true" offset="0xC"/>
+			<float32 name="Frequency Scale Min" visible="true" offset="0x10"/>
+			<float32 name="Frequency Scale Max" visible="true" offset="0x14"/>
+			<float32 name="Frequency Random Base Variance Min" visible="true" offset="0x18"/>
+			<float32 name="Frequency Random Base Variance Max" visible="true" offset="0x1C"/>
+			<float32 name="Cutoff Modulation Scale Min" visible="true" offset="0x20"/>
+			<float32 name="Cutoff Modulation Scale Max" visible="true" offset="0x24"/>
+			<float32 name="Cutoff Modulation Random Base Variance Min" visible="true" offset="0x28"/>
+			<float32 name="Cutoff Modulation Random Base Variance Max" visible="true" offset="0x2C"/>
+			<float32 name="Gain Modulation Scale Min" visible="true" offset="0x30"/>
+			<float32 name="Gain Modulation Scale Max" visible="true" offset="0x34"/>
+			<float32 name="Gain Modulation Random Base Variance Min" visible="true" offset="0x38"/>
+			<float32 name="Gain Modulation Random Base Variance Max" visible="true" offset="0x3C"/>
+		</reflexive>
+		<reflexive name="Sound Effect2" visible="true" offset="0x40" entrySize="0x48">
+			<tagref name="Sound Effect Template" visible="true" offset="0x0"/>
+			<reflexive name="Components" visible="true" offset="0x10" entrySize="0x18">
+				<tagref name="Sound" visible="true" offset="0x0"/>
+				<uint32 name="Gain" visible="true" offset="0x10"/>
+				<int32 name="Flags" visible="true" offset="0x14"/>
+			</reflexive>
+			<reflexive name="Template Collection" visible="true" offset="0x1C" entrySize="0x10">
+				<stringId name="DSPEffect" visible="true" offset="0x0"/>
+				<reflexive name="Parameters" visible="true" offset="0x4" entrySize="0x2C">
+					<stringId name="Name" visible="true" offset="0x0"/>
+					<float32 name="Unknown" visible="true" offset="0x4"/>
+					<float32 name="Unknown2" visible="true" offset="0x8"/>
+					<float32 name="Hardware Offset" visible="true" offset="0xC"/>
+					<float32 name="Unknown3" visible="true" offset="0x10"/>
+					<float32 name="Default Scalar Value" visible="true" offset="0x14"/>
+					<dataRef name="Function" visible="true" offset="0x18"/>
+				</reflexive>
+			</reflexive>
+			<uint32 name="Unknown1" visible="true" offset="0x28"/>
+			<uint32 name="Unknown2" visible="true" offset="0x2C"/>
+			<uint32 name="Unknown3" visible="true" offset="0x30"/>
+			<uint32 name="Unknown4" visible="true" offset="0x34"/>
+			<uint32 name="Unknown5" visible="true" offset="0x38"/>
+			<uint32 name="Unknown6" visible="true" offset="0x3C"/>
+			<uint32 name="Unknown7" visible="true" offset="0x40"/>
+			<uint32 name="Unknown8" visible="true" offset="0x44"/>
+		</reflexive>
+	</reflexive>
+</plugin>

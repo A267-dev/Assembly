@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x18">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<enum32 name="Parameter HO" visible="true" offset="0x0">
+		<option name="Int Global Teams" value="0x0"/>
+		<option name="Int Global New Unknown" value="0x1"/>
+		<option name="Int Global Rounds Reset" value="0x2"/>
+		<option name="Int Global Round Time Limit" value="0x3"/>
+		<option name="Int Global Round Count" value="0x4"/>
+		<option name="Int Global Early Victory Win Count" value="0x5"/>
+		<option name="Int Global Respawn Inheritance" value="0x6"/>
+		<option name="Int Global Respawn With Team" value="0x7"/>
+		<option name="Int Global Respawn At Location" value="0x8"/>
+		<option name="Int Global Respawn On Kill" value="0x9"/>
+		<option name="Int Global Lives Per Round" value="0xA"/>
+		<option name="Int Global Team Lives Per Round" value="0xB"/>
+		<option name="Int Global Respawn Time" value="0xC"/>
+		<option name="Int Global Suicide Penalty" value="0xD"/>
+		<option name="Int Global Betrayal Penalty" value="0xE"/>
+		<option name="Int Global Respawn Growth" value="0xF"/>
+		<option name="Int Global Respawn Traits Duration" value="0x10"/>
+		<option name="Int Global Respawn Traits Damage Resistance" value="0x11"/>
+		<option name="Int Global Respawn Traits Shield Multiplier" value="0x12"/>
+		<option name="Int Global Respawn Traits Shield Recharge" value="0x13"/>
+		<option name="Int Global Respawn Traits Headshot Immunity" value="0x14"/>
+		<option name="Int Global Respawn Traits Vampirism" value="0x15"/>
+		<option name="Int Global Respawn Traits Damage Modifier" value="0x16"/>
+		<option name="Sid Global Respawn Traits Primary Weapon" value="0x17"/>
+		<option name="Sid Global Respawn Traits Secondary Weapon" value="0x18"/>
+		<option name="Int Global Respawn Traits Grenade Count" value="0x19"/>
+		<option name="Int Global Respawn Traits Grenade Recharge" value="0x1A"/>
+		<option name="Int Global Respawn Traits Infinite Ammo" value="0x1B"/>
+		<option name="Int Global Respawn Traits Weapon Pickup" value="0x1C"/>
+		<option name="Int Global Respawn Traits Speed" value="0x1D"/>
+		<option name="Int Global Respawn Traits Gravity" value="0x1E"/>
+		<option name="Int Global Respawn Traits Vehicle Use" value="0x1F"/>
+		<option name="Int Global Respawn Traits Sensor" value="0x20"/>
+		<option name="Int Global Respawn Traits Sensor Range" value="0x21"/>
+		<option name="Int Global Respawn Traits Waypoint" value="0x22"/>
+		<option name="Int Global Respawn Traits Active Camo" value="0x23"/>
+		<option name="Int Global Respawn Traits Visual Aura" value="0x24"/>
+		<option name="Int Global Respawn Traits Forced Color" value="0x25"/>
+		<option name="Int Global Observers" value="0x26"/>
+		<option name="Int Global Team Changing" value="0x27"/>
+		<option name="Int Global Friendly Fire" value="0x28"/>
+		<option name="Int Global Betrayal Booting" value="0x29"/>
+		<option name="Int Global Enemy Voice" value="0x2A"/>
+		<option name="Int Global Open Channel Voice" value="0x2B"/>
+		<option name="Int Global Dead Player Voice" value="0x2C"/>
+		<option name="Int Global Grenades On Map" value="0x2D"/>
+		<option name="Int Global Indestructible Vehicles" value="0x2E"/>
+		<option name="Int Global Base Traits Damage Resistance" value="0x2F"/>
+		<option name="Int Global Base Traits Shield Multiplier" value="0x30"/>
+		<option name="Int Global Base Traits Shield Recharge" value="0x31"/>
+		<option name="Int Global Base Traits Headshot Immunity" value="0x32"/>
+		<option name="Int Global Base Traits Vampirism" value="0x33"/>
+		<option name="Int Global Base Traits Damage Modifier" value="0x34"/>
+		<option name="Sid Global Base Traits Primary Weapon" value="0x35"/>
+		<option name="Sid Global Base Traits Secondary Weapon" value="0x36"/>
+		<option name="Int Global Base Traits Grenade Count" value="0x37"/>
+		<option name="Int Global Base Traits Grenade Recharge" value="0x38"/>
+		<option name="Int Global Base Traits Infinite Ammo" value="0x39"/>
+		<option name="Int Global Base Traits Weapon Pickup" value="0x3A"/>
+		<option name="Int Global Base Traits Speed" value="0x3B"/>
+		<option name="Int Global Base Traits Gravity" value="0x3C"/>
+		<option name="Int Global Base Traits Vehicle Use" value="0x3D"/>
+		<option name="Int Global Base Traits Sensor" value="0x3E"/>
+		<option name="Int Global Base Traits Sensor Range" value="0x3F"/>
+		<option name="Int Global Base Traits Waypoint" value="0x40"/>
+		<option name="Int Global Base Traits Active Camo" value="0x41"/>
+		<option name="Int Global Base Traits Visual Aura" value="0x42"/>
+		<option name="Int Global Base Traits Forced Color" value="0x43"/>
+		<option name="Sid Global Map Weapon Set" value="0x44"/>
+		<option name="Sid Global Map Vehicle Set" value="0x45"/>
+		<option name="Int Global Red Traits Damage Resistance" value="0x46"/>
+		<option name="Int Global Red Traits Shield Multiplier" value="0x47"/>
+		<option name="Int Global Red Traits Shield Recharge" value="0x48"/>
+		<option name="Int Global Red Traits Headshot Immunity" value="0x49"/>
+		<option name="Int Global Red Traits Vampirism" value="0x4A"/>
+		<option name="Int Global Red Traits Damage Modifier" value="0x4B"/>
+		<option name="Sid Global Red Traits Primary Weapon" value="0x4C"/>
+		<option name="Sid Global Red Traits Secondary Weapon" value="0x4D"/>
+		<option name="Int Global Red Traits Grenade Count" value="0x4E"/>
+		<option name="Int Global Red Traits Grenade Recharge" value="0x4F"/>
+		<option name="Int Global Red Traits Infinite Ammo" value="0x50"/>
+		<option name="Int Global Red Traits Weapon Pickup" value="0x51"/>
+		<option name="Int Global Red Traits Speed" value="0x52"/>
+		<option name="Int Global Red Traits Gravity" value="0x53"/>
+		<option name="Int Global Red Traits Vehicle Use" value="0x54"/>
+		<option name="Int Global Red Traits Sensor" value="0x55"/>
+		<option name="Int Global Red Traits Sensor Range" value="0x56"/>
+		<option name="Int Global Red Traits Waypoint" value="0x57"/>
+		<option name="Int Global Red Traits Active Camo" value="0x58"/>
+		<option name="Int Global Red Traits Visual Aura" value="0x59"/>
+		<option name="Int Global Red Traits Forced Color" value="0x5A"/>
+		<option name="Int Global Blue Traits Damage Resistance" value="0x5B"/>
+		<option name="Int Global Blue Traits Shield Multiplier" value="0x5C"/>
+		<option name="Int Global Blue Traits Shield Recharge" value="0x5D"/>
+		<option name="Int Global Blue Traits Headshot Immunity" value="0x5E"/>
+		<option name="Int Global Blue Traits Vampirism" value="0x5F"/>
+		<option name="Int Global Blue Traits Damage Modifier" value="0x60"/>
+		<option name="Sid Global Blue Traits Primary Weapon" value="0x61"/>
+		<option name="Sid Global Blue Traits Secondary Weapon" value="0x62"/>
+		<option name="Int Global Blue Traits Grenade Count" value="0x63"/>
+		<option name="Int Global Blue Traits Grenade Recharge" value="0x64"/>
+		<option name="Int Global Blue Traits Infinite Ammo" value="0x65"/>
+		<option name="Int Global Blue Traits Weapon Pickup" value="0x66"/>
+		<option name="Int Global Blue Traits Speed" value="0x67"/>
+		<option name="Int Global Blue Traits Gravity" value="0x68"/>
+		<option name="Int Global Blue Traits Vehicle Use" value="0x69"/>
+		<option name="Int Global Blue Traits Sensor" value="0x6A"/>
+		<option name="Int Global Blue Traits Sensor Range" value="0x6B"/>
+		<option name="Int Global Blue Traits Waypoint" value="0x6C"/>
+		<option name="Int Global Blue Traits Active Camo" value="0x6D"/>
+		<option name="Int Global Blue Traits Visual Aura" value="0x6E"/>
+		<option name="Int Global Blue Traits Forced Color" value="0x6F"/>
+		<option name="Int Global Yellow Traits Damage Resistance" value="0x70"/>
+		<option name="Int Global Yellow Traits Shield Multiplier" value="0x71"/>
+		<option name="Int Global Yellow Traits Shield Recharge" value="0x72"/>
+		<option name="Int Global Yellow Traits Headshot Immunity" value="0x73"/>
+		<option name="Int Global Yellow Traits Vampirism" value="0x74"/>
+		<option name="Int Global Yellow Traits Damage Modifier" value="0x75"/>
+		<option name="Sid Global Yellow Traits Primary Weapon" value="0x76"/>
+		<option name="Sid Global Yellow Traits Secondary Weapon" value="0x77"/>
+		<option name="Int Global Yellow Traits Grenade Count" value="0x78"/>
+		<option name="Int Global Yellow Traits Grenade Recharge" value="0x79"/>
+		<option name="Int Global Yellow Traits Infinite Ammo" value="0x7A"/>
+		<option name="Int Global Yellow Traits Weapon Pickup" value="0x7B"/>
+		<option name="Int Global Yellow Traits Speed" value="0x7C"/>
+		<option name="Int Global Yellow Traits Gravity" value="0x7D"/>
+		<option name="Int Global Yellow Traits Vehicle Use" value="0x7E"/>
+		<option name="Int Global Yellow Traits Sensor" value="0x7F"/>
+		<option name="Int Global Yellow Traits Sensor Range" value="0x80"/>
+		<option name="Int Global Yellow Traits Waypoint" value="0x81"/>
+		<option name="Int Global Yellow Traits Active Camo" value="0x82"/>
+		<option name="Int Global Yellow Traits Visual Aura" value="0x83"/>
+		<option name="Int Global Yellow Traits Forced Color" value="0x84"/>
+		<option name="Int Global Red Traits Duration" value="0x85"/>
+		<option name="Int Global Blue Traits Duration" value="0x86"/>
+		<option name="Int Global Yellow Traits Duration" value="0x87"/>
+		<option name="Int Slayer Team Scoring" value="0x88"/>
+		<option name="Int Slayer Score To Win" value="0x89"/>
+		<option name="Int Slayer Kill Points" value="0x8A"/>
+		<option name="Int Slayer Assist Points" value="0x8B"/>
+		<option name="Int Slayer Death Points" value="0x8C"/>
+		<option name="Int Slayer Suicide Points" value="0x8D"/>
+		<option name="Int Slayer Betrayal Points" value="0x8E"/>
+		<option name="Int Slayer Leader Points" value="0x8F"/>
+		<option name="Int Slayer Elimination Points" value="0x90"/>
+		<option name="Int Slayer Assassination Points" value="0x91"/>
+		<option name="Int Slayer Headshot Points" value="0x92"/>
+		<option name="Int Slayer Melee Points" value="0x93"/>
+		<option name="Int Slayer Sticky Points" value="0x94"/>
+		<option name="Int Slayer Splatter Points" value="0x95"/>
+		<option name="Int Slayer Spree Points" value="0x96"/>
+		<option name="Int Slayer Leader Traits Damage Resistance" value="0x97"/>
+		<option name="Int Slayer Leader Traits Shield Multiplier" value="0x98"/>
+		<option name="Int Slayer Leader Traits Shield Recharge" value="0x99"/>
+		<option name="Int Slayer Leader Traits Headshot Immunity" value="0x9A"/>
+		<option name="Int Slayer Leader Traits Vampirism" value="0x9B"/>
+		<option name="Int Slayer Leader Traits Damage Modifier" value="0x9C"/>
+		<option name="Sid Slayer Leader Traits Primary Weapon" value="0x9D"/>
+		<option name="Sid Slayer Leader Traits Secondary Weapon" value="0x9E"/>
+		<option name="Int Slayer Leader Traits Grenade Count" value="0x9F"/>
+		<option name="Int Slayer Leader Traits Grenade Recharge" value="0xA0"/>
+		<option name="Int Slayer Leader Traits Infinite Ammo" value="0xA1"/>
+		<option name="Int Slayer Leader Traits Weapon Pickup" value="0xA2"/>
+		<option name="Int Slayer Leader Traits Speed" value="0xA3"/>
+		<option name="Int Slayer Leader Traits Gravity" value="0xA4"/>
+		<option name="Int Slayer Leader Traits Vehicle Use" value="0xA5"/>
+		<option name="Int Slayer Leader Traits Sensor" value="0xA6"/>
+		<option name="Int Slayer Leader Traits Sensor Range" value="0xA7"/>
+		<option name="Int Slayer Leader Traits Waypoint" value="0xA8"/>
+		<option name="Int Slayer Leader Traits Active Camo" value="0xA9"/>
+		<option name="Int Slayer Leader Traits Visual Aura" value="0xAA"/>
+		<option name="Int Slayer Leader Traits Forced Color" value="0xAB"/>
+		<option name="Int Oddball Auto Pickup" value="0xAC"/>
+		<option name="Int Oddball Ball Effect" value="0xAD"/>
+		<option name="Int Oddball Team Scoring" value="0xAE"/>
+		<option name="Int Oddball Unknown" value="0xAF"/>
+		<option name="Int Oddball Score To Win" value="0xB0"/>
+		<option name="Int Oddball Carrier Points" value="0xB1"/>
+		<option name="Int Oddball Kill Points" value="0xB2"/>
+		<option name="Int Oddball Ball Kill Points" value="0xB3"/>
+		<option name="Int Oddball Carrier Kill Points" value="0xB4"/>
+		<option name="Int Oddball Ball Count" value="0xB5"/>
+		<option name="Int Oddball Spawn Delay" value="0xB6"/>
+		<option name="Int Oddball Respawn Delay" value="0xB7"/>
+		<option name="Int Oddball Carrier Traits Damage Resistance" value="0xB8"/>
+		<option name="Int Oddball Carrier Traits Shield Multiplier" value="0xB9"/>
+		<option name="Int Oddball Carrier Traits Shield Recharge" value="0xBA"/>
+		<option name="Int Oddball Carrier Traits Headshot Immunity" value="0xBB"/>
+		<option name="Int Oddball Carrier Traits Vampirism" value="0xBC"/>
+		<option name="Int Oddball Carrier Traits Damage Modifier" value="0xBD"/>
+		<option name="Sid Oddball Carrier Traits Primary Weapon" value="0xBE"/>
+		<option name="Sid Oddball Carrier Traits Secondary Weapon" value="0xBF"/>
+		<option name="Int Oddball Carrier Traits Grenade Count" value="0xC0"/>
+		<option name="Int Oddball Carrier Traits Grenade Recharge" value="0xC1"/>
+		<option name="Int Oddball Carrier Traits Infinite Ammo" value="0xC2"/>
+		<option name="Int Oddball Carrier Traits Weapon Pickup" value="0xC3"/>
+		<option name="Int Oddball Carrier Traits Speed" value="0xC4"/>
+		<option name="Int Oddball Carrier Traits Gravity" value="0xC5"/>
+		<option name="Int Oddball Carrier Traits Vehicle Use" value="0xC6"/>
+		<option name="Int Oddball Carrier Traits Sensor" value="0xC7"/>
+		<option name="Int Oddball Carrier Traits Sensor Range" value="0xC8"/>
+		<option name="Int Oddball Carrier Traits Waypoint" value="0xC9"/>
+		<option name="Int Oddball Carrier Traits Active Camo" value="0xCA"/>
+		<option name="Int Oddball Carrier Traits Visual Aura" value="0xCB"/>
+		<option name="Int Oddball Carrier Traits Forced Color" value="0xCC"/>
+		<option name="Int Ctf Touch Return Time" value="0xCD"/>
+		<option name="Int Ctf Flag At Home" value="0xCE"/>
+		<option name="Int Ctf Home Waypoint" value="0xCF"/>
+		<option name="Int Ctf Unknown" value="0xD0"/>
+		<option name="Int Ctf Unknown2" value="0xD1"/>
+		<option name="Int Ctf Game Mode" value="0xD2"/>
+		<option name="Int Ctf Respawn Delay" value="0xD3"/>
+		<option name="Int Ctf Score To Win" value="0xD4"/>
+		<option name="Int Ctf Sudden Death" value="0xD5"/>
+		<option name="Int Ctf Idle Return" value="0xD6"/>
+		<option name="Int Ctf Unknown3" value="0xD7"/>
+		<option name="Int Ctf Unknown4" value="0xD8"/>
+		<option name="Int Ctf Carrier Traits Damage Resistance" value="0xD9"/>
+		<option name="Int Ctf Carrier Traits Shield Multiplier" value="0xDA"/>
+		<option name="Int Ctf Carrier Traits Shield Recharge" value="0xDB"/>
+		<option name="Int Ctf Carrier Traits Headshot Immunity" value="0xDC"/>
+		<option name="Int Ctf Carrier Traits Vampirism" value="0xDD"/>
+		<option name="Int Ctf Carrier Traits Damage Modifier" value="0xDE"/>
+		<option name="Sid Ctf Carrier Traits Primary Weapon" value="0xDF"/>
+		<option name="Sid Ctf Carrier Traits Secondary Weapon" value="0xE0"/>
+		<option name="Int Ctf Carrier Traits Grenade Count" value="0xE1"/>
+		<option name="Int Ctf Carrier Traits Grenade Recharge" value="0xE2"/>
+		<option name="Int Ctf Carrier Traits Infinite Ammo" value="0xE3"/>
+		<option name="Int Ctf Carrier Traits Weapon Pickup" value="0xE4"/>
+		<option name="Int Ctf Carrier Traits Speed" value="0xE5"/>
+		<option name="Int Ctf Carrier Traits Gravity" value="0xE6"/>
+		<option name="Int Ctf Carrier Traits Vehicle Use" value="0xE7"/>
+		<option name="Int Ctf Carrier Traits Sensor" value="0xE8"/>
+		<option name="Int Ctf Carrier Traits Sensor Range" value="0xE9"/>
+		<option name="Int Ctf Carrier Traits Waypoint" value="0xEA"/>
+		<option name="Int Ctf Carrier Traits Active Camo" value="0xEB"/>
+		<option name="Int Ctf Carrier Traits Visual Aura" value="0xEC"/>
+		<option name="Int Ctf Carrier Traits Forced Color" value="0xED"/>
+		<option name="Int Infection Respawn On Haven Move" value="0xEE"/>
+		<option name="Int Infection Haven Movement" value="0xEF"/>
+		<option name="Int Infection Next Zombie" value="0xF0"/>
+		<option name="Int Infection Initial Count" value="0xF1"/>
+		<option name="Int Infection Haven Movement Time" value="0xF2"/>
+		<option name="Int Infection Kill Points" value="0xF3"/>
+		<option name="Int Infection Infect Points" value="0xF4"/>
+		<option name="Int Infection Haven Arrival Points" value="0xF5"/>
+		<option name="Int Infection Suicide Points" value="0xF6"/>
+		<option name="Int Infection Betrayal Points" value="0xF7"/>
+		<option name="Int Infection Last Man Standing Points" value="0xF8"/>
+		<option name="Int Infection Zombie Traits Damage Resistance" value="0xF9"/>
+		<option name="Int Infection Zombie Traits Shield Multiplier" value="0xFA"/>
+		<option name="Int Infection Zombie Traits Shield Recharge" value="0xFB"/>
+		<option name="Int Infection Zombie Traits Headshot Immunity" value="0xFC"/>
+		<option name="Int Infection Zombie Traits Vampirism" value="0xFD"/>
+		<option name="Int Infection Zombie Traits Damage Modifier" value="0xFE"/>
+		<option name="Sid Infection Zombie Traits Primary Weapon" value="0xFF"/>
+		<option name="Sid Infection Zombie Traits Secondary Weapon" value="0x100"/>
+		<option name="Int Infection Zombie Traits Grenade Count" value="0x101"/>
+		<option name="Int Infection Zombie Traits Grenade Recharge" value="0x102"/>
+		<option name="Int Infection Zombie Traits Infinite Ammo" value="0x103"/>
+		<option name="Int Infection Zombie Traits Weapon Pickup" value="0x104"/>
+		<option name="Int Infection Zombie Traits Speed" value="0x105"/>
+		<option name="Int Infection Zombie Traits Gravity" value="0x106"/>
+		<option name="Int Infection Zombie Traits Vehicle Use" value="0x107"/>
+		<option name="Int Infection Zombie Traits Sensor" value="0x108"/>
+		<option name="Int Infection Zombie Traits Sensor Range" value="0x109"/>
+		<option name="Int Infection Zombie Traits Waypoint" value="0x10A"/>
+		<option name="Int Infection Zombie Traits Active Camo" value="0x10B"/>
+		<option name="Int Infection Zombie Traits Visual Aura" value="0x10C"/>
+		<option name="Int Infection Zombie Traits Forced Color" value="0x10D"/>
+		<option name="Int Infection Alpha Zombie Traits Damage Resistance" value="0x10E"/>
+		<option name="Int Infection Alpha Zombie Traits Shield Multiplier" value="0x10F"/>
+		<option name="Int Infection Alpha Zombie Traits Shield Recharge" value="0x110"/>
+		<option name="Int Infection Alpha Zombie Traits Headshot Immunity" value="0x111"/>
+		<option name="Int Infection Alpha Zombie Traits Vampirism" value="0x112"/>
+		<option name="Int Infection Alpha Zombie Traits Damage Modifier" value="0x113"/>
+		<option name="Sid Infection Alpha Zombie Traits Primary Weapon" value="0x114"/>
+		<option name="Sid Infection Alpha Zombie Traits Secondary Weapon" value="0x115"/>
+		<option name="Int Infection Alpha Zombie Traits Grenade Count" value="0x116"/>
+		<option name="Int Infection Alpha Zombie Traits Grenade Recharge" value="0x117"/>
+		<option name="Int Infection Alpha Zombie Traits Infinite Ammo" value="0x118"/>
+		<option name="Int Infection Alpha Zombie Traits Weapon Pickup" value="0x119"/>
+		<option name="Int Infection Alpha Zombie Traits Speed" value="0x11A"/>
+		<option name="Int Infection Alpha Zombie Traits Gravity" value="0x11B"/>
+		<option name="Int Infection Alpha Zombie Traits Vehicle Use" value="0x11C"/>
+		<option name="Int Infection Alpha Zombie Traits Sensor" value="0x11D"/>
+		<option name="Int Infection Alpha Zombie Traits Sensor Range" value="0x11E"/>
+		<option name="Int Infection Alpha Zombie Traits Waypoint" value="0x11F"/>
+		<option name="Int Infection Alpha Zombie Traits Active Camo" value="0x120"/>
+		<option name="Int Infection Alpha Zombie Traits Visual Aura" value="0x121"/>
+		<option name="Int Infection Alpha Zombie Traits Forced Color" value="0x122"/>
+		<option name="Int Infection Haven Traits Damage Resistance" value="0x123"/>
+		<option name="Int Infection Haven Traits Shield Multiplier" value="0x124"/>
+		<option name="Int Infection Haven Traits Shield Recharge" value="0x125"/>
+		<option name="Int Infection Haven Traits Headshot Immunity" value="0x126"/>
+		<option name="Int Infection Haven Traits Vampirism" value="0x127"/>
+		<option name="Int Infection Haven Traits Damage Modifier" value="0x128"/>
+		<option name="Sid Infection Haven Traits Primary Weapon" value="0x129"/>
+		<option name="Sid Infection Haven Traits Secondary Weapon" value="0x12A"/>
+		<option name="Int Infection Haven Traits Grenade Count" value="0x12B"/>
+		<option name="Int Infection Haven Traits Grenade Recharge" value="0x12C"/>
+		<option name="Int Infection Haven Traits Infinite Ammo" value="0x12D"/>
+		<option name="Int Infection Haven Traits Weapon Pickup" value="0x12E"/>
+		<option name="Int Infection Haven Traits Speed" value="0x12F"/>
+		<option name="Int Infection Haven Traits Gravity" value="0x130"/>
+		<option name="Int Infection Haven Traits Vehicle Use" value="0x131"/>
+		<option name="Int Infection Haven Traits Sensor" value="0x132"/>
+		<option name="Int Infection Haven Traits Sensor Range" value="0x133"/>
+		<option name="Int Infection Haven Traits Waypoint" value="0x134"/>
+		<option name="Int Infection Haven Traits Active Camo" value="0x135"/>
+		<option name="Int Infection Haven Traits Visual Aura" value="0x136"/>
+		<option name="Int Infection Haven Traits Forced Color" value="0x137"/>
+		<option name="Int Infection Last Man Standing Traits Damage Resistance" value="0x138"/>
+		<option name="Int Infection Last Man Standing Traits Shield Multiplier" value="0x139"/>
+		<option name="Int Infection Last Man Standing Traits Shield Recharge" value="0x13A"/>
+		<option name="Int Infection Last Man Standing Traits Headshot Immunity" value="0x13B"/>
+		<option name="Int Infection Last Man Standing Traits Vampirism" value="0x13C"/>
+		<option name="Int Infection Last Man Standing Traits Damage Modifier" value="0x13D"/>
+		<option name="Sid Infection Last Man Standing Traits Primary Weapon" value="0x13E"/>
+		<option name="Sid Infection Last Man Standing Traits Secondary Weapon" value="0x13F"/>
+		<option name="Int Infection Last Man Standing Traits Grenade Count" value="0x140"/>
+		<option name="Int Infection Last Man Standing Traits Grenade Recharge" value="0x141"/>
+		<option name="Int Infection Last Man Standing Traits Infinite Ammo" value="0x142"/>
+		<option name="Int Infection Last Man Standing Traits Weapon Pickup" value="0x143"/>
+		<option name="Int Infection Last Man Standing Traits Speed" value="0x144"/>
+		<option name="Int Infection Last Man Standing Traits Gravity" value="0x145"/>
+		<option name="Int Infection Last Man Standing Traits Vehicle Use" value="0x146"/>
+		<option name="Int Infection Last Man Standing Traits Sensor" value="0x147"/>
+		<option name="Int Infection Last Man Standing Traits Sensor Range" value="0x148"/>
+		<option name="Int Infection Last Man Standing Traits Waypoint" value="0x149"/>
+		<option name="Int Infection Last Man Standing Traits Active Camo" value="0x14A"/>
+		<option name="Int Infection Last Man Standing Traits Visual Aura" value="0x14B"/>
+		<option name="Int Infection Last Man Standing Traits Forced Color" value="0x14C"/>
+		<option name="Int Koth Opaque Hill" value="0x14D"/>
+		<option name="Int Koth Score To Win" value="0x14E"/>
+		<option name="Int Koth Team Scoring" value="0x14F"/>
+		<option name="Int Koth Moving Hill" value="0x150"/>
+		<option name="Int Koth Moving Hill Order" value="0x151"/>
+		<option name="Int Koth Inside Hill Points" value="0x152"/>
+		<option name="Int Koth Outside Hill Points" value="0x153"/>
+		<option name="Int Koth Uncontested Points" value="0x154"/>
+		<option name="Int Koth Kill Points" value="0x155"/>
+		<option name="Int Koth Hill Traits Damage Resistance" value="0x156"/>
+		<option name="Int Koth Hill Traits Shield Multiplier" value="0x157"/>
+		<option name="Int Koth Hill Traits Shield Recharge" value="0x158"/>
+		<option name="Int Koth Hill Traits Headshot Immunity" value="0x159"/>
+		<option name="Int Koth Hill Traits Vampirism" value="0x15A"/>
+		<option name="Int Koth Hill Traits Damage Modifier" value="0x15B"/>
+		<option name="Sid Koth Hill Traits Primary Weapon" value="0x15C"/>
+		<option name="Sid Koth Hill Traits Secondary Weapon" value="0x15D"/>
+		<option name="Int Koth Hill Traits Grenade Count" value="0x15E"/>
+		<option name="Int Koth Hill Traits Grenade Recharge" value="0x15F"/>
+		<option name="Int Koth Hill Traits Infinite Ammo" value="0x160"/>
+		<option name="Int Koth Hill Traits Weapon Pickup" value="0x161"/>
+		<option name="Int Koth Hill Traits Speed" value="0x162"/>
+		<option name="Int Koth Hill Traits Gravity" value="0x163"/>
+		<option name="Int Koth Hill Traits Vehicle Use" value="0x164"/>
+		<option name="Int Koth Hill Traits Sensor" value="0x165"/>
+		<option name="Int Koth Hill Traits Sensor Range" value="0x166"/>
+		<option name="Int Koth Hill Traits Waypoint" value="0x167"/>
+		<option name="Int Koth Hill Traits Active Camo" value="0x168"/>
+		<option name="Int Koth Hill Traits Visual Aura" value="0x169"/>
+		<option name="Int Koth Hill Traits Forced Color" value="0x16A"/>
+		<option name="Int Territories Capture Time" value="0x16B"/>
+		<option name="Int Territories Game Mode" value="0x16C"/>
+		<option name="Int Territories Lock On Capture" value="0x16D"/>
+		<option name="Int Territories Sudden Death" value="0x16E"/>
+		<option name="Int Territories Spawn On Capture" value="0x16F"/>
+		<option name="Int Territories Defender Traits Damage Resistance" value="0x170"/>
+		<option name="Int Territories Defender Traits Shield Multiplier" value="0x171"/>
+		<option name="Int Territories Defender Traits Shield Recharge" value="0x172"/>
+		<option name="Int Territories Defender Traits Headshot Immunity" value="0x173"/>
+		<option name="Int Territories Defender Traits Vampirism" value="0x174"/>
+		<option name="Int Territories Defender Traits Damage Modifier" value="0x175"/>
+		<option name="Sid Territories Defender Traits Primary Weapon" value="0x176"/>
+		<option name="Sid Territories Defender Traits Secondary Weapon" value="0x177"/>
+		<option name="Int Territories Defender Traits Grenade Count" value="0x178"/>
+		<option name="Int Territories Defender Traits Grenade Recharge" value="0x179"/>
+		<option name="Int Territories Defender Traits Infinite Ammo" value="0x17A"/>
+		<option name="Int Territories Defender Traits Weapon Pickup" value="0x17B"/>
+		<option name="Int Territories Defender Traits Speed" value="0x17C"/>
+		<option name="Int Territories Defender Traits Gravity" value="0x17D"/>
+		<option name="Int Territories Defender Traits Vehicle Use" value="0x17E"/>
+		<option name="Int Territories Defender Traits Sensor" value="0x17F"/>
+		<option name="Int Territories Defender Traits Sensor Range" value="0x180"/>
+		<option name="Int Territories Defender Traits Waypoint" value="0x181"/>
+		<option name="Int Territories Defender Traits Active Camo" value="0x182"/>
+		<option name="Int Territories Defender Traits Visual Aura" value="0x183"/>
+		<option name="Int Territories Defender Traits Forced Color" value="0x184"/>
+		<option name="Int Territories Attacker Traits Damage Resistance" value="0x185"/>
+		<option name="Int Territories Attacker Traits Shield Multiplier" value="0x186"/>
+		<option name="Int Territories Attacker Traits Shield Recharge" value="0x187"/>
+		<option name="Int Territories Attacker Traits Headshot Immunity" value="0x188"/>
+		<option name="Int Territories Attacker Traits Vampirism" value="0x189"/>
+		<option name="Int Territories Attacker Traits Damage Modifier" value="0x18A"/>
+		<option name="Sid Territories Attacker Traits Primary Weapon" value="0x18B"/>
+		<option name="Sid Territories Attacker Traits Secondary Weapon" value="0x18C"/>
+		<option name="Int Territories Attacker Traits Grenade Count" value="0x18D"/>
+		<option name="Int Territories Attacker Traits Grenade Recharge" value="0x18E"/>
+		<option name="Int Territories Attacker Traits Infinite Ammo" value="0x18F"/>
+		<option name="Int Territories Attacker Traits Weapon Pickup" value="0x190"/>
+		<option name="Int Territories Attacker Traits Speed" value="0x191"/>
+		<option name="Int Territories Attacker Traits Gravity" value="0x192"/>
+		<option name="Int Territories Attacker Traits Vehicle Use" value="0x193"/>
+		<option name="Int Territories Attacker Traits Sensor" value="0x194"/>
+		<option name="Int Territories Attacker Traits Sensor Range" value="0x195"/>
+		<option name="Int Territories Attacker Traits Waypoint" value="0x196"/>
+		<option name="Int Territories Attacker Traits Active Camo" value="0x197"/>
+		<option name="Int Territories Attacker Traits Visual Aura" value="0x198"/>
+		<option name="Int Territories Attacker Traits Forced Color" value="0x199"/>
+		<option name="Int Vip Score To Win" value="0x19A"/>
+		<option name="Int Vip Game Mode" value="0x19B"/>
+		<option name="Int Vip Zone Count" value="0x19C"/>
+		<option name="Int Vip End On Death" value="0x19D"/>
+		<option name="Int Vip Kill Points" value="0x19E"/>
+		<option name="Int Vip Takedown Points" value="0x19F"/>
+		<option name="Int Vip Vip Kill Points" value="0x1A0"/>
+		<option name="Int Vip Death Points" value="0x1A1"/>
+		<option name="Int Vip Zone Arrival Points" value="0x1A2"/>
+		<option name="Int Vip Suicide Points" value="0x1A3"/>
+		<option name="Int Vip Vip Betrayal Points" value="0x1A4"/>
+		<option name="Int Vip Betrayal Points" value="0x1A5"/>
+		<option name="Int Vip Selection" value="0x1A6"/>
+		<option name="Int Vip Zone Movement" value="0x1A7"/>
+		<option name="Int Vip Zone Order" value="0x1A8"/>
+		<option name="Int Vip Influence Radius" value="0x1A9"/>
+		<option name="Int Vip Team Traits Damage Resistance" value="0x1AA"/>
+		<option name="Int Vip Team Traits Shield Multiplier" value="0x1AB"/>
+		<option name="Int Vip Team Traits Shield Recharge" value="0x1AC"/>
+		<option name="Int Vip Team Traits Headshot Immunity" value="0x1AD"/>
+		<option name="Int Vip Team Traits Vampirism" value="0x1AE"/>
+		<option name="Int Vip Team Traits Damage Modifier" value="0x1AF"/>
+		<option name="Sid Vip Team Traits Primary Weapon" value="0x1B0"/>
+		<option name="Sid Vip Team Traits Secondary Weapon" value="0x1B1"/>
+		<option name="Int Vip Team Traits Grenade Count" value="0x1B2"/>
+		<option name="Int Vip Team Traits Grenade Recharge" value="0x1B3"/>
+		<option name="Int Vip Team Traits Infinite Ammo" value="0x1B4"/>
+		<option name="Int Vip Team Traits Weapon Pickup" value="0x1B5"/>
+		<option name="Int Vip Team Traits Speed" value="0x1B6"/>
+		<option name="Int Vip Team Traits Gravity" value="0x1B7"/>
+		<option name="Int Vip Team Traits Vehicle Use" value="0x1B8"/>
+		<option name="Int Vip Team Traits Sensor" value="0x1B9"/>
+		<option name="Int Vip Team Traits Sensor Range" value="0x1BA"/>
+		<option name="Int Vip Team Traits Waypoint" value="0x1BB"/>
+		<option name="Int Vip Team Traits Active Camo" value="0x1BC"/>
+		<option name="Int Vip Team Traits Visual Aura" value="0x1BD"/>
+		<option name="Int Vip Team Traits Forced Color" value="0x1BE"/>
+		<option name="Int Vip Influence Traits Damage Resistance" value="0x1BF"/>
+		<option name="Int Vip Influence Traits Shield Multiplier" value="0x1C0"/>
+		<option name="Int Vip Influence Traits Shield Recharge" value="0x1C1"/>
+		<option name="Int Vip Influence Traits Headshot Immunity" value="0x1C2"/>
+		<option name="Int Vip Influence Traits Vampirism" value="0x1C3"/>
+		<option name="Int Vip Influence Traits Damage Modifier" value="0x1C4"/>
+		<option name="Sid Vip Influence Traits Primary Weapon" value="0x1C5"/>
+		<option name="Sid Vip Influence Traits Secondary Weapon" value="0x1C6"/>
+		<option name="Int Vip Influence Traits Grenade Count" value="0x1C7"/>
+		<option name="Int Vip Influence Traits Grenade Recharge" value="0x1C8"/>
+		<option name="Int Vip Influence Traits Infinite Ammo" value="0x1C9"/>
+		<option name="Int Vip Influence Traits Weapon Pickup" value="0x1CA"/>
+		<option name="Int Vip Influence Traits Speed" value="0x1CB"/>
+		<option name="Int Vip Influence Traits Gravity" value="0x1CC"/>
+		<option name="Int Vip Influence Traits Vehicle Use" value="0x1CD"/>
+		<option name="Int Vip Influence Traits Sensor" value="0x1CE"/>
+		<option name="Int Vip Influence Traits Sensor Range" value="0x1CF"/>
+		<option name="Int Vip Influence Traits Waypoint" value="0x1D0"/>
+		<option name="Int Vip Influence Traits Active Camo" value="0x1D1"/>
+		<option name="Int Vip Influence Traits Visual Aura" value="0x1D2"/>
+		<option name="Int Vip Influence Traits Forced Color" value="0x1D3"/>
+		<option name="Int Vip Vip Traits Damage Resistance" value="0x1D4"/>
+		<option name="Int Vip Vip Traits Shield Multiplier" value="0x1D5"/>
+		<option name="Int Vip Vip Traits Shield Recharge" value="0x1D6"/>
+		<option name="Int Vip Vip Traits Headshot Immunity" value="0x1D7"/>
+		<option name="Int Vip Vip Traits Vampirism" value="0x1D8"/>
+		<option name="Int Vip Vip Traits Damage Modifier" value="0x1D9"/>
+		<option name="Sid Vip Vip Traits Primary Weapon" value="0x1DA"/>
+		<option name="Sid Vip Vip Traits Secondary Weapon" value="0x1DB"/>
+		<option name="Int Vip Vip Traits Grenade Count" value="0x1DC"/>
+		<option name="Int Vip Vip Traits Grenade Recharge" value="0x1DD"/>
+		<option name="Int Vip Vip Traits Infinite Ammo" value="0x1DE"/>
+		<option name="Int Vip Vip Traits Weapon Pickup" value="0x1DF"/>
+		<option name="Int Vip Vip Traits Speed" value="0x1E0"/>
+		<option name="Int Vip Vip Traits Gravity" value="0x1E1"/>
+		<option name="Int Vip Vip Traits Vehicle Use" value="0x1E2"/>
+		<option name="Int Vip Vip Traits Sensor" value="0x1E3"/>
+		<option name="Int Vip Vip Traits Sensor Range" value="0x1E4"/>
+		<option name="Int Vip Vip Traits Waypoint" value="0x1E5"/>
+		<option name="Int Vip Vip Traits Active Camo" value="0x1E6"/>
+		<option name="Int Vip Vip Traits Visual Aura" value="0x1E7"/>
+		<option name="Int Vip Vip Traits Forced Color" value="0x1E8"/>
+		<option name="Int Juggernaut Score To Win" value="0x1E9"/>
+		<option name="Int Juggernaut Kill Points" value="0x1EA"/>
+		<option name="Int Juggernaut Juggy Kill Points" value="0x1EB"/>
+		<option name="Int Juggernaut Kill As Juggy Points" value="0x1EC"/>
+		<option name="Int Juggernaut Zone Arrival Points" value="0x1ED"/>
+		<option name="Int Juggernaut Suicide Points" value="0x1EE"/>
+		<option name="Int Juggernaut Betrayal Points" value="0x1EF"/>
+		<option name="Int Juggernaut Initial Juggy Selection" value="0x1F0"/>
+		<option name="Int Juggernaut Next Juggy Selection" value="0x1F1"/>
+		<option name="Int Juggernaut Allied Against Juggy" value="0x1F2"/>
+		<option name="Int Juggernaut Next Juggy Delay" value="0x1F3"/>
+		<option name="Int Juggernaut Zones Enabled" value="0x1F4"/>
+		<option name="Int Juggernaut Zone Movement" value="0x1F5"/>
+		<option name="Int Juggernaut Zone Order" value="0x1F6"/>
+		<option name="Int Juggernaut Respawn On Lone Juggy" value="0x1F7"/>
+		<option name="Int Juggernaut Juggernaut Traits Damage Resistance" value="0x1F8"/>
+		<option name="Int Juggernaut Juggernaut Traits Shield Multiplier" value="0x1F9"/>
+		<option name="Int Juggernaut Juggernaut Traits Shield Recharge" value="0x1FA"/>
+		<option name="Int Juggernaut Juggernaut Traits Headshot Immunity" value="0x1FB"/>
+		<option name="Int Juggernaut Juggernaut Traits Vampirism" value="0x1FC"/>
+		<option name="Int Juggernaut Juggernaut Traits Damage Modifier" value="0x1FD"/>
+		<option name="Sid Juggernaut Juggernaut Traits Primary Weapon" value="0x1FE"/>
+		<option name="Sid Juggernaut Juggernaut Traits Secondary Weapon" value="0x1FF"/>
+		<option name="Int Juggernaut Juggernaut Traits Grenade Count" value="0x200"/>
+		<option name="Int Juggernaut Juggernaut Traits Grenade Recharge" value="0x201"/>
+		<option name="Int Juggernaut Juggernaut Traits Infinite Ammo" value="0x202"/>
+		<option name="Int Juggernaut Juggernaut Traits Weapon Pickup" value="0x203"/>
+		<option name="Int Juggernaut Juggernaut Traits Speed" value="0x204"/>
+		<option name="Int Juggernaut Juggernaut Traits Gravity" value="0x205"/>
+		<option name="Int Juggernaut Juggernaut Traits Vehicle Use" value="0x206"/>
+		<option name="Int Juggernaut Juggernaut Traits Sensor" value="0x207"/>
+		<option name="Int Juggernaut Juggernaut Traits Sensor Range" value="0x208"/>
+		<option name="Int Juggernaut Juggernaut Traits Waypoint" value="0x209"/>
+		<option name="Int Juggernaut Juggernaut Traits Active Camo" value="0x20A"/>
+		<option name="Int Juggernaut Juggernaut Traits Visual Aura" value="0x20B"/>
+		<option name="Int Juggernaut Juggernaut Traits Forced Color" value="0x20C"/>
+		<option name="Int Unknown Traits Damage Resistance" value="0x20D"/>
+		<option name="Int Unknown Traits Shield Multiplier" value="0x20E"/>
+		<option name="Int Unknown Traits Shield Recharge" value="0x20F"/>
+		<option name="Int Unknown Traits Headshot Immunity" value="0x210"/>
+		<option name="Int Unknown Traits Vampirism" value="0x211"/>
+		<option name="Int Unknown Traits Damage Modifier" value="0x212"/>
+		<option name="Sid Unknown Traits Primary Weapon" value="0x213"/>
+		<option name="Sid Unknown Traits Secondary Weapon" value="0x214"/>
+		<option name="Int Unknown Traits Grenade Count" value="0x215"/>
+		<option name="Int Unknown Traits Grenade Recharge" value="0x216"/>
+		<option name="Int Unknown Traits Infinite Ammo" value="0x217"/>
+		<option name="Int Unknown Traits Weapon Pickup" value="0x218"/>
+		<option name="Int Unknown Traits Speed" value="0x219"/>
+		<option name="Int Unknown Traits Gravity" value="0x21A"/>
+		<option name="Int Unknown Traits Vehicle Use" value="0x21B"/>
+		<option name="Int Unknown Traits Sensor" value="0x21C"/>
+		<option name="Int Unknown Traits Sensor Range" value="0x21D"/>
+		<option name="Int Unknown Traits Waypoint" value="0x21E"/>
+		<option name="Int Unknown Traits Active Camo" value="0x21F"/>
+		<option name="Int Unknown Traits Visual Aura" value="0x220"/>
+		<option name="Int Unknown Traits Forced Color" value="0x221"/>
+		<option name="Int Assault Arm Time" value="0x222"/>
+		<option name="Int Assault Disarm Time" value="0x223"/>
+		<option name="Int Assault Fuse Time" value="0x224"/>
+		<option name="Int Assault Reset Time" value="0x225"/>
+		<option name="Int Assault Carrier Traits Damage Resistance" value="0x226"/>
+		<option name="Int Assault Carrier Traits Shield Multiplier" value="0x227"/>
+		<option name="Int Assault Carrier Traits Shield Recharge" value="0x228"/>
+		<option name="Int Assault Carrier Traits Headshot Immunity" value="0x229"/>
+		<option name="Int Assault Carrier Traits Vampirism" value="0x22A"/>
+		<option name="Int Assault Carrier Traits Damage Modifier" value="0x22B"/>
+		<option name="Sid Assault Carrier Traits Primary Weapon" value="0x22C"/>
+		<option name="Sid Assault Carrier Traits Secondary Weapon" value="0x22D"/>
+		<option name="Int Assault Carrier Traits Grenade Count" value="0x22E"/>
+		<option name="Int Assault Carrier Traits Grenade Recharge" value="0x22F"/>
+		<option name="Int Assault Carrier Traits Infinite Ammo" value="0x230"/>
+		<option name="Int Assault Carrier Traits Weapon Pickup" value="0x231"/>
+		<option name="Int Assault Carrier Traits Speed" value="0x232"/>
+		<option name="Int Assault Carrier Traits Gravity" value="0x233"/>
+		<option name="Int Assault Carrier Traits Vehicle Use" value="0x234"/>
+		<option name="Int Assault Carrier Traits Sensor" value="0x235"/>
+		<option name="Int Assault Carrier Traits Sensor Range" value="0x236"/>
+		<option name="Int Assault Carrier Traits Waypoint" value="0x237"/>
+		<option name="Int Assault Carrier Traits Active Camo" value="0x238"/>
+		<option name="Int Assault Carrier Traits Visual Aura" value="0x239"/>
+		<option name="Int Assault Carrier Traits Forced Color" value="0x23A"/>
+		<option name="Int Assault Unknown" value="0x23B"/>
+		<option name="Int Assault Game Mode" value="0x23C"/>
+		<option name="Int Assault Reset On Disarm" value="0x23D"/>
+		<option name="Int Assault New Unknown" value="0x23E"/>
+		<option name="Int Assault Enemy Bomb Waypoint" value="0x23F"/>
+		<option name="Int Assault Score To Win" value="0x240"/>
+		<option name="Int Assault New Unknown2" value="0x241"/>
+		<option name="Nul Assault New Unknown" value="0x242"/>
+		<option name="Nul Assault New Unknown2" value="0x243"/>
+		<option name="Int Assault Sudden Death" value="0x244"/>
+		<option name="Int Editor Open Channel Voice" value="0x245"/>
+		<option name="Int Editor Edit Mode" value="0x246"/>
+		<option name="Int Editor Respawn Time" value="0x247"/>
+		<option name="Int Editor Editor Traits Damage Resistance" value="0x248"/>
+		<option name="Int Editor Editor Traits Shield Multiplier" value="0x249"/>
+		<option name="Int Editor Editor Traits Shield Recharge" value="0x24A"/>
+		<option name="Int Editor Editor Traits Headshot Immunity" value="0x24B"/>
+		<option name="Int Editor Editor Traits Vampirism" value="0x24C"/>
+		<option name="Int Editor Editor Traits Damage Modifier" value="0x24D"/>
+		<option name="Sid Editor Editor Traits Primary Weapon" value="0x24E"/>
+		<option name="Sid Editor Editor Traits Secondary Weapon" value="0x24F"/>
+		<option name="Int Editor Editor Traits Grenade Count" value="0x250"/>
+		<option name="Int Editor Editor Traits Grenade Recharge" value="0x251"/>
+		<option name="Int Editor Editor Traits Infinite Ammo" value="0x252"/>
+		<option name="Int Editor Editor Traits Weapon Pickup" value="0x253"/>
+		<option name="Int Editor Editor Traits Speed" value="0x254"/>
+		<option name="Int Editor Editor Traits Gravity" value="0x255"/>
+		<option name="Int Editor Editor Traits Vehicle Use" value="0x256"/>
+		<option name="Int Editor Editor Traits Sensor" value="0x257"/>
+		<option name="Int Editor Editor Traits Sensor Range" value="0x258"/>
+		<option name="Int Editor Editor Traits Waypoint" value="0x259"/>
+		<option name="Int Editor Editor Traits Active Camo" value="0x25A"/>
+		<option name="Int Editor Editor Traits Visual Aura" value="0x25B"/>
+		<option name="Int Editor Editor Traits Forced Color" value="0x25C"/>
+		<option name="Int Global Traits Template Damage Resistance" value="0x25D"/>
+		<option name="Int Global Traits Template Shield Multiplier" value="0x25E"/>
+		<option name="Int Global Traits Template Shield Recharge" value="0x25F"/>
+		<option name="Int Global Traits Template Headshot Immunity" value="0x260"/>
+		<option name="Int Global Traits Template Vampirism" value="0x261"/>
+		<option name="Int Global Traits Template Damage Modifier" value="0x262"/>
+		<option name="Sid Global Traits Template Primary Weapon" value="0x263"/>
+		<option name="Sid Global Traits Template Secondary Weapon" value="0x264"/>
+		<option name="Int Global Traits Template Grenade Count" value="0x265"/>
+		<option name="Int Global Traits Template Grenade Recharge" value="0x266"/>
+		<option name="Int Global Traits Template Infinite Ammo" value="0x267"/>
+		<option name="Int Global Traits Template Weapon Pickup" value="0x268"/>
+		<option name="Int Global Traits Template Speed" value="0x269"/>
+		<option name="Int Global Traits Template Gravity" value="0x26A"/>
+		<option name="Int Global Traits Template Vehicle Use" value="0x26B"/>
+		<option name="Int Global Traits Template Sensor" value="0x26C"/>
+		<option name="Int Global Traits Template Sensor Range" value="0x26D"/>
+		<option name="Int Global Traits Template Waypoint" value="0x26E"/>
+		<option name="Int Global Traits Template Active Camo" value="0x26F"/>
+		<option name="Int Global Traits Template Visual Aura" value="0x270"/>
+		<option name="Int Global Traits Template Forced Color" value="0x271"/>
+	</enum32>
+	<stringId name="Name" visible="true" offset="0x4"/>
+	<stringId name="Description" visible="true" offset="0x8"/>
+	<reflexive name="Text Value Pairs" visible="true" offset="0xC" entrySize="0x14">
+		<uint8 name="Flags" visible="true" offset="0x0"/>
+		<enum8 name="Expected Value Type" visible="true" offset="0x1">
+			<option name="Integer Index" value="0x0"/>
+			<option name="Stringid Reference" value="0x1"/>
+			<option name="Incremental" value="0x2"/>
+		</enum8>
+		<int16 name="Unknown" visible="true" offset="0x2"/>
+		<int32 name="Integer Value" visible="true" offset="0x4"/>
+		<stringId name="Stringid Value" visible="true" offset="0x8"/>
+		<stringId name="Name" visible="true" offset="0xC"/>
+		<stringId name="Description" visible="true" offset="0x10"/>
+	</reflexive>
+</plugin>

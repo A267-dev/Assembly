@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x4C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<int32 name="Unknown1" visible="true" offset="0x0"/>
+	<tagref name="Fog Bitmap" visible="true" offset="0x4"/>
+	<float32 name="Texture Repeat Rate" visible="true" offset="0x14"/>
+	<float32 name="Distance Between Sheets" visible="true" offset="0x18"/>
+	<float32 name="Depth Fade Factor" visible="true" offset="0x1C"/>
+	<float32 name="Unknown5" visible="true" offset="0x20"/>
+	<float32 name="Falloff Start Distance" visible="true" offset="0x24"/>
+	<float32 name="Distance Falloff Power" visible="true" offset="0x28"/>
+	<float32 name="Transparent Sort Distance" visible="true" offset="0x2C"/>
+	<enum8 name="Transparent Sorting Layer" visible="true" offset="0x30">
+		<option name="Invalid" value="0x0"/>
+		<option name="Pre Pass" value="0x1"/>
+		<option name="Normal" value="0x2"/>
+		<option name="Post Pass" value="0x3"/>
+	</enum8>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x31"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x32"/>
+	<uint8 name="Unused Padding 2" visible="false" offset="0x33"/>
+	<reflexive name="Atmosphere Properties" visible="true" offset="0x34" entrySize="0xA4">
+		<int16 name="Unknown1" visible="true" offset="0x0"/>
+		<int16 name="Unknown2" visible="true" offset="0x2"/>
+		<stringId name="Name" visible="true" offset="0x4"/>
+		<float32 name="Light Source Y" visible="true" offset="0x8"/>
+		<float32 name="Light Source X" visible="true" offset="0xC"/>
+		<colorf name="Fog Color" visible="true" offset="0x10" format="rgb"/>
+		<float32 name="Brightness" visible="true" offset="0x1C"/>
+		<float32 name="Fog Gradient Threshold" visible="true" offset="0x20"/>
+		<float32 name="Light Intensity" visible="true" offset="0x24"/>
+		<float32 name="Sky Invisibility Through Fog" visible="true" offset="0x28"/>
+		<float32 name="Unknown3" visible="true" offset="0x2C"/>
+		<float32 name="Unknown4" visible="true" offset="0x30"/>
+		<float32 name="Light Source Spread" visible="true" offset="0x34"/>
+		<uint32 name="Unknown5" visible="true" offset="0x38"/>
+		<float32 name="Fog Intensity" visible="true" offset="0x3C"/>
+		<float32 name="Unknown6" visible="true" offset="0x40"/>
+		<float32 name="Tint Cyan" visible="true" offset="0x44"/>
+		<float32 name="Tint Magenta" visible="true" offset="0x48"/>
+		<float32 name="Tint Yellow" visible="true" offset="0x4C"/>
+		<float32 name="Fog Intensity Cyan" visible="true" offset="0x50"/>
+		<float32 name="Fog Intensity Magenta" visible="true" offset="0x54"/>
+		<float32 name="Fog Intensity Yellow" visible="true" offset="0x58"/>
+		<float32 name="Background Color Red" visible="true" offset="0x5C"/>
+		<float32 name="Background Color Green" visible="true" offset="0x60"/>
+		<float32 name="Background Color Blue" visible="true" offset="0x64"/>
+		<float32 name="Tint Red" visible="true" offset="0x68"/>
+		<float32 name="Tint2 Green" visible="true" offset="0x6C"/>
+		<float32 name="Tint2 Blue" visible="true" offset="0x70"/>
+		<float32 name="Fog Intensity2" visible="true" offset="0x74"/>
+		<float32 name="Start Distance" visible="true" offset="0x78"/>
+		<float32 name="End Distance" visible="true" offset="0x7C"/>
+		<float32 name="Fog Velocity X" visible="true" offset="0x80"/>
+		<float32 name="Fog Velocity Y" visible="true" offset="0x84"/>
+		<float32 name="Fog Velocity Z" visible="true" offset="0x88"/>
+		<tagref name="Weather Effect" visible="true" offset="0x8C"/>
+		<uint32 name="Unknown7" visible="true" offset="0x9C"/>
+		<uint32 name="Unknown8" visible="true" offset="0xA0"/>
+	</reflexive>
+	<reflexive name="Underwater" visible="true" offset="0x40" entrySize="0x14">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<float32 name="Murkiness" visible="true" offset="0x4"/>
+		<colorf name="Color" visible="true" offset="0x8" format="rgb"/>
+	</reflexive>
+</plugin>

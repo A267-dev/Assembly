@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x18">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<int32 name="Frame Count" visible="true" offset="0x0"/>
+	<comment title="Resource  Reference"></comment>
+
+	<uint32 name="Halo Online Pageable Resource" visible="true" offset="0x4"/>
+	<int32 name="Unused" visible="true" offset="0x8"/>
+	<uint32 name="Unknown" visible="true" offset="0xC"/>
+	<uint32 name="Unknown2" visible="true" offset="0x10"/>
+	<uint32 name="Unknown3" visible="true" offset="0x14"/>
+</plugin>

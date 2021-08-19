@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x40">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<bitfield32 name="Flags" visible="true" offset="0x0">
+		<bit name="Deafening To AIs" index="0"/>
+		<bit name="Not ALoop" index="1"/>
+		<bit name="Stops Music" index="2"/>
+		<bit name="Always Spatialize" index="3"/>
+		<bit name="Synchronize Playback" index="4"/>
+		<bit name="Synchronize Tracks" index="5"/>
+		<bit name="Fake Spatialization With Distance" index="6"/>
+		<bit name="Combine All3d Playback" index="7"/>
+		<bit name="Persistent Flyby" index="8"/>
+		<bit name="Dont Apply Random Spatialization To Details" index="9"/>
+		<bit name="Allow Marker Stitching" index="10"/>
+		<bit name="Dont Delay Retries" index="11"/>
+		<bit name="Use Vehicle Parent For Playerness" index="12"/>
+		<bit name="Implicit Speed RPTC" index="13"/>
+		<bit name="Has Optional Player Sound" index="14"/>
+		<bit name="Dont Occlude" index="15"/>
+		<bit name="Negate Radius Based Focus" index="16"/>
+	</bitfield32>
+	<float32 name="Marty SMusic Time Min" visible="true" offset="0x4"/>
+	<float32 name="Marty SMusic Time Max" visible="true" offset="0x8"/>
+	<float32 name="Distance Bounds Min" visible="true" offset="0xC"/>
+	<float32 name="Distance Bounds Max" visible="true" offset="0x10"/>
+	<tagref name="Unused" visible="true" offset="0x14"/>
+	<enum16 name="Sound Class" visible="true" offset="0x24">
+		<option name="Projectile Impact" value="0x0"/>
+		<option name="Projectile Detonation" value="0x1"/>
+		<option name="Projectile Flyby" value="0x2"/>
+		<option name="Projectile Detonation Lod" value="0x3"/>
+		<option name="Weapon Fire" value="0x4"/>
+		<option name="Weapon Ready" value="0x5"/>
+		<option name="Weapon Reload" value="0x6"/>
+		<option name="Weapon Empty" value="0x7"/>
+		<option name="Weapon Charge" value="0x8"/>
+		<option name="Weapon Overheat" value="0x9"/>
+		<option name="Weapon Idle" value="0xA"/>
+		<option name="Weapon Melee" value="0xB"/>
+		<option name="Weapon Animation" value="0xC"/>
+		<option name="Object Impacts" value="0xD"/>
+		<option name="Particle Impacts" value="0xE"/>
+		<option name="Weapon Fire Lod" value="0xF"/>
+		<option name="Weapon Fire Lod Far" value="0x10"/>
+		<option name="Unused2 Impacts" value="0x11"/>
+		<option name="Unit Footsteps" value="0x12"/>
+		<option name="Unit Dialog" value="0x13"/>
+		<option name="Unit Animation" value="0x14"/>
+		<option name="Unit Unused" value="0x15"/>
+		<option name="Vehicle Collision" value="0x16"/>
+		<option name="Vehicle Engine" value="0x17"/>
+		<option name="Vehicle Animation" value="0x18"/>
+		<option name="Vehicle Engine Lod" value="0x19"/>
+		<option name="Device Door" value="0x1A"/>
+		<option name="Device Unused0" value="0x1B"/>
+		<option name="Device Machinery" value="0x1C"/>
+		<option name="Device Stationary" value="0x1D"/>
+		<option name="Device Unused1" value="0x1E"/>
+		<option name="Device Unused2" value="0x1F"/>
+		<option name="Music" value="0x20"/>
+		<option name="Ambient Nature" value="0x21"/>
+		<option name="Ambient Machinery" value="0x22"/>
+		<option name="Ambient Stationary" value="0x23"/>
+		<option name="Huge Ass" value="0x24"/>
+		<option name="Object Looping" value="0x25"/>
+		<option name="Cinematic Music" value="0x26"/>
+		<option name="Player Armor" value="0x27"/>
+		<option name="Unknown Unused1" value="0x28"/>
+		<option name="Ambient Flock" value="0x29"/>
+		<option name="No Pad" value="0x2A"/>
+		<option name="No Pad Stationary" value="0x2B"/>
+		<option name="Arg" value="0x2C"/>
+		<option name="Cortana Mission" value="0x2D"/>
+		<option name="Cortana Gravemind Channel" value="0x2E"/>
+		<option name="Mission Dialog" value="0x2F"/>
+		<option name="Cinematic Dialog" value="0x30"/>
+		<option name="Scripted Cinematic Foley" value="0x31"/>
+		<option name="Hud" value="0x32"/>
+		<option name="Game Event" value="0x33"/>
+		<option name="Ui" value="0x34"/>
+		<option name="Test" value="0x35"/>
+		<option name="Multilingual Test" value="0x36"/>
+		<option name="Ambient Nature Details" value="0x37"/>
+		<option name="Ambient Machinery Details" value="0x38"/>
+		<option name="Inside Surround Tail" value="0x39"/>
+		<option name="Outside Surround Tail" value="0x3A"/>
+		<option name="Vehicle Detonation" value="0x3B"/>
+		<option name="Ambient Detonation" value="0x3C"/>
+		<option name="First Person Inside" value="0x3D"/>
+		<option name="First Person Outside" value="0x3E"/>
+		<option name="First Person Anywhere" value="0x3F"/>
+		<option name="Ui Pda" value="0x40"/>
+	</enum16>
+	<int16 name="Loop Type HO" visible="true" offset="0x26"/>
+	<reflexive name="Tracks" visible="true" offset="0x28" entrySize="0xA0">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<bitfield32 name="Flags" visible="true" offset="0x4">
+			<bit name="Fade In At Start" index="0"/>
+			<bit name="Fade Out At Stop" index="1"/>
+			<bit name="Crossfade Alternate Loop" index="2"/>
+			<bit name="Master Surround Sound Track" index="3"/>
+			<bit name="Fade Out Alternate Stop" index="4"/>
+			<bit name="Bit5" index="5"/>
+			<bit name="Bit6" index="6"/>
+			<bit name="Bit7" index="7"/>
+		</bitfield32>
+		<float32 name="Gain" visible="true" offset="0x8"/>
+		<float32 name="Fade In Duration" visible="true" offset="0xC"/>
+		<enum16 name="Fade In Mode" visible="true" offset="0x10">
+			<option name="None" value="0x0"/>
+			<option name="Linear" value="0x1"/>
+			<option name="Power" value="0x2"/>
+			<option name="Inverse Power" value="0x3"/>
+			<option name="Ease In Out" value="0x4"/>
+		</enum16>
+		<uint8 name="Padding1 Padding 0" visible="false" offset="0x12"/>
+		<uint8 name="Padding1 Padding 1" visible="false" offset="0x13"/>
+		<float32 name="Fade Out Duration" visible="true" offset="0x14"/>
+		<enum16 name="Fade Out Mode" visible="true" offset="0x18">
+			<option name="None" value="0x0"/>
+			<option name="Linear" value="0x1"/>
+			<option name="Power" value="0x2"/>
+			<option name="Inverse Power" value="0x3"/>
+			<option name="Ease In Out" value="0x4"/>
+		</enum16>
+		<uint8 name="Padding2 Padding 0" visible="false" offset="0x1A"/>
+		<uint8 name="Padding2 Padding 1" visible="false" offset="0x1B"/>
+		<tagref name="In" visible="true" offset="0x1C"/>
+		<tagref name="Loop" visible="true" offset="0x2C"/>
+		<tagref name="Out" visible="true" offset="0x3C"/>
+		<tagref name="Alternate Loop" visible="true" offset="0x4C"/>
+		<tagref name="Alternate Out" visible="true" offset="0x5C"/>
+		<enum16 name="Output Effect" visible="true" offset="0x6C">
+			<option name="None" value="0x0"/>
+			<option name="Output Front Speakers" value="0x1"/>
+			<option name="Output Rear Speakers" value="0x2"/>
+			<option name="Output Center Speakers" value="0x3"/>
+		</enum16>
+		<int16 name="Unknown4" visible="true" offset="0x6E"/>
+		<tagref name="Alternate Transition In" visible="true" offset="0x70"/>
+		<tagref name="Alternate Transition Out" visible="true" offset="0x80"/>
+		<float32 name="Alternate Crossfade Duration" visible="true" offset="0x90"/>
+		<enum16 name="Alternate Crossfade Mode" visible="true" offset="0x94">
+			<option name="None" value="0x0"/>
+			<option name="Linear" value="0x1"/>
+			<option name="Power" value="0x2"/>
+			<option name="Inverse Power" value="0x3"/>
+			<option name="Ease In Out" value="0x4"/>
+		</enum16>
+		<uint8 name="Padding3 Padding 0" visible="false" offset="0x96"/>
+		<uint8 name="Padding3 Padding 1" visible="false" offset="0x97"/>
+		<float32 name="Alternate Fade Out Duration" visible="true" offset="0x98"/>
+		<enum16 name="Alternate Fade Out Mode" visible="true" offset="0x9C">
+			<option name="None" value="0x0"/>
+			<option name="Linear" value="0x1"/>
+			<option name="Power" value="0x2"/>
+			<option name="Inverse Power" value="0x3"/>
+			<option name="Ease In Out" value="0x4"/>
+		</enum16>
+		<uint8 name="Padding4 Padding 0" visible="false" offset="0x9E"/>
+		<uint8 name="Padding4 Padding 1" visible="false" offset="0x9F"/>
+	</reflexive>
+	<reflexive name="Detail Sounds" visible="true" offset="0x34" entrySize="0x3C">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<tagref name="Sound" visible="true" offset="0x4"/>
+		<float32 name="Random Period Bounds Min" visible="true" offset="0x14"/>
+		<float32 name="Random Period Bounds Max" visible="true" offset="0x18"/>
+		<float32 name="Unknown" visible="true" offset="0x1C"/>
+		<uint32 name="Flags" visible="true" offset="0x20"/>
+		<degree name="Yaw Bounds Min" visible="true" offset="0x24"/>
+		<degree name="Yaw Bounds Max" visible="true" offset="0x28"/>
+		<degree name="Pitch Bounds Min" visible="true" offset="0x2C"/>
+		<degree name="Pitch Bounds Max" visible="true" offset="0x30"/>
+		<float32 name="Distance Bounds Min" visible="true" offset="0x34"/>
+		<float32 name="Distance Bounds Max" visible="true" offset="0x38"/>
+	</reflexive>
+</plugin>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x94">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<bitfield32 name="Flags" visible="true" offset="0x0">
+		<bit name="Allow Shadows And Gels" index="0"/>
+		<bit name="Shadow Casting" index="1"/>
+		<bit name="Render First Person Only" index="2"/>
+		<bit name="Render Third Person Only" index="3"/>
+		<bit name="Dont Render Splitscreen" index="4"/>
+		<bit name="Render While Active Camo" index="5"/>
+		<bit name="Render In Multiplayer Override" index="6"/>
+		<bit name="Move To Camera In First Person" index="7"/>
+		<bit name="Never Priority Cull" index="8"/>
+		<bit name="Affected By Game Can Use Flashlights" index="9"/>
+		<bit name="Screenspace Specular Lighting" index="10"/>
+		<bit name="Always On For Weapon" index="11"/>
+	</bitfield32>
+	<enum16 name="Type" visible="true" offset="0x4">
+		<option name="Sphere" value="0x0"/>
+		<option name="Projective" value="0x1"/>
+	</enum16>
+	<int16 name="Unknown" visible="true" offset="0x6"/>
+	<float32 name="Sphere Light Range" visible="true" offset="0x8"/>
+	<float32 name="Frustum Light Near Width" visible="true" offset="0xC"/>
+	<float32 name="Frustum Light Height Stretch" visible="true" offset="0x10"/>
+	<float32 name="Frustum Light Fov" visible="true" offset="0x14"/>
+	<stringId name="Color Change Input Variable" visible="true" offset="0x18"/>
+	<stringId name="Color Change Range Variable" visible="true" offset="0x1C"/>
+	<enum16 name="Color Change Output Modifier" visible="true" offset="0x20">
+		<option name="None" value="0x0"/>
+		<option name="Plus" value="0x1"/>
+		<option name="Times" value="0x2"/>
+	</enum16>
+	<int16 name="Unknown6" visible="true" offset="0x22"/>
+	<stringId name="Cc Output Modifier Input" visible="true" offset="0x24"/>
+	<dataRef name="Color Change Function" visible="true" offset="0x28"/>
+	<stringId name="Intensity Input Variable" visible="true" offset="0x3C"/>
+	<stringId name="Intensity Range Variable" visible="true" offset="0x40"/>
+	<enum16 name="Intensity Output Modifier" visible="true" offset="0x44">
+		<option name="None" value="0x0"/>
+		<option name="Plus" value="0x1"/>
+		<option name="Times" value="0x2"/>
+	</enum16>
+	<int16 name="Unknown9" visible="true" offset="0x46"/>
+	<stringId name="Intesity Output Modifier Input" visible="true" offset="0x48"/>
+	<dataRef name="Intensity Function" visible="true" offset="0x4C"/>
+	<tagref name="Gel Map" visible="true" offset="0x60"/>
+	<float32 name="Frustum Minimum View Distance" visible="true" offset="0x70"/>
+	<float32 name="Max Intensity Range" visible="true" offset="0x74"/>
+	<float32 name="Unknown12" visible="true" offset="0x78"/>
+	<float32 name="Unknown13" visible="true" offset="0x7C"/>
+	<int8 name="Unknown14" visible="true" offset="0x80"/>
+	<int8 name="Unknown15" visible="true" offset="0x81"/>
+	<int8 name="Unknown16" visible="true" offset="0x82"/>
+	<int8 name="Unknown17" visible="true" offset="0x83"/>
+	<tagref name="Lens Flare" visible="true" offset="0x84"/>
+</plugin>

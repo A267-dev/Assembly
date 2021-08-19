@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x84">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<bitfield32 name="Flags" visible="true" offset="0x0">
+		<bit name="Bit0" index="0"/>
+		<bit name="Bit1" index="1"/>
+		<bit name="Bit2" index="2"/>
+		<bit name="Bit3" index="3"/>
+		<bit name="Bit4" index="4"/>
+		<bit name="Bit5" index="5"/>
+		<bit name="Bit6" index="6"/>
+		<bit name="Bit7" index="7"/>
+		<bit name="Bit8" index="8"/>
+		<bit name="Bit9" index="9"/>
+		<bit name="Bit10" index="10"/>
+		<bit name="Bit11" index="11"/>
+		<bit name="Bit12" index="12"/>
+		<bit name="Bit13" index="13"/>
+		<bit name="Bit14" index="14"/>
+		<bit name="Bit15" index="15"/>
+		<bit name="Bit16" index="16"/>
+		<bit name="Bit17" index="17"/>
+		<bit name="Bit18" index="18"/>
+		<bit name="Bit19" index="19"/>
+		<bit name="Bit20" index="20"/>
+		<bit name="Bit21" index="21"/>
+		<bit name="Bit22" index="22"/>
+		<bit name="Bit23" index="23"/>
+		<bit name="Bit24" index="24"/>
+		<bit name="Bit25" index="25"/>
+		<bit name="Bit26" index="26"/>
+		<bit name="Bit27" index="27"/>
+		<bit name="Bit28" index="28"/>
+		<bit name="Bit29" index="29"/>
+		<bit name="Bit30" index="30"/>
+		<bit name="Bit31" index="31"/>
+	</bitfield32>
+	<comment title="Gui  Render  Block"></comment>
+
+	<stringId name="Name" visible="true" offset="0x4"/>
+	<int16 name="Unknown" visible="true" offset="0x8"/>
+	<int16 name="Layer" visible="true" offset="0xA"/>
+	<int16 name="Widescreen YMin" visible="true" offset="0xC"/>
+	<int16 name="Widescreen XMin" visible="true" offset="0xE"/>
+	<int16 name="Widescreen YMax" visible="true" offset="0x10"/>
+	<int16 name="Widescreen XMax" visible="true" offset="0x12"/>
+	<int16 name="Standard YMin" visible="true" offset="0x14"/>
+	<int16 name="Standard XMin" visible="true" offset="0x16"/>
+	<int16 name="Standard YMax" visible="true" offset="0x18"/>
+	<int16 name="Standard XMax" visible="true" offset="0x1A"/>
+	<tagref name="Animation" visible="true" offset="0x1C"/>
+	<reflexive name="Camera Control" visible="true" offset="0x2C" entrySize="0xA0">
+		<stringId name="Biped2" visible="true" offset="0x0"/>
+		<uint32 name="Unknown" visible="true" offset="0x4"/>
+		<uint32 name="Unknown2" visible="true" offset="0x8"/>
+		<uint32 name="Unknown3" visible="true" offset="0xC"/>
+		<float32 name="Unknown4" visible="true" offset="0x10"/>
+		<float32 name="Biped Angle" visible="true" offset="0x14"/>
+		<uint32 name="Unknown6" visible="true" offset="0x18"/>
+		<vector3 name="Base Offset New" visible="true" offset="0x1C"/>
+		<float name="Unknown10 I" visible="true" offset="0x28"/>
+		<float name="Unknown10 J" visible="true" offset="0x2C"/>
+		<float name="Unknown10 K" visible="true" offset="0x30"/>
+		<float name="Unknown13 I" visible="true" offset="0x34"/>
+		<float name="Unknown13 J" visible="true" offset="0x38"/>
+		<float name="Unknown13 K" visible="true" offset="0x3C"/>
+		<float name="Unknown16 I" visible="true" offset="0x40"/>
+		<float name="Unknown16 J" visible="true" offset="0x44"/>
+		<float name="Unknown16 K" visible="true" offset="0x48"/>
+		<float name="Unknown19 I" visible="true" offset="0x4C"/>
+		<float name="Unknown19 J" visible="true" offset="0x50"/>
+		<float name="Unknown19 K" visible="true" offset="0x54"/>
+		<float name="Unknown22 I" visible="true" offset="0x58"/>
+		<float name="Unknown22 J" visible="true" offset="0x5C"/>
+		<float name="Unknown22 K" visible="true" offset="0x60"/>
+		<reflexive name="Zoom Data1" visible="true" offset="0x64" entrySize="0x14">
+			<dataRef name="Unknown" visible="true" offset="0x0"/>
+		</reflexive>
+		<uint32 name="Unknown26" visible="true" offset="0x70"/>
+		<uint32 name="Unknown27" visible="true" offset="0x74"/>
+		<degree name="Unknown28" visible="true" offset="0x78"/>
+		<uint32 name="Unknown29" visible="true" offset="0x7C"/>
+		<degree name="Unknown30" visible="true" offset="0x80"/>
+		<uint32 name="Unknown31" visible="true" offset="0x84"/>
+		<uint32 name="Unknown32" visible="true" offset="0x88"/>
+		<tagref name="Unknown33" visible="true" offset="0x8C"/>
+		<uint32 name="Unknown34" visible="true" offset="0x9C"/>
+	</reflexive>
+	<uint32 name="Unknown2" visible="true" offset="0x38"/>
+	<uint32 name="Unknown3" visible="true" offset="0x3C"/>
+	<uint32 name="Unknown4" visible="true" offset="0x40"/>
+	<uint32 name="Unknown5" visible="true" offset="0x44"/>
+	<uint32 name="Unknown6" visible="true" offset="0x48"/>
+	<float32 name="FOV" visible="true" offset="0x4C"/>
+	<uint32 name="Unknown8" visible="true" offset="0x50"/>
+	<reflexive name="Zoom Function" visible="true" offset="0x54" entrySize="0x14">
+		<dataRef name="Unknown" visible="true" offset="0x0"/>
+	</reflexive>
+	<uint16 name="Movement Left" visible="true" offset="0x60"/>
+	<uint16 name="Movement Right" visible="true" offset="0x62"/>
+	<uint16 name="Movement Up" visible="true" offset="0x64"/>
+	<uint16 name="Movement Down" visible="true" offset="0x66"/>
+	<uint16 name="Unknown14" visible="true" offset="0x68"/>
+	<uint16 name="Unknown15" visible="true" offset="0x6A"/>
+	<uint16 name="Zoom In" visible="true" offset="0x6C"/>
+	<uint16 name="Zoom Out" visible="true" offset="0x6E"/>
+	<uint16 name="Rotate Left" visible="true" offset="0x70"/>
+	<uint16 name="Rotate Right" visible="true" offset="0x72"/>
+	<uint16 name="Unknown20" visible="true" offset="0x74"/>
+	<uint16 name="Unknown21" visible="true" offset="0x76"/>
+	<reflexive name="Texture Camera Sections" visible="true" offset="0x78" entrySize="0x14">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<float32 name="XBounds Min" visible="true" offset="0x4"/>
+		<float32 name="XBounds Max" visible="true" offset="0x8"/>
+		<float32 name="YBounds Min" visible="true" offset="0xC"/>
+		<float32 name="YBounds Max" visible="true" offset="0x10"/>
+	</reflexive>
+</plugin>

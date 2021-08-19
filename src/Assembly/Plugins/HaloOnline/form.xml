@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x18">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<stringId name="Name" visible="true" offset="0x0"/>
+	<reflexive name="Primitives" visible="true" offset="0x4" entrySize="0x24">
+		<bitfield16 name="Flags" visible="true" offset="0x0">
+			<bit name="Radial" index="0"/>
+			<bit name="Leader" index="1"/>
+		</bitfield16>
+		<int16 name="Priority" visible="true" offset="0x2"/>
+		<int16 name="Capacity" visible="true" offset="0x4"/>
+		<uint8 name="Unused Padding 0" visible="false" offset="0x6"/>
+		<uint8 name="Unused Padding 1" visible="false" offset="0x7"/>
+		<float32 name="Distance Forwards" visible="true" offset="0x8"/>
+		<float32 name="Distance Backwards" visible="true" offset="0xC"/>
+		<float32 name="Rank Spacing" visible="true" offset="0x10"/>
+		<float32 name="File Spacing" visible="true" offset="0x14"/>
+		<reflexive name="Points" visible="true" offset="0x18" entrySize="0x8">
+			<degree name="Angle" visible="true" offset="0x0"/>
+			<float32 name="Offset" visible="true" offset="0x4"/>
+		</reflexive>
+	</reflexive>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x10"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x11"/>
+	<uint8 name="Unused Padding 2" visible="false" offset="0x12"/>
+	<uint8 name="Unused Padding 3" visible="false" offset="0x13"/>
+	<uint8 name="Unused Padding 4" visible="false" offset="0x14"/>
+	<uint8 name="Unused Padding 5" visible="false" offset="0x15"/>
+	<uint8 name="Unused Padding 6" visible="false" offset="0x16"/>
+	<uint8 name="Unused Padding 7" visible="false" offset="0x17"/>
+</plugin>

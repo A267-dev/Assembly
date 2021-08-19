@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x50">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<bitfield32 name="Type Flags" visible="true" offset="0x0">
+		<bit name="Ripple Drifted By Flow" index="0"/>
+		<bit name="Amplitude Changed By Pendulum Function" index="1"/>
+		<bit name="Display Flash Foam" index="2"/>
+		<bit name="Foam Size Defined In Game Unit" index="3"/>
+	</bitfield32>
+	<float32 name="Radius" visible="true" offset="0x4"/>
+	<float32 name="Amplitude" visible="true" offset="0x8"/>
+	<float32 name="Spread Speed" visible="true" offset="0xC"/>
+	<float32 name="Spread Bias" visible="true" offset="0x10"/>
+	<float32 name="Position Random Range" visible="true" offset="0x14"/>
+	<float32 name="Max Visibility Distance" visible="true" offset="0x18"/>
+	<float32 name="Duration Max" visible="true" offset="0x1C"/>
+	<float32 name="Duration Min" visible="true" offset="0x20"/>
+	<float32 name="Rise Period Ratio" visible="true" offset="0x24"/>
+	<enum16 name="Rise Function" visible="true" offset="0x28">
+		<option name="Linear" value="0x0"/>
+		<option name="Early" value="0x1"/>
+		<option name="Very Early" value="0x2"/>
+		<option name="Late" value="0x3"/>
+		<option name="Very Late" value="0x4"/>
+		<option name="Cosine" value="0x5"/>
+		<option name="One" value="0x6"/>
+		<option name="Zero" value="0x7"/>
+	</enum16>
+	<enum16 name="Descend Function" visible="true" offset="0x2A">
+		<option name="Linear" value="0x0"/>
+		<option name="Early" value="0x1"/>
+		<option name="Very Early" value="0x2"/>
+		<option name="Late" value="0x3"/>
+		<option name="Very Late" value="0x4"/>
+		<option name="Cosine" value="0x5"/>
+		<option name="One" value="0x6"/>
+		<option name="Zero" value="0x7"/>
+	</enum16>
+	<float32 name="Phase Revolution Speed" visible="true" offset="0x2C"/>
+	<float32 name="Phase Repeat Along Radius" visible="true" offset="0x30"/>
+	<float32 name="Pattern Start Index" visible="true" offset="0x34"/>
+	<float32 name="Pattern End Index" visible="true" offset="0x38"/>
+	<enum16 name="Pattern Transition" visible="true" offset="0x3C">
+		<option name="Linear" value="0x0"/>
+		<option name="Early" value="0x1"/>
+		<option name="Very Early" value="0x2"/>
+		<option name="Late" value="0x3"/>
+		<option name="Very Late" value="0x4"/>
+		<option name="Cosine" value="0x5"/>
+		<option name="One" value="0x6"/>
+		<option name="Zero" value="0x7"/>
+	</enum16>
+	<uint8 name="Unused1 Padding 0" visible="false" offset="0x3E"/>
+	<uint8 name="Unused1 Padding 1" visible="false" offset="0x3F"/>
+	<float32 name="Foam Out Radius" visible="true" offset="0x40"/>
+	<float32 name="Foam Fade Radius" visible="true" offset="0x44"/>
+	<float32 name="Foam Duration" visible="true" offset="0x48"/>
+	<enum16 name="Foam Fade Function" visible="true" offset="0x4C">
+		<option name="Linear" value="0x0"/>
+		<option name="Early" value="0x1"/>
+		<option name="Very Early" value="0x2"/>
+		<option name="Late" value="0x3"/>
+		<option name="Very Late" value="0x4"/>
+		<option name="Cosine" value="0x5"/>
+		<option name="One" value="0x6"/>
+		<option name="Zero" value="0x7"/>
+	</enum16>
+	<uint8 name="Unused2 Padding 0" visible="false" offset="0x4E"/>
+	<uint8 name="Unused2 Padding 1" visible="false" offset="0x4F"/>
+</plugin>

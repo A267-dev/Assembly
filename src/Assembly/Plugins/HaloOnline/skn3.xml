@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x28">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<uint32 name="Unknown" visible="true" offset="0x0"/>
+	<reflexive name="Text Widgets" visible="true" offset="0x4" entrySize="0x4C">
+		<tagref name="Parent" visible="true" offset="0x0"/>
+		<bitfield32 name="Flags" visible="true" offset="0x10">
+			<bit name="Bit0" index="0"/>
+			<bit name="Bit1" index="1"/>
+			<bit name="Bit2" index="2"/>
+			<bit name="Left Alignment" index="3"/>
+			<bit name="Right Alignment" index="4"/>
+			<bit name="Bit5" index="5"/>
+			<bit name="All Caps" index="6"/>
+			<bit name="Bit7" index="7"/>
+			<bit name="Bit8" index="8"/>
+			<bit name="Bit9" index="9"/>
+			<bit name="Bit10" index="10"/>
+			<bit name="Bit11" index="11"/>
+			<bit name="Bit12" index="12"/>
+			<bit name="Wrap At Bounds" index="13"/>
+			<bit name="Cut At Bounds" index="14"/>
+			<bit name="Bit15" index="15"/>
+			<bit name="Bit16" index="16"/>
+			<bit name="Bit17" index="17"/>
+			<bit name="Bit18" index="18"/>
+			<bit name="Bit19" index="19"/>
+			<bit name="Bit20" index="20"/>
+			<bit name="Bit21" index="21"/>
+			<bit name="Bit22" index="22"/>
+			<bit name="Bit23" index="23"/>
+			<bit name="Bit24" index="24"/>
+			<bit name="Bit25" index="25"/>
+			<bit name="Bit26" index="26"/>
+			<bit name="Bit27" index="27"/>
+			<bit name="Bit28" index="28"/>
+			<bit name="Bit29" index="29"/>
+			<bit name="Bit30" index="30"/>
+			<bit name="Bit31" index="31"/>
+		</bitfield32>
+		<comment title="Gui  Render  Block"></comment>
+
+		<stringId name="Name" visible="true" offset="0x14"/>
+		<int16 name="Unknown" visible="true" offset="0x18"/>
+		<int16 name="Layer" visible="true" offset="0x1A"/>
+		<int16 name="Widescreen YMin" visible="true" offset="0x1C"/>
+		<int16 name="Widescreen XMin" visible="true" offset="0x1E"/>
+		<int16 name="Widescreen YMax" visible="true" offset="0x20"/>
+		<int16 name="Widescreen XMax" visible="true" offset="0x22"/>
+		<int16 name="Standard YMin" visible="true" offset="0x24"/>
+		<int16 name="Standard XMin" visible="true" offset="0x26"/>
+		<int16 name="Standard YMax" visible="true" offset="0x28"/>
+		<int16 name="Standard XMax" visible="true" offset="0x2A"/>
+		<tagref name="Animation" visible="true" offset="0x2C"/>
+		<stringId name="Data Source Name" visible="true" offset="0x3C"/>
+		<stringId name="Text String" visible="true" offset="0x40"/>
+		<stringId name="Text Color" visible="true" offset="0x44"/>
+		<enum16 name="Text Font" visible="true" offset="0x48">
+			<option name="Fixedsys9" value="0x0"/>
+			<option name="Conduit16" value="0x1"/>
+			<option name="Conduit32" value="0x2"/>
+			<option name="Conduit23" value="0x3"/>
+			<option name="Conduit18" value="0x4"/>
+			<option name="larabie_10" value="0x5"/>
+			<option name="pragmata_14" value="0x6"/>
+		</enum16>
+		<int16 name="Unknown" visible="true" offset="0x4A"/>
+	</reflexive>
+	<reflexive name="Bitmap Widgets" visible="true" offset="0x10" entrySize="0x6C">
+		<tagref name="Parent" visible="true" offset="0x0"/>
+		<bitfield32 name="Flags" visible="true" offset="0x10">
+			<bit name="Bit0" index="0"/>
+			<bit name="Bit1" index="1"/>
+			<bit name="Bit2" index="2"/>
+			<bit name="Scale To Bounds" index="3"/>
+			<bit name="Replace With Blur" index="4"/>
+			<bit name="Bit5" index="5"/>
+			<bit name="Bit6" index="6"/>
+			<bit name="Bit7" index="7"/>
+			<bit name="Bit8" index="8"/>
+			<bit name="Bit9" index="9"/>
+			<bit name="Replace With White" index="10"/>
+			<bit name="Replace With Black" index="11"/>
+			<bit name="Bit12" index="12"/>
+			<bit name="Bit13" index="13"/>
+			<bit name="Bit14" index="14"/>
+			<bit name="Bit15" index="15"/>
+			<bit name="Bit16" index="16"/>
+			<bit name="Bit17" index="17"/>
+			<bit name="Bit18" index="18"/>
+			<bit name="Bit19" index="19"/>
+			<bit name="Bit20" index="20"/>
+			<bit name="Bit21" index="21"/>
+			<bit name="Bit22" index="22"/>
+			<bit name="Bit23" index="23"/>
+			<bit name="Bit24" index="24"/>
+			<bit name="Bit25" index="25"/>
+			<bit name="Bit26" index="26"/>
+			<bit name="Bit27" index="27"/>
+			<bit name="Bit28" index="28"/>
+			<bit name="Bit29" index="29"/>
+			<bit name="Bit30" index="30"/>
+			<bit name="Bit31" index="31"/>
+		</bitfield32>
+		<comment title="Gui  Render  Block"></comment>
+
+		<stringId name="Name" visible="true" offset="0x14"/>
+		<int16 name="Unknown" visible="true" offset="0x18"/>
+		<int16 name="Layer" visible="true" offset="0x1A"/>
+		<int16 name="Widescreen YMin" visible="true" offset="0x1C"/>
+		<int16 name="Widescreen XMin" visible="true" offset="0x1E"/>
+		<int16 name="Widescreen YMax" visible="true" offset="0x20"/>
+		<int16 name="Widescreen XMax" visible="true" offset="0x22"/>
+		<int16 name="Standard YMin" visible="true" offset="0x24"/>
+		<int16 name="Standard XMin" visible="true" offset="0x26"/>
+		<int16 name="Standard YMax" visible="true" offset="0x28"/>
+		<int16 name="Standard XMax" visible="true" offset="0x2A"/>
+		<tagref name="Animation" visible="true" offset="0x2C"/>
+		<tagref name="Bitmap" visible="true" offset="0x3C"/>
+		<tagref name="Unknown" visible="true" offset="0x4C"/>
+		<enum16 name="Blend Method" visible="true" offset="0x5C">
+			<option name="Standard" value="0x0"/>
+			<option name="Unknown" value="0x1"/>
+			<option name="Unknown2" value="0x2"/>
+			<option name="Alpha" value="0x3"/>
+			<option name="Overlay" value="0x4"/>
+			<option name="Unknown3" value="0x5"/>
+			<option name="Lighter Color" value="0x6"/>
+			<option name="Unknown4" value="0x7"/>
+			<option name="Unknown5" value="0x8"/>
+			<option name="Unknown6" value="0x9"/>
+			<option name="Inverted Alpha" value="0xA"/>
+			<option name="Unknown7" value="0xB"/>
+			<option name="Unknown8" value="0xC"/>
+			<option name="Unknown9" value="0xD"/>
+		</enum16>
+		<int16 name="Unknown1" visible="true" offset="0x5E"/>
+		<int16 name="Sprite Index" visible="true" offset="0x60"/>
+		<int16 name="Unknown2" visible="true" offset="0x62"/>
+		<stringId name="Data Source Name" visible="true" offset="0x64"/>
+		<stringId name="Sprite Data Source Name" visible="true" offset="0x68"/>
+	</reflexive>
+	<reflexive name="Model Widgets" visible="true" offset="0x1C" entrySize="0x9C">
+		<tagref name="Parent" visible="true" offset="0x0"/>
+		<bitfield32 name="Flags" visible="true" offset="0x10">
+			<bit name="Bit0" index="0"/>
+			<bit name="Bit1" index="1"/>
+			<bit name="Bit2" index="2"/>
+			<bit name="Bit3" index="3"/>
+			<bit name="Bit4" index="4"/>
+			<bit name="Bit5" index="5"/>
+			<bit name="Bit6" index="6"/>
+			<bit name="Bit7" index="7"/>
+			<bit name="Bit8" index="8"/>
+			<bit name="Bit9" index="9"/>
+			<bit name="Bit10" index="10"/>
+			<bit name="Bit11" index="11"/>
+			<bit name="Bit12" index="12"/>
+			<bit name="Bit13" index="13"/>
+			<bit name="Bit14" index="14"/>
+			<bit name="Bit15" index="15"/>
+			<bit name="Bit16" index="16"/>
+			<bit name="Bit17" index="17"/>
+			<bit name="Bit18" index="18"/>
+			<bit name="Bit19" index="19"/>
+			<bit name="Bit20" index="20"/>
+			<bit name="Bit21" index="21"/>
+			<bit name="Bit22" index="22"/>
+			<bit name="Bit23" index="23"/>
+			<bit name="Bit24" index="24"/>
+			<bit name="Bit25" index="25"/>
+			<bit name="Bit26" index="26"/>
+			<bit name="Bit27" index="27"/>
+			<bit name="Bit28" index="28"/>
+			<bit name="Bit29" index="29"/>
+			<bit name="Bit30" index="30"/>
+			<bit name="Bit31" index="31"/>
+		</bitfield32>
+		<comment title="Gui  Render  Block"></comment>
+
+		<stringId name="Name" visible="true" offset="0x14"/>
+		<int16 name="Unknown" visible="true" offset="0x18"/>
+		<int16 name="Layer" visible="true" offset="0x1A"/>
+		<int16 name="Widescreen YMin" visible="true" offset="0x1C"/>
+		<int16 name="Widescreen XMin" visible="true" offset="0x1E"/>
+		<int16 name="Widescreen YMax" visible="true" offset="0x20"/>
+		<int16 name="Widescreen XMax" visible="true" offset="0x22"/>
+		<int16 name="Standard YMin" visible="true" offset="0x24"/>
+		<int16 name="Standard XMin" visible="true" offset="0x26"/>
+		<int16 name="Standard YMax" visible="true" offset="0x28"/>
+		<int16 name="Standard XMax" visible="true" offset="0x2A"/>
+		<tagref name="Animation" visible="true" offset="0x2C"/>
+		<reflexive name="Camera Refinements New" visible="true" offset="0x3C" entrySize="0xA8">
+			<stringId name="Biped" visible="true" offset="0x0"/>
+			<uint32 name="Unknown" visible="true" offset="0x4"/>
+			<uint32 name="Unknown2" visible="true" offset="0x8"/>
+			<uint32 name="Unknown3" visible="true" offset="0xC"/>
+			<uint32 name="Unknown4" visible="true" offset="0x10"/>
+			<uint32 name="Unknown5" visible="true" offset="0x14"/>
+			<uint32 name="Unknown6" visible="true" offset="0x18"/>
+			<uint32 name="Unknown7" visible="true" offset="0x1C"/>
+			<uint32 name="Unknown8" visible="true" offset="0x20"/>
+			<uint32 name="Unknown9" visible="true" offset="0x24"/>
+			<uint32 name="Unknown10" visible="true" offset="0x28"/>
+			<uint32 name="Unknown11" visible="true" offset="0x2C"/>
+			<uint32 name="Unknown12" visible="true" offset="0x30"/>
+			<uint32 name="Unknown13" visible="true" offset="0x34"/>
+			<uint32 name="Unknown14" visible="true" offset="0x38"/>
+			<uint32 name="Unknown15" visible="true" offset="0x3C"/>
+			<uint32 name="Unknown16" visible="true" offset="0x40"/>
+			<uint32 name="Unknown17" visible="true" offset="0x44"/>
+			<uint32 name="Unknown18" visible="true" offset="0x48"/>
+			<uint32 name="Unknown19" visible="true" offset="0x4C"/>
+			<uint32 name="Unknown20" visible="true" offset="0x50"/>
+			<uint32 name="Unknown21" visible="true" offset="0x54"/>
+			<uint32 name="Unknown22" visible="true" offset="0x58"/>
+			<uint32 name="Unknown23" visible="true" offset="0x5C"/>
+			<uint32 name="Unknown24" visible="true" offset="0x60"/>
+			<dataRef name="Unknown25" visible="true" offset="0x64"/>
+			<uint32 name="Unknown26" visible="true" offset="0x78"/>
+			<uint32 name="Unknown27" visible="true" offset="0x7C"/>
+			<degree name="Unknown28" visible="true" offset="0x80"/>
+			<uint32 name="Unknown29" visible="true" offset="0x84"/>
+			<degree name="Unknown30" visible="true" offset="0x88"/>
+			<uint32 name="Unknown31" visible="true" offset="0x8C"/>
+			<uint32 name="Unknown32" visible="true" offset="0x90"/>
+			<tagref name="Unknown33" visible="true" offset="0x94"/>
+			<uint32 name="Unknown34" visible="true" offset="0xA4"/>
+		</reflexive>
+		<comment title="Model  Data"></comment>
+
+		<uint32 name="Unknown4" visible="true" offset="0x48"/>
+		<uint32 name="Unknown5" visible="true" offset="0x4C"/>
+		<uint32 name="Unknown6" visible="true" offset="0x50"/>
+		<uint32 name="Unknown7" visible="true" offset="0x54"/>
+		<uint32 name="Unknown8" visible="true" offset="0x58"/>
+		<uint32 name="Unknown9" visible="true" offset="0x5C"/>
+		<uint32 name="Unknown10" visible="true" offset="0x60"/>
+		<dataRef name="Zoom Function" visible="true" offset="0x64"/>
+		<enum16 name="Movement Left" visible="true" offset="0x78">
+			<option name="Left Trigger" value="0x0"/>
+			<option name="Right Trigger" value="0x1"/>
+			<option name="Dpad Up" value="0x2"/>
+			<option name="Dpad Down" value="0x3"/>
+			<option name="Dpad Left" value="0x4"/>
+			<option name="Dpad Right" value="0x5"/>
+			<option name="Start" value="0x6"/>
+			<option name="Back" value="0x7"/>
+			<option name="Left Thumb" value="0x8"/>
+			<option name="Right Thumb" value="0x9"/>
+			<option name="Button A" value="0xA"/>
+			<option name="Button B" value="0xB"/>
+			<option name="Button X" value="0xC"/>
+			<option name="Button Y" value="0xD"/>
+			<option name="Left Bumper" value="0xE"/>
+			<option name="Right Bumper" value="0xF"/>
+			<option name="Left Stick Left" value="0x10"/>
+			<option name="Left Stick Right" value="0x11"/>
+			<option name="Left Stick Up" value="0x12"/>
+			<option name="Left Stick Down" value="0x13"/>
+			<option name="Right Stick Left" value="0x14"/>
+			<option name="Right Stick Right" value="0x15"/>
+			<option name="Right Stick Up" value="0x16"/>
+			<option name="Right Stick Down" value="0x17"/>
+			<option name="Unknown" value="0x18"/>
+		</enum16>
+		<enum16 name="Movement Right" visible="true" offset="0x7A">
+			<option name="Left Trigger" value="0x0"/>
+			<option name="Right Trigger" value="0x1"/>
+			<option name="Dpad Up" value="0x2"/>
+			<option name="Dpad Down" value="0x3"/>
+			<option name="Dpad Left" value="0x4"/>
+			<option name="Dpad Right" value="0x5"/>
+			<option name="Start" value="0x6"/>
+			<option name="Back" value="0x7"/>
+			<option name="Left Thumb" value="0x8"/>
+			<option name="Right Thumb" value="0x9"/>
+			<option name="Button A" value="0xA"/>
+			<option name="Button B" value="0xB"/>
+			<option name="Button X" value="0xC"/>
+			<option name="Button Y" value="0xD"/>
+			<option name="Left Bumper" value="0xE"/>
+			<option name="Right Bumper" value="0xF"/>
+			<option name="Left Stick Left" value="0x10"/>
+			<option name="Left Stick Right" value="0x11"/>
+			<option name="Left Stick Up" value="0x12"/>
+			<option name="Left Stick Down" value="0x13"/>
+			<option name="Right Stick Left" value="0x14"/>
+			<option name="Right Stick Right" value="0x15"/>
+			<option name="Right Stick Up" value="0x16"/>
+			<option name="Right Stick Down" value="0x17"/>
+			<option name="Unknown" value="0x18"/>
+		</enum16>
+		<enum16 name="Movement Up" visible="true" offset="0x7C">
+			<option name="Left Trigger" value="0x0"/>
+			<option name="Right Trigger" value="0x1"/>
+			<option name="Dpad Up" value="0x2"/>
+			<option name="Dpad Down" value="0x3"/>
+			<option name="Dpad Left" value="0x4"/>
+			<option name="Dpad Right" value="0x5"/>
+			<option name="Start" value="0x6"/>
+			<option name="Back" value="0x7"/>
+			<option name="Left Thumb" value="0x8"/>
+			<option name="Right Thumb" value="0x9"/>
+			<option name="Button A" value="0xA"/>
+			<option name="Button B" value="0xB"/>
+			<option name="Button X" value="0xC"/>
+			<option name="Button Y" value="0xD"/>
+			<option name="Left Bumper" value="0xE"/>
+			<option name="Right Bumper" value="0xF"/>
+			<option name="Left Stick Left" value="0x10"/>
+			<option name="Left Stick Right" value="0x11"/>
+			<option name="Left Stick Up" value="0x12"/>
+			<option name="Left Stick Down" value="0x13"/>
+			<option name="Right Stick Left" value="0x14"/>
+			<option name="Right Stick Right" value="0x15"/>
+			<option name="Right Stick Up" value="0x16"/>
+			<option name="Right Stick Down" value="0x17"/>
+			<option name="Unknown" value="0x18"/>
+		</enum16>
+		<enum16 name="Movement Down" visible="true" offset="0x7E">
+			<option name="Left Trigger" value="0x0"/>
+			<option name="Right Trigger" value="0x1"/>
+			<option name="Dpad Up" value="0x2"/>
+			<option name="Dpad Down" value="0x3"/>
+			<option name="Dpad Left" value="0x4"/>
+			<option name="Dpad Right" value="0x5"/>
+			<option name="Start" value="0x6"/>
+			<option name="Back" value="0x7"/>
+			<option name="Left Thumb" value="0x8"/>
+			<option name="Right Thumb" value="0x9"/>
+			<option name="Button A" value="0xA"/>
+			<option name="Button B" value="0xB"/>
+			<option name="Button X" value="0xC"/>
+			<option name="Button Y" value="0xD"/>
+			<option name="Left Bumper" value="0xE"/>
+			<option name="Right Bumper" value="0xF"/>
+			<option name="Left Stick Left" value="0x10"/>
+			<option name="Left Stick Right" value="0x11"/>
+			<option name="Left Stick Up" value="0x12"/>
+			<option name="Left Stick Down" value="0x13"/>
+			<option name="Right Stick Left" value="0x14"/>
+			<option name="Right Stick Right" value="0x15"/>
+			<option name="Right Stick Up" value="0x16"/>
+			<option name="Right Stick Down" value="0x17"/>
+			<option name="Unknown" value="0x18"/>
+		</enum16>
+		<enum16 name="Unknown16" visible="true" offset="0x80">
+			<option name="Left Trigger" value="0x0"/>
+			<option name="Right Trigger" value="0x1"/>
+			<option name="Dpad Up" value="0x2"/>
+			<option name="Dpad Down" value="0x3"/>
+			<option name="Dpad Left" value="0x4"/>
+			<option name="Dpad Right" value="0x5"/>
+			<option name="Start" value="0x6"/>
+			<option name="Back" value="0x7"/>
+			<option name="Left Thumb" value="0x8"/>
+			<option name="Right Thumb" value="0x9"/>
+			<option name="Button A" value="0xA"/>
+			<option name="Button B" value="0xB"/>
+			<option name="Button X" value="0xC"/>
+			<option name="Button Y" value="0xD"/>
+			<option name="Left Bumper" value="0xE"/>
+			<option name="Right Bumper" value="0xF"/>
+			<option name="Left Stick Left" value="0x10"/>
+			<option name="Left Stick Right" value="0x11"/>
+			<option name="Left Stick Up" value="0x12"/>
+			<option name="Left Stick Down" value="0x13"/>
+			<option name="Right Stick Left" value="0x14"/>
+			<option name="Right Stick Right" value="0x15"/>
+			<option name="Right Stick Up" value="0x16"/>
+			<option name="Right Stick Down" value="0x17"/>
+			<option name="Unknown" value="0x18"/>
+		</enum16>
+		<enum16 name="Unknown17" visible="true" offset="0x82">
+			<option name="Left Trigger" value="0x0"/>
+			<option name="Right Trigger" value="0x1"/>
+			<option name="Dpad Up" value="0x2"/>
+			<option name="Dpad Down" value="0x3"/>
+			<option name="Dpad Left" value="0x4"/>
+			<option name="Dpad Right" value="0x5"/>
+			<option name="Start" value="0x6"/>
+			<option name="Back" value="0x7"/>
+			<option name="Left Thumb" value="0x8"/>
+			<option name="Right Thumb" value="0x9"/>
+			<option name="Button A" value="0xA"/>
+			<option name="Button B" value="0xB"/>
+			<option name="Button X" value="0xC"/>
+			<option name="Button Y" value="0xD"/>
+			<option name="Left Bumper" value="0xE"/>
+			<option name="Right Bumper" value="0xF"/>
+			<option name="Left Stick Left" value="0x10"/>
+			<option name="Left Stick Right" value="0x11"/>
+			<option name="Left Stick Up" value="0x12"/>
+			<option name="Left Stick Down" value="0x13"/>
+			<option name="Right Stick Left" value="0x14"/>
+			<option name="Right Stick Right" value="0x15"/>
+			<option name="Right Stick Up" value="0x16"/>
+			<option name="Right Stick Down" value="0x17"/>
+			<option name="Unknown" value="0x18"/>
+		</enum16>
+		<enum16 name="Zoom In" visible="true" offset="0x84">
+			<option name="Left Trigger" value="0x0"/>
+			<option name="Right Trigger" value="0x1"/>
+			<option name="Dpad Up" value="0x2"/>
+			<option name="Dpad Down" value="0x3"/>
+			<option name="Dpad Left" value="0x4"/>
+			<option name="Dpad Right" value="0x5"/>
+			<option name="Start" value="0x6"/>
+			<option name="Back" value="0x7"/>
+			<option name="Left Thumb" value="0x8"/>
+			<option name="Right Thumb" value="0x9"/>
+			<option name="Button A" value="0xA"/>
+			<option name="Button B" value="0xB"/>
+			<option name="Button X" value="0xC"/>
+			<option name="Button Y" value="0xD"/>
+			<option name="Left Bumper" value="0xE"/>
+			<option name="Right Bumper" value="0xF"/>
+			<option name="Left Stick Left" value="0x10"/>
+			<option name="Left Stick Right" value="0x11"/>
+			<option name="Left Stick Up" value="0x12"/>
+			<option name="Left Stick Down" value="0x13"/>
+			<option name="Right Stick Left" value="0x14"/>
+			<option name="Right Stick Right" value="0x15"/>
+			<option name="Right Stick Up" value="0x16"/>
+			<option name="Right Stick Down" value="0x17"/>
+			<option name="Unknown" value="0x18"/>
+		</enum16>
+		<enum16 name="Zoom Out" visible="true" offset="0x86">
+			<option name="Left Trigger" value="0x0"/>
+			<option name="Right Trigger" value="0x1"/>
+			<option name="Dpad Up" value="0x2"/>
+			<option name="Dpad Down" value="0x3"/>
+			<option name="Dpad Left" value="0x4"/>
+			<option name="Dpad Right" value="0x5"/>
+			<option name="Start" value="0x6"/>
+			<option name="Back" value="0x7"/>
+			<option name="Left Thumb" value="0x8"/>
+			<option name="Right Thumb" value="0x9"/>
+			<option name="Button A" value="0xA"/>
+			<option name="Button B" value="0xB"/>
+			<option name="Button X" value="0xC"/>
+			<option name="Button Y" value="0xD"/>
+			<option name="Left Bumper" value="0xE"/>
+			<option name="Right Bumper" value="0xF"/>
+			<option name="Left Stick Left" value="0x10"/>
+			<option name="Left Stick Right" value="0x11"/>
+			<option name="Left Stick Up" value="0x12"/>
+			<option name="Left Stick Down" value="0x13"/>
+			<option name="Right Stick Left" value="0x14"/>
+			<option name="Right Stick Right" value="0x15"/>
+			<option name="Right Stick Up" value="0x16"/>
+			<option name="Right Stick Down" value="0x17"/>
+			<option name="Unknown" value="0x18"/>
+		</enum16>
+		<enum16 name="Rotate Left" visible="true" offset="0x88">
+			<option name="Left Trigger" value="0x0"/>
+			<option name="Right Trigger" value="0x1"/>
+			<option name="Dpad Up" value="0x2"/>
+			<option name="Dpad Down" value="0x3"/>
+			<option name="Dpad Left" value="0x4"/>
+			<option name="Dpad Right" value="0x5"/>
+			<option name="Start" value="0x6"/>
+			<option name="Back" value="0x7"/>
+			<option name="Left Thumb" value="0x8"/>
+			<option name="Right Thumb" value="0x9"/>
+			<option name="Button A" value="0xA"/>
+			<option name="Button B" value="0xB"/>
+			<option name="Button X" value="0xC"/>
+			<option name="Button Y" value="0xD"/>
+			<option name="Left Bumper" value="0xE"/>
+			<option name="Right Bumper" value="0xF"/>
+			<option name="Left Stick Left" value="0x10"/>
+			<option name="Left Stick Right" value="0x11"/>
+			<option name="Left Stick Up" value="0x12"/>
+			<option name="Left Stick Down" value="0x13"/>
+			<option name="Right Stick Left" value="0x14"/>
+			<option name="Right Stick Right" value="0x15"/>
+			<option name="Right Stick Up" value="0x16"/>
+			<option name="Right Stick Down" value="0x17"/>
+			<option name="Unknown" value="0x18"/>
+		</enum16>
+		<enum16 name="Rotate Right" visible="true" offset="0x8A">
+			<option name="Left Trigger" value="0x0"/>
+			<option name="Right Trigger" value="0x1"/>
+			<option name="Dpad Up" value="0x2"/>
+			<option name="Dpad Down" value="0x3"/>
+			<option name="Dpad Left" value="0x4"/>
+			<option name="Dpad Right" value="0x5"/>
+			<option name="Start" value="0x6"/>
+			<option name="Back" value="0x7"/>
+			<option name="Left Thumb" value="0x8"/>
+			<option name="Right Thumb" value="0x9"/>
+			<option name="Button A" value="0xA"/>
+			<option name="Button B" value="0xB"/>
+			<option name="Button X" value="0xC"/>
+			<option name="Button Y" value="0xD"/>
+			<option name="Left Bumper" value="0xE"/>
+			<option name="Right Bumper" value="0xF"/>
+			<option name="Left Stick Left" value="0x10"/>
+			<option name="Left Stick Right" value="0x11"/>
+			<option name="Left Stick Up" value="0x12"/>
+			<option name="Left Stick Down" value="0x13"/>
+			<option name="Right Stick Left" value="0x14"/>
+			<option name="Right Stick Right" value="0x15"/>
+			<option name="Right Stick Up" value="0x16"/>
+			<option name="Right Stick Down" value="0x17"/>
+			<option name="Unknown" value="0x18"/>
+		</enum16>
+		<enum16 name="Unknown22" visible="true" offset="0x8C">
+			<option name="Left Trigger" value="0x0"/>
+			<option name="Right Trigger" value="0x1"/>
+			<option name="Dpad Up" value="0x2"/>
+			<option name="Dpad Down" value="0x3"/>
+			<option name="Dpad Left" value="0x4"/>
+			<option name="Dpad Right" value="0x5"/>
+			<option name="Start" value="0x6"/>
+			<option name="Back" value="0x7"/>
+			<option name="Left Thumb" value="0x8"/>
+			<option name="Right Thumb" value="0x9"/>
+			<option name="Button A" value="0xA"/>
+			<option name="Button B" value="0xB"/>
+			<option name="Button X" value="0xC"/>
+			<option name="Button Y" value="0xD"/>
+			<option name="Left Bumper" value="0xE"/>
+			<option name="Right Bumper" value="0xF"/>
+			<option name="Left Stick Left" value="0x10"/>
+			<option name="Left Stick Right" value="0x11"/>
+			<option name="Left Stick Up" value="0x12"/>
+			<option name="Left Stick Down" value="0x13"/>
+			<option name="Right Stick Left" value="0x14"/>
+			<option name="Right Stick Right" value="0x15"/>
+			<option name="Right Stick Up" value="0x16"/>
+			<option name="Right Stick Down" value="0x17"/>
+			<option name="Unknown" value="0x18"/>
+		</enum16>
+		<enum16 name="Unknown23" visible="true" offset="0x8E">
+			<option name="Left Trigger" value="0x0"/>
+			<option name="Right Trigger" value="0x1"/>
+			<option name="Dpad Up" value="0x2"/>
+			<option name="Dpad Down" value="0x3"/>
+			<option name="Dpad Left" value="0x4"/>
+			<option name="Dpad Right" value="0x5"/>
+			<option name="Start" value="0x6"/>
+			<option name="Back" value="0x7"/>
+			<option name="Left Thumb" value="0x8"/>
+			<option name="Right Thumb" value="0x9"/>
+			<option name="Button A" value="0xA"/>
+			<option name="Button B" value="0xB"/>
+			<option name="Button X" value="0xC"/>
+			<option name="Button Y" value="0xD"/>
+			<option name="Left Bumper" value="0xE"/>
+			<option name="Right Bumper" value="0xF"/>
+			<option name="Left Stick Left" value="0x10"/>
+			<option name="Left Stick Right" value="0x11"/>
+			<option name="Left Stick Up" value="0x12"/>
+			<option name="Left Stick Down" value="0x13"/>
+			<option name="Right Stick Left" value="0x14"/>
+			<option name="Right Stick Right" value="0x15"/>
+			<option name="Right Stick Up" value="0x16"/>
+			<option name="Right Stick Down" value="0x17"/>
+			<option name="Unknown" value="0x18"/>
+		</enum16>
+		<reflexive name="Texture Camera Sections" visible="true" offset="0x90" entrySize="0x14">
+			<stringId name="Name" visible="true" offset="0x0"/>
+			<float32 name="Bounds XMin" visible="true" offset="0x4"/>
+			<float32 name="Bounds XMax" visible="true" offset="0x8"/>
+			<float32 name="Bounds YMin" visible="true" offset="0xC"/>
+			<float32 name="Bounds YMax" visible="true" offset="0x10"/>
+		</reflexive>
+	</reflexive>
+</plugin>

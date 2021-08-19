@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x38">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<tagref name="Render Model" visible="true" offset="0x0"/>
+	<uint32 name="Unknown" visible="true" offset="0x10"/>
+	<uint32 name="Unknown2" visible="true" offset="0x14"/>
+	<uint32 name="Unknown3" visible="true" offset="0x18"/>
+	<int32 name="Unknown4" visible="true" offset="0x1C"/>
+	<reflexive name="Locations" visible="true" offset="0x20" entrySize="0x8">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<int16 name="Unknown" visible="true" offset="0x4"/>
+		<int16 name="Unknown2" visible="true" offset="0x6"/>
+	</reflexive>
+	<reflexive name="Unknown5" visible="true" offset="0x2C" entrySize="0x70">
+		<int16 name="Unknown" visible="true" offset="0x0"/>
+		<int16 name="Unknown2" visible="true" offset="0x2"/>
+		<uint32 name="Unknown3" visible="true" offset="0x4"/>
+		<float32 name="Unknown4" visible="true" offset="0x8"/>
+		<float32 name="Unknown5" visible="true" offset="0xC"/>
+		<float32 name="Unknown6" visible="true" offset="0x10"/>
+		<dataRef name="Unknown7" visible="true" offset="0x14"/>
+		<float32 name="Unknown8" visible="true" offset="0x28"/>
+		<dataRef name="Unknown9" visible="true" offset="0x2C"/>
+		<float32 name="Unknown10" visible="true" offset="0x40"/>
+		<float32 name="Unknown11" visible="true" offset="0x44"/>
+		<float32 name="Unknown12" visible="true" offset="0x48"/>
+		<float32 name="Unknown13" visible="true" offset="0x4C"/>
+		<float32 name="Unknown14" visible="true" offset="0x50"/>
+		<float32 name="Unknown15" visible="true" offset="0x54"/>
+		<float32 name="Unknown16" visible="true" offset="0x58"/>
+		<float32 name="Unknown17" visible="true" offset="0x5C"/>
+		<tagref name="Effect" visible="true" offset="0x60"/>
+	</reflexive>
+</plugin>

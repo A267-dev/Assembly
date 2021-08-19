@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0xC">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Color Tables" visible="true" offset="0x0" entrySize="0x30">
+		<ascii name="String" visible="true" offset="0x0" length="0x20"/>
+		<colorf name="Color" visible="true" offset="0x20" format="argb"/>
+	</reflexive>
+</plugin>

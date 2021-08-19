@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x170">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<comment title="Exposure"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0x0">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x2"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x3"/>
+	<float32 name="Strength" visible="true" offset="0x4"/>
+	<float32 name="Maximum Change" visible="true" offset="0x8"/>
+	<float32 name="Blend Speed" visible="true" offset="0xC"/>
+	<float32 name="Exposure Range Min" visible="true" offset="0x10"/>
+	<float32 name="Exposure Range Max" visible="true" offset="0x14"/>
+	<float32 name="Auto Brightness" visible="true" offset="0x18"/>
+	<float32 name="Auto Brightness Delay" visible="true" offset="0x1C"/>
+	<comment title="Auto  Exposure  Sensitivity"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0x20">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x22"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x23"/>
+	<float32 name="Value" visible="true" offset="0x24"/>
+	<comment title="Exposure  Compensation"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0x28">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x2A"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x2B"/>
+	<float32 name="Value" visible="true" offset="0x2C"/>
+	<comment title="Highlight  Bloom"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0x30">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x32"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x33"/>
+	<float32 name="Strength" visible="true" offset="0x34"/>
+	<float32 name="Maximum Change" visible="true" offset="0x38"/>
+	<float32 name="Blend Speed" visible="true" offset="0x3C"/>
+	<comment title="Inherent  Bloom"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0x40">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x42"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x43"/>
+	<float32 name="Strength" visible="true" offset="0x44"/>
+	<float32 name="Maximum Change" visible="true" offset="0x48"/>
+	<float32 name="Blend Speed" visible="true" offset="0x4C"/>
+	<comment title="Lighting  Bloom"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0x50">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x52"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x53"/>
+	<float32 name="Strength" visible="true" offset="0x54"/>
+	<float32 name="Maximum Change" visible="true" offset="0x58"/>
+	<float32 name="Blend Speed" visible="true" offset="0x5C"/>
+	<comment title="Highlight  Bloom  Tint"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0x60">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x62"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x63"/>
+	<colorf name="Color" visible="true" offset="0x64" format="rgb"/>
+	<comment title="Inherent  Bloom  Tint"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0x70">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x72"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x73"/>
+	<colorf name="Color" visible="true" offset="0x74" format="rgb"/>
+	<comment title="Lighting  Bloom  Tint"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0x80">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x82"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x83"/>
+	<colorf name="Color" visible="true" offset="0x84" format="rgb"/>
+	<comment title="Bling  Intensity"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0x90">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x92"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x93"/>
+	<float32 name="Strength" visible="true" offset="0x94"/>
+	<float32 name="Maximum Change" visible="true" offset="0x98"/>
+	<float32 name="Blend Speed" visible="true" offset="0x9C"/>
+	<comment title="Bling  Size"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0xA0">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0xA2"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0xA3"/>
+	<float32 name="Strength" visible="true" offset="0xA4"/>
+	<float32 name="Maximum Change" visible="true" offset="0xA8"/>
+	<float32 name="Blend Speed" visible="true" offset="0xAC"/>
+	<comment title="Bling  Angle"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0xB0">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0xB2"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0xB3"/>
+	<float32 name="Strength" visible="true" offset="0xB4"/>
+	<float32 name="Maximum Change" visible="true" offset="0xB8"/>
+	<float32 name="Blend Speed" visible="true" offset="0xBC"/>
+	<comment title="Bling  Count"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0xC0">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<int16 name="Bling Spikes" visible="true" offset="0xC2"/>
+	<comment title="Self  Illum  Exposure"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0xC4">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0xC6"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0xC7"/>
+	<float32 name="Strength" visible="true" offset="0xC8"/>
+	<float32 name="Maximum Change" visible="true" offset="0xCC"/>
+	<float32 name="Blend Speed" visible="true" offset="0xD0"/>
+	<comment title="Self  Illum  Scale"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0xD4">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0xD6"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0xD7"/>
+	<float32 name="Strength" visible="true" offset="0xD8"/>
+	<float32 name="Maximum Change" visible="true" offset="0xDC"/>
+	<float32 name="Blend Speed" visible="true" offset="0xE0"/>
+	<comment title="Ssao  Properties"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0xE4">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0xE6"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0xE7"/>
+	<float32 name="Ssao Radius" visible="true" offset="0xE8"/>
+	<float32 name="Ssao Blur Radius" visible="true" offset="0xEC"/>
+	<float32 name="Ssao Back Drop Strength" visible="true" offset="0xF0"/>
+	<comment title="Unknown  Intensity1"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0xF4">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0xF6"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0xF7"/>
+	<float32 name="Value" visible="true" offset="0xF8"/>
+	<reflexive name="Unknown33" visible="true" offset="0xFC" entrySize="0x58">
+		<float32 name="Unknown" visible="true" offset="0x0"/>
+		<int32 name="Unknown2" visible="true" offset="0x4"/>
+		<dataRef name="Unknown3" visible="true" offset="0x8"/>
+		<dataRef name="Unknown4" visible="true" offset="0x1C"/>
+		<dataRef name="Unknown5" visible="true" offset="0x30"/>
+		<dataRef name="Unknown6" visible="true" offset="0x44"/>
+	</reflexive>
+	<reflexive name="Unknown34" visible="true" offset="0x108" entrySize="0xC">
+		<int32 name="Unknown" visible="true" offset="0x0"/>
+		<float32 name="Unknown2" visible="true" offset="0x4"/>
+		<float32 name="Unknown3" visible="true" offset="0x8"/>
+	</reflexive>
+	<reflexive name="Unknown35" visible="true" offset="0x114" entrySize="0x14">
+		<float32 name="Unknown" visible="true" offset="0x0"/>
+		<float32 name="Unknown2" visible="true" offset="0x4"/>
+		<float32 name="Unknown3" visible="true" offset="0x8"/>
+		<float32 name="Unknown4" visible="true" offset="0xC"/>
+		<float32 name="Unknown5" visible="true" offset="0x10"/>
+	</reflexive>
+	<reflexive name="Unknown36" visible="true" offset="0x120" entrySize="0x14">
+		<float32 name="Unknown" visible="true" offset="0x0"/>
+		<float32 name="Unknown2" visible="true" offset="0x4"/>
+		<float32 name="Unknown3" visible="true" offset="0x8"/>
+		<float32 name="Unknown4" visible="true" offset="0xC"/>
+		<float32 name="Unknown5" visible="true" offset="0x10"/>
+	</reflexive>
+	<reflexive name="Unknown37" visible="true" offset="0x12C" entrySize="0x94">
+		<int32 name="Unknown" visible="true" offset="0x0"/>
+		<float32 name="Unknown2" visible="true" offset="0x4"/>
+		<float32 name="Unknown3" visible="true" offset="0x8"/>
+		<float32 name="Unknown4" visible="true" offset="0xC"/>
+		<float32 name="Unknown5" visible="true" offset="0x10"/>
+		<float32 name="Unknown6" visible="true" offset="0x14"/>
+		<float32 name="Unknown7" visible="true" offset="0x18"/>
+		<float32 name="Unknown8" visible="true" offset="0x1C"/>
+		<float32 name="Unknown9" visible="true" offset="0x20"/>
+		<float32 name="Unknown10" visible="true" offset="0x24"/>
+		<float32 name="Unknown11" visible="true" offset="0x28"/>
+		<float32 name="Unknown12" visible="true" offset="0x2C"/>
+		<float32 name="Unknown13" visible="true" offset="0x30"/>
+		<float32 name="Unknown14" visible="true" offset="0x34"/>
+		<float32 name="Unknown15" visible="true" offset="0x38"/>
+		<float32 name="Unknown16" visible="true" offset="0x3C"/>
+		<float32 name="Unknown17" visible="true" offset="0x40"/>
+		<float32 name="Unknown18" visible="true" offset="0x44"/>
+		<float32 name="Unknown19" visible="true" offset="0x48"/>
+		<float32 name="Unknown20" visible="true" offset="0x4C"/>
+		<float32 name="Unknown21" visible="true" offset="0x50"/>
+		<float32 name="Unknown22" visible="true" offset="0x54"/>
+		<float32 name="Unknown23" visible="true" offset="0x58"/>
+		<float32 name="Unknown24" visible="true" offset="0x5C"/>
+		<float32 name="Unknown25" visible="true" offset="0x60"/>
+		<float32 name="Unknown26" visible="true" offset="0x64"/>
+		<float32 name="Unknown27" visible="true" offset="0x68"/>
+		<float32 name="Unknown28" visible="true" offset="0x6C"/>
+		<float32 name="Unknown29" visible="true" offset="0x70"/>
+		<float32 name="Unknown30" visible="true" offset="0x74"/>
+		<float32 name="Unknown31" visible="true" offset="0x78"/>
+		<float32 name="Unknown32" visible="true" offset="0x7C"/>
+		<float32 name="Unknown33" visible="true" offset="0x80"/>
+		<float32 name="Unknown34" visible="true" offset="0x84"/>
+		<float32 name="Unknown35" visible="true" offset="0x88"/>
+		<float32 name="Unknown36" visible="true" offset="0x8C"/>
+		<float32 name="Unknown37" visible="true" offset="0x90"/>
+	</reflexive>
+	<reflexive name="Unknown38" visible="true" offset="0x138" entrySize="0x28">
+		<int32 name="Unknown" visible="true" offset="0x0"/>
+		<float32 name="Unknown2" visible="true" offset="0x4"/>
+		<float32 name="Unknown3" visible="true" offset="0x8"/>
+		<float32 name="Unknown4" visible="true" offset="0xC"/>
+		<float32 name="Unknown5" visible="true" offset="0x10"/>
+		<float32 name="Unknown6" visible="true" offset="0x14"/>
+		<float32 name="Unknown7" visible="true" offset="0x18"/>
+		<float32 name="Unknown8" visible="true" offset="0x1C"/>
+		<float32 name="Unknown9" visible="true" offset="0x20"/>
+		<float32 name="Unknown10" visible="true" offset="0x24"/>
+	</reflexive>
+	<comment title="Godrays  Properties"></comment>
+
+	<bitfield16 name="Flags" visible="true" offset="0x144">
+		<bit name="Use Default" index="0"/>
+		<bit name="Maximum Change Is Relative" index="1"/>
+		<bit name="Auto Adjust Target" index="2"/>
+		<bit name="Unused1" index="3"/>
+		<bit name="Fixed1" index="4"/>
+		<bit name="Unused2" index="5"/>
+		<bit name="Fixed2" index="6"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x146"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x147"/>
+	<float32 name="Radius" visible="true" offset="0x148"/>
+	<float32 name="Angle Bias" visible="true" offset="0x14C"/>
+	<colorf name="Color" visible="true" offset="0x150" format="rgb"/>
+	<float32 name="Strength" visible="true" offset="0x15C"/>
+	<float32 name="Power Exponent" visible="true" offset="0x160"/>
+	<float32 name="Blur Sharpness" visible="true" offset="0x164"/>
+	<float32 name="Decorator Darkening" visible="true" offset="0x168"/>
+	<float32 name="Hemi Rejection Falloff" visible="true" offset="0x16C"/>
+</plugin>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0xC">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Achievement Information" visible="true" offset="0x0" entrySize="0x18">
+		<enum32 name="Achievement" visible="true" offset="0x0">
+			<option name="beat_sc100" value="0x0"/>
+			<option name="beat_sc110" value="0x1"/>
+			<option name="beat_sc120" value="0x2"/>
+			<option name="beat_sc130" value="0x3"/>
+			<option name="beat_sc140" value="0x4"/>
+			<option name="beat_sc150" value="0x5"/>
+			<option name="beat_l200" value="0x6"/>
+			<option name="beat_l300" value="0x7"/>
+			<option name="beat_campaign_normal" value="0x8"/>
+			<option name="beat_campaign_heroic" value="0x9"/>
+			<option name="beat_campaign_legendary" value="0xA"/>
+			<option name="wraith_killer" value="0xB"/>
+			<option name="naughty_naughty" value="0xC"/>
+			<option name="good_samaritan" value="0xD"/>
+			<option name="dome_inspector" value="0xE"/>
+			<option name="laser_blaster" value="0xF"/>
+			<option name="both_tubes" value="0x10"/>
+			<option name="i_like_fire" value="0x11"/>
+			<option name="my_clothes" value="0x12"/>
+			<option name="pink_and_deadly" value="0x13"/>
+			<option name="dark_times" value="0x14"/>
+			<option name="trading_down" value="0x15"/>
+			<option name="headcase" value="0x16"/>
+			<option name="boom_headshot" value="0x17"/>
+			<option name="ewww_sticky" value="0x18"/>
+			<option name="junior_detective" value="0x19"/>
+			<option name="gumshoe" value="0x1A"/>
+			<option name="super_sleuth" value="0x1B"/>
+			<option name="metagame_points_in_sc100" value="0x1C"/>
+			<option name="metagame_points_in_sc110" value="0x1D"/>
+			<option name="metagame_points_in_sc120" value="0x1E"/>
+			<option name="metagame_points_in_sc130a" value="0x1F"/>
+			<option name="metagame_points_in_sc130b" value="0x20"/>
+			<option name="metagame_points_in_sc140" value="0x21"/>
+			<option name="metagame_points_in_l200" value="0x22"/>
+			<option name="metagame_points_in_l300" value="0x23"/>
+			<option name="be_like_marty" value="0x24"/>
+			<option name="find_all_audio_logs" value="0x25"/>
+			<option name="find_01_audio_logs" value="0x26"/>
+			<option name="find_03_audio_logs" value="0x27"/>
+			<option name="find_15_audio_logs" value="0x28"/>
+			<option name="vidmaster_challenge_deja_vu" value="0x29"/>
+			<option name="vidmaster_challenge_endure" value="0x2A"/>
+			<option name="vidmaster_challenge_classic" value="0x2B"/>
+			<option name="heal_up" value="0x2C"/>
+			<option name="stunning" value="0x2D"/>
+			<option name="tourist" value="0x2E"/>
+		</enum32>
+		<bitfield32 name="Flags" visible="true" offset="0x4">
+			<bit name="Invalid In Campaign" index="0"/>
+			<bit name="Invalid In Survival" index="1"/>
+			<bit name="Resets On Map Reload" index="2"/>
+			<bit name="Uses Game Progression" index="3"/>
+		</bitfield32>
+		<stringId name="Level Name" visible="true" offset="0x8"/>
+		<int32 name="Goal" visible="true" offset="0xC"/>
+		<bitfield32 name="Icon Flags" visible="true" offset="0x10">
+			<bit name="Displays On Hud" index="0"/>
+			<bit name="Bit1" index="1"/>
+		</bitfield32>
+		<int32 name="Icon Index" visible="true" offset="0x14"/>
+	</reflexive>
+</plugin>

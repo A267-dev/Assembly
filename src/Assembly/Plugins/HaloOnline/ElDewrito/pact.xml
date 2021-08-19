@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x144">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<comment title="Widget"></comment>
+
+	<ascii name="Title" visible="true" offset="0x0" length="0x20"/>
+	<enum16 name="Type" visible="true" offset="0x20">
+		<option name="Wheel" value="0x0"/>
+		<option name="Grid" value="0x1"/>
+	</enum16>
+	<uint16 name="Flags" visible="true" offset="0x22"/>
+	<dataRef name="Stylesheet" visible="true" offset="0x24"/>
+	<reflexive name="Actions" visible="true" offset="0x38" entrySize="0x5C">
+		<ascii name="Title" visible="true" offset="0x0" length="0x20"/>
+		<ascii name="Icon Name" visible="true" offset="0x20" length="0x20"/>
+		<stringId name="Animation Enter" visible="true" offset="0x40"/>
+		<stringId name="Animation Idle" visible="true" offset="0x44"/>
+		<stringId name="Animation Exit" visible="true" offset="0x48"/>
+		<bitfield32 name="Flags" visible="true" offset="0x4C">
+			<bit name="Hide Weapon" index="0"/>
+			<bit name="Force Third Person Camera" index="1"/>
+			<bit name="Inhibit Movement" index="2"/>
+		</bitfield32>
+		<reflexive name="Override Camera" visible="true" offset="0x50" entrySize="0x3C">
+			<bitfield16 name="Camera Flags" visible="true" offset="0x0">
+				<bit name="Pitch Bounds Absolute Space" index="0"/>
+				<bit name="Only Collides With Environment" index="1"/>
+				<bit name="Hides Player Unit From Camera" index="2"/>
+				<bit name="Use Aiming Vector Instead Of Marker Forward" index="3"/>
+			</bitfield16>
+			<uint8 name="Unused Padding 0" visible="false" offset="0x2"/>
+			<uint8 name="Unused Padding 1" visible="false" offset="0x3"/>
+			<stringId name="Camera Marker Name" visible="true" offset="0x4"/>
+			<stringId name="Camera Submerged Marker Name" visible="true" offset="0x8"/>
+			<degree name="Pitch Auto Level" visible="true" offset="0xC"/>
+			<degree name="Pitch Range Min" visible="true" offset="0x10"/>
+			<degree name="Pitch Range Max" visible="true" offset="0x14"/>
+			<reflexive name="Camera Tracks" visible="true" offset="0x18" entrySize="0x10">
+				<tagref name="Camera Track" visible="true" offset="0x0"/>
+			</reflexive>
+			<float32 name="Pitch Spring Bounds Min" visible="true" offset="0x24"/>
+			<float32 name="Pitch Spring Bounds Max" visible="true" offset="0x28"/>
+			<degree name="Spring Velocity" visible="true" offset="0x2C"/>
+			<reflexive name="Camera Acceleration" visible="true" offset="0x30" entrySize="0x4C">
+				<float32 name="Maximum Camera Velocity" visible="true" offset="0x0"/>
+				<comment title="Axes  Acceleration 0"></comment>
+
+				<float32 name="Unknown1" visible="true" offset="0x4"/>
+				<float32 name="Unknown2" visible="true" offset="0x8"/>
+				<float32 name="Unknown3" visible="true" offset="0xC"/>
+				<float32 name="Unknown4" visible="true" offset="0x10"/>
+				<float32 name="Unknown5" visible="true" offset="0x14"/>
+				<float32 name="Unknown6" visible="true" offset="0x18"/>
+				<comment title="Axes  Acceleration 1"></comment>
+
+				<float32 name="Unknown1" visible="true" offset="0x1C"/>
+				<float32 name="Unknown2" visible="true" offset="0x20"/>
+				<float32 name="Unknown3" visible="true" offset="0x24"/>
+				<float32 name="Unknown4" visible="true" offset="0x28"/>
+				<float32 name="Unknown5" visible="true" offset="0x2C"/>
+				<float32 name="Unknown6" visible="true" offset="0x30"/>
+				<comment title="Axes  Acceleration 2"></comment>
+
+				<float32 name="Unknown1" visible="true" offset="0x34"/>
+				<float32 name="Unknown2" visible="true" offset="0x38"/>
+				<float32 name="Unknown3" visible="true" offset="0x3C"/>
+				<float32 name="Unknown4" visible="true" offset="0x40"/>
+				<float32 name="Unknown5" visible="true" offset="0x44"/>
+				<float32 name="Unknown6" visible="true" offset="0x48"/>
+			</reflexive>
+		</reflexive>
+	</reflexive>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x44"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x45"/>
+	<uint8 name="Unused Padding 2" visible="false" offset="0x46"/>
+	<uint8 name="Unused Padding 3" visible="false" offset="0x47"/>
+	<uint8 name="Unused Padding 4" visible="false" offset="0x48"/>
+	<uint8 name="Unused Padding 5" visible="false" offset="0x49"/>
+	<uint8 name="Unused Padding 6" visible="false" offset="0x4A"/>
+	<uint8 name="Unused Padding 7" visible="false" offset="0x4B"/>
+	<uint8 name="Unused Padding 8" visible="false" offset="0x4C"/>
+	<uint8 name="Unused Padding 9" visible="false" offset="0x4D"/>
+	<uint8 name="Unused Padding 10" visible="false" offset="0x4E"/>
+	<uint8 name="Unused Padding 11" visible="false" offset="0x4F"/>
+	<uint8 name="Unused Padding 12" visible="false" offset="0x50"/>
+	<uint8 name="Unused Padding 13" visible="false" offset="0x51"/>
+	<uint8 name="Unused Padding 14" visible="false" offset="0x52"/>
+	<uint8 name="Unused Padding 15" visible="false" offset="0x53"/>
+	<uint8 name="Unused Padding 16" visible="false" offset="0x54"/>
+	<uint8 name="Unused Padding 17" visible="false" offset="0x55"/>
+	<uint8 name="Unused Padding 18" visible="false" offset="0x56"/>
+	<uint8 name="Unused Padding 19" visible="false" offset="0x57"/>
+	<uint8 name="Unused Padding 20" visible="false" offset="0x58"/>
+	<uint8 name="Unused Padding 21" visible="false" offset="0x59"/>
+	<uint8 name="Unused Padding 22" visible="false" offset="0x5A"/>
+	<uint8 name="Unused Padding 23" visible="false" offset="0x5B"/>
+	<uint8 name="Unused Padding 24" visible="false" offset="0x5C"/>
+	<uint8 name="Unused Padding 25" visible="false" offset="0x5D"/>
+	<uint8 name="Unused Padding 26" visible="false" offset="0x5E"/>
+	<uint8 name="Unused Padding 27" visible="false" offset="0x5F"/>
+	<uint8 name="Unused Padding 28" visible="false" offset="0x60"/>
+	<uint8 name="Unused Padding 29" visible="false" offset="0x61"/>
+	<uint8 name="Unused Padding 30" visible="false" offset="0x62"/>
+	<uint8 name="Unused Padding 31" visible="false" offset="0x63"/>
+	<uint8 name="Unused Padding 32" visible="false" offset="0x64"/>
+	<uint8 name="Unused Padding 33" visible="false" offset="0x65"/>
+	<uint8 name="Unused Padding 34" visible="false" offset="0x66"/>
+	<uint8 name="Unused Padding 35" visible="false" offset="0x67"/>
+	<uint8 name="Unused Padding 36" visible="false" offset="0x68"/>
+	<uint8 name="Unused Padding 37" visible="false" offset="0x69"/>
+	<uint8 name="Unused Padding 38" visible="false" offset="0x6A"/>
+	<uint8 name="Unused Padding 39" visible="false" offset="0x6B"/>
+	<uint8 name="Unused Padding 40" visible="false" offset="0x6C"/>
+	<uint8 name="Unused Padding 41" visible="false" offset="0x6D"/>
+	<uint8 name="Unused Padding 42" visible="false" offset="0x6E"/>
+	<uint8 name="Unused Padding 43" visible="false" offset="0x6F"/>
+	<uint8 name="Unused Padding 44" visible="false" offset="0x70"/>
+	<uint8 name="Unused Padding 45" visible="false" offset="0x71"/>
+	<uint8 name="Unused Padding 46" visible="false" offset="0x72"/>
+	<uint8 name="Unused Padding 47" visible="false" offset="0x73"/>
+	<uint8 name="Unused Padding 48" visible="false" offset="0x74"/>
+	<uint8 name="Unused Padding 49" visible="false" offset="0x75"/>
+	<uint8 name="Unused Padding 50" visible="false" offset="0x76"/>
+	<uint8 name="Unused Padding 51" visible="false" offset="0x77"/>
+	<uint8 name="Unused Padding 52" visible="false" offset="0x78"/>
+	<uint8 name="Unused Padding 53" visible="false" offset="0x79"/>
+	<uint8 name="Unused Padding 54" visible="false" offset="0x7A"/>
+	<uint8 name="Unused Padding 55" visible="false" offset="0x7B"/>
+	<uint8 name="Unused Padding 56" visible="false" offset="0x7C"/>
+	<uint8 name="Unused Padding 57" visible="false" offset="0x7D"/>
+	<uint8 name="Unused Padding 58" visible="false" offset="0x7E"/>
+	<uint8 name="Unused Padding 59" visible="false" offset="0x7F"/>
+	<uint8 name="Unused Padding 60" visible="false" offset="0x80"/>
+	<uint8 name="Unused Padding 61" visible="false" offset="0x81"/>
+	<uint8 name="Unused Padding 62" visible="false" offset="0x82"/>
+	<uint8 name="Unused Padding 63" visible="false" offset="0x83"/>
+	<uint8 name="Unused Padding 64" visible="false" offset="0x84"/>
+	<uint8 name="Unused Padding 65" visible="false" offset="0x85"/>
+	<uint8 name="Unused Padding 66" visible="false" offset="0x86"/>
+	<uint8 name="Unused Padding 67" visible="false" offset="0x87"/>
+	<uint8 name="Unused Padding 68" visible="false" offset="0x88"/>
+	<uint8 name="Unused Padding 69" visible="false" offset="0x89"/>
+	<uint8 name="Unused Padding 70" visible="false" offset="0x8A"/>
+	<uint8 name="Unused Padding 71" visible="false" offset="0x8B"/>
+	<uint8 name="Unused Padding 72" visible="false" offset="0x8C"/>
+	<uint8 name="Unused Padding 73" visible="false" offset="0x8D"/>
+	<uint8 name="Unused Padding 74" visible="false" offset="0x8E"/>
+	<uint8 name="Unused Padding 75" visible="false" offset="0x8F"/>
+	<uint8 name="Unused Padding 76" visible="false" offset="0x90"/>
+	<uint8 name="Unused Padding 77" visible="false" offset="0x91"/>
+	<uint8 name="Unused Padding 78" visible="false" offset="0x92"/>
+	<uint8 name="Unused Padding 79" visible="false" offset="0x93"/>
+	<uint8 name="Unused Padding 80" visible="false" offset="0x94"/>
+	<uint8 name="Unused Padding 81" visible="false" offset="0x95"/>
+	<uint8 name="Unused Padding 82" visible="false" offset="0x96"/>
+	<uint8 name="Unused Padding 83" visible="false" offset="0x97"/>
+	<uint8 name="Unused Padding 84" visible="false" offset="0x98"/>
+	<uint8 name="Unused Padding 85" visible="false" offset="0x99"/>
+	<uint8 name="Unused Padding 86" visible="false" offset="0x9A"/>
+	<uint8 name="Unused Padding 87" visible="false" offset="0x9B"/>
+	<uint8 name="Unused Padding 88" visible="false" offset="0x9C"/>
+	<uint8 name="Unused Padding 89" visible="false" offset="0x9D"/>
+	<uint8 name="Unused Padding 90" visible="false" offset="0x9E"/>
+	<uint8 name="Unused Padding 91" visible="false" offset="0x9F"/>
+	<uint8 name="Unused Padding 92" visible="false" offset="0xA0"/>
+	<uint8 name="Unused Padding 93" visible="false" offset="0xA1"/>
+	<uint8 name="Unused Padding 94" visible="false" offset="0xA2"/>
+	<uint8 name="Unused Padding 95" visible="false" offset="0xA3"/>
+	<uint8 name="Unused Padding 96" visible="false" offset="0xA4"/>
+	<uint8 name="Unused Padding 97" visible="false" offset="0xA5"/>
+	<uint8 name="Unused Padding 98" visible="false" offset="0xA6"/>
+	<uint8 name="Unused Padding 99" visible="false" offset="0xA7"/>
+	<uint8 name="Unused Padding 100" visible="false" offset="0xA8"/>
+	<uint8 name="Unused Padding 101" visible="false" offset="0xA9"/>
+	<uint8 name="Unused Padding 102" visible="false" offset="0xAA"/>
+	<uint8 name="Unused Padding 103" visible="false" offset="0xAB"/>
+	<uint8 name="Unused Padding 104" visible="false" offset="0xAC"/>
+	<uint8 name="Unused Padding 105" visible="false" offset="0xAD"/>
+	<uint8 name="Unused Padding 106" visible="false" offset="0xAE"/>
+	<uint8 name="Unused Padding 107" visible="false" offset="0xAF"/>
+	<uint8 name="Unused Padding 108" visible="false" offset="0xB0"/>
+	<uint8 name="Unused Padding 109" visible="false" offset="0xB1"/>
+	<uint8 name="Unused Padding 110" visible="false" offset="0xB2"/>
+	<uint8 name="Unused Padding 111" visible="false" offset="0xB3"/>
+	<uint8 name="Unused Padding 112" visible="false" offset="0xB4"/>
+	<uint8 name="Unused Padding 113" visible="false" offset="0xB5"/>
+	<uint8 name="Unused Padding 114" visible="false" offset="0xB6"/>
+	<uint8 name="Unused Padding 115" visible="false" offset="0xB7"/>
+	<uint8 name="Unused Padding 116" visible="false" offset="0xB8"/>
+	<uint8 name="Unused Padding 117" visible="false" offset="0xB9"/>
+	<uint8 name="Unused Padding 118" visible="false" offset="0xBA"/>
+	<uint8 name="Unused Padding 119" visible="false" offset="0xBB"/>
+	<uint8 name="Unused Padding 120" visible="false" offset="0xBC"/>
+	<uint8 name="Unused Padding 121" visible="false" offset="0xBD"/>
+	<uint8 name="Unused Padding 122" visible="false" offset="0xBE"/>
+	<uint8 name="Unused Padding 123" visible="false" offset="0xBF"/>
+	<uint8 name="Unused Padding 124" visible="false" offset="0xC0"/>
+	<uint8 name="Unused Padding 125" visible="false" offset="0xC1"/>
+	<uint8 name="Unused Padding 126" visible="false" offset="0xC2"/>
+	<uint8 name="Unused Padding 127" visible="false" offset="0xC3"/>
+	<uint8 name="Unused Padding 128" visible="false" offset="0xC4"/>
+	<uint8 name="Unused Padding 129" visible="false" offset="0xC5"/>
+	<uint8 name="Unused Padding 130" visible="false" offset="0xC6"/>
+	<uint8 name="Unused Padding 131" visible="false" offset="0xC7"/>
+	<uint8 name="Unused Padding 132" visible="false" offset="0xC8"/>
+	<uint8 name="Unused Padding 133" visible="false" offset="0xC9"/>
+	<uint8 name="Unused Padding 134" visible="false" offset="0xCA"/>
+	<uint8 name="Unused Padding 135" visible="false" offset="0xCB"/>
+	<uint8 name="Unused Padding 136" visible="false" offset="0xCC"/>
+	<uint8 name="Unused Padding 137" visible="false" offset="0xCD"/>
+	<uint8 name="Unused Padding 138" visible="false" offset="0xCE"/>
+	<uint8 name="Unused Padding 139" visible="false" offset="0xCF"/>
+	<uint8 name="Unused Padding 140" visible="false" offset="0xD0"/>
+	<uint8 name="Unused Padding 141" visible="false" offset="0xD1"/>
+	<uint8 name="Unused Padding 142" visible="false" offset="0xD2"/>
+	<uint8 name="Unused Padding 143" visible="false" offset="0xD3"/>
+	<uint8 name="Unused Padding 144" visible="false" offset="0xD4"/>
+	<uint8 name="Unused Padding 145" visible="false" offset="0xD5"/>
+	<uint8 name="Unused Padding 146" visible="false" offset="0xD6"/>
+	<uint8 name="Unused Padding 147" visible="false" offset="0xD7"/>
+	<uint8 name="Unused Padding 148" visible="false" offset="0xD8"/>
+	<uint8 name="Unused Padding 149" visible="false" offset="0xD9"/>
+	<uint8 name="Unused Padding 150" visible="false" offset="0xDA"/>
+	<uint8 name="Unused Padding 151" visible="false" offset="0xDB"/>
+	<uint8 name="Unused Padding 152" visible="false" offset="0xDC"/>
+	<uint8 name="Unused Padding 153" visible="false" offset="0xDD"/>
+	<uint8 name="Unused Padding 154" visible="false" offset="0xDE"/>
+	<uint8 name="Unused Padding 155" visible="false" offset="0xDF"/>
+	<uint8 name="Unused Padding 156" visible="false" offset="0xE0"/>
+	<uint8 name="Unused Padding 157" visible="false" offset="0xE1"/>
+	<uint8 name="Unused Padding 158" visible="false" offset="0xE2"/>
+	<uint8 name="Unused Padding 159" visible="false" offset="0xE3"/>
+	<uint8 name="Unused Padding 160" visible="false" offset="0xE4"/>
+	<uint8 name="Unused Padding 161" visible="false" offset="0xE5"/>
+	<uint8 name="Unused Padding 162" visible="false" offset="0xE6"/>
+	<uint8 name="Unused Padding 163" visible="false" offset="0xE7"/>
+	<uint8 name="Unused Padding 164" visible="false" offset="0xE8"/>
+	<uint8 name="Unused Padding 165" visible="false" offset="0xE9"/>
+	<uint8 name="Unused Padding 166" visible="false" offset="0xEA"/>
+	<uint8 name="Unused Padding 167" visible="false" offset="0xEB"/>
+	<uint8 name="Unused Padding 168" visible="false" offset="0xEC"/>
+	<uint8 name="Unused Padding 169" visible="false" offset="0xED"/>
+	<uint8 name="Unused Padding 170" visible="false" offset="0xEE"/>
+	<uint8 name="Unused Padding 171" visible="false" offset="0xEF"/>
+	<uint8 name="Unused Padding 172" visible="false" offset="0xF0"/>
+	<uint8 name="Unused Padding 173" visible="false" offset="0xF1"/>
+	<uint8 name="Unused Padding 174" visible="false" offset="0xF2"/>
+	<uint8 name="Unused Padding 175" visible="false" offset="0xF3"/>
+	<uint8 name="Unused Padding 176" visible="false" offset="0xF4"/>
+	<uint8 name="Unused Padding 177" visible="false" offset="0xF5"/>
+	<uint8 name="Unused Padding 178" visible="false" offset="0xF6"/>
+	<uint8 name="Unused Padding 179" visible="false" offset="0xF7"/>
+	<uint8 name="Unused Padding 180" visible="false" offset="0xF8"/>
+	<uint8 name="Unused Padding 181" visible="false" offset="0xF9"/>
+	<uint8 name="Unused Padding 182" visible="false" offset="0xFA"/>
+	<uint8 name="Unused Padding 183" visible="false" offset="0xFB"/>
+	<uint8 name="Unused Padding 184" visible="false" offset="0xFC"/>
+	<uint8 name="Unused Padding 185" visible="false" offset="0xFD"/>
+	<uint8 name="Unused Padding 186" visible="false" offset="0xFE"/>
+	<uint8 name="Unused Padding 187" visible="false" offset="0xFF"/>
+	<uint8 name="Unused Padding 188" visible="false" offset="0x100"/>
+	<uint8 name="Unused Padding 189" visible="false" offset="0x101"/>
+	<uint8 name="Unused Padding 190" visible="false" offset="0x102"/>
+	<uint8 name="Unused Padding 191" visible="false" offset="0x103"/>
+	<uint8 name="Unused Padding 192" visible="false" offset="0x104"/>
+	<uint8 name="Unused Padding 193" visible="false" offset="0x105"/>
+	<uint8 name="Unused Padding 194" visible="false" offset="0x106"/>
+	<uint8 name="Unused Padding 195" visible="false" offset="0x107"/>
+	<uint8 name="Unused Padding 196" visible="false" offset="0x108"/>
+	<uint8 name="Unused Padding 197" visible="false" offset="0x109"/>
+	<uint8 name="Unused Padding 198" visible="false" offset="0x10A"/>
+	<uint8 name="Unused Padding 199" visible="false" offset="0x10B"/>
+	<uint8 name="Unused Padding 200" visible="false" offset="0x10C"/>
+	<uint8 name="Unused Padding 201" visible="false" offset="0x10D"/>
+	<uint8 name="Unused Padding 202" visible="false" offset="0x10E"/>
+	<uint8 name="Unused Padding 203" visible="false" offset="0x10F"/>
+	<uint8 name="Unused Padding 204" visible="false" offset="0x110"/>
+	<uint8 name="Unused Padding 205" visible="false" offset="0x111"/>
+	<uint8 name="Unused Padding 206" visible="false" offset="0x112"/>
+	<uint8 name="Unused Padding 207" visible="false" offset="0x113"/>
+	<uint8 name="Unused Padding 208" visible="false" offset="0x114"/>
+	<uint8 name="Unused Padding 209" visible="false" offset="0x115"/>
+	<uint8 name="Unused Padding 210" visible="false" offset="0x116"/>
+	<uint8 name="Unused Padding 211" visible="false" offset="0x117"/>
+	<uint8 name="Unused Padding 212" visible="false" offset="0x118"/>
+	<uint8 name="Unused Padding 213" visible="false" offset="0x119"/>
+	<uint8 name="Unused Padding 214" visible="false" offset="0x11A"/>
+	<uint8 name="Unused Padding 215" visible="false" offset="0x11B"/>
+	<uint8 name="Unused Padding 216" visible="false" offset="0x11C"/>
+	<uint8 name="Unused Padding 217" visible="false" offset="0x11D"/>
+	<uint8 name="Unused Padding 218" visible="false" offset="0x11E"/>
+	<uint8 name="Unused Padding 219" visible="false" offset="0x11F"/>
+	<uint8 name="Unused Padding 220" visible="false" offset="0x120"/>
+	<uint8 name="Unused Padding 221" visible="false" offset="0x121"/>
+	<uint8 name="Unused Padding 222" visible="false" offset="0x122"/>
+	<uint8 name="Unused Padding 223" visible="false" offset="0x123"/>
+	<uint8 name="Unused Padding 224" visible="false" offset="0x124"/>
+	<uint8 name="Unused Padding 225" visible="false" offset="0x125"/>
+	<uint8 name="Unused Padding 226" visible="false" offset="0x126"/>
+	<uint8 name="Unused Padding 227" visible="false" offset="0x127"/>
+	<uint8 name="Unused Padding 228" visible="false" offset="0x128"/>
+	<uint8 name="Unused Padding 229" visible="false" offset="0x129"/>
+	<uint8 name="Unused Padding 230" visible="false" offset="0x12A"/>
+	<uint8 name="Unused Padding 231" visible="false" offset="0x12B"/>
+	<uint8 name="Unused Padding 232" visible="false" offset="0x12C"/>
+	<uint8 name="Unused Padding 233" visible="false" offset="0x12D"/>
+	<uint8 name="Unused Padding 234" visible="false" offset="0x12E"/>
+	<uint8 name="Unused Padding 235" visible="false" offset="0x12F"/>
+	<uint8 name="Unused Padding 236" visible="false" offset="0x130"/>
+	<uint8 name="Unused Padding 237" visible="false" offset="0x131"/>
+	<uint8 name="Unused Padding 238" visible="false" offset="0x132"/>
+	<uint8 name="Unused Padding 239" visible="false" offset="0x133"/>
+	<uint8 name="Unused Padding 240" visible="false" offset="0x134"/>
+	<uint8 name="Unused Padding 241" visible="false" offset="0x135"/>
+	<uint8 name="Unused Padding 242" visible="false" offset="0x136"/>
+	<uint8 name="Unused Padding 243" visible="false" offset="0x137"/>
+	<uint8 name="Unused Padding 244" visible="false" offset="0x138"/>
+	<uint8 name="Unused Padding 245" visible="false" offset="0x139"/>
+	<uint8 name="Unused Padding 246" visible="false" offset="0x13A"/>
+	<uint8 name="Unused Padding 247" visible="false" offset="0x13B"/>
+	<uint8 name="Unused Padding 248" visible="false" offset="0x13C"/>
+	<uint8 name="Unused Padding 249" visible="false" offset="0x13D"/>
+	<uint8 name="Unused Padding 250" visible="false" offset="0x13E"/>
+	<uint8 name="Unused Padding 251" visible="false" offset="0x13F"/>
+	<uint8 name="Unused Padding 252" visible="false" offset="0x140"/>
+	<uint8 name="Unused Padding 253" visible="false" offset="0x141"/>
+	<uint8 name="Unused Padding 254" visible="false" offset="0x142"/>
+	<uint8 name="Unused Padding 255" visible="false" offset="0x143"/>
+</plugin>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x50">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<tagref name="Shared Ui Globals" visible="true" offset="0x0"/>
+	<tagref name="Editable Settings" visible="true" offset="0x10"/>
+	<tagref name="Matchmaking Hopper Strings" visible="true" offset="0x20"/>
+	<reflexive name="Screen Widgets" visible="true" offset="0x30" entrySize="0x10">
+		<tagref name="Widget" visible="true" offset="0x0"/>
+	</reflexive>
+	<tagref name="Texture Render List" visible="true" offset="0x3C"/>
+	<uint32 name="Unknown" visible="true" offset="0x4C"/>
+</plugin>

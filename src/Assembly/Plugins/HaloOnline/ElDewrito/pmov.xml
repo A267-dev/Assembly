@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x2C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<tagref name="Template" visible="true" offset="0x0"/>
+	<bitfield32 name="Flags" visible="true" offset="0x10">
+		<bit name="Physics" index="0"/>
+		<bit name="Collide With Structure" index="1"/>
+		<bit name="Collide With Media" index="2"/>
+		<bit name="Collide With Scenery" index="3"/>
+		<bit name="Collide With Vehicles" index="4"/>
+		<bit name="Collide With Bipeds" index="5"/>
+		<bit name="Swarm" index="6"/>
+		<bit name="Wind" index="7"/>
+	</bitfield32>
+	<reflexive name="Movements" visible="true" offset="0x14" entrySize="0x18">
+		<enum16 name="Type" visible="true" offset="0x0">
+			<option name="Physics" value="0x0"/>
+			<option name="Collider" value="0x1"/>
+			<option name="Swarm" value="0x2"/>
+			<option name="Wind" value="0x3"/>
+		</enum16>
+		<uint8 name="Flags" visible="true" offset="0x2"/>
+		<uint8 name="Unused" visible="true" offset="0x3"/>
+		<reflexive name="Parameters" visible="true" offset="0x4" entrySize="0x24">
+			<int32 name="Parameter Id" visible="true" offset="0x0"/>
+			<comment title="Property"></comment>
+
+			<enum8 name="Input Variable" visible="true" offset="0x4">
+				<option name="Particle Age" value="0x0"/>
+				<option name="Emitter Age" value="0x1"/>
+				<option name="Particle Random" value="0x2"/>
+				<option name="Emitter Random" value="0x3"/>
+				<option name="Particle Random1" value="0x4"/>
+				<option name="Particle Random2" value="0x5"/>
+				<option name="Particle Random3" value="0x6"/>
+				<option name="Particle Random4" value="0x7"/>
+				<option name="Emitter Random1" value="0x8"/>
+				<option name="Emitter Random2" value="0x9"/>
+				<option name="Emitter Time" value="0xA"/>
+				<option name="System Lod" value="0xB"/>
+				<option name="Game Time" value="0xC"/>
+				<option name="Effect AScale" value="0xD"/>
+				<option name="Effect BScale" value="0xE"/>
+				<option name="Physics Rotation" value="0xF"/>
+				<option name="Location Random" value="0x10"/>
+				<option name="Distance From Emitter" value="0x11"/>
+				<option name="Particle Simulation A" value="0x12"/>
+				<option name="Particle Simulation B" value="0x13"/>
+				<option name="Particle Velocity" value="0x14"/>
+				<option name="Invalid" value="0x15"/>
+			</enum8>
+			<enum8 name="Range Variable" visible="true" offset="0x5">
+				<option name="Particle Age" value="0x0"/>
+				<option name="Emitter Age" value="0x1"/>
+				<option name="Particle Random" value="0x2"/>
+				<option name="Emitter Random" value="0x3"/>
+				<option name="Particle Random1" value="0x4"/>
+				<option name="Particle Random2" value="0x5"/>
+				<option name="Particle Random3" value="0x6"/>
+				<option name="Particle Random4" value="0x7"/>
+				<option name="Emitter Random1" value="0x8"/>
+				<option name="Emitter Random2" value="0x9"/>
+				<option name="Emitter Time" value="0xA"/>
+				<option name="System Lod" value="0xB"/>
+				<option name="Game Time" value="0xC"/>
+				<option name="Effect AScale" value="0xD"/>
+				<option name="Effect BScale" value="0xE"/>
+				<option name="Physics Rotation" value="0xF"/>
+				<option name="Location Random" value="0x10"/>
+				<option name="Distance From Emitter" value="0x11"/>
+				<option name="Particle Simulation A" value="0x12"/>
+				<option name="Particle Simulation B" value="0x13"/>
+				<option name="Particle Velocity" value="0x14"/>
+				<option name="Invalid" value="0x15"/>
+			</enum8>
+			<enum8 name="Output Modifier" visible="true" offset="0x6">
+				<option name="None" value="0x0"/>
+				<option name="Plus" value="0x1"/>
+				<option name="Times" value="0x2"/>
+			</enum8>
+			<enum8 name="Output Modifier Input" visible="true" offset="0x7">
+				<option name="Particle Age" value="0x0"/>
+				<option name="Emitter Age" value="0x1"/>
+				<option name="Particle Random" value="0x2"/>
+				<option name="Emitter Random" value="0x3"/>
+				<option name="Particle Random1" value="0x4"/>
+				<option name="Particle Random2" value="0x5"/>
+				<option name="Particle Random3" value="0x6"/>
+				<option name="Particle Random4" value="0x7"/>
+				<option name="Emitter Random1" value="0x8"/>
+				<option name="Emitter Random2" value="0x9"/>
+				<option name="Emitter Time" value="0xA"/>
+				<option name="System Lod" value="0xB"/>
+				<option name="Game Time" value="0xC"/>
+				<option name="Effect AScale" value="0xD"/>
+				<option name="Effect BScale" value="0xE"/>
+				<option name="Physics Rotation" value="0xF"/>
+				<option name="Location Random" value="0x10"/>
+				<option name="Distance From Emitter" value="0x11"/>
+				<option name="Particle Simulation A" value="0x12"/>
+				<option name="Particle Simulation B" value="0x13"/>
+				<option name="Particle Velocity" value="0x14"/>
+				<option name="Invalid" value="0x15"/>
+			</enum8>
+			<dataRef name="Function" visible="true" offset="0x8"/>
+			<float32 name="Runtime MConstant Value" visible="true" offset="0x1C"/>
+			<uint8 name="Runtime MFlags" visible="true" offset="0x20"/>
+			<uint8 name="Unused Padding 0" visible="false" offset="0x21"/>
+			<uint8 name="Unused Padding 1" visible="false" offset="0x22"/>
+			<uint8 name="Unused Padding 2" visible="false" offset="0x23"/>
+		</reflexive>
+		<int32 name="Unknown2" visible="true" offset="0x10"/>
+		<int32 name="Unknown3" visible="true" offset="0x14"/>
+	</reflexive>
+	<uint8 name="Unused1 Padding 0" visible="false" offset="0x20"/>
+	<uint8 name="Unused1 Padding 1" visible="false" offset="0x21"/>
+	<uint8 name="Unused1 Padding 2" visible="false" offset="0x22"/>
+	<uint8 name="Unused1 Padding 3" visible="false" offset="0x23"/>
+	<uint8 name="Unused1 Padding 4" visible="false" offset="0x24"/>
+	<uint8 name="Unused1 Padding 5" visible="false" offset="0x25"/>
+	<uint8 name="Unused1 Padding 6" visible="false" offset="0x26"/>
+	<uint8 name="Unused1 Padding 7" visible="false" offset="0x27"/>
+	<uint8 name="Unused1 Padding 8" visible="false" offset="0x28"/>
+	<uint8 name="Unused1 Padding 9" visible="false" offset="0x29"/>
+	<uint8 name="Unused1 Padding 10" visible="false" offset="0x2A"/>
+	<uint8 name="Unused1 Padding 11" visible="false" offset="0x2B"/>
+</plugin>

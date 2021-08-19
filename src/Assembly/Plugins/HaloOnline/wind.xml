@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x84">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<dataRef name="Direction Mapping" visible="true" offset="0x0"/>
+	<dataRef name="Speed Mapping" visible="true" offset="0x14"/>
+	<dataRef name="Bend Mapping" visible="true" offset="0x28"/>
+	<dataRef name="Oscillation Mapping" visible="true" offset="0x3C"/>
+	<dataRef name="Frequency Mapping" visible="true" offset="0x50"/>
+	<float32 name="Gust Size" visible="true" offset="0x64"/>
+	<tagref name="Gust Noise Bitmap" visible="true" offset="0x68"/>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x78"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x79"/>
+	<uint8 name="Unused Padding 2" visible="false" offset="0x7A"/>
+	<uint8 name="Unused Padding 3" visible="false" offset="0x7B"/>
+	<uint8 name="Unused Padding 4" visible="false" offset="0x7C"/>
+	<uint8 name="Unused Padding 5" visible="false" offset="0x7D"/>
+	<uint8 name="Unused Padding 6" visible="false" offset="0x7E"/>
+	<uint8 name="Unused Padding 7" visible="false" offset="0x7F"/>
+	<uint8 name="Unused Padding 8" visible="false" offset="0x80"/>
+	<uint8 name="Unused Padding 9" visible="false" offset="0x81"/>
+	<uint8 name="Unused Padding 10" visible="false" offset="0x82"/>
+	<uint8 name="Unused Padding 11" visible="false" offset="0x83"/>
+</plugin>

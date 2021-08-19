@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x668">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x0"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x1"/>
+	<uint8 name="Unused Padding 2" visible="false" offset="0x2"/>
+	<uint8 name="Unused Padding 3" visible="false" offset="0x3"/>
+	<uint8 name="Unused Padding 4" visible="false" offset="0x4"/>
+	<uint8 name="Unused Padding 5" visible="false" offset="0x5"/>
+	<uint8 name="Unused Padding 6" visible="false" offset="0x6"/>
+	<uint8 name="Unused Padding 7" visible="false" offset="0x7"/>
+	<uint8 name="Unused Padding 8" visible="false" offset="0x8"/>
+	<uint8 name="Unused Padding 9" visible="false" offset="0x9"/>
+	<uint8 name="Unused Padding 10" visible="false" offset="0xA"/>
+	<uint8 name="Unused Padding 11" visible="false" offset="0xB"/>
+	<uint8 name="Unused Padding 12" visible="false" offset="0xC"/>
+	<uint8 name="Unused Padding 13" visible="false" offset="0xD"/>
+	<uint8 name="Unused Padding 14" visible="false" offset="0xE"/>
+	<uint8 name="Unused Padding 15" visible="false" offset="0xF"/>
+	<uint8 name="Unused Padding 16" visible="false" offset="0x10"/>
+	<uint8 name="Unused Padding 17" visible="false" offset="0x11"/>
+	<uint8 name="Unused Padding 18" visible="false" offset="0x12"/>
+	<uint8 name="Unused Padding 19" visible="false" offset="0x13"/>
+	<uint8 name="Unused Padding 20" visible="false" offset="0x14"/>
+	<uint8 name="Unused Padding 21" visible="false" offset="0x15"/>
+	<uint8 name="Unused Padding 22" visible="false" offset="0x16"/>
+	<uint8 name="Unused Padding 23" visible="false" offset="0x17"/>
+	<uint8 name="Unused Padding 24" visible="false" offset="0x18"/>
+	<uint8 name="Unused Padding 25" visible="false" offset="0x19"/>
+	<uint8 name="Unused Padding 26" visible="false" offset="0x1A"/>
+	<uint8 name="Unused Padding 27" visible="false" offset="0x1B"/>
+	<uint8 name="Unused Padding 28" visible="false" offset="0x1C"/>
+	<uint8 name="Unused Padding 29" visible="false" offset="0x1D"/>
+	<uint8 name="Unused Padding 30" visible="false" offset="0x1E"/>
+	<uint8 name="Unused Padding 31" visible="false" offset="0x1F"/>
+	<uint8 name="Unused Padding 32" visible="false" offset="0x20"/>
+	<uint8 name="Unused Padding 33" visible="false" offset="0x21"/>
+	<uint8 name="Unused Padding 34" visible="false" offset="0x22"/>
+	<uint8 name="Unused Padding 35" visible="false" offset="0x23"/>
+	<uint8 name="Unused Padding 36" visible="false" offset="0x24"/>
+	<uint8 name="Unused Padding 37" visible="false" offset="0x25"/>
+	<uint8 name="Unused Padding 38" visible="false" offset="0x26"/>
+	<uint8 name="Unused Padding 39" visible="false" offset="0x27"/>
+	<uint8 name="Unused Padding 40" visible="false" offset="0x28"/>
+	<uint8 name="Unused Padding 41" visible="false" offset="0x29"/>
+	<uint8 name="Unused Padding 42" visible="false" offset="0x2A"/>
+	<uint8 name="Unused Padding 43" visible="false" offset="0x2B"/>
+	<uint8 name="Unused Padding 44" visible="false" offset="0x2C"/>
+	<uint8 name="Unused Padding 45" visible="false" offset="0x2D"/>
+	<uint8 name="Unused Padding 46" visible="false" offset="0x2E"/>
+	<uint8 name="Unused Padding 47" visible="false" offset="0x2F"/>
+	<uint8 name="Unused Padding 48" visible="false" offset="0x30"/>
+	<uint8 name="Unused Padding 49" visible="false" offset="0x31"/>
+	<uint8 name="Unused Padding 50" visible="false" offset="0x32"/>
+	<uint8 name="Unused Padding 51" visible="false" offset="0x33"/>
+	<uint8 name="Unused Padding 52" visible="false" offset="0x34"/>
+	<uint8 name="Unused Padding 53" visible="false" offset="0x35"/>
+	<uint8 name="Unused Padding 54" visible="false" offset="0x36"/>
+	<uint8 name="Unused Padding 55" visible="false" offset="0x37"/>
+	<uint8 name="Unused Padding 56" visible="false" offset="0x38"/>
+	<uint8 name="Unused Padding 57" visible="false" offset="0x39"/>
+	<uint8 name="Unused Padding 58" visible="false" offset="0x3A"/>
+	<uint8 name="Unused Padding 59" visible="false" offset="0x3B"/>
+	<uint8 name="Unused Padding 60" visible="false" offset="0x3C"/>
+	<uint8 name="Unused Padding 61" visible="false" offset="0x3D"/>
+	<uint8 name="Unused Padding 62" visible="false" offset="0x3E"/>
+	<uint8 name="Unused Padding 63" visible="false" offset="0x3F"/>
+	<uint8 name="Unused Padding 64" visible="false" offset="0x40"/>
+	<uint8 name="Unused Padding 65" visible="false" offset="0x41"/>
+	<uint8 name="Unused Padding 66" visible="false" offset="0x42"/>
+	<uint8 name="Unused Padding 67" visible="false" offset="0x43"/>
+	<uint8 name="Unused Padding 68" visible="false" offset="0x44"/>
+	<uint8 name="Unused Padding 69" visible="false" offset="0x45"/>
+	<uint8 name="Unused Padding 70" visible="false" offset="0x46"/>
+	<uint8 name="Unused Padding 71" visible="false" offset="0x47"/>
+	<uint8 name="Unused Padding 72" visible="false" offset="0x48"/>
+	<uint8 name="Unused Padding 73" visible="false" offset="0x49"/>
+	<uint8 name="Unused Padding 74" visible="false" offset="0x4A"/>
+	<uint8 name="Unused Padding 75" visible="false" offset="0x4B"/>
+	<uint8 name="Unused Padding 76" visible="false" offset="0x4C"/>
+	<uint8 name="Unused Padding 77" visible="false" offset="0x4D"/>
+	<uint8 name="Unused Padding 78" visible="false" offset="0x4E"/>
+	<uint8 name="Unused Padding 79" visible="false" offset="0x4F"/>
+	<uint8 name="Unused Padding 80" visible="false" offset="0x50"/>
+	<uint8 name="Unused Padding 81" visible="false" offset="0x51"/>
+	<uint8 name="Unused Padding 82" visible="false" offset="0x52"/>
+	<uint8 name="Unused Padding 83" visible="false" offset="0x53"/>
+	<uint8 name="Unused Padding 84" visible="false" offset="0x54"/>
+	<uint8 name="Unused Padding 85" visible="false" offset="0x55"/>
+	<uint8 name="Unused Padding 86" visible="false" offset="0x56"/>
+	<uint8 name="Unused Padding 87" visible="false" offset="0x57"/>
+	<uint8 name="Unused Padding 88" visible="false" offset="0x58"/>
+	<uint8 name="Unused Padding 89" visible="false" offset="0x59"/>
+	<uint8 name="Unused Padding 90" visible="false" offset="0x5A"/>
+	<uint8 name="Unused Padding 91" visible="false" offset="0x5B"/>
+	<uint8 name="Unused Padding 92" visible="false" offset="0x5C"/>
+	<uint8 name="Unused Padding 93" visible="false" offset="0x5D"/>
+	<uint8 name="Unused Padding 94" visible="false" offset="0x5E"/>
+	<uint8 name="Unused Padding 95" visible="false" offset="0x5F"/>
+	<uint8 name="Unused Padding 96" visible="false" offset="0x60"/>
+	<uint8 name="Unused Padding 97" visible="false" offset="0x61"/>
+	<uint8 name="Unused Padding 98" visible="false" offset="0x62"/>
+	<uint8 name="Unused Padding 99" visible="false" offset="0x63"/>
+	<uint8 name="Unused Padding 100" visible="false" offset="0x64"/>
+	<uint8 name="Unused Padding 101" visible="false" offset="0x65"/>
+	<uint8 name="Unused Padding 102" visible="false" offset="0x66"/>
+	<uint8 name="Unused Padding 103" visible="false" offset="0x67"/>
+	<uint8 name="Unused Padding 104" visible="false" offset="0x68"/>
+	<uint8 name="Unused Padding 105" visible="false" offset="0x69"/>
+	<uint8 name="Unused Padding 106" visible="false" offset="0x6A"/>
+	<uint8 name="Unused Padding 107" visible="false" offset="0x6B"/>
+	<uint8 name="Unused Padding 108" visible="false" offset="0x6C"/>
+	<uint8 name="Unused Padding 109" visible="false" offset="0x6D"/>
+	<uint8 name="Unused Padding 110" visible="false" offset="0x6E"/>
+	<uint8 name="Unused Padding 111" visible="false" offset="0x6F"/>
+	<uint8 name="Unused Padding 112" visible="false" offset="0x70"/>
+	<uint8 name="Unused Padding 113" visible="false" offset="0x71"/>
+	<uint8 name="Unused Padding 114" visible="false" offset="0x72"/>
+	<uint8 name="Unused Padding 115" visible="false" offset="0x73"/>
+	<uint8 name="Unused Padding 116" visible="false" offset="0x74"/>
+	<uint8 name="Unused Padding 117" visible="false" offset="0x75"/>
+	<uint8 name="Unused Padding 118" visible="false" offset="0x76"/>
+	<uint8 name="Unused Padding 119" visible="false" offset="0x77"/>
+	<uint8 name="Unused Padding 120" visible="false" offset="0x78"/>
+	<uint8 name="Unused Padding 121" visible="false" offset="0x79"/>
+	<uint8 name="Unused Padding 122" visible="false" offset="0x7A"/>
+	<uint8 name="Unused Padding 123" visible="false" offset="0x7B"/>
+	<uint8 name="Unused Padding 124" visible="false" offset="0x7C"/>
+	<uint8 name="Unused Padding 125" visible="false" offset="0x7D"/>
+	<uint8 name="Unused Padding 126" visible="false" offset="0x7E"/>
+	<uint8 name="Unused Padding 127" visible="false" offset="0x7F"/>
+	<uint8 name="Unused Padding 128" visible="false" offset="0x80"/>
+	<uint8 name="Unused Padding 129" visible="false" offset="0x81"/>
+	<uint8 name="Unused Padding 130" visible="false" offset="0x82"/>
+	<uint8 name="Unused Padding 131" visible="false" offset="0x83"/>
+	<uint8 name="Unused Padding 132" visible="false" offset="0x84"/>
+	<uint8 name="Unused Padding 133" visible="false" offset="0x85"/>
+	<uint8 name="Unused Padding 134" visible="false" offset="0x86"/>
+	<uint8 name="Unused Padding 135" visible="false" offset="0x87"/>
+	<uint8 name="Unused Padding 136" visible="false" offset="0x88"/>
+	<uint8 name="Unused Padding 137" visible="false" offset="0x89"/>
+	<uint8 name="Unused Padding 138" visible="false" offset="0x8A"/>
+	<uint8 name="Unused Padding 139" visible="false" offset="0x8B"/>
+	<uint8 name="Unused Padding 140" visible="false" offset="0x8C"/>
+	<uint8 name="Unused Padding 141" visible="false" offset="0x8D"/>
+	<uint8 name="Unused Padding 142" visible="false" offset="0x8E"/>
+	<uint8 name="Unused Padding 143" visible="false" offset="0x8F"/>
+	<uint8 name="Unused Padding 144" visible="false" offset="0x90"/>
+	<uint8 name="Unused Padding 145" visible="false" offset="0x91"/>
+	<uint8 name="Unused Padding 146" visible="false" offset="0x92"/>
+	<uint8 name="Unused Padding 147" visible="false" offset="0x93"/>
+	<uint8 name="Unused Padding 148" visible="false" offset="0x94"/>
+	<uint8 name="Unused Padding 149" visible="false" offset="0x95"/>
+	<uint8 name="Unused Padding 150" visible="false" offset="0x96"/>
+	<uint8 name="Unused Padding 151" visible="false" offset="0x97"/>
+	<uint8 name="Unused Padding 152" visible="false" offset="0x98"/>
+	<uint8 name="Unused Padding 153" visible="false" offset="0x99"/>
+	<uint8 name="Unused Padding 154" visible="false" offset="0x9A"/>
+	<uint8 name="Unused Padding 155" visible="false" offset="0x9B"/>
+	<uint8 name="Unused Padding 156" visible="false" offset="0x9C"/>
+	<uint8 name="Unused Padding 157" visible="false" offset="0x9D"/>
+	<uint8 name="Unused Padding 158" visible="false" offset="0x9E"/>
+	<uint8 name="Unused Padding 159" visible="false" offset="0x9F"/>
+	<uint8 name="Unused Padding 160" visible="false" offset="0xA0"/>
+	<uint8 name="Unused Padding 161" visible="false" offset="0xA1"/>
+	<uint8 name="Unused Padding 162" visible="false" offset="0xA2"/>
+	<uint8 name="Unused Padding 163" visible="false" offset="0xA3"/>
+	<uint8 name="Unused Padding 164" visible="false" offset="0xA4"/>
+	<uint8 name="Unused Padding 165" visible="false" offset="0xA5"/>
+	<uint8 name="Unused Padding 166" visible="false" offset="0xA6"/>
+	<uint8 name="Unused Padding 167" visible="false" offset="0xA7"/>
+	<uint8 name="Unused Padding 168" visible="false" offset="0xA8"/>
+	<uint8 name="Unused Padding 169" visible="false" offset="0xA9"/>
+	<uint8 name="Unused Padding 170" visible="false" offset="0xAA"/>
+	<uint8 name="Unused Padding 171" visible="false" offset="0xAB"/>
+	<enum32 name="Language" visible="true" offset="0xAC">
+		<option name="English" value="0x0"/>
+		<option name="Japanese" value="0x1"/>
+		<option name="German" value="0x2"/>
+		<option name="French" value="0x3"/>
+		<option name="Spanish" value="0x4"/>
+		<option name="Mexican" value="0x5"/>
+		<option name="Italian" value="0x6"/>
+		<option name="Korean" value="0x7"/>
+		<option name="Chinese Traditional" value="0x8"/>
+		<option name="Chinese Simplified" value="0x9"/>
+		<option name="Portuguese" value="0xA"/>
+		<option name="Russian" value="0xB"/>
+	</enum32>
+	<reflexive name="Havok Object Cleanup Effects" visible="true" offset="0xB0" entrySize="0x10">
+		<tagref name="Instance" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Sound Globals" visible="true" offset="0xBC" entrySize="0x60">
+		<tagref name="Sound Classes" visible="true" offset="0x0"/>
+		<tagref name="Sound Effects" visible="true" offset="0x10"/>
+		<tagref name="Sound Mix" visible="true" offset="0x20"/>
+		<tagref name="Sound Combat Dialogue Constants" visible="true" offset="0x30"/>
+		<tagref name="Sound Global Propagation" visible="true" offset="0x40"/>
+		<tagref name="Gfx Ui Sounds" visible="true" offset="0x50"/>
+	</reflexive>
+	<reflexive name="Ai Globals Old" visible="true" offset="0xC8" entrySize="0x144">
+		<float32 name="Infantry On Ai Weapon Damage Scale" visible="true" offset="0x0"/>
+		<float32 name="Vehicle On Ai Weapon Damage Scale" visible="true" offset="0x4"/>
+		<float32 name="Player On Ai Weapon Damage Scale" visible="true" offset="0x8"/>
+		<float32 name="Danger Broadly Facing" visible="true" offset="0xC"/>
+		<float32 name="Danger Shooting Near" visible="true" offset="0x10"/>
+		<float32 name="Danger Shooting At" visible="true" offset="0x14"/>
+		<float32 name="Danger Extremely Close" visible="true" offset="0x18"/>
+		<float32 name="Danger Shield Damage" visible="true" offset="0x1C"/>
+		<float32 name="Danger Extended Shield Damage" visible="true" offset="0x20"/>
+		<float32 name="Danger Body Damage" visible="true" offset="0x24"/>
+		<float32 name="Danger Extended Body Damage" visible="true" offset="0x28"/>
+		<tagref name="Global Dialogue" visible="true" offset="0x2C"/>
+		<stringId name="Default Mission Dialogue Sound Effect" visible="true" offset="0x3C"/>
+		<float32 name="Jump Down" visible="true" offset="0x40"/>
+		<float32 name="Jump Step" visible="true" offset="0x44"/>
+		<float32 name="Jump Crouch" visible="true" offset="0x48"/>
+		<float32 name="Jump Stand" visible="true" offset="0x4C"/>
+		<float32 name="Jump Storey" visible="true" offset="0x50"/>
+		<float32 name="Jump Tower" visible="true" offset="0x54"/>
+		<float32 name="Max Jump Down Height Down" visible="true" offset="0x58"/>
+		<float32 name="Max Jump Down Height Step" visible="true" offset="0x5C"/>
+		<float32 name="Max Jump Down Height Crouch" visible="true" offset="0x60"/>
+		<float32 name="Max Jump Down Height Stand" visible="true" offset="0x64"/>
+		<float32 name="Max Jump Down Height Storey" visible="true" offset="0x68"/>
+		<float32 name="Max Jump Down Height Tower" visible="true" offset="0x6C"/>
+		<float32 name="Hoist Step Min" visible="true" offset="0x70"/>
+		<float32 name="Hoist Step Max" visible="true" offset="0x74"/>
+		<float32 name="Hoist Crouch Min" visible="true" offset="0x78"/>
+		<float32 name="Hoist Crouch Max" visible="true" offset="0x7C"/>
+		<float32 name="Hoist Stand Min" visible="true" offset="0x80"/>
+		<float32 name="Hoist Stand Max" visible="true" offset="0x84"/>
+		<float32 name="Vault Step Min" visible="true" offset="0x88"/>
+		<float32 name="Vault Step Max" visible="true" offset="0x8C"/>
+		<float32 name="Vault Crouch Min" visible="true" offset="0x90"/>
+		<float32 name="Vault Crouch Max" visible="true" offset="0x94"/>
+		<float32 name="Search Range Infantry" visible="true" offset="0x98"/>
+		<float32 name="Search Range Flying" visible="true" offset="0x9C"/>
+		<float32 name="Search Range Vehicle" visible="true" offset="0xA0"/>
+		<float32 name="Search Range Giant" visible="true" offset="0xA4"/>
+		<reflexive name="Gravemind Properties" visible="true" offset="0xA8" entrySize="0xC">
+			<float32 name="Minimum Retreat Time" visible="true" offset="0x0"/>
+			<float32 name="Ideal Retreat Time" visible="true" offset="0x4"/>
+			<float32 name="Maximum Retreat Time" visible="true" offset="0x8"/>
+		</reflexive>
+		<float32 name="Scary Target Threshold" visible="true" offset="0xB4"/>
+		<float32 name="Scary Weapon Threshold" visible="true" offset="0xB8"/>
+		<float32 name="Player Scariness" visible="true" offset="0xBC"/>
+		<float32 name="Berserking Actor Scariness" visible="true" offset="0xC0"/>
+		<float32 name="Kamikazeing Actor Scariness" visible="true" offset="0xC4"/>
+		<float32 name="Invincible Actor Scariness" visible="true" offset="0xC8"/>
+		<float32 name="Minimum Death Time" visible="true" offset="0xCC"/>
+		<float32 name="Projectile Distance" visible="true" offset="0xD0"/>
+		<float32 name="Idle Clump Distance" visible="true" offset="0xD4"/>
+		<float32 name="Dangerous Clump Distance" visible="true" offset="0xD8"/>
+		<float32 name="Conver Search Duration" visible="true" offset="0xDC"/>
+		<float32 name="Task Search Duration" visible="true" offset="0xE0"/>
+		<float32 name="Unknown7" visible="true" offset="0xE4"/>
+		<reflexive name="Styles" visible="true" offset="0xE8" entrySize="0x10">
+			<tagref name="Instance" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Formations" visible="true" offset="0xF4" entrySize="0x10">
+			<tagref name="Instance" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Squad Templates" visible="true" offset="0x100" entrySize="0x10">
+			<tagref name="Template" visible="true" offset="0x0"/>
+		</reflexive>
+		<float32 name="Unknown11" visible="true" offset="0x10C"/>
+		<float32 name="Unknown12" visible="true" offset="0x110"/>
+		<float32 name="Unknown13" visible="true" offset="0x114"/>
+		<float32 name="Unknown14" visible="true" offset="0x118"/>
+		<float32 name="Unknown15" visible="true" offset="0x11C"/>
+		<float32 name="Unknown16" visible="true" offset="0x120"/>
+		<float32 name="Unknown17" visible="true" offset="0x124"/>
+		<float32 name="Unknown18" visible="true" offset="0x128"/>
+		<float32 name="Unknown19" visible="true" offset="0x12C"/>
+		<float32 name="Unknown20" visible="true" offset="0x130"/>
+		<float32 name="Unknown21" visible="true" offset="0x134"/>
+		<float32 name="Unknown22" visible="true" offset="0x138"/>
+		<float32 name="Unknown23" visible="true" offset="0x13C"/>
+		<float32 name="Unknown24" visible="true" offset="0x140"/>
+	</reflexive>
+	<tagref name="Ai Globals" visible="true" offset="0xD4"/>
+	<reflexive name="Damage Table" visible="true" offset="0xE4" entrySize="0xC">
+		<reflexive name="Damage Groups" visible="true" offset="0x0" entrySize="0x10">
+			<stringId name="Name" visible="true" offset="0x0"/>
+			<reflexive name="Armor Modifiers" visible="true" offset="0x4" entrySize="0x8">
+				<stringId name="Name" visible="true" offset="0x0"/>
+				<float32 name="Damage Multiplier" visible="true" offset="0x4"/>
+			</reflexive>
+		</reflexive>
+	</reflexive>
+	<uint32 name="Unknown45" visible="true" offset="0xF0"/>
+	<uint32 name="Unknown46" visible="true" offset="0xF4"/>
+	<uint32 name="Unknown47" visible="true" offset="0xF8"/>
+	<reflexive name="Sounds Old" visible="true" offset="0xFC" entrySize="0x10">
+		<tagref name="Instance" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Camera" visible="true" offset="0x108" entrySize="0xA4">
+		<tagref name="Default Unit Camera Track" visible="true" offset="0x0"/>
+		<float32 name="Field Of View" visible="true" offset="0x10"/>
+		<float32 name="Yaw Scale" visible="true" offset="0x14"/>
+		<float32 name="Pitch Scale" visible="true" offset="0x18"/>
+		<float32 name="Forward Scale" visible="true" offset="0x1C"/>
+		<float32 name="Side Scale" visible="true" offset="0x20"/>
+		<float32 name="Up Scale" visible="true" offset="0x24"/>
+		<float32 name="Death Cam Transition Time" visible="true" offset="0x28"/>
+		<float32 name="Falling Death Cam Transition Time" visible="true" offset="0x2C"/>
+		<float32 name="Death Cam Initial Distance" visible="true" offset="0x30"/>
+		<float32 name="Death Cam Final Distance" visible="true" offset="0x34"/>
+		<float32 name="Death Cam ZOffset" visible="true" offset="0x38"/>
+		<float32 name="Death Cam Maximum Elevation" visible="true" offset="0x3C"/>
+		<float32 name="Death Cam Tracking Delay" visible="true" offset="0x40"/>
+		<float32 name="Death Cam Auto Orbiting Delay" visible="true" offset="0x44"/>
+		<float32 name="Falling Death Minimum Velocity" visible="true" offset="0x48"/>
+		<float32 name="Flying Max Boost Speed" visible="true" offset="0x4C"/>
+		<float32 name="Flying Boost Acceleration Time" visible="true" offset="0x50"/>
+		<float32 name="Unknown18" visible="true" offset="0x54"/>
+		<float32 name="Flying Zoomed Fov" visible="true" offset="0x58"/>
+		<float32 name="Flying Zoomed Look Speed Scale" visible="true" offset="0x5C"/>
+		<float32 name="Flying Bounding Sphere Radius" visible="true" offset="0x60"/>
+		<float32 name="Flying Movement Delay" visible="true" offset="0x64"/>
+		<float32 name="Flying Zoom Transition Time" visible="true" offset="0x68"/>
+		<float32 name="Flying Vertical Acceleration Time" visible="true" offset="0x6C"/>
+		<enum16 name="Boost Function" visible="true" offset="0x70">
+			<option name="Linear" value="0x0"/>
+			<option name="Late" value="0x1"/>
+			<option name="Very Late" value="0x2"/>
+			<option name="Early" value="0x3"/>
+			<option name="Very Early" value="0x4"/>
+			<option name="Cosine" value="0x5"/>
+			<option name="Zero" value="0x6"/>
+			<option name="One" value="0x7"/>
+		</enum16>
+		<enum16 name="Hoist Function" visible="true" offset="0x72">
+			<option name="Linear" value="0x0"/>
+			<option name="Late" value="0x1"/>
+			<option name="Very Late" value="0x2"/>
+			<option name="Early" value="0x3"/>
+			<option name="Very Early" value="0x4"/>
+			<option name="Cosine" value="0x5"/>
+			<option name="Zero" value="0x6"/>
+			<option name="One" value="0x7"/>
+		</enum16>
+		<float32 name="Survival Switch Time" visible="true" offset="0x74"/>
+		<float32 name="Orbiting Distance Min" visible="true" offset="0x78"/>
+		<float32 name="Orbiting Distance Max" visible="true" offset="0x7C"/>
+		<float32 name="Orbit Cam Movement Delay" visible="true" offset="0x80"/>
+		<float32 name="Orbit Cam ZOffset" visible="true" offset="0x84"/>
+		<float32 name="Orbit Cam Elevation Bounds Min" visible="true" offset="0x88"/>
+		<float32 name="Orbit Cam Elevation Bounds Max" visible="true" offset="0x8C"/>
+		<float32 name="Saved Film Max Playback Speed" visible="true" offset="0x90"/>
+		<float32 name="Saved Film Fade Out Time" visible="true" offset="0x94"/>
+		<float32 name="Saved Film Fade In Time" visible="true" offset="0x98"/>
+		<float32 name="Enter Vehicle Transition Time" visible="true" offset="0x9C"/>
+		<float32 name="Exit Vehicle Transition Time" visible="true" offset="0xA0"/>
+	</reflexive>
+	<reflexive name="Player Control" visible="true" offset="0x114" entrySize="0x70">
+		<float32 name="Magnetism Friction" visible="true" offset="0x0"/>
+		<float32 name="Magnetism Adhesion" visible="true" offset="0x4"/>
+		<float32 name="Inconsequential Target Scale" visible="true" offset="0x8"/>
+		<float name="Crosshair Location X" visible="true" offset="0xC"/>
+		<float name="Crosshair Location Y" visible="true" offset="0x10"/>
+		<float32 name="Sprint Start Delay" visible="true" offset="0x14"/>
+		<float32 name="Sprint Full Speed Time" visible="true" offset="0x18"/>
+		<float32 name="Sprint Decay Rate" visible="true" offset="0x1C"/>
+		<float32 name="Sprint Full Speed Multiplier" visible="true" offset="0x20"/>
+		<float32 name="Sprint Pegged Magnitude" visible="true" offset="0x24"/>
+		<float32 name="Sprint Pegged Angular Threshold" visible="true" offset="0x28"/>
+		<float32 name="Unknown4" visible="true" offset="0x2C"/>
+		<float32 name="Unknown5" visible="true" offset="0x30"/>
+		<float32 name="Look Default Pitch Rate" visible="true" offset="0x34"/>
+		<float32 name="Look Default Yaw Rate" visible="true" offset="0x38"/>
+		<float32 name="Look Peg Threshold" visible="true" offset="0x3C"/>
+		<float32 name="Look Yaw Acceleration Time" visible="true" offset="0x40"/>
+		<float32 name="Look Yaw Acceleration Scale" visible="true" offset="0x44"/>
+		<float32 name="Look Pitch Acceleration Time" visible="true" offset="0x48"/>
+		<float32 name="Look Pitch Acceleration Scale" visible="true" offset="0x4C"/>
+		<float32 name="Look Autoleveling Scale" visible="true" offset="0x50"/>
+		<float32 name="Unknown8" visible="true" offset="0x54"/>
+		<float32 name="Unknown9" visible="true" offset="0x58"/>
+		<float32 name="Gravity Scale" visible="true" offset="0x5C"/>
+		<int16 name="Unknown10" visible="true" offset="0x60"/>
+		<int16 name="Minimum Autoleveling Ticks" visible="true" offset="0x62"/>
+		<reflexive name="Look Function" visible="true" offset="0x64" entrySize="0x4">
+			<float32 name="Scale" visible="true" offset="0x0"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Difficulty" visible="true" offset="0x120" entrySize="0x284">
+		<float32 name="Easy Enemy Damage" visible="true" offset="0x0"/>
+		<float32 name="Normal Enemy Damage" visible="true" offset="0x4"/>
+		<float32 name="Hard Enemy Damage" visible="true" offset="0x8"/>
+		<float32 name="Impossible Enemy Damage" visible="true" offset="0xC"/>
+		<float32 name="Easy Enemy Vitality" visible="true" offset="0x10"/>
+		<float32 name="Normal Enemy Vitality" visible="true" offset="0x14"/>
+		<float32 name="Hard Enemy Vitality" visible="true" offset="0x18"/>
+		<float32 name="Impossible Enemy Vitality" visible="true" offset="0x1C"/>
+		<float32 name="Easy Enemy Shield" visible="true" offset="0x20"/>
+		<float32 name="Normal Enemy Shield" visible="true" offset="0x24"/>
+		<float32 name="Hard Enemy Shield" visible="true" offset="0x28"/>
+		<float32 name="Impossible Enemy Shield" visible="true" offset="0x2C"/>
+		<float32 name="Easy Enemy Recharge" visible="true" offset="0x30"/>
+		<float32 name="Normal Enemy Recharge" visible="true" offset="0x34"/>
+		<float32 name="Hard Enemy Recharge" visible="true" offset="0x38"/>
+		<float32 name="Impossible Enemy Recharge" visible="true" offset="0x3C"/>
+		<float32 name="Easy Friend Damage" visible="true" offset="0x40"/>
+		<float32 name="Normal Friend Damage" visible="true" offset="0x44"/>
+		<float32 name="Hard Friend Damage" visible="true" offset="0x48"/>
+		<float32 name="Impossible Friend Damage" visible="true" offset="0x4C"/>
+		<float32 name="Easy Friend Vitality" visible="true" offset="0x50"/>
+		<float32 name="Normal Friend Vitality" visible="true" offset="0x54"/>
+		<float32 name="Hard Friend Vitality" visible="true" offset="0x58"/>
+		<float32 name="Impossible Friend Vitality" visible="true" offset="0x5C"/>
+		<float32 name="Easy Friend Shield" visible="true" offset="0x60"/>
+		<float32 name="Normal Friend Shield" visible="true" offset="0x64"/>
+		<float32 name="Hard Friend Shield" visible="true" offset="0x68"/>
+		<float32 name="Impossible Friend Shield" visible="true" offset="0x6C"/>
+		<float32 name="Easy Friend Recharge" visible="true" offset="0x70"/>
+		<float32 name="Normal Friend Recharge" visible="true" offset="0x74"/>
+		<float32 name="Hard Friend Recharge" visible="true" offset="0x78"/>
+		<float32 name="Impossible Friend Recharge" visible="true" offset="0x7C"/>
+		<float32 name="Easy Infection Forms" visible="true" offset="0x80"/>
+		<float32 name="Normal Infection Forms" visible="true" offset="0x84"/>
+		<float32 name="Hard Infection Forms" visible="true" offset="0x88"/>
+		<float32 name="Impossible Infection Forms" visible="true" offset="0x8C"/>
+		<float32 name="Easy Unknown" visible="true" offset="0x90"/>
+		<float32 name="Normal Unknown" visible="true" offset="0x94"/>
+		<float32 name="Hard Unknown" visible="true" offset="0x98"/>
+		<float32 name="Impossible Unknown" visible="true" offset="0x9C"/>
+		<float32 name="Easy Rate Of Fire" visible="true" offset="0xA0"/>
+		<float32 name="Normal Rate Of Fire" visible="true" offset="0xA4"/>
+		<float32 name="Hard Rate Of Fire" visible="true" offset="0xA8"/>
+		<float32 name="Impossible Rate Of Fire" visible="true" offset="0xAC"/>
+		<float32 name="Easy Projectile Error" visible="true" offset="0xB0"/>
+		<float32 name="Normal Projectile Error" visible="true" offset="0xB4"/>
+		<float32 name="Hard Projectile Error" visible="true" offset="0xB8"/>
+		<float32 name="Impossible Projectile Error" visible="true" offset="0xBC"/>
+		<float32 name="Easy Burst Error" visible="true" offset="0xC0"/>
+		<float32 name="Normal Burst Error" visible="true" offset="0xC4"/>
+		<float32 name="Hard Burst Error" visible="true" offset="0xC8"/>
+		<float32 name="Impossible Burst Error" visible="true" offset="0xCC"/>
+		<float32 name="Easy Target Delay" visible="true" offset="0xD0"/>
+		<float32 name="Normal Target Delay" visible="true" offset="0xD4"/>
+		<float32 name="Hard Target Delay" visible="true" offset="0xD8"/>
+		<float32 name="Impossible Target Delay" visible="true" offset="0xDC"/>
+		<float32 name="Easy Burst Separation" visible="true" offset="0xE0"/>
+		<float32 name="Normal Burst Separation" visible="true" offset="0xE4"/>
+		<float32 name="Hard Burst Separation" visible="true" offset="0xE8"/>
+		<float32 name="Impossible Burst Separation" visible="true" offset="0xEC"/>
+		<float32 name="Easy Target Tracking" visible="true" offset="0xF0"/>
+		<float32 name="Normal Target Tracking" visible="true" offset="0xF4"/>
+		<float32 name="Hard Target Tracking" visible="true" offset="0xF8"/>
+		<float32 name="Impossible Target Tracking" visible="true" offset="0xFC"/>
+		<float32 name="Easy Target Leading" visible="true" offset="0x100"/>
+		<float32 name="Normal Target Leading" visible="true" offset="0x104"/>
+		<float32 name="Hard Target Leading" visible="true" offset="0x108"/>
+		<float32 name="Impossible Target Leading" visible="true" offset="0x10C"/>
+		<float32 name="Easy Overcharge Chance" visible="true" offset="0x110"/>
+		<float32 name="Normal Overcharge Chance" visible="true" offset="0x114"/>
+		<float32 name="Hard Overcharge Chance" visible="true" offset="0x118"/>
+		<float32 name="Impossible Overcharge Chance" visible="true" offset="0x11C"/>
+		<float32 name="Easy Special Fire Delay" visible="true" offset="0x120"/>
+		<float32 name="Normal Special Fire Delay" visible="true" offset="0x124"/>
+		<float32 name="Hard Special Fire Delay" visible="true" offset="0x128"/>
+		<float32 name="Impossible Special Fire Delay" visible="true" offset="0x12C"/>
+		<float32 name="Easy Guidance Vs Player" visible="true" offset="0x130"/>
+		<float32 name="Normal Guidance Vs Player" visible="true" offset="0x134"/>
+		<float32 name="Hard Guidance Vs Player" visible="true" offset="0x138"/>
+		<float32 name="Impossible Guidance Vs Player" visible="true" offset="0x13C"/>
+		<float32 name="Easy Melee Delay Base" visible="true" offset="0x140"/>
+		<float32 name="Normal Melee Delay Base" visible="true" offset="0x144"/>
+		<float32 name="Hard Melee Delay Base" visible="true" offset="0x148"/>
+		<float32 name="Impossible Melee Delay Base" visible="true" offset="0x14C"/>
+		<float32 name="Easy Melee Delay Scale" visible="true" offset="0x150"/>
+		<float32 name="Normal Melee Delay Scale" visible="true" offset="0x154"/>
+		<float32 name="Hard Melee Delay Scale" visible="true" offset="0x158"/>
+		<float32 name="Impossible Melee Delay Scale" visible="true" offset="0x15C"/>
+		<float32 name="Easy Unknown2" visible="true" offset="0x160"/>
+		<float32 name="Normal Unknown2" visible="true" offset="0x164"/>
+		<float32 name="Hard Unknown2" visible="true" offset="0x168"/>
+		<float32 name="Impossible Unknown2" visible="true" offset="0x16C"/>
+		<float32 name="Easy Grenade Chance Scale" visible="true" offset="0x170"/>
+		<float32 name="Normal Grenade Chance Scale" visible="true" offset="0x174"/>
+		<float32 name="Hard Grenade Chance Scale" visible="true" offset="0x178"/>
+		<float32 name="Impossible Grenade Chance Scale" visible="true" offset="0x17C"/>
+		<float32 name="Easy Grenade Timer Scale" visible="true" offset="0x180"/>
+		<float32 name="Normal Grenade Timer Scale" visible="true" offset="0x184"/>
+		<float32 name="Hard Grenade Timer Scale" visible="true" offset="0x188"/>
+		<float32 name="Impossible Grenade Timer Scale" visible="true" offset="0x18C"/>
+		<float32 name="Easy Unknown3" visible="true" offset="0x190"/>
+		<float32 name="Normal Unknown3" visible="true" offset="0x194"/>
+		<float32 name="Hard Unknown3" visible="true" offset="0x198"/>
+		<float32 name="Impossible Unknown3" visible="true" offset="0x19C"/>
+		<float32 name="Easy Unknown4" visible="true" offset="0x1A0"/>
+		<float32 name="Normal Unknown4" visible="true" offset="0x1A4"/>
+		<float32 name="Hard Unknown4" visible="true" offset="0x1A8"/>
+		<float32 name="Impossible Unknown4" visible="true" offset="0x1AC"/>
+		<float32 name="Easy Unknown5" visible="true" offset="0x1B0"/>
+		<float32 name="Normal Unknown5" visible="true" offset="0x1B4"/>
+		<float32 name="Hard Unknown5" visible="true" offset="0x1B8"/>
+		<float32 name="Impossible Unknown5" visible="true" offset="0x1BC"/>
+		<float32 name="Easy Major Upgrade Normal" visible="true" offset="0x1C0"/>
+		<float32 name="Normal Major Upgrade Normal" visible="true" offset="0x1C4"/>
+		<float32 name="Hard Major Upgrade Normal" visible="true" offset="0x1C8"/>
+		<float32 name="Impossible Major Upgrade Normal" visible="true" offset="0x1CC"/>
+		<float32 name="Easy Major Upgrade Few" visible="true" offset="0x1D0"/>
+		<float32 name="Normal Major Upgrade Few" visible="true" offset="0x1D4"/>
+		<float32 name="Hard Major Upgrade Few" visible="true" offset="0x1D8"/>
+		<float32 name="Impossible Major Upgrade Few" visible="true" offset="0x1DC"/>
+		<float32 name="Easy Major Upgrade Many" visible="true" offset="0x1E0"/>
+		<float32 name="Normal Major Upgrade Many" visible="true" offset="0x1E4"/>
+		<float32 name="Hard Major Upgrade Many" visible="true" offset="0x1E8"/>
+		<float32 name="Impossible Major Upgrade Many" visible="true" offset="0x1EC"/>
+		<float32 name="Easy Player Vehicle Ram Chance" visible="true" offset="0x1F0"/>
+		<float32 name="Normal Player Vehicle Ram Chance" visible="true" offset="0x1F4"/>
+		<float32 name="Hard Player Vehicle Ram Chance" visible="true" offset="0x1F8"/>
+		<float32 name="Impossible Player Vehicle Ram Chance" visible="true" offset="0x1FC"/>
+		<uint32 name="Unknown" visible="true" offset="0x200"/>
+		<uint32 name="Unknown2" visible="true" offset="0x204"/>
+		<uint32 name="Unknown3" visible="true" offset="0x208"/>
+		<uint32 name="Unknown4" visible="true" offset="0x20C"/>
+		<uint32 name="Unknown5" visible="true" offset="0x210"/>
+		<uint32 name="Unknown6" visible="true" offset="0x214"/>
+		<uint32 name="Unknown7" visible="true" offset="0x218"/>
+		<uint32 name="Unknown8" visible="true" offset="0x21C"/>
+		<uint32 name="Unknown9" visible="true" offset="0x220"/>
+		<uint32 name="Unknown10" visible="true" offset="0x224"/>
+		<uint32 name="Unknown11" visible="true" offset="0x228"/>
+		<uint32 name="Unknown12" visible="true" offset="0x22C"/>
+		<uint32 name="Unknown13" visible="true" offset="0x230"/>
+		<uint32 name="Unknown14" visible="true" offset="0x234"/>
+		<uint32 name="Unknown15" visible="true" offset="0x238"/>
+		<uint32 name="Unknown16" visible="true" offset="0x23C"/>
+		<uint32 name="Unknown17" visible="true" offset="0x240"/>
+		<uint32 name="Unknown18" visible="true" offset="0x244"/>
+		<uint32 name="Unknown19" visible="true" offset="0x248"/>
+		<uint32 name="Unknown20" visible="true" offset="0x24C"/>
+		<uint32 name="Unknown21" visible="true" offset="0x250"/>
+		<uint32 name="Unknown22" visible="true" offset="0x254"/>
+		<uint32 name="Unknown23" visible="true" offset="0x258"/>
+		<uint32 name="Unknown24" visible="true" offset="0x25C"/>
+		<uint32 name="Unknown25" visible="true" offset="0x260"/>
+		<uint32 name="Unknown26" visible="true" offset="0x264"/>
+		<uint32 name="Unknown27" visible="true" offset="0x268"/>
+		<uint32 name="Unknown28" visible="true" offset="0x26C"/>
+		<uint32 name="Unknown29" visible="true" offset="0x270"/>
+		<uint32 name="Unknown30" visible="true" offset="0x274"/>
+		<uint32 name="Unknown31" visible="true" offset="0x278"/>
+		<uint32 name="Unknown32" visible="true" offset="0x27C"/>
+		<uint32 name="Unknown33" visible="true" offset="0x280"/>
+	</reflexive>
+	<reflexive name="Grenades" visible="true" offset="0x12C" entrySize="0x44">
+		<int16 name="Maximum Count" visible="true" offset="0x0"/>
+		<int16 name="Unknown" visible="true" offset="0x2"/>
+		<tagref name="Throwing Effect" visible="true" offset="0x4"/>
+		<uint32 name="Unknown2" visible="true" offset="0x14"/>
+		<uint32 name="Unknown3" visible="true" offset="0x18"/>
+		<uint32 name="Unknown4" visible="true" offset="0x1C"/>
+		<uint32 name="Unknown5" visible="true" offset="0x20"/>
+		<tagref name="Equipment" visible="true" offset="0x24"/>
+		<tagref name="Projectile" visible="true" offset="0x34"/>
+	</reflexive>
+	<uint32 name="Unknown48" visible="true" offset="0x138"/>
+	<uint32 name="Unknown49" visible="true" offset="0x13C"/>
+	<uint32 name="Unknown50" visible="true" offset="0x140"/>
+	<reflexive name="Interface Tags" visible="true" offset="0x144" entrySize="0x12C">
+		<tagref name="Spinner" visible="true" offset="0x0"/>
+		<tagref name="Obsolete" visible="true" offset="0x10"/>
+		<tagref name="Screen Color Table" visible="true" offset="0x20"/>
+		<tagref name="Hud Color Table" visible="true" offset="0x30"/>
+		<tagref name="Editor Color Table" visible="true" offset="0x40"/>
+		<tagref name="Dialog Color Table" visible="true" offset="0x50"/>
+		<tagref name="Motion Sensor Sweep Bitmap" visible="true" offset="0x60"/>
+		<tagref name="Motion Sensor Sweep Bitmap Mask" visible="true" offset="0x70"/>
+		<tagref name="Multiplayer Hud Bitmap" visible="true" offset="0x80"/>
+		<tagref name="Hud Digits Definition" visible="true" offset="0x90"/>
+		<tagref name="Motion Sensor Blip Bitmap" visible="true" offset="0xA0"/>
+		<tagref name="Interface Goo Map1" visible="true" offset="0xB0"/>
+		<tagref name="Interface Goo Map2" visible="true" offset="0xC0"/>
+		<tagref name="Interface Goo Map3" visible="true" offset="0xD0"/>
+		<tagref name="Main Menu Ui Globals" visible="true" offset="0xE0"/>
+		<tagref name="Single Player Ui Globals" visible="true" offset="0xF0"/>
+		<tagref name="Multiplayer Ui Globals" visible="true" offset="0x100"/>
+		<tagref name="Hud Globals" visible="true" offset="0x110"/>
+		<reflexive name="Gfx Ui Strings" visible="true" offset="0x120" entrySize="0x30">
+			<ascii name="Name" visible="true" offset="0x0" length="0x20"/>
+			<tagref name="Strings" visible="true" offset="0x20"/>
+		</reflexive>
+	</reflexive>
+	<uint32 name="Unknown51" visible="true" offset="0x150"/>
+	<uint32 name="Unknown52" visible="true" offset="0x154"/>
+	<uint32 name="Unknown53" visible="true" offset="0x158"/>
+	<uint32 name="Unknown54" visible="true" offset="0x15C"/>
+	<uint32 name="Unknown55" visible="true" offset="0x160"/>
+	<uint32 name="Unknown56" visible="true" offset="0x164"/>
+	<reflexive name="Player Information" visible="true" offset="0x168" entrySize="0xCC">
+		<float32 name="Walking Speed" visible="true" offset="0x0"/>
+		<float32 name="Run Forward" visible="true" offset="0x4"/>
+		<float32 name="Run Backward" visible="true" offset="0x8"/>
+		<float32 name="Run Sideways" visible="true" offset="0xC"/>
+		<float32 name="Run Acceleration" visible="true" offset="0x10"/>
+		<float32 name="Sneak Forward" visible="true" offset="0x14"/>
+		<float32 name="Sneak Backward" visible="true" offset="0x18"/>
+		<float32 name="Sneak Sideways" visible="true" offset="0x1C"/>
+		<float32 name="Sneak Acceleration" visible="true" offset="0x20"/>
+		<float32 name="Airborne Acceleration" visible="true" offset="0x24"/>
+		<vector3 name="Grenade Origin" visible="true" offset="0x28"/>
+		<float32 name="Stun Movement Penalty" visible="true" offset="0x34"/>
+		<float32 name="Stun Turning Penalty" visible="true" offset="0x38"/>
+		<float32 name="Stun Jumping Penalty" visible="true" offset="0x3C"/>
+		<float32 name="Stun Time Range Min" visible="true" offset="0x40"/>
+		<float32 name="Stun Time Range Max" visible="true" offset="0x44"/>
+		<float32 name="First Person Idle Time Range Min" visible="true" offset="0x48"/>
+		<float32 name="First Person Idle Time Range Max" visible="true" offset="0x4C"/>
+		<float32 name="First Person Skip Fraction" visible="true" offset="0x50"/>
+		<float32 name="Unknown1" visible="true" offset="0x54"/>
+		<tagref name="Coop Countdown Sound" visible="true" offset="0x58"/>
+		<tagref name="Coop Respawn Sound" visible="true" offset="0x68"/>
+		<tagref name="Coop Respawn Effect" visible="true" offset="0x78"/>
+		<int32 name="Binoculars Zoom Count" visible="true" offset="0x88"/>
+		<float32 name="Binocular Zoom Range Min" visible="true" offset="0x8C"/>
+		<float32 name="Binocular Zoom Range Max" visible="true" offset="0x90"/>
+		<float32 name="Unknown5" visible="true" offset="0x94"/>
+		<float32 name="Unknown6" visible="true" offset="0x98"/>
+		<tagref name="Flashlight On" visible="true" offset="0x9C"/>
+		<tagref name="Flashlight Off" visible="true" offset="0xAC"/>
+		<tagref name="Default Damage Response" visible="true" offset="0xBC"/>
+	</reflexive>
+	<reflexive name="Player Representation" visible="true" offset="0x174" entrySize="0x6C">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<uint32 name="Flags" visible="true" offset="0x4"/>
+		<tagref name="First Person Hands" visible="true" offset="0x8"/>
+		<tagref name="First Person Body" visible="true" offset="0x18"/>
+		<tagref name="Third Person Unit" visible="true" offset="0x28"/>
+		<stringId name="Third Person Variant" visible="true" offset="0x38"/>
+		<tagref name="Binoculars Zoom In Sound" visible="true" offset="0x3C"/>
+		<tagref name="Binoculars Zoom Out Sound" visible="true" offset="0x4C"/>
+		<tagref name="Combat Dialogue" visible="true" offset="0x5C"/>
+	</reflexive>
+	<reflexive name="Player Character Types" visible="true" offset="0x180" entrySize="0xC">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<bitfield8 name="Flags" visible="true" offset="0x4">
+			<bit name="Can Sprint" index="0"/>
+		</bitfield8>
+		<int8 name="Player Information" visible="true" offset="0x5"/>
+		<int8 name="Player Control" visible="true" offset="0x6"/>
+		<int8 name="Campaign Representation" visible="true" offset="0x7"/>
+		<int8 name="Multiplayer Representation" visible="true" offset="0x8"/>
+		<int8 name="Multiplayer Armor Customization" visible="true" offset="0x9"/>
+		<int8 name="Chud Globals" visible="true" offset="0xA"/>
+		<int8 name="First Person Interface" visible="true" offset="0xB"/>
+	</reflexive>
+	<reflexive name="Falling Damage" visible="true" offset="0x18C" entrySize="0x78">
+		<float32 name="Harmful Falling Distance Bounds Min" visible="true" offset="0x0"/>
+		<float32 name="Harmful Falling Distance Bounds Max" visible="true" offset="0x4"/>
+		<tagref name="Falling Damage" visible="true" offset="0x8"/>
+		<tagref name="Unknown" visible="true" offset="0x18"/>
+		<tagref name="Soft Landing" visible="true" offset="0x28"/>
+		<tagref name="Hard Landing" visible="true" offset="0x38"/>
+		<tagref name="Script Damage" visible="true" offset="0x48"/>
+		<float32 name="Terminal Velocity" visible="true" offset="0x58"/>
+		<tagref name="Distance Damage" visible="true" offset="0x5C"/>
+		<float32 name="Unknown2" visible="true" offset="0x6C"/>
+		<float32 name="Unknown3" visible="true" offset="0x70"/>
+		<float32 name="Unknown4" visible="true" offset="0x74"/>
+	</reflexive>
+	<reflexive name="Shield Boost" visible="true" offset="0x198" entrySize="0xC">
+		<float32 name="Shield Boost Decay" visible="true" offset="0x0"/>
+		<float32 name="Shield Boost Recharge Time" visible="true" offset="0x4"/>
+		<float32 name="Shield Boost Stun Time" visible="true" offset="0x8"/>
+	</reflexive>
+	<reflexive name="Materials" visible="true" offset="0x1A4" entrySize="0x178">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<stringId name="Parent Name" visible="true" offset="0x4"/>
+		<int16 name="Runtime Material Index" visible="true" offset="0x8"/>
+		<bitfield16 name="Flags" visible="true" offset="0xA">
+			<bit name="Flammable" index="0"/>
+			<bit name="Biomass" index="1"/>
+			<bit name="Rad Xfer Interior" index="2"/>
+		</bitfield16>
+		<stringId name="General Armor" visible="true" offset="0xC"/>
+		<stringId name="Specific Armor" visible="true" offset="0x10"/>
+		<int32 name="Physics Flags" visible="true" offset="0x14"/>
+		<float32 name="Friction" visible="true" offset="0x18"/>
+		<float32 name="Restitution" visible="true" offset="0x1C"/>
+		<float32 name="Density" visible="true" offset="0x20"/>
+		<reflexive name="Water Drag Properties" visible="true" offset="0x24" entrySize="0x28">
+			<float32 name="Unknown" visible="true" offset="0x0"/>
+			<float32 name="Unknown2" visible="true" offset="0x4"/>
+			<float32 name="Unknown3" visible="true" offset="0x8"/>
+			<float32 name="Unknown4" visible="true" offset="0xC"/>
+			<float32 name="Unknown5" visible="true" offset="0x10"/>
+			<float32 name="Unknown6" visible="true" offset="0x14"/>
+			<float32 name="Unknown7" visible="true" offset="0x18"/>
+			<float32 name="Unknown8" visible="true" offset="0x1C"/>
+			<float32 name="Unknown9" visible="true" offset="0x20"/>
+			<float32 name="Unknown10" visible="true" offset="0x24"/>
+		</reflexive>
+		<tagref name="Breakable Surface" visible="true" offset="0x30"/>
+		<tagref name="Sound Sweetener Small" visible="true" offset="0x40"/>
+		<tagref name="Sound Sweetener Medium" visible="true" offset="0x50"/>
+		<tagref name="Sound Sweetener Large" visible="true" offset="0x60"/>
+		<tagref name="Sound Sweetener Rolling" visible="true" offset="0x70"/>
+		<tagref name="Sound Sweetener Grinding" visible="true" offset="0x80"/>
+		<tagref name="Sound Sweetener Melee Small" visible="true" offset="0x90"/>
+		<tagref name="Sound Sweetener Melee Medium" visible="true" offset="0xA0"/>
+		<tagref name="Sound Sweetener Melee Large" visible="true" offset="0xB0"/>
+		<tagref name="Effect Sweetener Small" visible="true" offset="0xC0"/>
+		<tagref name="Effect Sweetener Medium" visible="true" offset="0xD0"/>
+		<tagref name="Effect Sweetener Large" visible="true" offset="0xE0"/>
+		<tagref name="Effect Sweetener Rolling" visible="true" offset="0xF0"/>
+		<tagref name="Effect Sweetener Grinding" visible="true" offset="0x100"/>
+		<tagref name="Effect Sweetener Melee" visible="true" offset="0x110"/>
+		<tagref name="Water Ripple Small" visible="true" offset="0x120"/>
+		<tagref name="Water Ripple Medium" visible="true" offset="0x130"/>
+		<tagref name="Water Ripple Large" visible="true" offset="0x140"/>
+		<bitfield32 name="Inheritance Flags" visible="true" offset="0x150">
+			<bit name="Sound Small" index="0"/>
+			<bit name="Sound Medium" index="1"/>
+			<bit name="Sound Large" index="2"/>
+			<bit name="Sound Rolling" index="3"/>
+			<bit name="Sound Grinding" index="4"/>
+			<bit name="Sound Melee Small" index="5"/>
+			<bit name="Sound Melee Medium" index="6"/>
+			<bit name="Sound Melee Large" index="7"/>
+			<bit name="Effect Small" index="8"/>
+			<bit name="Effect Medium" index="9"/>
+			<bit name="Effect Large" index="10"/>
+			<bit name="Effect Rolling" index="11"/>
+			<bit name="Effect Grinding" index="12"/>
+			<bit name="Effect Melee" index="13"/>
+			<bit name="Water Ripple Small" index="14"/>
+			<bit name="Water Ripple Medium" index="15"/>
+			<bit name="Water Ripple Large" index="16"/>
+		</bitfield32>
+		<tagref name="Material Effects" visible="true" offset="0x154"/>
+		<reflexive name="Underwater Proxies" visible="true" offset="0x164" entrySize="0xC">
+			<stringId name="Surface Name" visible="true" offset="0x0"/>
+			<stringId name="Submerged Name" visible="true" offset="0x4"/>
+			<int16 name="Surface Index" visible="true" offset="0x8"/>
+			<int16 name="Submerged Index" visible="true" offset="0xA"/>
+		</reflexive>
+		<uint32 name="Unknown2" visible="true" offset="0x170"/>
+		<int16 name="Unknown3" visible="true" offset="0x174"/>
+		<int16 name="Unknown4" visible="true" offset="0x176"/>
+	</reflexive>
+	<tagref name="Multiplayer Globals" visible="true" offset="0x1B0"/>
+	<tagref name="Survival Globals" visible="true" offset="0x1C0"/>
+	<reflexive name="Cinematic Anchors" visible="true" offset="0x1D0" entrySize="0x18">
+		<tagref name="Cinematic Anchor" visible="true" offset="0x0"/>
+		<float32 name="Fov Constant" visible="true" offset="0x10"/>
+		<float32 name="Unknown2" visible="true" offset="0x14"/>
+	</reflexive>
+	<reflexive name="Metagame Globals" visible="true" offset="0x1DC" entrySize="0x98">
+		<reflexive name="Medals" visible="true" offset="0x0" entrySize="0x10">
+			<float32 name="Multiplier" visible="true" offset="0x0"/>
+			<int32 name="Awarded Points" visible="true" offset="0x4"/>
+			<int32 name="Medal Uptime" visible="true" offset="0x8"/>
+			<stringId name="Event Name" visible="true" offset="0xC"/>
+		</reflexive>
+		<reflexive name="Difficulty" visible="true" offset="0xC" entrySize="0x4">
+			<float32 name="Multiplier" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Primary Skulls" visible="true" offset="0x18" entrySize="0x4">
+			<float32 name="Multiplier" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Secondary Skulls" visible="true" offset="0x24" entrySize="0x4">
+			<float32 name="Multiplier" visible="true" offset="0x0"/>
+		</reflexive>
+		<int32 name="Friendly Death Penalty" visible="true" offset="0x30"/>
+		<int32 name="Death Penalty" visible="true" offset="0x34"/>
+		<int32 name="Betrayal Penalty" visible="true" offset="0x38"/>
+		<int32 name="Unknown2" visible="true" offset="0x3C"/>
+		<float32 name="Multikill Window" visible="true" offset="0x40"/>
+		<float32 name="Emp Window" visible="true" offset="0x44"/>
+		<float32 name="Unknown3" visible="true" offset="0x48"/>
+		<float32 name="Unknown4" visible="true" offset="0x4C"/>
+		<uint32 name="Unknown5" visible="true" offset="0x50"/>
+		<int32 name="First Weapon Spree" visible="true" offset="0x54"/>
+		<int32 name="Second Weapon Spree" visible="true" offset="0x58"/>
+		<int32 name="Killing Spree" visible="true" offset="0x5C"/>
+		<int32 name="Killing Frenzy" visible="true" offset="0x60"/>
+		<int32 name="Running Riot" visible="true" offset="0x64"/>
+		<int32 name="Rampage" visible="true" offset="0x68"/>
+		<int32 name="Untouchable" visible="true" offset="0x6C"/>
+		<int32 name="Invincible" visible="true" offset="0x70"/>
+		<int32 name="Double Kill" visible="true" offset="0x74"/>
+		<int32 name="Triple Kill" visible="true" offset="0x78"/>
+		<int32 name="Overkill" visible="true" offset="0x7C"/>
+		<int32 name="Killtacular" visible="true" offset="0x80"/>
+		<int32 name="Killtrocity" visible="true" offset="0x84"/>
+		<int32 name="Killimanjaro" visible="true" offset="0x88"/>
+		<int32 name="Killtastrophe" visible="true" offset="0x8C"/>
+		<int32 name="Killpocalypse" visible="true" offset="0x90"/>
+		<int32 name="Killionaire" visible="true" offset="0x94"/>
+	</reflexive>
+	<comment title="Locale  Globals 0"></comment>
+
+	<comment title="String  Reference  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x1E8"/>
+	<uint32 name="Value 1" visible="true" offset="0x1EC"/>
+	<comment title="String  Data  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x1F0"/>
+	<uint32 name="Value 1" visible="true" offset="0x1F4"/>
+	<int32 name="String Count" visible="true" offset="0x1F8"/>
+	<int32 name="Locale Table Size" visible="true" offset="0x1FC"/>
+	<uint32 name="Locale Index Table Address" visible="true" offset="0x200"/>
+	<uint32 name="Locale Data Index Address" visible="true" offset="0x204"/>
+	<uint8 name="Index Table Hash 0" visible="true" offset="0x208"/>
+	<uint8 name="Index Table Hash 1" visible="true" offset="0x209"/>
+	<uint8 name="Index Table Hash 2" visible="true" offset="0x20A"/>
+	<uint8 name="Index Table Hash 3" visible="true" offset="0x20B"/>
+	<uint8 name="Index Table Hash 4" visible="true" offset="0x20C"/>
+	<uint8 name="Index Table Hash 5" visible="true" offset="0x20D"/>
+	<uint8 name="Index Table Hash 6" visible="true" offset="0x20E"/>
+	<uint8 name="Index Table Hash 7" visible="true" offset="0x20F"/>
+	<uint8 name="Index Table Hash 8" visible="true" offset="0x210"/>
+	<uint8 name="Index Table Hash 9" visible="true" offset="0x211"/>
+	<uint8 name="Index Table Hash 10" visible="true" offset="0x212"/>
+	<uint8 name="Index Table Hash 11" visible="true" offset="0x213"/>
+	<uint8 name="Index Table Hash 12" visible="true" offset="0x214"/>
+	<uint8 name="Index Table Hash 13" visible="true" offset="0x215"/>
+	<uint8 name="Index Table Hash 14" visible="true" offset="0x216"/>
+	<uint8 name="Index Table Hash 15" visible="true" offset="0x217"/>
+	<uint8 name="Index Table Hash 16" visible="true" offset="0x218"/>
+	<uint8 name="Index Table Hash 17" visible="true" offset="0x219"/>
+	<uint8 name="Index Table Hash 18" visible="true" offset="0x21A"/>
+	<uint8 name="Index Table Hash 19" visible="true" offset="0x21B"/>
+	<uint8 name="String Data Hash 0" visible="true" offset="0x21C"/>
+	<uint8 name="String Data Hash 1" visible="true" offset="0x21D"/>
+	<uint8 name="String Data Hash 2" visible="true" offset="0x21E"/>
+	<uint8 name="String Data Hash 3" visible="true" offset="0x21F"/>
+	<uint8 name="String Data Hash 4" visible="true" offset="0x220"/>
+	<uint8 name="String Data Hash 5" visible="true" offset="0x221"/>
+	<uint8 name="String Data Hash 6" visible="true" offset="0x222"/>
+	<uint8 name="String Data Hash 7" visible="true" offset="0x223"/>
+	<uint8 name="String Data Hash 8" visible="true" offset="0x224"/>
+	<uint8 name="String Data Hash 9" visible="true" offset="0x225"/>
+	<uint8 name="String Data Hash 10" visible="true" offset="0x226"/>
+	<uint8 name="String Data Hash 11" visible="true" offset="0x227"/>
+	<uint8 name="String Data Hash 12" visible="true" offset="0x228"/>
+	<uint8 name="String Data Hash 13" visible="true" offset="0x229"/>
+	<uint8 name="String Data Hash 14" visible="true" offset="0x22A"/>
+	<uint8 name="String Data Hash 15" visible="true" offset="0x22B"/>
+	<uint8 name="String Data Hash 16" visible="true" offset="0x22C"/>
+	<uint8 name="String Data Hash 17" visible="true" offset="0x22D"/>
+	<uint8 name="String Data Hash 18" visible="true" offset="0x22E"/>
+	<uint8 name="String Data Hash 19" visible="true" offset="0x22F"/>
+	<uint32 name="Unknown3" visible="true" offset="0x230"/>
+	<comment title="Locale  Globals 1"></comment>
+
+	<comment title="String  Reference  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x234"/>
+	<uint32 name="Value 1" visible="true" offset="0x238"/>
+	<comment title="String  Data  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x23C"/>
+	<uint32 name="Value 1" visible="true" offset="0x240"/>
+	<int32 name="String Count" visible="true" offset="0x244"/>
+	<int32 name="Locale Table Size" visible="true" offset="0x248"/>
+	<uint32 name="Locale Index Table Address" visible="true" offset="0x24C"/>
+	<uint32 name="Locale Data Index Address" visible="true" offset="0x250"/>
+	<uint8 name="Index Table Hash 0" visible="true" offset="0x254"/>
+	<uint8 name="Index Table Hash 1" visible="true" offset="0x255"/>
+	<uint8 name="Index Table Hash 2" visible="true" offset="0x256"/>
+	<uint8 name="Index Table Hash 3" visible="true" offset="0x257"/>
+	<uint8 name="Index Table Hash 4" visible="true" offset="0x258"/>
+	<uint8 name="Index Table Hash 5" visible="true" offset="0x259"/>
+	<uint8 name="Index Table Hash 6" visible="true" offset="0x25A"/>
+	<uint8 name="Index Table Hash 7" visible="true" offset="0x25B"/>
+	<uint8 name="Index Table Hash 8" visible="true" offset="0x25C"/>
+	<uint8 name="Index Table Hash 9" visible="true" offset="0x25D"/>
+	<uint8 name="Index Table Hash 10" visible="true" offset="0x25E"/>
+	<uint8 name="Index Table Hash 11" visible="true" offset="0x25F"/>
+	<uint8 name="Index Table Hash 12" visible="true" offset="0x260"/>
+	<uint8 name="Index Table Hash 13" visible="true" offset="0x261"/>
+	<uint8 name="Index Table Hash 14" visible="true" offset="0x262"/>
+	<uint8 name="Index Table Hash 15" visible="true" offset="0x263"/>
+	<uint8 name="Index Table Hash 16" visible="true" offset="0x264"/>
+	<uint8 name="Index Table Hash 17" visible="true" offset="0x265"/>
+	<uint8 name="Index Table Hash 18" visible="true" offset="0x266"/>
+	<uint8 name="Index Table Hash 19" visible="true" offset="0x267"/>
+	<uint8 name="String Data Hash 0" visible="true" offset="0x268"/>
+	<uint8 name="String Data Hash 1" visible="true" offset="0x269"/>
+	<uint8 name="String Data Hash 2" visible="true" offset="0x26A"/>
+	<uint8 name="String Data Hash 3" visible="true" offset="0x26B"/>
+	<uint8 name="String Data Hash 4" visible="true" offset="0x26C"/>
+	<uint8 name="String Data Hash 5" visible="true" offset="0x26D"/>
+	<uint8 name="String Data Hash 6" visible="true" offset="0x26E"/>
+	<uint8 name="String Data Hash 7" visible="true" offset="0x26F"/>
+	<uint8 name="String Data Hash 8" visible="true" offset="0x270"/>
+	<uint8 name="String Data Hash 9" visible="true" offset="0x271"/>
+	<uint8 name="String Data Hash 10" visible="true" offset="0x272"/>
+	<uint8 name="String Data Hash 11" visible="true" offset="0x273"/>
+	<uint8 name="String Data Hash 12" visible="true" offset="0x274"/>
+	<uint8 name="String Data Hash 13" visible="true" offset="0x275"/>
+	<uint8 name="String Data Hash 14" visible="true" offset="0x276"/>
+	<uint8 name="String Data Hash 15" visible="true" offset="0x277"/>
+	<uint8 name="String Data Hash 16" visible="true" offset="0x278"/>
+	<uint8 name="String Data Hash 17" visible="true" offset="0x279"/>
+	<uint8 name="String Data Hash 18" visible="true" offset="0x27A"/>
+	<uint8 name="String Data Hash 19" visible="true" offset="0x27B"/>
+	<uint32 name="Unknown3" visible="true" offset="0x27C"/>
+	<comment title="Locale  Globals 2"></comment>
+
+	<comment title="String  Reference  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x280"/>
+	<uint32 name="Value 1" visible="true" offset="0x284"/>
+	<comment title="String  Data  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x288"/>
+	<uint32 name="Value 1" visible="true" offset="0x28C"/>
+	<int32 name="String Count" visible="true" offset="0x290"/>
+	<int32 name="Locale Table Size" visible="true" offset="0x294"/>
+	<uint32 name="Locale Index Table Address" visible="true" offset="0x298"/>
+	<uint32 name="Locale Data Index Address" visible="true" offset="0x29C"/>
+	<uint8 name="Index Table Hash 0" visible="true" offset="0x2A0"/>
+	<uint8 name="Index Table Hash 1" visible="true" offset="0x2A1"/>
+	<uint8 name="Index Table Hash 2" visible="true" offset="0x2A2"/>
+	<uint8 name="Index Table Hash 3" visible="true" offset="0x2A3"/>
+	<uint8 name="Index Table Hash 4" visible="true" offset="0x2A4"/>
+	<uint8 name="Index Table Hash 5" visible="true" offset="0x2A5"/>
+	<uint8 name="Index Table Hash 6" visible="true" offset="0x2A6"/>
+	<uint8 name="Index Table Hash 7" visible="true" offset="0x2A7"/>
+	<uint8 name="Index Table Hash 8" visible="true" offset="0x2A8"/>
+	<uint8 name="Index Table Hash 9" visible="true" offset="0x2A9"/>
+	<uint8 name="Index Table Hash 10" visible="true" offset="0x2AA"/>
+	<uint8 name="Index Table Hash 11" visible="true" offset="0x2AB"/>
+	<uint8 name="Index Table Hash 12" visible="true" offset="0x2AC"/>
+	<uint8 name="Index Table Hash 13" visible="true" offset="0x2AD"/>
+	<uint8 name="Index Table Hash 14" visible="true" offset="0x2AE"/>
+	<uint8 name="Index Table Hash 15" visible="true" offset="0x2AF"/>
+	<uint8 name="Index Table Hash 16" visible="true" offset="0x2B0"/>
+	<uint8 name="Index Table Hash 17" visible="true" offset="0x2B1"/>
+	<uint8 name="Index Table Hash 18" visible="true" offset="0x2B2"/>
+	<uint8 name="Index Table Hash 19" visible="true" offset="0x2B3"/>
+	<uint8 name="String Data Hash 0" visible="true" offset="0x2B4"/>
+	<uint8 name="String Data Hash 1" visible="true" offset="0x2B5"/>
+	<uint8 name="String Data Hash 2" visible="true" offset="0x2B6"/>
+	<uint8 name="String Data Hash 3" visible="true" offset="0x2B7"/>
+	<uint8 name="String Data Hash 4" visible="true" offset="0x2B8"/>
+	<uint8 name="String Data Hash 5" visible="true" offset="0x2B9"/>
+	<uint8 name="String Data Hash 6" visible="true" offset="0x2BA"/>
+	<uint8 name="String Data Hash 7" visible="true" offset="0x2BB"/>
+	<uint8 name="String Data Hash 8" visible="true" offset="0x2BC"/>
+	<uint8 name="String Data Hash 9" visible="true" offset="0x2BD"/>
+	<uint8 name="String Data Hash 10" visible="true" offset="0x2BE"/>
+	<uint8 name="String Data Hash 11" visible="true" offset="0x2BF"/>
+	<uint8 name="String Data Hash 12" visible="true" offset="0x2C0"/>
+	<uint8 name="String Data Hash 13" visible="true" offset="0x2C1"/>
+	<uint8 name="String Data Hash 14" visible="true" offset="0x2C2"/>
+	<uint8 name="String Data Hash 15" visible="true" offset="0x2C3"/>
+	<uint8 name="String Data Hash 16" visible="true" offset="0x2C4"/>
+	<uint8 name="String Data Hash 17" visible="true" offset="0x2C5"/>
+	<uint8 name="String Data Hash 18" visible="true" offset="0x2C6"/>
+	<uint8 name="String Data Hash 19" visible="true" offset="0x2C7"/>
+	<uint32 name="Unknown3" visible="true" offset="0x2C8"/>
+	<comment title="Locale  Globals 3"></comment>
+
+	<comment title="String  Reference  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x2CC"/>
+	<uint32 name="Value 1" visible="true" offset="0x2D0"/>
+	<comment title="String  Data  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x2D4"/>
+	<uint32 name="Value 1" visible="true" offset="0x2D8"/>
+	<int32 name="String Count" visible="true" offset="0x2DC"/>
+	<int32 name="Locale Table Size" visible="true" offset="0x2E0"/>
+	<uint32 name="Locale Index Table Address" visible="true" offset="0x2E4"/>
+	<uint32 name="Locale Data Index Address" visible="true" offset="0x2E8"/>
+	<uint8 name="Index Table Hash 0" visible="true" offset="0x2EC"/>
+	<uint8 name="Index Table Hash 1" visible="true" offset="0x2ED"/>
+	<uint8 name="Index Table Hash 2" visible="true" offset="0x2EE"/>
+	<uint8 name="Index Table Hash 3" visible="true" offset="0x2EF"/>
+	<uint8 name="Index Table Hash 4" visible="true" offset="0x2F0"/>
+	<uint8 name="Index Table Hash 5" visible="true" offset="0x2F1"/>
+	<uint8 name="Index Table Hash 6" visible="true" offset="0x2F2"/>
+	<uint8 name="Index Table Hash 7" visible="true" offset="0x2F3"/>
+	<uint8 name="Index Table Hash 8" visible="true" offset="0x2F4"/>
+	<uint8 name="Index Table Hash 9" visible="true" offset="0x2F5"/>
+	<uint8 name="Index Table Hash 10" visible="true" offset="0x2F6"/>
+	<uint8 name="Index Table Hash 11" visible="true" offset="0x2F7"/>
+	<uint8 name="Index Table Hash 12" visible="true" offset="0x2F8"/>
+	<uint8 name="Index Table Hash 13" visible="true" offset="0x2F9"/>
+	<uint8 name="Index Table Hash 14" visible="true" offset="0x2FA"/>
+	<uint8 name="Index Table Hash 15" visible="true" offset="0x2FB"/>
+	<uint8 name="Index Table Hash 16" visible="true" offset="0x2FC"/>
+	<uint8 name="Index Table Hash 17" visible="true" offset="0x2FD"/>
+	<uint8 name="Index Table Hash 18" visible="true" offset="0x2FE"/>
+	<uint8 name="Index Table Hash 19" visible="true" offset="0x2FF"/>
+	<uint8 name="String Data Hash 0" visible="true" offset="0x300"/>
+	<uint8 name="String Data Hash 1" visible="true" offset="0x301"/>
+	<uint8 name="String Data Hash 2" visible="true" offset="0x302"/>
+	<uint8 name="String Data Hash 3" visible="true" offset="0x303"/>
+	<uint8 name="String Data Hash 4" visible="true" offset="0x304"/>
+	<uint8 name="String Data Hash 5" visible="true" offset="0x305"/>
+	<uint8 name="String Data Hash 6" visible="true" offset="0x306"/>
+	<uint8 name="String Data Hash 7" visible="true" offset="0x307"/>
+	<uint8 name="String Data Hash 8" visible="true" offset="0x308"/>
+	<uint8 name="String Data Hash 9" visible="true" offset="0x309"/>
+	<uint8 name="String Data Hash 10" visible="true" offset="0x30A"/>
+	<uint8 name="String Data Hash 11" visible="true" offset="0x30B"/>
+	<uint8 name="String Data Hash 12" visible="true" offset="0x30C"/>
+	<uint8 name="String Data Hash 13" visible="true" offset="0x30D"/>
+	<uint8 name="String Data Hash 14" visible="true" offset="0x30E"/>
+	<uint8 name="String Data Hash 15" visible="true" offset="0x30F"/>
+	<uint8 name="String Data Hash 16" visible="true" offset="0x310"/>
+	<uint8 name="String Data Hash 17" visible="true" offset="0x311"/>
+	<uint8 name="String Data Hash 18" visible="true" offset="0x312"/>
+	<uint8 name="String Data Hash 19" visible="true" offset="0x313"/>
+	<uint32 name="Unknown3" visible="true" offset="0x314"/>
+	<comment title="Locale  Globals 4"></comment>
+
+	<comment title="String  Reference  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x318"/>
+	<uint32 name="Value 1" visible="true" offset="0x31C"/>
+	<comment title="String  Data  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x320"/>
+	<uint32 name="Value 1" visible="true" offset="0x324"/>
+	<int32 name="String Count" visible="true" offset="0x328"/>
+	<int32 name="Locale Table Size" visible="true" offset="0x32C"/>
+	<uint32 name="Locale Index Table Address" visible="true" offset="0x330"/>
+	<uint32 name="Locale Data Index Address" visible="true" offset="0x334"/>
+	<uint8 name="Index Table Hash 0" visible="true" offset="0x338"/>
+	<uint8 name="Index Table Hash 1" visible="true" offset="0x339"/>
+	<uint8 name="Index Table Hash 2" visible="true" offset="0x33A"/>
+	<uint8 name="Index Table Hash 3" visible="true" offset="0x33B"/>
+	<uint8 name="Index Table Hash 4" visible="true" offset="0x33C"/>
+	<uint8 name="Index Table Hash 5" visible="true" offset="0x33D"/>
+	<uint8 name="Index Table Hash 6" visible="true" offset="0x33E"/>
+	<uint8 name="Index Table Hash 7" visible="true" offset="0x33F"/>
+	<uint8 name="Index Table Hash 8" visible="true" offset="0x340"/>
+	<uint8 name="Index Table Hash 9" visible="true" offset="0x341"/>
+	<uint8 name="Index Table Hash 10" visible="true" offset="0x342"/>
+	<uint8 name="Index Table Hash 11" visible="true" offset="0x343"/>
+	<uint8 name="Index Table Hash 12" visible="true" offset="0x344"/>
+	<uint8 name="Index Table Hash 13" visible="true" offset="0x345"/>
+	<uint8 name="Index Table Hash 14" visible="true" offset="0x346"/>
+	<uint8 name="Index Table Hash 15" visible="true" offset="0x347"/>
+	<uint8 name="Index Table Hash 16" visible="true" offset="0x348"/>
+	<uint8 name="Index Table Hash 17" visible="true" offset="0x349"/>
+	<uint8 name="Index Table Hash 18" visible="true" offset="0x34A"/>
+	<uint8 name="Index Table Hash 19" visible="true" offset="0x34B"/>
+	<uint8 name="String Data Hash 0" visible="true" offset="0x34C"/>
+	<uint8 name="String Data Hash 1" visible="true" offset="0x34D"/>
+	<uint8 name="String Data Hash 2" visible="true" offset="0x34E"/>
+	<uint8 name="String Data Hash 3" visible="true" offset="0x34F"/>
+	<uint8 name="String Data Hash 4" visible="true" offset="0x350"/>
+	<uint8 name="String Data Hash 5" visible="true" offset="0x351"/>
+	<uint8 name="String Data Hash 6" visible="true" offset="0x352"/>
+	<uint8 name="String Data Hash 7" visible="true" offset="0x353"/>
+	<uint8 name="String Data Hash 8" visible="true" offset="0x354"/>
+	<uint8 name="String Data Hash 9" visible="true" offset="0x355"/>
+	<uint8 name="String Data Hash 10" visible="true" offset="0x356"/>
+	<uint8 name="String Data Hash 11" visible="true" offset="0x357"/>
+	<uint8 name="String Data Hash 12" visible="true" offset="0x358"/>
+	<uint8 name="String Data Hash 13" visible="true" offset="0x359"/>
+	<uint8 name="String Data Hash 14" visible="true" offset="0x35A"/>
+	<uint8 name="String Data Hash 15" visible="true" offset="0x35B"/>
+	<uint8 name="String Data Hash 16" visible="true" offset="0x35C"/>
+	<uint8 name="String Data Hash 17" visible="true" offset="0x35D"/>
+	<uint8 name="String Data Hash 18" visible="true" offset="0x35E"/>
+	<uint8 name="String Data Hash 19" visible="true" offset="0x35F"/>
+	<uint32 name="Unknown3" visible="true" offset="0x360"/>
+	<comment title="Locale  Globals 5"></comment>
+
+	<comment title="String  Reference  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x364"/>
+	<uint32 name="Value 1" visible="true" offset="0x368"/>
+	<comment title="String  Data  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x36C"/>
+	<uint32 name="Value 1" visible="true" offset="0x370"/>
+	<int32 name="String Count" visible="true" offset="0x374"/>
+	<int32 name="Locale Table Size" visible="true" offset="0x378"/>
+	<uint32 name="Locale Index Table Address" visible="true" offset="0x37C"/>
+	<uint32 name="Locale Data Index Address" visible="true" offset="0x380"/>
+	<uint8 name="Index Table Hash 0" visible="true" offset="0x384"/>
+	<uint8 name="Index Table Hash 1" visible="true" offset="0x385"/>
+	<uint8 name="Index Table Hash 2" visible="true" offset="0x386"/>
+	<uint8 name="Index Table Hash 3" visible="true" offset="0x387"/>
+	<uint8 name="Index Table Hash 4" visible="true" offset="0x388"/>
+	<uint8 name="Index Table Hash 5" visible="true" offset="0x389"/>
+	<uint8 name="Index Table Hash 6" visible="true" offset="0x38A"/>
+	<uint8 name="Index Table Hash 7" visible="true" offset="0x38B"/>
+	<uint8 name="Index Table Hash 8" visible="true" offset="0x38C"/>
+	<uint8 name="Index Table Hash 9" visible="true" offset="0x38D"/>
+	<uint8 name="Index Table Hash 10" visible="true" offset="0x38E"/>
+	<uint8 name="Index Table Hash 11" visible="true" offset="0x38F"/>
+	<uint8 name="Index Table Hash 12" visible="true" offset="0x390"/>
+	<uint8 name="Index Table Hash 13" visible="true" offset="0x391"/>
+	<uint8 name="Index Table Hash 14" visible="true" offset="0x392"/>
+	<uint8 name="Index Table Hash 15" visible="true" offset="0x393"/>
+	<uint8 name="Index Table Hash 16" visible="true" offset="0x394"/>
+	<uint8 name="Index Table Hash 17" visible="true" offset="0x395"/>
+	<uint8 name="Index Table Hash 18" visible="true" offset="0x396"/>
+	<uint8 name="Index Table Hash 19" visible="true" offset="0x397"/>
+	<uint8 name="String Data Hash 0" visible="true" offset="0x398"/>
+	<uint8 name="String Data Hash 1" visible="true" offset="0x399"/>
+	<uint8 name="String Data Hash 2" visible="true" offset="0x39A"/>
+	<uint8 name="String Data Hash 3" visible="true" offset="0x39B"/>
+	<uint8 name="String Data Hash 4" visible="true" offset="0x39C"/>
+	<uint8 name="String Data Hash 5" visible="true" offset="0x39D"/>
+	<uint8 name="String Data Hash 6" visible="true" offset="0x39E"/>
+	<uint8 name="String Data Hash 7" visible="true" offset="0x39F"/>
+	<uint8 name="String Data Hash 8" visible="true" offset="0x3A0"/>
+	<uint8 name="String Data Hash 9" visible="true" offset="0x3A1"/>
+	<uint8 name="String Data Hash 10" visible="true" offset="0x3A2"/>
+	<uint8 name="String Data Hash 11" visible="true" offset="0x3A3"/>
+	<uint8 name="String Data Hash 12" visible="true" offset="0x3A4"/>
+	<uint8 name="String Data Hash 13" visible="true" offset="0x3A5"/>
+	<uint8 name="String Data Hash 14" visible="true" offset="0x3A6"/>
+	<uint8 name="String Data Hash 15" visible="true" offset="0x3A7"/>
+	<uint8 name="String Data Hash 16" visible="true" offset="0x3A8"/>
+	<uint8 name="String Data Hash 17" visible="true" offset="0x3A9"/>
+	<uint8 name="String Data Hash 18" visible="true" offset="0x3AA"/>
+	<uint8 name="String Data Hash 19" visible="true" offset="0x3AB"/>
+	<uint32 name="Unknown3" visible="true" offset="0x3AC"/>
+	<comment title="Locale  Globals 6"></comment>
+
+	<comment title="String  Reference  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x3B0"/>
+	<uint32 name="Value 1" visible="true" offset="0x3B4"/>
+	<comment title="String  Data  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x3B8"/>
+	<uint32 name="Value 1" visible="true" offset="0x3BC"/>
+	<int32 name="String Count" visible="true" offset="0x3C0"/>
+	<int32 name="Locale Table Size" visible="true" offset="0x3C4"/>
+	<uint32 name="Locale Index Table Address" visible="true" offset="0x3C8"/>
+	<uint32 name="Locale Data Index Address" visible="true" offset="0x3CC"/>
+	<uint8 name="Index Table Hash 0" visible="true" offset="0x3D0"/>
+	<uint8 name="Index Table Hash 1" visible="true" offset="0x3D1"/>
+	<uint8 name="Index Table Hash 2" visible="true" offset="0x3D2"/>
+	<uint8 name="Index Table Hash 3" visible="true" offset="0x3D3"/>
+	<uint8 name="Index Table Hash 4" visible="true" offset="0x3D4"/>
+	<uint8 name="Index Table Hash 5" visible="true" offset="0x3D5"/>
+	<uint8 name="Index Table Hash 6" visible="true" offset="0x3D6"/>
+	<uint8 name="Index Table Hash 7" visible="true" offset="0x3D7"/>
+	<uint8 name="Index Table Hash 8" visible="true" offset="0x3D8"/>
+	<uint8 name="Index Table Hash 9" visible="true" offset="0x3D9"/>
+	<uint8 name="Index Table Hash 10" visible="true" offset="0x3DA"/>
+	<uint8 name="Index Table Hash 11" visible="true" offset="0x3DB"/>
+	<uint8 name="Index Table Hash 12" visible="true" offset="0x3DC"/>
+	<uint8 name="Index Table Hash 13" visible="true" offset="0x3DD"/>
+	<uint8 name="Index Table Hash 14" visible="true" offset="0x3DE"/>
+	<uint8 name="Index Table Hash 15" visible="true" offset="0x3DF"/>
+	<uint8 name="Index Table Hash 16" visible="true" offset="0x3E0"/>
+	<uint8 name="Index Table Hash 17" visible="true" offset="0x3E1"/>
+	<uint8 name="Index Table Hash 18" visible="true" offset="0x3E2"/>
+	<uint8 name="Index Table Hash 19" visible="true" offset="0x3E3"/>
+	<uint8 name="String Data Hash 0" visible="true" offset="0x3E4"/>
+	<uint8 name="String Data Hash 1" visible="true" offset="0x3E5"/>
+	<uint8 name="String Data Hash 2" visible="true" offset="0x3E6"/>
+	<uint8 name="String Data Hash 3" visible="true" offset="0x3E7"/>
+	<uint8 name="String Data Hash 4" visible="true" offset="0x3E8"/>
+	<uint8 name="String Data Hash 5" visible="true" offset="0x3E9"/>
+	<uint8 name="String Data Hash 6" visible="true" offset="0x3EA"/>
+	<uint8 name="String Data Hash 7" visible="true" offset="0x3EB"/>
+	<uint8 name="String Data Hash 8" visible="true" offset="0x3EC"/>
+	<uint8 name="String Data Hash 9" visible="true" offset="0x3ED"/>
+	<uint8 name="String Data Hash 10" visible="true" offset="0x3EE"/>
+	<uint8 name="String Data Hash 11" visible="true" offset="0x3EF"/>
+	<uint8 name="String Data Hash 12" visible="true" offset="0x3F0"/>
+	<uint8 name="String Data Hash 13" visible="true" offset="0x3F1"/>
+	<uint8 name="String Data Hash 14" visible="true" offset="0x3F2"/>
+	<uint8 name="String Data Hash 15" visible="true" offset="0x3F3"/>
+	<uint8 name="String Data Hash 16" visible="true" offset="0x3F4"/>
+	<uint8 name="String Data Hash 17" visible="true" offset="0x3F5"/>
+	<uint8 name="String Data Hash 18" visible="true" offset="0x3F6"/>
+	<uint8 name="String Data Hash 19" visible="true" offset="0x3F7"/>
+	<uint32 name="Unknown3" visible="true" offset="0x3F8"/>
+	<comment title="Locale  Globals 7"></comment>
+
+	<comment title="String  Reference  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x3FC"/>
+	<uint32 name="Value 1" visible="true" offset="0x400"/>
+	<comment title="String  Data  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x404"/>
+	<uint32 name="Value 1" visible="true" offset="0x408"/>
+	<int32 name="String Count" visible="true" offset="0x40C"/>
+	<int32 name="Locale Table Size" visible="true" offset="0x410"/>
+	<uint32 name="Locale Index Table Address" visible="true" offset="0x414"/>
+	<uint32 name="Locale Data Index Address" visible="true" offset="0x418"/>
+	<uint8 name="Index Table Hash 0" visible="true" offset="0x41C"/>
+	<uint8 name="Index Table Hash 1" visible="true" offset="0x41D"/>
+	<uint8 name="Index Table Hash 2" visible="true" offset="0x41E"/>
+	<uint8 name="Index Table Hash 3" visible="true" offset="0x41F"/>
+	<uint8 name="Index Table Hash 4" visible="true" offset="0x420"/>
+	<uint8 name="Index Table Hash 5" visible="true" offset="0x421"/>
+	<uint8 name="Index Table Hash 6" visible="true" offset="0x422"/>
+	<uint8 name="Index Table Hash 7" visible="true" offset="0x423"/>
+	<uint8 name="Index Table Hash 8" visible="true" offset="0x424"/>
+	<uint8 name="Index Table Hash 9" visible="true" offset="0x425"/>
+	<uint8 name="Index Table Hash 10" visible="true" offset="0x426"/>
+	<uint8 name="Index Table Hash 11" visible="true" offset="0x427"/>
+	<uint8 name="Index Table Hash 12" visible="true" offset="0x428"/>
+	<uint8 name="Index Table Hash 13" visible="true" offset="0x429"/>
+	<uint8 name="Index Table Hash 14" visible="true" offset="0x42A"/>
+	<uint8 name="Index Table Hash 15" visible="true" offset="0x42B"/>
+	<uint8 name="Index Table Hash 16" visible="true" offset="0x42C"/>
+	<uint8 name="Index Table Hash 17" visible="true" offset="0x42D"/>
+	<uint8 name="Index Table Hash 18" visible="true" offset="0x42E"/>
+	<uint8 name="Index Table Hash 19" visible="true" offset="0x42F"/>
+	<uint8 name="String Data Hash 0" visible="true" offset="0x430"/>
+	<uint8 name="String Data Hash 1" visible="true" offset="0x431"/>
+	<uint8 name="String Data Hash 2" visible="true" offset="0x432"/>
+	<uint8 name="String Data Hash 3" visible="true" offset="0x433"/>
+	<uint8 name="String Data Hash 4" visible="true" offset="0x434"/>
+	<uint8 name="String Data Hash 5" visible="true" offset="0x435"/>
+	<uint8 name="String Data Hash 6" visible="true" offset="0x436"/>
+	<uint8 name="String Data Hash 7" visible="true" offset="0x437"/>
+	<uint8 name="String Data Hash 8" visible="true" offset="0x438"/>
+	<uint8 name="String Data Hash 9" visible="true" offset="0x439"/>
+	<uint8 name="String Data Hash 10" visible="true" offset="0x43A"/>
+	<uint8 name="String Data Hash 11" visible="true" offset="0x43B"/>
+	<uint8 name="String Data Hash 12" visible="true" offset="0x43C"/>
+	<uint8 name="String Data Hash 13" visible="true" offset="0x43D"/>
+	<uint8 name="String Data Hash 14" visible="true" offset="0x43E"/>
+	<uint8 name="String Data Hash 15" visible="true" offset="0x43F"/>
+	<uint8 name="String Data Hash 16" visible="true" offset="0x440"/>
+	<uint8 name="String Data Hash 17" visible="true" offset="0x441"/>
+	<uint8 name="String Data Hash 18" visible="true" offset="0x442"/>
+	<uint8 name="String Data Hash 19" visible="true" offset="0x443"/>
+	<uint32 name="Unknown3" visible="true" offset="0x444"/>
+	<comment title="Locale  Globals 8"></comment>
+
+	<comment title="String  Reference  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x448"/>
+	<uint32 name="Value 1" visible="true" offset="0x44C"/>
+	<comment title="String  Data  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x450"/>
+	<uint32 name="Value 1" visible="true" offset="0x454"/>
+	<int32 name="String Count" visible="true" offset="0x458"/>
+	<int32 name="Locale Table Size" visible="true" offset="0x45C"/>
+	<uint32 name="Locale Index Table Address" visible="true" offset="0x460"/>
+	<uint32 name="Locale Data Index Address" visible="true" offset="0x464"/>
+	<uint8 name="Index Table Hash 0" visible="true" offset="0x468"/>
+	<uint8 name="Index Table Hash 1" visible="true" offset="0x469"/>
+	<uint8 name="Index Table Hash 2" visible="true" offset="0x46A"/>
+	<uint8 name="Index Table Hash 3" visible="true" offset="0x46B"/>
+	<uint8 name="Index Table Hash 4" visible="true" offset="0x46C"/>
+	<uint8 name="Index Table Hash 5" visible="true" offset="0x46D"/>
+	<uint8 name="Index Table Hash 6" visible="true" offset="0x46E"/>
+	<uint8 name="Index Table Hash 7" visible="true" offset="0x46F"/>
+	<uint8 name="Index Table Hash 8" visible="true" offset="0x470"/>
+	<uint8 name="Index Table Hash 9" visible="true" offset="0x471"/>
+	<uint8 name="Index Table Hash 10" visible="true" offset="0x472"/>
+	<uint8 name="Index Table Hash 11" visible="true" offset="0x473"/>
+	<uint8 name="Index Table Hash 12" visible="true" offset="0x474"/>
+	<uint8 name="Index Table Hash 13" visible="true" offset="0x475"/>
+	<uint8 name="Index Table Hash 14" visible="true" offset="0x476"/>
+	<uint8 name="Index Table Hash 15" visible="true" offset="0x477"/>
+	<uint8 name="Index Table Hash 16" visible="true" offset="0x478"/>
+	<uint8 name="Index Table Hash 17" visible="true" offset="0x479"/>
+	<uint8 name="Index Table Hash 18" visible="true" offset="0x47A"/>
+	<uint8 name="Index Table Hash 19" visible="true" offset="0x47B"/>
+	<uint8 name="String Data Hash 0" visible="true" offset="0x47C"/>
+	<uint8 name="String Data Hash 1" visible="true" offset="0x47D"/>
+	<uint8 name="String Data Hash 2" visible="true" offset="0x47E"/>
+	<uint8 name="String Data Hash 3" visible="true" offset="0x47F"/>
+	<uint8 name="String Data Hash 4" visible="true" offset="0x480"/>
+	<uint8 name="String Data Hash 5" visible="true" offset="0x481"/>
+	<uint8 name="String Data Hash 6" visible="true" offset="0x482"/>
+	<uint8 name="String Data Hash 7" visible="true" offset="0x483"/>
+	<uint8 name="String Data Hash 8" visible="true" offset="0x484"/>
+	<uint8 name="String Data Hash 9" visible="true" offset="0x485"/>
+	<uint8 name="String Data Hash 10" visible="true" offset="0x486"/>
+	<uint8 name="String Data Hash 11" visible="true" offset="0x487"/>
+	<uint8 name="String Data Hash 12" visible="true" offset="0x488"/>
+	<uint8 name="String Data Hash 13" visible="true" offset="0x489"/>
+	<uint8 name="String Data Hash 14" visible="true" offset="0x48A"/>
+	<uint8 name="String Data Hash 15" visible="true" offset="0x48B"/>
+	<uint8 name="String Data Hash 16" visible="true" offset="0x48C"/>
+	<uint8 name="String Data Hash 17" visible="true" offset="0x48D"/>
+	<uint8 name="String Data Hash 18" visible="true" offset="0x48E"/>
+	<uint8 name="String Data Hash 19" visible="true" offset="0x48F"/>
+	<uint32 name="Unknown3" visible="true" offset="0x490"/>
+	<comment title="Locale  Globals 9"></comment>
+
+	<comment title="String  Reference  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x494"/>
+	<uint32 name="Value 1" visible="true" offset="0x498"/>
+	<comment title="String  Data  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x49C"/>
+	<uint32 name="Value 1" visible="true" offset="0x4A0"/>
+	<int32 name="String Count" visible="true" offset="0x4A4"/>
+	<int32 name="Locale Table Size" visible="true" offset="0x4A8"/>
+	<uint32 name="Locale Index Table Address" visible="true" offset="0x4AC"/>
+	<uint32 name="Locale Data Index Address" visible="true" offset="0x4B0"/>
+	<uint8 name="Index Table Hash 0" visible="true" offset="0x4B4"/>
+	<uint8 name="Index Table Hash 1" visible="true" offset="0x4B5"/>
+	<uint8 name="Index Table Hash 2" visible="true" offset="0x4B6"/>
+	<uint8 name="Index Table Hash 3" visible="true" offset="0x4B7"/>
+	<uint8 name="Index Table Hash 4" visible="true" offset="0x4B8"/>
+	<uint8 name="Index Table Hash 5" visible="true" offset="0x4B9"/>
+	<uint8 name="Index Table Hash 6" visible="true" offset="0x4BA"/>
+	<uint8 name="Index Table Hash 7" visible="true" offset="0x4BB"/>
+	<uint8 name="Index Table Hash 8" visible="true" offset="0x4BC"/>
+	<uint8 name="Index Table Hash 9" visible="true" offset="0x4BD"/>
+	<uint8 name="Index Table Hash 10" visible="true" offset="0x4BE"/>
+	<uint8 name="Index Table Hash 11" visible="true" offset="0x4BF"/>
+	<uint8 name="Index Table Hash 12" visible="true" offset="0x4C0"/>
+	<uint8 name="Index Table Hash 13" visible="true" offset="0x4C1"/>
+	<uint8 name="Index Table Hash 14" visible="true" offset="0x4C2"/>
+	<uint8 name="Index Table Hash 15" visible="true" offset="0x4C3"/>
+	<uint8 name="Index Table Hash 16" visible="true" offset="0x4C4"/>
+	<uint8 name="Index Table Hash 17" visible="true" offset="0x4C5"/>
+	<uint8 name="Index Table Hash 18" visible="true" offset="0x4C6"/>
+	<uint8 name="Index Table Hash 19" visible="true" offset="0x4C7"/>
+	<uint8 name="String Data Hash 0" visible="true" offset="0x4C8"/>
+	<uint8 name="String Data Hash 1" visible="true" offset="0x4C9"/>
+	<uint8 name="String Data Hash 2" visible="true" offset="0x4CA"/>
+	<uint8 name="String Data Hash 3" visible="true" offset="0x4CB"/>
+	<uint8 name="String Data Hash 4" visible="true" offset="0x4CC"/>
+	<uint8 name="String Data Hash 5" visible="true" offset="0x4CD"/>
+	<uint8 name="String Data Hash 6" visible="true" offset="0x4CE"/>
+	<uint8 name="String Data Hash 7" visible="true" offset="0x4CF"/>
+	<uint8 name="String Data Hash 8" visible="true" offset="0x4D0"/>
+	<uint8 name="String Data Hash 9" visible="true" offset="0x4D1"/>
+	<uint8 name="String Data Hash 10" visible="true" offset="0x4D2"/>
+	<uint8 name="String Data Hash 11" visible="true" offset="0x4D3"/>
+	<uint8 name="String Data Hash 12" visible="true" offset="0x4D4"/>
+	<uint8 name="String Data Hash 13" visible="true" offset="0x4D5"/>
+	<uint8 name="String Data Hash 14" visible="true" offset="0x4D6"/>
+	<uint8 name="String Data Hash 15" visible="true" offset="0x4D7"/>
+	<uint8 name="String Data Hash 16" visible="true" offset="0x4D8"/>
+	<uint8 name="String Data Hash 17" visible="true" offset="0x4D9"/>
+	<uint8 name="String Data Hash 18" visible="true" offset="0x4DA"/>
+	<uint8 name="String Data Hash 19" visible="true" offset="0x4DB"/>
+	<uint32 name="Unknown3" visible="true" offset="0x4DC"/>
+	<comment title="Locale  Globals 10"></comment>
+
+	<comment title="String  Reference  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x4E0"/>
+	<uint32 name="Value 1" visible="true" offset="0x4E4"/>
+	<comment title="String  Data  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x4E8"/>
+	<uint32 name="Value 1" visible="true" offset="0x4EC"/>
+	<int32 name="String Count" visible="true" offset="0x4F0"/>
+	<int32 name="Locale Table Size" visible="true" offset="0x4F4"/>
+	<uint32 name="Locale Index Table Address" visible="true" offset="0x4F8"/>
+	<uint32 name="Locale Data Index Address" visible="true" offset="0x4FC"/>
+	<uint8 name="Index Table Hash 0" visible="true" offset="0x500"/>
+	<uint8 name="Index Table Hash 1" visible="true" offset="0x501"/>
+	<uint8 name="Index Table Hash 2" visible="true" offset="0x502"/>
+	<uint8 name="Index Table Hash 3" visible="true" offset="0x503"/>
+	<uint8 name="Index Table Hash 4" visible="true" offset="0x504"/>
+	<uint8 name="Index Table Hash 5" visible="true" offset="0x505"/>
+	<uint8 name="Index Table Hash 6" visible="true" offset="0x506"/>
+	<uint8 name="Index Table Hash 7" visible="true" offset="0x507"/>
+	<uint8 name="Index Table Hash 8" visible="true" offset="0x508"/>
+	<uint8 name="Index Table Hash 9" visible="true" offset="0x509"/>
+	<uint8 name="Index Table Hash 10" visible="true" offset="0x50A"/>
+	<uint8 name="Index Table Hash 11" visible="true" offset="0x50B"/>
+	<uint8 name="Index Table Hash 12" visible="true" offset="0x50C"/>
+	<uint8 name="Index Table Hash 13" visible="true" offset="0x50D"/>
+	<uint8 name="Index Table Hash 14" visible="true" offset="0x50E"/>
+	<uint8 name="Index Table Hash 15" visible="true" offset="0x50F"/>
+	<uint8 name="Index Table Hash 16" visible="true" offset="0x510"/>
+	<uint8 name="Index Table Hash 17" visible="true" offset="0x511"/>
+	<uint8 name="Index Table Hash 18" visible="true" offset="0x512"/>
+	<uint8 name="Index Table Hash 19" visible="true" offset="0x513"/>
+	<uint8 name="String Data Hash 0" visible="true" offset="0x514"/>
+	<uint8 name="String Data Hash 1" visible="true" offset="0x515"/>
+	<uint8 name="String Data Hash 2" visible="true" offset="0x516"/>
+	<uint8 name="String Data Hash 3" visible="true" offset="0x517"/>
+	<uint8 name="String Data Hash 4" visible="true" offset="0x518"/>
+	<uint8 name="String Data Hash 5" visible="true" offset="0x519"/>
+	<uint8 name="String Data Hash 6" visible="true" offset="0x51A"/>
+	<uint8 name="String Data Hash 7" visible="true" offset="0x51B"/>
+	<uint8 name="String Data Hash 8" visible="true" offset="0x51C"/>
+	<uint8 name="String Data Hash 9" visible="true" offset="0x51D"/>
+	<uint8 name="String Data Hash 10" visible="true" offset="0x51E"/>
+	<uint8 name="String Data Hash 11" visible="true" offset="0x51F"/>
+	<uint8 name="String Data Hash 12" visible="true" offset="0x520"/>
+	<uint8 name="String Data Hash 13" visible="true" offset="0x521"/>
+	<uint8 name="String Data Hash 14" visible="true" offset="0x522"/>
+	<uint8 name="String Data Hash 15" visible="true" offset="0x523"/>
+	<uint8 name="String Data Hash 16" visible="true" offset="0x524"/>
+	<uint8 name="String Data Hash 17" visible="true" offset="0x525"/>
+	<uint8 name="String Data Hash 18" visible="true" offset="0x526"/>
+	<uint8 name="String Data Hash 19" visible="true" offset="0x527"/>
+	<uint32 name="Unknown3" visible="true" offset="0x528"/>
+	<comment title="Locale  Globals 11"></comment>
+
+	<comment title="String  Reference  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x52C"/>
+	<uint32 name="Value 1" visible="true" offset="0x530"/>
+	<comment title="String  Data  Address"></comment>
+
+	<uint32 name="Value 0" visible="true" offset="0x534"/>
+	<uint32 name="Value 1" visible="true" offset="0x538"/>
+	<int32 name="String Count" visible="true" offset="0x53C"/>
+	<int32 name="Locale Table Size" visible="true" offset="0x540"/>
+	<uint32 name="Locale Index Table Address" visible="true" offset="0x544"/>
+	<uint32 name="Locale Data Index Address" visible="true" offset="0x548"/>
+	<uint8 name="Index Table Hash 0" visible="true" offset="0x54C"/>
+	<uint8 name="Index Table Hash 1" visible="true" offset="0x54D"/>
+	<uint8 name="Index Table Hash 2" visible="true" offset="0x54E"/>
+	<uint8 name="Index Table Hash 3" visible="true" offset="0x54F"/>
+	<uint8 name="Index Table Hash 4" visible="true" offset="0x550"/>
+	<uint8 name="Index Table Hash 5" visible="true" offset="0x551"/>
+	<uint8 name="Index Table Hash 6" visible="true" offset="0x552"/>
+	<uint8 name="Index Table Hash 7" visible="true" offset="0x553"/>
+	<uint8 name="Index Table Hash 8" visible="true" offset="0x554"/>
+	<uint8 name="Index Table Hash 9" visible="true" offset="0x555"/>
+	<uint8 name="Index Table Hash 10" visible="true" offset="0x556"/>
+	<uint8 name="Index Table Hash 11" visible="true" offset="0x557"/>
+	<uint8 name="Index Table Hash 12" visible="true" offset="0x558"/>
+	<uint8 name="Index Table Hash 13" visible="true" offset="0x559"/>
+	<uint8 name="Index Table Hash 14" visible="true" offset="0x55A"/>
+	<uint8 name="Index Table Hash 15" visible="true" offset="0x55B"/>
+	<uint8 name="Index Table Hash 16" visible="true" offset="0x55C"/>
+	<uint8 name="Index Table Hash 17" visible="true" offset="0x55D"/>
+	<uint8 name="Index Table Hash 18" visible="true" offset="0x55E"/>
+	<uint8 name="Index Table Hash 19" visible="true" offset="0x55F"/>
+	<uint8 name="String Data Hash 0" visible="true" offset="0x560"/>
+	<uint8 name="String Data Hash 1" visible="true" offset="0x561"/>
+	<uint8 name="String Data Hash 2" visible="true" offset="0x562"/>
+	<uint8 name="String Data Hash 3" visible="true" offset="0x563"/>
+	<uint8 name="String Data Hash 4" visible="true" offset="0x564"/>
+	<uint8 name="String Data Hash 5" visible="true" offset="0x565"/>
+	<uint8 name="String Data Hash 6" visible="true" offset="0x566"/>
+	<uint8 name="String Data Hash 7" visible="true" offset="0x567"/>
+	<uint8 name="String Data Hash 8" visible="true" offset="0x568"/>
+	<uint8 name="String Data Hash 9" visible="true" offset="0x569"/>
+	<uint8 name="String Data Hash 10" visible="true" offset="0x56A"/>
+	<uint8 name="String Data Hash 11" visible="true" offset="0x56B"/>
+	<uint8 name="String Data Hash 12" visible="true" offset="0x56C"/>
+	<uint8 name="String Data Hash 13" visible="true" offset="0x56D"/>
+	<uint8 name="String Data Hash 14" visible="true" offset="0x56E"/>
+	<uint8 name="String Data Hash 15" visible="true" offset="0x56F"/>
+	<uint8 name="String Data Hash 16" visible="true" offset="0x570"/>
+	<uint8 name="String Data Hash 17" visible="true" offset="0x571"/>
+	<uint8 name="String Data Hash 18" visible="true" offset="0x572"/>
+	<uint8 name="String Data Hash 19" visible="true" offset="0x573"/>
+	<uint32 name="Unknown3" visible="true" offset="0x574"/>
+	<tagref name="Rasterizer Globals" visible="true" offset="0x578"/>
+	<tagref name="Default Camera Effect" visible="true" offset="0x588"/>
+	<tagref name="Podium Definition" visible="true" offset="0x598"/>
+	<tagref name="Default Wind" visible="true" offset="0x5A8"/>
+	<tagref name="Default Damage Effect" visible="true" offset="0x5B8"/>
+	<tagref name="Default Collision Damage" visible="true" offset="0x5C8"/>
+	<stringId name="Default Water Material" visible="true" offset="0x5D8"/>
+	<int16 name="Unknown Global Material Index" visible="true" offset="0x5DC"/>
+	<int16 name="Unknown265" visible="true" offset="0x5DE"/>
+	<tagref name="Effect Globals" visible="true" offset="0x5E0"/>
+	<tagref name="Game Progression Globals" visible="true" offset="0x5F0"/>
+	<tagref name="Achievement Globals" visible="true" offset="0x600"/>
+	<tagref name="Input Globals" visible="true" offset="0x610"/>
+	<float32 name="Unknown266" visible="true" offset="0x620"/>
+	<float32 name="Unknown267" visible="true" offset="0x624"/>
+	<float32 name="Unknown268" visible="true" offset="0x628"/>
+	<float32 name="Unknown269" visible="true" offset="0x62C"/>
+	<dataRef name="Unknown270" visible="true" offset="0x630"/>
+	<float32 name="Unknown271" visible="true" offset="0x644"/>
+	<float32 name="Unknown272" visible="true" offset="0x648"/>
+	<float32 name="Unknown273" visible="true" offset="0x64C"/>
+	<float32 name="Unknown274" visible="true" offset="0x650"/>
+	<float32 name="Unknown275" visible="true" offset="0x654"/>
+	<reflexive name="Damage Reporting Types" visible="true" offset="0x658" entrySize="0x24">
+		<int16 name="Index" visible="true" offset="0x0"/>
+		<int16 name="Version" visible="true" offset="0x2"/>
+		<ascii name="Name" visible="true" offset="0x4" length="0x20"/>
+	</reflexive>
+	<uint32 name="Unknown276" visible="true" offset="0x664"/>
+</plugin>

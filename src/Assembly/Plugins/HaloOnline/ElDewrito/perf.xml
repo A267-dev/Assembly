@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0xC">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Performance" visible="true" offset="0x0" entrySize="0x38">
+		<uint32 name="Flags" visible="true" offset="0x0"/>
+		<float32 name="Water" visible="true" offset="0x4"/>
+		<float32 name="Decorators" visible="true" offset="0x8"/>
+		<float32 name="Effects" visible="true" offset="0xC"/>
+		<float32 name="Instanced Geometry" visible="true" offset="0x10"/>
+		<float32 name="Object Fade" visible="true" offset="0x14"/>
+		<float32 name="Object Lod" visible="true" offset="0x18"/>
+		<float32 name="Decals" visible="true" offset="0x1C"/>
+		<int32 name="Cpu Light Count" visible="true" offset="0x20"/>
+		<float32 name="Cpu Light Quality" visible="true" offset="0x24"/>
+		<int32 name="Gpu Light Count" visible="true" offset="0x28"/>
+		<float32 name="Gpu Light Quality" visible="true" offset="0x2C"/>
+		<int32 name="Shadow Count" visible="true" offset="0x30"/>
+		<float32 name="Shadow Quality" visible="true" offset="0x34"/>
+	</reflexive>
+</plugin>

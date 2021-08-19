@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x94">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<bitfield32 name="Flags" visible="true" offset="0x0">
+		<bit name="Does Not Use Wind" index="0"/>
+		<bit name="Uses Grid Attach Top" index="1"/>
+	</bitfield32>
+	<stringId name="Marker Attachment Name" visible="true" offset="0x4"/>
+	<stringId name="Second Marker Attachment Name" visible="true" offset="0x8"/>
+	<tagref name="Shader" visible="true" offset="0xC"/>
+	<int16 name="Grid XDimension" visible="true" offset="0x1C"/>
+	<int16 name="Grid YDimension" visible="true" offset="0x1E"/>
+	<float32 name="Grid Spacing X" visible="true" offset="0x20"/>
+	<float32 name="Grid Spacing Y" visible="true" offset="0x24"/>
+	<reflexive name="Collision Spheres" visible="true" offset="0x28" entrySize="0x8">
+		<stringId name="Object Marker Name" visible="true" offset="0x0"/>
+		<float32 name="Radius" visible="true" offset="0x4"/>
+	</reflexive>
+	<comment title="Properties"></comment>
+
+	<enum16 name="Integration Type" visible="true" offset="0x34">
+		<option name="Verlet" value="0x0"/>
+	</enum16>
+	<int16 name="Number Iterations" visible="true" offset="0x36"/>
+	<float32 name="Weight" visible="true" offset="0x38"/>
+	<float32 name="Drag" visible="true" offset="0x3C"/>
+	<float32 name="Wind Scale" visible="true" offset="0x40"/>
+	<float32 name="Wind Flappiness Scale" visible="true" offset="0x44"/>
+	<float32 name="Longest Rod" visible="true" offset="0x48"/>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x4C"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x4D"/>
+	<uint8 name="Unused Padding 2" visible="false" offset="0x4E"/>
+	<uint8 name="Unused Padding 3" visible="false" offset="0x4F"/>
+	<uint8 name="Unused Padding 4" visible="false" offset="0x50"/>
+	<uint8 name="Unused Padding 5" visible="false" offset="0x51"/>
+	<uint8 name="Unused Padding 6" visible="false" offset="0x52"/>
+	<uint8 name="Unused Padding 7" visible="false" offset="0x53"/>
+	<uint8 name="Unused Padding 8" visible="false" offset="0x54"/>
+	<uint8 name="Unused Padding 9" visible="false" offset="0x55"/>
+	<uint8 name="Unused Padding 10" visible="false" offset="0x56"/>
+	<uint8 name="Unused Padding 11" visible="false" offset="0x57"/>
+	<uint8 name="Unused Padding 12" visible="false" offset="0x58"/>
+	<uint8 name="Unused Padding 13" visible="false" offset="0x59"/>
+	<uint8 name="Unused Padding 14" visible="false" offset="0x5A"/>
+	<uint8 name="Unused Padding 15" visible="false" offset="0x5B"/>
+	<uint8 name="Unused Padding 16" visible="false" offset="0x5C"/>
+	<uint8 name="Unused Padding 17" visible="false" offset="0x5D"/>
+	<uint8 name="Unused Padding 18" visible="false" offset="0x5E"/>
+	<uint8 name="Unused Padding 19" visible="false" offset="0x5F"/>
+	<uint8 name="Unused Padding 20" visible="false" offset="0x60"/>
+	<uint8 name="Unused Padding 21" visible="false" offset="0x61"/>
+	<uint8 name="Unused Padding 22" visible="false" offset="0x62"/>
+	<uint8 name="Unused Padding 23" visible="false" offset="0x63"/>
+	<reflexive name="Vertices" visible="true" offset="0x64" entrySize="0x14">
+		<vector3 name="Position" visible="true" offset="0x0"/>
+		<float name="Uv I" visible="true" offset="0xC"/>
+		<float name="Uv J" visible="true" offset="0x10"/>
+	</reflexive>
+	<reflexive name="Indices" visible="true" offset="0x70" entrySize="0x2">
+		<int16 name="int16" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Strip Indices" visible="true" offset="0x7C" entrySize="0x2">
+		<int16 name="int16" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Links" visible="true" offset="0x88" entrySize="0x8">
+		<int16 name="Index1" visible="true" offset="0x0"/>
+		<int16 name="Index2" visible="true" offset="0x2"/>
+		<float32 name="Default Distance" visible="true" offset="0x4"/>
+	</reflexive>
+</plugin>

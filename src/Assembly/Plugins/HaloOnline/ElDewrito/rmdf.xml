@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x5C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<tagref name="Render Method Options" visible="true" offset="0x0"/>
+	<reflexive name="Methods" visible="true" offset="0x10" entrySize="0x18">
+		<stringId name="Type" visible="true" offset="0x0"/>
+		<reflexive name="Shader Options" visible="true" offset="0x4" entrySize="0x1C">
+			<stringId name="Type" visible="true" offset="0x0"/>
+			<tagref name="Option" visible="true" offset="0x4"/>
+			<stringId name="Vertex Shader Option Macro Name" visible="true" offset="0x14"/>
+			<stringId name="Pixel Shader Option Macro Name" visible="true" offset="0x18"/>
+		</reflexive>
+		<stringId name="Vertex Shader Method Macro Name" visible="true" offset="0x10"/>
+		<stringId name="Pixel Shader Method Macro Name" visible="true" offset="0x14"/>
+	</reflexive>
+	<reflexive name="Draw Modes" visible="true" offset="0x1C" entrySize="0x10">
+		<int32 name="Mode" visible="true" offset="0x0"/>
+		<reflexive name="Unknown2" visible="true" offset="0x4" entrySize="0x10">
+			<uint32 name="Unknown" visible="true" offset="0x0"/>
+			<reflexive name="Unknown2" visible="true" offset="0x4" entrySize="0x4">
+				<uint32 name="Unknown" visible="true" offset="0x0"/>
+			</reflexive>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Vertices" visible="true" offset="0x28" entrySize="0x10">
+		<int16 name="Vertex Type" visible="true" offset="0x0"/>
+		<int16 name="Unknown2" visible="true" offset="0x2"/>
+		<uint32 name="Unknown3" visible="true" offset="0x4"/>
+		<uint32 name="Unknown4" visible="true" offset="0x8"/>
+		<uint32 name="Unknown5" visible="true" offset="0xC"/>
+	</reflexive>
+	<tagref name="Global Pixel Shader" visible="true" offset="0x34"/>
+	<tagref name="Global Vertex Shader" visible="true" offset="0x44"/>
+	<int32 name="Unknown2" visible="true" offset="0x54"/>
+	<int32 name="Unknown3" visible="true" offset="0x58"/>
+</plugin>

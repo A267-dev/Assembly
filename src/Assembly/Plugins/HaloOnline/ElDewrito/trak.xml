@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x14">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<bitfield8 name="Flags" visible="true" offset="0x0">
+		<bit name="Lens Enabled" index="0"/>
+	</bitfield8>
+	<uint8 name="Unused1 Padding 0" visible="false" offset="0x1"/>
+	<uint8 name="Unused1 Padding 1" visible="false" offset="0x2"/>
+	<uint8 name="Unused1 Padding 2" visible="false" offset="0x3"/>
+	<reflexive name="Camera Points" visible="true" offset="0x4" entrySize="0x1C">
+		<float name="Position I" visible="true" offset="0x0"/>
+		<float name="Position J" visible="true" offset="0x4"/>
+		<float name="Position K" visible="true" offset="0x8"/>
+		<float name="Orientation I" visible="true" offset="0xC"/>
+		<float name="Orientation J" visible="true" offset="0x10"/>
+		<float name="Orientation K" visible="true" offset="0x14"/>
+		<float name="Orientation W" visible="true" offset="0x18"/>
+	</reflexive>
+	<uint8 name="Unused2 Padding 0" visible="false" offset="0x10"/>
+	<uint8 name="Unused2 Padding 1" visible="false" offset="0x11"/>
+	<uint8 name="Unused2 Padding 2" visible="false" offset="0x12"/>
+	<uint8 name="Unused2 Padding 3" visible="false" offset="0x13"/>
+</plugin>

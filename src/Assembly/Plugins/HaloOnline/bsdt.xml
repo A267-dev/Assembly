@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x54">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<float32 name="Maximum Vitality" visible="true" offset="0x0"/>
+	<tagref name="Effect" visible="true" offset="0x4"/>
+	<tagref name="Sound" visible="true" offset="0x14"/>
+	<uint32 name="Unknown" visible="true" offset="0x24"/>
+	<uint32 name="Unknown2" visible="true" offset="0x28"/>
+	<uint32 name="Unknown3" visible="true" offset="0x2C"/>
+	<uint32 name="Unknown4" visible="true" offset="0x30"/>
+	<tagref name="Crack Bitmap" visible="true" offset="0x34"/>
+	<tagref name="Hole Bitmap" visible="true" offset="0x44"/>
+</plugin>

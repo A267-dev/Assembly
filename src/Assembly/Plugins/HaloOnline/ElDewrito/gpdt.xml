@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x44">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Integer Progression Value" visible="true" offset="0x0" entrySize="0x4">
+		<stringId name="Variable" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Boolean Progression Value" visible="true" offset="0xC" entrySize="0x4">
+		<stringId name="Variable" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Boolean Progression Regions" visible="true" offset="0x18" entrySize="0x4">
+		<int16 name="Start Index" visible="true" offset="0x0"/>
+		<int16 name="End Index" visible="true" offset="0x2"/>
+	</reflexive>
+	<reflexive name="Integer Progression Unknown" visible="true" offset="0x24" entrySize="0x4">
+		<int16 name="Integer Progression Index" visible="true" offset="0x0"/>
+		<uint8 name="Unused Padding 0" visible="false" offset="0x2"/>
+		<uint8 name="Unused Padding 1" visible="false" offset="0x3"/>
+	</reflexive>
+	<reflexive name="Map Progression Data" visible="true" offset="0x30" entrySize="0x124">
+		<stringId name="Internal Map Name" visible="true" offset="0x0"/>
+		<bitfield32 name="Flags" visible="true" offset="0x4">
+			<bit name="Bit0" index="0"/>
+			<bit name="Bit1" index="1"/>
+		</bitfield32>
+		<enum32 name="Map Progression Type" visible="true" offset="0x8">
+			<option name="Default" value="0x0"/>
+			<option name="Is Hub" value="0x1"/>
+			<option name="Returns To Hub" value="0x2"/>
+		</enum32>
+		<tagref name="Scenario Unused" visible="true" offset="0xC"/>
+		<int32 name="Map Id" visible="true" offset="0x1C"/>
+		<int32 name="Campaign Id" visible="true" offset="0x20"/>
+		<ascii name="Scenario Path" visible="true" offset="0x24" length="0x100"/>
+	</reflexive>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x3C"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x3D"/>
+	<uint8 name="Unused Padding 2" visible="false" offset="0x3E"/>
+	<uint8 name="Unused Padding 3" visible="false" offset="0x3F"/>
+	<uint8 name="Unused Padding 4" visible="false" offset="0x40"/>
+	<uint8 name="Unused Padding 5" visible="false" offset="0x41"/>
+	<uint8 name="Unused Padding 6" visible="false" offset="0x42"/>
+	<uint8 name="Unused Padding 7" visible="false" offset="0x43"/>
+</plugin>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x194">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<int8 name="Unknown1" visible="true" offset="0x0"/>
+	<int8 name="Unknown2" visible="true" offset="0x1"/>
+	<int8 name="Unknown3" visible="true" offset="0x2"/>
+	<int8 name="Unknown4" visible="true" offset="0x3"/>
+	<comment title="Ping"></comment>
+
+	<float32 name="Ping Distance" visible="true" offset="0x4"/>
+	<float32 name="Vision Through Walls Distance" visible="true" offset="0x8"/>
+	<float32 name="Ping Interval" visible="true" offset="0xC"/>
+	<float32 name="Ping Pulse Duration" visible="true" offset="0x10"/>
+	<float32 name="Unused" visible="true" offset="0x14"/>
+	<float32 name="Ping Delay Seconds" visible="true" offset="0x18"/>
+	<comment title="Vehicle  Ping"></comment>
+
+	<float32 name="Ping Distance" visible="true" offset="0x1C"/>
+	<float32 name="Vision Through Walls Distance" visible="true" offset="0x20"/>
+	<float32 name="Ping Interval" visible="true" offset="0x24"/>
+	<float32 name="Ping Pulse Duration" visible="true" offset="0x28"/>
+	<float32 name="Unused" visible="true" offset="0x2C"/>
+	<float32 name="Ping Delay Seconds" visible="true" offset="0x30"/>
+	<comment title="Observer  Ping"></comment>
+
+	<float32 name="Ping Distance" visible="true" offset="0x34"/>
+	<float32 name="Vision Through Walls Distance" visible="true" offset="0x38"/>
+	<float32 name="Ping Interval" visible="true" offset="0x3C"/>
+	<float32 name="Ping Pulse Duration" visible="true" offset="0x40"/>
+	<float32 name="Unused" visible="true" offset="0x44"/>
+	<float32 name="Ping Delay Seconds" visible="true" offset="0x48"/>
+	<tagref name="Ping Sound" visible="true" offset="0x4C"/>
+	<comment title="Weapon  Ping  Color"></comment>
+
+	<dataRef name="Primary Colour Function" visible="true" offset="0x5C"/>
+	<dataRef name="Secondary Colour Function" visible="true" offset="0x70"/>
+	<float32 name="Alpha" visible="true" offset="0x84"/>
+	<float32 name="Primary Color Scale" visible="true" offset="0x88"/>
+	<float32 name="Secondary Colour Scale" visible="true" offset="0x8C"/>
+	<float32 name="Overlapping Dimming Factor" visible="true" offset="0x90"/>
+	<comment title="Ally  Ping  Color"></comment>
+
+	<dataRef name="Primary Colour Function" visible="true" offset="0x94"/>
+	<dataRef name="Secondary Colour Function" visible="true" offset="0xA8"/>
+	<float32 name="Alpha" visible="true" offset="0xBC"/>
+	<float32 name="Primary Color Scale" visible="true" offset="0xC0"/>
+	<float32 name="Secondary Colour Scale" visible="true" offset="0xC4"/>
+	<float32 name="Overlapping Dimming Factor" visible="true" offset="0xC8"/>
+	<comment title="Enemy  Ping  Color"></comment>
+
+	<dataRef name="Primary Colour Function" visible="true" offset="0xCC"/>
+	<dataRef name="Secondary Colour Function" visible="true" offset="0xE0"/>
+	<float32 name="Alpha" visible="true" offset="0xF4"/>
+	<float32 name="Primary Color Scale" visible="true" offset="0xF8"/>
+	<float32 name="Secondary Colour Scale" visible="true" offset="0xFC"/>
+	<float32 name="Overlapping Dimming Factor" visible="true" offset="0x100"/>
+	<comment title="Objective  Ping  Color"></comment>
+
+	<dataRef name="Primary Colour Function" visible="true" offset="0x104"/>
+	<dataRef name="Secondary Colour Function" visible="true" offset="0x118"/>
+	<float32 name="Alpha" visible="true" offset="0x12C"/>
+	<float32 name="Primary Color Scale" visible="true" offset="0x130"/>
+	<float32 name="Secondary Colour Scale" visible="true" offset="0x134"/>
+	<float32 name="Overlapping Dimming Factor" visible="true" offset="0x138"/>
+	<comment title="Environment  Ping  Color"></comment>
+
+	<dataRef name="Primary Colour Function" visible="true" offset="0x13C"/>
+	<dataRef name="Secondary Colour Function" visible="true" offset="0x150"/>
+	<float32 name="Alpha" visible="true" offset="0x164"/>
+	<float32 name="Primary Color Scale" visible="true" offset="0x168"/>
+	<float32 name="Secondary Colour Scale" visible="true" offset="0x16C"/>
+	<float32 name="Overlapping Dimming Factor" visible="true" offset="0x170"/>
+	<tagref name="Vision Mask" visible="true" offset="0x174"/>
+	<tagref name="Vision Camera Fx" visible="true" offset="0x184"/>
+</plugin>

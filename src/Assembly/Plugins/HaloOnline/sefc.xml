@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0xC">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Screen Effects" visible="true" offset="0x0" entrySize="0x9C">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<bitfield16 name="Flags_ HO" visible="true" offset="0x4">
+			<bit name="Debug Disable" index="0"/>
+			<bit name="Allow Effect Outside Radius" index="1"/>
+			<bit name="First Person Only" index="2"/>
+			<bit name="Third Person Only" index="3"/>
+			<bit name="Disable Cinematic Camera Falloffs" index="4"/>
+			<bit name="Only Affects Attached Object" index="5"/>
+			<bit name="Draw Precisely One" index="6"/>
+			<bit name="Use Player Travel Direction" index="7"/>
+			<bit name="Bit8" index="8"/>
+			<bit name="Use Name As String IDInput" index="9"/>
+			<bit name="Invert String IDInput" index="10"/>
+		</bitfield16>
+		<bitfield16 name="Hidden Flags" visible="true" offset="0x6">
+			<bit name="Update Thread" index="0"/>
+			<bit name="Render Thread" index="1"/>
+		</bitfield16>
+		<float32 name="Maximum Distance" visible="true" offset="0x8"/>
+		<dataRef name="Distance Falloff Function" visible="true" offset="0xC"/>
+		<float32 name="Duration" visible="true" offset="0x20"/>
+		<dataRef name="Time Evolution Function" visible="true" offset="0x24"/>
+		<dataRef name="Angle Falloff Function" visible="true" offset="0x38"/>
+		<float32 name="Light Intensity" visible="true" offset="0x4C"/>
+		<float32 name="Primary Hue" visible="true" offset="0x50"/>
+		<float32 name="Secondary Hue" visible="true" offset="0x54"/>
+		<float32 name="Saturation" visible="true" offset="0x58"/>
+		<float32 name="Desaturation" visible="true" offset="0x5C"/>
+		<float32 name="Gamma Increase" visible="true" offset="0x60"/>
+		<float32 name="Gamma Decrease" visible="true" offset="0x64"/>
+		<float32 name="Shadow Brightness" visible="true" offset="0x68"/>
+		<colorf name="Color Filter" visible="true" offset="0x6C" format="rgb"/>
+		<colorf name="Color Floor" visible="true" offset="0x78" format="rgb"/>
+		<float32 name="Vision" visible="true" offset="0x84"/>
+		<float32 name="Screen Shake" visible="true" offset="0x88"/>
+		<tagref name="Screen Shader" visible="true" offset="0x8C"/>
+	</reflexive>
+</plugin>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0xB4">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<uint32 name="Scenes Flags" visible="true" offset="0x0"/>
+	<uint32 name="Scenes Expanded Flags" visible="true" offset="0x4"/>
+	<reflexive name="Shots" visible="true" offset="0x8" entrySize="0x4">
+		<uint32 name="Shot Flags" visible="true" offset="0x0"/>
+	</reflexive>
+	<tagref name="Scenario" visible="true" offset="0x14"/>
+	<int32 name="Zoneset" visible="true" offset="0x24"/>
+	<stringId name="Name" visible="true" offset="0x28"/>
+	<int16 name="Unknown1" visible="true" offset="0x2C"/>
+	<uint8 name="Unused Padding Padding 0" visible="false" offset="0x2E"/>
+	<uint8 name="Unused Padding Padding 1" visible="false" offset="0x2F"/>
+	<int32 name="Unknown2" visible="true" offset="0x30"/>
+	<int32 name="Unknown3" visible="true" offset="0x34"/>
+	<int32 name="Unknown4" visible="true" offset="0x38"/>
+	<float32 name="Unknown5" visible="true" offset="0x3C"/>
+	<float32 name="Unknown6" visible="true" offset="0x40"/>
+	<float32 name="Unknown7" visible="true" offset="0x44"/>
+	<int32 name="Unknown8" visible="true" offset="0x48"/>
+	<int32 name="Unknown9" visible="true" offset="0x4C"/>
+	<int32 name="Unknown10" visible="true" offset="0x50"/>
+	<int32 name="Unknown11" visible="true" offset="0x54"/>
+	<int32 name="Unknown12" visible="true" offset="0x58"/>
+	<tagref name="Unknown13" visible="true" offset="0x5C"/>
+	<dataRef name="Import Script Header" visible="true" offset="0x6C"/>
+	<reflexive name="Cinematic Scenes" visible="true" offset="0x80" entrySize="0x10">
+		<tagref name="Instance" visible="true" offset="0x0"/>
+	</reflexive>
+	<dataRef name="Import Script Footer" visible="true" offset="0x8C"/>
+	<dataRef name="Import Script Skip" visible="true" offset="0xA0"/>
+</plugin>

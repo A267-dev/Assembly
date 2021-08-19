@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x10">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Global Tags" visible="true" offset="0x0" entrySize="0x10">
+		<tagref name="Instance" visible="true" offset="0x0"/>
+	</reflexive>
+	<uint8 name="Unused Padding 0" visible="false" offset="0xC"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0xD"/>
+	<uint8 name="Unused Padding 2" visible="false" offset="0xE"/>
+	<uint8 name="Unused Padding 3" visible="false" offset="0xF"/>
+</plugin>

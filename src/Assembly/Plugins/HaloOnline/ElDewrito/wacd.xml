@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x280">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<tagref name="Unknown" visible="true" offset="0x0"/>
+	<tagref name="Unknown2" visible="true" offset="0x10"/>
+	<tagref name="Unknown3" visible="true" offset="0x20"/>
+	<tagref name="Unknown4" visible="true" offset="0x30"/>
+	<tagref name="Unknown5" visible="true" offset="0x40"/>
+	<tagref name="Unknown6" visible="true" offset="0x50"/>
+	<tagref name="Unknown7" visible="true" offset="0x60"/>
+	<tagref name="Unknown8" visible="true" offset="0x70"/>
+	<tagref name="Unknown9" visible="true" offset="0x80"/>
+	<tagref name="Unknown10" visible="true" offset="0x90"/>
+	<tagref name="Unknown11" visible="true" offset="0xA0"/>
+	<tagref name="Unknown12" visible="true" offset="0xB0"/>
+	<tagref name="Unknown13" visible="true" offset="0xC0"/>
+	<tagref name="Unknown14" visible="true" offset="0xD0"/>
+	<tagref name="Focus" visible="true" offset="0xE0"/>
+	<tagref name="Unfocus" visible="true" offset="0xF0"/>
+	<tagref name="Unknown17" visible="true" offset="0x100"/>
+	<tagref name="Unknown18" visible="true" offset="0x110"/>
+	<tagref name="Unknown19" visible="true" offset="0x120"/>
+	<tagref name="Unknown20" visible="true" offset="0x130"/>
+	<tagref name="Unknown21" visible="true" offset="0x140"/>
+	<tagref name="Unknown22" visible="true" offset="0x150"/>
+	<tagref name="Unknown23" visible="true" offset="0x160"/>
+	<tagref name="Unknown24" visible="true" offset="0x170"/>
+	<tagref name="Unknown25" visible="true" offset="0x180"/>
+	<tagref name="Unknown26" visible="true" offset="0x190"/>
+	<tagref name="Unknown27" visible="true" offset="0x1A0"/>
+	<tagref name="Unknown28" visible="true" offset="0x1B0"/>
+	<tagref name="Unknown29" visible="true" offset="0x1C0"/>
+	<tagref name="Unknown30" visible="true" offset="0x1D0"/>
+	<tagref name="Unknown31" visible="true" offset="0x1E0"/>
+	<tagref name="Unknown32" visible="true" offset="0x1F0"/>
+	<tagref name="Unknown33" visible="true" offset="0x200"/>
+	<tagref name="Unknown34" visible="true" offset="0x210"/>
+	<tagref name="Unknown35" visible="true" offset="0x220"/>
+	<tagref name="Unknown36" visible="true" offset="0x230"/>
+	<tagref name="Unknown37" visible="true" offset="0x240"/>
+	<tagref name="Unknown38" visible="true" offset="0x250"/>
+	<tagref name="Unknown39" visible="true" offset="0x260"/>
+	<tagref name="Unknown40" visible="true" offset="0x270"/>
+</plugin>

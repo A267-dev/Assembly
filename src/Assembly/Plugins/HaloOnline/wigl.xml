@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x3BC">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<int16 name="Inc Text Update Period" visible="true" offset="0x0"/>
+	<int16 name="Inc Text Block Character" visible="true" offset="0x2"/>
+	<float32 name="Near Clip Plane Distance" visible="true" offset="0x4"/>
+	<float32 name="Projection Plane Distance" visible="true" offset="0x8"/>
+	<float32 name="Far Clip Plane Distance" visible="true" offset="0xC"/>
+	<tagref name="Global Strings" visible="true" offset="0x10"/>
+	<tagref name="Damage Type Strings" visible="true" offset="0x20"/>
+	<tagref name="Main Menu Music" visible="true" offset="0x30"/>
+	<int32 name="Music Fade Time" visible="true" offset="0x40"/>
+	<colorf name="Default Text Color" visible="true" offset="0x44" format="argb"/>
+	<colorf name="Default Text Shadow Color" visible="true" offset="0x54" format="argb"/>
+	<reflexive name="Text Colors" visible="true" offset="0x64" entrySize="0x14">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<colorf name="Color" visible="true" offset="0x4" format="argb"/>
+	</reflexive>
+	<reflexive name="Player Colors" visible="true" offset="0x70" entrySize="0x30">
+		<reflexive name="Player Text Color" visible="true" offset="0x0" entrySize="0x10">
+			<colorf name="Color" visible="true" offset="0x0" format="argb"/>
+		</reflexive>
+		<reflexive name="Team Text Color" visible="true" offset="0xC" entrySize="0x10">
+			<colorf name="Color" visible="true" offset="0x0" format="argb"/>
+		</reflexive>
+		<reflexive name="Player Ui Color" visible="true" offset="0x18" entrySize="0x10">
+			<colorf name="Color" visible="true" offset="0x0" format="argb"/>
+		</reflexive>
+		<reflexive name="Team Ui Color" visible="true" offset="0x24" entrySize="0x10">
+			<colorf name="Color" visible="true" offset="0x0" format="argb"/>
+		</reflexive>
+	</reflexive>
+	<tagref name="Ui Sounds" visible="true" offset="0x7C"/>
+	<reflexive name="Alerts" visible="true" offset="0x8C" entrySize="0x10">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<uint8 name="Flags" visible="true" offset="0x4"/>
+		<int8 name="Unknown" visible="true" offset="0x5"/>
+		<enum8 name="Icon" visible="true" offset="0x6">
+			<option name="None" value="0x0"/>
+			<option name="Download" value="0x1"/>
+			<option name="Pause" value="0x2"/>
+			<option name="Upload" value="0x3"/>
+			<option name="Checkbox" value="0x4"/>
+		</enum8>
+		<int8 name="Unknown2" visible="true" offset="0x7"/>
+		<stringId name="Title" visible="true" offset="0x8"/>
+		<stringId name="Body" visible="true" offset="0xC"/>
+	</reflexive>
+	<reflexive name="Dialogs" visible="true" offset="0x98" entrySize="0x28">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<int16 name="Unknown" visible="true" offset="0x4"/>
+		<int16 name="Unknown2" visible="true" offset="0x6"/>
+		<stringId name="Title" visible="true" offset="0x8"/>
+		<stringId name="Body" visible="true" offset="0xC"/>
+		<stringId name="Option1" visible="true" offset="0x10"/>
+		<stringId name="Option2" visible="true" offset="0x14"/>
+		<stringId name="Option3" visible="true" offset="0x18"/>
+		<stringId name="Option4" visible="true" offset="0x1C"/>
+		<stringId name="Key Legend" visible="true" offset="0x20"/>
+		<enum16 name="Default Option" visible="true" offset="0x24">
+			<option name="Option1" value="0x0"/>
+			<option name="Option2" value="0x1"/>
+			<option name="Option3" value="0x2"/>
+			<option name="Option4" value="0x3"/>
+		</enum16>
+		<int16 name="Unknown3" visible="true" offset="0x26"/>
+	</reflexive>
+	<reflexive name="Global Data Sources" visible="true" offset="0xA4" entrySize="0x10">
+		<tagref name="Data Source" visible="true" offset="0x0"/>
+	</reflexive>
+	<float name="Widescreen Bitmap Scale X" visible="true" offset="0xB0"/>
+	<float name="Widescreen Bitmap Scale Y" visible="true" offset="0xB4"/>
+	<float name="Standard Bitmap Scale X" visible="true" offset="0xB8"/>
+	<float name="Standard Bitmap Scale Y" visible="true" offset="0xBC"/>
+	<float name="Menu Blur X" visible="true" offset="0xC0"/>
+	<float name="Menu Blur Y" visible="true" offset="0xC4"/>
+	<reflexive name="Ui Widget Bipeds" visible="true" offset="0xC8" entrySize="0x154">
+		<ascii name="Appearance Biped Name" visible="true" offset="0x0" length="0x20"/>
+		<ascii name="Appearance Ai Squad Name" visible="true" offset="0x20" length="0x20"/>
+		<stringId name="Appearance Ai Location Name" visible="true" offset="0x40"/>
+		<ascii name="Roster Player1 Biped Name" visible="true" offset="0x44" length="0x20"/>
+		<ascii name="Roster Player1 Ai Squad Name" visible="true" offset="0x64" length="0x20"/>
+		<stringId name="Roster Player1 Ai Location Name" visible="true" offset="0x84"/>
+		<ascii name="Roster Player2 Biped Name" visible="true" offset="0x88" length="0x20"/>
+		<ascii name="Roster Player2 Ai Squad Name" visible="true" offset="0xA8" length="0x20"/>
+		<stringId name="Roster Player2 Ai Location Name" visible="true" offset="0xC8"/>
+		<ascii name="Roster Player3 Biped Name" visible="true" offset="0xCC" length="0x20"/>
+		<ascii name="Roster Player3 Ai Squad Name" visible="true" offset="0xEC" length="0x20"/>
+		<stringId name="Roster Player3 Ai Location Name" visible="true" offset="0x10C"/>
+		<ascii name="Roster Player4 Biped Name" visible="true" offset="0x110" length="0x20"/>
+		<ascii name="Roster Player4 Ai Squad Name" visible="true" offset="0x130" length="0x20"/>
+		<stringId name="Roster Player4 Ai Location Name" visible="true" offset="0x150"/>
+	</reflexive>
+	<stringId name="Unknown Player1" visible="true" offset="0xD4"/>
+	<stringId name="Unknown Player2" visible="true" offset="0xD8"/>
+	<stringId name="Unknown Player3" visible="true" offset="0xDC"/>
+	<stringId name="Unknown Player4" visible="true" offset="0xE0"/>
+	<ascii name="Ui Elite Biped Name" visible="true" offset="0xE4" length="0x20"/>
+	<ascii name="Ui Elite Ai Squad Name" visible="true" offset="0x104" length="0x20"/>
+	<stringId name="Ui Elite Ai Location Name" visible="true" offset="0x124"/>
+	<ascii name="Ui Odst1 Biped Name" visible="true" offset="0x128" length="0x20"/>
+	<ascii name="Ui Odst1 Ai Squad Name" visible="true" offset="0x148" length="0x20"/>
+	<stringId name="Ui Odst1 Ai Location Name" visible="true" offset="0x168"/>
+	<ascii name="Ui Mickey Biped Name" visible="true" offset="0x16C" length="0x20"/>
+	<ascii name="Ui Mickey Ai Squad Name" visible="true" offset="0x18C" length="0x20"/>
+	<stringId name="Ui Mickey Ai Location Name" visible="true" offset="0x1AC"/>
+	<ascii name="Ui Romeo Biped Name" visible="true" offset="0x1B0" length="0x20"/>
+	<ascii name="Ui Romeo Ai Squad Name" visible="true" offset="0x1D0" length="0x20"/>
+	<stringId name="Ui Romeo Ai Location Name" visible="true" offset="0x1F0"/>
+	<ascii name="Ui Dutch Biped Name" visible="true" offset="0x1F4" length="0x20"/>
+	<ascii name="Ui Dutch Ai Squad Name" visible="true" offset="0x214" length="0x20"/>
+	<stringId name="Ui Dutch Ai Location Name" visible="true" offset="0x234"/>
+	<ascii name="Ui Johnson Biped Name" visible="true" offset="0x238" length="0x20"/>
+	<ascii name="Ui Johnson Ai Squad Name" visible="true" offset="0x258" length="0x20"/>
+	<stringId name="Ui Johnson Ai Location Name" visible="true" offset="0x278"/>
+	<ascii name="Ui Odst2 Biped Name" visible="true" offset="0x27C" length="0x20"/>
+	<ascii name="Ui Odst2 Ai Squad Name" visible="true" offset="0x29C" length="0x20"/>
+	<stringId name="Ui Odst2 Ai Location Name" visible="true" offset="0x2BC"/>
+	<ascii name="Ui Odst3 Biped Name" visible="true" offset="0x2C0" length="0x20"/>
+	<ascii name="Ui Odst3 Ai Squad Name" visible="true" offset="0x2E0" length="0x20"/>
+	<stringId name="Ui Odst3 Ai Location Name" visible="true" offset="0x300"/>
+	<ascii name="Ui Odst4 Biped Name" visible="true" offset="0x304" length="0x20"/>
+	<ascii name="Ui Odst4 Ai Squad Name" visible="true" offset="0x324" length="0x20"/>
+	<stringId name="Ui Odst4 Ai Location Name" visible="true" offset="0x344"/>
+	<int32 name="Single Scroll Speed" visible="true" offset="0x348"/>
+	<int32 name="Scroll Speed Transition Wait Time" visible="true" offset="0x34C"/>
+	<int32 name="Held Scroll Speed" visible="true" offset="0x350"/>
+	<int32 name="Attract Video Idle Wait" visible="true" offset="0x354"/>
+	<dataRef name="Pda Waypoint Scale Function" visible="true" offset="0x358"/>
+	<uint32 name="Pda Waypoint Jump Speed" visible="true" offset="0x36C"/>
+	<uint32 name="Pda Unknown A" visible="true" offset="0x370"/>
+	<uint32 name="Pda Offscreen Player Arrow Radius" visible="true" offset="0x374"/>
+	<uint32 name="Pda Unknown B" visible="true" offset="0x378"/>
+	<uint32 name="Pda Ai Waypoint Radius" visible="true" offset="0x37C"/>
+	<colorf name="Pda Color A" visible="true" offset="0x380" format="argb"/>
+	<colorf name="Pda Color B" visible="true" offset="0x390" format="argb"/>
+	<stringId name="Pda Poi Waypoint Prefix" visible="true" offset="0x3A0"/>
+	<stringId name="Pda Poi Waypoint Suffix" visible="true" offset="0x3A4"/>
+	<uint32 name="Pda Brief Open Threshold" visible="true" offset="0x3A8"/>
+	<uint32 name="Unknown C" visible="true" offset="0x3AC"/>
+	<reflexive name="ARG" visible="true" offset="0x3B0" entrySize="0x24">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<tagref name="Audio" visible="true" offset="0x4"/>
+		<tagref name="Timing" visible="true" offset="0x14"/>
+	</reflexive>
+</plugin>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x78">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<stringId name="Name" visible="true" offset="0x0"/>
+	<ascii name="Anchor Name" visible="true" offset="0x4" length="0x20"/>
+	<uint32 name="Unknown1" visible="true" offset="0x24"/>
+	<dataRef name="Import Script Header" visible="true" offset="0x28"/>
+	<reflexive name="Objects" visible="true" offset="0x3C" entrySize="0x74">
+		<ascii name="Import Name" visible="true" offset="0x0" length="0x20"/>
+		<stringId name="Identifier" visible="true" offset="0x20"/>
+		<stringId name="Variant Name" visible="true" offset="0x24"/>
+		<tagref name="Puppet Animation" visible="true" offset="0x28"/>
+		<tagref name="Puppet Object" visible="true" offset="0x38"/>
+		<bitfield32 name="Flags" visible="true" offset="0x48">
+			<bit name="Placed Manually In Sapien" index="0"/>
+			<bit name="Object Comes From Game" index="1"/>
+			<bit name="Special Case Like Player0" index="2"/>
+			<bit name="Effect Object" index="3"/>
+			<bit name="No Lightmap Shadow" index="4"/>
+			<bit name="Apply Player Customization" index="5"/>
+			<bit name="Apply First Person Player Customization" index="6"/>
+			<bit name="Iwillanimatethe Englishlipsyncmanually" index="7"/>
+			<bit name="Primary Cortana" index="8"/>
+			<bit name="Preload Textures" index="9"/>
+		</bitfield32>
+		<int32 name="Unknown Shot Flags" visible="true" offset="0x4C"/>
+		<bitfield32 name="Override Creation Flags" visible="true" offset="0x50">
+			<bit name="Single Player" index="0"/>
+			<bit name="Two Player Coop" index="1"/>
+			<bit name="Three Player Coop" index="2"/>
+			<bit name="Four Player Coop" index="3"/>
+		</bitfield32>
+		<dataRef name="Import Override Creation Script" visible="true" offset="0x54"/>
+		<reflexive name="Attachments" visible="true" offset="0x68" entrySize="0x38">
+			<stringId name="Object Marker Name" visible="true" offset="0x0"/>
+			<ascii name="Attachment Object Name" visible="true" offset="0x4" length="0x20"/>
+			<stringId name="Attachment Marker Name" visible="true" offset="0x24"/>
+			<tagref name="Attachment Type" visible="true" offset="0x28"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Shots" visible="true" offset="0x48" entrySize="0xBC">
+		<dataRef name="Import Script Header" visible="true" offset="0x0"/>
+		<bitfield32 name="Flags" visible="true" offset="0x14">
+			<bit name="Instant Auto Exposure" index="0"/>
+			<bit name="Force Exposure" index="1"/>
+			<bit name="Generate Looping Script" index="2"/>
+		</bitfield32>
+		<float32 name="Environment Darken" visible="true" offset="0x18"/>
+		<float32 name="Forced Exposure" visible="true" offset="0x1C"/>
+		<reflexive name="Lighting" visible="true" offset="0x20" entrySize="0x1C">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Persists Across Shots" index="0"/>
+			</bitfield32>
+			<tagref name="Cinematic Light" visible="true" offset="0x4"/>
+			<int32 name="Object Index" visible="true" offset="0x14"/>
+			<stringId name="Marker" visible="true" offset="0x18"/>
+		</reflexive>
+		<reflexive name="Clips" visible="true" offset="0x2C" entrySize="0x2C">
+			<vector3 name="Plane Center" visible="true" offset="0x0"/>
+			<vector3 name="Plane Direction" visible="true" offset="0xC"/>
+			<uint32 name="Frame Start" visible="true" offset="0x18"/>
+			<uint32 name="Frame End" visible="true" offset="0x1C"/>
+			<reflexive name="Objects" visible="true" offset="0x20" entrySize="0x4">
+				<uint32 name="Object Index" visible="true" offset="0x0"/>
+			</reflexive>
+		</reflexive>
+		<reflexive name="Dialogue" visible="true" offset="0x38" entrySize="0x24">
+			<tagref name="Sound" visible="true" offset="0x0"/>
+			<int32 name="Frame" visible="true" offset="0x10"/>
+			<float32 name="Scale" visible="true" offset="0x14"/>
+			<stringId name="Lipsync Actor" visible="true" offset="0x18"/>
+			<stringId name="Default Sound Effect" visible="true" offset="0x1C"/>
+			<stringId name="Subtitle" visible="true" offset="0x20"/>
+		</reflexive>
+		<reflexive name="Music" visible="true" offset="0x44" entrySize="0x18">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Stop Music At Frame Rather Than Starting It" index="0"/>
+			</bitfield32>
+			<tagref name="Sound" visible="true" offset="0x4"/>
+			<int32 name="Frame" visible="true" offset="0x14"/>
+		</reflexive>
+		<reflexive name="Effects" visible="true" offset="0x50" entrySize="0x1C">
+			<tagref name="Effect" visible="true" offset="0x0"/>
+			<int32 name="Frame" visible="true" offset="0x10"/>
+			<stringId name="Marker" visible="true" offset="0x14"/>
+			<int32 name="Owner Object Index" visible="true" offset="0x18"/>
+		</reflexive>
+		<reflexive name="Functions" visible="true" offset="0x5C" entrySize="0x14">
+			<int32 name="Object Index" visible="true" offset="0x0"/>
+			<stringId name="Target Function Name" visible="true" offset="0x4"/>
+			<reflexive name="Key Frames" visible="true" offset="0x8" entrySize="0x10">
+				<bitfield32 name="Flags" visible="true" offset="0x0">
+					<bit name="Clear Function" index="0"/>
+				</bitfield32>
+				<int32 name="Frame" visible="true" offset="0x4"/>
+				<float32 name="Value" visible="true" offset="0x8"/>
+				<float32 name="Interpolation Time" visible="true" offset="0xC"/>
+			</reflexive>
+		</reflexive>
+		<reflexive name="Screen Effects" visible="true" offset="0x68" entrySize="0x18">
+			<tagref name="Screen Effect" visible="true" offset="0x0"/>
+			<int32 name="Start Frame" visible="true" offset="0x10"/>
+			<int32 name="Stop Frame" visible="true" offset="0x14"/>
+		</reflexive>
+		<reflexive name="Cortana Effects" visible="true" offset="0x74" entrySize="0x14">
+			<tagref name="Cortana Effect" visible="true" offset="0x0"/>
+			<uint32 name="Unknown" visible="true" offset="0x10"/>
+		</reflexive>
+		<reflexive name="Import Scripts" visible="true" offset="0x80" entrySize="0x18">
+			<int32 name="Frame" visible="true" offset="0x0"/>
+			<dataRef name="Import Script" visible="true" offset="0x4"/>
+		</reflexive>
+		<reflexive name="User Input Constraints" visible="true" offset="0x8C" entrySize="0x14">
+			<int32 name="Frame" visible="true" offset="0x0"/>
+			<int32 name="Ticks" visible="true" offset="0x4"/>
+			<int16 name="Maximum Look Angles Top" visible="true" offset="0x8"/>
+			<int16 name="Maximum Look Angles Left" visible="true" offset="0xA"/>
+			<int16 name="Maximum Look Angles Bottom" visible="true" offset="0xC"/>
+			<int16 name="Maximum Look Angles Right" visible="true" offset="0xE"/>
+			<float32 name="Frictional Force" visible="true" offset="0x10"/>
+		</reflexive>
+		<dataRef name="Import Script Footer" visible="true" offset="0x98"/>
+		<int32 name="Frame Count" visible="true" offset="0xAC"/>
+		<reflexive name="Camera Frames" visible="true" offset="0xB0" entrySize="0x44">
+			<vector3 name="Camera Position" visible="true" offset="0x0"/>
+			<float name="Camera Forward I" visible="true" offset="0xC"/>
+			<float name="Camera Forward J" visible="true" offset="0x10"/>
+			<float name="Camera Forward K" visible="true" offset="0x14"/>
+			<float name="Camera Up I" visible="true" offset="0x18"/>
+			<float name="Camera Up J" visible="true" offset="0x1C"/>
+			<float name="Camera Up K" visible="true" offset="0x20"/>
+			<float32 name="Unknown7" visible="true" offset="0x24"/>
+			<float32 name="Unknown8" visible="true" offset="0x28"/>
+			<float32 name="Focal Length" visible="true" offset="0x2C"/>
+			<bitfield32 name="Flags" visible="true" offset="0x30">
+				<bit name="Enable Depth Of Field" index="0"/>
+			</bitfield32>
+			<float32 name="Near Focal Plane Distance" visible="true" offset="0x34"/>
+			<float32 name="Far Focal Plane Distance" visible="true" offset="0x38"/>
+			<float32 name="Focal Depth" visible="true" offset="0x3C"/>
+			<float32 name="Blur Amount" visible="true" offset="0x40"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Texture Cameras" visible="true" offset="0x54" entrySize="0x14">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<stringId name="Unknown" visible="true" offset="0x4"/>
+		<reflexive name="Shots" visible="true" offset="0x8" entrySize="0xC">
+			<reflexive name="Frames" visible="true" offset="0x0" entrySize="0x48">
+				<uint32 name="Unknown Index" visible="true" offset="0x0"/>
+				<comment title="Camera  Frame"></comment>
+
+				<vector3 name="Camera Position" visible="true" offset="0x4"/>
+				<float name="Camera Forward I" visible="true" offset="0x10"/>
+				<float name="Camera Forward J" visible="true" offset="0x14"/>
+				<float name="Camera Forward K" visible="true" offset="0x18"/>
+				<float name="Camera Up I" visible="true" offset="0x1C"/>
+				<float name="Camera Up J" visible="true" offset="0x20"/>
+				<float name="Camera Up K" visible="true" offset="0x24"/>
+				<float32 name="Unknown7" visible="true" offset="0x28"/>
+				<float32 name="Unknown8" visible="true" offset="0x2C"/>
+				<float32 name="Focal Length" visible="true" offset="0x30"/>
+				<bitfield32 name="Flags" visible="true" offset="0x34">
+					<bit name="Enable Depth Of Field" index="0"/>
+				</bitfield32>
+				<float32 name="Near Focal Plane Distance" visible="true" offset="0x38"/>
+				<float32 name="Far Focal Plane Distance" visible="true" offset="0x3C"/>
+				<float32 name="Focal Depth" visible="true" offset="0x40"/>
+				<float32 name="Blur Amount" visible="true" offset="0x44"/>
+			</reflexive>
+		</reflexive>
+	</reflexive>
+	<dataRef name="Import Script Footer" visible="true" offset="0x60"/>
+	<uint32 name="Version" visible="true" offset="0x74"/>
+</plugin>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x1C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<float32 name="Template Collection Block" visible="true" offset="0x0"/>
+	<float32 name="Template Collection Block2" visible="true" offset="0x4"/>
+	<float32 name="Template Collection Block3" visible="true" offset="0x8"/>
+	<int32 name="Input Effect Name" visible="true" offset="0xC"/>
+	<reflexive name="Additional Sound Inputs" visible="true" offset="0x10" entrySize="0x1C">
+		<stringId name="Dsp Effect" visible="true" offset="0x0"/>
+		<dataRef name="Low Frequency Sound Function" visible="true" offset="0x4"/>
+		<float32 name="Time Period" visible="true" offset="0x18"/>
+	</reflexive>
+</plugin>

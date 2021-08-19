@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x98">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Default Bitmaps" visible="true" offset="0x0" entrySize="0x14">
+		<bitfield32 name="Flags" visible="true" offset="0x0">
+			<bit name="Do Not Load" index="0"/>
+		</bitfield32>
+		<tagref name="Bitmap" visible="true" offset="0x4"/>
+	</reflexive>
+	<reflexive name="Default Rasterizer Bitmaps" visible="true" offset="0xC" entrySize="0x10">
+		<tagref name="Bitmap" visible="true" offset="0x0"/>
+	</reflexive>
+	<tagref name="Vertex Shader Simple" visible="true" offset="0x18"/>
+	<tagref name="Pixel Shader Simple" visible="true" offset="0x28"/>
+	<reflexive name="Default Shaders" visible="true" offset="0x38" entrySize="0x20">
+		<tagref name="Vertex Shader" visible="true" offset="0x0"/>
+		<tagref name="Pixel Shader" visible="true" offset="0x10"/>
+	</reflexive>
+	<uint32 name="Unknown" visible="true" offset="0x44"/>
+	<uint32 name="Unknown2" visible="true" offset="0x48"/>
+	<uint32 name="Unknown3" visible="true" offset="0x4C"/>
+	<int32 name="Unknown4" visible="true" offset="0x50"/>
+	<int32 name="Unknown5" visible="true" offset="0x54"/>
+	<tagref name="Active Camo Distortion" visible="true" offset="0x58"/>
+	<tagref name="Default Performance Template" visible="true" offset="0x68"/>
+	<tagref name="Default Shield Impact" visible="true" offset="0x78"/>
+	<tagref name="Default Vision Mode" visible="true" offset="0x88"/>
+</plugin>

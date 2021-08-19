@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x10">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Textures" visible="true" offset="0x0" entrySize="0x110">
+		<ascii name="File Name" visible="true" offset="0x0" length="0x100"/>
+		<tagref name="Bitmap" visible="true" offset="0x100"/>
+	</reflexive>
+	<uint32 name="Unknown" visible="true" offset="0xC"/>
+</plugin>

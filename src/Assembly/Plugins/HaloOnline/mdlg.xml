@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0xC">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Lines" visible="true" offset="0x0" entrySize="0x14">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<reflexive name="Variants" visible="true" offset="0x4" entrySize="0x18">
+			<stringId name="Designation" visible="true" offset="0x0"/>
+			<tagref name="Sound" visible="true" offset="0x4"/>
+			<stringId name="Sound Effect" visible="true" offset="0x14"/>
+		</reflexive>
+		<stringId name="Default Sound Effect" visible="true" offset="0x10"/>
+	</reflexive>
+</plugin>

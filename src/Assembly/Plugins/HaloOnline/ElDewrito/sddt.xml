@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x44">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<int32 name="Version" visible="true" offset="0x0"/>
+	<reflexive name="Soft Ceiling Mopp Codes" visible="true" offset="0x4" entrySize="0x40">
+		<comment title="Vf  Table  Address"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x0"/>
+		<uint32 name="Value 1" visible="true" offset="0x4"/>
+		<comment title="Referenced  Object"></comment>
+
+		<uint16 name="Size And Flags" visible="true" offset="0x8"/>
+		<uint16 name="Reference Count" visible="true" offset="0xA"/>
+		<comment title="Info"></comment>
+
+		<float name="Offset I" visible="true" offset="0xC"/>
+		<float name="Offset J" visible="true" offset="0x10"/>
+		<float name="Offset K" visible="true" offset="0x14"/>
+		<float name="Offset W" visible="true" offset="0x18"/>
+		<comment title="Array  Base"></comment>
+
+		<comment title="Data  Address"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x1C"/>
+		<uint32 name="Value 1" visible="true" offset="0x20"/>
+		<uint32 name="Size" visible="true" offset="0x24"/>
+		<uint32 name="Capacity And Flags" visible="true" offset="0x28"/>
+		<uint8 name="Padding1 0" visible="true" offset="0x2C"/>
+		<uint8 name="Padding1 1" visible="true" offset="0x2D"/>
+		<uint8 name="Padding1 2" visible="true" offset="0x2E"/>
+		<uint8 name="Padding1 3" visible="true" offset="0x2F"/>
+		<reflexive name="Data" visible="true" offset="0x30" entrySize="0x1">
+			<uint8 name="uint8" visible="true" offset="0x0"/>
+		</reflexive>
+		<enum8 name="Build Type" visible="true" offset="0x3C">
+			<option name="Built With Chunk Subdivision" value="0x0"/>
+			<option name="Built Without Chunk Subdivision" value="0x1"/>
+		</enum8>
+		<uint8 name="Padding2 Padding 0" visible="false" offset="0x3D"/>
+		<uint8 name="Padding2 Padding 1" visible="false" offset="0x3E"/>
+		<uint8 name="Padding2 Padding 2" visible="false" offset="0x3F"/>
+	</reflexive>
+	<reflexive name="Soft Ceilings" visible="true" offset="0x10" entrySize="0x14">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<enum16 name="Type" visible="true" offset="0x4">
+			<option name="Acceleration" value="0x0"/>
+			<option name="Soft Kill" value="0x1"/>
+			<option name="Slip Surface" value="0x2"/>
+		</enum16>
+		<uint8 name="Unused Padding 0" visible="false" offset="0x6"/>
+		<uint8 name="Unused Padding 1" visible="false" offset="0x7"/>
+		<reflexive name="Soft Ceiling Triangles" visible="true" offset="0x8" entrySize="0x44">
+			<float name="Plane I" visible="true" offset="0x0"/>
+			<float name="Plane J" visible="true" offset="0x4"/>
+			<float name="Plane K" visible="true" offset="0x8"/>
+			<float name="Plane Distance" visible="true" offset="0xC"/>
+			<vector3 name="Bounding Sphere Center" visible="true" offset="0x10"/>
+			<float32 name="Bounding Sphere Radius" visible="true" offset="0x1C"/>
+			<vector3 name="Point1" visible="true" offset="0x20"/>
+			<vector3 name="Point2" visible="true" offset="0x2C"/>
+			<vector3 name="Point3" visible="true" offset="0x38"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Water Mopp Codes" visible="true" offset="0x1C" entrySize="0x40">
+		<comment title="Vf  Table  Address"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x0"/>
+		<uint32 name="Value 1" visible="true" offset="0x4"/>
+		<comment title="Referenced  Object"></comment>
+
+		<uint16 name="Size And Flags" visible="true" offset="0x8"/>
+		<uint16 name="Reference Count" visible="true" offset="0xA"/>
+		<comment title="Info"></comment>
+
+		<float name="Offset I" visible="true" offset="0xC"/>
+		<float name="Offset J" visible="true" offset="0x10"/>
+		<float name="Offset K" visible="true" offset="0x14"/>
+		<float name="Offset W" visible="true" offset="0x18"/>
+		<comment title="Array  Base"></comment>
+
+		<comment title="Data  Address"></comment>
+
+		<uint32 name="Value 0" visible="true" offset="0x1C"/>
+		<uint32 name="Value 1" visible="true" offset="0x20"/>
+		<uint32 name="Size" visible="true" offset="0x24"/>
+		<uint32 name="Capacity And Flags" visible="true" offset="0x28"/>
+		<uint8 name="Padding1 0" visible="true" offset="0x2C"/>
+		<uint8 name="Padding1 1" visible="true" offset="0x2D"/>
+		<uint8 name="Padding1 2" visible="true" offset="0x2E"/>
+		<uint8 name="Padding1 3" visible="true" offset="0x2F"/>
+		<reflexive name="Data" visible="true" offset="0x30" entrySize="0x1">
+			<uint8 name="uint8" visible="true" offset="0x0"/>
+		</reflexive>
+		<enum8 name="Build Type" visible="true" offset="0x3C">
+			<option name="Built With Chunk Subdivision" value="0x0"/>
+			<option name="Built Without Chunk Subdivision" value="0x1"/>
+		</enum8>
+		<uint8 name="Padding2 Padding 0" visible="false" offset="0x3D"/>
+		<uint8 name="Padding2 Padding 1" visible="false" offset="0x3E"/>
+		<uint8 name="Padding2 Padding 2" visible="false" offset="0x3F"/>
+	</reflexive>
+	<reflexive name="Water Groups" visible="true" offset="0x28" entrySize="0x4">
+		<stringId name="Name" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Water Instances" visible="true" offset="0x34" entrySize="0x2C">
+		<int16 name="Water Name Index" visible="true" offset="0x0"/>
+		<uint8 name="Unused Padding 0" visible="false" offset="0x2"/>
+		<uint8 name="Unused Padding 1" visible="false" offset="0x3"/>
+		<float name="Flow Velocity I" visible="true" offset="0x4"/>
+		<float name="Flow Velocity J" visible="true" offset="0x8"/>
+		<float name="Flow Velocity K" visible="true" offset="0xC"/>
+		<float32 name="Flow Force" visible="true" offset="0x10"/>
+		<reflexive name="Water Planes" visible="true" offset="0x14" entrySize="0x10">
+			<float name="Plane I" visible="true" offset="0x0"/>
+			<float name="Plane J" visible="true" offset="0x4"/>
+			<float name="Plane K" visible="true" offset="0x8"/>
+			<float name="Plane Distance" visible="true" offset="0xC"/>
+		</reflexive>
+		<reflexive name="Water Debug Triangles" visible="true" offset="0x20" entrySize="0x24">
+			<vector3 name="Point1" visible="true" offset="0x0"/>
+			<vector3 name="Point2" visible="true" offset="0xC"/>
+			<vector3 name="Point3" visible="true" offset="0x18"/>
+		</reflexive>
+	</reflexive>
+	<uint32 name="Unknown2" visible="true" offset="0x40"/>
+</plugin>

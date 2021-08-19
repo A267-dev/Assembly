@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x3C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<uint32 name="Unknown" visible="true" offset="0x0"/>
+	<uint32 name="Unknown2" visible="true" offset="0x4"/>
+	<uint32 name="Unknown3" visible="true" offset="0x8"/>
+	<degree name="Unknown4" visible="true" offset="0xC"/>
+	<degree name="Unknown5" visible="true" offset="0x10"/>
+	<uint32 name="Unknown6" visible="true" offset="0x14"/>
+	<degree name="Unknown7" visible="true" offset="0x18"/>
+	<int32 name="Unknown8" visible="true" offset="0x1C"/>
+	<tagref name="Unknown9" visible="true" offset="0x20"/>
+	<reflexive name="Unknown10" visible="true" offset="0x30" entrySize="0x2C">
+		<uint32 name="Unknown" visible="true" offset="0x0"/>
+		<uint32 name="Unknown2" visible="true" offset="0x4"/>
+		<uint32 name="Unknown3" visible="true" offset="0x8"/>
+		<degree name="Unknown4" visible="true" offset="0xC"/>
+		<uint32 name="Unknown5" visible="true" offset="0x10"/>
+		<uint32 name="Unknown6" visible="true" offset="0x14"/>
+		<int32 name="Unknown7" visible="true" offset="0x18"/>
+		<tagref name="Effect" visible="true" offset="0x1C"/>
+	</reflexive>
+</plugin>

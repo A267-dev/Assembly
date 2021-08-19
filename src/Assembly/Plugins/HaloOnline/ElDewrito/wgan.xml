@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x80">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<stringId name="Stringid" visible="true" offset="0x0"/>
+	<uint32 name="Unknown2" visible="true" offset="0x4"/>
+	<tagref name="Widget Color" visible="true" offset="0x8"/>
+	<tagref name="Widget Position" visible="true" offset="0x18"/>
+	<tagref name="Widget Rotation" visible="true" offset="0x28"/>
+	<tagref name="Widget Scale" visible="true" offset="0x38"/>
+	<tagref name="Widget Texture Coordinate" visible="true" offset="0x48"/>
+	<tagref name="Widget Sprite" visible="true" offset="0x58"/>
+	<tagref name="Widget Font" visible="true" offset="0x68"/>
+	<uint32 name="Unknown3" visible="true" offset="0x78"/>
+	<uint32 name="Unknown4" visible="true" offset="0x7C"/>
+</plugin>

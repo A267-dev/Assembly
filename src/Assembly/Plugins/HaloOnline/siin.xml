@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0xF4">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<float32 name="Position Client Ignore Tolerance" visible="true" offset="0x0"/>
+	<float32 name="Angular Speed Threshold" visible="true" offset="0x4"/>
+	<float32 name="Position Warp Threshold" visible="true" offset="0x8"/>
+	<float32 name="Position Warp Threshold XY" visible="true" offset="0xC"/>
+	<float32 name="Position Warp Threshold Rotation" visible="true" offset="0x10"/>
+	<comment title="Position  While  Controlled"></comment>
+
+	<float32 name="Discrepency Threshold" visible="true" offset="0x14"/>
+	<float32 name="Coming To Rest Speed" visible="true" offset="0x18"/>
+	<float32 name="Coming To Rest Maximum Ignoreable Error" visible="true" offset="0x1C"/>
+	<comment title="Velocity  Bumps"></comment>
+
+	<float32 name="Velocity Scale" visible="true" offset="0x20"/>
+	<float32 name="Velocity Min" visible="true" offset="0x24"/>
+	<float32 name="Velocity Max" visible="true" offset="0x28"/>
+	<float32 name="Velocity Difference Ignore Threshold" visible="true" offset="0x2C"/>
+	<float32 name="Velocity Difference Absolute Ignore Threshold" visible="true" offset="0x30"/>
+	<comment title="Blending"></comment>
+
+	<float32 name="Object Speed Min" visible="true" offset="0x34"/>
+	<float32 name="Object Speed Max" visible="true" offset="0x38"/>
+	<float32 name="Fraction At Minimum Object Speed" visible="true" offset="0x3C"/>
+	<float32 name="Fraction At Maximum Object Speed" visible="true" offset="0x40"/>
+	<float32 name="Minimum Speed At Minimum Object Speed" visible="true" offset="0x44"/>
+	<float32 name="Minimum Speed At Maximum Object Speed" visible="true" offset="0x48"/>
+	<comment title="Rotation  While  Controlled"></comment>
+
+	<float32 name="Discrepency Threshold" visible="true" offset="0x4C"/>
+	<float32 name="Coming To Rest Speed" visible="true" offset="0x50"/>
+	<float32 name="Coming To Rest Maximum Ignoreable Error" visible="true" offset="0x54"/>
+	<comment title="Velocity  Bumps"></comment>
+
+	<float32 name="Velocity Scale" visible="true" offset="0x58"/>
+	<float32 name="Velocity Min" visible="true" offset="0x5C"/>
+	<float32 name="Velocity Max" visible="true" offset="0x60"/>
+	<float32 name="Velocity Difference Ignore Threshold" visible="true" offset="0x64"/>
+	<float32 name="Velocity Difference Absolute Ignore Threshold" visible="true" offset="0x68"/>
+	<comment title="Blending"></comment>
+
+	<float32 name="Object Speed Min" visible="true" offset="0x6C"/>
+	<float32 name="Object Speed Max" visible="true" offset="0x70"/>
+	<float32 name="Fraction At Minimum Object Speed" visible="true" offset="0x74"/>
+	<float32 name="Fraction At Maximum Object Speed" visible="true" offset="0x78"/>
+	<float32 name="Minimum Speed At Minimum Object Speed" visible="true" offset="0x7C"/>
+	<float32 name="Minimum Speed At Maximum Object Speed" visible="true" offset="0x80"/>
+	<comment title="Position  While  Not  Controlled"></comment>
+
+	<float32 name="Discrepency Threshold" visible="true" offset="0x84"/>
+	<float32 name="Coming To Rest Speed" visible="true" offset="0x88"/>
+	<float32 name="Coming To Rest Maximum Ignoreable Error" visible="true" offset="0x8C"/>
+	<comment title="Velocity  Bumps"></comment>
+
+	<float32 name="Velocity Scale" visible="true" offset="0x90"/>
+	<float32 name="Velocity Min" visible="true" offset="0x94"/>
+	<float32 name="Velocity Max" visible="true" offset="0x98"/>
+	<float32 name="Velocity Difference Ignore Threshold" visible="true" offset="0x9C"/>
+	<float32 name="Velocity Difference Absolute Ignore Threshold" visible="true" offset="0xA0"/>
+	<comment title="Blending"></comment>
+
+	<float32 name="Object Speed Min" visible="true" offset="0xA4"/>
+	<float32 name="Object Speed Max" visible="true" offset="0xA8"/>
+	<float32 name="Fraction At Minimum Object Speed" visible="true" offset="0xAC"/>
+	<float32 name="Fraction At Maximum Object Speed" visible="true" offset="0xB0"/>
+	<float32 name="Minimum Speed At Minimum Object Speed" visible="true" offset="0xB4"/>
+	<float32 name="Minimum Speed At Maximum Object Speed" visible="true" offset="0xB8"/>
+	<comment title="Rotation  While  Not  Controlled"></comment>
+
+	<float32 name="Discrepency Threshold" visible="true" offset="0xBC"/>
+	<float32 name="Coming To Rest Speed" visible="true" offset="0xC0"/>
+	<float32 name="Coming To Rest Maximum Ignoreable Error" visible="true" offset="0xC4"/>
+	<comment title="Velocity  Bumps"></comment>
+
+	<float32 name="Velocity Scale" visible="true" offset="0xC8"/>
+	<float32 name="Velocity Min" visible="true" offset="0xCC"/>
+	<float32 name="Velocity Max" visible="true" offset="0xD0"/>
+	<float32 name="Velocity Difference Ignore Threshold" visible="true" offset="0xD4"/>
+	<float32 name="Velocity Difference Absolute Ignore Threshold" visible="true" offset="0xD8"/>
+	<comment title="Blending"></comment>
+
+	<float32 name="Object Speed Min" visible="true" offset="0xDC"/>
+	<float32 name="Object Speed Max" visible="true" offset="0xE0"/>
+	<float32 name="Fraction At Minimum Object Speed" visible="true" offset="0xE4"/>
+	<float32 name="Fraction At Maximum Object Speed" visible="true" offset="0xE8"/>
+	<float32 name="Minimum Speed At Minimum Object Speed" visible="true" offset="0xEC"/>
+	<float32 name="Minimum Speed At Maximum Object Speed" visible="true" offset="0xF0"/>
+</plugin>

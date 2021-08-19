@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x34">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<int32 name="Unknown" visible="true" offset="0x0"/>
+	<float32 name="Unknown2" visible="true" offset="0x4"/>
+	<dataRef name="Unknown3" visible="true" offset="0x8"/>
+	<dataRef name="Unknown4" visible="true" offset="0x1C"/>
+	<int32 name="Unknown5" visible="true" offset="0x30"/>
+</plugin>

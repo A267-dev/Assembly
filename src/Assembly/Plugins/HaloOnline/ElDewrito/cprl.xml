@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x10">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<float32 name="Unknown" visible="true" offset="0x0"/>
+	<float32 name="Unknown2" visible="true" offset="0x4"/>
+	<uint32 name="Unused" visible="true" offset="0x8"/>
+	<uint32 name="Unused1" visible="true" offset="0xC"/>
+</plugin>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x5C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<bitfield32 name="Flags" visible="true" offset="0x0">
+		<bit name="Bit0" index="0"/>
+		<bit name="Bit1" index="1"/>
+		<bit name="Bit2" index="2"/>
+		<bit name="Scale To Bounds" index="3"/>
+		<bit name="Replace With Blur" index="4"/>
+		<bit name="Bit5" index="5"/>
+		<bit name="Bit6" index="6"/>
+		<bit name="Bit7" index="7"/>
+		<bit name="Bit8" index="8"/>
+		<bit name="Bit9" index="9"/>
+		<bit name="Replace With White" index="10"/>
+		<bit name="Replace With Black" index="11"/>
+	</bitfield32>
+	<comment title="Gui  Render  Block"></comment>
+
+	<stringId name="Name" visible="true" offset="0x4"/>
+	<int16 name="Unknown" visible="true" offset="0x8"/>
+	<int16 name="Layer" visible="true" offset="0xA"/>
+	<int16 name="Widescreen YMin" visible="true" offset="0xC"/>
+	<int16 name="Widescreen XMin" visible="true" offset="0xE"/>
+	<int16 name="Widescreen YMax" visible="true" offset="0x10"/>
+	<int16 name="Widescreen XMax" visible="true" offset="0x12"/>
+	<int16 name="Standard YMin" visible="true" offset="0x14"/>
+	<int16 name="Standard XMin" visible="true" offset="0x16"/>
+	<int16 name="Standard YMax" visible="true" offset="0x18"/>
+	<int16 name="Standard XMax" visible="true" offset="0x1A"/>
+	<tagref name="Animation" visible="true" offset="0x1C"/>
+	<tagref name="Bitmap" visible="true" offset="0x2C"/>
+	<tagref name="Unknown" visible="true" offset="0x3C"/>
+	<enum16 name="Blend Method" visible="true" offset="0x4C">
+		<option name="Standard" value="0x0"/>
+		<option name="Unknown" value="0x1"/>
+		<option name="Unknown2" value="0x2"/>
+		<option name="Alpha" value="0x3"/>
+		<option name="Overlay" value="0x4"/>
+		<option name="Unknown3" value="0x5"/>
+		<option name="Lighter Color" value="0x6"/>
+		<option name="Unknown4" value="0x7"/>
+		<option name="Unknown5" value="0x8"/>
+		<option name="Unknown6" value="0x9"/>
+		<option name="Inverted Alpha" value="0xA"/>
+		<option name="Unknown7" value="0xB"/>
+		<option name="Unknown8" value="0xC"/>
+		<option name="Unknown9" value="0xD"/>
+	</enum16>
+	<int16 name="Unknown1" visible="true" offset="0x4E"/>
+	<int16 name="Sprite Index" visible="true" offset="0x50"/>
+	<int16 name="Unknown2" visible="true" offset="0x52"/>
+	<stringId name="Data Source Name" visible="true" offset="0x54"/>
+	<stringId name="Sprite Data Source Name" visible="true" offset="0x58"/>
+</plugin>

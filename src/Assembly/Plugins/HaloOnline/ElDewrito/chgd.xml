@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x2C0">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Hud Globals" visible="true" offset="0x0" entrySize="0x2B0">
+		<enum32 name="Biped" visible="true" offset="0x0">
+			<option name="Spartan" value="0x0"/>
+			<option name="Elite" value="0x1"/>
+			<option name="Monitor" value="0x2"/>
+		</enum32>
+		<uint8 name="HUDDisabled Alpha" visible="true" offset="0x4"/>
+		<color24 name="HUDDisabled" visible="true" offset="0x5" format="rgb"/>
+		<uint8 name="HUDPrimary Alpha" visible="true" offset="0x8"/>
+		<color24 name="HUDPrimary" visible="true" offset="0x9" format="rgb"/>
+		<uint8 name="HUDForeground Alpha" visible="true" offset="0xC"/>
+		<color24 name="HUDForeground" visible="true" offset="0xD" format="rgb"/>
+		<uint8 name="HUDWarning Alpha" visible="true" offset="0x10"/>
+		<color24 name="HUDWarning" visible="true" offset="0x11" format="rgb"/>
+		<uint8 name="Neutral Reticule Alpha" visible="true" offset="0x14"/>
+		<color24 name="Neutral Reticule" visible="true" offset="0x15" format="rgb"/>
+		<uint8 name="Hostile Reticule Alpha" visible="true" offset="0x18"/>
+		<color24 name="Hostile Reticule" visible="true" offset="0x19" format="rgb"/>
+		<uint8 name="Friendly Reticule Alpha" visible="true" offset="0x1C"/>
+		<color24 name="Friendly Reticule" visible="true" offset="0x1D" format="rgb"/>
+		<uint8 name="Global Dynamic7_ Unknown Blip Alpha" visible="true" offset="0x20"/>
+		<color24 name="Global Dynamic7_ Unknown Blip" visible="true" offset="0x21" format="rgb"/>
+		<uint8 name="Neutral Blip Alpha" visible="true" offset="0x24"/>
+		<color24 name="Neutral Blip" visible="true" offset="0x25" format="rgb"/>
+		<uint8 name="Hostile Blip Alpha" visible="true" offset="0x28"/>
+		<color24 name="Hostile Blip" visible="true" offset="0x29" format="rgb"/>
+		<uint8 name="Friendly Player Blip Alpha" visible="true" offset="0x2C"/>
+		<color24 name="Friendly Player Blip" visible="true" offset="0x2D" format="rgb"/>
+		<uint8 name="Friendly AIBlip Alpha" visible="true" offset="0x30"/>
+		<color24 name="Friendly AIBlip" visible="true" offset="0x31" format="rgb"/>
+		<uint8 name="Global Dynamic12 Alpha" visible="true" offset="0x34"/>
+		<color24 name="Global Dynamic12" visible="true" offset="0x35" format="rgb"/>
+		<uint8 name="Waypoint Blip Alpha" visible="true" offset="0x38"/>
+		<color24 name="Waypoint Blip" visible="true" offset="0x39" format="rgb"/>
+		<uint8 name="Distant Waypoint Blip Alpha" visible="true" offset="0x3C"/>
+		<color24 name="Distant Waypoint Blip" visible="true" offset="0x3D" format="rgb"/>
+		<uint8 name="Friendly Waypoint Alpha" visible="true" offset="0x40"/>
+		<color24 name="Friendly Waypoint" visible="true" offset="0x41" format="rgb"/>
+		<uint8 name="Global Dynamic16 Alpha" visible="true" offset="0x44"/>
+		<color24 name="Global Dynamic16" visible="true" offset="0x45" format="rgb"/>
+		<uint8 name="Hostile Waypoint Alpha" visible="true" offset="0x48"/>
+		<color24 name="Hostile Waypoint" visible="true" offset="0x49" format="rgb"/>
+		<uint8 name="Global Dynamic18 Alpha" visible="true" offset="0x4C"/>
+		<color24 name="Global Dynamic18" visible="true" offset="0x4D" format="rgb"/>
+		<uint8 name="Blue Waypoint_ HOAlpha" visible="true" offset="0x50"/>
+		<color24 name="Blue Waypoint_ HO" visible="true" offset="0x51" format="rgb"/>
+		<uint8 name="Global Dynamic19 Alpha" visible="true" offset="0x54"/>
+		<color24 name="Global Dynamic19" visible="true" offset="0x55" format="rgb"/>
+		<uint8 name="Global Dynamic20 Alpha" visible="true" offset="0x58"/>
+		<color24 name="Global Dynamic20" visible="true" offset="0x59" format="rgb"/>
+		<uint8 name="Global Dynamic21 Alpha" visible="true" offset="0x5C"/>
+		<color24 name="Global Dynamic21" visible="true" offset="0x5D" format="rgb"/>
+		<uint8 name="Global Dynamic22 Alpha" visible="true" offset="0x60"/>
+		<color24 name="Global Dynamic22" visible="true" offset="0x61" format="rgb"/>
+		<uint8 name="Global Dynamic23 Alpha" visible="true" offset="0x64"/>
+		<color24 name="Global Dynamic23" visible="true" offset="0x65" format="rgb"/>
+		<uint8 name="Global Dynamic24 Alpha" visible="true" offset="0x68"/>
+		<color24 name="Global Dynamic24" visible="true" offset="0x69" format="rgb"/>
+		<uint8 name="Global Dynamic25 Alpha" visible="true" offset="0x6C"/>
+		<color24 name="Global Dynamic25" visible="true" offset="0x6D" format="rgb"/>
+		<uint8 name="Global Dynamic26 Alpha" visible="true" offset="0x70"/>
+		<color24 name="Global Dynamic26" visible="true" offset="0x71" format="rgb"/>
+		<uint8 name="Global Dynamic27 Alpha" visible="true" offset="0x74"/>
+		<color24 name="Global Dynamic27" visible="true" offset="0x75" format="rgb"/>
+		<uint8 name="Global Dynamic29_ HOAlpha" visible="true" offset="0x78"/>
+		<color24 name="Global Dynamic29_ HO" visible="true" offset="0x79" format="rgb"/>
+		<uint8 name="Default Item Outline Alpha" visible="true" offset="0x7C"/>
+		<color24 name="Default Item Outline" visible="true" offset="0x7D" format="rgb"/>
+		<uint8 name="MAGItem Outline Alpha" visible="true" offset="0x80"/>
+		<color24 name="MAGItem Outline" visible="true" offset="0x81" format="rgb"/>
+		<uint8 name="DMGItem Outline Alpha" visible="true" offset="0x84"/>
+		<color24 name="DMGItem Outline" visible="true" offset="0x85" format="rgb"/>
+		<uint8 name="ACCItem Outline Alpha" visible="true" offset="0x88"/>
+		<color24 name="ACCItem Outline" visible="true" offset="0x89" format="rgb"/>
+		<uint8 name="ROFItem Outline Alpha" visible="true" offset="0x8C"/>
+		<color24 name="ROFItem Outline" visible="true" offset="0x8D" format="rgb"/>
+		<uint8 name="RNGItem Outline Alpha" visible="true" offset="0x90"/>
+		<color24 name="RNGItem Outline" visible="true" offset="0x91" format="rgb"/>
+		<uint8 name="PWRItem Outline Alpha" visible="true" offset="0x94"/>
+		<color24 name="PWRItem Outline" visible="true" offset="0x95" format="rgb"/>
+		<reflexive name="Hud Attributes" visible="true" offset="0x98" entrySize="0xE8">
+			<bitfield32 name="Resolution Flags" visible="true" offset="0x0">
+				<bit name="Wide Full" index="0"/>
+				<bit name="Wide Half" index="1"/>
+				<bit name="Native Full" index="2"/>
+				<bit name="Standard Full" index="3"/>
+				<bit name="Wide Quarter" index="4"/>
+				<bit name="Standard Half" index="5"/>
+				<bit name="Native Quarter" index="6"/>
+				<bit name="Standard Quarter" index="7"/>
+				<bit name="Bit8" index="8"/>
+				<bit name="Bit9" index="9"/>
+				<bit name="Bit10" index="10"/>
+				<bit name="Bit11" index="11"/>
+				<bit name="Bit12" index="12"/>
+				<bit name="Bit13" index="13"/>
+				<bit name="Bit14" index="14"/>
+				<bit name="Bit15" index="15"/>
+				<bit name="Bit16" index="16"/>
+				<bit name="Bit17" index="17"/>
+				<bit name="Bit18" index="18"/>
+				<bit name="Bit19" index="19"/>
+				<bit name="Bit20" index="20"/>
+				<bit name="Bit21" index="21"/>
+				<bit name="Bit22" index="22"/>
+				<bit name="Bit23" index="23"/>
+				<bit name="Bit24" index="24"/>
+				<bit name="Bit25" index="25"/>
+				<bit name="Bit26" index="26"/>
+				<bit name="Bit27" index="27"/>
+				<bit name="Bit28" index="28"/>
+				<bit name="Bit29" index="29"/>
+				<bit name="Bit30" index="30"/>
+				<bit name="Bit31" index="31"/>
+			</bitfield32>
+			<degree name="Warp Angle" visible="true" offset="0x4"/>
+			<float32 name="Warp Amount" visible="true" offset="0x8"/>
+			<float32 name="Warp Direction" visible="true" offset="0xC"/>
+			<uint32 name="Resolution Width" visible="true" offset="0x10"/>
+			<uint32 name="Resolution Height" visible="true" offset="0x14"/>
+			<float name="Motion Sensor Offset X" visible="true" offset="0x18"/>
+			<float name="Motion Sensor Offset Y" visible="true" offset="0x1C"/>
+			<float32 name="Motion Sensor Radius" visible="true" offset="0x20"/>
+			<float32 name="Motion Sensor Scale" visible="true" offset="0x24"/>
+			<float32 name="Horizontal Scale" visible="true" offset="0x28"/>
+			<float32 name="Vertical Scale" visible="true" offset="0x2C"/>
+			<float32 name="Horizontal Stretch" visible="true" offset="0x30"/>
+			<float32 name="Vertical Stretch" visible="true" offset="0x34"/>
+			<tagref name="First Person Unknown Bitmap" visible="true" offset="0x38"/>
+			<tagref name="Third Person Unknown Bitmap" visible="true" offset="0x48"/>
+			<tagref name="First Person Damage Border" visible="true" offset="0x58"/>
+			<tagref name="Third Person Damage Border" visible="true" offset="0x68"/>
+			<float32 name="State Scale_ HO" visible="true" offset="0x78"/>
+			<float name="State Left Right Offset_ HOX" visible="true" offset="0x7C"/>
+			<float name="State Left Right Offset_ HOY" visible="true" offset="0x80"/>
+			<float32 name="Scale Unknown1" visible="true" offset="0x84"/>
+			<float32 name="Spacing Unknown1" visible="true" offset="0x88"/>
+			<float32 name="Scale Unknown2" visible="true" offset="0x8C"/>
+			<float32 name="Spacing Unknown2" visible="true" offset="0x90"/>
+			<float32 name="State Center Offset Y" visible="true" offset="0x94"/>
+			<float32 name="State Center Offset Y_2" visible="true" offset="0x98"/>
+			<float32 name="Medal Scale" visible="true" offset="0x9C"/>
+			<float32 name="Medal Spacing" visible="true" offset="0xA0"/>
+			<float name="Survival Medals Offset X" visible="true" offset="0xA4"/>
+			<float name="Survival Medals Offset Y" visible="true" offset="0xA8"/>
+			<float32 name="Unknown32" visible="true" offset="0xAC"/>
+			<float name="Multiplayer Medals Offset X" visible="true" offset="0xB0"/>
+			<float name="Multiplayer Medals Offset Y" visible="true" offset="0xB4"/>
+			<float32 name="Notification Scale" visible="true" offset="0xB8"/>
+			<float32 name="Notification Line Spacing" visible="true" offset="0xBC"/>
+			<int32 name="Notification Line Count Modifier" visible="true" offset="0xC0"/>
+			<float32 name="Notification Offset X_ HO" visible="true" offset="0xC4"/>
+			<float32 name="Notification Offset Y_ HO" visible="true" offset="0xC8"/>
+			<float32 name="Scale Unknown" visible="true" offset="0xCC"/>
+			<float32 name="Spacing Unknown" visible="true" offset="0xD0"/>
+			<float32 name="Null Unknown" visible="true" offset="0xD4"/>
+			<float name="Unknown Offset3 X" visible="true" offset="0xD8"/>
+			<float name="Unknown Offset3 Y" visible="true" offset="0xDC"/>
+			<float32 name="Prompt Offset Y" visible="true" offset="0xE0"/>
+			<float32 name="Prompt Offset X" visible="true" offset="0xE4"/>
+		</reflexive>
+		<reflexive name="Hud Sounds" visible="true" offset="0xA4" entrySize="0x14">
+			<bitfield32 name="Latched To" visible="true" offset="0x0">
+				<bit name="Health Recharging" index="0"/>
+				<bit name="Health Minor Damage" index="1"/>
+				<bit name="Health Major Damage" index="2"/>
+				<bit name="Health Critical Damage" index="3"/>
+				<bit name="Health Minor State" index="4"/>
+				<bit name="Health Low" index="5"/>
+				<bit name="Health Empty" index="6"/>
+				<bit name="Shield Recharging" index="7"/>
+				<bit name="Shield Minor Damage" index="8"/>
+				<bit name="Shield Major Damage" index="9"/>
+				<bit name="Shield Critical Damage" index="10"/>
+				<bit name="Shield Minor State" index="11"/>
+				<bit name="Shield Low" index="12"/>
+				<bit name="Shield Empty" index="13"/>
+				<bit name="Rocket Locking" index="14"/>
+				<bit name="Rocket Locked" index="15"/>
+				<bit name="Missile Locking" index="16"/>
+				<bit name="Missile Locked" index="17"/>
+				<bit name="Bit18" index="18"/>
+				<bit name="Bit19" index="19"/>
+				<bit name="Bit20" index="20"/>
+				<bit name="Bit21" index="21"/>
+				<bit name="Stamina Full" index="22"/>
+				<bit name="Stamina Warning" index="23"/>
+				<bit name="Stamina Recharge" index="24"/>
+				<bit name="Bit25" index="25"/>
+				<bit name="Bit26" index="26"/>
+				<bit name="Bit27" index="27"/>
+				<bit name="Tactical Package Error" index="28"/>
+				<bit name="Tactical Package Used" index="29"/>
+				<bit name="Gain Medal" index="30"/>
+				<bit name="Winning Points" index="31"/>
+			</bitfield32>
+			<float32 name="Scale" visible="true" offset="0x4"/>
+			<reflexive name="Bipeds" visible="true" offset="0x8" entrySize="0x14">
+				<enum32 name="Biped Type_ HO" visible="true" offset="0x0">
+					<option name="Spartan" value="0x0"/>
+					<option name="Elite" value="0x1"/>
+					<option name="Monitor" value="0x2"/>
+				</enum32>
+				<tagref name="Sound" visible="true" offset="0x4"/>
+			</reflexive>
+		</reflexive>
+		<tagref name="Unknown" visible="true" offset="0xB0"/>
+		<tagref name="Frag Grenade Swap Sound" visible="true" offset="0xC0"/>
+		<tagref name="Plasma Grenade Swap Sound" visible="true" offset="0xD0"/>
+		<tagref name="Spike Grenade Swap Sound" visible="true" offset="0xE0"/>
+		<tagref name="Firebomb Grenade Swap Sound" visible="true" offset="0xF0"/>
+		<tagref name="Damage Microtexture" visible="true" offset="0x100"/>
+		<tagref name="Damage Noise" visible="true" offset="0x110"/>
+		<tagref name="Directional Arrow" visible="true" offset="0x120"/>
+		<tagref name="Grenade Waypoint" visible="true" offset="0x130"/>
+		<tagref name="Pink Gradient" visible="true" offset="0x140"/>
+		<float32 name="Directional Arrow Display Time" visible="true" offset="0x150"/>
+		<float32 name="Directional Cutoff Angle" visible="true" offset="0x154"/>
+		<float32 name="Directional Arrow Scale" visible="true" offset="0x158"/>
+		<float32 name="Unknown10" visible="true" offset="0x15C"/>
+		<float32 name="Unknown11" visible="true" offset="0x160"/>
+		<float32 name="Unknown12" visible="true" offset="0x164"/>
+		<tagref name="Objective Waypoints" visible="true" offset="0x168"/>
+		<tagref name="Player Waypoints" visible="true" offset="0x178"/>
+		<tagref name="Scoreboard Hud" visible="true" offset="0x188"/>
+		<tagref name="Metagame Scoreboard Hud" visible="true" offset="0x198"/>
+		<tagref name="Survival Hud" visible="true" offset="0x1A8"/>
+		<tagref name="Metagame Scoreboard Hud2" visible="true" offset="0x1B8"/>
+		<tagref name="Theater Hud" visible="true" offset="0x1C8"/>
+		<tagref name="Forge Hud" visible="true" offset="0x1D8"/>
+		<tagref name="Hud Strings" visible="true" offset="0x1E8"/>
+		<tagref name="Medals" visible="true" offset="0x1F8"/>
+		<reflexive name="Multiplayer Medals" visible="true" offset="0x208" entrySize="0x4">
+			<stringId name="Medal" visible="true" offset="0x0"/>
+		</reflexive>
+		<tagref name="Medal Hud Animation2" visible="true" offset="0x214"/>
+		<tagref name="Medal Hud Animation" visible="true" offset="0x224"/>
+		<tagref name="Cortana Channel" visible="true" offset="0x234"/>
+		<tagref name="Unknown20" visible="true" offset="0x244"/>
+		<tagref name="Unknown21" visible="true" offset="0x254"/>
+		<tagref name="Jammer Response" visible="true" offset="0x264"/>
+		<tagref name="Jammer Shield Hit" visible="true" offset="0x274"/>
+		<float name="Grenade Schematics Offset X" visible="true" offset="0x284"/>
+		<float name="Grenade Schematics Offset Y" visible="true" offset="0x288"/>
+		<float32 name="Grenade Scematics Spacing" visible="true" offset="0x28C"/>
+		<float32 name="Equipment Scematic Offset Y" visible="true" offset="0x290"/>
+		<float32 name="Dual Equipment Scematic Offset Y" visible="true" offset="0x294"/>
+		<float32 name="Unknown Scematic Offset Y" visible="true" offset="0x298"/>
+		<float32 name="Unknown Scematic Offset Y_2" visible="true" offset="0x29C"/>
+		<float32 name="Scoreboard Leader Offset Y" visible="true" offset="0x2A0"/>
+		<float32 name="Waypoint Scale Min" visible="true" offset="0x2A4"/>
+		<float32 name="Waypoint Scale Max" visible="true" offset="0x2A8"/>
+		<float32 name="Unknown29" visible="true" offset="0x2AC"/>
+	</reflexive>
+	<reflexive name="Hud Shaders" visible="true" offset="0xC" entrySize="0x20">
+		<tagref name="Vertex Shader" visible="true" offset="0x0"/>
+		<tagref name="Pixel Shader" visible="true" offset="0x10"/>
+	</reflexive>
+	<reflexive name="Unknown" visible="true" offset="0x18" entrySize="0x40">
+		<float32 name="Unknown" visible="true" offset="0x0"/>
+		<float32 name="Unknown2" visible="true" offset="0x4"/>
+		<float32 name="Unknown3" visible="true" offset="0x8"/>
+		<float32 name="Unknown4" visible="true" offset="0xC"/>
+		<float32 name="Unknown5" visible="true" offset="0x10"/>
+		<float32 name="Unknown6" visible="true" offset="0x14"/>
+		<float32 name="Unknown7" visible="true" offset="0x18"/>
+		<float32 name="Unknown8" visible="true" offset="0x1C"/>
+		<float32 name="Unknown9" visible="true" offset="0x20"/>
+		<float32 name="Unknown10" visible="true" offset="0x24"/>
+		<float32 name="Unknown11" visible="true" offset="0x28"/>
+		<float32 name="Unknown12" visible="true" offset="0x2C"/>
+		<float32 name="Unknown13" visible="true" offset="0x30"/>
+		<float32 name="Unknown14" visible="true" offset="0x34"/>
+		<float32 name="Unknown15" visible="true" offset="0x38"/>
+		<float32 name="Unknown16" visible="true" offset="0x3C"/>
+	</reflexive>
+	<reflexive name="Cortana Suck" visible="true" offset="0x24" entrySize="0x10">
+		<uint32 name="Unknown" visible="true" offset="0x0"/>
+		<reflexive name="Levels" visible="true" offset="0x4" entrySize="0xE4">
+			<float32 name="Scale" visible="true" offset="0x0"/>
+			<float32 name="Noisea Velocitymin" visible="true" offset="0x4"/>
+			<float32 name="Noisea Velocitymax" visible="true" offset="0x8"/>
+			<float32 name="Noisea Scalexmin" visible="true" offset="0xC"/>
+			<float32 name="Noisea Scalexmax" visible="true" offset="0x10"/>
+			<float32 name="Noisea Scaleymin" visible="true" offset="0x14"/>
+			<float32 name="Noisea Scaleymax" visible="true" offset="0x18"/>
+			<float32 name="Noiseb Velocitymin" visible="true" offset="0x1C"/>
+			<float32 name="Noiseb Velocitymax" visible="true" offset="0x20"/>
+			<float32 name="Noiseb Scalexmin" visible="true" offset="0x24"/>
+			<float32 name="Noiseb Scalexmax" visible="true" offset="0x28"/>
+			<float32 name="Noiseb Scaleymin" visible="true" offset="0x2C"/>
+			<float32 name="Noiseb Scaleymax" visible="true" offset="0x30"/>
+			<float32 name="Noise Pixel Thresholdmin" visible="true" offset="0x34"/>
+			<float32 name="Noise Pixel Thresholdmax" visible="true" offset="0x38"/>
+			<float32 name="Noise Pixel Persistencemin" visible="true" offset="0x3C"/>
+			<float32 name="Noise Pixel Persistencemax" visible="true" offset="0x40"/>
+			<float32 name="Noise Pixel Velocitymin" visible="true" offset="0x44"/>
+			<float32 name="Noise Pixel Velocitymax" visible="true" offset="0x48"/>
+			<float32 name="Noise Pixel Turbulencemin" visible="true" offset="0x4C"/>
+			<float32 name="Noise Pixel Turbulencemax" visible="true" offset="0x50"/>
+			<float32 name="Noise Translation Scalexmin" visible="true" offset="0x54"/>
+			<float32 name="Noise Translation Scalexmax" visible="true" offset="0x58"/>
+			<float32 name="Noise Translation Scaleymin" visible="true" offset="0x5C"/>
+			<float32 name="Noise Translation Scaleymax" visible="true" offset="0x60"/>
+			<tagref name="Message" visible="true" offset="0x64"/>
+			<float32 name="Noisea Velocitymin_ B" visible="true" offset="0x74"/>
+			<float32 name="Noisea Velocitymax_ B" visible="true" offset="0x78"/>
+			<float32 name="Noisea Scalexmin_ B" visible="true" offset="0x7C"/>
+			<float32 name="Noisea Scalexmax_ B" visible="true" offset="0x80"/>
+			<float32 name="Noisea Scaleymin_ B" visible="true" offset="0x84"/>
+			<float32 name="Noisea Scaleymax_ B" visible="true" offset="0x88"/>
+			<float32 name="Noiseb Velocitymin_ B" visible="true" offset="0x8C"/>
+			<float32 name="Noiseb Velocitymax_ B" visible="true" offset="0x90"/>
+			<float32 name="Noiseb Scalexmin_ B" visible="true" offset="0x94"/>
+			<float32 name="Noiseb Scalexmax_ B" visible="true" offset="0x98"/>
+			<float32 name="Noiseb Scaleymin_ B" visible="true" offset="0x9C"/>
+			<float32 name="Noiseb Scaleymax_ B" visible="true" offset="0xA0"/>
+			<float32 name="Noise Pixel Thresholdmin_ B" visible="true" offset="0xA4"/>
+			<float32 name="Noise Pixel Thresholdmax_ B" visible="true" offset="0xA8"/>
+			<float32 name="Noise Pixel Persistencemin_ B" visible="true" offset="0xAC"/>
+			<float32 name="Noise Pixel Persistencemax_ B" visible="true" offset="0xB0"/>
+			<float32 name="Noise Pixel Velocitymin_ B" visible="true" offset="0xB4"/>
+			<float32 name="Noise Pixel Velocitymax_ B" visible="true" offset="0xB8"/>
+			<float32 name="Noise Pixel Turbulencemin_ B" visible="true" offset="0xBC"/>
+			<float32 name="Noise Pixel Turbulencemax_ B" visible="true" offset="0xC0"/>
+			<float32 name="Noise Translation Scalexmin_ B" visible="true" offset="0xC4"/>
+			<float32 name="Noise Translation Scalexmax_ B" visible="true" offset="0xC8"/>
+			<float32 name="Noise Translation Scaleymin_ B" visible="true" offset="0xCC"/>
+			<float32 name="Noise Translation Scaleymax_ B" visible="true" offset="0xD0"/>
+			<tagref name="Message_ B" visible="true" offset="0xD4"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Player Training Data" visible="true" offset="0x30" entrySize="0x14">
+		<stringId name="Display String" visible="true" offset="0x0"/>
+		<int16 name="Max Display Time" visible="true" offset="0x4"/>
+		<int16 name="Display Count" visible="true" offset="0x6"/>
+		<int16 name="Disappear Delay" visible="true" offset="0x8"/>
+		<int16 name="Redisplay Delay" visible="true" offset="0xA"/>
+		<float32 name="Display Delay" visible="true" offset="0xC"/>
+		<uint16 name="Flags" visible="true" offset="0x10"/>
+		<int16 name="Unknown" visible="true" offset="0x12"/>
+	</reflexive>
+	<tagref name="Start Menu Emblems" visible="true" offset="0x3C"/>
+	<tagref name="Campaign Medals" visible="true" offset="0x4C"/>
+	<tagref name="Campaign Medal Hud Animation" visible="true" offset="0x5C"/>
+	<enum16 name="Campaign Medal Chud Anchor" visible="true" offset="0x6C">
+		<option name="Top Left" value="0x0"/>
+		<option name="Top Right" value="0x1"/>
+		<option name="Bottom Right" value="0x2"/>
+		<option name="Bottom Left" value="0x3"/>
+		<option name="Center" value="0x4"/>
+		<option name="Top Edge" value="0x5"/>
+		<option name="Grenade A" value="0x6"/>
+		<option name="Grenade B" value="0x7"/>
+		<option name="Grenade C" value="0x8"/>
+		<option name="Grenade D" value="0x9"/>
+		<option name="Scoreboard Friendly" value="0xA"/>
+		<option name="Scoreboard Enemy" value="0xB"/>
+		<option name="Health And Shield" value="0xC"/>
+		<option name="Bottom Edge" value="0xD"/>
+		<option name="Equipment XY" value="0xE"/>
+		<option name="Equipment Y" value="0xF"/>
+		<option name="Unknown2" value="0x10"/>
+		<option name="Depreciated" value="0x11"/>
+		<option name="Depreciated2" value="0x12"/>
+		<option name="Depreciated3" value="0x13"/>
+		<option name="Depreciated4" value="0x14"/>
+		<option name="Depreciated5" value="0x15"/>
+		<option name="Notification" value="0x16"/>
+		<option name="Gametype" value="0x17"/>
+		<option name="Unknown4" value="0x18"/>
+		<option name="State Right" value="0x19"/>
+		<option name="State Left" value="0x1A"/>
+		<option name="State Center" value="0x1B"/>
+		<option name="State Center2" value="0x1C"/>
+		<option name="Gametype Friendly" value="0x1D"/>
+		<option name="Gametype Enemy" value="0x1E"/>
+		<option name="Metagame Top" value="0x1F"/>
+		<option name="Metagame Player1" value="0x20"/>
+		<option name="Metagame Player2" value="0x21"/>
+		<option name="Metagame Player3" value="0x22"/>
+		<option name="Metagame Player4" value="0x23"/>
+		<option name="Theater" value="0x24"/>
+		<option name="Prompt" value="0x25"/>
+		<option name="Hologram Target" value="0x26"/>
+		<option name="Medals" value="0x27"/>
+		<option name="Survival Medals" value="0x28"/>
+		<option name="Unknown HO_ Offset3" value="0x29"/>
+		<option name="Motion Sensor" value="0x2A"/>
+	</enum16>
+	<uint8 name="Post Anchor Padding Padding 0" visible="false" offset="0x6E"/>
+	<uint8 name="Post Anchor Padding Padding 1" visible="false" offset="0x6F"/>
+	<float32 name="Campaign Medal Scale" visible="true" offset="0x70"/>
+	<float32 name="Campaign Medal Spacing" visible="true" offset="0x74"/>
+	<float32 name="Campaign Medal Offset X" visible="true" offset="0x78"/>
+	<float32 name="Campaign Medal Offset Y" visible="true" offset="0x7C"/>
+	<float32 name="Metagame Scoreboard Top Y" visible="true" offset="0x80"/>
+	<float32 name="Metagame Scoreboard Spacing" visible="true" offset="0x84"/>
+	<tagref name="Unit Damage Grid" visible="true" offset="0x88"/>
+	<float32 name="Micro Texture Tile Amount" visible="true" offset="0x98"/>
+	<float32 name="Medium Sensor Blip Scale" visible="true" offset="0x9C"/>
+	<float32 name="Small Sensor Blip Scale" visible="true" offset="0xA0"/>
+	<float32 name="Large Sensor Blip Scale" visible="true" offset="0xA4"/>
+	<float32 name="Sensor Blip Glow Amount" visible="true" offset="0xA8"/>
+	<float32 name="Sensor Blip Glow Radius" visible="true" offset="0xAC"/>
+	<float32 name="Sensor Blip Glow Opacity" visible="true" offset="0xB0"/>
+	<tagref name="Motion Sensor Blip" visible="true" offset="0xB4"/>
+	<tagref name="Birthday Party Effect" visible="true" offset="0xC4"/>
+	<tagref name="Campaign Flood Mask" visible="true" offset="0xD4"/>
+	<tagref name="Campaign Flood Mask Tile" visible="true" offset="0xE4"/>
+	<float32 name="Motion Sensor Blip Height Modifier" visible="true" offset="0xF4"/>
+	<float32 name="Shield Minor Threshold" visible="true" offset="0xF8"/>
+	<float32 name="Shield Major Threshold" visible="true" offset="0xFC"/>
+	<float32 name="Shield Critical Threshold" visible="true" offset="0x100"/>
+	<float32 name="Health Minor Threshold" visible="true" offset="0x104"/>
+	<float32 name="Health Major Threshold" visible="true" offset="0x108"/>
+	<float32 name="Health Critical Threshold" visible="true" offset="0x10C"/>
+	<float32 name="Unknown12" visible="true" offset="0x110"/>
+	<float32 name="Unknown13" visible="true" offset="0x114"/>
+	<float32 name="Unknown13_2" visible="true" offset="0x118"/>
+	<float32 name="Unknown14" visible="true" offset="0x11C"/>
+	<float32 name="Unknown15" visible="true" offset="0x120"/>
+	<float32 name="Unknown16" visible="true" offset="0x124"/>
+	<float32 name="Unknown17" visible="true" offset="0x128"/>
+	<float32 name="Unknown18" visible="true" offset="0x12C"/>
+	<float32 name="Unknown19" visible="true" offset="0x130"/>
+	<float32 name="Unknown20" visible="true" offset="0x134"/>
+	<float32 name="Unknown21" visible="true" offset="0x138"/>
+	<float32 name="Unknown22" visible="true" offset="0x13C"/>
+	<float32 name="Unknown23" visible="true" offset="0x140"/>
+	<float32 name="Unknown24" visible="true" offset="0x144"/>
+	<float32 name="Unknown25" visible="true" offset="0x148"/>
+	<float32 name="Unknown26" visible="true" offset="0x14C"/>
+	<dataRef name="Damage Mask Function1" visible="true" offset="0x150"/>
+	<colorf name="Damage Mask Color Overlay" visible="true" offset="0x164" format="rgb"/>
+	<float32 name="Damage Mask Color Overlay Alpha" visible="true" offset="0x170"/>
+	<float32 name="Damage Mask Opacity Red" visible="true" offset="0x174"/>
+	<float32 name="Damage Mask Opacity Green" visible="true" offset="0x178"/>
+	<float32 name="Damage Mask Opacity Blue" visible="true" offset="0x17C"/>
+	<float32 name="Damage Mask Opacity Alpha" visible="true" offset="0x180"/>
+	<colorf name="Damage Mask Color Floor" visible="true" offset="0x184" format="rgb"/>
+	<float32 name="Damage Mask Color Floor Alpha" visible="true" offset="0x190"/>
+	<colorf name="Damage Mask Bitmap Tint" visible="true" offset="0x194" format="rgb"/>
+	<float32 name="Damage Mask Bitmap Tint Alpha" visible="true" offset="0x1A0"/>
+	<dataRef name="Damage Mask Function2" visible="true" offset="0x1A4"/>
+	<float32 name="Sprint FOVMultiplier" visible="true" offset="0x1B8"/>
+	<float32 name="Sprint FOVTransition In Time" visible="true" offset="0x1BC"/>
+	<float32 name="Sprint FOXTransition Out Time" visible="true" offset="0x1C0"/>
+	<tagref name="Parallax Data" visible="true" offset="0x1C4"/>
+	<float32 name="Unknown49" visible="true" offset="0x1D4"/>
+	<dataRef name="Unknown60" visible="true" offset="0x1D8"/>
+	<dataRef name="Unknown61" visible="true" offset="0x1EC"/>
+	<dataRef name="Unknown62" visible="true" offset="0x200"/>
+	<dataRef name="Unknown63" visible="true" offset="0x214"/>
+	<dataRef name="Unknown64" visible="true" offset="0x228"/>
+	<float32 name="Unknown65" visible="true" offset="0x23C"/>
+	<dataRef name="Unknown66" visible="true" offset="0x240"/>
+	<dataRef name="Unknown67" visible="true" offset="0x254"/>
+	<dataRef name="Unknown68" visible="true" offset="0x268"/>
+	<dataRef name="Unknown69" visible="true" offset="0x27C"/>
+	<dataRef name="Unknown70" visible="true" offset="0x290"/>
+	<tagref name="Survival HUDUnknown" visible="true" offset="0x2A4"/>
+	<float32 name="Achievement Display Time" visible="true" offset="0x2B4"/>
+	<float32 name="Unknown73" visible="true" offset="0x2B8"/>
+	<float32 name="Unknown74" visible="true" offset="0x2BC"/>
+</plugin>

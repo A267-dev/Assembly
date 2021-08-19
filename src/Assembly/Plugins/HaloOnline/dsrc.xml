@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x1C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<stringId name="Name" visible="true" offset="0x0"/>
+	<uint32 name="Unknown" visible="true" offset="0x4"/>
+	<uint32 name="Unknown2" visible="true" offset="0x8"/>
+	<uint32 name="Unknown3" visible="true" offset="0xC"/>
+	<reflexive name="Data" visible="true" offset="0x10" entrySize="0x28">
+		<reflexive name="Integer Values" visible="true" offset="0x0" entrySize="0x8">
+			<stringId name="Data Type" visible="true" offset="0x0"/>
+			<int32 name="Value" visible="true" offset="0x4"/>
+		</reflexive>
+		<reflexive name="String Values" visible="true" offset="0xC" entrySize="0x24">
+			<stringId name="Data Type" visible="true" offset="0x0"/>
+			<ascii name="Value" visible="true" offset="0x4" length="0x20"/>
+		</reflexive>
+		<reflexive name="Stringid Values" visible="true" offset="0x18" entrySize="0x8">
+			<stringId name="Data Type" visible="true" offset="0x0"/>
+			<stringId name="Value" visible="true" offset="0x4"/>
+		</reflexive>
+		<stringId name="Unknown" visible="true" offset="0x24"/>
+	</reflexive>
+</plugin>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0xC">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Lighting Variables" visible="true" offset="0x0" entrySize="0x4">
+		<float32 name="Lightmap Brightness Offset" visible="true" offset="0x0"/>
+	</reflexive>
+</plugin>

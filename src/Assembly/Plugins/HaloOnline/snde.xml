@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x48">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<uint32 name="Unknown1" visible="true" offset="0x0"/>
+	<int16 name="Priority" visible="true" offset="0x4"/>
+	<int16 name="Unknown2" visible="true" offset="0x6"/>
+	<float32 name="Room Intensity" visible="true" offset="0x8"/>
+	<float32 name="Room Intensity High Frequency" visible="true" offset="0xC"/>
+	<float32 name="Room Rolloff" visible="true" offset="0x10"/>
+	<float32 name="Decay Time" visible="true" offset="0x14"/>
+	<float32 name="Decay High Frequency Ratio" visible="true" offset="0x18"/>
+	<float32 name="Reflections Intensity" visible="true" offset="0x1C"/>
+	<float32 name="Reflections Delay" visible="true" offset="0x20"/>
+	<float32 name="Reverb Intensity" visible="true" offset="0x24"/>
+	<float32 name="Reverb Delay" visible="true" offset="0x28"/>
+	<float32 name="Diffusion" visible="true" offset="0x2C"/>
+	<float32 name="Density" visible="true" offset="0x30"/>
+	<float32 name="High Frequency Refrence" visible="true" offset="0x34"/>
+	<uint32 name="Unknown3" visible="true" offset="0x38"/>
+	<uint32 name="Unknown4" visible="true" offset="0x3C"/>
+	<uint32 name="Unknown5" visible="true" offset="0x40"/>
+	<uint32 name="Unknown6" visible="true" offset="0x44"/>
+</plugin>

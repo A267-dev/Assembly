@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x24">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<bitfield32 name="Animation Flags" visible="true" offset="0x0">
+		<bit name="Loops" index="0"/>
+		<bit name="Bit1" index="1"/>
+		<bit name="Bit2" index="2"/>
+		<bit name="Bit3" index="3"/>
+		<bit name="Bit4" index="4"/>
+		<bit name="Bit5" index="5"/>
+		<bit name="Bit6" index="6"/>
+		<bit name="Bit7" index="7"/>
+		<bit name="Bit8" index="8"/>
+		<bit name="Bit9" index="9"/>
+		<bit name="Bit10" index="10"/>
+		<bit name="Bit11" index="11"/>
+		<bit name="Bit12" index="12"/>
+		<bit name="Bit13" index="13"/>
+		<bit name="Bit14" index="14"/>
+		<bit name="Bit15" index="15"/>
+		<bit name="Bit16" index="16"/>
+		<bit name="Bit17" index="17"/>
+		<bit name="Bit18" index="18"/>
+		<bit name="Bit19" index="19"/>
+		<bit name="Bit20" index="20"/>
+		<bit name="Bit21" index="21"/>
+		<bit name="Bit22" index="22"/>
+		<bit name="Bit23" index="23"/>
+		<bit name="Bit24" index="24"/>
+		<bit name="Bit25" index="25"/>
+		<bit name="Bit26" index="26"/>
+		<bit name="Bit27" index="27"/>
+		<bit name="Bit28" index="28"/>
+		<bit name="Bit29" index="29"/>
+		<bit name="Bit30" index="30"/>
+		<bit name="Bit31" index="31"/>
+	</bitfield32>
+	<reflexive name="Animation Definition" visible="true" offset="0x4" entrySize="0x24">
+		<uint32 name="Frame" visible="true" offset="0x0"/>
+		<enum16 name="Anchor" visible="true" offset="0x4">
+			<option name="Custom" value="0x0"/>
+			<option name="Center" value="0x1"/>
+			<option name="Top Center" value="0x2"/>
+			<option name="Bottom Center" value="0x3"/>
+			<option name="Left Center" value="0x4"/>
+			<option name="Right Center" value="0x5"/>
+			<option name="Top Left" value="0x6"/>
+			<option name="Top Right" value="0x7"/>
+			<option name="Bottom Right" value="0x8"/>
+			<option name="Bottom Left" value="0x9"/>
+		</enum16>
+		<int16 name="Unknown" visible="true" offset="0x6"/>
+		<float name="Custom Anchor X" visible="true" offset="0x8"/>
+		<float name="Custom Anchor Y" visible="true" offset="0xC"/>
+		<float name="Scale I" visible="true" offset="0x10"/>
+		<float name="Scale J" visible="true" offset="0x14"/>
+		<uint32 name="Unknown2" visible="true" offset="0x18"/>
+		<uint32 name="Unknown3" visible="true" offset="0x1C"/>
+		<uint32 name="Unknown4" visible="true" offset="0x20"/>
+	</reflexive>
+	<dataRef name="Function" visible="true" offset="0x10"/>
+</plugin>

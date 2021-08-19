@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x1B4">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<tagref name="Render Model" visible="true" offset="0x0"/>
+	<tagref name="Collision Model" visible="true" offset="0x10"/>
+	<tagref name="Animation" visible="true" offset="0x20"/>
+	<tagref name="Physics Model" visible="true" offset="0x30"/>
+	<float32 name="Disappear Distance" visible="true" offset="0x40"/>
+	<float32 name="Begin Fade Distance" visible="true" offset="0x44"/>
+	<float32 name="Animation Distance" visible="true" offset="0x48"/>
+	<float32 name="Shadow Fade Distance" visible="true" offset="0x4C"/>
+	<float32 name="Instance Disappear Distance" visible="true" offset="0x50"/>
+	<tagref name="Lod Model" visible="true" offset="0x54"/>
+	<reflexive name="Variants" visible="true" offset="0x64" entrySize="0x50">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<tagref name="Variant Dialogue" visible="true" offset="0x4"/>
+		<stringId name="Default Dialog Effect" visible="true" offset="0x14"/>
+		<int8 name="Unknown" visible="true" offset="0x18"/>
+		<int8 name="Unknown2" visible="true" offset="0x19"/>
+		<int8 name="Unknown3" visible="true" offset="0x1A"/>
+		<int8 name="Unknown4" visible="true" offset="0x1B"/>
+		<int8 name="Model Region Indices 0" visible="true" offset="0x1C"/>
+		<int8 name="Model Region Indices 1" visible="true" offset="0x1D"/>
+		<int8 name="Model Region Indices 2" visible="true" offset="0x1E"/>
+		<int8 name="Model Region Indices 3" visible="true" offset="0x1F"/>
+		<int8 name="Model Region Indices 4" visible="true" offset="0x20"/>
+		<int8 name="Model Region Indices 5" visible="true" offset="0x21"/>
+		<int8 name="Model Region Indices 6" visible="true" offset="0x22"/>
+		<int8 name="Model Region Indices 7" visible="true" offset="0x23"/>
+		<int8 name="Model Region Indices 8" visible="true" offset="0x24"/>
+		<int8 name="Model Region Indices 9" visible="true" offset="0x25"/>
+		<int8 name="Model Region Indices 10" visible="true" offset="0x26"/>
+		<int8 name="Model Region Indices 11" visible="true" offset="0x27"/>
+		<int8 name="Model Region Indices 12" visible="true" offset="0x28"/>
+		<int8 name="Model Region Indices 13" visible="true" offset="0x29"/>
+		<int8 name="Model Region Indices 14" visible="true" offset="0x2A"/>
+		<int8 name="Model Region Indices 15" visible="true" offset="0x2B"/>
+		<reflexive name="Regions" visible="true" offset="0x2C" entrySize="0x18">
+			<stringId name="Name" visible="true" offset="0x0"/>
+			<int8 name="Render Model Region Index" visible="true" offset="0x4"/>
+			<int8 name="Runtime Flags" visible="true" offset="0x5"/>
+			<int16 name="Parent Variant" visible="true" offset="0x6"/>
+			<reflexive name="Permutations" visible="true" offset="0x8" entrySize="0x24">
+				<stringId name="Name" visible="true" offset="0x0"/>
+				<int8 name="Render Model Permutation Index" visible="true" offset="0x4"/>
+				<bitfield8 name="Flags" visible="true" offset="0x5">
+					<bit name="Copy States To All Permutations" index="0"/>
+				</bitfield8>
+				<uint8 name="Pad Padding 0" visible="false" offset="0x6"/>
+				<uint8 name="Pad Padding 1" visible="false" offset="0x7"/>
+				<float32 name="Probability" visible="true" offset="0x8"/>
+				<reflexive name="States" visible="true" offset="0xC" entrySize="0x20">
+					<stringId name="Name" visible="true" offset="0x0"/>
+					<uint8 name="Model Permutation Index" visible="true" offset="0x4"/>
+					<bitfield8 name="Property Flags" visible="true" offset="0x5">
+						<bit name="Blurred" index="0"/>
+						<bit name="Hella Blurred" index="1"/>
+						<bit name="Shielded" index="2"/>
+						<bit name="Bit3" index="3"/>
+						<bit name="Bit4" index="4"/>
+						<bit name="Bit5" index="5"/>
+						<bit name="Bit6" index="6"/>
+						<bit name="Bit7" index="7"/>
+					</bitfield8>
+					<enum16 name="State2" visible="true" offset="0x6">
+						<option name="Default" value="0x0"/>
+						<option name="Minor Damage" value="0x1"/>
+						<option name="Medium Damage" value="0x2"/>
+						<option name="Major Damage" value="0x3"/>
+						<option name="Destroyed" value="0x4"/>
+					</enum16>
+					<tagref name="Looping Effect" visible="true" offset="0x8"/>
+					<stringId name="Looping Effect Marker Name" visible="true" offset="0x18"/>
+					<float32 name="Initial Probability" visible="true" offset="0x1C"/>
+				</reflexive>
+				<int8 name="Runtime State Permutation Indices 0" visible="true" offset="0x18"/>
+				<int8 name="Runtime State Permutation Indices 1" visible="true" offset="0x19"/>
+				<int8 name="Runtime State Permutation Indices 2" visible="true" offset="0x1A"/>
+				<int8 name="Runtime State Permutation Indices 3" visible="true" offset="0x1B"/>
+				<int8 name="Runtime State Permutation Indices 4" visible="true" offset="0x1C"/>
+				<int8 name="Runtime State Permutation Indices 5" visible="true" offset="0x1D"/>
+				<int8 name="Runtime State Permutation Indices 6" visible="true" offset="0x1E"/>
+				<int8 name="Runtime State Permutation Indices 7" visible="true" offset="0x1F"/>
+				<int8 name="Runtime State Permutation Indices 8" visible="true" offset="0x20"/>
+				<int8 name="Runtime State Permutation Indices 9" visible="true" offset="0x21"/>
+				<int8 name="Runtime State Permutation Indices 10" visible="true" offset="0x22"/>
+				<int8 name="Runtime State Permutation Indices 11" visible="true" offset="0x23"/>
+			</reflexive>
+			<enum32 name="Sort Order" visible="true" offset="0x14">
+				<option name="No Sorting" value="0x0"/>
+				<option name="_5 Closest" value="0x1"/>
+				<option name="_4" value="0x2"/>
+				<option name="_3" value="0x3"/>
+				<option name="_2" value="0x4"/>
+				<option name="_1" value="0x5"/>
+				<option name="_0 Same As Model" value="0x6"/>
+				<option name="_1_2" value="0x7"/>
+				<option name="_2_2" value="0x8"/>
+				<option name="_3_2" value="0x9"/>
+				<option name="_4_2" value="0xA"/>
+				<option name="_5 Farthest" value="0xB"/>
+			</enum32>
+		</reflexive>
+		<reflexive name="Objects" visible="true" offset="0x38" entrySize="0x1C">
+			<stringId name="Parent Marker" visible="true" offset="0x0"/>
+			<stringId name="Child Marker" visible="true" offset="0x4"/>
+			<stringId name="Child Variant" visible="true" offset="0x8"/>
+			<tagref name="Child Object" visible="true" offset="0xC"/>
+		</reflexive>
+		<int32 name="Instance Group Index" visible="true" offset="0x44"/>
+		<uint32 name="Unknown6" visible="true" offset="0x48"/>
+		<uint32 name="Unknown7" visible="true" offset="0x4C"/>
+	</reflexive>
+	<reflexive name="Region Sort" visible="true" offset="0x70" entrySize="0x4">
+		<stringId name="Name" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Instance Groups" visible="true" offset="0x7C" entrySize="0x18">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<enum32 name="Choice" visible="true" offset="0x4">
+			<option name="Choose One Member" value="0x0"/>
+			<option name="Choose All Members" value="0x1"/>
+		</enum32>
+		<reflexive name="Instance Members" visible="true" offset="0x8" entrySize="0x1C">
+			<int32 name="Subgroup Index" visible="true" offset="0x0"/>
+			<stringId name="Instance Name" visible="true" offset="0x4"/>
+			<float32 name="Probability" visible="true" offset="0x8"/>
+			<int32 name="Instance Placement Mask1" visible="true" offset="0xC"/>
+			<int32 name="Instance Placement Mask2" visible="true" offset="0x10"/>
+			<int32 name="Instance Placement Mask3" visible="true" offset="0x14"/>
+			<int32 name="Instance Placement Mask4" visible="true" offset="0x18"/>
+		</reflexive>
+		<float32 name="Probability" visible="true" offset="0x14"/>
+	</reflexive>
+	<reflexive name="Materials" visible="true" offset="0x88" entrySize="0x14">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<enum16 name="Material Type" visible="true" offset="0x4">
+			<option name="Dirt" value="0x0"/>
+			<option name="Sand" value="0x1"/>
+			<option name="Stone" value="0x2"/>
+			<option name="Snow" value="0x3"/>
+			<option name="Wood" value="0x4"/>
+			<option name="Metalhollow" value="0x5"/>
+			<option name="Metalthin" value="0x6"/>
+			<option name="Metalthick" value="0x7"/>
+			<option name="Rubber" value="0x8"/>
+			<option name="Glass" value="0x9"/>
+			<option name="Force Field" value="0xA"/>
+			<option name="Grunt" value="0xB"/>
+			<option name="Hunter Armor" value="0xC"/>
+			<option name="Hunter Skin" value="0xD"/>
+			<option name="Elite" value="0xE"/>
+			<option name="Jackal" value="0xF"/>
+			<option name="Jackal Energy Shield" value="0x10"/>
+			<option name="Engineer Skin" value="0x11"/>
+			<option name="Engineer Force Field" value="0x12"/>
+			<option name="Flood Combat Form" value="0x13"/>
+			<option name="Flood Carrier Form" value="0x14"/>
+			<option name="Cyborg Armor" value="0x15"/>
+			<option name="Cyborg Energy Shield" value="0x16"/>
+			<option name="Human Armor" value="0x17"/>
+			<option name="Human Skin" value="0x18"/>
+			<option name="Sentinel" value="0x19"/>
+			<option name="Monitor" value="0x1A"/>
+			<option name="Plastic" value="0x1B"/>
+			<option name="Water" value="0x1C"/>
+			<option name="Leaves" value="0x1D"/>
+			<option name="Elite Energy Shield" value="0x1E"/>
+			<option name="Ice" value="0x1F"/>
+			<option name="Hunter Shield" value="0x20"/>
+		</enum16>
+		<int16 name="Damage Section Index" visible="true" offset="0x6"/>
+		<int16 name="Runtime Collision Material Index" visible="true" offset="0x8"/>
+		<int16 name="Runtime Damager Material Index" visible="true" offset="0xA"/>
+		<stringId name="Material Name" visible="true" offset="0xC"/>
+		<int16 name="Global Material Index" visible="true" offset="0x10"/>
+		<uint8 name="Unused Padding 0" visible="false" offset="0x12"/>
+		<uint8 name="Unused Padding 1" visible="false" offset="0x13"/>
+	</reflexive>
+	<reflexive name="New Damage Info" visible="true" offset="0x94" entrySize="0x100">
+		<bitfield32 name="Flags" visible="true" offset="0x0">
+			<bit name="Takes Shield Damage For Children" index="0"/>
+			<bit name="Takes Body Damage For Children" index="1"/>
+			<bit name="Always Shields Friendly Damage" index="2"/>
+			<bit name="Passes Area Damage To Children" index="3"/>
+			<bit name="Parent Never Takes Body Damage For Children" index="4"/>
+			<bit name="Only Damaged By Explosives" index="5"/>
+			<bit name="Parent Never Takes Shield Damage For Children" index="6"/>
+			<bit name="Cannot Die From Damage" index="7"/>
+			<bit name="Passes Attached Damage To Riders" index="8"/>
+			<bit name="Shield Depletion Is Permanent" index="9"/>
+			<bit name="Shield Depletion Force Hard Ping" index="10"/>
+			<bit name="Ai Do Not Damage Without Player" index="11"/>
+			<bit name="Health Regrows While Dead" index="12"/>
+			<bit name="Shield Recharge Plays Only When Empty" index="13"/>
+			<bit name="Ignore Force Minimum Transfer" index="14"/>
+			<bit name="Orphan From Postprocess Autogen" index="15"/>
+			<bit name="Only Damaged By Boarding Damage" index="16"/>
+		</bitfield32>
+		<stringId name="Global Indirect Material Name" visible="true" offset="0x4"/>
+		<int16 name="Indirect Damage Section" visible="true" offset="0x8"/>
+		<uint8 name="Unused1 Padding 0" visible="false" offset="0xA"/>
+		<uint8 name="Unused1 Padding 1" visible="false" offset="0xB"/>
+		<uint8 name="Unused1 Padding 2" visible="false" offset="0xC"/>
+		<uint8 name="Unused1 Padding 3" visible="false" offset="0xD"/>
+		<uint8 name="Unused1 Padding 4" visible="false" offset="0xE"/>
+		<uint8 name="Unused1 Padding 5" visible="false" offset="0xF"/>
+		<comment title="Collision  Damage  Reporting  Type"></comment>
+
+		<enum8 name="Halo Online" visible="true" offset="0x10">
+			<option name="Guardians Unknown" value="0x0"/>
+			<option name="Guardians" value="0x1"/>
+			<option name="Falling Damage" value="0x2"/>
+			<option name="Generic Collision" value="0x3"/>
+			<option name="Armor Lock Crush" value="0x4"/>
+			<option name="Generic Melee" value="0x5"/>
+			<option name="Generic Explosion" value="0x6"/>
+			<option name="Magnum" value="0x7"/>
+			<option name="Plasma Pistol" value="0x8"/>
+			<option name="Needler" value="0x9"/>
+			<option name="Mauler" value="0xA"/>
+			<option name="SMG" value="0xB"/>
+			<option name="Plasma Rifle" value="0xC"/>
+			<option name="Battle Rifle" value="0xD"/>
+			<option name="Carbine" value="0xE"/>
+			<option name="Shotgun" value="0xF"/>
+			<option name="Sniper Rifle" value="0x10"/>
+			<option name="Beam Rifle" value="0x11"/>
+			<option name="Assault Rifle" value="0x12"/>
+			<option name="Spiker" value="0x13"/>
+			<option name="Fuel Rod Cannon" value="0x14"/>
+			<option name="Missile Pod" value="0x15"/>
+			<option name="Rocket Launcher" value="0x16"/>
+			<option name="Spartan Laser" value="0x17"/>
+			<option name="Brute Shot" value="0x18"/>
+			<option name="Flamethrower" value="0x19"/>
+			<option name="Sentinel Gun" value="0x1A"/>
+			<option name="Energy Sword" value="0x1B"/>
+			<option name="Gravity Hammer" value="0x1C"/>
+			<option name="Frag Grenade" value="0x1D"/>
+			<option name="Plasma Grenade" value="0x1E"/>
+			<option name="Spike Grenade" value="0x1F"/>
+			<option name="Firebomb Grenade" value="0x20"/>
+			<option name="Flag" value="0x21"/>
+			<option name="Bomb" value="0x22"/>
+			<option name="Bomb Explosion" value="0x23"/>
+			<option name="Ball" value="0x24"/>
+			<option name="Machinegun Turret" value="0x25"/>
+			<option name="Plasma Cannon" value="0x26"/>
+			<option name="Plasma Mortar" value="0x27"/>
+			<option name="Plasma Turret" value="0x28"/>
+			<option name="Shade Turret" value="0x29"/>
+			<option name="Banshee" value="0x2A"/>
+			<option name="Ghost" value="0x2B"/>
+			<option name="Mongoose" value="0x2C"/>
+			<option name="Scorpion" value="0x2D"/>
+			<option name="Scorpion Gunner" value="0x2E"/>
+			<option name="Spectre" value="0x2F"/>
+			<option name="Spectre Gunner" value="0x30"/>
+			<option name="Warthog" value="0x31"/>
+			<option name="Warthog Gunner" value="0x32"/>
+			<option name="Warthog Gauss Turret" value="0x33"/>
+			<option name="Wraith" value="0x34"/>
+			<option name="Wraith Gunner" value="0x35"/>
+			<option name="Tank" value="0x36"/>
+			<option name="Chopper" value="0x37"/>
+			<option name="Hornet" value="0x38"/>
+			<option name="Mantis" value="0x39"/>
+			<option name="Prowler" value="0x3A"/>
+			<option name="Sentinel Beam" value="0x3B"/>
+			<option name="Sentinel RPG" value="0x3C"/>
+			<option name="Teleporter" value="0x3D"/>
+			<option name="Tripmine" value="0x3E"/>
+			<option name="DMR" value="0x3F"/>
+		</enum8>
+		<comment title="Response  Damage  Reporting  Type"></comment>
+
+		<enum8 name="Halo Online" visible="true" offset="0x11">
+			<option name="Guardians Unknown" value="0x0"/>
+			<option name="Guardians" value="0x1"/>
+			<option name="Falling Damage" value="0x2"/>
+			<option name="Generic Collision" value="0x3"/>
+			<option name="Armor Lock Crush" value="0x4"/>
+			<option name="Generic Melee" value="0x5"/>
+			<option name="Generic Explosion" value="0x6"/>
+			<option name="Magnum" value="0x7"/>
+			<option name="Plasma Pistol" value="0x8"/>
+			<option name="Needler" value="0x9"/>
+			<option name="Mauler" value="0xA"/>
+			<option name="SMG" value="0xB"/>
+			<option name="Plasma Rifle" value="0xC"/>
+			<option name="Battle Rifle" value="0xD"/>
+			<option name="Carbine" value="0xE"/>
+			<option name="Shotgun" value="0xF"/>
+			<option name="Sniper Rifle" value="0x10"/>
+			<option name="Beam Rifle" value="0x11"/>
+			<option name="Assault Rifle" value="0x12"/>
+			<option name="Spiker" value="0x13"/>
+			<option name="Fuel Rod Cannon" value="0x14"/>
+			<option name="Missile Pod" value="0x15"/>
+			<option name="Rocket Launcher" value="0x16"/>
+			<option name="Spartan Laser" value="0x17"/>
+			<option name="Brute Shot" value="0x18"/>
+			<option name="Flamethrower" value="0x19"/>
+			<option name="Sentinel Gun" value="0x1A"/>
+			<option name="Energy Sword" value="0x1B"/>
+			<option name="Gravity Hammer" value="0x1C"/>
+			<option name="Frag Grenade" value="0x1D"/>
+			<option name="Plasma Grenade" value="0x1E"/>
+			<option name="Spike Grenade" value="0x1F"/>
+			<option name="Firebomb Grenade" value="0x20"/>
+			<option name="Flag" value="0x21"/>
+			<option name="Bomb" value="0x22"/>
+			<option name="Bomb Explosion" value="0x23"/>
+			<option name="Ball" value="0x24"/>
+			<option name="Machinegun Turret" value="0x25"/>
+			<option name="Plasma Cannon" value="0x26"/>
+			<option name="Plasma Mortar" value="0x27"/>
+			<option name="Plasma Turret" value="0x28"/>
+			<option name="Shade Turret" value="0x29"/>
+			<option name="Banshee" value="0x2A"/>
+			<option name="Ghost" value="0x2B"/>
+			<option name="Mongoose" value="0x2C"/>
+			<option name="Scorpion" value="0x2D"/>
+			<option name="Scorpion Gunner" value="0x2E"/>
+			<option name="Spectre" value="0x2F"/>
+			<option name="Spectre Gunner" value="0x30"/>
+			<option name="Warthog" value="0x31"/>
+			<option name="Warthog Gunner" value="0x32"/>
+			<option name="Warthog Gauss Turret" value="0x33"/>
+			<option name="Wraith" value="0x34"/>
+			<option name="Wraith Gunner" value="0x35"/>
+			<option name="Tank" value="0x36"/>
+			<option name="Chopper" value="0x37"/>
+			<option name="Hornet" value="0x38"/>
+			<option name="Mantis" value="0x39"/>
+			<option name="Prowler" value="0x3A"/>
+			<option name="Sentinel Beam" value="0x3B"/>
+			<option name="Sentinel RPG" value="0x3C"/>
+			<option name="Teleporter" value="0x3D"/>
+			<option name="Tripmine" value="0x3E"/>
+			<option name="DMR" value="0x3F"/>
+		</enum8>
+		<int16 name="Unused2" visible="true" offset="0x12"/>
+		<uint8 name="Unused5 Padding 0" visible="false" offset="0x14"/>
+		<uint8 name="Unused5 Padding 1" visible="false" offset="0x15"/>
+		<uint8 name="Unused5 Padding 2" visible="false" offset="0x16"/>
+		<uint8 name="Unused5 Padding 3" visible="false" offset="0x17"/>
+		<uint8 name="Unused5 Padding 4" visible="false" offset="0x18"/>
+		<uint8 name="Unused5 Padding 5" visible="false" offset="0x19"/>
+		<uint8 name="Unused5 Padding 6" visible="false" offset="0x1A"/>
+		<uint8 name="Unused5 Padding 7" visible="false" offset="0x1B"/>
+		<uint8 name="Unused5 Padding 8" visible="false" offset="0x1C"/>
+		<uint8 name="Unused5 Padding 9" visible="false" offset="0x1D"/>
+		<uint8 name="Unused5 Padding 10" visible="false" offset="0x1E"/>
+		<uint8 name="Unused5 Padding 11" visible="false" offset="0x1F"/>
+		<uint8 name="Unused5 Padding 12" visible="false" offset="0x20"/>
+		<uint8 name="Unused5 Padding 13" visible="false" offset="0x21"/>
+		<uint8 name="Unused5 Padding 14" visible="false" offset="0x22"/>
+		<uint8 name="Unused5 Padding 15" visible="false" offset="0x23"/>
+		<uint8 name="Unused5 Padding 16" visible="false" offset="0x24"/>
+		<uint8 name="Unused5 Padding 17" visible="false" offset="0x25"/>
+		<uint8 name="Unused5 Padding 18" visible="false" offset="0x26"/>
+		<uint8 name="Unused5 Padding 19" visible="false" offset="0x27"/>
+		<float32 name="Max Vitality" visible="true" offset="0x28"/>
+		<float32 name="Min Stun Damage" visible="true" offset="0x2C"/>
+		<float32 name="Stun Time" visible="true" offset="0x30"/>
+		<float32 name="Recharge Time" visible="true" offset="0x34"/>
+		<float32 name="Recharge Fraction" visible="true" offset="0x38"/>
+		<uint8 name="Unused6 Padding 0" visible="false" offset="0x3C"/>
+		<uint8 name="Unused6 Padding 1" visible="false" offset="0x3D"/>
+		<uint8 name="Unused6 Padding 2" visible="false" offset="0x3E"/>
+		<uint8 name="Unused6 Padding 3" visible="false" offset="0x3F"/>
+		<uint8 name="Unused6 Padding 4" visible="false" offset="0x40"/>
+		<uint8 name="Unused6 Padding 5" visible="false" offset="0x41"/>
+		<uint8 name="Unused6 Padding 6" visible="false" offset="0x42"/>
+		<uint8 name="Unused6 Padding 7" visible="false" offset="0x43"/>
+		<uint8 name="Unused6 Padding 8" visible="false" offset="0x44"/>
+		<uint8 name="Unused6 Padding 9" visible="false" offset="0x45"/>
+		<uint8 name="Unused6 Padding 10" visible="false" offset="0x46"/>
+		<uint8 name="Unused6 Padding 11" visible="false" offset="0x47"/>
+		<uint8 name="Unused6 Padding 12" visible="false" offset="0x48"/>
+		<uint8 name="Unused6 Padding 13" visible="false" offset="0x49"/>
+		<uint8 name="Unused6 Padding 14" visible="false" offset="0x4A"/>
+		<uint8 name="Unused6 Padding 15" visible="false" offset="0x4B"/>
+		<uint8 name="Unused6 Padding 16" visible="false" offset="0x4C"/>
+		<uint8 name="Unused6 Padding 17" visible="false" offset="0x4D"/>
+		<uint8 name="Unused6 Padding 18" visible="false" offset="0x4E"/>
+		<uint8 name="Unused6 Padding 19" visible="false" offset="0x4F"/>
+		<uint8 name="Unused6 Padding 20" visible="false" offset="0x50"/>
+		<uint8 name="Unused6 Padding 21" visible="false" offset="0x51"/>
+		<uint8 name="Unused6 Padding 22" visible="false" offset="0x52"/>
+		<uint8 name="Unused6 Padding 23" visible="false" offset="0x53"/>
+		<uint8 name="Unused6 Padding 24" visible="false" offset="0x54"/>
+		<uint8 name="Unused6 Padding 25" visible="false" offset="0x55"/>
+		<uint8 name="Unused6 Padding 26" visible="false" offset="0x56"/>
+		<uint8 name="Unused6 Padding 27" visible="false" offset="0x57"/>
+		<uint8 name="Unused6 Padding 28" visible="false" offset="0x58"/>
+		<uint8 name="Unused6 Padding 29" visible="false" offset="0x59"/>
+		<uint8 name="Unused6 Padding 30" visible="false" offset="0x5A"/>
+		<uint8 name="Unused6 Padding 31" visible="false" offset="0x5B"/>
+		<uint8 name="Unused6 Padding 32" visible="false" offset="0x5C"/>
+		<uint8 name="Unused6 Padding 33" visible="false" offset="0x5D"/>
+		<uint8 name="Unused6 Padding 34" visible="false" offset="0x5E"/>
+		<uint8 name="Unused6 Padding 35" visible="false" offset="0x5F"/>
+		<uint8 name="Unused6 Padding 36" visible="false" offset="0x60"/>
+		<uint8 name="Unused6 Padding 37" visible="false" offset="0x61"/>
+		<uint8 name="Unused6 Padding 38" visible="false" offset="0x62"/>
+		<uint8 name="Unused6 Padding 39" visible="false" offset="0x63"/>
+		<uint8 name="Unused6 Padding 40" visible="false" offset="0x64"/>
+		<uint8 name="Unused6 Padding 41" visible="false" offset="0x65"/>
+		<uint8 name="Unused6 Padding 42" visible="false" offset="0x66"/>
+		<uint8 name="Unused6 Padding 43" visible="false" offset="0x67"/>
+		<uint8 name="Unused6 Padding 44" visible="false" offset="0x68"/>
+		<uint8 name="Unused6 Padding 45" visible="false" offset="0x69"/>
+		<uint8 name="Unused6 Padding 46" visible="false" offset="0x6A"/>
+		<uint8 name="Unused6 Padding 47" visible="false" offset="0x6B"/>
+		<uint8 name="Unused6 Padding 48" visible="false" offset="0x6C"/>
+		<uint8 name="Unused6 Padding 49" visible="false" offset="0x6D"/>
+		<uint8 name="Unused6 Padding 50" visible="false" offset="0x6E"/>
+		<uint8 name="Unused6 Padding 51" visible="false" offset="0x6F"/>
+		<uint8 name="Unused6 Padding 52" visible="false" offset="0x70"/>
+		<uint8 name="Unused6 Padding 53" visible="false" offset="0x71"/>
+		<uint8 name="Unused6 Padding 54" visible="false" offset="0x72"/>
+		<uint8 name="Unused6 Padding 55" visible="false" offset="0x73"/>
+		<uint8 name="Unused6 Padding 56" visible="false" offset="0x74"/>
+		<uint8 name="Unused6 Padding 57" visible="false" offset="0x75"/>
+		<uint8 name="Unused6 Padding 58" visible="false" offset="0x76"/>
+		<uint8 name="Unused6 Padding 59" visible="false" offset="0x77"/>
+		<uint8 name="Unused6 Padding 60" visible="false" offset="0x78"/>
+		<uint8 name="Unused6 Padding 61" visible="false" offset="0x79"/>
+		<uint8 name="Unused6 Padding 62" visible="false" offset="0x7A"/>
+		<uint8 name="Unused6 Padding 63" visible="false" offset="0x7B"/>
+		<float32 name="Max Shield Vitality" visible="true" offset="0x7C"/>
+		<stringId name="Global Shield Material Name" visible="true" offset="0x80"/>
+		<float32 name="Shield Min Stun Damage" visible="true" offset="0x84"/>
+		<float32 name="Shield Stun Time" visible="true" offset="0x88"/>
+		<float32 name="Shield Recharge Time" visible="true" offset="0x8C"/>
+		<float32 name="Shield Damaged Threshold" visible="true" offset="0x90"/>
+		<tagref name="Shield Damaged Effect" visible="true" offset="0x94"/>
+		<tagref name="Shield Depleted Effect" visible="true" offset="0xA4"/>
+		<tagref name="Shield Recharging Effect" visible="true" offset="0xB4"/>
+		<reflexive name="Damage Sections" visible="true" offset="0xC4" entrySize="0x44">
+			<stringId name="Name" visible="true" offset="0x0"/>
+			<bitfield32 name="Flags" visible="true" offset="0x4">
+				<bit name="Absorbs Body Damage" index="0"/>
+				<bit name="Takes Full Damage When Object Dies" index="1"/>
+				<bit name="Cannot Die With Riders" index="2"/>
+				<bit name="Takes Full Damage When Object Destroyed" index="3"/>
+				<bit name="Restored On Ressurection" index="4"/>
+				<bit name="Unused5" index="5"/>
+				<bit name="Unused6" index="6"/>
+				<bit name="Headshotable" index="7"/>
+				<bit name="Ignores Shields" index="8"/>
+				<bit name="Takes Full Damage When Shield Depleted" index="9"/>
+				<bit name="Networked" index="10"/>
+				<bit name="Allow Damage Response Overflow" index="11"/>
+			</bitfield32>
+			<float32 name="Vitality Percentage" visible="true" offset="0x8"/>
+			<reflexive name="Instant Responses" visible="true" offset="0xC" entrySize="0x88">
+				<enum16 name="Response Type" visible="true" offset="0x0">
+					<option name="Recieves All Damage" value="0x0"/>
+					<option name="Recieves Area Effect Damage" value="0x1"/>
+					<option name="Recieves Local Damage" value="0x2"/>
+				</enum16>
+				<enum16 name="Constraint Damage Type" visible="true" offset="0x2">
+					<option name="None" value="0x0"/>
+					<option name="Destroy One Of Group" value="0x1"/>
+					<option name="Destroy Entire Group" value="0x2"/>
+					<option name="Loosen One Of Group" value="0x3"/>
+					<option name="Loosen Entire Group" value="0x4"/>
+				</enum16>
+				<stringId name="Trigger" visible="true" offset="0x4"/>
+				<bitfield32 name="Flags" visible="true" offset="0x8">
+					<bit name="Kills Object" index="0"/>
+					<bit name="Inhibits Melee Attack" index="1"/>
+					<bit name="Inhibits Weapon Attack" index="2"/>
+					<bit name="Inhibits Walking" index="3"/>
+					<bit name="Forces Drop Weapon" index="4"/>
+					<bit name="Kills Weapon Primary Trigger" index="5"/>
+					<bit name="Kills Weapon Secondary Trigger" index="6"/>
+					<bit name="Destroys Object" index="7"/>
+					<bit name="Damages Weapon Primary Trigger" index="8"/>
+					<bit name="Damages Weapon Secondary Trigger" index="9"/>
+					<bit name="Light Damage Left Turn" index="10"/>
+					<bit name="Major Damage Left Turn" index="11"/>
+					<bit name="Light Damage Right Turn" index="12"/>
+					<bit name="Major Damage Right Turn" index="13"/>
+					<bit name="Light Damage Engine" index="14"/>
+					<bit name="Major Damage Engine" index="15"/>
+					<bit name="Kills Object No Player Solo" index="16"/>
+					<bit name="Causes Detonation" index="17"/>
+					<bit name="Fires On Creation" index="18"/>
+					<bit name="Kills Variant Objects" index="19"/>
+					<bit name="Force Unattached Effects" index="20"/>
+					<bit name="Fires Under Threshold" index="21"/>
+					<bit name="Triggers Special Death" index="22"/>
+					<bit name="Only On Special Death" index="23"/>
+					<bit name="Only Not On Special Death" index="24"/>
+					<bit name="Buckles Giants" index="25"/>
+					<bit name="Causes Sp Detonation" index="26"/>
+					<bit name="Skip Sounds On Generic Effect" index="27"/>
+					<bit name="Kills Giants" index="28"/>
+					<bit name="Skip Sounds On Special Death" index="29"/>
+					<bit name="Cause Head Dismemberment" index="30"/>
+					<bit name="Cause Left Leg Dismemberment" index="31"/>
+				</bitfield32>
+				<float32 name="Damage Threshold" visible="true" offset="0xC"/>
+				<tagref name="Primary Transition Effect" visible="true" offset="0x10"/>
+				<tagref name="Secondary Transition Effect" visible="true" offset="0x20"/>
+				<tagref name="Transition Damage Effect" visible="true" offset="0x30"/>
+				<stringId name="Region" visible="true" offset="0x40"/>
+				<enum16 name="New State" visible="true" offset="0x44">
+					<option name="Default" value="0x0"/>
+					<option name="Minor Damage" value="0x1"/>
+					<option name="Medium Damage" value="0x2"/>
+					<option name="Major Damage" value="0x3"/>
+					<option name="Destroyed" value="0x4"/>
+				</enum16>
+				<int16 name="Runtime Region Index" visible="true" offset="0x46"/>
+				<stringId name="Secondary Region" visible="true" offset="0x48"/>
+				<enum16 name="Secondary New State" visible="true" offset="0x4C">
+					<option name="Default" value="0x0"/>
+					<option name="Minor Damage" value="0x1"/>
+					<option name="Medium Damage" value="0x2"/>
+					<option name="Major Damage" value="0x3"/>
+					<option name="Destroyed" value="0x4"/>
+				</enum16>
+				<int16 name="Secondary Runtime Region Index" visible="true" offset="0x4E"/>
+				<int16 name="Destroy Instance Group" visible="true" offset="0x50"/>
+				<enum16 name="Custom Response Behavior" visible="true" offset="0x52">
+					<option name="Plays Always" value="0x0"/>
+					<option name="Plays If Labels Match" value="0x1"/>
+					<option name="Plays If Labels Differ" value="0x2"/>
+				</enum16>
+				<stringId name="Custom Response Label" visible="true" offset="0x54"/>
+				<stringId name="Effect Marker Name" visible="true" offset="0x58"/>
+				<stringId name="Damage Effect Marker Name" visible="true" offset="0x5C"/>
+				<float32 name="Response Delay" visible="true" offset="0x60"/>
+				<tagref name="Delay Effect" visible="true" offset="0x64"/>
+				<stringId name="Delay Effect Marker Name" visible="true" offset="0x74"/>
+				<stringId name="Ejecting Seat Label" visible="true" offset="0x78"/>
+				<float32 name="Skip Fraction" visible="true" offset="0x7C"/>
+				<stringId name="Destroyed Child Object Marker Name" visible="true" offset="0x80"/>
+				<float32 name="Total Damage Threshold" visible="true" offset="0x84"/>
+			</reflexive>
+			<uint8 name="Unused1 Padding 0" visible="false" offset="0x18"/>
+			<uint8 name="Unused1 Padding 1" visible="false" offset="0x19"/>
+			<uint8 name="Unused1 Padding 2" visible="false" offset="0x1A"/>
+			<uint8 name="Unused1 Padding 3" visible="false" offset="0x1B"/>
+			<uint8 name="Unused1 Padding 4" visible="false" offset="0x1C"/>
+			<uint8 name="Unused1 Padding 5" visible="false" offset="0x1D"/>
+			<uint8 name="Unused1 Padding 6" visible="false" offset="0x1E"/>
+			<uint8 name="Unused1 Padding 7" visible="false" offset="0x1F"/>
+			<uint8 name="Unused1 Padding 8" visible="false" offset="0x20"/>
+			<uint8 name="Unused1 Padding 9" visible="false" offset="0x21"/>
+			<uint8 name="Unused1 Padding 10" visible="false" offset="0x22"/>
+			<uint8 name="Unused1 Padding 11" visible="false" offset="0x23"/>
+			<uint8 name="Unused1 Padding 12" visible="false" offset="0x24"/>
+			<uint8 name="Unused1 Padding 13" visible="false" offset="0x25"/>
+			<uint8 name="Unused1 Padding 14" visible="false" offset="0x26"/>
+			<uint8 name="Unused1 Padding 15" visible="false" offset="0x27"/>
+			<uint8 name="Unused1 Padding 16" visible="false" offset="0x28"/>
+			<uint8 name="Unused1 Padding 17" visible="false" offset="0x29"/>
+			<uint8 name="Unused1 Padding 18" visible="false" offset="0x2A"/>
+			<uint8 name="Unused1 Padding 19" visible="false" offset="0x2B"/>
+			<uint8 name="Unused1 Padding 20" visible="false" offset="0x2C"/>
+			<uint8 name="Unused1 Padding 21" visible="false" offset="0x2D"/>
+			<uint8 name="Unused1 Padding 22" visible="false" offset="0x2E"/>
+			<uint8 name="Unused1 Padding 23" visible="false" offset="0x2F"/>
+			<float32 name="Stun Time" visible="true" offset="0x30"/>
+			<float32 name="Recharge Time" visible="true" offset="0x34"/>
+			<float32 name="Runtime Recharge Velocity" visible="true" offset="0x38"/>
+			<stringId name="Resurrection Region Name" visible="true" offset="0x3C"/>
+			<int16 name="Ressurection Region Runtime Index" visible="true" offset="0x40"/>
+			<uint8 name="Unused2 Padding 0" visible="false" offset="0x42"/>
+			<uint8 name="Unused2 Padding 1" visible="false" offset="0x43"/>
+		</reflexive>
+		<reflexive name="Nodes" visible="true" offset="0xD0" entrySize="0x10">
+			<int16 name="Runtime Damage Part" visible="true" offset="0x0"/>
+			<uint8 name="Unused1 Padding 0" visible="false" offset="0x2"/>
+			<uint8 name="Unused1 Padding 1" visible="false" offset="0x3"/>
+			<uint8 name="Unused1 Padding 2" visible="false" offset="0x4"/>
+			<uint8 name="Unused1 Padding 3" visible="false" offset="0x5"/>
+			<uint8 name="Unused1 Padding 4" visible="false" offset="0x6"/>
+			<uint8 name="Unused1 Padding 5" visible="false" offset="0x7"/>
+			<uint8 name="Unused1 Padding 6" visible="false" offset="0x8"/>
+			<uint8 name="Unused1 Padding 7" visible="false" offset="0x9"/>
+			<uint8 name="Unused1 Padding 8" visible="false" offset="0xA"/>
+			<uint8 name="Unused1 Padding 9" visible="false" offset="0xB"/>
+			<uint8 name="Unused1 Padding 10" visible="false" offset="0xC"/>
+			<uint8 name="Unused1 Padding 11" visible="false" offset="0xD"/>
+			<uint8 name="Unused1 Padding 12" visible="false" offset="0xE"/>
+			<uint8 name="Unused1 Padding 13" visible="false" offset="0xF"/>
+		</reflexive>
+		<int16 name="Global Shield Material Index" visible="true" offset="0xDC"/>
+		<int16 name="Global Indirect Material Index" visible="true" offset="0xDE"/>
+		<float32 name="Runtime Shield Recharge Velocity" visible="true" offset="0xE0"/>
+		<float32 name="Runtime Health Recharge Velocity" visible="true" offset="0xE4"/>
+		<reflexive name="Damage Seats" visible="true" offset="0xE8" entrySize="0x20">
+			<stringId name="Seat Label" visible="true" offset="0x0"/>
+			<float32 name="Direct Damage Scale" visible="true" offset="0x4"/>
+			<float32 name="Damage Transfer Fall Off Radius" visible="true" offset="0x8"/>
+			<float32 name="Maximum Transfer Damage Scale" visible="true" offset="0xC"/>
+			<float32 name="Minimum Transfer Damage Scale" visible="true" offset="0x10"/>
+			<reflexive name="Region Specific Damage" visible="true" offset="0x14" entrySize="0x2C">
+				<stringId name="Damage Region Name" visible="true" offset="0x0"/>
+				<int16 name="Runtime Damage Region Index" visible="true" offset="0x4"/>
+				<int16 name="Unused" visible="true" offset="0x6"/>
+				<float32 name="Direct Damage Scale Minor" visible="true" offset="0x8"/>
+				<float32 name="Max Transfer Scale Minor" visible="true" offset="0xC"/>
+				<float32 name="Min Transfer Scale Minor" visible="true" offset="0x10"/>
+				<float32 name="Direct Damage Scale Medium" visible="true" offset="0x14"/>
+				<float32 name="Max Transfer Scale Medium" visible="true" offset="0x18"/>
+				<float32 name="Min Transfer Scale Medium" visible="true" offset="0x1C"/>
+				<float32 name="Direct Damage Scale Major" visible="true" offset="0x20"/>
+				<float32 name="Max Transfer Scale Major" visible="true" offset="0x24"/>
+				<float32 name="Min Transfer Scale Major" visible="true" offset="0x28"/>
+			</reflexive>
+		</reflexive>
+		<reflexive name="Damage Constraints" visible="true" offset="0xF4" entrySize="0x14">
+			<stringId name="Physics Model Constraint Name" visible="true" offset="0x0"/>
+			<stringId name="Damage Constraint Name" visible="true" offset="0x4"/>
+			<stringId name="Damage Constraint Group Name" visible="true" offset="0x8"/>
+			<float32 name="Group Probability Scale" visible="true" offset="0xC"/>
+			<enum16 name="Type" visible="true" offset="0x10">
+				<option name="Hinge" value="0x0"/>
+				<option name="Limited Hinge" value="0x1"/>
+				<option name="Ragdoll" value="0x2"/>
+				<option name="Stiff Spring" value="0x3"/>
+				<option name="Ball And Socket" value="0x4"/>
+				<option name="Prismatic" value="0x5"/>
+			</enum16>
+			<int16 name="Index" visible="true" offset="0x12"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Targets" visible="true" offset="0xA0" entrySize="0x28">
+		<bitfield8 name="Flags" visible="true" offset="0x0">
+			<bit name="Aoe Top Level" index="0"/>
+			<bit name="Aoe Test Obstruction" index="1"/>
+			<bit name="Shows Tracking Reticle" index="2"/>
+		</bitfield8>
+		<uint8 name="pad Padding 0" visible="false" offset="0x1"/>
+		<uint8 name="pad Padding 1" visible="false" offset="0x2"/>
+		<uint8 name="pad Padding 2" visible="false" offset="0x3"/>
+		<stringId name="Marker Name" visible="true" offset="0x4"/>
+		<float32 name="Size" visible="true" offset="0x8"/>
+		<degree name="Cone Angle" visible="true" offset="0xC"/>
+		<int16 name="Damage Section" visible="true" offset="0x10"/>
+		<int16 name="Variant" visible="true" offset="0x12"/>
+		<float32 name="Targeting Relevance" visible="true" offset="0x14"/>
+		<float32 name="Aoe Exclusion Radius" visible="true" offset="0x18"/>
+		<comment title="Lock  On  Flags"></comment>
+
+		<bitfield32 name="Flags_ HO" visible="true" offset="0x1C">
+			<bit name="Headshot" index="0"/>
+			<bit name="Locked By Plasma Tracking" index="1"/>
+			<bit name="Locked By Human Tracking" index="2"/>
+			<bit name="Always Locked By Plasma Tracking" index="3"/>
+			<bit name="Vulnerable" index="4"/>
+			<bit name="Bit5" index="5"/>
+			<bit name="Bit6" index="6"/>
+			<bit name="Bit7" index="7"/>
+		</bitfield32>
+		<float32 name="Lock On Distance" visible="true" offset="0x20"/>
+		<stringId name="Target Filter" visible="true" offset="0x24"/>
+	</reflexive>
+	<reflexive name="Collision Regions" visible="true" offset="0xAC" entrySize="0x14">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<int8 name="Collision Region Index" visible="true" offset="0x4"/>
+		<int8 name="Physics Region Index" visible="true" offset="0x5"/>
+		<uint8 name="Pad1 Padding 0" visible="false" offset="0x6"/>
+		<uint8 name="Pad1 Padding 1" visible="false" offset="0x7"/>
+		<reflexive name="Permutations" visible="true" offset="0x8" entrySize="0x8">
+			<stringId name="Name" visible="true" offset="0x0"/>
+			<bitfield8 name="Flags" visible="true" offset="0x4">
+				<bit name="Cannot Be Chosen Randomly" index="0"/>
+				<bit name="Bit1" index="1"/>
+				<bit name="Bit2" index="2"/>
+				<bit name="Bit3" index="3"/>
+				<bit name="Bit4" index="4"/>
+				<bit name="Bit5" index="5"/>
+				<bit name="Bit6" index="6"/>
+				<bit name="Bit7" index="7"/>
+			</bitfield8>
+			<int8 name="Collision Permutation Index" visible="true" offset="0x5"/>
+			<int8 name="Physics Permutation Index" visible="true" offset="0x6"/>
+			<uint8 name="Pad Padding 0" visible="false" offset="0x7"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Nodes" visible="true" offset="0xB8" entrySize="0x5C">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<int16 name="Parent Node" visible="true" offset="0x4"/>
+		<int16 name="First Child Node" visible="true" offset="0x6"/>
+		<int16 name="Next Sibling Node" visible="true" offset="0x8"/>
+		<int16 name="Import Node Index" visible="true" offset="0xA"/>
+		<vector3 name="Default Translation" visible="true" offset="0xC"/>
+		<float name="Default Rotation I" visible="true" offset="0x18"/>
+		<float name="Default Rotation J" visible="true" offset="0x1C"/>
+		<float name="Default Rotation K" visible="true" offset="0x20"/>
+		<float name="Default Rotation W" visible="true" offset="0x24"/>
+		<float32 name="Default Scale" visible="true" offset="0x28"/>
+		<float name="Inverse M11" visible="true" offset="0x2C"/>
+		<float name="Inverse M12" visible="true" offset="0x30"/>
+		<float name="Inverse M13" visible="true" offset="0x34"/>
+		<float name="Inverse M21" visible="true" offset="0x38"/>
+		<float name="Inverse M22" visible="true" offset="0x3C"/>
+		<float name="Inverse M23" visible="true" offset="0x40"/>
+		<float name="Inverse M31" visible="true" offset="0x44"/>
+		<float name="Inverse M32" visible="true" offset="0x48"/>
+		<float name="Inverse M33" visible="true" offset="0x4C"/>
+		<float name="Inverse M41" visible="true" offset="0x50"/>
+		<float name="Inverse M42" visible="true" offset="0x54"/>
+		<float name="Inverse M43" visible="true" offset="0x58"/>
+	</reflexive>
+	<int32 name="Runtime Node List Checksum" visible="true" offset="0xC4"/>
+	<reflexive name="Model Object Data" visible="true" offset="0xC8" entrySize="0x14">
+		<enum16 name="Type" visible="true" offset="0x0">
+			<option name="Not Set" value="0x0"/>
+			<option name="User Defined" value="0x1"/>
+			<option name="Auto Generated" value="0x2"/>
+		</enum16>
+		<uint8 name="Padding Padding 0" visible="false" offset="0x2"/>
+		<uint8 name="Padding Padding 1" visible="false" offset="0x3"/>
+		<vector3 name="Offset" visible="true" offset="0x4"/>
+		<float32 name="Radius" visible="true" offset="0x10"/>
+	</reflexive>
+	<tagref name="Primary Dialogue" visible="true" offset="0xD4"/>
+	<tagref name="Secondary Dialogue" visible="true" offset="0xE4"/>
+	<bitfield32 name="Flags" visible="true" offset="0xF4">
+		<bit name="Active Camo Always On" index="0"/>
+		<bit name="Active Camo Always Merge" index="1"/>
+		<bit name="Active Camo Never Merge" index="2"/>
+		<bit name="Inconsequential Target" index="3"/>
+		<bit name="Locked Precomputed Probes" index="4"/>
+		<bit name="Model Is Big Battle Object" index="5"/>
+		<bit name="Model Never Uses Compressed Vertex Positions" index="6"/>
+		<bit name="Model Is Invisible Even Attachments" index="7"/>
+		<bit name="Bit8" index="8"/>
+		<bit name="Bit9" index="9"/>
+		<bit name="Bit10" index="10"/>
+		<bit name="Bit11" index="11"/>
+		<bit name="Bit12" index="12"/>
+		<bit name="Bit13" index="13"/>
+		<bit name="Bit14" index="14"/>
+		<bit name="Bit15" index="15"/>
+		<bit name="Bit16" index="16"/>
+		<bit name="Bit17" index="17"/>
+		<bit name="Bit18" index="18"/>
+		<bit name="Bit19" index="19"/>
+		<bit name="Bit20" index="20"/>
+		<bit name="Bit21" index="21"/>
+		<bit name="Bit22" index="22"/>
+		<bit name="Bit23" index="23"/>
+		<bit name="Bit24" index="24"/>
+		<bit name="Bit25" index="25"/>
+		<bit name="Bit26" index="26"/>
+		<bit name="Bit27" index="27"/>
+		<bit name="Bit28" index="28"/>
+		<bit name="Bit29" index="29"/>
+		<bit name="Bit30" index="30"/>
+		<bit name="Bit31" index="31"/>
+	</bitfield32>
+	<stringId name="Default Dialogue Effect" visible="true" offset="0xF8"/>
+	<int32 name="Render Only Node Flags 0" visible="true" offset="0xFC"/>
+	<int32 name="Render Only Node Flags 1" visible="true" offset="0x100"/>
+	<int32 name="Render Only Node Flags 2" visible="true" offset="0x104"/>
+	<int32 name="Render Only Node Flags 3" visible="true" offset="0x108"/>
+	<int32 name="Render Only Node Flags 4" visible="true" offset="0x10C"/>
+	<int32 name="Render Only Node Flags 5" visible="true" offset="0x110"/>
+	<int32 name="Render Only Node Flags 6" visible="true" offset="0x114"/>
+	<int32 name="Render Only Node Flags 7" visible="true" offset="0x118"/>
+	<int32 name="Render Only Section Flags 0" visible="true" offset="0x11C"/>
+	<int32 name="Render Only Section Flags 1" visible="true" offset="0x120"/>
+	<int32 name="Render Only Section Flags 2" visible="true" offset="0x124"/>
+	<int32 name="Render Only Section Flags 3" visible="true" offset="0x128"/>
+	<int32 name="Render Only Section Flags 4" visible="true" offset="0x12C"/>
+	<int32 name="Render Only Section Flags 5" visible="true" offset="0x130"/>
+	<int32 name="Render Only Section Flags 6" visible="true" offset="0x134"/>
+	<int32 name="Render Only Section Flags 7" visible="true" offset="0x138"/>
+	<bitfield32 name="Runtime Flags" visible="true" offset="0x13C">
+		<bit name="Contains Runtime Nodes" index="0"/>
+		<bit name="Bit1" index="1"/>
+		<bit name="Bit2" index="2"/>
+		<bit name="Bit3" index="3"/>
+		<bit name="Bit4" index="4"/>
+		<bit name="Bit5" index="5"/>
+		<bit name="Bit6" index="6"/>
+		<bit name="Bit7" index="7"/>
+		<bit name="Bit8" index="8"/>
+		<bit name="Bit9" index="9"/>
+		<bit name="Bit10" index="10"/>
+		<bit name="Bit11" index="11"/>
+		<bit name="Bit12" index="12"/>
+		<bit name="Bit13" index="13"/>
+		<bit name="Bit14" index="14"/>
+		<bit name="Bit15" index="15"/>
+		<bit name="Bit16" index="16"/>
+		<bit name="Bit17" index="17"/>
+		<bit name="Bit18" index="18"/>
+		<bit name="Bit19" index="19"/>
+		<bit name="Bit20" index="20"/>
+		<bit name="Bit21" index="21"/>
+		<bit name="Bit22" index="22"/>
+		<bit name="Bit23" index="23"/>
+		<bit name="Bit24" index="24"/>
+		<bit name="Bit25" index="25"/>
+		<bit name="Bit26" index="26"/>
+		<bit name="Bit27" index="27"/>
+		<bit name="Bit28" index="28"/>
+		<bit name="Bit29" index="29"/>
+		<bit name="Bit30" index="30"/>
+		<bit name="Bit31" index="31"/>
+	</bitfield32>
+	<reflexive name="Scenario Load Parameters" visible="true" offset="0x140" entrySize="0x44">
+		<tagref name="Scenario" visible="true" offset="0x0"/>
+		<dataRef name="Data" visible="true" offset="0x10"/>
+		<uint8 name="Unused Padding 0" visible="false" offset="0x24"/>
+		<uint8 name="Unused Padding 1" visible="false" offset="0x25"/>
+		<uint8 name="Unused Padding 2" visible="false" offset="0x26"/>
+		<uint8 name="Unused Padding 3" visible="false" offset="0x27"/>
+		<uint8 name="Unused Padding 4" visible="false" offset="0x28"/>
+		<uint8 name="Unused Padding 5" visible="false" offset="0x29"/>
+		<uint8 name="Unused Padding 6" visible="false" offset="0x2A"/>
+		<uint8 name="Unused Padding 7" visible="false" offset="0x2B"/>
+		<uint8 name="Unused Padding 8" visible="false" offset="0x2C"/>
+		<uint8 name="Unused Padding 9" visible="false" offset="0x2D"/>
+		<uint8 name="Unused Padding 10" visible="false" offset="0x2E"/>
+		<uint8 name="Unused Padding 11" visible="false" offset="0x2F"/>
+		<uint8 name="Unused Padding 12" visible="false" offset="0x30"/>
+		<uint8 name="Unused Padding 13" visible="false" offset="0x31"/>
+		<uint8 name="Unused Padding 14" visible="false" offset="0x32"/>
+		<uint8 name="Unused Padding 15" visible="false" offset="0x33"/>
+		<uint8 name="Unused Padding 16" visible="false" offset="0x34"/>
+		<uint8 name="Unused Padding 17" visible="false" offset="0x35"/>
+		<uint8 name="Unused Padding 18" visible="false" offset="0x36"/>
+		<uint8 name="Unused Padding 19" visible="false" offset="0x37"/>
+		<uint8 name="Unused Padding 20" visible="false" offset="0x38"/>
+		<uint8 name="Unused Padding 21" visible="false" offset="0x39"/>
+		<uint8 name="Unused Padding 22" visible="false" offset="0x3A"/>
+		<uint8 name="Unused Padding 23" visible="false" offset="0x3B"/>
+		<uint8 name="Unused Padding 24" visible="false" offset="0x3C"/>
+		<uint8 name="Unused Padding 25" visible="false" offset="0x3D"/>
+		<uint8 name="Unused Padding 26" visible="false" offset="0x3E"/>
+		<uint8 name="Unused Padding 27" visible="false" offset="0x3F"/>
+		<uint8 name="Unused Padding 28" visible="false" offset="0x40"/>
+		<uint8 name="Unused Padding 29" visible="false" offset="0x41"/>
+		<uint8 name="Unused Padding 30" visible="false" offset="0x42"/>
+		<uint8 name="Unused Padding 31" visible="false" offset="0x43"/>
+	</reflexive>
+	<enum8 name="Shadow Detail" visible="true" offset="0x14C">
+		<option name="Ambient Occlusion" value="0x0"/>
+		<option name="Linear" value="0x1"/>
+		<option name="Quadratic" value="0x2"/>
+	</enum8>
+	<enum8 name="Shadow Bounces" visible="true" offset="0x14D">
+		<option name="Zero Bounces" value="0x0"/>
+		<option name="One Bounce" value="0x1"/>
+		<option name="Two Bounces" value="0x2"/>
+		<option name="Three Bounces" value="0x3"/>
+	</enum8>
+	<uint8 name="Pad Padding 0" visible="false" offset="0x14E"/>
+	<uint8 name="Pad Padding 1" visible="false" offset="0x14F"/>
+	<reflexive name="Shadow Cast Overrides" visible="true" offset="0x150" entrySize="0x8">
+		<stringId name="Region" visible="true" offset="0x0"/>
+		<stringId name="Permutation" visible="true" offset="0x4"/>
+	</reflexive>
+	<reflexive name="Shadow Receive Overrides" visible="true" offset="0x15C" entrySize="0x8">
+		<stringId name="Region" visible="true" offset="0x0"/>
+		<enum32 name="Shadow Type" visible="true" offset="0x4">
+			<option name="PRTShadows From All Regions" value="0x0"/>
+			<option name="PRTSelf Shadow Only" value="0x1"/>
+			<option name="No PRTShadows At All" value="0x2"/>
+		</enum32>
+	</reflexive>
+	<reflexive name="Occlusion Spheres" visible="true" offset="0x168" entrySize="0x14">
+		<stringId name="Marker1 Name" visible="true" offset="0x0"/>
+		<uint32 name="Marker1 Index" visible="true" offset="0x4"/>
+		<stringId name="Marker2 Name" visible="true" offset="0x8"/>
+		<uint32 name="Marker2 Index" visible="true" offset="0xC"/>
+		<float32 name="Radius" visible="true" offset="0x10"/>
+	</reflexive>
+	<tagref name="Shield Impact Third Person" visible="true" offset="0x174"/>
+	<tagref name="Shield Impact First Person" visible="true" offset="0x184"/>
+	<tagref name="Overshield Third Person" visible="true" offset="0x194"/>
+	<tagref name="Overshield First Person" visible="true" offset="0x1A4"/>
+</plugin>

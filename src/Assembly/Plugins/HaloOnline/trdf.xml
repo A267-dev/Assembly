@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x48">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Bitmaps" visible="true" offset="0x0" entrySize="0x110">
+		<int32 name="Index" visible="true" offset="0x0"/>
+		<ascii name="Filename" visible="true" offset="0x4" length="0x100"/>
+		<int32 name="Unknown" visible="true" offset="0x104"/>
+		<int32 name="Width" visible="true" offset="0x108"/>
+		<int32 name="Height" visible="true" offset="0x10C"/>
+	</reflexive>
+	<reflexive name="Lights" visible="true" offset="0xC" entrySize="0x1C">
+		<reflexive name="Unknown" visible="true" offset="0x0" entrySize="0x28">
+			<float32 name="Unknown" visible="true" offset="0x0"/>
+			<float32 name="Unknown2" visible="true" offset="0x4"/>
+			<float32 name="Unknown3" visible="true" offset="0x8"/>
+			<degree name="Unknown4" visible="true" offset="0xC"/>
+			<degree name="Unknown5" visible="true" offset="0x10"/>
+			<degree name="Unknown6" visible="true" offset="0x14"/>
+			<tagref name="Light" visible="true" offset="0x18"/>
+		</reflexive>
+		<float32 name="Unknown2" visible="true" offset="0xC"/>
+		<float32 name="Unknown3" visible="true" offset="0x10"/>
+		<float32 name="Unknown4" visible="true" offset="0x14"/>
+		<float32 name="Unknown5" visible="true" offset="0x18"/>
+	</reflexive>
+	<reflexive name="Binks" visible="true" offset="0x18" entrySize="0x30">
+		<ascii name="Name" visible="true" offset="0x0" length="0x20"/>
+		<tagref name="Bink2" visible="true" offset="0x20"/>
+	</reflexive>
+	<reflexive name="Mannequins" visible="true" offset="0x24" entrySize="0x4C">
+		<int32 name="Unknown" visible="true" offset="0x0"/>
+		<tagref name="Biped" visible="true" offset="0x4"/>
+		<int32 name="Unknown2" visible="true" offset="0x14"/>
+		<float32 name="Unknown3" visible="true" offset="0x18"/>
+		<float32 name="Unknown4" visible="true" offset="0x1C"/>
+		<float32 name="Unknown5" visible="true" offset="0x20"/>
+		<float32 name="Unknown6" visible="true" offset="0x24"/>
+		<float32 name="Unknown7" visible="true" offset="0x28"/>
+		<float32 name="Unknown8" visible="true" offset="0x2C"/>
+		<float32 name="Unknown9" visible="true" offset="0x30"/>
+		<float32 name="Unknown10" visible="true" offset="0x34"/>
+		<float32 name="Unknown11" visible="true" offset="0x38"/>
+		<float32 name="Unknown12" visible="true" offset="0x3C"/>
+		<float32 name="Unknown13" visible="true" offset="0x40"/>
+		<float32 name="Unknown14" visible="true" offset="0x44"/>
+		<float32 name="Unknown15" visible="true" offset="0x48"/>
+	</reflexive>
+	<reflexive name="Weapons" visible="true" offset="0x30" entrySize="0x64">
+		<ascii name="Name" visible="true" offset="0x0" length="0x20"/>
+		<tagref name="Weapon2" visible="true" offset="0x20"/>
+		<float32 name="Unknown" visible="true" offset="0x30"/>
+		<float32 name="Unknown2" visible="true" offset="0x34"/>
+		<float32 name="Unknown3" visible="true" offset="0x38"/>
+		<float32 name="Unknown4" visible="true" offset="0x3C"/>
+		<float32 name="Unknown5" visible="true" offset="0x40"/>
+		<float32 name="Unknown6" visible="true" offset="0x44"/>
+		<float32 name="Unknown7" visible="true" offset="0x48"/>
+		<float32 name="Unknown8" visible="true" offset="0x4C"/>
+		<float32 name="Unknown9" visible="true" offset="0x50"/>
+		<float32 name="Unknown10" visible="true" offset="0x54"/>
+		<float32 name="Unknown11" visible="true" offset="0x58"/>
+		<float32 name="Unknown12" visible="true" offset="0x5C"/>
+		<float32 name="Unknown13" visible="true" offset="0x60"/>
+	</reflexive>
+	<uint32 name="Unknown" visible="true" offset="0x3C"/>
+	<uint32 name="Unknown2" visible="true" offset="0x40"/>
+	<uint32 name="Unknown3" visible="true" offset="0x44"/>
+</plugin>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x40">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<bitfield32 name="Flags" visible="true" offset="0x0">
+		<bit name="Unused" index="0"/>
+		<bit name="Collides With Structures" index="1"/>
+		<bit name="Collides With Water Surface" index="2"/>
+		<bit name="Uses Simple Wind" index="3"/>
+		<bit name="Uses Damped Wind" index="4"/>
+		<bit name="No Gravity" index="5"/>
+	</bitfield32>
+	<float32 name="Runtime Mass Over Radius Cubed" visible="true" offset="0x4"/>
+	<float32 name="Runtime Inverse Density" visible="true" offset="0x8"/>
+	<float32 name="Unknown" visible="true" offset="0xC"/>
+	<uint8 name="Unused1 Padding 0" visible="false" offset="0x10"/>
+	<uint8 name="Unused1 Padding 1" visible="false" offset="0x11"/>
+	<uint8 name="Unused1 Padding 2" visible="false" offset="0x12"/>
+	<uint8 name="Unused1 Padding 3" visible="false" offset="0x13"/>
+	<uint8 name="Unused1 Padding 4" visible="false" offset="0x14"/>
+	<uint8 name="Unused1 Padding 5" visible="false" offset="0x15"/>
+	<uint8 name="Unused1 Padding 6" visible="false" offset="0x16"/>
+	<uint8 name="Unused1 Padding 7" visible="false" offset="0x17"/>
+	<uint8 name="Unused1 Padding 8" visible="false" offset="0x18"/>
+	<uint8 name="Unused1 Padding 9" visible="false" offset="0x19"/>
+	<uint8 name="Unused1 Padding 10" visible="false" offset="0x1A"/>
+	<uint8 name="Unused1 Padding 11" visible="false" offset="0x1B"/>
+	<uint8 name="Unused1 Padding 12" visible="false" offset="0x1C"/>
+	<uint8 name="Unused1 Padding 13" visible="false" offset="0x1D"/>
+	<uint8 name="Unused1 Padding 14" visible="false" offset="0x1E"/>
+	<uint8 name="Unused1 Padding 15" visible="false" offset="0x1F"/>
+	<float32 name="Density" visible="true" offset="0x20"/>
+	<float32 name="Air Friction" visible="true" offset="0x24"/>
+	<float32 name="Water Friction" visible="true" offset="0x28"/>
+	<float32 name="Surface Friction" visible="true" offset="0x2C"/>
+	<float32 name="Elasticity" visible="true" offset="0x30"/>
+	<uint8 name="Unused2 Padding 0" visible="false" offset="0x34"/>
+	<uint8 name="Unused2 Padding 1" visible="false" offset="0x35"/>
+	<uint8 name="Unused2 Padding 2" visible="false" offset="0x36"/>
+	<uint8 name="Unused2 Padding 3" visible="false" offset="0x37"/>
+	<uint8 name="Unused2 Padding 4" visible="false" offset="0x38"/>
+	<uint8 name="Unused2 Padding 5" visible="false" offset="0x39"/>
+	<uint8 name="Unused2 Padding 6" visible="false" offset="0x3A"/>
+	<uint8 name="Unused2 Padding 7" visible="false" offset="0x3B"/>
+	<uint8 name="Unused2 Padding 8" visible="false" offset="0x3C"/>
+	<uint8 name="Unused2 Padding 9" visible="false" offset="0x3D"/>
+	<uint8 name="Unused2 Padding 10" visible="false" offset="0x3E"/>
+	<uint8 name="Unused2 Padding 11" visible="false" offset="0x3F"/>
+</plugin>

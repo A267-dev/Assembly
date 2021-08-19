@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x1C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Entry Points" visible="true" offset="0x0" entrySize="0x10">
+		<reflexive name="Option" visible="true" offset="0x0" entrySize="0x10">
+			<int32 name="Render Method Option Index" visible="true" offset="0x0"/>
+			<reflexive name="Option Method Shader Indices" visible="true" offset="0x4" entrySize="0x4">
+				<int32 name="int32" visible="true" offset="0x0"/>
+			</reflexive>
+		</reflexive>
+		<int32 name="Shader Index" visible="true" offset="0xC"/>
+	</reflexive>
+	<uint32 name="Unknown2" visible="true" offset="0xC"/>
+	<reflexive name="Shaders" visible="true" offset="0x10" entrySize="0x50">
+		<dataRef name="Xbox Shader Bytecode" visible="true" offset="0x0"/>
+		<dataRef name="PCShader Bytecode" visible="true" offset="0x14"/>
+		<comment title="XBox  Constant  Table"></comment>
+
+		<reflexive name="Constants" visible="true" offset="0x28" entrySize="0x8">
+			<stringId name="Parameter Name" visible="true" offset="0x0"/>
+			<uint16 name="Register Index" visible="true" offset="0x4"/>
+			<uint8 name="Register Count" visible="true" offset="0x6"/>
+			<enum8 name="Register Type" visible="true" offset="0x7">
+				<option name="Boolean" value="0x0"/>
+				<option name="Integer" value="0x1"/>
+				<option name="Vector" value="0x2"/>
+				<option name="Sampler" value="0x3"/>
+			</enum8>
+		</reflexive>
+		<enum8 name="Shader Type" visible="true" offset="0x34">
+			<option name="Vertex Shader" value="0x0"/>
+			<option name="Pixel Shader" value="0x1"/>
+		</enum8>
+		<uint8 name="Padding0 Padding 0" visible="false" offset="0x35"/>
+		<uint8 name="Padding0 Padding 1" visible="false" offset="0x36"/>
+		<uint8 name="Padding0 Padding 2" visible="false" offset="0x37"/>
+		<comment title="PCConstant  Table"></comment>
+
+		<reflexive name="Constants" visible="true" offset="0x38" entrySize="0x8">
+			<stringId name="Parameter Name" visible="true" offset="0x0"/>
+			<uint16 name="Register Index" visible="true" offset="0x4"/>
+			<uint8 name="Register Count" visible="true" offset="0x6"/>
+			<enum8 name="Register Type" visible="true" offset="0x7">
+				<option name="Boolean" value="0x0"/>
+				<option name="Integer" value="0x1"/>
+				<option name="Vector" value="0x2"/>
+				<option name="Sampler" value="0x3"/>
+			</enum8>
+		</reflexive>
+		<enum8 name="Shader Type" visible="true" offset="0x44">
+			<option name="Vertex Shader" value="0x0"/>
+			<option name="Pixel Shader" value="0x1"/>
+		</enum8>
+		<uint8 name="Padding0 Padding 0" visible="false" offset="0x45"/>
+		<uint8 name="Padding0 Padding 1" visible="false" offset="0x46"/>
+		<uint8 name="Padding0 Padding 2" visible="false" offset="0x47"/>
+		<uint32 name="Gprs" visible="true" offset="0x48"/>
+		<shader name="Xbox Shader Reference" visible="true" offset="0x4C" type="pixel"/>
+	</reflexive>
+</plugin>

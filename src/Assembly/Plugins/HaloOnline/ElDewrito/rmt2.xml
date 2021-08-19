@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x84">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<tagref name="Vertex Shader" visible="true" offset="0x0"/>
+	<tagref name="Pixel Shader" visible="true" offset="0x10"/>
+	<bitfield32 name="Valid Entry Points" visible="true" offset="0x20">
+		<bit name="Default" index="0"/>
+		<bit name="Albedo" index="1"/>
+		<bit name="Static_ Default" index="2"/>
+		<bit name="Static_ Per_ Pixel" index="3"/>
+		<bit name="Static_ Per_ Vertex" index="4"/>
+		<bit name="Static_ Sh" index="5"/>
+		<bit name="Static_ Prt_ Ambient" index="6"/>
+		<bit name="Static_ Prt_ Linear" index="7"/>
+		<bit name="Static_ Prt_ Quadratic" index="8"/>
+		<bit name="Dynamic_ Light" index="9"/>
+		<bit name="Shadow_ Generate" index="10"/>
+		<bit name="Shadow_ Apply" index="11"/>
+		<bit name="Active_ Camo" index="12"/>
+		<bit name="Lightmap_ Debug_ Mode" index="13"/>
+		<bit name="Static_ Per_ Vertex_ Color" index="14"/>
+		<bit name="Water_ Tessellation" index="15"/>
+		<bit name="Water_ Shading" index="16"/>
+		<bit name="Dynamic_ Light_ Cinematic" index="17"/>
+		<bit name="Z_ Only" index="18"/>
+		<bit name="Sfx_ Distort" index="19"/>
+	</bitfield32>
+	<reflexive name="Entry Points" visible="true" offset="0x24" entrySize="0x2">
+		<uint16 name="Integer" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Parameter Tables" visible="true" offset="0x30" entrySize="0x1C">
+		<comment title="Values 0"></comment>
+
+		<uint16 name="Integer" visible="true" offset="0x0"/>
+		<comment title="Values 1"></comment>
+
+		<uint16 name="Integer" visible="true" offset="0x2"/>
+		<comment title="Values 2"></comment>
+
+		<uint16 name="Integer" visible="true" offset="0x4"/>
+		<comment title="Values 3"></comment>
+
+		<uint16 name="Integer" visible="true" offset="0x6"/>
+		<comment title="Values 4"></comment>
+
+		<uint16 name="Integer" visible="true" offset="0x8"/>
+		<comment title="Values 5"></comment>
+
+		<uint16 name="Integer" visible="true" offset="0xA"/>
+		<comment title="Values 6"></comment>
+
+		<uint16 name="Integer" visible="true" offset="0xC"/>
+		<comment title="Values 7"></comment>
+
+		<uint16 name="Integer" visible="true" offset="0xE"/>
+		<comment title="Values 8"></comment>
+
+		<uint16 name="Integer" visible="true" offset="0x10"/>
+		<comment title="Values 9"></comment>
+
+		<uint16 name="Integer" visible="true" offset="0x12"/>
+		<comment title="Values 10"></comment>
+
+		<uint16 name="Integer" visible="true" offset="0x14"/>
+		<comment title="Values 11"></comment>
+
+		<uint16 name="Integer" visible="true" offset="0x16"/>
+		<comment title="Values 12"></comment>
+
+		<uint16 name="Integer" visible="true" offset="0x18"/>
+		<comment title="Values 13"></comment>
+
+		<uint16 name="Integer" visible="true" offset="0x1A"/>
+	</reflexive>
+	<reflexive name="Parameters" visible="true" offset="0x3C" entrySize="0x4">
+		<uint16 name="Register Index" visible="true" offset="0x0"/>
+		<uint8 name="Argument Index" visible="true" offset="0x2"/>
+		<uint8 name="Flags" visible="true" offset="0x3"/>
+	</reflexive>
+	<reflexive name="Real Parameter Names" visible="true" offset="0x48" entrySize="0x4">
+		<stringId name="Name" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Integer Parameter Names" visible="true" offset="0x54" entrySize="0x4">
+		<stringId name="Name" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Boolean Parameter Names" visible="true" offset="0x60" entrySize="0x4">
+		<stringId name="Name" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Texture Parameter Names" visible="true" offset="0x6C" entrySize="0x4">
+		<stringId name="Name" visible="true" offset="0x0"/>
+	</reflexive>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x78"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x79"/>
+	<uint8 name="Unused Padding 2" visible="false" offset="0x7A"/>
+	<uint8 name="Unused Padding 3" visible="false" offset="0x7B"/>
+	<uint8 name="Unused Padding 4" visible="false" offset="0x7C"/>
+	<uint8 name="Unused Padding 5" visible="false" offset="0x7D"/>
+	<uint8 name="Unused Padding 6" visible="false" offset="0x7E"/>
+	<uint8 name="Unused Padding 7" visible="false" offset="0x7F"/>
+	<uint8 name="Unused Padding 8" visible="false" offset="0x80"/>
+	<uint8 name="Unused Padding 9" visible="false" offset="0x81"/>
+	<uint8 name="Unused Padding 10" visible="false" offset="0x82"/>
+	<uint8 name="Unused Padding 11" visible="false" offset="0x83"/>
+</plugin>

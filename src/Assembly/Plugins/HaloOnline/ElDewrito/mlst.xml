@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x2C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Map Images" visible="true" offset="0x0" entrySize="0x20">
+		<int32 name="Map Id" visible="true" offset="0x0"/>
+		<tagref name="Bitmap" visible="true" offset="0x4"/>
+		<reflexive name="Loading Screen Bitmaps" visible="true" offset="0x14" entrySize="0x10">
+			<tagref name="tagref" visible="true" offset="0x0"/>
+		</reflexive>
+	</reflexive>
+	<tagref name="Default Map Image" visible="true" offset="0xC"/>
+	<tagref name="Default Loading Screen" visible="true" offset="0x1C"/>
+</plugin>

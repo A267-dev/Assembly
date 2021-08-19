@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x80">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<stringId name="Scenario Name" visible="true" offset="0x0"/>
+	<int32 name="Frame Count" visible="true" offset="0x4"/>
+	<reflexive name="Sounds" visible="true" offset="0x8" entrySize="0x14">
+		<uint32 name="Unknown" visible="true" offset="0x0"/>
+		<tagref name="Sound" visible="true" offset="0x4"/>
+	</reflexive>
+	<dataRef name="Data1" visible="true" offset="0x14"/>
+	<dataRef name="Data2" visible="true" offset="0x28"/>
+	<tagref name="Cinematic Scene" visible="true" offset="0x3C"/>
+	<stringId name="Anchor Name" visible="true" offset="0x4C"/>
+	<reflexive name="Post Processing" visible="true" offset="0x50" entrySize="0x48">
+		<reflexive name="FOV" visible="true" offset="0x0" entrySize="0x30">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Use Cosine Interpolation" index="0"/>
+			</bitfield32>
+			<float32 name="Inmix Value1" visible="true" offset="0x4"/>
+			<float32 name="Inmix Value2" visible="true" offset="0x8"/>
+			<float32 name="Inmix Value3" visible="true" offset="0xC"/>
+			<float32 name="Basevalue1" visible="true" offset="0x10"/>
+			<float32 name="Basevalue2" visible="true" offset="0x14"/>
+			<reflexive name="Dynamic Values" visible="true" offset="0x18" entrySize="0x20">
+				<reflexive name="Frames" visible="true" offset="0x0" entrySize="0xC">
+					<int32 name="Frame" visible="true" offset="0x0"/>
+					<float32 name="Dynamicvalue1" visible="true" offset="0x4"/>
+					<float32 name="Dynamicvalue2" visible="true" offset="0x8"/>
+				</reflexive>
+				<dataRef name="Frame Function" visible="true" offset="0xC"/>
+			</reflexive>
+			<float32 name="Outmix Value1" visible="true" offset="0x24"/>
+			<float32 name="Outmix Value2" visible="true" offset="0x28"/>
+			<float32 name="Outmix Value3" visible="true" offset="0x2C"/>
+		</reflexive>
+		<reflexive name="Hue" visible="true" offset="0xC" entrySize="0x34">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Use Cosine Interpolation" index="0"/>
+			</bitfield32>
+			<float32 name="Inmix Value1" visible="true" offset="0x4"/>
+			<float32 name="Inmix Value2" visible="true" offset="0x8"/>
+			<float32 name="Inmix Value3" visible="true" offset="0xC"/>
+			<float32 name="Basevalue1" visible="true" offset="0x10"/>
+			<float32 name="Basevalue2" visible="true" offset="0x14"/>
+			<float32 name="Basevalue3" visible="true" offset="0x18"/>
+			<reflexive name="Dynamic Values" visible="true" offset="0x1C" entrySize="0x20">
+				<reflexive name="Frames" visible="true" offset="0x0" entrySize="0x10">
+					<int32 name="Frame" visible="true" offset="0x0"/>
+					<float32 name="Dynamicvalue1" visible="true" offset="0x4"/>
+					<float32 name="Dynamicvalue2" visible="true" offset="0x8"/>
+					<float32 name="Dynamicvalue3" visible="true" offset="0xC"/>
+				</reflexive>
+				<dataRef name="Frame Function" visible="true" offset="0xC"/>
+			</reflexive>
+			<float32 name="Outmix Value1" visible="true" offset="0x28"/>
+			<float32 name="Outmix Value2" visible="true" offset="0x2C"/>
+			<float32 name="Outmix Value3" visible="true" offset="0x30"/>
+		</reflexive>
+		<reflexive name="Saturation" visible="true" offset="0x18" entrySize="0x34">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Use Cosine Interpolation" index="0"/>
+			</bitfield32>
+			<float32 name="Inmix Value1" visible="true" offset="0x4"/>
+			<float32 name="Inmix Value2" visible="true" offset="0x8"/>
+			<float32 name="Inmix Value3" visible="true" offset="0xC"/>
+			<float32 name="Basevalue1" visible="true" offset="0x10"/>
+			<float32 name="Basevalue2" visible="true" offset="0x14"/>
+			<float32 name="Basevalue3" visible="true" offset="0x18"/>
+			<reflexive name="Dynamic Values" visible="true" offset="0x1C" entrySize="0x20">
+				<reflexive name="Frames" visible="true" offset="0x0" entrySize="0x10">
+					<int32 name="Frame" visible="true" offset="0x0"/>
+					<float32 name="Dynamicvalue1" visible="true" offset="0x4"/>
+					<float32 name="Dynamicvalue2" visible="true" offset="0x8"/>
+					<float32 name="Dynamicvalue3" visible="true" offset="0xC"/>
+				</reflexive>
+				<dataRef name="Frame Function" visible="true" offset="0xC"/>
+			</reflexive>
+			<float32 name="Outmix Value1" visible="true" offset="0x28"/>
+			<float32 name="Outmix Value2" visible="true" offset="0x2C"/>
+			<float32 name="Outmix Value3" visible="true" offset="0x30"/>
+		</reflexive>
+		<reflexive name="Rumble" visible="true" offset="0x24" entrySize="0x30">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Use Cosine Interpolation" index="0"/>
+			</bitfield32>
+			<float32 name="Inmix Value1" visible="true" offset="0x4"/>
+			<float32 name="Inmix Value2" visible="true" offset="0x8"/>
+			<float32 name="Inmix Value3" visible="true" offset="0xC"/>
+			<float32 name="Basevalue1" visible="true" offset="0x10"/>
+			<float32 name="Basevalue2" visible="true" offset="0x14"/>
+			<reflexive name="Dynamic Values" visible="true" offset="0x18" entrySize="0x20">
+				<reflexive name="Frames" visible="true" offset="0x0" entrySize="0xC">
+					<int32 name="Frame" visible="true" offset="0x0"/>
+					<float32 name="Dynamicvalue1" visible="true" offset="0x4"/>
+					<float32 name="Dynamicvalue2" visible="true" offset="0x8"/>
+				</reflexive>
+				<dataRef name="Frame Function" visible="true" offset="0xC"/>
+			</reflexive>
+			<float32 name="Outmix Value1" visible="true" offset="0x24"/>
+			<float32 name="Outmix Value2" visible="true" offset="0x28"/>
+			<float32 name="Outmix Value3" visible="true" offset="0x2C"/>
+		</reflexive>
+		<reflexive name="HUDBrightness" visible="true" offset="0x30" entrySize="0x30">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Use Cosine Interpolation" index="0"/>
+			</bitfield32>
+			<float32 name="Inmix Value1" visible="true" offset="0x4"/>
+			<float32 name="Inmix Value2" visible="true" offset="0x8"/>
+			<float32 name="Inmix Value3" visible="true" offset="0xC"/>
+			<float32 name="Basevalue1" visible="true" offset="0x10"/>
+			<float32 name="Basevalue2" visible="true" offset="0x14"/>
+			<reflexive name="Dynamic Values" visible="true" offset="0x18" entrySize="0x20">
+				<reflexive name="Frames" visible="true" offset="0x0" entrySize="0xC">
+					<int32 name="Frame" visible="true" offset="0x0"/>
+					<float32 name="Dynamicvalue1" visible="true" offset="0x4"/>
+					<float32 name="Dynamicvalue2" visible="true" offset="0x8"/>
+				</reflexive>
+				<dataRef name="Frame Function" visible="true" offset="0xC"/>
+			</reflexive>
+			<float32 name="Outmix Value1" visible="true" offset="0x24"/>
+			<float32 name="Outmix Value2" visible="true" offset="0x28"/>
+			<float32 name="Outmix Value3" visible="true" offset="0x2C"/>
+		</reflexive>
+		<reflexive name="HUDShake Amount" visible="true" offset="0x3C" entrySize="0x30">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Use Cosine Interpolation" index="0"/>
+			</bitfield32>
+			<float32 name="Inmix Value1" visible="true" offset="0x4"/>
+			<float32 name="Inmix Value2" visible="true" offset="0x8"/>
+			<float32 name="Inmix Value3" visible="true" offset="0xC"/>
+			<float32 name="Basevalue1" visible="true" offset="0x10"/>
+			<float32 name="Basevalue2" visible="true" offset="0x14"/>
+			<reflexive name="Dynamic Values" visible="true" offset="0x18" entrySize="0x20">
+				<reflexive name="Frames" visible="true" offset="0x0" entrySize="0xC">
+					<int32 name="Frame" visible="true" offset="0x0"/>
+					<float32 name="Dynamicvalue1" visible="true" offset="0x4"/>
+					<float32 name="Dynamicvalue2" visible="true" offset="0x8"/>
+				</reflexive>
+				<dataRef name="Frame Function" visible="true" offset="0xC"/>
+			</reflexive>
+			<float32 name="Outmix Value1" visible="true" offset="0x24"/>
+			<float32 name="Outmix Value2" visible="true" offset="0x28"/>
+			<float32 name="Outmix Value3" visible="true" offset="0x2C"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Gravemind" visible="true" offset="0x5C" entrySize="0x30">
+		<reflexive name="Background Color" visible="true" offset="0x0" entrySize="0x34">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Use Cosine Interpolation" index="0"/>
+			</bitfield32>
+			<float32 name="Inmix Value1" visible="true" offset="0x4"/>
+			<float32 name="Inmix Value2" visible="true" offset="0x8"/>
+			<float32 name="Inmix Value3" visible="true" offset="0xC"/>
+			<float32 name="Basevalue1" visible="true" offset="0x10"/>
+			<float32 name="Basevalue2" visible="true" offset="0x14"/>
+			<float32 name="Basevalue3" visible="true" offset="0x18"/>
+			<reflexive name="Dynamic Values" visible="true" offset="0x1C" entrySize="0x20">
+				<reflexive name="Frames" visible="true" offset="0x0" entrySize="0x10">
+					<int32 name="Frame" visible="true" offset="0x0"/>
+					<float32 name="Dynamicvalue1" visible="true" offset="0x4"/>
+					<float32 name="Dynamicvalue2" visible="true" offset="0x8"/>
+					<float32 name="Dynamicvalue3" visible="true" offset="0xC"/>
+				</reflexive>
+				<dataRef name="Frame Function" visible="true" offset="0xC"/>
+			</reflexive>
+			<float32 name="Outmix Value1" visible="true" offset="0x28"/>
+			<float32 name="Outmix Value2" visible="true" offset="0x2C"/>
+			<float32 name="Outmix Value3" visible="true" offset="0x30"/>
+		</reflexive>
+		<reflexive name="Unused" visible="true" offset="0xC" entrySize="0x34">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Use Cosine Interpolation" index="0"/>
+			</bitfield32>
+			<float32 name="Inmix Value1" visible="true" offset="0x4"/>
+			<float32 name="Inmix Value2" visible="true" offset="0x8"/>
+			<float32 name="Inmix Value3" visible="true" offset="0xC"/>
+			<float32 name="Basevalue1" visible="true" offset="0x10"/>
+			<float32 name="Basevalue2" visible="true" offset="0x14"/>
+			<float32 name="Basevalue3" visible="true" offset="0x18"/>
+			<reflexive name="Dynamic Values" visible="true" offset="0x1C" entrySize="0x20">
+				<reflexive name="Frames" visible="true" offset="0x0" entrySize="0x10">
+					<int32 name="Frame" visible="true" offset="0x0"/>
+					<float32 name="Dynamicvalue1" visible="true" offset="0x4"/>
+					<float32 name="Dynamicvalue2" visible="true" offset="0x8"/>
+					<float32 name="Dynamicvalue3" visible="true" offset="0xC"/>
+				</reflexive>
+				<dataRef name="Frame Function" visible="true" offset="0xC"/>
+			</reflexive>
+			<float32 name="Outmix Value1" visible="true" offset="0x28"/>
+			<float32 name="Outmix Value2" visible="true" offset="0x2C"/>
+			<float32 name="Outmix Value3" visible="true" offset="0x30"/>
+		</reflexive>
+		<reflexive name="Tentacles In" visible="true" offset="0x18" entrySize="0x30">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Use Cosine Interpolation" index="0"/>
+			</bitfield32>
+			<float32 name="Inmix Value1" visible="true" offset="0x4"/>
+			<float32 name="Inmix Value2" visible="true" offset="0x8"/>
+			<float32 name="Inmix Value3" visible="true" offset="0xC"/>
+			<float32 name="Basevalue1" visible="true" offset="0x10"/>
+			<float32 name="Basevalue2" visible="true" offset="0x14"/>
+			<reflexive name="Dynamic Values" visible="true" offset="0x18" entrySize="0x20">
+				<reflexive name="Frames" visible="true" offset="0x0" entrySize="0xC">
+					<int32 name="Frame" visible="true" offset="0x0"/>
+					<float32 name="Dynamicvalue1" visible="true" offset="0x4"/>
+					<float32 name="Dynamicvalue2" visible="true" offset="0x8"/>
+				</reflexive>
+				<dataRef name="Frame Function" visible="true" offset="0xC"/>
+			</reflexive>
+			<float32 name="Outmix Value1" visible="true" offset="0x24"/>
+			<float32 name="Outmix Value2" visible="true" offset="0x28"/>
+			<float32 name="Outmix Value3" visible="true" offset="0x2C"/>
+		</reflexive>
+		<reflexive name="Vignette" visible="true" offset="0x24" entrySize="0x34">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Use Cosine Interpolation" index="0"/>
+			</bitfield32>
+			<float32 name="Inmix Value1" visible="true" offset="0x4"/>
+			<float32 name="Inmix Value2" visible="true" offset="0x8"/>
+			<float32 name="Inmix Value3" visible="true" offset="0xC"/>
+			<float32 name="Basevalue1" visible="true" offset="0x10"/>
+			<float32 name="Basevalue2" visible="true" offset="0x14"/>
+			<float32 name="Basevalue3" visible="true" offset="0x18"/>
+			<reflexive name="Dynamic Values" visible="true" offset="0x1C" entrySize="0x20">
+				<reflexive name="Frames" visible="true" offset="0x0" entrySize="0x10">
+					<int32 name="Frame" visible="true" offset="0x0"/>
+					<float32 name="Dynamicvalue1" visible="true" offset="0x4"/>
+					<float32 name="Dynamicvalue2" visible="true" offset="0x8"/>
+					<float32 name="Dynamicvalue3" visible="true" offset="0xC"/>
+				</reflexive>
+				<dataRef name="Frame Function" visible="true" offset="0xC"/>
+			</reflexive>
+			<float32 name="Outmix Value1" visible="true" offset="0x28"/>
+			<float32 name="Outmix Value2" visible="true" offset="0x2C"/>
+			<float32 name="Outmix Value3" visible="true" offset="0x30"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Unused" visible="true" offset="0x68" entrySize="0x24">
+		<reflexive name="Solarize" visible="true" offset="0x0" entrySize="0x30">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Use Cosine Interpolation" index="0"/>
+			</bitfield32>
+			<float32 name="Inmix Value1" visible="true" offset="0x4"/>
+			<float32 name="Inmix Value2" visible="true" offset="0x8"/>
+			<float32 name="Inmix Value3" visible="true" offset="0xC"/>
+			<float32 name="Basevalue1" visible="true" offset="0x10"/>
+			<float32 name="Basevalue2" visible="true" offset="0x14"/>
+			<reflexive name="Dynamic Values" visible="true" offset="0x18" entrySize="0x20">
+				<reflexive name="Frames" visible="true" offset="0x0" entrySize="0xC">
+					<int32 name="Frame" visible="true" offset="0x0"/>
+					<float32 name="Dynamicvalue1" visible="true" offset="0x4"/>
+					<float32 name="Dynamicvalue2" visible="true" offset="0x8"/>
+				</reflexive>
+				<dataRef name="Frame Function" visible="true" offset="0xC"/>
+			</reflexive>
+			<float32 name="Outmix Value1" visible="true" offset="0x24"/>
+			<float32 name="Outmix Value2" visible="true" offset="0x28"/>
+			<float32 name="Outmix Value3" visible="true" offset="0x2C"/>
+		</reflexive>
+		<reflexive name="Doubling" visible="true" offset="0xC" entrySize="0x34">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Use Cosine Interpolation" index="0"/>
+			</bitfield32>
+			<float32 name="Inmix Value1" visible="true" offset="0x4"/>
+			<float32 name="Inmix Value2" visible="true" offset="0x8"/>
+			<float32 name="Inmix Value3" visible="true" offset="0xC"/>
+			<float32 name="Basevalue1" visible="true" offset="0x10"/>
+			<float32 name="Basevalue2" visible="true" offset="0x14"/>
+			<float32 name="Basevalue3" visible="true" offset="0x18"/>
+			<reflexive name="Dynamic Values" visible="true" offset="0x1C" entrySize="0x20">
+				<reflexive name="Frames" visible="true" offset="0x0" entrySize="0x10">
+					<int32 name="Frame" visible="true" offset="0x0"/>
+					<float32 name="Dynamicvalue1" visible="true" offset="0x4"/>
+					<float32 name="Dynamicvalue2" visible="true" offset="0x8"/>
+					<float32 name="Dynamicvalue3" visible="true" offset="0xC"/>
+				</reflexive>
+				<dataRef name="Frame Function" visible="true" offset="0xC"/>
+			</reflexive>
+			<float32 name="Outmix Value1" visible="true" offset="0x28"/>
+			<float32 name="Outmix Value2" visible="true" offset="0x2C"/>
+			<float32 name="Outmix Value3" visible="true" offset="0x30"/>
+		</reflexive>
+		<reflexive name="Colorize" visible="true" offset="0x18" entrySize="0x30">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Use Cosine Interpolation" index="0"/>
+			</bitfield32>
+			<float32 name="Inmix Value1" visible="true" offset="0x4"/>
+			<float32 name="Inmix Value2" visible="true" offset="0x8"/>
+			<float32 name="Inmix Value3" visible="true" offset="0xC"/>
+			<float32 name="Basevalue1" visible="true" offset="0x10"/>
+			<float32 name="Basevalue2" visible="true" offset="0x14"/>
+			<reflexive name="Dynamic Values" visible="true" offset="0x18" entrySize="0x20">
+				<reflexive name="Frames" visible="true" offset="0x0" entrySize="0xC">
+					<int32 name="Frame" visible="true" offset="0x0"/>
+					<float32 name="Dynamicvalue1" visible="true" offset="0x4"/>
+					<float32 name="Dynamicvalue2" visible="true" offset="0x8"/>
+				</reflexive>
+				<dataRef name="Frame Function" visible="true" offset="0xC"/>
+			</reflexive>
+			<float32 name="Outmix Value1" visible="true" offset="0x24"/>
+			<float32 name="Outmix Value2" visible="true" offset="0x28"/>
+			<float32 name="Outmix Value3" visible="true" offset="0x2C"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Cortana" visible="true" offset="0x74" entrySize="0x24">
+		<reflexive name="Solarize" visible="true" offset="0x0" entrySize="0x30">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Use Cosine Interpolation" index="0"/>
+			</bitfield32>
+			<float32 name="Inmix Value1" visible="true" offset="0x4"/>
+			<float32 name="Inmix Value2" visible="true" offset="0x8"/>
+			<float32 name="Inmix Value3" visible="true" offset="0xC"/>
+			<float32 name="Basevalue1" visible="true" offset="0x10"/>
+			<float32 name="Basevalue2" visible="true" offset="0x14"/>
+			<reflexive name="Dynamic Values" visible="true" offset="0x18" entrySize="0x20">
+				<reflexive name="Frames" visible="true" offset="0x0" entrySize="0xC">
+					<int32 name="Frame" visible="true" offset="0x0"/>
+					<float32 name="Dynamicvalue1" visible="true" offset="0x4"/>
+					<float32 name="Dynamicvalue2" visible="true" offset="0x8"/>
+				</reflexive>
+				<dataRef name="Frame Function" visible="true" offset="0xC"/>
+			</reflexive>
+			<float32 name="Outmix Value1" visible="true" offset="0x24"/>
+			<float32 name="Outmix Value2" visible="true" offset="0x28"/>
+			<float32 name="Outmix Value3" visible="true" offset="0x2C"/>
+		</reflexive>
+		<reflexive name="Doubling" visible="true" offset="0xC" entrySize="0x34">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Use Cosine Interpolation" index="0"/>
+			</bitfield32>
+			<float32 name="Inmix Value1" visible="true" offset="0x4"/>
+			<float32 name="Inmix Value2" visible="true" offset="0x8"/>
+			<float32 name="Inmix Value3" visible="true" offset="0xC"/>
+			<float32 name="Basevalue1" visible="true" offset="0x10"/>
+			<float32 name="Basevalue2" visible="true" offset="0x14"/>
+			<float32 name="Basevalue3" visible="true" offset="0x18"/>
+			<reflexive name="Dynamic Values" visible="true" offset="0x1C" entrySize="0x20">
+				<reflexive name="Frames" visible="true" offset="0x0" entrySize="0x10">
+					<int32 name="Frame" visible="true" offset="0x0"/>
+					<float32 name="Dynamicvalue1" visible="true" offset="0x4"/>
+					<float32 name="Dynamicvalue2" visible="true" offset="0x8"/>
+					<float32 name="Dynamicvalue3" visible="true" offset="0xC"/>
+				</reflexive>
+				<dataRef name="Frame Function" visible="true" offset="0xC"/>
+			</reflexive>
+			<float32 name="Outmix Value1" visible="true" offset="0x28"/>
+			<float32 name="Outmix Value2" visible="true" offset="0x2C"/>
+			<float32 name="Outmix Value3" visible="true" offset="0x30"/>
+		</reflexive>
+		<reflexive name="Colorize" visible="true" offset="0x18" entrySize="0x30">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Use Cosine Interpolation" index="0"/>
+			</bitfield32>
+			<float32 name="Inmix Value1" visible="true" offset="0x4"/>
+			<float32 name="Inmix Value2" visible="true" offset="0x8"/>
+			<float32 name="Inmix Value3" visible="true" offset="0xC"/>
+			<float32 name="Basevalue1" visible="true" offset="0x10"/>
+			<float32 name="Basevalue2" visible="true" offset="0x14"/>
+			<reflexive name="Dynamic Values" visible="true" offset="0x18" entrySize="0x20">
+				<reflexive name="Frames" visible="true" offset="0x0" entrySize="0xC">
+					<int32 name="Frame" visible="true" offset="0x0"/>
+					<float32 name="Dynamicvalue1" visible="true" offset="0x4"/>
+					<float32 name="Dynamicvalue2" visible="true" offset="0x8"/>
+				</reflexive>
+				<dataRef name="Frame Function" visible="true" offset="0xC"/>
+			</reflexive>
+			<float32 name="Outmix Value1" visible="true" offset="0x24"/>
+			<float32 name="Outmix Value2" visible="true" offset="0x28"/>
+			<float32 name="Outmix Value3" visible="true" offset="0x2C"/>
+		</reflexive>
+	</reflexive>
+</plugin>

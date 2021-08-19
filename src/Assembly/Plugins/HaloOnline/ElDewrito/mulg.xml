@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x18">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Universal" visible="true" offset="0x0" entrySize="0xD8">
+		<tagref name="Random Player Name Strings" visible="true" offset="0x0"/>
+		<tagref name="Team Name Strings" visible="true" offset="0x10"/>
+		<reflexive name="Team Colors" visible="true" offset="0x20" entrySize="0xC">
+			<colorf name="Color" visible="true" offset="0x0" format="rgb"/>
+		</reflexive>
+		<reflexive name="Armor Customization" visible="true" offset="0x2C" entrySize="0x10">
+			<stringId name="Character Name" visible="true" offset="0x0"/>
+			<reflexive name="Regions" visible="true" offset="0x4" entrySize="0x10">
+				<stringId name="Name" visible="true" offset="0x0"/>
+				<reflexive name="Permutations" visible="true" offset="0x4" entrySize="0x1C">
+					<stringId name="Name" visible="true" offset="0x0"/>
+					<stringId name="Description" visible="true" offset="0x4"/>
+					<bitfield16 name="Flags" visible="true" offset="0x8">
+						<bit name="Has Requirement" index="0"/>
+						<bit name="Has Special Requirement" index="1"/>
+						<bit name="Bit2" index="2"/>
+						<bit name="Bit3" index="3"/>
+						<bit name="Bit4" index="4"/>
+						<bit name="Bit5" index="5"/>
+						<bit name="Bit6" index="6"/>
+						<bit name="Bit7" index="7"/>
+						<bit name="Bit8" index="8"/>
+						<bit name="Bit9" index="9"/>
+						<bit name="Bit10" index="10"/>
+						<bit name="Bit11" index="11"/>
+						<bit name="Bit12" index="12"/>
+						<bit name="Bit13" index="13"/>
+						<bit name="Bit14" index="14"/>
+						<bit name="Bit15" index="15"/>
+					</bitfield16>
+					<int16 name="Unknown" visible="true" offset="0xA"/>
+					<stringId name="Achievement Requirement" visible="true" offset="0xC"/>
+					<reflexive name="Variant" visible="true" offset="0x10" entrySize="0x8">
+						<stringId name="Region" visible="true" offset="0x0"/>
+						<stringId name="Permutation" visible="true" offset="0x4"/>
+					</reflexive>
+				</reflexive>
+			</reflexive>
+		</reflexive>
+		<reflexive name="Equipment" visible="true" offset="0x38" entrySize="0x18">
+			<stringId name="Name" visible="true" offset="0x0"/>
+			<tagref name="Object" visible="true" offset="0x4"/>
+			<int16 name="Type" visible="true" offset="0x14"/>
+			<uint8 name="Unused Padding 0" visible="false" offset="0x16"/>
+			<uint8 name="Unused Padding 1" visible="false" offset="0x17"/>
+		</reflexive>
+		<reflexive name="Energy Regeneration" visible="true" offset="0x44" entrySize="0x8">
+			<int32 name="Duration" visible="true" offset="0x0"/>
+			<int32 name="Energy Level" visible="true" offset="0x4"/>
+		</reflexive>
+		<tagref name="Multiplayer Strings" visible="true" offset="0x50"/>
+		<tagref name="Sandbox Ui Strings" visible="true" offset="0x60"/>
+		<tagref name="Sandbox Ui Properties" visible="true" offset="0x70"/>
+		<reflexive name="Game Variant Weapons" visible="true" offset="0x80" entrySize="0x18">
+			<stringId name="Name" visible="true" offset="0x0"/>
+			<float32 name="Random Chance" visible="true" offset="0x4"/>
+			<tagref name="Weapon" visible="true" offset="0x8"/>
+		</reflexive>
+		<reflexive name="Game Variant Vehicles" visible="true" offset="0x8C" entrySize="0x14">
+			<stringId name="Name" visible="true" offset="0x0"/>
+			<tagref name="Vehicle" visible="true" offset="0x4"/>
+		</reflexive>
+		<reflexive name="Game Variant Equipment" visible="true" offset="0x98" entrySize="0x14">
+			<stringId name="Name" visible="true" offset="0x0"/>
+			<tagref name="Grenade" visible="true" offset="0x4"/>
+		</reflexive>
+		<reflexive name="Weapon Sets" visible="true" offset="0xA4" entrySize="0x10">
+			<stringId name="Name" visible="true" offset="0x0"/>
+			<reflexive name="Substitutions" visible="true" offset="0x4" entrySize="0x8">
+				<stringId name="Original Weapon" visible="true" offset="0x0"/>
+				<stringId name="Substituted Weapon" visible="true" offset="0x4"/>
+			</reflexive>
+		</reflexive>
+		<reflexive name="Vehicle Sets" visible="true" offset="0xB0" entrySize="0x10">
+			<stringId name="Name" visible="true" offset="0x0"/>
+			<reflexive name="Substitutions" visible="true" offset="0x4" entrySize="0x8">
+				<stringId name="Original Vehicle" visible="true" offset="0x0"/>
+				<stringId name="Substituted Vehicle" visible="true" offset="0x4"/>
+			</reflexive>
+		</reflexive>
+		<reflexive name="Podium Animations" visible="true" offset="0xBC" entrySize="0x30">
+			<tagref name="Animation Graph" visible="true" offset="0x0"/>
+			<stringId name="Default Unarmed" visible="true" offset="0x10"/>
+			<stringId name="Default Armed" visible="true" offset="0x14"/>
+			<reflexive name="Stance Animations" visible="true" offset="0x18" entrySize="0x34">
+				<ascii name="Name" visible="true" offset="0x0" length="0x20"/>
+				<stringId name="Base Animation" visible="true" offset="0x20"/>
+				<stringId name="Loop Animation" visible="true" offset="0x24"/>
+				<stringId name="Unarmed Transition" visible="true" offset="0x28"/>
+				<stringId name="Armed Transition" visible="true" offset="0x2C"/>
+				<float32 name="Unknown" visible="true" offset="0x30"/>
+			</reflexive>
+			<reflexive name="Move Animations" visible="true" offset="0x24" entrySize="0x50">
+				<ascii name="Name" visible="true" offset="0x0" length="0x20"/>
+				<stringId name="In Animation" visible="true" offset="0x20"/>
+				<stringId name="Loop Animation" visible="true" offset="0x24"/>
+				<stringId name="Out Animation" visible="true" offset="0x28"/>
+				<int32 name="Unknown" visible="true" offset="0x2C"/>
+				<tagref name="Primary Weapon" visible="true" offset="0x30"/>
+				<tagref name="Secondary Weapon" visible="true" offset="0x40"/>
+			</reflexive>
+		</reflexive>
+		<tagref name="Engine Settings" visible="true" offset="0xC8"/>
+	</reflexive>
+	<reflexive name="Runtime" visible="true" offset="0xC" entrySize="0x2A8">
+		<tagref name="Sandbox Editor Unit" visible="true" offset="0x0"/>
+		<tagref name="Sandbox Editor Object" visible="true" offset="0x10"/>
+		<tagref name="Flag" visible="true" offset="0x20"/>
+		<tagref name="Ball" visible="true" offset="0x30"/>
+		<tagref name="Bomb" visible="true" offset="0x40"/>
+		<tagref name="Vip Zone" visible="true" offset="0x50"/>
+		<tagref name="In Game Strings" visible="true" offset="0x60"/>
+		<tagref name="Unknown" visible="true" offset="0x70"/>
+		<tagref name="Unknown2" visible="true" offset="0x80"/>
+		<tagref name="Unknown3" visible="true" offset="0x90"/>
+		<tagref name="Unknown4" visible="true" offset="0xA0"/>
+		<tagref name="Unknown5" visible="true" offset="0xB0"/>
+		<reflexive name="Sounds" visible="true" offset="0xC0" entrySize="0x10">
+			<tagref name="Type" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Looping Sounds" visible="true" offset="0xCC" entrySize="0x10">
+			<tagref name="Type" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Unknown Events" visible="true" offset="0xD8" entrySize="0x10C">
+			<uint16 name="Flags" visible="true" offset="0x0"/>
+			<enum16 name="Type" visible="true" offset="0x2">
+				<option name="General" value="0x0"/>
+				<option name="Flavor" value="0x1"/>
+				<option name="Slayer" value="0x2"/>
+				<option name="Capture The Flag" value="0x3"/>
+				<option name="Oddball" value="0x4"/>
+				<option name="Unused" value="0x5"/>
+				<option name="King Of The Hill" value="0x6"/>
+				<option name="Vip" value="0x7"/>
+				<option name="Juggernaut" value="0x8"/>
+				<option name="Territories" value="0x9"/>
+				<option name="Assault" value="0xA"/>
+				<option name="Infection" value="0xB"/>
+				<option name="Survival" value="0xC"/>
+				<option name="Unknown" value="0xD"/>
+			</enum16>
+			<stringId name="Event" visible="true" offset="0x4"/>
+			<enum16 name="Audience" visible="true" offset="0x8">
+				<option name="Cause Player" value="0x0"/>
+				<option name="Cause Team" value="0x1"/>
+				<option name="Effect Player" value="0x2"/>
+				<option name="Effect Team" value="0x3"/>
+				<option name="All" value="0x4"/>
+			</enum16>
+			<int16 name="Unknown" visible="true" offset="0xA"/>
+			<enum16 name="Team" visible="true" offset="0xC">
+				<option name="None Player Only" value="0x0"/>
+				<option name="Cause" value="0x1"/>
+				<option name="Effect" value="0x2"/>
+				<option name="All" value="0x3"/>
+			</enum16>
+			<int16 name="Unknown2" visible="true" offset="0xE"/>
+			<stringId name="Display String" visible="true" offset="0x10"/>
+			<stringId name="Display Medal" visible="true" offset="0x14"/>
+			<uint32 name="Unknown3" visible="true" offset="0x18"/>
+			<uint32 name="Unknown4" visible="true" offset="0x1C"/>
+			<enum16 name="Required Field" visible="true" offset="0x20">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience" visible="true" offset="0x22">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Required Field2" visible="true" offset="0x24">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience2" visible="true" offset="0x26">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<stringId name="Primary String" visible="true" offset="0x28"/>
+			<int32 name="Primary String Duration" visible="true" offset="0x2C"/>
+			<stringId name="Plural Display String" visible="true" offset="0x30"/>
+			<float32 name="Sound Delay Announcer Only" visible="true" offset="0x34"/>
+			<uint16 name="Sound Flags" visible="true" offset="0x38"/>
+			<int16 name="Unknown5" visible="true" offset="0x3A"/>
+			<tagref name="English Sound" visible="true" offset="0x3C"/>
+			<tagref name="Japanese Sound" visible="true" offset="0x4C"/>
+			<tagref name="German Sound" visible="true" offset="0x5C"/>
+			<tagref name="French Sound" visible="true" offset="0x6C"/>
+			<tagref name="Spanish Sound" visible="true" offset="0x7C"/>
+			<tagref name="Latin American Spanish Sound" visible="true" offset="0x8C"/>
+			<tagref name="Italian Sound" visible="true" offset="0x9C"/>
+			<tagref name="Korean Sound" visible="true" offset="0xAC"/>
+			<tagref name="Chinese Traditional Sound" visible="true" offset="0xBC"/>
+			<tagref name="Chinese Simplified Sound" visible="true" offset="0xCC"/>
+			<tagref name="Portuguese Sound" visible="true" offset="0xDC"/>
+			<tagref name="Polish Sound" visible="true" offset="0xEC"/>
+			<uint32 name="Unknown6" visible="true" offset="0xFC"/>
+			<uint32 name="Unknown7" visible="true" offset="0x100"/>
+			<uint32 name="Unknown8" visible="true" offset="0x104"/>
+			<uint32 name="Unknown9" visible="true" offset="0x108"/>
+		</reflexive>
+		<reflexive name="General Events" visible="true" offset="0xE4" entrySize="0x10C">
+			<uint16 name="Flags" visible="true" offset="0x0"/>
+			<enum16 name="Type" visible="true" offset="0x2">
+				<option name="General" value="0x0"/>
+				<option name="Flavor" value="0x1"/>
+				<option name="Slayer" value="0x2"/>
+				<option name="Capture The Flag" value="0x3"/>
+				<option name="Oddball" value="0x4"/>
+				<option name="Unused" value="0x5"/>
+				<option name="King Of The Hill" value="0x6"/>
+				<option name="Vip" value="0x7"/>
+				<option name="Juggernaut" value="0x8"/>
+				<option name="Territories" value="0x9"/>
+				<option name="Assault" value="0xA"/>
+				<option name="Infection" value="0xB"/>
+				<option name="Survival" value="0xC"/>
+				<option name="Unknown" value="0xD"/>
+			</enum16>
+			<stringId name="Event" visible="true" offset="0x4"/>
+			<enum16 name="Audience" visible="true" offset="0x8">
+				<option name="Cause Player" value="0x0"/>
+				<option name="Cause Team" value="0x1"/>
+				<option name="Effect Player" value="0x2"/>
+				<option name="Effect Team" value="0x3"/>
+				<option name="All" value="0x4"/>
+			</enum16>
+			<int16 name="Unknown" visible="true" offset="0xA"/>
+			<enum16 name="Team" visible="true" offset="0xC">
+				<option name="None Player Only" value="0x0"/>
+				<option name="Cause" value="0x1"/>
+				<option name="Effect" value="0x2"/>
+				<option name="All" value="0x3"/>
+			</enum16>
+			<int16 name="Unknown2" visible="true" offset="0xE"/>
+			<stringId name="Display String" visible="true" offset="0x10"/>
+			<stringId name="Display Medal" visible="true" offset="0x14"/>
+			<uint32 name="Unknown3" visible="true" offset="0x18"/>
+			<uint32 name="Unknown4" visible="true" offset="0x1C"/>
+			<enum16 name="Required Field" visible="true" offset="0x20">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience" visible="true" offset="0x22">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Required Field2" visible="true" offset="0x24">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience2" visible="true" offset="0x26">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<stringId name="Primary String" visible="true" offset="0x28"/>
+			<int32 name="Primary String Duration" visible="true" offset="0x2C"/>
+			<stringId name="Plural Display String" visible="true" offset="0x30"/>
+			<float32 name="Sound Delay Announcer Only" visible="true" offset="0x34"/>
+			<uint16 name="Sound Flags" visible="true" offset="0x38"/>
+			<int16 name="Unknown5" visible="true" offset="0x3A"/>
+			<tagref name="English Sound" visible="true" offset="0x3C"/>
+			<tagref name="Japanese Sound" visible="true" offset="0x4C"/>
+			<tagref name="German Sound" visible="true" offset="0x5C"/>
+			<tagref name="French Sound" visible="true" offset="0x6C"/>
+			<tagref name="Spanish Sound" visible="true" offset="0x7C"/>
+			<tagref name="Latin American Spanish Sound" visible="true" offset="0x8C"/>
+			<tagref name="Italian Sound" visible="true" offset="0x9C"/>
+			<tagref name="Korean Sound" visible="true" offset="0xAC"/>
+			<tagref name="Chinese Traditional Sound" visible="true" offset="0xBC"/>
+			<tagref name="Chinese Simplified Sound" visible="true" offset="0xCC"/>
+			<tagref name="Portuguese Sound" visible="true" offset="0xDC"/>
+			<tagref name="Polish Sound" visible="true" offset="0xEC"/>
+			<uint32 name="Unknown6" visible="true" offset="0xFC"/>
+			<uint32 name="Unknown7" visible="true" offset="0x100"/>
+			<uint32 name="Unknown8" visible="true" offset="0x104"/>
+			<uint32 name="Unknown9" visible="true" offset="0x108"/>
+		</reflexive>
+		<reflexive name="Flavor Events" visible="true" offset="0xF0" entrySize="0x10C">
+			<uint16 name="Flags" visible="true" offset="0x0"/>
+			<enum16 name="Type" visible="true" offset="0x2">
+				<option name="General" value="0x0"/>
+				<option name="Flavor" value="0x1"/>
+				<option name="Slayer" value="0x2"/>
+				<option name="Capture The Flag" value="0x3"/>
+				<option name="Oddball" value="0x4"/>
+				<option name="Unused" value="0x5"/>
+				<option name="King Of The Hill" value="0x6"/>
+				<option name="Vip" value="0x7"/>
+				<option name="Juggernaut" value="0x8"/>
+				<option name="Territories" value="0x9"/>
+				<option name="Assault" value="0xA"/>
+				<option name="Infection" value="0xB"/>
+				<option name="Survival" value="0xC"/>
+				<option name="Unknown" value="0xD"/>
+			</enum16>
+			<stringId name="Event" visible="true" offset="0x4"/>
+			<enum16 name="Audience" visible="true" offset="0x8">
+				<option name="Cause Player" value="0x0"/>
+				<option name="Cause Team" value="0x1"/>
+				<option name="Effect Player" value="0x2"/>
+				<option name="Effect Team" value="0x3"/>
+				<option name="All" value="0x4"/>
+			</enum16>
+			<int16 name="Unknown" visible="true" offset="0xA"/>
+			<enum16 name="Team" visible="true" offset="0xC">
+				<option name="None Player Only" value="0x0"/>
+				<option name="Cause" value="0x1"/>
+				<option name="Effect" value="0x2"/>
+				<option name="All" value="0x3"/>
+			</enum16>
+			<int16 name="Unknown2" visible="true" offset="0xE"/>
+			<stringId name="Display String" visible="true" offset="0x10"/>
+			<stringId name="Display Medal" visible="true" offset="0x14"/>
+			<uint32 name="Unknown3" visible="true" offset="0x18"/>
+			<uint32 name="Unknown4" visible="true" offset="0x1C"/>
+			<enum16 name="Required Field" visible="true" offset="0x20">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience" visible="true" offset="0x22">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Required Field2" visible="true" offset="0x24">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience2" visible="true" offset="0x26">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<stringId name="Primary String" visible="true" offset="0x28"/>
+			<int32 name="Primary String Duration" visible="true" offset="0x2C"/>
+			<stringId name="Plural Display String" visible="true" offset="0x30"/>
+			<float32 name="Sound Delay Announcer Only" visible="true" offset="0x34"/>
+			<uint16 name="Sound Flags" visible="true" offset="0x38"/>
+			<int16 name="Unknown5" visible="true" offset="0x3A"/>
+			<tagref name="English Sound" visible="true" offset="0x3C"/>
+			<tagref name="Japanese Sound" visible="true" offset="0x4C"/>
+			<tagref name="German Sound" visible="true" offset="0x5C"/>
+			<tagref name="French Sound" visible="true" offset="0x6C"/>
+			<tagref name="Spanish Sound" visible="true" offset="0x7C"/>
+			<tagref name="Latin American Spanish Sound" visible="true" offset="0x8C"/>
+			<tagref name="Italian Sound" visible="true" offset="0x9C"/>
+			<tagref name="Korean Sound" visible="true" offset="0xAC"/>
+			<tagref name="Chinese Traditional Sound" visible="true" offset="0xBC"/>
+			<tagref name="Chinese Simplified Sound" visible="true" offset="0xCC"/>
+			<tagref name="Portuguese Sound" visible="true" offset="0xDC"/>
+			<tagref name="Polish Sound" visible="true" offset="0xEC"/>
+			<uint32 name="Unknown6" visible="true" offset="0xFC"/>
+			<uint32 name="Unknown7" visible="true" offset="0x100"/>
+			<uint32 name="Unknown8" visible="true" offset="0x104"/>
+			<uint32 name="Unknown9" visible="true" offset="0x108"/>
+		</reflexive>
+		<reflexive name="Slayer Events" visible="true" offset="0xFC" entrySize="0x10C">
+			<uint16 name="Flags" visible="true" offset="0x0"/>
+			<enum16 name="Type" visible="true" offset="0x2">
+				<option name="General" value="0x0"/>
+				<option name="Flavor" value="0x1"/>
+				<option name="Slayer" value="0x2"/>
+				<option name="Capture The Flag" value="0x3"/>
+				<option name="Oddball" value="0x4"/>
+				<option name="Unused" value="0x5"/>
+				<option name="King Of The Hill" value="0x6"/>
+				<option name="Vip" value="0x7"/>
+				<option name="Juggernaut" value="0x8"/>
+				<option name="Territories" value="0x9"/>
+				<option name="Assault" value="0xA"/>
+				<option name="Infection" value="0xB"/>
+				<option name="Survival" value="0xC"/>
+				<option name="Unknown" value="0xD"/>
+			</enum16>
+			<stringId name="Event" visible="true" offset="0x4"/>
+			<enum16 name="Audience" visible="true" offset="0x8">
+				<option name="Cause Player" value="0x0"/>
+				<option name="Cause Team" value="0x1"/>
+				<option name="Effect Player" value="0x2"/>
+				<option name="Effect Team" value="0x3"/>
+				<option name="All" value="0x4"/>
+			</enum16>
+			<int16 name="Unknown" visible="true" offset="0xA"/>
+			<enum16 name="Team" visible="true" offset="0xC">
+				<option name="None Player Only" value="0x0"/>
+				<option name="Cause" value="0x1"/>
+				<option name="Effect" value="0x2"/>
+				<option name="All" value="0x3"/>
+			</enum16>
+			<int16 name="Unknown2" visible="true" offset="0xE"/>
+			<stringId name="Display String" visible="true" offset="0x10"/>
+			<stringId name="Display Medal" visible="true" offset="0x14"/>
+			<uint32 name="Unknown3" visible="true" offset="0x18"/>
+			<uint32 name="Unknown4" visible="true" offset="0x1C"/>
+			<enum16 name="Required Field" visible="true" offset="0x20">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience" visible="true" offset="0x22">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Required Field2" visible="true" offset="0x24">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience2" visible="true" offset="0x26">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<stringId name="Primary String" visible="true" offset="0x28"/>
+			<int32 name="Primary String Duration" visible="true" offset="0x2C"/>
+			<stringId name="Plural Display String" visible="true" offset="0x30"/>
+			<float32 name="Sound Delay Announcer Only" visible="true" offset="0x34"/>
+			<uint16 name="Sound Flags" visible="true" offset="0x38"/>
+			<int16 name="Unknown5" visible="true" offset="0x3A"/>
+			<tagref name="English Sound" visible="true" offset="0x3C"/>
+			<tagref name="Japanese Sound" visible="true" offset="0x4C"/>
+			<tagref name="German Sound" visible="true" offset="0x5C"/>
+			<tagref name="French Sound" visible="true" offset="0x6C"/>
+			<tagref name="Spanish Sound" visible="true" offset="0x7C"/>
+			<tagref name="Latin American Spanish Sound" visible="true" offset="0x8C"/>
+			<tagref name="Italian Sound" visible="true" offset="0x9C"/>
+			<tagref name="Korean Sound" visible="true" offset="0xAC"/>
+			<tagref name="Chinese Traditional Sound" visible="true" offset="0xBC"/>
+			<tagref name="Chinese Simplified Sound" visible="true" offset="0xCC"/>
+			<tagref name="Portuguese Sound" visible="true" offset="0xDC"/>
+			<tagref name="Polish Sound" visible="true" offset="0xEC"/>
+			<uint32 name="Unknown6" visible="true" offset="0xFC"/>
+			<uint32 name="Unknown7" visible="true" offset="0x100"/>
+			<uint32 name="Unknown8" visible="true" offset="0x104"/>
+			<uint32 name="Unknown9" visible="true" offset="0x108"/>
+		</reflexive>
+		<reflexive name="Ctf Events" visible="true" offset="0x108" entrySize="0x10C">
+			<uint16 name="Flags" visible="true" offset="0x0"/>
+			<enum16 name="Type" visible="true" offset="0x2">
+				<option name="General" value="0x0"/>
+				<option name="Flavor" value="0x1"/>
+				<option name="Slayer" value="0x2"/>
+				<option name="Capture The Flag" value="0x3"/>
+				<option name="Oddball" value="0x4"/>
+				<option name="Unused" value="0x5"/>
+				<option name="King Of The Hill" value="0x6"/>
+				<option name="Vip" value="0x7"/>
+				<option name="Juggernaut" value="0x8"/>
+				<option name="Territories" value="0x9"/>
+				<option name="Assault" value="0xA"/>
+				<option name="Infection" value="0xB"/>
+				<option name="Survival" value="0xC"/>
+				<option name="Unknown" value="0xD"/>
+			</enum16>
+			<stringId name="Event" visible="true" offset="0x4"/>
+			<enum16 name="Audience" visible="true" offset="0x8">
+				<option name="Cause Player" value="0x0"/>
+				<option name="Cause Team" value="0x1"/>
+				<option name="Effect Player" value="0x2"/>
+				<option name="Effect Team" value="0x3"/>
+				<option name="All" value="0x4"/>
+			</enum16>
+			<int16 name="Unknown" visible="true" offset="0xA"/>
+			<enum16 name="Team" visible="true" offset="0xC">
+				<option name="None Player Only" value="0x0"/>
+				<option name="Cause" value="0x1"/>
+				<option name="Effect" value="0x2"/>
+				<option name="All" value="0x3"/>
+			</enum16>
+			<int16 name="Unknown2" visible="true" offset="0xE"/>
+			<stringId name="Display String" visible="true" offset="0x10"/>
+			<stringId name="Display Medal" visible="true" offset="0x14"/>
+			<uint32 name="Unknown3" visible="true" offset="0x18"/>
+			<uint32 name="Unknown4" visible="true" offset="0x1C"/>
+			<enum16 name="Required Field" visible="true" offset="0x20">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience" visible="true" offset="0x22">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Required Field2" visible="true" offset="0x24">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience2" visible="true" offset="0x26">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<stringId name="Primary String" visible="true" offset="0x28"/>
+			<int32 name="Primary String Duration" visible="true" offset="0x2C"/>
+			<stringId name="Plural Display String" visible="true" offset="0x30"/>
+			<float32 name="Sound Delay Announcer Only" visible="true" offset="0x34"/>
+			<uint16 name="Sound Flags" visible="true" offset="0x38"/>
+			<int16 name="Unknown5" visible="true" offset="0x3A"/>
+			<tagref name="English Sound" visible="true" offset="0x3C"/>
+			<tagref name="Japanese Sound" visible="true" offset="0x4C"/>
+			<tagref name="German Sound" visible="true" offset="0x5C"/>
+			<tagref name="French Sound" visible="true" offset="0x6C"/>
+			<tagref name="Spanish Sound" visible="true" offset="0x7C"/>
+			<tagref name="Latin American Spanish Sound" visible="true" offset="0x8C"/>
+			<tagref name="Italian Sound" visible="true" offset="0x9C"/>
+			<tagref name="Korean Sound" visible="true" offset="0xAC"/>
+			<tagref name="Chinese Traditional Sound" visible="true" offset="0xBC"/>
+			<tagref name="Chinese Simplified Sound" visible="true" offset="0xCC"/>
+			<tagref name="Portuguese Sound" visible="true" offset="0xDC"/>
+			<tagref name="Polish Sound" visible="true" offset="0xEC"/>
+			<uint32 name="Unknown6" visible="true" offset="0xFC"/>
+			<uint32 name="Unknown7" visible="true" offset="0x100"/>
+			<uint32 name="Unknown8" visible="true" offset="0x104"/>
+			<uint32 name="Unknown9" visible="true" offset="0x108"/>
+		</reflexive>
+		<reflexive name="Oddball Events" visible="true" offset="0x114" entrySize="0x10C">
+			<uint16 name="Flags" visible="true" offset="0x0"/>
+			<enum16 name="Type" visible="true" offset="0x2">
+				<option name="General" value="0x0"/>
+				<option name="Flavor" value="0x1"/>
+				<option name="Slayer" value="0x2"/>
+				<option name="Capture The Flag" value="0x3"/>
+				<option name="Oddball" value="0x4"/>
+				<option name="Unused" value="0x5"/>
+				<option name="King Of The Hill" value="0x6"/>
+				<option name="Vip" value="0x7"/>
+				<option name="Juggernaut" value="0x8"/>
+				<option name="Territories" value="0x9"/>
+				<option name="Assault" value="0xA"/>
+				<option name="Infection" value="0xB"/>
+				<option name="Survival" value="0xC"/>
+				<option name="Unknown" value="0xD"/>
+			</enum16>
+			<stringId name="Event" visible="true" offset="0x4"/>
+			<enum16 name="Audience" visible="true" offset="0x8">
+				<option name="Cause Player" value="0x0"/>
+				<option name="Cause Team" value="0x1"/>
+				<option name="Effect Player" value="0x2"/>
+				<option name="Effect Team" value="0x3"/>
+				<option name="All" value="0x4"/>
+			</enum16>
+			<int16 name="Unknown" visible="true" offset="0xA"/>
+			<enum16 name="Team" visible="true" offset="0xC">
+				<option name="None Player Only" value="0x0"/>
+				<option name="Cause" value="0x1"/>
+				<option name="Effect" value="0x2"/>
+				<option name="All" value="0x3"/>
+			</enum16>
+			<int16 name="Unknown2" visible="true" offset="0xE"/>
+			<stringId name="Display String" visible="true" offset="0x10"/>
+			<stringId name="Display Medal" visible="true" offset="0x14"/>
+			<uint32 name="Unknown3" visible="true" offset="0x18"/>
+			<uint32 name="Unknown4" visible="true" offset="0x1C"/>
+			<enum16 name="Required Field" visible="true" offset="0x20">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience" visible="true" offset="0x22">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Required Field2" visible="true" offset="0x24">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience2" visible="true" offset="0x26">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<stringId name="Primary String" visible="true" offset="0x28"/>
+			<int32 name="Primary String Duration" visible="true" offset="0x2C"/>
+			<stringId name="Plural Display String" visible="true" offset="0x30"/>
+			<float32 name="Sound Delay Announcer Only" visible="true" offset="0x34"/>
+			<uint16 name="Sound Flags" visible="true" offset="0x38"/>
+			<int16 name="Unknown5" visible="true" offset="0x3A"/>
+			<tagref name="English Sound" visible="true" offset="0x3C"/>
+			<tagref name="Japanese Sound" visible="true" offset="0x4C"/>
+			<tagref name="German Sound" visible="true" offset="0x5C"/>
+			<tagref name="French Sound" visible="true" offset="0x6C"/>
+			<tagref name="Spanish Sound" visible="true" offset="0x7C"/>
+			<tagref name="Latin American Spanish Sound" visible="true" offset="0x8C"/>
+			<tagref name="Italian Sound" visible="true" offset="0x9C"/>
+			<tagref name="Korean Sound" visible="true" offset="0xAC"/>
+			<tagref name="Chinese Traditional Sound" visible="true" offset="0xBC"/>
+			<tagref name="Chinese Simplified Sound" visible="true" offset="0xCC"/>
+			<tagref name="Portuguese Sound" visible="true" offset="0xDC"/>
+			<tagref name="Polish Sound" visible="true" offset="0xEC"/>
+			<uint32 name="Unknown6" visible="true" offset="0xFC"/>
+			<uint32 name="Unknown7" visible="true" offset="0x100"/>
+			<uint32 name="Unknown8" visible="true" offset="0x104"/>
+			<uint32 name="Unknown9" visible="true" offset="0x108"/>
+		</reflexive>
+		<reflexive name="King Of The Hill Events" visible="true" offset="0x120" entrySize="0x10C">
+			<uint16 name="Flags" visible="true" offset="0x0"/>
+			<enum16 name="Type" visible="true" offset="0x2">
+				<option name="General" value="0x0"/>
+				<option name="Flavor" value="0x1"/>
+				<option name="Slayer" value="0x2"/>
+				<option name="Capture The Flag" value="0x3"/>
+				<option name="Oddball" value="0x4"/>
+				<option name="Unused" value="0x5"/>
+				<option name="King Of The Hill" value="0x6"/>
+				<option name="Vip" value="0x7"/>
+				<option name="Juggernaut" value="0x8"/>
+				<option name="Territories" value="0x9"/>
+				<option name="Assault" value="0xA"/>
+				<option name="Infection" value="0xB"/>
+				<option name="Survival" value="0xC"/>
+				<option name="Unknown" value="0xD"/>
+			</enum16>
+			<stringId name="Event" visible="true" offset="0x4"/>
+			<enum16 name="Audience" visible="true" offset="0x8">
+				<option name="Cause Player" value="0x0"/>
+				<option name="Cause Team" value="0x1"/>
+				<option name="Effect Player" value="0x2"/>
+				<option name="Effect Team" value="0x3"/>
+				<option name="All" value="0x4"/>
+			</enum16>
+			<int16 name="Unknown" visible="true" offset="0xA"/>
+			<enum16 name="Team" visible="true" offset="0xC">
+				<option name="None Player Only" value="0x0"/>
+				<option name="Cause" value="0x1"/>
+				<option name="Effect" value="0x2"/>
+				<option name="All" value="0x3"/>
+			</enum16>
+			<int16 name="Unknown2" visible="true" offset="0xE"/>
+			<stringId name="Display String" visible="true" offset="0x10"/>
+			<stringId name="Display Medal" visible="true" offset="0x14"/>
+			<uint32 name="Unknown3" visible="true" offset="0x18"/>
+			<uint32 name="Unknown4" visible="true" offset="0x1C"/>
+			<enum16 name="Required Field" visible="true" offset="0x20">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience" visible="true" offset="0x22">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Required Field2" visible="true" offset="0x24">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience2" visible="true" offset="0x26">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<stringId name="Primary String" visible="true" offset="0x28"/>
+			<int32 name="Primary String Duration" visible="true" offset="0x2C"/>
+			<stringId name="Plural Display String" visible="true" offset="0x30"/>
+			<float32 name="Sound Delay Announcer Only" visible="true" offset="0x34"/>
+			<uint16 name="Sound Flags" visible="true" offset="0x38"/>
+			<int16 name="Unknown5" visible="true" offset="0x3A"/>
+			<tagref name="English Sound" visible="true" offset="0x3C"/>
+			<tagref name="Japanese Sound" visible="true" offset="0x4C"/>
+			<tagref name="German Sound" visible="true" offset="0x5C"/>
+			<tagref name="French Sound" visible="true" offset="0x6C"/>
+			<tagref name="Spanish Sound" visible="true" offset="0x7C"/>
+			<tagref name="Latin American Spanish Sound" visible="true" offset="0x8C"/>
+			<tagref name="Italian Sound" visible="true" offset="0x9C"/>
+			<tagref name="Korean Sound" visible="true" offset="0xAC"/>
+			<tagref name="Chinese Traditional Sound" visible="true" offset="0xBC"/>
+			<tagref name="Chinese Simplified Sound" visible="true" offset="0xCC"/>
+			<tagref name="Portuguese Sound" visible="true" offset="0xDC"/>
+			<tagref name="Polish Sound" visible="true" offset="0xEC"/>
+			<uint32 name="Unknown6" visible="true" offset="0xFC"/>
+			<uint32 name="Unknown7" visible="true" offset="0x100"/>
+			<uint32 name="Unknown8" visible="true" offset="0x104"/>
+			<uint32 name="Unknown9" visible="true" offset="0x108"/>
+		</reflexive>
+		<reflexive name="Vip Events" visible="true" offset="0x12C" entrySize="0x10C">
+			<uint16 name="Flags" visible="true" offset="0x0"/>
+			<enum16 name="Type" visible="true" offset="0x2">
+				<option name="General" value="0x0"/>
+				<option name="Flavor" value="0x1"/>
+				<option name="Slayer" value="0x2"/>
+				<option name="Capture The Flag" value="0x3"/>
+				<option name="Oddball" value="0x4"/>
+				<option name="Unused" value="0x5"/>
+				<option name="King Of The Hill" value="0x6"/>
+				<option name="Vip" value="0x7"/>
+				<option name="Juggernaut" value="0x8"/>
+				<option name="Territories" value="0x9"/>
+				<option name="Assault" value="0xA"/>
+				<option name="Infection" value="0xB"/>
+				<option name="Survival" value="0xC"/>
+				<option name="Unknown" value="0xD"/>
+			</enum16>
+			<stringId name="Event" visible="true" offset="0x4"/>
+			<enum16 name="Audience" visible="true" offset="0x8">
+				<option name="Cause Player" value="0x0"/>
+				<option name="Cause Team" value="0x1"/>
+				<option name="Effect Player" value="0x2"/>
+				<option name="Effect Team" value="0x3"/>
+				<option name="All" value="0x4"/>
+			</enum16>
+			<int16 name="Unknown" visible="true" offset="0xA"/>
+			<enum16 name="Team" visible="true" offset="0xC">
+				<option name="None Player Only" value="0x0"/>
+				<option name="Cause" value="0x1"/>
+				<option name="Effect" value="0x2"/>
+				<option name="All" value="0x3"/>
+			</enum16>
+			<int16 name="Unknown2" visible="true" offset="0xE"/>
+			<stringId name="Display String" visible="true" offset="0x10"/>
+			<stringId name="Display Medal" visible="true" offset="0x14"/>
+			<uint32 name="Unknown3" visible="true" offset="0x18"/>
+			<uint32 name="Unknown4" visible="true" offset="0x1C"/>
+			<enum16 name="Required Field" visible="true" offset="0x20">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience" visible="true" offset="0x22">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Required Field2" visible="true" offset="0x24">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience2" visible="true" offset="0x26">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<stringId name="Primary String" visible="true" offset="0x28"/>
+			<int32 name="Primary String Duration" visible="true" offset="0x2C"/>
+			<stringId name="Plural Display String" visible="true" offset="0x30"/>
+			<float32 name="Sound Delay Announcer Only" visible="true" offset="0x34"/>
+			<uint16 name="Sound Flags" visible="true" offset="0x38"/>
+			<int16 name="Unknown5" visible="true" offset="0x3A"/>
+			<tagref name="English Sound" visible="true" offset="0x3C"/>
+			<tagref name="Japanese Sound" visible="true" offset="0x4C"/>
+			<tagref name="German Sound" visible="true" offset="0x5C"/>
+			<tagref name="French Sound" visible="true" offset="0x6C"/>
+			<tagref name="Spanish Sound" visible="true" offset="0x7C"/>
+			<tagref name="Latin American Spanish Sound" visible="true" offset="0x8C"/>
+			<tagref name="Italian Sound" visible="true" offset="0x9C"/>
+			<tagref name="Korean Sound" visible="true" offset="0xAC"/>
+			<tagref name="Chinese Traditional Sound" visible="true" offset="0xBC"/>
+			<tagref name="Chinese Simplified Sound" visible="true" offset="0xCC"/>
+			<tagref name="Portuguese Sound" visible="true" offset="0xDC"/>
+			<tagref name="Polish Sound" visible="true" offset="0xEC"/>
+			<uint32 name="Unknown6" visible="true" offset="0xFC"/>
+			<uint32 name="Unknown7" visible="true" offset="0x100"/>
+			<uint32 name="Unknown8" visible="true" offset="0x104"/>
+			<uint32 name="Unknown9" visible="true" offset="0x108"/>
+		</reflexive>
+		<reflexive name="Juggernaut Events" visible="true" offset="0x138" entrySize="0x10C">
+			<uint16 name="Flags" visible="true" offset="0x0"/>
+			<enum16 name="Type" visible="true" offset="0x2">
+				<option name="General" value="0x0"/>
+				<option name="Flavor" value="0x1"/>
+				<option name="Slayer" value="0x2"/>
+				<option name="Capture The Flag" value="0x3"/>
+				<option name="Oddball" value="0x4"/>
+				<option name="Unused" value="0x5"/>
+				<option name="King Of The Hill" value="0x6"/>
+				<option name="Vip" value="0x7"/>
+				<option name="Juggernaut" value="0x8"/>
+				<option name="Territories" value="0x9"/>
+				<option name="Assault" value="0xA"/>
+				<option name="Infection" value="0xB"/>
+				<option name="Survival" value="0xC"/>
+				<option name="Unknown" value="0xD"/>
+			</enum16>
+			<stringId name="Event" visible="true" offset="0x4"/>
+			<enum16 name="Audience" visible="true" offset="0x8">
+				<option name="Cause Player" value="0x0"/>
+				<option name="Cause Team" value="0x1"/>
+				<option name="Effect Player" value="0x2"/>
+				<option name="Effect Team" value="0x3"/>
+				<option name="All" value="0x4"/>
+			</enum16>
+			<int16 name="Unknown" visible="true" offset="0xA"/>
+			<enum16 name="Team" visible="true" offset="0xC">
+				<option name="None Player Only" value="0x0"/>
+				<option name="Cause" value="0x1"/>
+				<option name="Effect" value="0x2"/>
+				<option name="All" value="0x3"/>
+			</enum16>
+			<int16 name="Unknown2" visible="true" offset="0xE"/>
+			<stringId name="Display String" visible="true" offset="0x10"/>
+			<stringId name="Display Medal" visible="true" offset="0x14"/>
+			<uint32 name="Unknown3" visible="true" offset="0x18"/>
+			<uint32 name="Unknown4" visible="true" offset="0x1C"/>
+			<enum16 name="Required Field" visible="true" offset="0x20">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience" visible="true" offset="0x22">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Required Field2" visible="true" offset="0x24">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience2" visible="true" offset="0x26">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<stringId name="Primary String" visible="true" offset="0x28"/>
+			<int32 name="Primary String Duration" visible="true" offset="0x2C"/>
+			<stringId name="Plural Display String" visible="true" offset="0x30"/>
+			<float32 name="Sound Delay Announcer Only" visible="true" offset="0x34"/>
+			<uint16 name="Sound Flags" visible="true" offset="0x38"/>
+			<int16 name="Unknown5" visible="true" offset="0x3A"/>
+			<tagref name="English Sound" visible="true" offset="0x3C"/>
+			<tagref name="Japanese Sound" visible="true" offset="0x4C"/>
+			<tagref name="German Sound" visible="true" offset="0x5C"/>
+			<tagref name="French Sound" visible="true" offset="0x6C"/>
+			<tagref name="Spanish Sound" visible="true" offset="0x7C"/>
+			<tagref name="Latin American Spanish Sound" visible="true" offset="0x8C"/>
+			<tagref name="Italian Sound" visible="true" offset="0x9C"/>
+			<tagref name="Korean Sound" visible="true" offset="0xAC"/>
+			<tagref name="Chinese Traditional Sound" visible="true" offset="0xBC"/>
+			<tagref name="Chinese Simplified Sound" visible="true" offset="0xCC"/>
+			<tagref name="Portuguese Sound" visible="true" offset="0xDC"/>
+			<tagref name="Polish Sound" visible="true" offset="0xEC"/>
+			<uint32 name="Unknown6" visible="true" offset="0xFC"/>
+			<uint32 name="Unknown7" visible="true" offset="0x100"/>
+			<uint32 name="Unknown8" visible="true" offset="0x104"/>
+			<uint32 name="Unknown9" visible="true" offset="0x108"/>
+		</reflexive>
+		<reflexive name="Territories Events" visible="true" offset="0x144" entrySize="0x10C">
+			<uint16 name="Flags" visible="true" offset="0x0"/>
+			<enum16 name="Type" visible="true" offset="0x2">
+				<option name="General" value="0x0"/>
+				<option name="Flavor" value="0x1"/>
+				<option name="Slayer" value="0x2"/>
+				<option name="Capture The Flag" value="0x3"/>
+				<option name="Oddball" value="0x4"/>
+				<option name="Unused" value="0x5"/>
+				<option name="King Of The Hill" value="0x6"/>
+				<option name="Vip" value="0x7"/>
+				<option name="Juggernaut" value="0x8"/>
+				<option name="Territories" value="0x9"/>
+				<option name="Assault" value="0xA"/>
+				<option name="Infection" value="0xB"/>
+				<option name="Survival" value="0xC"/>
+				<option name="Unknown" value="0xD"/>
+			</enum16>
+			<stringId name="Event" visible="true" offset="0x4"/>
+			<enum16 name="Audience" visible="true" offset="0x8">
+				<option name="Cause Player" value="0x0"/>
+				<option name="Cause Team" value="0x1"/>
+				<option name="Effect Player" value="0x2"/>
+				<option name="Effect Team" value="0x3"/>
+				<option name="All" value="0x4"/>
+			</enum16>
+			<int16 name="Unknown" visible="true" offset="0xA"/>
+			<enum16 name="Team" visible="true" offset="0xC">
+				<option name="None Player Only" value="0x0"/>
+				<option name="Cause" value="0x1"/>
+				<option name="Effect" value="0x2"/>
+				<option name="All" value="0x3"/>
+			</enum16>
+			<int16 name="Unknown2" visible="true" offset="0xE"/>
+			<stringId name="Display String" visible="true" offset="0x10"/>
+			<stringId name="Display Medal" visible="true" offset="0x14"/>
+			<uint32 name="Unknown3" visible="true" offset="0x18"/>
+			<uint32 name="Unknown4" visible="true" offset="0x1C"/>
+			<enum16 name="Required Field" visible="true" offset="0x20">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience" visible="true" offset="0x22">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Required Field2" visible="true" offset="0x24">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience2" visible="true" offset="0x26">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<stringId name="Primary String" visible="true" offset="0x28"/>
+			<int32 name="Primary String Duration" visible="true" offset="0x2C"/>
+			<stringId name="Plural Display String" visible="true" offset="0x30"/>
+			<float32 name="Sound Delay Announcer Only" visible="true" offset="0x34"/>
+			<uint16 name="Sound Flags" visible="true" offset="0x38"/>
+			<int16 name="Unknown5" visible="true" offset="0x3A"/>
+			<tagref name="English Sound" visible="true" offset="0x3C"/>
+			<tagref name="Japanese Sound" visible="true" offset="0x4C"/>
+			<tagref name="German Sound" visible="true" offset="0x5C"/>
+			<tagref name="French Sound" visible="true" offset="0x6C"/>
+			<tagref name="Spanish Sound" visible="true" offset="0x7C"/>
+			<tagref name="Latin American Spanish Sound" visible="true" offset="0x8C"/>
+			<tagref name="Italian Sound" visible="true" offset="0x9C"/>
+			<tagref name="Korean Sound" visible="true" offset="0xAC"/>
+			<tagref name="Chinese Traditional Sound" visible="true" offset="0xBC"/>
+			<tagref name="Chinese Simplified Sound" visible="true" offset="0xCC"/>
+			<tagref name="Portuguese Sound" visible="true" offset="0xDC"/>
+			<tagref name="Polish Sound" visible="true" offset="0xEC"/>
+			<uint32 name="Unknown6" visible="true" offset="0xFC"/>
+			<uint32 name="Unknown7" visible="true" offset="0x100"/>
+			<uint32 name="Unknown8" visible="true" offset="0x104"/>
+			<uint32 name="Unknown9" visible="true" offset="0x108"/>
+		</reflexive>
+		<reflexive name="Assault Events" visible="true" offset="0x150" entrySize="0x10C">
+			<uint16 name="Flags" visible="true" offset="0x0"/>
+			<enum16 name="Type" visible="true" offset="0x2">
+				<option name="General" value="0x0"/>
+				<option name="Flavor" value="0x1"/>
+				<option name="Slayer" value="0x2"/>
+				<option name="Capture The Flag" value="0x3"/>
+				<option name="Oddball" value="0x4"/>
+				<option name="Unused" value="0x5"/>
+				<option name="King Of The Hill" value="0x6"/>
+				<option name="Vip" value="0x7"/>
+				<option name="Juggernaut" value="0x8"/>
+				<option name="Territories" value="0x9"/>
+				<option name="Assault" value="0xA"/>
+				<option name="Infection" value="0xB"/>
+				<option name="Survival" value="0xC"/>
+				<option name="Unknown" value="0xD"/>
+			</enum16>
+			<stringId name="Event" visible="true" offset="0x4"/>
+			<enum16 name="Audience" visible="true" offset="0x8">
+				<option name="Cause Player" value="0x0"/>
+				<option name="Cause Team" value="0x1"/>
+				<option name="Effect Player" value="0x2"/>
+				<option name="Effect Team" value="0x3"/>
+				<option name="All" value="0x4"/>
+			</enum16>
+			<int16 name="Unknown" visible="true" offset="0xA"/>
+			<enum16 name="Team" visible="true" offset="0xC">
+				<option name="None Player Only" value="0x0"/>
+				<option name="Cause" value="0x1"/>
+				<option name="Effect" value="0x2"/>
+				<option name="All" value="0x3"/>
+			</enum16>
+			<int16 name="Unknown2" visible="true" offset="0xE"/>
+			<stringId name="Display String" visible="true" offset="0x10"/>
+			<stringId name="Display Medal" visible="true" offset="0x14"/>
+			<uint32 name="Unknown3" visible="true" offset="0x18"/>
+			<uint32 name="Unknown4" visible="true" offset="0x1C"/>
+			<enum16 name="Required Field" visible="true" offset="0x20">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience" visible="true" offset="0x22">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Required Field2" visible="true" offset="0x24">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience2" visible="true" offset="0x26">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<stringId name="Primary String" visible="true" offset="0x28"/>
+			<int32 name="Primary String Duration" visible="true" offset="0x2C"/>
+			<stringId name="Plural Display String" visible="true" offset="0x30"/>
+			<float32 name="Sound Delay Announcer Only" visible="true" offset="0x34"/>
+			<uint16 name="Sound Flags" visible="true" offset="0x38"/>
+			<int16 name="Unknown5" visible="true" offset="0x3A"/>
+			<tagref name="English Sound" visible="true" offset="0x3C"/>
+			<tagref name="Japanese Sound" visible="true" offset="0x4C"/>
+			<tagref name="German Sound" visible="true" offset="0x5C"/>
+			<tagref name="French Sound" visible="true" offset="0x6C"/>
+			<tagref name="Spanish Sound" visible="true" offset="0x7C"/>
+			<tagref name="Latin American Spanish Sound" visible="true" offset="0x8C"/>
+			<tagref name="Italian Sound" visible="true" offset="0x9C"/>
+			<tagref name="Korean Sound" visible="true" offset="0xAC"/>
+			<tagref name="Chinese Traditional Sound" visible="true" offset="0xBC"/>
+			<tagref name="Chinese Simplified Sound" visible="true" offset="0xCC"/>
+			<tagref name="Portuguese Sound" visible="true" offset="0xDC"/>
+			<tagref name="Polish Sound" visible="true" offset="0xEC"/>
+			<uint32 name="Unknown6" visible="true" offset="0xFC"/>
+			<uint32 name="Unknown7" visible="true" offset="0x100"/>
+			<uint32 name="Unknown8" visible="true" offset="0x104"/>
+			<uint32 name="Unknown9" visible="true" offset="0x108"/>
+		</reflexive>
+		<reflexive name="Infection Events" visible="true" offset="0x15C" entrySize="0x10C">
+			<uint16 name="Flags" visible="true" offset="0x0"/>
+			<enum16 name="Type" visible="true" offset="0x2">
+				<option name="General" value="0x0"/>
+				<option name="Flavor" value="0x1"/>
+				<option name="Slayer" value="0x2"/>
+				<option name="Capture The Flag" value="0x3"/>
+				<option name="Oddball" value="0x4"/>
+				<option name="Unused" value="0x5"/>
+				<option name="King Of The Hill" value="0x6"/>
+				<option name="Vip" value="0x7"/>
+				<option name="Juggernaut" value="0x8"/>
+				<option name="Territories" value="0x9"/>
+				<option name="Assault" value="0xA"/>
+				<option name="Infection" value="0xB"/>
+				<option name="Survival" value="0xC"/>
+				<option name="Unknown" value="0xD"/>
+			</enum16>
+			<stringId name="Event" visible="true" offset="0x4"/>
+			<enum16 name="Audience" visible="true" offset="0x8">
+				<option name="Cause Player" value="0x0"/>
+				<option name="Cause Team" value="0x1"/>
+				<option name="Effect Player" value="0x2"/>
+				<option name="Effect Team" value="0x3"/>
+				<option name="All" value="0x4"/>
+			</enum16>
+			<int16 name="Unknown" visible="true" offset="0xA"/>
+			<enum16 name="Team" visible="true" offset="0xC">
+				<option name="None Player Only" value="0x0"/>
+				<option name="Cause" value="0x1"/>
+				<option name="Effect" value="0x2"/>
+				<option name="All" value="0x3"/>
+			</enum16>
+			<int16 name="Unknown2" visible="true" offset="0xE"/>
+			<stringId name="Display String" visible="true" offset="0x10"/>
+			<stringId name="Display Medal" visible="true" offset="0x14"/>
+			<uint32 name="Unknown3" visible="true" offset="0x18"/>
+			<uint32 name="Unknown4" visible="true" offset="0x1C"/>
+			<enum16 name="Required Field" visible="true" offset="0x20">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience" visible="true" offset="0x22">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Required Field2" visible="true" offset="0x24">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<enum16 name="Excluded Audience2" visible="true" offset="0x26">
+				<option name="None" value="0x0"/>
+				<option name="Cause Player" value="0x1"/>
+				<option name="Cause Team" value="0x2"/>
+				<option name="Effect Player" value="0x3"/>
+				<option name="Effect Team" value="0x4"/>
+			</enum16>
+			<stringId name="Primary String" visible="true" offset="0x28"/>
+			<int32 name="Primary String Duration" visible="true" offset="0x2C"/>
+			<stringId name="Plural Display String" visible="true" offset="0x30"/>
+			<float32 name="Sound Delay Announcer Only" visible="true" offset="0x34"/>
+			<uint16 name="Sound Flags" visible="true" offset="0x38"/>
+			<int16 name="Unknown5" visible="true" offset="0x3A"/>
+			<tagref name="English Sound" visible="true" offset="0x3C"/>
+			<tagref name="Japanese Sound" visible="true" offset="0x4C"/>
+			<tagref name="German Sound" visible="true" offset="0x5C"/>
+			<tagref name="French Sound" visible="true" offset="0x6C"/>
+			<tagref name="Spanish Sound" visible="true" offset="0x7C"/>
+			<tagref name="Latin American Spanish Sound" visible="true" offset="0x8C"/>
+			<tagref name="Italian Sound" visible="true" offset="0x9C"/>
+			<tagref name="Korean Sound" visible="true" offset="0xAC"/>
+			<tagref name="Chinese Traditional Sound" visible="true" offset="0xBC"/>
+			<tagref name="Chinese Simplified Sound" visible="true" offset="0xCC"/>
+			<tagref name="Portuguese Sound" visible="true" offset="0xDC"/>
+			<tagref name="Polish Sound" visible="true" offset="0xEC"/>
+			<uint32 name="Unknown6" visible="true" offset="0xFC"/>
+			<uint32 name="Unknown7" visible="true" offset="0x100"/>
+			<uint32 name="Unknown8" visible="true" offset="0x104"/>
+			<uint32 name="Unknown9" visible="true" offset="0x108"/>
+		</reflexive>
+		<int32 name="Default Frag Grenade Count" visible="true" offset="0x168"/>
+		<int32 name="Default Plasma Grenade Count" visible="true" offset="0x16C"/>
+		<reflexive name="Multiplayer Constants" visible="true" offset="0x170" entrySize="0x220">
+			<float32 name="Forbid Enemy Spawn Full Weight Radius" visible="true" offset="0x0"/>
+			<float32 name="Forbid Enemy Spawn Falloff Radius" visible="true" offset="0x4"/>
+			<float32 name="Forbid Enemy Spawn Upper Height" visible="true" offset="0x8"/>
+			<float32 name="Forbid Enemy Spawn Lower Height" visible="true" offset="0xC"/>
+			<float32 name="Forbid Enemy Spawn Weight" visible="true" offset="0x10"/>
+			<float32 name="Enemy Spawn Bias Full Weight Radius" visible="true" offset="0x14"/>
+			<float32 name="Enemy Spawn Bias Falloff Radius" visible="true" offset="0x18"/>
+			<float32 name="Enemy Spawn Bias Upper Height" visible="true" offset="0x1C"/>
+			<float32 name="Enemy Spawn Bias Lower Height" visible="true" offset="0x20"/>
+			<float32 name="Enemy Spawn Bias Weight" visible="true" offset="0x24"/>
+			<float32 name="Ally Spawn Bias Full Weight Radius" visible="true" offset="0x28"/>
+			<float32 name="Ally Spawn Bias Falloff Radius" visible="true" offset="0x2C"/>
+			<float32 name="Ally Spawn Bias Upper Height" visible="true" offset="0x30"/>
+			<float32 name="Ally Spawn Bias Lower Height" visible="true" offset="0x34"/>
+			<float32 name="Ally Spawn Bias Weight" visible="true" offset="0x38"/>
+			<float32 name="Spectated Ally Spawn Bias Full Weight Radius" visible="true" offset="0x3C"/>
+			<float32 name="Spectated Ally Spawn Bias Falloff Radius" visible="true" offset="0x40"/>
+			<float32 name="Spectated Ally Spawn Bias Upper Height" visible="true" offset="0x44"/>
+			<float32 name="Spectated Ally Spawn Bias Lower Height" visible="true" offset="0x48"/>
+			<float32 name="Spectated Ally Spawn Bias Weight" visible="true" offset="0x4C"/>
+			<float32 name="Forbid Ally Spawn Full Weight Radius" visible="true" offset="0x50"/>
+			<float32 name="Forbid Ally Spawn Falloff Radius" visible="true" offset="0x54"/>
+			<float32 name="Forbid Ally Spawn Upper Height" visible="true" offset="0x58"/>
+			<float32 name="Forbid Ally Spawn Lower Height" visible="true" offset="0x5C"/>
+			<float32 name="Forbid Ally Spawn Weight" visible="true" offset="0x60"/>
+			<float32 name="Spawn Influence Duration" visible="true" offset="0x64"/>
+			<reflexive name="Weapons" visible="true" offset="0x68" entrySize="0x20">
+				<tagref name="Type" visible="true" offset="0x0"/>
+				<float32 name="Full Weight Radius" visible="true" offset="0x10"/>
+				<float32 name="Falloff Radius" visible="true" offset="0x14"/>
+				<float32 name="Falloff Cone Radius" visible="true" offset="0x18"/>
+				<float32 name="Weight" visible="true" offset="0x1C"/>
+			</reflexive>
+			<reflexive name="Vehicles" visible="true" offset="0x74" entrySize="0x20">
+				<tagref name="Type" visible="true" offset="0x0"/>
+				<float32 name="Full Weight Radius" visible="true" offset="0x10"/>
+				<float32 name="Falloff Radius" visible="true" offset="0x14"/>
+				<float32 name="Falloff Cone Radius" visible="true" offset="0x18"/>
+				<float32 name="Weight" visible="true" offset="0x1C"/>
+			</reflexive>
+			<reflexive name="Projectiles" visible="true" offset="0x80" entrySize="0x1C">
+				<tagref name="Type" visible="true" offset="0x0"/>
+				<float32 name="Lead Time" visible="true" offset="0x10"/>
+				<float32 name="Collision Cylinder Radius" visible="true" offset="0x14"/>
+				<float32 name="Weight" visible="true" offset="0x18"/>
+			</reflexive>
+			<reflexive name="Equipment" visible="true" offset="0x8C" entrySize="0x14">
+				<tagref name="Type" visible="true" offset="0x0"/>
+				<float32 name="Weight" visible="true" offset="0x10"/>
+			</reflexive>
+			<float32 name="Unknown27" visible="true" offset="0x98"/>
+			<float32 name="Unknown28" visible="true" offset="0x9C"/>
+			<float32 name="Unknown29" visible="true" offset="0xA0"/>
+			<float32 name="Unknown30" visible="true" offset="0xA4"/>
+			<float32 name="Unknown31" visible="true" offset="0xA8"/>
+			<float32 name="Unknown32" visible="true" offset="0xAC"/>
+			<float32 name="Unknown33" visible="true" offset="0xB0"/>
+			<float32 name="Unknown34" visible="true" offset="0xB4"/>
+			<float32 name="Unknown35" visible="true" offset="0xB8"/>
+			<float32 name="Unknown36" visible="true" offset="0xBC"/>
+			<float32 name="Unknown37" visible="true" offset="0xC0"/>
+			<float32 name="Unknown38" visible="true" offset="0xC4"/>
+			<float32 name="Unknown39" visible="true" offset="0xC8"/>
+			<float32 name="Unknown40" visible="true" offset="0xCC"/>
+			<float32 name="Unknown41" visible="true" offset="0xD0"/>
+			<float32 name="Unknown42" visible="true" offset="0xD4"/>
+			<float32 name="Unknown43" visible="true" offset="0xD8"/>
+			<float32 name="Unknown44" visible="true" offset="0xDC"/>
+			<float32 name="Unknown45" visible="true" offset="0xE0"/>
+			<float32 name="Unknown46" visible="true" offset="0xE4"/>
+			<float32 name="Unknown47" visible="true" offset="0xE8"/>
+			<float32 name="Unknown48" visible="true" offset="0xEC"/>
+			<float32 name="Unknown49" visible="true" offset="0xF0"/>
+			<float32 name="Unknown50" visible="true" offset="0xF4"/>
+			<float32 name="Unknown51" visible="true" offset="0xF8"/>
+			<float32 name="Unknown52" visible="true" offset="0xFC"/>
+			<float32 name="Unknown53" visible="true" offset="0x100"/>
+			<float32 name="Unknown54" visible="true" offset="0x104"/>
+			<float32 name="Unknown55" visible="true" offset="0x108"/>
+			<float32 name="Unknown56" visible="true" offset="0x10C"/>
+			<float32 name="Unknown57" visible="true" offset="0x110"/>
+			<float32 name="Unknown58" visible="true" offset="0x114"/>
+			<float32 name="Unknown59" visible="true" offset="0x118"/>
+			<float32 name="Unknown60" visible="true" offset="0x11C"/>
+			<float32 name="Unknown61" visible="true" offset="0x120"/>
+			<float32 name="Unknown62" visible="true" offset="0x124"/>
+			<float32 name="Unknown63" visible="true" offset="0x128"/>
+			<float32 name="Unknown64" visible="true" offset="0x12C"/>
+			<float32 name="Unknown65" visible="true" offset="0x130"/>
+			<float32 name="Unknown66" visible="true" offset="0x134"/>
+			<float32 name="Maximum Random Spawn Bias" visible="true" offset="0x138"/>
+			<float32 name="Teleporter Recharge Time" visible="true" offset="0x13C"/>
+			<float32 name="Grenade Danger Weight" visible="true" offset="0x140"/>
+			<float32 name="Grenade Danger Inner Radius" visible="true" offset="0x144"/>
+			<float32 name="Grenade Danger Outer Radius" visible="true" offset="0x148"/>
+			<float32 name="Grenade Danger Lead Time" visible="true" offset="0x14C"/>
+			<float32 name="Vehicle Danger Minimum Speed" visible="true" offset="0x150"/>
+			<float32 name="Vehicle Danger Weight" visible="true" offset="0x154"/>
+			<float32 name="Vehicle Danger Radius" visible="true" offset="0x158"/>
+			<float32 name="Vehicle Danger Lead Time" visible="true" offset="0x15C"/>
+			<float32 name="Vehicle Nearby Player Distance" visible="true" offset="0x160"/>
+			<tagref name="Hill Shader" visible="true" offset="0x164"/>
+			<float32 name="Unknown67" visible="true" offset="0x174"/>
+			<float32 name="Unknown68" visible="true" offset="0x178"/>
+			<float32 name="Unknown69" visible="true" offset="0x17C"/>
+			<float32 name="Unknown70" visible="true" offset="0x180"/>
+			<tagref name="Bomb Explode Effect" visible="true" offset="0x184"/>
+			<tagref name="Unknown71" visible="true" offset="0x194"/>
+			<tagref name="Bomb Explode Damage Effect" visible="true" offset="0x1A4"/>
+			<tagref name="Bomb Defuse Effect" visible="true" offset="0x1B4"/>
+			<tagref name="Forge Cursor Impact Effect" visible="true" offset="0x1C4"/>
+			<stringId name="Bomb Defusal String" visible="true" offset="0x1D4"/>
+			<stringId name="Blocked Teleporter String" visible="true" offset="0x1D8"/>
+			<int32 name="Unknown72" visible="true" offset="0x1DC"/>
+			<stringId name="Unknown73" visible="true" offset="0x1E0"/>
+			<stringId name="Spawn Allowed Default Respawn String" visible="true" offset="0x1E4"/>
+			<stringId name="Spawn At Player Looking At Self String" visible="true" offset="0x1E8"/>
+			<stringId name="Spawn At Player Looking At Target String" visible="true" offset="0x1EC"/>
+			<stringId name="Spawn At Player Looking At Potential Target String" visible="true" offset="0x1F0"/>
+			<stringId name="Spawn At Territory Allowed Looking At Target String" visible="true" offset="0x1F4"/>
+			<stringId name="Spawn At Territory Allowed Looking At Potential Target String" visible="true" offset="0x1F8"/>
+			<stringId name="Player Out Of Lives String" visible="true" offset="0x1FC"/>
+			<stringId name="Invalid Spawn Target String" visible="true" offset="0x200"/>
+			<stringId name="Targetted Player Enemies Nearby String" visible="true" offset="0x204"/>
+			<stringId name="Targetted Player Unfriendly Team String" visible="true" offset="0x208"/>
+			<stringId name="Targetted Player Is Dead String" visible="true" offset="0x20C"/>
+			<stringId name="Targetted Player In Combat String" visible="true" offset="0x210"/>
+			<stringId name="Targetted Player Too Far From Owned Flag String" visible="true" offset="0x214"/>
+			<stringId name="No Available Netpoints String" visible="true" offset="0x218"/>
+			<stringId name="Netpoint Contested String" visible="true" offset="0x21C"/>
+		</reflexive>
+		<reflexive name="State Responses" visible="true" offset="0x17C" entrySize="0x24">
+			<uint16 name="Flags" visible="true" offset="0x0"/>
+			<int16 name="Unknown" visible="true" offset="0x2"/>
+			<enum16 name="State" visible="true" offset="0x4">
+				<option name="Waiting For Space To Clear" value="0x0"/>
+				<option name="Observing" value="0x1"/>
+				<option name="Respawning Soon" value="0x2"/>
+				<option name="Sitting Out" value="0x3"/>
+				<option name="Out Of Lives" value="0x4"/>
+				<option name="Playing Winning" value="0x5"/>
+				<option name="Playing Tied" value="0x6"/>
+				<option name="Playing Losing" value="0x7"/>
+				<option name="Game Over Won" value="0x8"/>
+				<option name="Game Over Tied" value="0x9"/>
+				<option name="Game Over Lost" value="0xA"/>
+				<option name="Game Over Tied2" value="0xB"/>
+				<option name="You Have Flag" value="0xC"/>
+				<option name="Enemy Has Flag" value="0xD"/>
+				<option name="Flag Not Home" value="0xE"/>
+				<option name="Carrying Oddball" value="0xF"/>
+				<option name="You Are Juggernaut" value="0x10"/>
+				<option name="You Control Hill" value="0x11"/>
+				<option name="Switching Sides Soon" value="0x12"/>
+				<option name="Player Recently Started" value="0x13"/>
+				<option name="You Have Bomb" value="0x14"/>
+				<option name="Flag Contested" value="0x15"/>
+				<option name="Bomb Contested" value="0x16"/>
+				<option name="Limited Lives Multiple" value="0x17"/>
+				<option name="Limited Lives Single" value="0x18"/>
+				<option name="Limited Lives Final" value="0x19"/>
+				<option name="Playing Winning Unlimited" value="0x1A"/>
+				<option name="Playing Tied Unlimited" value="0x1B"/>
+				<option name="Playing Losing Unlimited" value="0x1C"/>
+				<option name="Starting Soon" value="0x1D"/>
+			</enum16>
+			<int16 name="Unknown2" visible="true" offset="0x6"/>
+			<stringId name="Free For All Message" visible="true" offset="0x8"/>
+			<stringId name="Team Message" visible="true" offset="0xC"/>
+			<tagref name="Unknown3" visible="true" offset="0x10"/>
+			<uint32 name="Unknown4" visible="true" offset="0x20"/>
+		</reflexive>
+		<tagref name="Scoreboard Emblem Bitmap" visible="true" offset="0x188"/>
+		<tagref name="Scoreboard Dead Emblem Bitmap" visible="true" offset="0x198"/>
+		<tagref name="Default Shape Shader" visible="true" offset="0x1A8"/>
+		<tagref name="Unknown6" visible="true" offset="0x1B8"/>
+		<tagref name="Ctf Intro Ui" visible="true" offset="0x1C8"/>
+		<tagref name="Slayer Intro Ui" visible="true" offset="0x1D8"/>
+		<tagref name="Oddball Intro Ui" visible="true" offset="0x1E8"/>
+		<tagref name="King Of The Hill Intro Ui" visible="true" offset="0x1F8"/>
+		<tagref name="Sandbox Intro Ui" visible="true" offset="0x208"/>
+		<tagref name="Vip Intro Ui" visible="true" offset="0x218"/>
+		<tagref name="Juggernaut Intro Ui" visible="true" offset="0x228"/>
+		<tagref name="Territories Intro Ui" visible="true" offset="0x238"/>
+		<tagref name="Assault Intro Ui" visible="true" offset="0x248"/>
+		<tagref name="Infection Intro Ui" visible="true" offset="0x258"/>
+		<tagref name="Menu Music1" visible="true" offset="0x268"/>
+		<tagref name="Menu Music2" visible="true" offset="0x278"/>
+		<tagref name="Menu Music3" visible="true" offset="0x288"/>
+		<tagref name="Menu Music4" visible="true" offset="0x298"/>
+	</reflexive>
+</plugin>

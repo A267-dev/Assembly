@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x1E4">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<bitfield16 name="Flags" visible="true" offset="0x0">
+		<bit name="Render First Person" index="0"/>
+		<bit name="Dont Render Third Person" index="1"/>
+		<bit name="Unused" index="2"/>
+		<bit name="Dont Render As Effect" index="3"/>
+	</bitfield16>
+	<int16 name="Version" visible="true" offset="0x2"/>
+	<comment title="Shield  Intensity"></comment>
+
+	<float32 name="Recent Damage Intensity" visible="true" offset="0x4"/>
+	<float32 name="Current Damage Intensity" visible="true" offset="0x8"/>
+	<comment title="Shield  Edge"></comment>
+
+	<float32 name="One If Overshield" visible="true" offset="0xC"/>
+	<float32 name="Depth Fade Range" visible="true" offset="0x10"/>
+	<float32 name="Outer Fade Radius" visible="true" offset="0x14"/>
+	<float32 name="Center Radius" visible="true" offset="0x18"/>
+	<float32 name="Inner Fade Radius" visible="true" offset="0x1C"/>
+	<comment title="Edge  Glow  Color"></comment>
+
+	<stringId name="Input Variable" visible="true" offset="0x20"/>
+	<stringId name="Range Variable" visible="true" offset="0x24"/>
+	<dataRef name="Function" visible="true" offset="0x28"/>
+	<comment title="Edge  Glow  Intensity"></comment>
+
+	<stringId name="Input Variable" visible="true" offset="0x3C"/>
+	<stringId name="Range Variable" visible="true" offset="0x40"/>
+	<dataRef name="Function" visible="true" offset="0x44"/>
+	<comment title="Plasma"></comment>
+
+	<float32 name="Plasma Depth Fade Range" visible="true" offset="0x58"/>
+	<tagref name="Plasma Noise Bitmap1" visible="true" offset="0x5C"/>
+	<tagref name="Plasma Noise Bitmap2" visible="true" offset="0x6C"/>
+	<float32 name="Tiling Scale" visible="true" offset="0x7C"/>
+	<float32 name="Scroll Speed" visible="true" offset="0x80"/>
+	<float32 name="Edge Sharpness" visible="true" offset="0x84"/>
+	<float32 name="Center Sharpness" visible="true" offset="0x88"/>
+	<float32 name="Plasma Outer Fade Radius" visible="true" offset="0x8C"/>
+	<float32 name="Plasma Center Radius" visible="true" offset="0x90"/>
+	<float32 name="Plasma Inner Fade Radius" visible="true" offset="0x94"/>
+	<comment title="Plasma  Center  Color"></comment>
+
+	<stringId name="Input Variable" visible="true" offset="0x98"/>
+	<stringId name="Range Variable" visible="true" offset="0x9C"/>
+	<dataRef name="Function" visible="true" offset="0xA0"/>
+	<comment title="Plasma  Center  Intensity"></comment>
+
+	<stringId name="Input Variable" visible="true" offset="0xB4"/>
+	<stringId name="Range Variable" visible="true" offset="0xB8"/>
+	<dataRef name="Function" visible="true" offset="0xBC"/>
+	<comment title="Plasma  Edge  Color"></comment>
+
+	<stringId name="Input Variable" visible="true" offset="0xD0"/>
+	<stringId name="Range Variable" visible="true" offset="0xD4"/>
+	<dataRef name="Function" visible="true" offset="0xD8"/>
+	<comment title="Plasma  Edge  Intensity"></comment>
+
+	<stringId name="Input Variable" visible="true" offset="0xEC"/>
+	<stringId name="Range Variable" visible="true" offset="0xF0"/>
+	<dataRef name="Function" visible="true" offset="0xF4"/>
+	<comment title="Extrusion  Oscillation"></comment>
+
+	<tagref name="Oscillation Bitmap1" visible="true" offset="0x108"/>
+	<tagref name="Oscillation Bitmap2" visible="true" offset="0x118"/>
+	<float32 name="Oscillation Tiling Scale" visible="true" offset="0x128"/>
+	<float32 name="Oscillation Scroll Speed" visible="true" offset="0x12C"/>
+	<comment title="Extrusion  Amount"></comment>
+
+	<stringId name="Input Variable" visible="true" offset="0x130"/>
+	<stringId name="Range Variable" visible="true" offset="0x134"/>
+	<dataRef name="Function" visible="true" offset="0x138"/>
+	<comment title="Oscillation  Amplitude"></comment>
+
+	<stringId name="Input Variable" visible="true" offset="0x14C"/>
+	<stringId name="Range Variable" visible="true" offset="0x150"/>
+	<dataRef name="Function" visible="true" offset="0x154"/>
+	<comment title="Hit  Response"></comment>
+
+	<float32 name="Hit Time" visible="true" offset="0x168"/>
+	<comment title="Hit  Color"></comment>
+
+	<stringId name="Input Variable" visible="true" offset="0x16C"/>
+	<stringId name="Range Variable" visible="true" offset="0x170"/>
+	<dataRef name="Function" visible="true" offset="0x174"/>
+	<comment title="Hit  Intensity"></comment>
+
+	<stringId name="Input Variable" visible="true" offset="0x188"/>
+	<stringId name="Range Variable" visible="true" offset="0x18C"/>
+	<dataRef name="Function" visible="true" offset="0x190"/>
+	<float name="Edge Scales I" visible="true" offset="0x1A4"/>
+	<float name="Edge Scales J" visible="true" offset="0x1A8"/>
+	<float name="Edge Scales K" visible="true" offset="0x1AC"/>
+	<float name="Edge Scales W" visible="true" offset="0x1B0"/>
+	<float name="Edge Offsets I" visible="true" offset="0x1B4"/>
+	<float name="Edge Offsets J" visible="true" offset="0x1B8"/>
+	<float name="Edge Offsets K" visible="true" offset="0x1BC"/>
+	<float name="Edge Offsets W" visible="true" offset="0x1C0"/>
+	<float name="Plasma Scales I" visible="true" offset="0x1C4"/>
+	<float name="Plasma Scales J" visible="true" offset="0x1C8"/>
+	<float name="Plasma Scales K" visible="true" offset="0x1CC"/>
+	<float name="Plasma Scales W" visible="true" offset="0x1D0"/>
+	<float name="Depth Fade Parameters I" visible="true" offset="0x1D4"/>
+	<float name="Depth Fade Parameters J" visible="true" offset="0x1D8"/>
+	<float name="Depth Fade Parameters K" visible="true" offset="0x1DC"/>
+	<float name="Depth Fade Parameters W" visible="true" offset="0x1E0"/>
+</plugin>

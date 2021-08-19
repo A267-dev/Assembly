@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x28">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<float32 name="Almost Never" visible="true" offset="0x0"/>
+	<float32 name="Rarely" visible="true" offset="0x4"/>
+	<float32 name="Somewhat" visible="true" offset="0x8"/>
+	<float32 name="Often" visible="true" offset="0xC"/>
+	<uint32 name="Unknown" visible="true" offset="0x10"/>
+	<uint32 name="Unknown2" visible="true" offset="0x14"/>
+	<uint32 name="Unknown3" visible="true" offset="0x18"/>
+	<uint32 name="Unknown4" visible="true" offset="0x1C"/>
+	<uint32 name="Unknown5" visible="true" offset="0x20"/>
+	<uint32 name="Unknown6" visible="true" offset="0x24"/>
+</plugin>

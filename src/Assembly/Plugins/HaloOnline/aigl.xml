@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0xC">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Data" visible="true" offset="0x0" entrySize="0x144">
+		<float32 name="Infantry On Ai Weapon Damage Scale" visible="true" offset="0x0"/>
+		<float32 name="Vehicle On Ai Weapon Damage Scale" visible="true" offset="0x4"/>
+		<float32 name="Player On Ai Weapon Damage Scale" visible="true" offset="0x8"/>
+		<float32 name="Danger Broadly Facing" visible="true" offset="0xC"/>
+		<float32 name="Danger Shooting Near" visible="true" offset="0x10"/>
+		<float32 name="Danger Shooting At" visible="true" offset="0x14"/>
+		<float32 name="Danger Extremely Close" visible="true" offset="0x18"/>
+		<float32 name="Danger Shield Damage" visible="true" offset="0x1C"/>
+		<float32 name="Danger Extended Shield Damage" visible="true" offset="0x20"/>
+		<float32 name="Danger Body Damage" visible="true" offset="0x24"/>
+		<float32 name="Danger Extended Body Damage" visible="true" offset="0x28"/>
+		<tagref name="Global Dialogue" visible="true" offset="0x2C"/>
+		<stringId name="Default Mission Dialogue Sound Effect" visible="true" offset="0x3C"/>
+		<float32 name="Jump Down" visible="true" offset="0x40"/>
+		<float32 name="Jump Step" visible="true" offset="0x44"/>
+		<float32 name="Jump Crouch" visible="true" offset="0x48"/>
+		<float32 name="Jump Stand" visible="true" offset="0x4C"/>
+		<float32 name="Jump Storey" visible="true" offset="0x50"/>
+		<float32 name="Jump Tower" visible="true" offset="0x54"/>
+		<float32 name="Max Jump Down Height Down" visible="true" offset="0x58"/>
+		<float32 name="Max Jump Down Height Step" visible="true" offset="0x5C"/>
+		<float32 name="Max Jump Down Height Crouch" visible="true" offset="0x60"/>
+		<float32 name="Max Jump Down Height Stand" visible="true" offset="0x64"/>
+		<float32 name="Max Jump Down Height Storey" visible="true" offset="0x68"/>
+		<float32 name="Max Jump Down Height Tower" visible="true" offset="0x6C"/>
+		<float32 name="Hoist Step Min" visible="true" offset="0x70"/>
+		<float32 name="Hoist Step Max" visible="true" offset="0x74"/>
+		<float32 name="Hoist Crouch Min" visible="true" offset="0x78"/>
+		<float32 name="Hoist Crouch Max" visible="true" offset="0x7C"/>
+		<float32 name="Hoist Stand Min" visible="true" offset="0x80"/>
+		<float32 name="Hoist Stand Max" visible="true" offset="0x84"/>
+		<float32 name="Vault Step Min" visible="true" offset="0x88"/>
+		<float32 name="Vault Step Max" visible="true" offset="0x8C"/>
+		<float32 name="Vault Crouch Min" visible="true" offset="0x90"/>
+		<float32 name="Vault Crouch Max" visible="true" offset="0x94"/>
+		<float32 name="Search Range Infantry" visible="true" offset="0x98"/>
+		<float32 name="Search Range Flying" visible="true" offset="0x9C"/>
+		<float32 name="Search Range Vehicle" visible="true" offset="0xA0"/>
+		<float32 name="Search Range Giant" visible="true" offset="0xA4"/>
+		<reflexive name="Gravemind Properties" visible="true" offset="0xA8" entrySize="0xC">
+			<float32 name="Minimum Retreat Time" visible="true" offset="0x0"/>
+			<float32 name="Ideal Retreat Time" visible="true" offset="0x4"/>
+			<float32 name="Maximum Retreat Time" visible="true" offset="0x8"/>
+		</reflexive>
+		<float32 name="Scary Target Threshold" visible="true" offset="0xB4"/>
+		<float32 name="Scary Weapon Threshold" visible="true" offset="0xB8"/>
+		<float32 name="Player Scariness" visible="true" offset="0xBC"/>
+		<float32 name="Berserking Actor Scariness" visible="true" offset="0xC0"/>
+		<float32 name="Kamikazeing Actor Scariness" visible="true" offset="0xC4"/>
+		<float32 name="Invincible Actor Scariness" visible="true" offset="0xC8"/>
+		<float32 name="Minimum Death Time" visible="true" offset="0xCC"/>
+		<float32 name="Projectile Distance" visible="true" offset="0xD0"/>
+		<float32 name="Idle Clump Distance" visible="true" offset="0xD4"/>
+		<float32 name="Dangerous Clump Distance" visible="true" offset="0xD8"/>
+		<float32 name="Conver Search Duration" visible="true" offset="0xDC"/>
+		<float32 name="Task Search Duration" visible="true" offset="0xE0"/>
+		<float32 name="Unknown7" visible="true" offset="0xE4"/>
+		<reflexive name="Styles" visible="true" offset="0xE8" entrySize="0x10">
+			<tagref name="Instance" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Formations" visible="true" offset="0xF4" entrySize="0x10">
+			<tagref name="Instance" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Squad Templates" visible="true" offset="0x100" entrySize="0x10">
+			<tagref name="Template" visible="true" offset="0x0"/>
+		</reflexive>
+		<float32 name="Unknown11" visible="true" offset="0x10C"/>
+		<float32 name="Unknown12" visible="true" offset="0x110"/>
+		<float32 name="Unknown13" visible="true" offset="0x114"/>
+		<float32 name="Unknown14" visible="true" offset="0x118"/>
+		<float32 name="Unknown15" visible="true" offset="0x11C"/>
+		<float32 name="Unknown16" visible="true" offset="0x120"/>
+		<float32 name="Unknown17" visible="true" offset="0x124"/>
+		<float32 name="Unknown18" visible="true" offset="0x128"/>
+		<float32 name="Unknown19" visible="true" offset="0x12C"/>
+		<float32 name="Unknown20" visible="true" offset="0x130"/>
+		<float32 name="Unknown21" visible="true" offset="0x134"/>
+		<float32 name="Unknown22" visible="true" offset="0x138"/>
+		<float32 name="Unknown23" visible="true" offset="0x13C"/>
+		<float32 name="Unknown24" visible="true" offset="0x140"/>
+	</reflexive>
+</plugin>

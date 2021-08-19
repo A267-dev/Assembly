@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x3C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<bitfield16 name="Flags" visible="true" offset="0x0">
+		<bit name="Also Apply To Object Children" index="0"/>
+	</bitfield16>
+	<uint8 name="Unused Padding 0" visible="false" offset="0x2"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0x3"/>
+	<comment title="Active  Camo  Amount"></comment>
+
+	<stringId name="Input Variable" visible="true" offset="0x4"/>
+	<stringId name="Range Variable" visible="true" offset="0x8"/>
+	<dataRef name="Mapping" visible="true" offset="0xC"/>
+	<comment title="Shadow  Amount"></comment>
+
+	<stringId name="Input Variable" visible="true" offset="0x20"/>
+	<stringId name="Range Variable" visible="true" offset="0x24"/>
+	<dataRef name="Mapping" visible="true" offset="0x28"/>
+</plugin>

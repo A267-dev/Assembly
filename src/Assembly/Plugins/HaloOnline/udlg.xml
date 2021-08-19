@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x24">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<tagref name="Global Dialogue Info" visible="true" offset="0x0"/>
+	<uint32 name="Flags" visible="true" offset="0x10"/>
+	<reflexive name="Vocalizations" visible="true" offset="0x14" entrySize="0x18">
+		<uint16 name="Flags" visible="true" offset="0x0"/>
+		<int16 name="Unknown" visible="true" offset="0x2"/>
+		<stringId name="Name" visible="true" offset="0x4"/>
+		<tagref name="Sound" visible="true" offset="0x8"/>
+	</reflexive>
+	<stringId name="Mission Dialogue Designator" visible="true" offset="0x20"/>
+</plugin>

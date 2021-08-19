@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x1C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Unknown1" visible="true" offset="0x0" entrySize="0x20">
+		<int32 name="Unknown1" visible="true" offset="0x0"/>
+		<float32 name="Unknown2" visible="true" offset="0x4"/>
+		<float32 name="Unknown3" visible="true" offset="0x8"/>
+		<float32 name="Unknown4" visible="true" offset="0xC"/>
+		<float32 name="Unknown5" visible="true" offset="0x10"/>
+		<float32 name="Unknown6" visible="true" offset="0x14"/>
+		<float32 name="Unknown7" visible="true" offset="0x18"/>
+		<float32 name="Unknown8" visible="true" offset="0x1C"/>
+	</reflexive>
+	<reflexive name="Lighting" visible="true" offset="0xC" entrySize="0x20">
+		<float32 name="Unknown1" visible="true" offset="0x0"/>
+		<float32 name="Unknown2" visible="true" offset="0x4"/>
+		<float32 name="Unknown3" visible="true" offset="0x8"/>
+		<float32 name="Unknown4" visible="true" offset="0xC"/>
+		<tagref name="Light" visible="true" offset="0x10"/>
+	</reflexive>
+	<float32 name="Unknown2" visible="true" offset="0x18"/>
+</plugin>

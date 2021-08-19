@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x5C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<uint16 name="Flags" visible="true" offset="0x0"/>
+	<int16 name="Unknown" visible="true" offset="0x2"/>
+	<reflexive name="Position" visible="true" offset="0x4" entrySize="0x20">
+		<reflexive name="Animation" visible="true" offset="0x0" entrySize="0x10">
+			<int32 name="Frame Number" visible="true" offset="0x0"/>
+			<vector3 name="Position" visible="true" offset="0x4"/>
+		</reflexive>
+		<dataRef name="Function" visible="true" offset="0xC"/>
+	</reflexive>
+	<reflexive name="Rotation" visible="true" offset="0x10" entrySize="0x20">
+		<reflexive name="Animation" visible="true" offset="0x0" entrySize="0x10">
+			<int32 name="Frame Number" visible="true" offset="0x0"/>
+			<degree name="Angles Yaw" visible="true" offset="0x4"/>
+			<degree name="Angles Pitch" visible="true" offset="0x8"/>
+			<degree name="Angles Roll" visible="true" offset="0xC"/>
+		</reflexive>
+		<dataRef name="Function" visible="true" offset="0xC"/>
+	</reflexive>
+	<reflexive name="Size" visible="true" offset="0x1C" entrySize="0x20">
+		<reflexive name="Animation" visible="true" offset="0x0" entrySize="0xC">
+			<int32 name="Frame Number" visible="true" offset="0x0"/>
+			<float name="Stretch X" visible="true" offset="0x4"/>
+			<float name="Stretch Y" visible="true" offset="0x8"/>
+		</reflexive>
+		<dataRef name="Function" visible="true" offset="0xC"/>
+	</reflexive>
+	<reflexive name="Color" visible="true" offset="0x28" entrySize="0x20">
+		<reflexive name="Animation" visible="true" offset="0x0" entrySize="0x8">
+			<int32 name="Frame Number" visible="true" offset="0x0"/>
+			<uint32 name="Unknown" visible="true" offset="0x4"/>
+		</reflexive>
+		<dataRef name="Function" visible="true" offset="0xC"/>
+	</reflexive>
+	<reflexive name="Alpha" visible="true" offset="0x34" entrySize="0x20">
+		<reflexive name="Animation" visible="true" offset="0x0" entrySize="0x8">
+			<int32 name="Frame Number" visible="true" offset="0x0"/>
+			<float32 name="Alpha" visible="true" offset="0x4"/>
+		</reflexive>
+		<dataRef name="Function" visible="true" offset="0xC"/>
+	</reflexive>
+	<reflexive name="Alpha Unknown" visible="true" offset="0x40" entrySize="0x20">
+		<reflexive name="Animation" visible="true" offset="0x0" entrySize="0x8">
+			<int32 name="Frame Number" visible="true" offset="0x0"/>
+			<float32 name="Alpha" visible="true" offset="0x4"/>
+		</reflexive>
+		<dataRef name="Function" visible="true" offset="0xC"/>
+	</reflexive>
+	<reflexive name="Bitmap" visible="true" offset="0x4C" entrySize="0x20">
+		<reflexive name="Animation" visible="true" offset="0x0" entrySize="0x14">
+			<int32 name="Frame Number" visible="true" offset="0x0"/>
+			<float name="Movement1 X" visible="true" offset="0x4"/>
+			<float name="Movement1 Y" visible="true" offset="0x8"/>
+			<float name="Movement2 X" visible="true" offset="0xC"/>
+			<float name="Movement2 Y" visible="true" offset="0x10"/>
+		</reflexive>
+		<dataRef name="Function" visible="true" offset="0xC"/>
+	</reflexive>
+	<int32 name="Number Of Frames" visible="true" offset="0x58"/>
+</plugin>

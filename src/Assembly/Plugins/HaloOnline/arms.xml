@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x10">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Armor Sounds2" visible="true" offset="0x0" entrySize="0x24">
+		<reflexive name="Unknown1" visible="true" offset="0x0" entrySize="0x10">
+			<tagref name="Instance" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Unknown2" visible="true" offset="0xC" entrySize="0x10">
+			<tagref name="Instance" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Unknown3" visible="true" offset="0x18" entrySize="0x10">
+			<tagref name="Instance" visible="true" offset="0x0"/>
+		</reflexive>
+	</reflexive>
+	<uint32 name="Unknown" visible="true" offset="0xC"/>
+</plugin>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x74">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<float32 name="Left Stereo Gain" visible="true" offset="0x0"/>
+	<float32 name="Right Stereo Gain" visible="true" offset="0x4"/>
+	<float32 name="Left Stereo Gain2" visible="true" offset="0x8"/>
+	<float32 name="Right Stereo Gain2" visible="true" offset="0xC"/>
+	<float32 name="Left Stereo Gain3" visible="true" offset="0x10"/>
+	<float32 name="Right Stereo Gain3" visible="true" offset="0x14"/>
+	<float32 name="Front Speaker Gain" visible="true" offset="0x18"/>
+	<float32 name="Rear Speaker Gain" visible="true" offset="0x1C"/>
+	<float32 name="Front Speaker Gain2" visible="true" offset="0x20"/>
+	<float32 name="Rear Speaker Gain2" visible="true" offset="0x24"/>
+	<float32 name="Mono Unspatialized Gain" visible="true" offset="0x28"/>
+	<float32 name="Stereo To3d Gain" visible="true" offset="0x2C"/>
+	<float32 name="Rear Surround To Front Stereo Gain" visible="true" offset="0x30"/>
+	<float32 name="Front Speaker Gain3" visible="true" offset="0x34"/>
+	<float32 name="Center Speaker Gain" visible="true" offset="0x38"/>
+	<float32 name="Front Speaker Gain4" visible="true" offset="0x3C"/>
+	<float32 name="Center Speaker Gain2" visible="true" offset="0x40"/>
+	<float32 name="Stereo Unspatialized Gain" visible="true" offset="0x44"/>
+	<float32 name="Unknown1" visible="true" offset="0x48"/>
+	<float32 name="Solo Player Fade Out Delay" visible="true" offset="0x4C"/>
+	<float32 name="Solo Player Fade Out Time" visible="true" offset="0x50"/>
+	<float32 name="Solo Player Fade In Time" visible="true" offset="0x54"/>
+	<float32 name="Game Music Fade Out Time" visible="true" offset="0x58"/>
+	<tagref name="Unknown2" visible="true" offset="0x5C"/>
+	<float32 name="Unknown3" visible="true" offset="0x6C"/>
+	<float32 name="Unknown4" visible="true" offset="0x70"/>
+</plugin>

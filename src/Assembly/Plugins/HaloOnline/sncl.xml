@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0xC">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Classes" visible="true" offset="0x0" entrySize="0xA0">
+		<int16 name="Max Sounds Per Tag" visible="true" offset="0x0"/>
+		<int16 name="Max Sounds Per Object" visible="true" offset="0x2"/>
+		<int32 name="Preemption Time" visible="true" offset="0x4"/>
+		<bitfield16 name="Internal Flags" visible="true" offset="0x8">
+			<bit name="Class Is Valid" index="0"/>
+			<bit name="Class Is Speech" index="1"/>
+			<bit name="Class Is Scripted" index="2"/>
+			<bit name="Mutes With Object" index="3"/>
+			<bit name="Bit4" index="4"/>
+			<bit name="Bit5" index="5"/>
+			<bit name="Bit6" index="6"/>
+			<bit name="Multilingual" index="7"/>
+			<bit name="Bit8" index="8"/>
+			<bit name="Bit9" index="9"/>
+			<bit name="Bit10" index="10"/>
+			<bit name="Stops With Dead Object" index="11"/>
+			<bit name="Bit12" index="12"/>
+			<bit name="Bit13" index="13"/>
+			<bit name="Bit14" index="14"/>
+			<bit name="Bit15" index="15"/>
+		</bitfield16>
+		<bitfield16 name="Flags" visible="true" offset="0xA">
+			<bit name="Can Play During Pause" index="0"/>
+			<bit name="Dry Stereo Mix" index="1"/>
+			<bit name="Plays Through Objects" index="2"/>
+			<bit name="Is Center Unspatialized" index="3"/>
+			<bit name="Mono Lfe" index="4"/>
+			<bit name="Deterministic" index="5"/>
+			<bit name="Use Huge Transmission" index="6"/>
+			<bit name="Always Use Speakers" index="7"/>
+			<bit name="Is Available On Mainmenu" index="8"/>
+			<bit name="Ignore Stereo Headroom" index="9"/>
+			<bit name="Loop Fade Out Is Linear" index="10"/>
+			<bit name="Stop When Object Dies" index="11"/>
+			<bit name="Dont Fade On Game Over" index="12"/>
+			<bit name="Dont Promote Priority By Proximity" index="13"/>
+			<bit name="Class Plays On Mainmenu" index="14"/>
+			<bit name="Bit15" index="15"/>
+		</bitfield16>
+		<int16 name="Priority" visible="true" offset="0xC"/>
+		<enum8 name="Cache Miss Mode ODST" visible="true" offset="0xE">
+			<option name="Discard" value="0x0"/>
+			<option name="Postpone" value="0x1"/>
+		</enum8>
+		<bitfield8 name="Bind To Accoustics" visible="true" offset="0xF">
+			<bit name="Outside" index="0"/>
+			<bit name="Inside" index="1"/>
+		</bitfield8>
+		<bitfield8 name="Supress Spatialization" visible="true" offset="0x10">
+			<bit name="First Person" index="0"/>
+			<bit name="Third Person" index="1"/>
+		</bitfield8>
+		<uint8 name="Padding Padding 0" visible="false" offset="0x11"/>
+		<uint8 name="Padding Padding 1" visible="false" offset="0x12"/>
+		<uint8 name="Padding Padding 2" visible="false" offset="0x13"/>
+		<comment title="Air  Propagation"></comment>
+
+		<float32 name="Reverb Gain" visible="true" offset="0x14"/>
+		<float32 name="Direct Path Gain" visible="true" offset="0x18"/>
+		<float32 name="Base Obstruction" visible="true" offset="0x1C"/>
+		<float32 name="Base Occlusion" visible="true" offset="0x20"/>
+		<comment title="Underwater  Propagation"></comment>
+
+		<float32 name="Reverb Gain" visible="true" offset="0x24"/>
+		<float32 name="Direct Path Gain" visible="true" offset="0x28"/>
+		<float32 name="Base Obstruction" visible="true" offset="0x2C"/>
+		<float32 name="Base Occlusion" visible="true" offset="0x30"/>
+		<float32 name="Override Speaer Gain" visible="true" offset="0x34"/>
+		<float32 name="Default Distance Bounds Min" visible="true" offset="0x38"/>
+		<float32 name="Default Distance Bounds Max" visible="true" offset="0x3C"/>
+		<float32 name="Distance Bounds Min" visible="true" offset="0x40"/>
+		<float32 name="Distance Bounds Max" visible="true" offset="0x44"/>
+		<float32 name="Gain Bounds Min" visible="true" offset="0x48"/>
+		<float32 name="Gain Bounds Max" visible="true" offset="0x4C"/>
+		<comment title="Cutscene  Ducking"></comment>
+
+		<float32 name="Gain DB" visible="true" offset="0x50"/>
+		<float32 name="Fade In Time" visible="true" offset="0x54"/>
+		<float32 name="Sustain Time" visible="true" offset="0x58"/>
+		<float32 name="Fade Out Time" visible="true" offset="0x5C"/>
+		<comment title="Scripted  Dialog  Ducking"></comment>
+
+		<float32 name="Gain DB" visible="true" offset="0x60"/>
+		<float32 name="Fade In Time" visible="true" offset="0x64"/>
+		<float32 name="Sustain Time" visible="true" offset="0x68"/>
+		<float32 name="Fade Out Time" visible="true" offset="0x6C"/>
+		<comment title="Cortana  Effect  Ducking"></comment>
+
+		<float32 name="Gain DB" visible="true" offset="0x70"/>
+		<float32 name="Fade In Time" visible="true" offset="0x74"/>
+		<float32 name="Sustain Time" visible="true" offset="0x78"/>
+		<float32 name="Fade Out Time" visible="true" offset="0x7C"/>
+		<float32 name="Unknown Cortana Effect" visible="true" offset="0x80"/>
+		<float32 name="Doppler Factor" visible="true" offset="0x84"/>
+		<enum8 name="Stereo Playback Type" visible="true" offset="0x88">
+			<option name="First Person" value="0x0"/>
+			<option name="Ambient" value="0x1"/>
+		</enum8>
+		<uint8 name="Padding2 Padding 0" visible="false" offset="0x89"/>
+		<uint8 name="Padding2 Padding 1" visible="false" offset="0x8A"/>
+		<uint8 name="Padding2 Padding 2" visible="false" offset="0x8B"/>
+		<float32 name="Transmission Multiplier" visible="true" offset="0x8C"/>
+		<float32 name="Obstruction Max Bend" visible="true" offset="0x90"/>
+		<float32 name="Occlusion Max Bend" visible="true" offset="0x94"/>
+		<int32 name="Unknown39" visible="true" offset="0x98"/>
+		<float32 name="Unknown40" visible="true" offset="0x9C"/>
+	</reflexive>
+</plugin>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x20">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Files" visible="true" offset="0x0" entrySize="0x208">
+		<ascii name="Name" visible="true" offset="0x0" length="0x100"/>
+		<ascii name="Folder" visible="true" offset="0x100" length="0x100"/>
+		<int32 name="Offset" visible="true" offset="0x200"/>
+		<int32 name="Size" visible="true" offset="0x204"/>
+	</reflexive>
+	<dataRef name="Data" visible="true" offset="0xC"/>
+</plugin>

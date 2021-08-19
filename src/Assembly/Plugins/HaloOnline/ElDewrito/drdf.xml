@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x18">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<reflexive name="Responses" visible="true" offset="0x0" entrySize="0xC0">
+		<enum16 name="Response Type" visible="true" offset="0x0">
+			<option name="Shielded" value="0x0"/>
+			<option name="Unshielded" value="0x1"/>
+			<option name="All" value="0x2"/>
+		</enum16>
+		<int16 name="Unknown" visible="true" offset="0x2"/>
+		<int16 name="Unknown2" visible="true" offset="0x4"/>
+		<int16 name="Unknown3" visible="true" offset="0x6"/>
+		<uint32 name="Unknown4" visible="true" offset="0x8"/>
+		<uint32 name="Unknown5" visible="true" offset="0xC"/>
+		<uint32 name="Unknown6" visible="true" offset="0x10"/>
+		<float32 name="Unknown7" visible="true" offset="0x14"/>
+		<uint32 name="Unknown8" visible="true" offset="0x18"/>
+		<uint32 name="Unknown9" visible="true" offset="0x1C"/>
+		<float32 name="Unknown10" visible="true" offset="0x20"/>
+		<float32 name="Unknown11" visible="true" offset="0x24"/>
+		<int16 name="Unknown12" visible="true" offset="0x28"/>
+		<int16 name="Unknown13" visible="true" offset="0x2A"/>
+		<float32 name="Unknown14" visible="true" offset="0x2C"/>
+		<float32 name="Unknown15" visible="true" offset="0x30"/>
+		<float32 name="Unknown16" visible="true" offset="0x34"/>
+		<float32 name="Unknown17" visible="true" offset="0x38"/>
+		<int16 name="Unknown18" visible="true" offset="0x3C"/>
+		<int16 name="Unknown19" visible="true" offset="0x3E"/>
+		<float32 name="Unknown20" visible="true" offset="0x40"/>
+		<float32 name="Unknown21" visible="true" offset="0x44"/>
+		<float32 name="Unknown22" visible="true" offset="0x48"/>
+		<float32 name="Unknown23" visible="true" offset="0x4C"/>
+		<float32 name="Unknown24" visible="true" offset="0x50"/>
+		<float32 name="Unknown25" visible="true" offset="0x54"/>
+		<float32 name="Unknown26" visible="true" offset="0x58"/>
+		<float32 name="Low Frequency Vibration Duration" visible="true" offset="0x5C"/>
+		<dataRef name="Low Frequency Vibration Function" visible="true" offset="0x60"/>
+		<float32 name="High Frequency Vibration Duration" visible="true" offset="0x74"/>
+		<dataRef name="High Frequency Vibration Function" visible="true" offset="0x78"/>
+		<float32 name="Duration" visible="true" offset="0x8C"/>
+		<enum16 name="Fade Function" visible="true" offset="0x90">
+			<option name="Linear" value="0x0"/>
+			<option name="Late" value="0x1"/>
+			<option name="Very Late" value="0x2"/>
+			<option name="Early" value="0x3"/>
+			<option name="Very Early" value="0x4"/>
+			<option name="Cosine" value="0x5"/>
+			<option name="Zero" value="0x6"/>
+			<option name="One" value="0x7"/>
+		</enum16>
+		<int16 name="Unknown27" visible="true" offset="0x92"/>
+		<degree name="Rotation" visible="true" offset="0x94"/>
+		<float32 name="Pushback" visible="true" offset="0x98"/>
+		<float32 name="Jitter Min" visible="true" offset="0x9C"/>
+		<float32 name="Jitter Max" visible="true" offset="0xA0"/>
+		<float32 name="Duration2" visible="true" offset="0xA4"/>
+		<enum16 name="Falloff Function" visible="true" offset="0xA8">
+			<option name="Linear" value="0x0"/>
+			<option name="Late" value="0x1"/>
+			<option name="Very Late" value="0x2"/>
+			<option name="Early" value="0x3"/>
+			<option name="Very Early" value="0x4"/>
+			<option name="Cosine" value="0x5"/>
+			<option name="Zero" value="0x6"/>
+			<option name="One" value="0x7"/>
+		</enum16>
+		<int16 name="Unknown28" visible="true" offset="0xAA"/>
+		<float32 name="Random Translation" visible="true" offset="0xAC"/>
+		<degree name="Random Rotation" visible="true" offset="0xB0"/>
+		<enum16 name="Wobble Function" visible="true" offset="0xB4">
+			<option name="One" value="0x0"/>
+			<option name="Zero" value="0x1"/>
+			<option name="Cosine" value="0x2"/>
+			<option name="Cosine Variable Period" value="0x3"/>
+			<option name="Diagonal Wave" value="0x4"/>
+			<option name="Diagonal Wave Variable Period" value="0x5"/>
+			<option name="Slide" value="0x6"/>
+			<option name="Slide Variable Period" value="0x7"/>
+			<option name="Noise" value="0x8"/>
+			<option name="Jitter" value="0x9"/>
+			<option name="Wander" value="0xA"/>
+			<option name="Spark" value="0xB"/>
+		</enum16>
+		<int16 name="Unknown29" visible="true" offset="0xB6"/>
+		<float32 name="Wobble Function Period" visible="true" offset="0xB8"/>
+		<float32 name="Wobble Weight" visible="true" offset="0xBC"/>
+	</reflexive>
+	<uint8 name="Unused Padding 0" visible="false" offset="0xC"/>
+	<uint8 name="Unused Padding 1" visible="false" offset="0xD"/>
+	<uint8 name="Unused Padding 2" visible="false" offset="0xE"/>
+	<uint8 name="Unused Padding 3" visible="false" offset="0xF"/>
+	<uint8 name="Unused Padding 4" visible="false" offset="0x10"/>
+	<uint8 name="Unused Padding 5" visible="false" offset="0x11"/>
+	<uint8 name="Unused Padding 6" visible="false" offset="0x12"/>
+	<uint8 name="Unused Padding 7" visible="false" offset="0x13"/>
+	<uint8 name="Unused Padding 8" visible="false" offset="0x14"/>
+	<uint8 name="Unused Padding 9" visible="false" offset="0x15"/>
+	<uint8 name="Unused Padding 10" visible="false" offset="0x16"/>
+	<uint8 name="Unused Padding 11" visible="false" offset="0x17"/>
+</plugin>

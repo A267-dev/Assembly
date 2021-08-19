@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0xD4">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<bitfield32 name="Flags HO" visible="true" offset="0x0">
+		<bit name="Looping Sound" index="0"/>
+		<bit name="Always Spatialize" index="1"/>
+		<bit name="Never Obstruct" index="2"/>
+		<bit name="Facial Animation Data Stripped" index="3"/>
+		<bit name="Bit4" index="4"/>
+		<bit name="Link To Owner" index="5"/>
+		<bit name="Pitch Range Is Language" index="6"/>
+		<bit name="Dont Use Sound Class Speaker Flag" index="7"/>
+		<bit name="Dont Use Lipsync Data" index="8"/>
+		<bit name="Bit9" index="9"/>
+		<bit name="Bit10" index="10"/>
+		<bit name="Copy Into Memory Before Playing" index="11"/>
+		<bit name="Fake Spatialization" index="12"/>
+		<bit name="Invalid" index="13"/>
+		<bit name="Low Frequency Effect" index="14"/>
+	</bitfield32>
+	<uint32 name="Unknown2" visible="true" offset="0x4"/>
+	<uint32 name="Unknown3" visible="true" offset="0x8"/>
+	<comment title="Sound  Class"></comment>
+
+	<enum8 name="Halo Online" visible="true" offset="0xC">
+		<option name="Projectile Impact" value="0x0"/>
+		<option name="Projectile Detonation" value="0x1"/>
+		<option name="Projectile Flyby" value="0x2"/>
+		<option name="Projectile Detonation Lod" value="0x3"/>
+		<option name="Weapon Fire" value="0x4"/>
+		<option name="Weapon Ready" value="0x5"/>
+		<option name="Weapon Reload" value="0x6"/>
+		<option name="Weapon Empty" value="0x7"/>
+		<option name="Weapon Charge" value="0x8"/>
+		<option name="Weapon Overheat" value="0x9"/>
+		<option name="Weapon Idle" value="0xA"/>
+		<option name="Weapon Melee" value="0xB"/>
+		<option name="Weapon Animation" value="0xC"/>
+		<option name="Object Impacts" value="0xD"/>
+		<option name="Particle Impacts" value="0xE"/>
+		<option name="Weapon Fire Lod" value="0xF"/>
+		<option name="Weapon Fire Lod Far" value="0x10"/>
+		<option name="Unused2 Impacts" value="0x11"/>
+		<option name="Unit Footsteps" value="0x12"/>
+		<option name="Unit Dialog" value="0x13"/>
+		<option name="Unit Animation" value="0x14"/>
+		<option name="Unit Unused" value="0x15"/>
+		<option name="Vehicle Collision" value="0x16"/>
+		<option name="Vehicle Engine" value="0x17"/>
+		<option name="Vehicle Animation" value="0x18"/>
+		<option name="Vehicle Engine Lod" value="0x19"/>
+		<option name="Device Door" value="0x1A"/>
+		<option name="Device Unused0" value="0x1B"/>
+		<option name="Device Machinery" value="0x1C"/>
+		<option name="Device Stationary" value="0x1D"/>
+		<option name="Device Unused1" value="0x1E"/>
+		<option name="Device Unused2" value="0x1F"/>
+		<option name="Music" value="0x20"/>
+		<option name="Ambient Nature" value="0x21"/>
+		<option name="Ambient Machinery" value="0x22"/>
+		<option name="Ambient Stationary" value="0x23"/>
+		<option name="Huge Ass" value="0x24"/>
+		<option name="Object Looping" value="0x25"/>
+		<option name="Cinematic Music" value="0x26"/>
+		<option name="Player Armor" value="0x27"/>
+		<option name="Unknown Unused1" value="0x28"/>
+		<option name="Ambient Flock" value="0x29"/>
+		<option name="No Pad" value="0x2A"/>
+		<option name="No Pad Stationary" value="0x2B"/>
+		<option name="Arg" value="0x2C"/>
+		<option name="Cortana Mission" value="0x2D"/>
+		<option name="Cortana Gravemind Channel" value="0x2E"/>
+		<option name="Mission Dialog" value="0x2F"/>
+		<option name="Cinematic Dialog" value="0x30"/>
+		<option name="Scripted Cinematic Foley" value="0x31"/>
+		<option name="Hud" value="0x32"/>
+		<option name="Game Event" value="0x33"/>
+		<option name="Ui" value="0x34"/>
+		<option name="Test" value="0x35"/>
+		<option name="Multilingual Test" value="0x36"/>
+		<option name="Ambient Nature Details" value="0x37"/>
+		<option name="Ambient Machinery Details" value="0x38"/>
+		<option name="Inside Surround Tail" value="0x39"/>
+		<option name="Outside Surround Tail" value="0x3A"/>
+		<option name="Vehicle Detonation" value="0x3B"/>
+		<option name="Ambient Detonation" value="0x3C"/>
+		<option name="First Person Inside" value="0x3D"/>
+		<option name="First Person Outside" value="0x3E"/>
+		<option name="First Person Anywhere" value="0x3F"/>
+		<option name="Ui Pda" value="0x40"/>
+	</enum8>
+	<comment title="Sample  Rate"></comment>
+
+	<enum8 name="value" visible="true" offset="0xD">
+		<option name="_22khz" value="0x0"/>
+		<option name="_44khz" value="0x1"/>
+		<option name="_32khz" value="0x2"/>
+		<option name="_48khz" value="0x3"/>
+	</enum8>
+	<uint8 name="Unknown6" visible="true" offset="0xE"/>
+	<enum8 name="Import Type" visible="true" offset="0xF">
+		<option name="Unknown" value="0x0"/>
+		<option name="Single Shot" value="0x1"/>
+		<option name="Single Layer" value="0x2"/>
+		<option name="Multi Layer" value="0x3"/>
+	</enum8>
+	<comment title="Playback  Parameters"></comment>
+
+	<bitfield32 name="Field Disable Flags" visible="true" offset="0x10">
+		<bit name="Distance A" index="0"/>
+		<bit name="Distance B" index="1"/>
+		<bit name="Distance C" index="2"/>
+		<bit name="Distance D" index="3"/>
+		<bit name="Bit4" index="4"/>
+		<bit name="Bit5" index="5"/>
+		<bit name="Bit6" index="6"/>
+		<bit name="Bit7" index="7"/>
+		<bit name="Bit8" index="8"/>
+		<bit name="Bit9" index="9"/>
+		<bit name="Bit10" index="10"/>
+		<bit name="Bit11" index="11"/>
+		<bit name="Bit12" index="12"/>
+		<bit name="Bit13" index="13"/>
+		<bit name="Bit14" index="14"/>
+		<bit name="Bit15" index="15"/>
+		<bit name="Bit16" index="16"/>
+		<bit name="Bit17" index="17"/>
+		<bit name="Bit18" index="18"/>
+		<bit name="Bit19" index="19"/>
+		<bit name="Bit20" index="20"/>
+		<bit name="Bit21" index="21"/>
+		<bit name="Bit22" index="22"/>
+		<bit name="Bit23" index="23"/>
+		<bit name="Bit24" index="24"/>
+		<bit name="Bit25" index="25"/>
+		<bit name="Bit26" index="26"/>
+		<bit name="Bit27" index="27"/>
+		<bit name="Bit28" index="28"/>
+		<bit name="Bit29" index="29"/>
+		<bit name="Bit30" index="30"/>
+		<bit name="Bit31" index="31"/>
+	</bitfield32>
+	<float32 name="Distance A" visible="true" offset="0x14"/>
+	<float32 name="Distance B" visible="true" offset="0x18"/>
+	<float32 name="Distance C" visible="true" offset="0x1C"/>
+	<float32 name="Distance D" visible="true" offset="0x20"/>
+	<float32 name="Skip Fraction" visible="true" offset="0x24"/>
+	<float32 name="Maximum Bend Per Second" visible="true" offset="0x28"/>
+	<float32 name="Gain Base" visible="true" offset="0x2C"/>
+	<float32 name="Gain Variance" visible="true" offset="0x30"/>
+	<int16 name="Random Pitch Bounds Min" visible="true" offset="0x34"/>
+	<int16 name="Random Pitch Bounds Max" visible="true" offset="0x36"/>
+	<degree name="Inner Cone Angle" visible="true" offset="0x38"/>
+	<degree name="Outer Cone Angle" visible="true" offset="0x3C"/>
+	<float32 name="Outer Cone Gain" visible="true" offset="0x40"/>
+	<bitfield32 name="Flags" visible="true" offset="0x44">
+		<bit name="Override Azimuth" index="0"/>
+		<bit name="Override3d Gain" index="1"/>
+		<bit name="Override Speaker Gain" index="2"/>
+	</bitfield32>
+	<degree name="Azimuth" visible="true" offset="0x48"/>
+	<float32 name="Positional Gain" visible="true" offset="0x4C"/>
+	<float32 name="First Person Gain" visible="true" offset="0x50"/>
+	<comment title="Scale"></comment>
+
+	<float32 name="Gain Modifier Bounds Min" visible="true" offset="0x54"/>
+	<float32 name="Gain Modifier Bounds Max" visible="true" offset="0x58"/>
+	<int16 name="Pitch Modifier Bounds Min" visible="true" offset="0x5C"/>
+	<int16 name="Pitch Modifier Bounds Max" visible="true" offset="0x5E"/>
+	<float32 name="Skip Fraction Modifier Bounds Min" visible="true" offset="0x60"/>
+	<float32 name="Skip Fraction Modifier Bounds Max" visible="true" offset="0x64"/>
+	<comment title="Platform  Codec"></comment>
+
+	<uint8 name="Unknown1" visible="true" offset="0x68"/>
+	<uint8 name="Load Mode" visible="true" offset="0x69"/>
+	<enum8 name="Encoding" visible="true" offset="0x6A">
+		<option name="Mono" value="0x0"/>
+		<option name="Stereo" value="0x1"/>
+		<option name="Surround" value="0x2"/>
+		<option name="_51 Surround" value="0x3"/>
+	</enum8>
+	<enum8 name="Compression" visible="true" offset="0x6B">
+		<option name="PCM_ Big Endian" value="0x0"/>
+		<option name="Xbox ADPCM" value="0x1"/>
+		<option name="IMAADPCM" value="0x2"/>
+		<option name="PCM" value="0x3"/>
+		<option name="WMA" value="0x4"/>
+		<option name="XMA" value="0x7"/>
+		<option name="MP3" value="0x8"/>
+		<option name="FSB4" value="0x9"/>
+		<option name="OGG" value="0x20"/>
+		<option name="Tagtool_ WAV" value="0xFFFFFFFF"/>
+	</enum8>
+	<comment title="Promotion"></comment>
+
+	<reflexive name="Rules" visible="true" offset="0x6C" entrySize="0x10">
+		<int16 name="Pitch Range Index" visible="true" offset="0x0"/>
+		<int16 name="Maximum Playing Count" visible="true" offset="0x2"/>
+		<float32 name="Suppression Time" visible="true" offset="0x4"/>
+		<uint32 name="Unknown1" visible="true" offset="0x8"/>
+		<uint32 name="Unknown2" visible="true" offset="0xC"/>
+	</reflexive>
+	<reflexive name="Runtime Timers" visible="true" offset="0x78" entrySize="0x4">
+		<int32 name="Timer" visible="true" offset="0x0"/>
+	</reflexive>
+	<uint32 name="Unknown1" visible="true" offset="0x84"/>
+	<uint32 name="Unknown2" visible="true" offset="0x88"/>
+	<uint32 name="Unknown3" visible="true" offset="0x8C"/>
+	<uint32 name="Longest Permutation Duration" visible="true" offset="0x90"/>
+	<uint32 name="Total Sample Size" visible="true" offset="0x94"/>
+	<uint32 name="Unknown11" visible="true" offset="0x98"/>
+	<reflexive name="Pitch Ranges" visible="true" offset="0x9C" entrySize="0x38">
+		<stringId name="Import Name" visible="true" offset="0x0"/>
+		<comment title="Pitch  Range  Parameters"></comment>
+
+		<int16 name="Natural Pitch" visible="true" offset="0x4"/>
+		<int16 name="First Deterministic Flag Index" visible="true" offset="0x6"/>
+		<int16 name="Bend Bounds Min" visible="true" offset="0x8"/>
+		<int16 name="Bend Bounds Max" visible="true" offset="0xA"/>
+		<int16 name="Max Gain Pitch Bounds Min" visible="true" offset="0xC"/>
+		<int16 name="Max Gain Pitch Bounds Max" visible="true" offset="0xE"/>
+		<int16 name="Playback Bend Bounds Min" visible="true" offset="0x10"/>
+		<int16 name="Playback Bend Bounds Max" visible="true" offset="0x12"/>
+		<float32 name="Distance Bounds1 Min" visible="true" offset="0x14"/>
+		<float32 name="Distance Bounds1 Max" visible="true" offset="0x18"/>
+		<float32 name="Distance Bounds2 Min" visible="true" offset="0x1C"/>
+		<float32 name="Distance Bounds2 Max" visible="true" offset="0x20"/>
+		<int32 name="Runtime Permutation Flags" visible="true" offset="0x24"/>
+		<int16 name="Permutation Count" visible="true" offset="0x28"/>
+		<int8 name="Runtime Discarded Permutation Index" visible="true" offset="0x2A"/>
+		<int8 name="Runtime Last Permutation Index" visible="true" offset="0x2B"/>
+		<reflexive name="Permutations" visible="true" offset="0x2C" entrySize="0x2C">
+			<stringId name="Import Name" visible="true" offset="0x0"/>
+			<float32 name="Skip Fraction" visible="true" offset="0x4"/>
+			<float32 name="Gain HO" visible="true" offset="0x8"/>
+			<uint32 name="Sample Count" visible="true" offset="0xC"/>
+			<uint32 name="Permutation Number" visible="true" offset="0x10"/>
+			<uint32 name="Is Not First Permutation" visible="true" offset="0x14"/>
+			<reflexive name="Permutation Chunks" visible="true" offset="0x18" entrySize="0x14">
+				<int32 name="Offset" visible="true" offset="0x0"/>
+				<int32 name="Encoded Size" visible="true" offset="0x4"/>
+				<int32 name="Runtime Index" visible="true" offset="0x8"/>
+				<uint32 name="First Sample" visible="true" offset="0xC"/>
+				<uint32 name="Last Sample" visible="true" offset="0x10"/>
+			</reflexive>
+			<bitfield16 name="Permutation Flags HO" visible="true" offset="0x24">
+				<bit name="Sequenced Bit" index="0"/>
+			</bitfield16>
+			<uint8 name="Padding Padding 0" visible="false" offset="0x26"/>
+			<uint8 name="Padding Padding 1" visible="false" offset="0x27"/>
+			<uint32 name="First Sample" visible="true" offset="0x28"/>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Custom Play Backs" visible="true" offset="0xA8" entrySize="0x54">
+		<reflexive name="Override Mixbins" visible="true" offset="0x0" entrySize="0x8">
+			<enum32 name="Mixbin" visible="true" offset="0x0">
+				<option name="Front Left" value="0x0"/>
+				<option name="Front Right" value="0x1"/>
+				<option name="Back Left" value="0x2"/>
+				<option name="Back Right" value="0x3"/>
+				<option name="Center" value="0x4"/>
+				<option name="Low Frequency" value="0x5"/>
+				<option name="Reverb" value="0x6"/>
+				<option name="_3d Front Left" value="0x7"/>
+				<option name="_3d Front Right" value="0x8"/>
+				<option name="_3d Back Left" value="0x9"/>
+				<option name="_3d Back Right" value="0xA"/>
+				<option name="Default Left Speakers" value="0xB"/>
+				<option name="Default Right Speakers" value="0xC"/>
+			</enum32>
+			<float32 name="Gain" visible="true" offset="0x4"/>
+		</reflexive>
+		<bitfield32 name="Flags" visible="true" offset="0xC">
+			<bit name="Use3d Radio Hack" index="0"/>
+		</bitfield32>
+		<uint8 name="Padding Padding 0" visible="false" offset="0x10"/>
+		<uint8 name="Padding Padding 1" visible="false" offset="0x11"/>
+		<uint8 name="Padding Padding 2" visible="false" offset="0x12"/>
+		<uint8 name="Padding Padding 3" visible="false" offset="0x13"/>
+		<uint8 name="Padding Padding 4" visible="false" offset="0x14"/>
+		<uint8 name="Padding Padding 5" visible="false" offset="0x15"/>
+		<uint8 name="Padding Padding 6" visible="false" offset="0x16"/>
+		<uint8 name="Padding Padding 7" visible="false" offset="0x17"/>
+		<reflexive name="Filter" visible="true" offset="0x18" entrySize="0x48">
+			<enum32 name="Filter Type" visible="true" offset="0x0">
+				<option name="Parametric Eq" value="0x0"/>
+				<option name="Dls2" value="0x1"/>
+				<option name="Both Only Valid For Mono" value="0x2"/>
+			</enum32>
+			<int32 name="Filter Width" visible="true" offset="0x4"/>
+			<comment title="Left  Filter  Frequency"></comment>
+
+			<float32 name="Scale Bounds Min" visible="true" offset="0x8"/>
+			<float32 name="Scale Bounds Max" visible="true" offset="0xC"/>
+			<float32 name="Random Base And Variance Min" visible="true" offset="0x10"/>
+			<float32 name="Random Base And Variance Max" visible="true" offset="0x14"/>
+			<comment title="Left  Filter  Gain"></comment>
+
+			<float32 name="Scale Bounds Min" visible="true" offset="0x18"/>
+			<float32 name="Scale Bounds Max" visible="true" offset="0x1C"/>
+			<float32 name="Random Base And Variance Min" visible="true" offset="0x20"/>
+			<float32 name="Random Base And Variance Max" visible="true" offset="0x24"/>
+			<comment title="Right  Filter  Frequency"></comment>
+
+			<float32 name="Scale Bounds Min" visible="true" offset="0x28"/>
+			<float32 name="Scale Bounds Max" visible="true" offset="0x2C"/>
+			<float32 name="Random Base And Variance Min" visible="true" offset="0x30"/>
+			<float32 name="Random Base And Variance Max" visible="true" offset="0x34"/>
+			<comment title="Right  Filter  Gain"></comment>
+
+			<float32 name="Scale Bounds Min" visible="true" offset="0x38"/>
+			<float32 name="Scale Bounds Max" visible="true" offset="0x3C"/>
+			<float32 name="Random Base And Variance Min" visible="true" offset="0x40"/>
+			<float32 name="Random Base And Variance Max" visible="true" offset="0x44"/>
+		</reflexive>
+		<reflexive name="Pitch Lfo" visible="true" offset="0x24" entrySize="0x30">
+			<comment title="Delay"></comment>
+
+			<float32 name="Scale Bounds Min" visible="true" offset="0x0"/>
+			<float32 name="Scale Bounds Max" visible="true" offset="0x4"/>
+			<float32 name="Random Base And Variance Min" visible="true" offset="0x8"/>
+			<float32 name="Random Base And Variance Max" visible="true" offset="0xC"/>
+			<comment title="Frequency"></comment>
+
+			<float32 name="Scale Bounds Min" visible="true" offset="0x10"/>
+			<float32 name="Scale Bounds Max" visible="true" offset="0x14"/>
+			<float32 name="Random Base And Variance Min" visible="true" offset="0x18"/>
+			<float32 name="Random Base And Variance Max" visible="true" offset="0x1C"/>
+			<comment title="Pitch  Modulation"></comment>
+
+			<float32 name="Scale Bounds Min" visible="true" offset="0x20"/>
+			<float32 name="Scale Bounds Max" visible="true" offset="0x24"/>
+			<float32 name="Random Base And Variance Min" visible="true" offset="0x28"/>
+			<float32 name="Random Base And Variance Max" visible="true" offset="0x2C"/>
+		</reflexive>
+		<reflexive name="Filter Lfo" visible="true" offset="0x30" entrySize="0x40">
+			<comment title="Delay"></comment>
+
+			<float32 name="Scale Bounds Min" visible="true" offset="0x0"/>
+			<float32 name="Scale Bounds Max" visible="true" offset="0x4"/>
+			<float32 name="Random Base And Variance Min" visible="true" offset="0x8"/>
+			<float32 name="Random Base And Variance Max" visible="true" offset="0xC"/>
+			<comment title="Frequency"></comment>
+
+			<float32 name="Scale Bounds Min" visible="true" offset="0x10"/>
+			<float32 name="Scale Bounds Max" visible="true" offset="0x14"/>
+			<float32 name="Random Base And Variance Min" visible="true" offset="0x18"/>
+			<float32 name="Random Base And Variance Max" visible="true" offset="0x1C"/>
+			<comment title="Cutoff  Modulation"></comment>
+
+			<float32 name="Scale Bounds Min" visible="true" offset="0x20"/>
+			<float32 name="Scale Bounds Max" visible="true" offset="0x24"/>
+			<float32 name="Random Base And Variance Min" visible="true" offset="0x28"/>
+			<float32 name="Random Base And Variance Max" visible="true" offset="0x2C"/>
+			<comment title="Gain  Modulation"></comment>
+
+			<float32 name="Scale Bounds Min" visible="true" offset="0x30"/>
+			<float32 name="Scale Bounds Max" visible="true" offset="0x34"/>
+			<float32 name="Random Base And Variance Min" visible="true" offset="0x38"/>
+			<float32 name="Random Base And Variance Max" visible="true" offset="0x3C"/>
+		</reflexive>
+		<reflexive name="Sound Effect" visible="true" offset="0x3C" entrySize="0x48">
+			<tagref name="Sound Effect" visible="true" offset="0x0"/>
+			<reflexive name="Components" visible="true" offset="0x10" entrySize="0x18">
+				<tagref name="Sound" visible="true" offset="0x0"/>
+				<float32 name="Gain" visible="true" offset="0x10"/>
+				<bitfield32 name="Flags" visible="true" offset="0x14">
+					<bit name="Don TPlay At Start" index="0"/>
+					<bit name="Play On Stop" index="1"/>
+					<bit name="Unknown" index="2"/>
+					<bit name="Play Alternate" index="3"/>
+					<bit name="Unknown1" index="4"/>
+					<bit name="Sync With Origin Looping Sound" index="5"/>
+				</bitfield32>
+			</reflexive>
+			<reflexive name="Sound Effect Overrides" visible="true" offset="0x1C" entrySize="0x10">
+				<stringId name="Name" visible="true" offset="0x0"/>
+				<reflexive name="Overrides" visible="true" offset="0x4" entrySize="0x24">
+					<stringId name="Name" visible="true" offset="0x0"/>
+					<stringId name="Input" visible="true" offset="0x4"/>
+					<stringId name="Range" visible="true" offset="0x8"/>
+					<float32 name="Time Period" visible="true" offset="0xC"/>
+					<int32 name="Integer Value" visible="true" offset="0x10"/>
+					<float32 name="Real Value" visible="true" offset="0x14"/>
+					<comment title="Function  Value"></comment>
+
+					<reflexive name="Data" visible="true" offset="0x18" entrySize="0x1">
+						<int8 name="Value" visible="true" offset="0x0"/>
+					</reflexive>
+				</reflexive>
+			</reflexive>
+			<dataRef name="Unknown" visible="true" offset="0x28"/>
+			<reflexive name="Sound Effect Collections" visible="true" offset="0x3C" entrySize="0x1C">
+				<reflexive name="Sound Effects" visible="true" offset="0x0" entrySize="0x28">
+					<reflexive name="Function Inputs" visible="true" offset="0x0" entrySize="0x14">
+						<enum16 name="Input" visible="true" offset="0x0">
+							<option name="Zero" value="0x0"/>
+							<option name="Time" value="0x1"/>
+							<option name="Scale" value="0x2"/>
+							<option name="Rolloff" value="0x3"/>
+						</enum16>
+						<enum16 name="Range" visible="true" offset="0x2">
+							<option name="Zero" value="0x0"/>
+							<option name="Time" value="0x1"/>
+							<option name="Scale" value="0x2"/>
+							<option name="Rolloff" value="0x3"/>
+						</enum16>
+						<comment title="Function"></comment>
+
+						<reflexive name="Data" visible="true" offset="0x4" entrySize="0x1">
+							<int8 name="Value" visible="true" offset="0x0"/>
+						</reflexive>
+						<float32 name="Time Period" visible="true" offset="0x10"/>
+					</reflexive>
+					<reflexive name="Constant Inputs" visible="true" offset="0xC" entrySize="0x4">
+						<float32 name="Constant Value" visible="true" offset="0x0"/>
+					</reflexive>
+					<reflexive name="Template Override Descriptors" visible="true" offset="0x18" entrySize="0x1">
+						<int8 name="Override Descriptor" visible="true" offset="0x0"/>
+					</reflexive>
+					<int32 name="Input Overrides" visible="true" offset="0x24"/>
+				</reflexive>
+				<reflexive name="Low Frequency Input" visible="true" offset="0xC" entrySize="0x14">
+					<enum16 name="Input" visible="true" offset="0x0">
+						<option name="Zero" value="0x0"/>
+						<option name="Time" value="0x1"/>
+						<option name="Scale" value="0x2"/>
+						<option name="Rolloff" value="0x3"/>
+					</enum16>
+					<enum16 name="Range" visible="true" offset="0x2">
+						<option name="Zero" value="0x0"/>
+						<option name="Time" value="0x1"/>
+						<option name="Scale" value="0x2"/>
+						<option name="Rolloff" value="0x3"/>
+					</enum16>
+					<comment title="Function"></comment>
+
+					<reflexive name="Data" visible="true" offset="0x4" entrySize="0x1">
+						<int8 name="Value" visible="true" offset="0x0"/>
+					</reflexive>
+					<float32 name="Time Period" visible="true" offset="0x10"/>
+				</reflexive>
+				<int32 name="Sound Effect Overrides" visible="true" offset="0x18"/>
+			</reflexive>
+		</reflexive>
+		<uint8 name="Padding2 Padding 0" visible="false" offset="0x48"/>
+		<uint8 name="Padding2 Padding 1" visible="false" offset="0x49"/>
+		<uint8 name="Padding2 Padding 2" visible="false" offset="0x4A"/>
+		<uint8 name="Padding2 Padding 3" visible="false" offset="0x4B"/>
+		<uint8 name="Padding2 Padding 4" visible="false" offset="0x4C"/>
+		<uint8 name="Padding2 Padding 5" visible="false" offset="0x4D"/>
+		<uint8 name="Padding2 Padding 6" visible="false" offset="0x4E"/>
+		<uint8 name="Padding2 Padding 7" visible="false" offset="0x4F"/>
+		<uint8 name="Padding2 Padding 8" visible="false" offset="0x50"/>
+		<uint8 name="Padding2 Padding 9" visible="false" offset="0x51"/>
+		<uint8 name="Padding2 Padding 10" visible="false" offset="0x52"/>
+		<uint8 name="Padding2 Padding 11" visible="false" offset="0x53"/>
+	</reflexive>
+	<reflexive name="Extra Info" visible="true" offset="0xB4" entrySize="0x28">
+		<reflexive name="Language Permutations" visible="true" offset="0x0" entrySize="0xC">
+			<reflexive name="Raw Info" visible="true" offset="0x0" entrySize="0x7C">
+				<stringId name="Skip Fraction Name" visible="true" offset="0x0"/>
+				<uint32 name="Unknown1" visible="true" offset="0x4"/>
+				<uint32 name="Unknown2" visible="true" offset="0x8"/>
+				<uint32 name="Unknown3" visible="true" offset="0xC"/>
+				<uint32 name="Unknown4" visible="true" offset="0x10"/>
+				<uint32 name="Unknown5" visible="true" offset="0x14"/>
+				<uint32 name="Unknown6" visible="true" offset="0x18"/>
+				<uint32 name="Unknown7" visible="true" offset="0x1C"/>
+				<uint32 name="Unknown8" visible="true" offset="0x20"/>
+				<uint32 name="Unknown9" visible="true" offset="0x24"/>
+				<uint32 name="Unknown10" visible="true" offset="0x28"/>
+				<uint32 name="Unknown11" visible="true" offset="0x2C"/>
+				<uint32 name="Unknown12" visible="true" offset="0x30"/>
+				<uint32 name="Unknown13" visible="true" offset="0x34"/>
+				<uint32 name="Unknown14" visible="true" offset="0x38"/>
+				<uint32 name="Unknown15" visible="true" offset="0x3C"/>
+				<uint32 name="Unknown16" visible="true" offset="0x40"/>
+				<uint32 name="Unknown17" visible="true" offset="0x44"/>
+				<uint32 name="Unknown18" visible="true" offset="0x48"/>
+				<reflexive name="Seek Table" visible="true" offset="0x4C" entrySize="0x18">
+					<uint32 name="Block Relative Sample Start" visible="true" offset="0x0"/>
+					<uint32 name="Block Relative Sample End" visible="true" offset="0x4"/>
+					<uint32 name="Starting Sample Index" visible="true" offset="0x8"/>
+					<uint32 name="Ending Sample Index" visible="true" offset="0xC"/>
+					<uint32 name="Starting Offset" visible="true" offset="0x10"/>
+					<uint32 name="Ending Offset" visible="true" offset="0x14"/>
+				</reflexive>
+				<int16 name="Compression" visible="true" offset="0x58"/>
+				<uint8 name="Language" visible="true" offset="0x5A"/>
+				<uint8 name="Unknown19" visible="true" offset="0x5B"/>
+				<uint32 name="Resource Sample Size" visible="true" offset="0x5C"/>
+				<uint32 name="Resource Sample Offset" visible="true" offset="0x60"/>
+				<uint32 name="Sample Count" visible="true" offset="0x64"/>
+				<uint32 name="Unknown20" visible="true" offset="0x68"/>
+				<uint32 name="Unknown21" visible="true" offset="0x6C"/>
+				<uint32 name="Unknown22" visible="true" offset="0x70"/>
+				<uint32 name="Unknown23" visible="true" offset="0x74"/>
+				<int32 name="Unknown24" visible="true" offset="0x78"/>
+			</reflexive>
+		</reflexive>
+		<reflexive name="Facial Animation Info" visible="true" offset="0xC" entrySize="0x2C">
+			<dataRef name="Encoded Data" visible="true" offset="0x0"/>
+			<reflexive name="Sound Dialogue Info" visible="true" offset="0x14" entrySize="0x10">
+				<uint32 name="Mouth Data Offset" visible="true" offset="0x0"/>
+				<uint32 name="Mouth Data Length" visible="true" offset="0x4"/>
+				<uint32 name="Lipsync Data Offset" visible="true" offset="0x8"/>
+				<uint32 name="Lipsync Data Length" visible="true" offset="0xC"/>
+			</reflexive>
+			<reflexive name="Facial Animation Permutations" visible="true" offset="0x20" entrySize="0xC">
+				<reflexive name="Facial Animation" visible="true" offset="0x0" entrySize="0x28">
+					<float32 name="Start Time" visible="true" offset="0x0"/>
+					<float32 name="End Time" visible="true" offset="0x4"/>
+					<float32 name="Blend In" visible="true" offset="0x8"/>
+					<float32 name="Blend Out" visible="true" offset="0xC"/>
+					<uint8 name="Pad Padding 0" visible="false" offset="0x10"/>
+					<uint8 name="Pad Padding 1" visible="false" offset="0x11"/>
+					<uint8 name="Pad Padding 2" visible="false" offset="0x12"/>
+					<uint8 name="Pad Padding 3" visible="false" offset="0x13"/>
+					<uint8 name="Pad Padding 4" visible="false" offset="0x14"/>
+					<uint8 name="Pad Padding 5" visible="false" offset="0x15"/>
+					<uint8 name="Pad Padding 6" visible="false" offset="0x16"/>
+					<uint8 name="Pad Padding 7" visible="false" offset="0x17"/>
+					<uint8 name="Pad Padding 8" visible="false" offset="0x18"/>
+					<uint8 name="Pad Padding 9" visible="false" offset="0x19"/>
+					<uint8 name="Pad Padding 10" visible="false" offset="0x1A"/>
+					<uint8 name="Pad Padding 11" visible="false" offset="0x1B"/>
+					<reflexive name="Facial Animation Curves" visible="true" offset="0x1C" entrySize="0x8">
+						<int16 name="Animation Start Time" visible="true" offset="0x0"/>
+						<enum8 name="First Track" visible="true" offset="0x2">
+							<option name="Silence" value="0x0"/>
+							<option name="Eat" value="0x1"/>
+							<option name="Earth" value="0x2"/>
+							<option name="If" value="0x3"/>
+							<option name="Ox" value="0x4"/>
+							<option name="Oat" value="0x5"/>
+							<option name="Wet" value="0x6"/>
+							<option name="Size" value="0x7"/>
+							<option name="Church" value="0x8"/>
+							<option name="Fave" value="0x9"/>
+							<option name="Though" value="0xA"/>
+							<option name="Told" value="0xB"/>
+							<option name="Bump" value="0xC"/>
+							<option name="New" value="0xD"/>
+							<option name="Roar" value="0xE"/>
+							<option name="Cage" value="0xF"/>
+							<option name="Eyebrow_ Raise" value="0x10"/>
+							<option name="Blink" value="0x11"/>
+							<option name="Orientation_ Head_ Pitch" value="0x12"/>
+							<option name="Orientation_ Head_ Roll" value="0x13"/>
+							<option name="Orientation_ Head_ Yaw" value="0x14"/>
+							<option name="Emphasis_ Head_ Pitch" value="0x15"/>
+							<option name="Emphasis_ Head_ Roll" value="0x16"/>
+							<option name="Emphasis_ Head_ Yaw" value="0x17"/>
+							<option name="Gaze_ Eye_ Pitch" value="0x18"/>
+							<option name="Gaze_ Eye_ Yaw" value="0x19"/>
+							<option name="happy" value="0x1A"/>
+							<option name="sad" value="0x1B"/>
+							<option name="angry" value="0x1C"/>
+							<option name="disgusted" value="0x1D"/>
+							<option name="scared" value="0x1E"/>
+							<option name="surprised" value="0x1F"/>
+							<option name="pain" value="0x20"/>
+							<option name="shout" value="0x21"/>
+						</enum8>
+						<enum8 name="Second Track" visible="true" offset="0x3">
+							<option name="Silence" value="0x0"/>
+							<option name="Eat" value="0x1"/>
+							<option name="Earth" value="0x2"/>
+							<option name="If" value="0x3"/>
+							<option name="Ox" value="0x4"/>
+							<option name="Oat" value="0x5"/>
+							<option name="Wet" value="0x6"/>
+							<option name="Size" value="0x7"/>
+							<option name="Church" value="0x8"/>
+							<option name="Fave" value="0x9"/>
+							<option name="Though" value="0xA"/>
+							<option name="Told" value="0xB"/>
+							<option name="Bump" value="0xC"/>
+							<option name="New" value="0xD"/>
+							<option name="Roar" value="0xE"/>
+							<option name="Cage" value="0xF"/>
+							<option name="Eyebrow_ Raise" value="0x10"/>
+							<option name="Blink" value="0x11"/>
+							<option name="Orientation_ Head_ Pitch" value="0x12"/>
+							<option name="Orientation_ Head_ Roll" value="0x13"/>
+							<option name="Orientation_ Head_ Yaw" value="0x14"/>
+							<option name="Emphasis_ Head_ Pitch" value="0x15"/>
+							<option name="Emphasis_ Head_ Roll" value="0x16"/>
+							<option name="Emphasis_ Head_ Yaw" value="0x17"/>
+							<option name="Gaze_ Eye_ Pitch" value="0x18"/>
+							<option name="Gaze_ Eye_ Yaw" value="0x19"/>
+							<option name="happy" value="0x1A"/>
+							<option name="sad" value="0x1B"/>
+							<option name="angry" value="0x1C"/>
+							<option name="disgusted" value="0x1D"/>
+							<option name="scared" value="0x1E"/>
+							<option name="surprised" value="0x1F"/>
+							<option name="pain" value="0x20"/>
+							<option name="shout" value="0x21"/>
+						</enum8>
+						<enum8 name="Third Track" visible="true" offset="0x4">
+							<option name="Silence" value="0x0"/>
+							<option name="Eat" value="0x1"/>
+							<option name="Earth" value="0x2"/>
+							<option name="If" value="0x3"/>
+							<option name="Ox" value="0x4"/>
+							<option name="Oat" value="0x5"/>
+							<option name="Wet" value="0x6"/>
+							<option name="Size" value="0x7"/>
+							<option name="Church" value="0x8"/>
+							<option name="Fave" value="0x9"/>
+							<option name="Though" value="0xA"/>
+							<option name="Told" value="0xB"/>
+							<option name="Bump" value="0xC"/>
+							<option name="New" value="0xD"/>
+							<option name="Roar" value="0xE"/>
+							<option name="Cage" value="0xF"/>
+							<option name="Eyebrow_ Raise" value="0x10"/>
+							<option name="Blink" value="0x11"/>
+							<option name="Orientation_ Head_ Pitch" value="0x12"/>
+							<option name="Orientation_ Head_ Roll" value="0x13"/>
+							<option name="Orientation_ Head_ Yaw" value="0x14"/>
+							<option name="Emphasis_ Head_ Pitch" value="0x15"/>
+							<option name="Emphasis_ Head_ Roll" value="0x16"/>
+							<option name="Emphasis_ Head_ Yaw" value="0x17"/>
+							<option name="Gaze_ Eye_ Pitch" value="0x18"/>
+							<option name="Gaze_ Eye_ Yaw" value="0x19"/>
+							<option name="happy" value="0x1A"/>
+							<option name="sad" value="0x1B"/>
+							<option name="angry" value="0x1C"/>
+							<option name="disgusted" value="0x1D"/>
+							<option name="scared" value="0x1E"/>
+							<option name="surprised" value="0x1F"/>
+							<option name="pain" value="0x20"/>
+							<option name="shout" value="0x21"/>
+						</enum8>
+						<int8 name="First Pose Weight" visible="true" offset="0x5"/>
+						<int8 name="Second Pose Weight" visible="true" offset="0x6"/>
+						<int8 name="Third Pose Weight" visible="true" offset="0x7"/>
+					</reflexive>
+				</reflexive>
+			</reflexive>
+		</reflexive>
+		<uint32 name="Unknown1" visible="true" offset="0x18"/>
+		<uint32 name="Unknown2" visible="true" offset="0x1C"/>
+		<uint32 name="Unknown3" visible="true" offset="0x20"/>
+		<uint32 name="Unknown4" visible="true" offset="0x24"/>
+	</reflexive>
+	<reflexive name="Languages" visible="true" offset="0xC0" entrySize="0x1C">
+		<enum32 name="Language" visible="true" offset="0x0">
+			<option name="English" value="0x0"/>
+			<option name="Japanese" value="0x1"/>
+			<option name="German" value="0x2"/>
+			<option name="French" value="0x3"/>
+			<option name="Spanish" value="0x4"/>
+			<option name="Mexican" value="0x5"/>
+			<option name="Italian" value="0x6"/>
+			<option name="Korean" value="0x7"/>
+			<option name="Chinese Traditional" value="0x8"/>
+			<option name="Chinese Simplified" value="0x9"/>
+			<option name="Portuguese" value="0xA"/>
+			<option name="Russian" value="0xB"/>
+		</enum32>
+		<reflexive name="Permutation Durations" visible="true" offset="0x4" entrySize="0x2">
+			<int16 name="Frame Count" visible="true" offset="0x0"/>
+		</reflexive>
+		<reflexive name="Pitch Range Durations" visible="true" offset="0x10" entrySize="0x4">
+			<int16 name="Permutation Start Index" visible="true" offset="0x0"/>
+			<int16 name="Permutation Count" visible="true" offset="0x2"/>
+		</reflexive>
+	</reflexive>
+	<comment title="Resource"></comment>
+
+	<uint32 name="Halo Online Pageable Resource" visible="true" offset="0xCC"/>
+	<int32 name="Unused" visible="true" offset="0xD0"/>
+</plugin>

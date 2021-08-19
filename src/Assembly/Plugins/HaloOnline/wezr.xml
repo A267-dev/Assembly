@@ -1,0 +1,1179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x8C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<bitfield32 name="Flags" visible="true" offset="0x0">
+		<bit name="Unused" index="0"/>
+	</bitfield32>
+	<reflexive name="Trait Profiles" visible="true" offset="0x4" entrySize="0x40">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<reflexive name="Shields And Health" visible="true" offset="0x4" entrySize="0x8">
+			<enum8 name="Damage Resistance" visible="true" offset="0x0">
+				<option name="Unchanged" value="0x0"/>
+				<option name="_10" value="0x1"/>
+				<option name="_50" value="0x2"/>
+				<option name="_90" value="0x3"/>
+				<option name="_100" value="0x4"/>
+				<option name="_110" value="0x5"/>
+				<option name="_150" value="0x6"/>
+				<option name="_200" value="0x7"/>
+				<option name="_300" value="0x8"/>
+				<option name="_500" value="0x9"/>
+				<option name="_1000" value="0xA"/>
+				<option name="_2000" value="0xB"/>
+				<option name="Invulnerable" value="0xC"/>
+			</enum8>
+			<enum8 name="Shield Multiplier" visible="true" offset="0x1">
+				<option name="Unchanged" value="0x0"/>
+				<option name="No Shields" value="0x1"/>
+				<option name="Normal Shields" value="0x2"/>
+				<option name="_2x Overshields" value="0x3"/>
+				<option name="_3x Overshields" value="0x4"/>
+				<option name="_4x Overshields" value="0x5"/>
+			</enum8>
+			<enum8 name="Shield Recharge Rate" visible="true" offset="0x2">
+				<option name="Unchanged" value="0x0"/>
+				<option name="_25" value="0x1"/>
+				<option name="_10" value="0x2"/>
+				<option name="_5" value="0x3"/>
+				<option name="_0" value="0x4"/>
+				<option name="_50" value="0x5"/>
+				<option name="_90" value="0x6"/>
+				<option name="_100" value="0x7"/>
+				<option name="_110" value="0x8"/>
+				<option name="_200" value="0x9"/>
+			</enum8>
+			<enum8 name="Headshot Immunity" visible="true" offset="0x3">
+				<option name="Unchanged" value="0x0"/>
+				<option name="Enabled" value="0x1"/>
+				<option name="Disabled" value="0x2"/>
+			</enum8>
+			<enum8 name="Shield Vampirism" visible="true" offset="0x4">
+				<option name="Unchanged" value="0x0"/>
+				<option name="Disabled" value="0x1"/>
+				<option name="_10" value="0x2"/>
+				<option name="_25" value="0x3"/>
+				<option name="_50" value="0x4"/>
+				<option name="_100" value="0x5"/>
+			</enum8>
+			<int8 name="Unknown" visible="true" offset="0x5"/>
+			<int8 name="Unknown2" visible="true" offset="0x6"/>
+			<int8 name="Unknown3" visible="true" offset="0x7"/>
+		</reflexive>
+		<reflexive name="Weapons And Damage" visible="true" offset="0x10" entrySize="0x10">
+			<enum8 name="Damage Modifier" visible="true" offset="0x0">
+				<option name="Unchanged" value="0x0"/>
+				<option name="_0" value="0x1"/>
+				<option name="_25" value="0x2"/>
+				<option name="_50" value="0x3"/>
+				<option name="_75" value="0x4"/>
+				<option name="_90" value="0x5"/>
+				<option name="_100" value="0x6"/>
+				<option name="_110" value="0x7"/>
+				<option name="_125" value="0x8"/>
+				<option name="_150" value="0x9"/>
+				<option name="_200" value="0xA"/>
+				<option name="_300" value="0xB"/>
+				<option name="Instant Kill" value="0xC"/>
+			</enum8>
+			<enum8 name="Grenade Regeneration" visible="true" offset="0x1">
+				<option name="Unchanged" value="0x0"/>
+				<option name="Enabled" value="0x1"/>
+				<option name="Disabled" value="0x2"/>
+			</enum8>
+			<enum8 name="Weapon Pickup" visible="true" offset="0x2">
+				<option name="Unchanged" value="0x0"/>
+				<option name="Enabled" value="0x1"/>
+				<option name="Disabled" value="0x2"/>
+			</enum8>
+			<enum8 name="Infinite Ammo" visible="true" offset="0x3">
+				<option name="Unchanged" value="0x0"/>
+				<option name="Disabled" value="0x1"/>
+				<option name="Enabled" value="0x2"/>
+			</enum8>
+			<stringId name="Primary Weapon" visible="true" offset="0x4"/>
+			<stringId name="Secondary Weapon" visible="true" offset="0x8"/>
+			<enum16 name="Grenade Count" visible="true" offset="0xC">
+				<option name="Unchanged" value="0x0"/>
+				<option name="Map Default" value="0x1"/>
+				<option name="None" value="0x2"/>
+			</enum16>
+			<int8 name="Unknown" visible="true" offset="0xE"/>
+			<int8 name="Unknown2" visible="true" offset="0xF"/>
+		</reflexive>
+		<reflexive name="Movement" visible="true" offset="0x1C" entrySize="0x4">
+			<enum8 name="Player Speed" visible="true" offset="0x0">
+				<option name="Unchanged" value="0x0"/>
+				<option name="_25" value="0x1"/>
+				<option name="_50" value="0x2"/>
+				<option name="_75" value="0x3"/>
+				<option name="_90" value="0x4"/>
+				<option name="_100" value="0x5"/>
+				<option name="_110" value="0x6"/>
+				<option name="_125" value="0x7"/>
+				<option name="_150" value="0x8"/>
+				<option name="_200" value="0x9"/>
+				<option name="_300" value="0xA"/>
+			</enum8>
+			<enum8 name="Player Gravity" visible="true" offset="0x1">
+				<option name="Unchanged" value="0x0"/>
+				<option name="_50" value="0x1"/>
+				<option name="_75" value="0x2"/>
+				<option name="_100" value="0x3"/>
+				<option name="_150" value="0x4"/>
+				<option name="_200" value="0x5"/>
+			</enum8>
+			<enum8 name="Vehicle Use" visible="true" offset="0x2">
+				<option name="Unchanged" value="0x0"/>
+				<option name="None" value="0x1"/>
+				<option name="Passenger Only" value="0x2"/>
+				<option name="Full Use" value="0x3"/>
+			</enum8>
+			<int8 name="Unknown" visible="true" offset="0x3"/>
+		</reflexive>
+		<reflexive name="Appearance" visible="true" offset="0x28" entrySize="0x4">
+			<enum8 name="Active Camo" visible="true" offset="0x0">
+				<option name="Unchanged" value="0x0"/>
+				<option name="Disabled" value="0x1"/>
+				<option name="Bad Camo" value="0x2"/>
+				<option name="Poor Camo" value="0x3"/>
+				<option name="Good Camo" value="0x4"/>
+			</enum8>
+			<enum8 name="Waypoint" visible="true" offset="0x1">
+				<option name="Unchanged" value="0x0"/>
+				<option name="None" value="0x1"/>
+				<option name="Visible To Allies" value="0x2"/>
+				<option name="Visible To Everyone" value="0x3"/>
+			</enum8>
+			<enum8 name="Aura" visible="true" offset="0x2">
+				<option name="Unchanged" value="0x0"/>
+				<option name="Disabled" value="0x1"/>
+				<option name="Team" value="0x2"/>
+				<option name="Black" value="0x3"/>
+				<option name="White" value="0x4"/>
+			</enum8>
+			<enum8 name="Forced Color" visible="true" offset="0x3">
+				<option name="Unchanged" value="0x0"/>
+				<option name="Off" value="0x1"/>
+				<option name="Red" value="0x2"/>
+				<option name="Blue" value="0x3"/>
+				<option name="Green" value="0x4"/>
+				<option name="Orange" value="0x5"/>
+				<option name="Purple" value="0x6"/>
+				<option name="Gold" value="0x7"/>
+				<option name="Brown" value="0x8"/>
+				<option name="Pink" value="0x9"/>
+				<option name="White" value="0xA"/>
+				<option name="Black" value="0xB"/>
+				<option name="Zombie" value="0xC"/>
+				<option name="Pink Unused" value="0xD"/>
+			</enum8>
+		</reflexive>
+		<reflexive name="Sensors" visible="true" offset="0x34" entrySize="0x8">
+			<enum32 name="Motion Tracker Mode" visible="true" offset="0x0">
+				<option name="Unchanged" value="0x0"/>
+				<option name="Disabled" value="0x1"/>
+				<option name="Ally Movement" value="0x2"/>
+				<option name="Player Movement" value="0x3"/>
+				<option name="Player Locations" value="0x4"/>
+			</enum32>
+			<enum32 name="Motion Tracker Range" visible="true" offset="0x4">
+				<option name="Unchanged" value="0x0"/>
+				<option name="_10m" value="0x1"/>
+				<option name="_15m" value="0x2"/>
+				<option name="_25m" value="0x3"/>
+				<option name="_50m" value="0x4"/>
+				<option name="_75m" value="0x5"/>
+				<option name="_100m" value="0x6"/>
+				<option name="_150m" value="0x7"/>
+			</enum32>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Slayer Variants" visible="true" offset="0x10" entrySize="0x70">
+		<ascii name="Name Ascii" visible="true" offset="0x0" length="0x20"/>
+		<stringId name="Name" visible="true" offset="0x20"/>
+		<stringId name="Description" visible="true" offset="0x24"/>
+		<reflexive name="General Settings" visible="true" offset="0x28" entrySize="0x8">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Teams Enabled" index="0"/>
+				<bit name="Round Resets Players" index="1"/>
+				<bit name="Round Resets Map" index="2"/>
+			</bitfield32>
+			<int8 name="Time Limit" visible="true" offset="0x4"/>
+			<int8 name="Number Of Rounds" visible="true" offset="0x5"/>
+			<int8 name="Early Victory Win Count" visible="true" offset="0x6"/>
+			<enum8 name="Round Resets" visible="true" offset="0x7">
+				<option name="Nothing" value="0x0"/>
+				<option name="Players Only" value="0x1"/>
+				<option name="Everything" value="0x2"/>
+			</enum8>
+		</reflexive>
+		<reflexive name="Respawn Settings" visible="true" offset="0x34" entrySize="0x14">
+			<bitfield16 name="Flags" visible="true" offset="0x0">
+				<bit name="Inherit Respawn Time" index="0"/>
+				<bit name="Respawn With Team" index="1"/>
+				<bit name="Respawn At Location" index="2"/>
+				<bit name="Respawn On Kills" index="3"/>
+			</bitfield16>
+			<int8 name="Lives Per Round" visible="true" offset="0x2"/>
+			<int8 name="Shared Team Lives" visible="true" offset="0x3"/>
+			<uint8 name="Unknown" visible="true" offset="0x4"/>
+			<uint8 name="Respawn Time" visible="true" offset="0x5"/>
+			<uint8 name="Suicide Penalty" visible="true" offset="0x6"/>
+			<uint8 name="Betrayal Penalty" visible="true" offset="0x7"/>
+			<uint8 name="Respawn Time Growth" visible="true" offset="0x8"/>
+			<int8 name="Unknown1" visible="true" offset="0x9"/>
+			<int8 name="Unknown2" visible="true" offset="0xA"/>
+			<int8 name="Unknown3" visible="true" offset="0xB"/>
+			<stringId name="Respawn Trait Profile" visible="true" offset="0xC"/>
+			<int8 name="Respawn Trait Duration" visible="true" offset="0x10"/>
+			<int8 name="Unknown4" visible="true" offset="0x11"/>
+			<int8 name="Unknown5" visible="true" offset="0x12"/>
+			<int8 name="Unknown6" visible="true" offset="0x13"/>
+		</reflexive>
+		<reflexive name="Social Settings" visible="true" offset="0x40" entrySize="0x4">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Observers Enabled" index="0"/>
+				<bit name="Team Changing Enabled" index="1"/>
+				<bit name="Balanced Team Changing" index="2"/>
+				<bit name="Friendly Fire Enabled" index="3"/>
+				<bit name="Betrayal Booting Enabled" index="4"/>
+				<bit name="Enemy Voice Enabled" index="5"/>
+				<bit name="Open Channel Voice Enabled" index="6"/>
+				<bit name="Dead Player Voice Enabled" index="7"/>
+			</bitfield32>
+		</reflexive>
+		<reflexive name="Map Overrides" visible="true" offset="0x4C" entrySize="0x20">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Grenades On Map" index="0"/>
+				<bit name="Indestructable Vehicles" index="1"/>
+			</bitfield32>
+			<stringId name="Base Player Trait Profile" visible="true" offset="0x4"/>
+			<stringId name="Weapon Set" visible="true" offset="0x8"/>
+			<stringId name="Vehicle Set" visible="true" offset="0xC"/>
+			<stringId name="Overshield Trait Profile" visible="true" offset="0x10"/>
+			<stringId name="Active Camo Trait Profile" visible="true" offset="0x14"/>
+			<stringId name="Custom Powerup Trait Profile" visible="true" offset="0x18"/>
+			<int8 name="Overshield Trait Duration" visible="true" offset="0x1C"/>
+			<int8 name="Active Camo Trait Duration" visible="true" offset="0x1D"/>
+			<int8 name="Custom Powerup Trait Duration" visible="true" offset="0x1E"/>
+			<int8 name="Unknown" visible="true" offset="0x1F"/>
+		</reflexive>
+		<enum16 name="Team Scoring" visible="true" offset="0x58">
+			<option name="Sum Of Team" value="0x0"/>
+			<option name="Minimum Score" value="0x1"/>
+			<option name="Maximum Score" value="0x2"/>
+			<option name="Default" value="0x3"/>
+		</enum16>
+		<int16 name="Points To Win" visible="true" offset="0x5A"/>
+		<int16 name="Unknown" visible="true" offset="0x5C"/>
+		<int8 name="Kill Points" visible="true" offset="0x5E"/>
+		<int8 name="Assist Points" visible="true" offset="0x5F"/>
+		<int8 name="Death Points" visible="true" offset="0x60"/>
+		<int8 name="Suicide Points" visible="true" offset="0x61"/>
+		<int8 name="Betrayal Points" visible="true" offset="0x62"/>
+		<int8 name="Leader Kill Bonus" visible="true" offset="0x63"/>
+		<int8 name="Elimination Bonus" visible="true" offset="0x64"/>
+		<int8 name="Assassination Bonus" visible="true" offset="0x65"/>
+		<int8 name="Headshot Bonus" visible="true" offset="0x66"/>
+		<int8 name="Beatdown Bonus" visible="true" offset="0x67"/>
+		<int8 name="Sticky Bonus" visible="true" offset="0x68"/>
+		<int8 name="Splatter Bonus" visible="true" offset="0x69"/>
+		<int8 name="Spree Bonus" visible="true" offset="0x6A"/>
+		<int8 name="Unknown2" visible="true" offset="0x6B"/>
+		<stringId name="Leader Trait Profile" visible="true" offset="0x6C"/>
+	</reflexive>
+	<reflexive name="Oddball Variants" visible="true" offset="0x1C" entrySize="0x70">
+		<ascii name="Name Ascii" visible="true" offset="0x0" length="0x20"/>
+		<stringId name="Name" visible="true" offset="0x20"/>
+		<stringId name="Description" visible="true" offset="0x24"/>
+		<reflexive name="General Settings" visible="true" offset="0x28" entrySize="0x8">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Teams Enabled" index="0"/>
+				<bit name="Round Resets Players" index="1"/>
+				<bit name="Round Resets Map" index="2"/>
+			</bitfield32>
+			<int8 name="Time Limit" visible="true" offset="0x4"/>
+			<int8 name="Number Of Rounds" visible="true" offset="0x5"/>
+			<int8 name="Early Victory Win Count" visible="true" offset="0x6"/>
+			<enum8 name="Round Resets" visible="true" offset="0x7">
+				<option name="Nothing" value="0x0"/>
+				<option name="Players Only" value="0x1"/>
+				<option name="Everything" value="0x2"/>
+			</enum8>
+		</reflexive>
+		<reflexive name="Respawn Settings" visible="true" offset="0x34" entrySize="0x14">
+			<bitfield16 name="Flags" visible="true" offset="0x0">
+				<bit name="Inherit Respawn Time" index="0"/>
+				<bit name="Respawn With Team" index="1"/>
+				<bit name="Respawn At Location" index="2"/>
+				<bit name="Respawn On Kills" index="3"/>
+			</bitfield16>
+			<int8 name="Lives Per Round" visible="true" offset="0x2"/>
+			<int8 name="Shared Team Lives" visible="true" offset="0x3"/>
+			<uint8 name="Unknown" visible="true" offset="0x4"/>
+			<uint8 name="Respawn Time" visible="true" offset="0x5"/>
+			<uint8 name="Suicide Penalty" visible="true" offset="0x6"/>
+			<uint8 name="Betrayal Penalty" visible="true" offset="0x7"/>
+			<uint8 name="Respawn Time Growth" visible="true" offset="0x8"/>
+			<int8 name="Unknown1" visible="true" offset="0x9"/>
+			<int8 name="Unknown2" visible="true" offset="0xA"/>
+			<int8 name="Unknown3" visible="true" offset="0xB"/>
+			<stringId name="Respawn Trait Profile" visible="true" offset="0xC"/>
+			<int8 name="Respawn Trait Duration" visible="true" offset="0x10"/>
+			<int8 name="Unknown4" visible="true" offset="0x11"/>
+			<int8 name="Unknown5" visible="true" offset="0x12"/>
+			<int8 name="Unknown6" visible="true" offset="0x13"/>
+		</reflexive>
+		<reflexive name="Social Settings" visible="true" offset="0x40" entrySize="0x4">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Observers Enabled" index="0"/>
+				<bit name="Team Changing Enabled" index="1"/>
+				<bit name="Balanced Team Changing" index="2"/>
+				<bit name="Friendly Fire Enabled" index="3"/>
+				<bit name="Betrayal Booting Enabled" index="4"/>
+				<bit name="Enemy Voice Enabled" index="5"/>
+				<bit name="Open Channel Voice Enabled" index="6"/>
+				<bit name="Dead Player Voice Enabled" index="7"/>
+			</bitfield32>
+		</reflexive>
+		<reflexive name="Map Overrides" visible="true" offset="0x4C" entrySize="0x20">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Grenades On Map" index="0"/>
+				<bit name="Indestructable Vehicles" index="1"/>
+			</bitfield32>
+			<stringId name="Base Player Trait Profile" visible="true" offset="0x4"/>
+			<stringId name="Weapon Set" visible="true" offset="0x8"/>
+			<stringId name="Vehicle Set" visible="true" offset="0xC"/>
+			<stringId name="Overshield Trait Profile" visible="true" offset="0x10"/>
+			<stringId name="Active Camo Trait Profile" visible="true" offset="0x14"/>
+			<stringId name="Custom Powerup Trait Profile" visible="true" offset="0x18"/>
+			<int8 name="Overshield Trait Duration" visible="true" offset="0x1C"/>
+			<int8 name="Active Camo Trait Duration" visible="true" offset="0x1D"/>
+			<int8 name="Custom Powerup Trait Duration" visible="true" offset="0x1E"/>
+			<int8 name="Unknown" visible="true" offset="0x1F"/>
+		</reflexive>
+		<bitfield32 name="Flags" visible="true" offset="0x58">
+			<bit name="Autopickup Enabled" index="0"/>
+			<bit name="Ball Effect Enabled" index="1"/>
+		</bitfield32>
+		<enum16 name="Team Scoring" visible="true" offset="0x5C">
+			<option name="Sum Of Team" value="0x0"/>
+			<option name="Minimum Score" value="0x1"/>
+			<option name="Maximum Score" value="0x2"/>
+			<option name="Default" value="0x3"/>
+		</enum16>
+		<int16 name="Points To Win" visible="true" offset="0x5E"/>
+		<int16 name="Unknown" visible="true" offset="0x60"/>
+		<int8 name="Carrying Points" visible="true" offset="0x62"/>
+		<int8 name="Kill Points" visible="true" offset="0x63"/>
+		<int8 name="Ball Kill Points" visible="true" offset="0x64"/>
+		<int8 name="Ball Carrier Kill Points" visible="true" offset="0x65"/>
+		<int8 name="Ball Count" visible="true" offset="0x66"/>
+		<int8 name="Unknown2" visible="true" offset="0x67"/>
+		<int16 name="Initial Ball Delay" visible="true" offset="0x68"/>
+		<int16 name="Ball Respawn Delay" visible="true" offset="0x6A"/>
+		<stringId name="Ball Carrier Trait Profile" visible="true" offset="0x6C"/>
+	</reflexive>
+	<reflexive name="Capture The Flag Variants" visible="true" offset="0x28" entrySize="0x70">
+		<ascii name="Name Ascii" visible="true" offset="0x0" length="0x20"/>
+		<stringId name="Name" visible="true" offset="0x20"/>
+		<stringId name="Description" visible="true" offset="0x24"/>
+		<reflexive name="General Settings" visible="true" offset="0x28" entrySize="0x8">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Teams Enabled" index="0"/>
+				<bit name="Round Resets Players" index="1"/>
+				<bit name="Round Resets Map" index="2"/>
+			</bitfield32>
+			<int8 name="Time Limit" visible="true" offset="0x4"/>
+			<int8 name="Number Of Rounds" visible="true" offset="0x5"/>
+			<int8 name="Early Victory Win Count" visible="true" offset="0x6"/>
+			<enum8 name="Round Resets" visible="true" offset="0x7">
+				<option name="Nothing" value="0x0"/>
+				<option name="Players Only" value="0x1"/>
+				<option name="Everything" value="0x2"/>
+			</enum8>
+		</reflexive>
+		<reflexive name="Respawn Settings" visible="true" offset="0x34" entrySize="0x14">
+			<bitfield16 name="Flags" visible="true" offset="0x0">
+				<bit name="Inherit Respawn Time" index="0"/>
+				<bit name="Respawn With Team" index="1"/>
+				<bit name="Respawn At Location" index="2"/>
+				<bit name="Respawn On Kills" index="3"/>
+			</bitfield16>
+			<int8 name="Lives Per Round" visible="true" offset="0x2"/>
+			<int8 name="Shared Team Lives" visible="true" offset="0x3"/>
+			<uint8 name="Unknown" visible="true" offset="0x4"/>
+			<uint8 name="Respawn Time" visible="true" offset="0x5"/>
+			<uint8 name="Suicide Penalty" visible="true" offset="0x6"/>
+			<uint8 name="Betrayal Penalty" visible="true" offset="0x7"/>
+			<uint8 name="Respawn Time Growth" visible="true" offset="0x8"/>
+			<int8 name="Unknown1" visible="true" offset="0x9"/>
+			<int8 name="Unknown2" visible="true" offset="0xA"/>
+			<int8 name="Unknown3" visible="true" offset="0xB"/>
+			<stringId name="Respawn Trait Profile" visible="true" offset="0xC"/>
+			<int8 name="Respawn Trait Duration" visible="true" offset="0x10"/>
+			<int8 name="Unknown4" visible="true" offset="0x11"/>
+			<int8 name="Unknown5" visible="true" offset="0x12"/>
+			<int8 name="Unknown6" visible="true" offset="0x13"/>
+		</reflexive>
+		<reflexive name="Social Settings" visible="true" offset="0x40" entrySize="0x4">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Observers Enabled" index="0"/>
+				<bit name="Team Changing Enabled" index="1"/>
+				<bit name="Balanced Team Changing" index="2"/>
+				<bit name="Friendly Fire Enabled" index="3"/>
+				<bit name="Betrayal Booting Enabled" index="4"/>
+				<bit name="Enemy Voice Enabled" index="5"/>
+				<bit name="Open Channel Voice Enabled" index="6"/>
+				<bit name="Dead Player Voice Enabled" index="7"/>
+			</bitfield32>
+		</reflexive>
+		<reflexive name="Map Overrides" visible="true" offset="0x4C" entrySize="0x20">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Grenades On Map" index="0"/>
+				<bit name="Indestructable Vehicles" index="1"/>
+			</bitfield32>
+			<stringId name="Base Player Trait Profile" visible="true" offset="0x4"/>
+			<stringId name="Weapon Set" visible="true" offset="0x8"/>
+			<stringId name="Vehicle Set" visible="true" offset="0xC"/>
+			<stringId name="Overshield Trait Profile" visible="true" offset="0x10"/>
+			<stringId name="Active Camo Trait Profile" visible="true" offset="0x14"/>
+			<stringId name="Custom Powerup Trait Profile" visible="true" offset="0x18"/>
+			<int8 name="Overshield Trait Duration" visible="true" offset="0x1C"/>
+			<int8 name="Active Camo Trait Duration" visible="true" offset="0x1D"/>
+			<int8 name="Custom Powerup Trait Duration" visible="true" offset="0x1E"/>
+			<int8 name="Unknown" visible="true" offset="0x1F"/>
+		</reflexive>
+		<bitfield32 name="Flags" visible="true" offset="0x58">
+			<bit name="Flag At Home To Score" index="0"/>
+		</bitfield32>
+		<enum16 name="Home Flag Waypoint" visible="true" offset="0x5C">
+			<option name="Unknown1" value="0x0"/>
+			<option name="Unknown2" value="0x1"/>
+			<option name="Unknown3" value="0x2"/>
+			<option name="Not In Single" value="0x3"/>
+		</enum16>
+		<enum16 name="Game Mode" visible="true" offset="0x5E">
+			<option name="Multiple" value="0x0"/>
+			<option name="Single" value="0x1"/>
+			<option name="Neutral" value="0x2"/>
+		</enum16>
+		<enum16 name="Respawn On Capture" visible="true" offset="0x60">
+			<option name="Disabled" value="0x0"/>
+			<option name="On Ally Capture" value="0x1"/>
+			<option name="On Enemy Capture" value="0x2"/>
+			<option name="On Any Capture" value="0x3"/>
+		</enum16>
+		<int16 name="Flag Return Time" visible="true" offset="0x62"/>
+		<int16 name="Sudden Death Time" visible="true" offset="0x64"/>
+		<int16 name="Score To Win" visible="true" offset="0x66"/>
+		<int16 name="Unknown" visible="true" offset="0x68"/>
+		<int16 name="Flag Reset Time" visible="true" offset="0x6A"/>
+		<stringId name="Flag Carrier Trait Profile" visible="true" offset="0x6C"/>
+	</reflexive>
+	<reflexive name="Assault Variants" visible="true" offset="0x34" entrySize="0x80">
+		<ascii name="Name Ascii" visible="true" offset="0x0" length="0x20"/>
+		<stringId name="Name" visible="true" offset="0x20"/>
+		<stringId name="Description" visible="true" offset="0x24"/>
+		<reflexive name="General Settings" visible="true" offset="0x28" entrySize="0x8">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Teams Enabled" index="0"/>
+				<bit name="Round Resets Players" index="1"/>
+				<bit name="Round Resets Map" index="2"/>
+			</bitfield32>
+			<int8 name="Time Limit" visible="true" offset="0x4"/>
+			<int8 name="Number Of Rounds" visible="true" offset="0x5"/>
+			<int8 name="Early Victory Win Count" visible="true" offset="0x6"/>
+			<enum8 name="Round Resets" visible="true" offset="0x7">
+				<option name="Nothing" value="0x0"/>
+				<option name="Players Only" value="0x1"/>
+				<option name="Everything" value="0x2"/>
+			</enum8>
+		</reflexive>
+		<reflexive name="Respawn Settings" visible="true" offset="0x34" entrySize="0x14">
+			<bitfield16 name="Flags" visible="true" offset="0x0">
+				<bit name="Inherit Respawn Time" index="0"/>
+				<bit name="Respawn With Team" index="1"/>
+				<bit name="Respawn At Location" index="2"/>
+				<bit name="Respawn On Kills" index="3"/>
+			</bitfield16>
+			<int8 name="Lives Per Round" visible="true" offset="0x2"/>
+			<int8 name="Shared Team Lives" visible="true" offset="0x3"/>
+			<uint8 name="Unknown" visible="true" offset="0x4"/>
+			<uint8 name="Respawn Time" visible="true" offset="0x5"/>
+			<uint8 name="Suicide Penalty" visible="true" offset="0x6"/>
+			<uint8 name="Betrayal Penalty" visible="true" offset="0x7"/>
+			<uint8 name="Respawn Time Growth" visible="true" offset="0x8"/>
+			<int8 name="Unknown1" visible="true" offset="0x9"/>
+			<int8 name="Unknown2" visible="true" offset="0xA"/>
+			<int8 name="Unknown3" visible="true" offset="0xB"/>
+			<stringId name="Respawn Trait Profile" visible="true" offset="0xC"/>
+			<int8 name="Respawn Trait Duration" visible="true" offset="0x10"/>
+			<int8 name="Unknown4" visible="true" offset="0x11"/>
+			<int8 name="Unknown5" visible="true" offset="0x12"/>
+			<int8 name="Unknown6" visible="true" offset="0x13"/>
+		</reflexive>
+		<reflexive name="Social Settings" visible="true" offset="0x40" entrySize="0x4">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Observers Enabled" index="0"/>
+				<bit name="Team Changing Enabled" index="1"/>
+				<bit name="Balanced Team Changing" index="2"/>
+				<bit name="Friendly Fire Enabled" index="3"/>
+				<bit name="Betrayal Booting Enabled" index="4"/>
+				<bit name="Enemy Voice Enabled" index="5"/>
+				<bit name="Open Channel Voice Enabled" index="6"/>
+				<bit name="Dead Player Voice Enabled" index="7"/>
+			</bitfield32>
+		</reflexive>
+		<reflexive name="Map Overrides" visible="true" offset="0x4C" entrySize="0x20">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Grenades On Map" index="0"/>
+				<bit name="Indestructable Vehicles" index="1"/>
+			</bitfield32>
+			<stringId name="Base Player Trait Profile" visible="true" offset="0x4"/>
+			<stringId name="Weapon Set" visible="true" offset="0x8"/>
+			<stringId name="Vehicle Set" visible="true" offset="0xC"/>
+			<stringId name="Overshield Trait Profile" visible="true" offset="0x10"/>
+			<stringId name="Active Camo Trait Profile" visible="true" offset="0x14"/>
+			<stringId name="Custom Powerup Trait Profile" visible="true" offset="0x18"/>
+			<int8 name="Overshield Trait Duration" visible="true" offset="0x1C"/>
+			<int8 name="Active Camo Trait Duration" visible="true" offset="0x1D"/>
+			<int8 name="Custom Powerup Trait Duration" visible="true" offset="0x1E"/>
+			<int8 name="Unknown" visible="true" offset="0x1F"/>
+		</reflexive>
+		<bitfield32 name="Flags" visible="true" offset="0x58">
+			<bit name="Reset On Disarm" index="0"/>
+		</bitfield32>
+		<enum16 name="Respawn On Capture" visible="true" offset="0x5C">
+			<option name="Disabled" value="0x0"/>
+			<option name="On Ally Capture" value="0x1"/>
+			<option name="On Enemy Capture" value="0x2"/>
+			<option name="On Any Capture" value="0x3"/>
+		</enum16>
+		<enum16 name="Game Mode" visible="true" offset="0x5E">
+			<option name="Multiple" value="0x0"/>
+			<option name="Single" value="0x1"/>
+			<option name="Neutral" value="0x2"/>
+		</enum16>
+		<enum16 name="Enemy Bomb Waypoint" visible="true" offset="0x60">
+			<option name="Unknown1" value="0x0"/>
+			<option name="Unknown2" value="0x1"/>
+			<option name="Unknown3" value="0x2"/>
+			<option name="Not In Single" value="0x3"/>
+		</enum16>
+		<int16 name="Sudden Death Time" visible="true" offset="0x62"/>
+		<int16 name="Detonations To Win" visible="true" offset="0x64"/>
+		<int16 name="Unknown" visible="true" offset="0x66"/>
+		<int16 name="Unknown2" visible="true" offset="0x68"/>
+		<int16 name="Unknown3" visible="true" offset="0x6A"/>
+		<int16 name="Unknown4" visible="true" offset="0x6C"/>
+		<int16 name="Bomb Reset Time" visible="true" offset="0x6E"/>
+		<int16 name="Bomb Arming Time" visible="true" offset="0x70"/>
+		<int16 name="Bomb Disarming Time" visible="true" offset="0x72"/>
+		<int16 name="Bomb Fuse Time" visible="true" offset="0x74"/>
+		<int16 name="Unknown5" visible="true" offset="0x76"/>
+		<stringId name="Bomb Carrier Trait Profile" visible="true" offset="0x78"/>
+		<stringId name="Unknown Trait Profile" visible="true" offset="0x7C"/>
+	</reflexive>
+	<reflexive name="Infection Variants" visible="true" offset="0x40" entrySize="0x7C">
+		<ascii name="Name Ascii" visible="true" offset="0x0" length="0x20"/>
+		<stringId name="Name" visible="true" offset="0x20"/>
+		<stringId name="Description" visible="true" offset="0x24"/>
+		<reflexive name="General Settings" visible="true" offset="0x28" entrySize="0x8">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Teams Enabled" index="0"/>
+				<bit name="Round Resets Players" index="1"/>
+				<bit name="Round Resets Map" index="2"/>
+			</bitfield32>
+			<int8 name="Time Limit" visible="true" offset="0x4"/>
+			<int8 name="Number Of Rounds" visible="true" offset="0x5"/>
+			<int8 name="Early Victory Win Count" visible="true" offset="0x6"/>
+			<enum8 name="Round Resets" visible="true" offset="0x7">
+				<option name="Nothing" value="0x0"/>
+				<option name="Players Only" value="0x1"/>
+				<option name="Everything" value="0x2"/>
+			</enum8>
+		</reflexive>
+		<reflexive name="Respawn Settings" visible="true" offset="0x34" entrySize="0x14">
+			<bitfield16 name="Flags" visible="true" offset="0x0">
+				<bit name="Inherit Respawn Time" index="0"/>
+				<bit name="Respawn With Team" index="1"/>
+				<bit name="Respawn At Location" index="2"/>
+				<bit name="Respawn On Kills" index="3"/>
+			</bitfield16>
+			<int8 name="Lives Per Round" visible="true" offset="0x2"/>
+			<int8 name="Shared Team Lives" visible="true" offset="0x3"/>
+			<uint8 name="Unknown" visible="true" offset="0x4"/>
+			<uint8 name="Respawn Time" visible="true" offset="0x5"/>
+			<uint8 name="Suicide Penalty" visible="true" offset="0x6"/>
+			<uint8 name="Betrayal Penalty" visible="true" offset="0x7"/>
+			<uint8 name="Respawn Time Growth" visible="true" offset="0x8"/>
+			<int8 name="Unknown1" visible="true" offset="0x9"/>
+			<int8 name="Unknown2" visible="true" offset="0xA"/>
+			<int8 name="Unknown3" visible="true" offset="0xB"/>
+			<stringId name="Respawn Trait Profile" visible="true" offset="0xC"/>
+			<int8 name="Respawn Trait Duration" visible="true" offset="0x10"/>
+			<int8 name="Unknown4" visible="true" offset="0x11"/>
+			<int8 name="Unknown5" visible="true" offset="0x12"/>
+			<int8 name="Unknown6" visible="true" offset="0x13"/>
+		</reflexive>
+		<reflexive name="Social Settings" visible="true" offset="0x40" entrySize="0x4">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Observers Enabled" index="0"/>
+				<bit name="Team Changing Enabled" index="1"/>
+				<bit name="Balanced Team Changing" index="2"/>
+				<bit name="Friendly Fire Enabled" index="3"/>
+				<bit name="Betrayal Booting Enabled" index="4"/>
+				<bit name="Enemy Voice Enabled" index="5"/>
+				<bit name="Open Channel Voice Enabled" index="6"/>
+				<bit name="Dead Player Voice Enabled" index="7"/>
+			</bitfield32>
+		</reflexive>
+		<reflexive name="Map Overrides" visible="true" offset="0x4C" entrySize="0x20">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Grenades On Map" index="0"/>
+				<bit name="Indestructable Vehicles" index="1"/>
+			</bitfield32>
+			<stringId name="Base Player Trait Profile" visible="true" offset="0x4"/>
+			<stringId name="Weapon Set" visible="true" offset="0x8"/>
+			<stringId name="Vehicle Set" visible="true" offset="0xC"/>
+			<stringId name="Overshield Trait Profile" visible="true" offset="0x10"/>
+			<stringId name="Active Camo Trait Profile" visible="true" offset="0x14"/>
+			<stringId name="Custom Powerup Trait Profile" visible="true" offset="0x18"/>
+			<int8 name="Overshield Trait Duration" visible="true" offset="0x1C"/>
+			<int8 name="Active Camo Trait Duration" visible="true" offset="0x1D"/>
+			<int8 name="Custom Powerup Trait Duration" visible="true" offset="0x1E"/>
+			<int8 name="Unknown" visible="true" offset="0x1F"/>
+		</reflexive>
+		<bitfield32 name="Flags" visible="true" offset="0x58">
+			<bit name="Respawn On Haven Move" index="0"/>
+		</bitfield32>
+		<enum16 name="Safe Havens" visible="true" offset="0x5C">
+			<option name="None" value="0x0"/>
+			<option name="Random" value="0x1"/>
+			<option name="Sequence" value="0x2"/>
+		</enum16>
+		<enum16 name="Next Zombie" visible="true" offset="0x5E">
+			<option name="Most Points" value="0x0"/>
+			<option name="First Infected" value="0x1"/>
+			<option name="Unchanged" value="0x2"/>
+			<option name="Random" value="0x3"/>
+		</enum16>
+		<int16 name="Initial Zombie Count" visible="true" offset="0x60"/>
+		<int16 name="Safe Haven Movement Time" visible="true" offset="0x62"/>
+		<int8 name="Zombie Kill Points" visible="true" offset="0x64"/>
+		<int8 name="Infection Points" visible="true" offset="0x65"/>
+		<int8 name="Safe Haven Arrival Points" visible="true" offset="0x66"/>
+		<int8 name="Suicide Points" visible="true" offset="0x67"/>
+		<int8 name="Betrayal Points" visible="true" offset="0x68"/>
+		<int8 name="Last Man Standing Bonus" visible="true" offset="0x69"/>
+		<int8 name="Unknown" visible="true" offset="0x6A"/>
+		<int8 name="Unknown2" visible="true" offset="0x6B"/>
+		<stringId name="Zombie Trait Profile" visible="true" offset="0x6C"/>
+		<stringId name="Alpha Zombie Trait Profile" visible="true" offset="0x70"/>
+		<stringId name="On Haven Trait Profile" visible="true" offset="0x74"/>
+		<stringId name="Last Human Trait Profile" visible="true" offset="0x78"/>
+	</reflexive>
+	<reflexive name="King Of The Hill Variants" visible="true" offset="0x4C" entrySize="0x70">
+		<ascii name="Name Ascii" visible="true" offset="0x0" length="0x20"/>
+		<stringId name="Name" visible="true" offset="0x20"/>
+		<stringId name="Description" visible="true" offset="0x24"/>
+		<reflexive name="General Settings" visible="true" offset="0x28" entrySize="0x8">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Teams Enabled" index="0"/>
+				<bit name="Round Resets Players" index="1"/>
+				<bit name="Round Resets Map" index="2"/>
+			</bitfield32>
+			<int8 name="Time Limit" visible="true" offset="0x4"/>
+			<int8 name="Number Of Rounds" visible="true" offset="0x5"/>
+			<int8 name="Early Victory Win Count" visible="true" offset="0x6"/>
+			<enum8 name="Round Resets" visible="true" offset="0x7">
+				<option name="Nothing" value="0x0"/>
+				<option name="Players Only" value="0x1"/>
+				<option name="Everything" value="0x2"/>
+			</enum8>
+		</reflexive>
+		<reflexive name="Respawn Settings" visible="true" offset="0x34" entrySize="0x14">
+			<bitfield16 name="Flags" visible="true" offset="0x0">
+				<bit name="Inherit Respawn Time" index="0"/>
+				<bit name="Respawn With Team" index="1"/>
+				<bit name="Respawn At Location" index="2"/>
+				<bit name="Respawn On Kills" index="3"/>
+			</bitfield16>
+			<int8 name="Lives Per Round" visible="true" offset="0x2"/>
+			<int8 name="Shared Team Lives" visible="true" offset="0x3"/>
+			<uint8 name="Unknown" visible="true" offset="0x4"/>
+			<uint8 name="Respawn Time" visible="true" offset="0x5"/>
+			<uint8 name="Suicide Penalty" visible="true" offset="0x6"/>
+			<uint8 name="Betrayal Penalty" visible="true" offset="0x7"/>
+			<uint8 name="Respawn Time Growth" visible="true" offset="0x8"/>
+			<int8 name="Unknown1" visible="true" offset="0x9"/>
+			<int8 name="Unknown2" visible="true" offset="0xA"/>
+			<int8 name="Unknown3" visible="true" offset="0xB"/>
+			<stringId name="Respawn Trait Profile" visible="true" offset="0xC"/>
+			<int8 name="Respawn Trait Duration" visible="true" offset="0x10"/>
+			<int8 name="Unknown4" visible="true" offset="0x11"/>
+			<int8 name="Unknown5" visible="true" offset="0x12"/>
+			<int8 name="Unknown6" visible="true" offset="0x13"/>
+		</reflexive>
+		<reflexive name="Social Settings" visible="true" offset="0x40" entrySize="0x4">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Observers Enabled" index="0"/>
+				<bit name="Team Changing Enabled" index="1"/>
+				<bit name="Balanced Team Changing" index="2"/>
+				<bit name="Friendly Fire Enabled" index="3"/>
+				<bit name="Betrayal Booting Enabled" index="4"/>
+				<bit name="Enemy Voice Enabled" index="5"/>
+				<bit name="Open Channel Voice Enabled" index="6"/>
+				<bit name="Dead Player Voice Enabled" index="7"/>
+			</bitfield32>
+		</reflexive>
+		<reflexive name="Map Overrides" visible="true" offset="0x4C" entrySize="0x20">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Grenades On Map" index="0"/>
+				<bit name="Indestructable Vehicles" index="1"/>
+			</bitfield32>
+			<stringId name="Base Player Trait Profile" visible="true" offset="0x4"/>
+			<stringId name="Weapon Set" visible="true" offset="0x8"/>
+			<stringId name="Vehicle Set" visible="true" offset="0xC"/>
+			<stringId name="Overshield Trait Profile" visible="true" offset="0x10"/>
+			<stringId name="Active Camo Trait Profile" visible="true" offset="0x14"/>
+			<stringId name="Custom Powerup Trait Profile" visible="true" offset="0x18"/>
+			<int8 name="Overshield Trait Duration" visible="true" offset="0x1C"/>
+			<int8 name="Active Camo Trait Duration" visible="true" offset="0x1D"/>
+			<int8 name="Custom Powerup Trait Duration" visible="true" offset="0x1E"/>
+			<int8 name="Unknown" visible="true" offset="0x1F"/>
+		</reflexive>
+		<bitfield32 name="Flags" visible="true" offset="0x58">
+			<bit name="Opaque Hill" index="0"/>
+		</bitfield32>
+		<int16 name="Score To Win" visible="true" offset="0x5C"/>
+		<int16 name="Unknown" visible="true" offset="0x5E"/>
+		<enum16 name="Team Scoring" visible="true" offset="0x60">
+			<option name="Sum" value="0x0"/>
+			<option name="Minimum" value="0x1"/>
+			<option name="Maximum" value="0x2"/>
+			<option name="Default" value="0x3"/>
+		</enum16>
+		<enum16 name="Hill Movement" visible="true" offset="0x62">
+			<option name="No Movement" value="0x0"/>
+			<option name="After10 Seconds" value="0x1"/>
+			<option name="After15 Seconds" value="0x2"/>
+			<option name="After30 Seconds" value="0x3"/>
+			<option name="After1 Minute" value="0x4"/>
+			<option name="After2 Minutes" value="0x5"/>
+			<option name="After3 Minutes" value="0x6"/>
+			<option name="After4 Minutes" value="0x7"/>
+			<option name="After5 Minutes" value="0x8"/>
+		</enum16>
+		<enum16 name="Hill Movement Order" visible="true" offset="0x64">
+			<option name="Random" value="0x0"/>
+			<option name="Sequence" value="0x1"/>
+		</enum16>
+		<int16 name="Unknown2" visible="true" offset="0x66"/>
+		<int8 name="On Hill Points" visible="true" offset="0x68"/>
+		<int8 name="Uncontested Control Points" visible="true" offset="0x69"/>
+		<int8 name="Off Hill Points" visible="true" offset="0x6A"/>
+		<int8 name="Kill Points" visible="true" offset="0x6B"/>
+		<stringId name="On Hill Trait Profile" visible="true" offset="0x6C"/>
+	</reflexive>
+	<reflexive name="Territories Variants" visible="true" offset="0x58" entrySize="0x6C">
+		<ascii name="Name Ascii" visible="true" offset="0x0" length="0x20"/>
+		<stringId name="Name" visible="true" offset="0x20"/>
+		<stringId name="Description" visible="true" offset="0x24"/>
+		<reflexive name="General Settings" visible="true" offset="0x28" entrySize="0x8">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Teams Enabled" index="0"/>
+				<bit name="Round Resets Players" index="1"/>
+				<bit name="Round Resets Map" index="2"/>
+			</bitfield32>
+			<int8 name="Time Limit" visible="true" offset="0x4"/>
+			<int8 name="Number Of Rounds" visible="true" offset="0x5"/>
+			<int8 name="Early Victory Win Count" visible="true" offset="0x6"/>
+			<enum8 name="Round Resets" visible="true" offset="0x7">
+				<option name="Nothing" value="0x0"/>
+				<option name="Players Only" value="0x1"/>
+				<option name="Everything" value="0x2"/>
+			</enum8>
+		</reflexive>
+		<reflexive name="Respawn Settings" visible="true" offset="0x34" entrySize="0x14">
+			<bitfield16 name="Flags" visible="true" offset="0x0">
+				<bit name="Inherit Respawn Time" index="0"/>
+				<bit name="Respawn With Team" index="1"/>
+				<bit name="Respawn At Location" index="2"/>
+				<bit name="Respawn On Kills" index="3"/>
+			</bitfield16>
+			<int8 name="Lives Per Round" visible="true" offset="0x2"/>
+			<int8 name="Shared Team Lives" visible="true" offset="0x3"/>
+			<uint8 name="Unknown" visible="true" offset="0x4"/>
+			<uint8 name="Respawn Time" visible="true" offset="0x5"/>
+			<uint8 name="Suicide Penalty" visible="true" offset="0x6"/>
+			<uint8 name="Betrayal Penalty" visible="true" offset="0x7"/>
+			<uint8 name="Respawn Time Growth" visible="true" offset="0x8"/>
+			<int8 name="Unknown1" visible="true" offset="0x9"/>
+			<int8 name="Unknown2" visible="true" offset="0xA"/>
+			<int8 name="Unknown3" visible="true" offset="0xB"/>
+			<stringId name="Respawn Trait Profile" visible="true" offset="0xC"/>
+			<int8 name="Respawn Trait Duration" visible="true" offset="0x10"/>
+			<int8 name="Unknown4" visible="true" offset="0x11"/>
+			<int8 name="Unknown5" visible="true" offset="0x12"/>
+			<int8 name="Unknown6" visible="true" offset="0x13"/>
+		</reflexive>
+		<reflexive name="Social Settings" visible="true" offset="0x40" entrySize="0x4">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Observers Enabled" index="0"/>
+				<bit name="Team Changing Enabled" index="1"/>
+				<bit name="Balanced Team Changing" index="2"/>
+				<bit name="Friendly Fire Enabled" index="3"/>
+				<bit name="Betrayal Booting Enabled" index="4"/>
+				<bit name="Enemy Voice Enabled" index="5"/>
+				<bit name="Open Channel Voice Enabled" index="6"/>
+				<bit name="Dead Player Voice Enabled" index="7"/>
+			</bitfield32>
+		</reflexive>
+		<reflexive name="Map Overrides" visible="true" offset="0x4C" entrySize="0x20">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Grenades On Map" index="0"/>
+				<bit name="Indestructable Vehicles" index="1"/>
+			</bitfield32>
+			<stringId name="Base Player Trait Profile" visible="true" offset="0x4"/>
+			<stringId name="Weapon Set" visible="true" offset="0x8"/>
+			<stringId name="Vehicle Set" visible="true" offset="0xC"/>
+			<stringId name="Overshield Trait Profile" visible="true" offset="0x10"/>
+			<stringId name="Active Camo Trait Profile" visible="true" offset="0x14"/>
+			<stringId name="Custom Powerup Trait Profile" visible="true" offset="0x18"/>
+			<int8 name="Overshield Trait Duration" visible="true" offset="0x1C"/>
+			<int8 name="Active Camo Trait Duration" visible="true" offset="0x1D"/>
+			<int8 name="Custom Powerup Trait Duration" visible="true" offset="0x1E"/>
+			<int8 name="Unknown" visible="true" offset="0x1F"/>
+		</reflexive>
+		<bitfield32 name="Flags" visible="true" offset="0x58">
+			<bit name="One Sided" index="0"/>
+			<bit name="Lock After First Capture" index="1"/>
+		</bitfield32>
+		<enum16 name="Respawn On Capture" visible="true" offset="0x5C">
+			<option name="Disabled" value="0x0"/>
+			<option name="On Ally Capture" value="0x1"/>
+			<option name="On Enemy Capture" value="0x2"/>
+			<option name="On Any Capture" value="0x3"/>
+		</enum16>
+		<int16 name="Territory Capture Time" visible="true" offset="0x5E"/>
+		<int16 name="Sudden Death Time" visible="true" offset="0x60"/>
+		<int16 name="Unknown" visible="true" offset="0x62"/>
+		<stringId name="Defender Trait Profile" visible="true" offset="0x64"/>
+		<stringId name="Attacker Trait Profile" visible="true" offset="0x68"/>
+	</reflexive>
+	<reflexive name="Juggernaut Variants" visible="true" offset="0x64" entrySize="0x74">
+		<ascii name="Name Ascii" visible="true" offset="0x0" length="0x20"/>
+		<stringId name="Name" visible="true" offset="0x20"/>
+		<stringId name="Description" visible="true" offset="0x24"/>
+		<reflexive name="General Settings" visible="true" offset="0x28" entrySize="0x8">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Teams Enabled" index="0"/>
+				<bit name="Round Resets Players" index="1"/>
+				<bit name="Round Resets Map" index="2"/>
+			</bitfield32>
+			<int8 name="Time Limit" visible="true" offset="0x4"/>
+			<int8 name="Number Of Rounds" visible="true" offset="0x5"/>
+			<int8 name="Early Victory Win Count" visible="true" offset="0x6"/>
+			<enum8 name="Round Resets" visible="true" offset="0x7">
+				<option name="Nothing" value="0x0"/>
+				<option name="Players Only" value="0x1"/>
+				<option name="Everything" value="0x2"/>
+			</enum8>
+		</reflexive>
+		<reflexive name="Respawn Settings" visible="true" offset="0x34" entrySize="0x14">
+			<bitfield16 name="Flags" visible="true" offset="0x0">
+				<bit name="Inherit Respawn Time" index="0"/>
+				<bit name="Respawn With Team" index="1"/>
+				<bit name="Respawn At Location" index="2"/>
+				<bit name="Respawn On Kills" index="3"/>
+			</bitfield16>
+			<int8 name="Lives Per Round" visible="true" offset="0x2"/>
+			<int8 name="Shared Team Lives" visible="true" offset="0x3"/>
+			<uint8 name="Unknown" visible="true" offset="0x4"/>
+			<uint8 name="Respawn Time" visible="true" offset="0x5"/>
+			<uint8 name="Suicide Penalty" visible="true" offset="0x6"/>
+			<uint8 name="Betrayal Penalty" visible="true" offset="0x7"/>
+			<uint8 name="Respawn Time Growth" visible="true" offset="0x8"/>
+			<int8 name="Unknown1" visible="true" offset="0x9"/>
+			<int8 name="Unknown2" visible="true" offset="0xA"/>
+			<int8 name="Unknown3" visible="true" offset="0xB"/>
+			<stringId name="Respawn Trait Profile" visible="true" offset="0xC"/>
+			<int8 name="Respawn Trait Duration" visible="true" offset="0x10"/>
+			<int8 name="Unknown4" visible="true" offset="0x11"/>
+			<int8 name="Unknown5" visible="true" offset="0x12"/>
+			<int8 name="Unknown6" visible="true" offset="0x13"/>
+		</reflexive>
+		<reflexive name="Social Settings" visible="true" offset="0x40" entrySize="0x4">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Observers Enabled" index="0"/>
+				<bit name="Team Changing Enabled" index="1"/>
+				<bit name="Balanced Team Changing" index="2"/>
+				<bit name="Friendly Fire Enabled" index="3"/>
+				<bit name="Betrayal Booting Enabled" index="4"/>
+				<bit name="Enemy Voice Enabled" index="5"/>
+				<bit name="Open Channel Voice Enabled" index="6"/>
+				<bit name="Dead Player Voice Enabled" index="7"/>
+			</bitfield32>
+		</reflexive>
+		<reflexive name="Map Overrides" visible="true" offset="0x4C" entrySize="0x20">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Grenades On Map" index="0"/>
+				<bit name="Indestructable Vehicles" index="1"/>
+			</bitfield32>
+			<stringId name="Base Player Trait Profile" visible="true" offset="0x4"/>
+			<stringId name="Weapon Set" visible="true" offset="0x8"/>
+			<stringId name="Vehicle Set" visible="true" offset="0xC"/>
+			<stringId name="Overshield Trait Profile" visible="true" offset="0x10"/>
+			<stringId name="Active Camo Trait Profile" visible="true" offset="0x14"/>
+			<stringId name="Custom Powerup Trait Profile" visible="true" offset="0x18"/>
+			<int8 name="Overshield Trait Duration" visible="true" offset="0x1C"/>
+			<int8 name="Active Camo Trait Duration" visible="true" offset="0x1D"/>
+			<int8 name="Custom Powerup Trait Duration" visible="true" offset="0x1E"/>
+			<int8 name="Unknown" visible="true" offset="0x1F"/>
+		</reflexive>
+		<bitfield32 name="Flags" visible="true" offset="0x58">
+			<bit name="Allied Against Juggernaut" index="0"/>
+			<bit name="Respawn On Lone Juggernaut" index="1"/>
+			<bit name="Goal Zones Enabled" index="2"/>
+		</bitfield32>
+		<enum16 name="First Juggernaut" visible="true" offset="0x5C">
+			<option name="Random" value="0x0"/>
+			<option name="First Kill" value="0x1"/>
+			<option name="First Death" value="0x2"/>
+		</enum16>
+		<enum16 name="Next Juggernaut" visible="true" offset="0x5E">
+			<option name="Killer" value="0x0"/>
+			<option name="Killed" value="0x1"/>
+			<option name="Unchanged" value="0x2"/>
+			<option name="Random" value="0x3"/>
+		</enum16>
+		<enum16 name="Goal Zone Movement" visible="true" offset="0x60">
+			<option name="No Movement" value="0x0"/>
+			<option name="After10 Seconds" value="0x1"/>
+			<option name="After15 Seconds" value="0x2"/>
+			<option name="After30 Seconds" value="0x3"/>
+			<option name="After1 Minute" value="0x4"/>
+			<option name="After2 Minutes" value="0x5"/>
+			<option name="After3 Minutes" value="0x6"/>
+			<option name="After4 Minutes" value="0x7"/>
+			<option name="After5 Minutes" value="0x8"/>
+			<option name="On Arrival" value="0x9"/>
+			<option name="On New Juggernaut" value="0xA"/>
+		</enum16>
+		<enum16 name="Goal Zone Order" visible="true" offset="0x62">
+			<option name="Random" value="0x0"/>
+			<option name="Sequence" value="0x1"/>
+		</enum16>
+		<int16 name="Score To Win" visible="true" offset="0x64"/>
+		<int16 name="Unknown" visible="true" offset="0x66"/>
+		<int8 name="Kill Points" visible="true" offset="0x68"/>
+		<int8 name="Takedown Points" visible="true" offset="0x69"/>
+		<int8 name="Kill As Juggernaut Points" visible="true" offset="0x6A"/>
+		<int8 name="Goal Arrival Points" visible="true" offset="0x6B"/>
+		<int8 name="Suicide Points" visible="true" offset="0x6C"/>
+		<int8 name="Betrayal Points" visible="true" offset="0x6D"/>
+		<int8 name="Next Juggernaut Delay" visible="true" offset="0x6E"/>
+		<int8 name="Unknown2" visible="true" offset="0x6F"/>
+		<stringId name="Juggernaut Trait Profile" visible="true" offset="0x70"/>
+	</reflexive>
+	<reflexive name="Vip Variants" visible="true" offset="0x70" entrySize="0x7C">
+		<ascii name="Name Ascii" visible="true" offset="0x0" length="0x20"/>
+		<stringId name="Name" visible="true" offset="0x20"/>
+		<stringId name="Description" visible="true" offset="0x24"/>
+		<reflexive name="General Settings" visible="true" offset="0x28" entrySize="0x8">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Teams Enabled" index="0"/>
+				<bit name="Round Resets Players" index="1"/>
+				<bit name="Round Resets Map" index="2"/>
+			</bitfield32>
+			<int8 name="Time Limit" visible="true" offset="0x4"/>
+			<int8 name="Number Of Rounds" visible="true" offset="0x5"/>
+			<int8 name="Early Victory Win Count" visible="true" offset="0x6"/>
+			<enum8 name="Round Resets" visible="true" offset="0x7">
+				<option name="Nothing" value="0x0"/>
+				<option name="Players Only" value="0x1"/>
+				<option name="Everything" value="0x2"/>
+			</enum8>
+		</reflexive>
+		<reflexive name="Respawn Settings" visible="true" offset="0x34" entrySize="0x14">
+			<bitfield16 name="Flags" visible="true" offset="0x0">
+				<bit name="Inherit Respawn Time" index="0"/>
+				<bit name="Respawn With Team" index="1"/>
+				<bit name="Respawn At Location" index="2"/>
+				<bit name="Respawn On Kills" index="3"/>
+			</bitfield16>
+			<int8 name="Lives Per Round" visible="true" offset="0x2"/>
+			<int8 name="Shared Team Lives" visible="true" offset="0x3"/>
+			<uint8 name="Unknown" visible="true" offset="0x4"/>
+			<uint8 name="Respawn Time" visible="true" offset="0x5"/>
+			<uint8 name="Suicide Penalty" visible="true" offset="0x6"/>
+			<uint8 name="Betrayal Penalty" visible="true" offset="0x7"/>
+			<uint8 name="Respawn Time Growth" visible="true" offset="0x8"/>
+			<int8 name="Unknown1" visible="true" offset="0x9"/>
+			<int8 name="Unknown2" visible="true" offset="0xA"/>
+			<int8 name="Unknown3" visible="true" offset="0xB"/>
+			<stringId name="Respawn Trait Profile" visible="true" offset="0xC"/>
+			<int8 name="Respawn Trait Duration" visible="true" offset="0x10"/>
+			<int8 name="Unknown4" visible="true" offset="0x11"/>
+			<int8 name="Unknown5" visible="true" offset="0x12"/>
+			<int8 name="Unknown6" visible="true" offset="0x13"/>
+		</reflexive>
+		<reflexive name="Social Settings" visible="true" offset="0x40" entrySize="0x4">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Observers Enabled" index="0"/>
+				<bit name="Team Changing Enabled" index="1"/>
+				<bit name="Balanced Team Changing" index="2"/>
+				<bit name="Friendly Fire Enabled" index="3"/>
+				<bit name="Betrayal Booting Enabled" index="4"/>
+				<bit name="Enemy Voice Enabled" index="5"/>
+				<bit name="Open Channel Voice Enabled" index="6"/>
+				<bit name="Dead Player Voice Enabled" index="7"/>
+			</bitfield32>
+		</reflexive>
+		<reflexive name="Map Overrides" visible="true" offset="0x4C" entrySize="0x20">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Grenades On Map" index="0"/>
+				<bit name="Indestructable Vehicles" index="1"/>
+			</bitfield32>
+			<stringId name="Base Player Trait Profile" visible="true" offset="0x4"/>
+			<stringId name="Weapon Set" visible="true" offset="0x8"/>
+			<stringId name="Vehicle Set" visible="true" offset="0xC"/>
+			<stringId name="Overshield Trait Profile" visible="true" offset="0x10"/>
+			<stringId name="Active Camo Trait Profile" visible="true" offset="0x14"/>
+			<stringId name="Custom Powerup Trait Profile" visible="true" offset="0x18"/>
+			<int8 name="Overshield Trait Duration" visible="true" offset="0x1C"/>
+			<int8 name="Active Camo Trait Duration" visible="true" offset="0x1D"/>
+			<int8 name="Custom Powerup Trait Duration" visible="true" offset="0x1E"/>
+			<int8 name="Unknown" visible="true" offset="0x1F"/>
+		</reflexive>
+		<bitfield32 name="Flags" visible="true" offset="0x58">
+			<bit name="Single Vip" index="0"/>
+			<bit name="Goal Zones Enabled" index="1"/>
+			<bit name="End Round On Vip Death" index="2"/>
+		</bitfield32>
+		<int16 name="Score To Win" visible="true" offset="0x5C"/>
+		<int16 name="Unknown" visible="true" offset="0x5E"/>
+		<enum16 name="Next Vip" visible="true" offset="0x60">
+			<option name="Random" value="0x0"/>
+			<option name="Unknown" value="0x1"/>
+			<option name="Next Death" value="0x2"/>
+			<option name="Unchanged" value="0x3"/>
+		</enum16>
+		<enum16 name="Goal Zone Movement" visible="true" offset="0x62">
+			<option name="No Movement" value="0x0"/>
+			<option name="After10 Seconds" value="0x1"/>
+			<option name="After15 Seconds" value="0x2"/>
+			<option name="After30 Seconds" value="0x3"/>
+			<option name="After1 Minute" value="0x4"/>
+			<option name="After2 Minutes" value="0x5"/>
+			<option name="After3 Minutes" value="0x6"/>
+			<option name="After4 Minutes" value="0x7"/>
+			<option name="After5 Minutes" value="0x8"/>
+			<option name="On Arrival" value="0x9"/>
+			<option name="On New Vip" value="0xA"/>
+		</enum16>
+		<enum16 name="Goal Zone Movement Order" visible="true" offset="0x64">
+			<option name="Random" value="0x0"/>
+			<option name="Sequence" value="0x1"/>
+		</enum16>
+		<int8 name="Kill Points" visible="true" offset="0x66"/>
+		<int8 name="Vip Takedown Points" visible="true" offset="0x67"/>
+		<int8 name="Kill As Vip Points" visible="true" offset="0x68"/>
+		<int8 name="Vip Death Points" visible="true" offset="0x69"/>
+		<int8 name="Goal Arrival Points" visible="true" offset="0x6A"/>
+		<int8 name="Suicide Points" visible="true" offset="0x6B"/>
+		<int8 name="Vip Betrayal Points" visible="true" offset="0x6C"/>
+		<int8 name="Betrayal Points" visible="true" offset="0x6D"/>
+		<int8 name="Vip Proximity Trait Radius" visible="true" offset="0x6E"/>
+		<int8 name="Unknown2" visible="true" offset="0x6F"/>
+		<stringId name="Vip Team Trait Profile" visible="true" offset="0x70"/>
+		<stringId name="Vip Proximity Trait Profile" visible="true" offset="0x74"/>
+		<stringId name="Vip Trait Profile" visible="true" offset="0x78"/>
+	</reflexive>
+	<reflexive name="Sandbox Editor Variants" visible="true" offset="0x7C" entrySize="0x64">
+		<ascii name="Name Ascii" visible="true" offset="0x0" length="0x20"/>
+		<stringId name="Name" visible="true" offset="0x20"/>
+		<stringId name="Description" visible="true" offset="0x24"/>
+		<reflexive name="General Settings" visible="true" offset="0x28" entrySize="0x8">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Teams Enabled" index="0"/>
+				<bit name="Round Resets Players" index="1"/>
+				<bit name="Round Resets Map" index="2"/>
+			</bitfield32>
+			<int8 name="Time Limit" visible="true" offset="0x4"/>
+			<int8 name="Number Of Rounds" visible="true" offset="0x5"/>
+			<int8 name="Early Victory Win Count" visible="true" offset="0x6"/>
+			<enum8 name="Round Resets" visible="true" offset="0x7">
+				<option name="Nothing" value="0x0"/>
+				<option name="Players Only" value="0x1"/>
+				<option name="Everything" value="0x2"/>
+			</enum8>
+		</reflexive>
+		<reflexive name="Respawn Settings" visible="true" offset="0x34" entrySize="0x14">
+			<bitfield16 name="Flags" visible="true" offset="0x0">
+				<bit name="Inherit Respawn Time" index="0"/>
+				<bit name="Respawn With Team" index="1"/>
+				<bit name="Respawn At Location" index="2"/>
+				<bit name="Respawn On Kills" index="3"/>
+			</bitfield16>
+			<int8 name="Lives Per Round" visible="true" offset="0x2"/>
+			<int8 name="Shared Team Lives" visible="true" offset="0x3"/>
+			<uint8 name="Unknown" visible="true" offset="0x4"/>
+			<uint8 name="Respawn Time" visible="true" offset="0x5"/>
+			<uint8 name="Suicide Penalty" visible="true" offset="0x6"/>
+			<uint8 name="Betrayal Penalty" visible="true" offset="0x7"/>
+			<uint8 name="Respawn Time Growth" visible="true" offset="0x8"/>
+			<int8 name="Unknown1" visible="true" offset="0x9"/>
+			<int8 name="Unknown2" visible="true" offset="0xA"/>
+			<int8 name="Unknown3" visible="true" offset="0xB"/>
+			<stringId name="Respawn Trait Profile" visible="true" offset="0xC"/>
+			<int8 name="Respawn Trait Duration" visible="true" offset="0x10"/>
+			<int8 name="Unknown4" visible="true" offset="0x11"/>
+			<int8 name="Unknown5" visible="true" offset="0x12"/>
+			<int8 name="Unknown6" visible="true" offset="0x13"/>
+		</reflexive>
+		<reflexive name="Social Settings" visible="true" offset="0x40" entrySize="0x4">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Observers Enabled" index="0"/>
+				<bit name="Team Changing Enabled" index="1"/>
+				<bit name="Balanced Team Changing" index="2"/>
+				<bit name="Friendly Fire Enabled" index="3"/>
+				<bit name="Betrayal Booting Enabled" index="4"/>
+				<bit name="Enemy Voice Enabled" index="5"/>
+				<bit name="Open Channel Voice Enabled" index="6"/>
+				<bit name="Dead Player Voice Enabled" index="7"/>
+			</bitfield32>
+		</reflexive>
+		<reflexive name="Map Overrides" visible="true" offset="0x4C" entrySize="0x20">
+			<bitfield32 name="Flags" visible="true" offset="0x0">
+				<bit name="Grenades On Map" index="0"/>
+				<bit name="Indestructable Vehicles" index="1"/>
+			</bitfield32>
+			<stringId name="Base Player Trait Profile" visible="true" offset="0x4"/>
+			<stringId name="Weapon Set" visible="true" offset="0x8"/>
+			<stringId name="Vehicle Set" visible="true" offset="0xC"/>
+			<stringId name="Overshield Trait Profile" visible="true" offset="0x10"/>
+			<stringId name="Active Camo Trait Profile" visible="true" offset="0x14"/>
+			<stringId name="Custom Powerup Trait Profile" visible="true" offset="0x18"/>
+			<int8 name="Overshield Trait Duration" visible="true" offset="0x1C"/>
+			<int8 name="Active Camo Trait Duration" visible="true" offset="0x1D"/>
+			<int8 name="Custom Powerup Trait Duration" visible="true" offset="0x1E"/>
+			<int8 name="Unknown" visible="true" offset="0x1F"/>
+		</reflexive>
+		<bitfield32 name="Flags" visible="true" offset="0x58">
+			<bit name="Open Channel Voice Enabled" index="0"/>
+		</bitfield32>
+		<enum16 name="Edit Mode" visible="true" offset="0x5C">
+			<option name="Everyone" value="0x0"/>
+			<option name="Leader Only" value="0x1"/>
+		</enum16>
+		<int16 name="Editor Respawn Time" visible="true" offset="0x5E"/>
+		<stringId name="Editor Trait Profile" visible="true" offset="0x60"/>
+	</reflexive>
+	<uint32 name="Unknown2" visible="true" offset="0x88"/>
+</plugin>

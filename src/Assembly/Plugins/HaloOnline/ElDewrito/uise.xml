@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x14C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<tagref name="Error" visible="true" offset="0x0"/>
+	<tagref name="Vertical Navigation" visible="true" offset="0x10"/>
+	<tagref name="Horizontal Navigation" visible="true" offset="0x20"/>
+	<tagref name="AButton" visible="true" offset="0x30"/>
+	<tagref name="BButton" visible="true" offset="0x40"/>
+	<tagref name="XButton" visible="true" offset="0x50"/>
+	<tagref name="YButton" visible="true" offset="0x60"/>
+	<tagref name="Start Button" visible="true" offset="0x70"/>
+	<tagref name="Back Button" visible="true" offset="0x80"/>
+	<tagref name="Left Bumper" visible="true" offset="0x90"/>
+	<tagref name="Right Bumper" visible="true" offset="0xA0"/>
+	<tagref name="Left Trigger" visible="true" offset="0xB0"/>
+	<tagref name="Right Trigger" visible="true" offset="0xC0"/>
+	<tagref name="Timer Sound" visible="true" offset="0xD0"/>
+	<tagref name="Timer Sound Zero" visible="true" offset="0xE0"/>
+	<tagref name="Alt Timer Sound" visible="true" offset="0xF0"/>
+	<tagref name="Second Alt Timer Sound" visible="true" offset="0x100"/>
+	<tagref name="Matchmaking Advance Sound" visible="true" offset="0x110"/>
+	<tagref name="Rank Up" visible="true" offset="0x120"/>
+	<tagref name="Matchmaking Party Up Sound" visible="true" offset="0x130"/>
+	<reflexive name="Atlas Sounds" visible="true" offset="0x140" entrySize="0x14">
+		<stringId name="Name" visible="true" offset="0x0"/>
+		<tagref name="Sound" visible="true" offset="0x4"/>
+	</reflexive>
+</plugin>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="ElDewrito" baseSize="0x98">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="TagTool" version="1">Generated plugin from TagTool definitions.</revision>
+	</revisions>
+	<degree name="Falloff Angle" visible="true" offset="0x0"/>
+	<degree name="Cutoff Angle" visible="true" offset="0x4"/>
+	<float32 name="Occlusion Radius" visible="true" offset="0x8"/>
+	<bitfield16 name="Unknown Flags" visible="true" offset="0xC">
+		<bit name="Bit0" index="0"/>
+		<bit name="Bit1" index="1"/>
+	</bitfield16>
+	<enum16 name="Occlusion Offset Direction" visible="true" offset="0xE">
+		<option name="Toward Viewer" value="0x0"/>
+		<option name="Marker Forward" value="0x1"/>
+		<option name="None" value="0x2"/>
+	</enum16>
+	<uint32 name="Unknown1" visible="true" offset="0x10"/>
+	<uint32 name="Unknown2" visible="true" offset="0x14"/>
+	<float32 name="Near Fade Distance" visible="true" offset="0x18"/>
+	<float32 name="Far Fade Distance" visible="true" offset="0x1C"/>
+	<tagref name="Bitmap" visible="true" offset="0x20"/>
+	<bitfield16 name="Flags" visible="true" offset="0x30">
+		<bit name="Rotate Occlusion Testing Box With Lens Flare" index="0"/>
+		<bit name="No Occlusion Test" index="1"/>
+		<bit name="Only Render In First Person" index="2"/>
+		<bit name="Only Render In Third Person" index="3"/>
+		<bit name="No Reflection Opacity Feedback" index="4"/>
+		<bit name="Scale By Marker" index="5"/>
+		<bit name="Do Not Autofade" index="6"/>
+		<bit name="Do Not Render While Zoomed" index="7"/>
+		<bit name="Use Separate XAnd YFalloff Angles" index="8"/>
+	</bitfield16>
+	<int16 name="Runtime Flags" visible="true" offset="0x32"/>
+	<enum16 name="Rotation Function" visible="true" offset="0x34">
+		<option name="None" value="0x0"/>
+		<option name="Rotation A" value="0x1"/>
+		<option name="Rotation B" value="0x2"/>
+		<option name="Rotation Translation" value="0x3"/>
+		<option name="Translation" value="0x4"/>
+	</enum16>
+	<uint8 name="Unused2 Padding 0" visible="false" offset="0x36"/>
+	<uint8 name="Unused2 Padding 1" visible="false" offset="0x37"/>
+	<degree name="Rotation Function Scale" visible="true" offset="0x38"/>
+	<enum16 name="Falloff Function" visible="true" offset="0x3C">
+		<option name="Linear" value="0x0"/>
+		<option name="Late" value="0x1"/>
+		<option name="Very Late" value="0x2"/>
+		<option name="Early" value="0x3"/>
+		<option name="Very Early" value="0x4"/>
+		<option name="Cosine" value="0x5"/>
+		<option name="Zero" value="0x6"/>
+		<option name="One" value="0x7"/>
+	</enum16>
+	<uint8 name="Unused3 Padding 0" visible="false" offset="0x3E"/>
+	<uint8 name="Unused3 Padding 1" visible="false" offset="0x3F"/>
+	<reflexive name="Reflections" visible="true" offset="0x40" entrySize="0x1C">
+		<bitfield16 name="Flags" visible="true" offset="0x0">
+			<bit name="Align Rotation With Screen Center" index="0"/>
+			<bit name="Radius Not Scaled By Distance" index="1"/>
+			<bit name="Radius Scaled By Occlusion Factor" index="2"/>
+			<bit name="Occluded By Solid Objects" index="3"/>
+			<bit name="Ignore Light Color" index="4"/>
+			<bit name="Not Affected By Inner Occlusion" index="5"/>
+		</bitfield16>
+		<int16 name="Bitmap Index" visible="true" offset="0x2"/>
+		<float32 name="Position Flare Axis" visible="true" offset="0x4"/>
+		<colorf name="Tint Color" visible="true" offset="0x8" format="rgb"/>
+		<float32 name="Tint Modulation Factor_ HO" visible="true" offset="0x14"/>
+		<float32 name="Tint Power" visible="true" offset="0x18"/>
+	</reflexive>
+	<bitfield16 name="Animation Flags" visible="true" offset="0x4C">
+		<bit name="Synchronized" index="0"/>
+	</bitfield16>
+	<uint8 name="Unused4 Padding 0" visible="false" offset="0x4E"/>
+	<uint8 name="Unused4 Padding 1" visible="false" offset="0x4F"/>
+	<reflexive name="Time Brightness" visible="true" offset="0x50" entrySize="0x14">
+		<dataRef name="Function" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Age Brightness" visible="true" offset="0x5C" entrySize="0x14">
+		<dataRef name="Function" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Time Color" visible="true" offset="0x68" entrySize="0x24">
+		<stringId name="Input Variable" visible="true" offset="0x0"/>
+		<stringId name="Range Variable" visible="true" offset="0x4"/>
+		<enum16 name="Output Modifier" visible="true" offset="0x8">
+			<option name="None" value="0x0"/>
+			<option name="Add" value="0x1"/>
+			<option name="Multiply" value="0x2"/>
+		</enum16>
+		<uint8 name="Unused Padding 0" visible="false" offset="0xA"/>
+		<uint8 name="Unused Padding 1" visible="false" offset="0xB"/>
+		<stringId name="Output Modifier Input" visible="true" offset="0xC"/>
+		<dataRef name="Function" visible="true" offset="0x10"/>
+	</reflexive>
+	<reflexive name="Age Color" visible="true" offset="0x74" entrySize="0x24">
+		<stringId name="Input Variable" visible="true" offset="0x0"/>
+		<stringId name="Range Variable" visible="true" offset="0x4"/>
+		<enum16 name="Output Modifier" visible="true" offset="0x8">
+			<option name="None" value="0x0"/>
+			<option name="Add" value="0x1"/>
+			<option name="Multiply" value="0x2"/>
+		</enum16>
+		<uint8 name="Unused Padding 0" visible="false" offset="0xA"/>
+		<uint8 name="Unused Padding 1" visible="false" offset="0xB"/>
+		<stringId name="Output Modifier Input" visible="true" offset="0xC"/>
+		<dataRef name="Function" visible="true" offset="0x10"/>
+	</reflexive>
+	<reflexive name="Time Rotation" visible="true" offset="0x80" entrySize="0x14">
+		<dataRef name="Function" visible="true" offset="0x0"/>
+	</reflexive>
+	<reflexive name="Age Rotation" visible="true" offset="0x8C" entrySize="0x14">
+		<dataRef name="Function" visible="true" offset="0x0"/>
+	</reflexive>
+</plugin>
