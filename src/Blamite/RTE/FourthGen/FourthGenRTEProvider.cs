@@ -9,13 +9,14 @@ using Blamite.IO;
 using Blamite.Native;
 using Blamite.Util;
 using Blamite.Serialization;
+using Blamite.RTE.FourthGen;
 
 namespace Blamite.RTE.Eldorado
 {
 	/// <summary>
 	/// A real-time editing provider which connects to Halo Online.
 	/// </summary>
-	public class EldoradoRTEProvider : IRTEProvider
+	public class EldoradoRTEProvider : MCCRTEProvider
 	{
 		/// <summary>
 		///     Constructs a new ThirdGenMCCRTEProvider.
@@ -44,7 +45,7 @@ namespace Blamite.RTE.Eldorado
 				throw new NotImplementedException("Poking information is missing required values.");
 
 			var gameMemory = new ProcessModuleMemoryStream(gameProcess, _buildInfo.GameModule);
-			var mapInfo = new ThirdGenMapPointerReader(gameMemory, _buildInfo, info);
+			var mapInfo = new FourthGenMapPointerReader(gameMemory, _buildInfo, info);
 
 			long metaMagic = mapInfo.CurrentCacheAddress;
 
@@ -64,7 +65,6 @@ namespace Blamite.RTE.Eldorado
 			return new EndianStream(metaStream, BitConverter.IsLittleEndian ? Endian.LittleEndian : Endian.BigEndian);
 		}
 	}
-
 	/* public class MS25RTEProvider : EldoradoRTEProvider
 	{
 		public MS25RTEProvider(string exeName) : base(exeName)
