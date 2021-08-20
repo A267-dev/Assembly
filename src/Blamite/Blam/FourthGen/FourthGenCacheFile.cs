@@ -23,7 +23,7 @@ namespace Blamite.Blam.FourthGen
     /// <summary>
     ///     A Forth-Generation Blam (map/dat) cache file.
     /// </summary>
-    public class FourthGenCacheFile : ICacheFile.SaveChanges(IStream)
+    public class FourthGenCacheFile : ICacheFile
     {
         private readonly EngineDescription _buildInfo;
         private readonly FileSegmenter _segmenter;
@@ -48,9 +48,9 @@ namespace Blamite.Blam.FourthGen
             FilePath = filePath;
             _endianness = reader.Endianness;
             _buildInfo = buildInfo;
-            _segmenter = FileSegmenter(buildInfo.SegmentAlignment);
-            _expander = FourthGenPointerExpander(buildInfo.ExpandMagic);
-            Allocator = MetaAllocator(this, 0x10000);
+            _segmenter = new FileSegmenter(buildInfo.SegmentAlignment);
+            _expander = new FourthGenPointerExpander(buildInfo.ExpandMagic);
+            Allocator = new MetaAllocator(this, 0x10000);
             Load(reader);
         }
 
@@ -59,9 +59,10 @@ namespace Blamite.Blam.FourthGen
             get { return _header; }
         }
 
-        public void SaveChanges(Istream stream)
+        public void SaveChanges(IStream stream)
         {
             _tags.SaveChanges(stream);
+			/*_fileNames.SaveChanges(stream);
             _stringIds.SaveChanges(stream);
             if (_simulationDefinitions !=null)
                 _simulationDefinitions.SaveChanges(stream);
@@ -76,6 +77,12 @@ namespace Blamite.Blam.FourthGen
 				stream.SeekTo(checksumOffset);
 				stream.WriteUInt32(_header.Checksum);
 			}
+			*/
+        }
+
+		public void SaveFileNames(IStream stream)
+        {
+            _fileNames.SaveChanges(stream);
         }
 
         public string FilePath { get; private set; }
@@ -260,41 +267,45 @@ namespace Blamite.Blam.FourthGen
 			var resolver = LoadStringIDNamespaces(reader);
 			LoadStringIDs(reader, resolver);
 			LoadTags(reader);
-			LoadLanguageGlobals(reader);
+			//LoadLanguageGlobals(reader);
 			LoadScriptFiles();
 			LoadResourceManager(reader);
 			LoadSoundResourceManager(reader);
-			LoadSimulationDefinitions(reader);
-			LoadEffects(reader);
-            ShaderStreamer = FourthGenShaderStreaner(this, _buildInfo);
+			//LoadSimulationDefinitions(reader);
+			//LoadEffects(reader);
+            //ShaderStreamer = FourthGenShaderStreaner(this, _buildInfo);
         }
 
         private void LoadHeader(IReader reader)
 		{
 			reader.SeekTo(0);
 			StructureValueCollection values = StructureReader.ReadStructure(reader, _buildInfo.Layouts.GetLayout("header"));
-			_header = FourthGenHeader(values, _buildInfo, _segmenter, _expander);
+			_header = new FourthGenHeader(values, _buildInfo, _segmenter, _expander);
         }
 
         private void LoadTags(IReader reader)
 		{
+			/*
 			if (_header.IndexHeaderLocation == null)
 			{
                 _tags = FourthGenTagTable();
                 return;
             }
+			*/
 
-            _tags = FourthGenTagTable(reader, _header.IndexHeaderLocation, _header.MetaArea, Allocator, _buildInfo, _expander);
-            _resourceMetaLoader = FourthGenResourceMetaLoader(_buildInfo, _header.MetaArea);
+			_tags = new FourthGenTagTable(reader, Allocator, _buildInfo);
+            //_tags = FourthGenTagTable(reader, _header.IndexHeaderLocation, _header.MetaArea, Allocator, _buildInfo, _expander);
+            _//resourceMetaLoader = FourthGenResourceMetaLoader(_buildInfo, _header.MetaArea);
+			_resourceMetaLoader = new FourthGenResourceMetaLoader(_buildInfo, null);
         }
 
         private void LoadFileNames(IReader reader)
 		{
 			if (_header.FileNameCount > 0)
 			{
-				var stringTable = IndexedStringTable(reader, _header.FileNameCount, _header.FileNameIndexTable,
+				var stringTable = new IndexedStringTable(reader, _header.FileNameCount, _header.FileNameIndexTable,
 					_header.FileNameData, _buildInfo.TagNameKey);
-				_fileNames = IndexedFileNameSource(stringTable);
+				_fileNames = new IndexedFileNameSource(stringTable);
 			}
 		}
 
@@ -342,9 +353,9 @@ namespace Blamite.Blam.FourthGen
 		{
 			if (_header.StringIDCount > 0)
 			{
-				var stringTable = IndexedStringTable(reader, _header.StringIDCount, _header.StringIDIndexTable,
+				var stringTable = new IndexedStringTable(reader, _header.StringIDCount, _header.StringIDIndexTable,
 					_header.StringIDData, _buildInfo.StringIDKey);
-				_stringIds = IndexedStringIDSource(stringTable, resolver != null ? resolver : _buildInfo.StringIDs);
+				_stringIds = new IndexedStringIDSource(stringTable, resolver != null ? resolver : _buildInfo.StringIDs);
 			}
 		}
 
@@ -356,15 +367,15 @@ namespace Blamite.Blam.FourthGen
 			if (!FindLanguageTable(out languageTag, out tagLayout))
 			{
 				// No language data
-				_languageLoader = FourthGenLanguagePackLoader();
+				_languageLoader = new FourthGenLanguagePackLoader();
 				return;
 			}
 
 			// Read it
 			reader.SeekTo(languageTag.MetaLocation.AsOffset());
 			StructureValueCollection values = StructureReader.ReadStructure(reader, tagLayout);
-			_languageInfo = FourthGenLanguageGlobals(values, _segmenter, _header.LocalePointerConverter, _buildInfo);
-			_languageLoader = FourthGenLanguagePackLoader(this, _languageInfo, _buildInfo, reader);
+			_languageInfo = new FourthGenLanguageGlobals(values, _segmenter, _header.LocalePointerConverter, _buildInfo);
+			_languageLoader = new FourthGenLanguagePackLoader(this, _languageInfo, _buildInfo, reader);
 		}
 
         private bool FindLanguageTable(out ITag tag, out StructureLayout layout)
@@ -403,18 +414,18 @@ namespace Blamite.Blam.FourthGen
 				FourthGenResourceGestalt gestalt = null;
 				FourthGenResourceLayoutTable layoutTable = null;
 				if (canLoadZone)
-					gestalt = FourthGenResourceGestalt(reader, zoneTag, MetaArea, Allocator, StringIDs, _buildInfo, _expander);
+					gestalt = new FourthGenResourceGestalt(reader, zoneTag, MetaArea, Allocator, StringIDs, _buildInfo, _expander);
 
 				if (canLoadPlay)
-					layoutTable = FourthGenResourceLayoutTable(playTag, MetaArea, Allocator, _buildInfo, _expander);
+					layoutTable = new FourthGenResourceLayoutTable(playTag, MetaArea, Allocator, _buildInfo, _expander);
 				else if (canLoadZone && haveAltPlayLayout)
 				{
-					layoutTable = FourthGenResourceLayoutTable(zoneTag, MetaArea, Allocator, _buildInfo, _expander);
+					layoutTable = new FourthGenResourceLayoutTable(zoneTag, MetaArea, Allocator, _buildInfo, _expander);
 					_zoneOnly = true;
 				}
 					
 
-				_resources = FourthGenResourceManager(gestalt, layoutTable, _tags, MetaArea, Allocator, _buildInfo, _expander);
+				_resources = new FourthGenResourceManager(gestalt, layoutTable, _tags, MetaArea, Allocator, _buildInfo, _expander);
 			}
 		}
 
@@ -428,9 +439,9 @@ namespace Blamite.Blam.FourthGen
 			{
 				SoundResourceGestalt gestalt = null;
 				if (canLoadUgh)
-					gestalt = SoundResourceGestalt(reader, ughTag, MetaArea, Allocator, _buildInfo, _expander);
+					gestalt = new SoundResourceGestalt(reader, ughTag, MetaArea, Allocator, _buildInfo, _expander);
 
-				_soundGestalt = SoundResourceManager(gestalt, _tags, MetaArea, Allocator, _buildInfo, _expander);
+				_soundGestalt = new SoundResourceManager(gestalt, _tags, MetaArea, Allocator, _buildInfo, _expander);
 			}
 		}
 
@@ -459,7 +470,7 @@ namespace Blamite.Blam.FourthGen
 			{
 				ITag scnr = _tags.FindTagByGroup("scnr");
 				if (scnr != null)
-					_simulationDefinitions = FourthGenSimulationDefinitionTable(scnr, _tags, reader, MetaArea, Allocator, _buildInfo, _expander);
+					_simulationDefinitions = new FourthGenSimulationDefinitionTable(scnr, _tags, reader, MetaArea, Allocator, _buildInfo, _expander);
 			}
 		}
 
@@ -475,7 +486,7 @@ namespace Blamite.Blam.FourthGen
 
         private int WriteHeader(IWriter writer)
 		{
-			_header.FileNameCount = _fileNames.Count;
+			//_header.FileNameCount = _fileNames.Count;
 			_header.StringIDCount = _stringIds.Count;
          
 			StructureValueCollection values = _header.Serialize(_languageInfo.LocaleArea);
