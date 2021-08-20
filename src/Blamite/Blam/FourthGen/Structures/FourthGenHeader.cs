@@ -307,7 +307,7 @@ namespace Blamite.Blam.FourthGen.Structures
 			if (headerValues.HasArray("offset masks") && headerValues.HasArray("sections"))
 			{
 				SectionOffsetMasks = headerValues.GetArray("offset masks").Select(v => (uint)v.GetInteger("mask")).ToArray();
-				Sections = headerValues.GetArray("sections").Select(v => FourthGenInteropSection(v)).ToArray();
+				Sections = headerValues.GetArray("sections").Select(v => new FourthGenInteropSection(v)).ToArray();
 				
 				// H3 MCC currently doesn't store section data for campaign/shared, so it must be hacked together
 				if (_expander.IsValid && (Type == CacheFileType.Shared || Type == CacheFileType.SinglePlayerShared))
@@ -323,14 +323,14 @@ namespace Blamite.Blam.FourthGen.Structures
 			{
 				SectionOffsetMasks = new uint[] { 0, 0, 0, 0 };
 
-				FourthGenInteropSection debugSection = FourthGenInteropSection(
+				FourthGenInteropSection debugSection = new FourthGenInteropSection(
 					(uint)headerValues.GetInteger("string index table offset"),
 					(uint)(headerValues.GetInteger("file size") - headerValues.GetInteger("string index table offset")));
-				FourthGenInteropSection resourceSection = FourthGenInteropSection(0, 0); // this is between locales and tag, so if we had a locale size, this section could be calculated. Using 0's for now seems to work at least
-				FourthGenInteropSection tagSection = FourthGenInteropSection(
+				FourthGenInteropSection resourceSection = new FourthGenInteropSection(0, 0); // this is between locales and tag, so if we had a locale size, this section could be calculated. Using 0's for now seems to work at least
+				FourthGenInteropSection tagSection = new FourthGenInteropSection(
 					(uint)headerValues.GetInteger("tag buffer offset"),
 					(uint)headerValues.GetInteger("virtual size"));
-				FourthGenInteropSection localeSection = FourthGenInteropSection(
+				FourthGenInteropSection localeSection = new FourthGenInteropSection(
 					(uint)HeaderSize,
 					(uint)headerValues.GetInteger("tag buffer offset")); //bs the size for now
 
@@ -350,7 +350,7 @@ namespace Blamite.Blam.FourthGen.Structures
 
 			uint baseAddress = Sections[(int) section].VirtualAddress;
 			uint mask = SectionOffsetMasks[(int) section];
-			return BasedPointerConverter(baseAddress, (int) (baseAddress + mask));
+			return new BasedPointerConverter(baseAddress, (int) (baseAddress + mask));
 		}
 
 		private FileSegment CalculateRawTableSegment(FileSegmenter segmenter)

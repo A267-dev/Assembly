@@ -234,7 +234,7 @@ namespace Blamite.Blam.FourthGen.Structures
 
 			StructureLayout layout = _buildInfo.Layouts.GetLayout("resource type element");
 			StructureValueCollection[] entries = TagBlockReader.ReadTagBlock(reader, count, expand, layout, _metaArea);
-			_resourceTypes = entries.Select(e => FourthGenResourceType(e, stringIDs)).ToArray();
+			_resourceTypes = entries.Select(e => new FourthGenResourceType(e, stringIDs)).ToArray();
 		}
 
 		private byte[] LoadResourceInfoBuffer(StructureValueCollection values, IReader reader)

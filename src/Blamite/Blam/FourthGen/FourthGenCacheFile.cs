@@ -451,15 +451,15 @@ namespace Blamite.Blam.FourthGen
 			{
 				if (_buildInfo.Layouts.HasLayout("hsdt"))
 				{
-					ScriptFiles = _tags.FindTagsByGroup("hsdt").Select(t => HsdtScriptFile(t, _fileNames.GetTagName(t.Index), MetaArea, _buildInfo, StringIDs, _expander)).ToArray();
+					ScriptFiles = _tags.FindTagsByGroup("hsdt").Select(t => new HsdtScriptFile(t, _fileNames.GetTagName(t.Index), MetaArea, _buildInfo, StringIDs, _expander)).ToArray();
 				}
 				else if (_buildInfo.Layouts.HasLayout("scnr"))
 				{
-					ScriptFiles = _tags.FindTagsByGroup("scnr").Select(t => ScnrScriptFile(t, _fileNames.GetTagName(t.Index), MetaArea, _buildInfo, StringIDs, _expander, Allocator)).ToArray();
+					ScriptFiles = _tags.FindTagsByGroup("scnr").Select(t => new ScnrScriptFile(t, _fileNames.GetTagName(t.Index), MetaArea, _buildInfo, StringIDs, _expander, Allocator)).ToArray();
 				}
 				else
                 {
-					ScriptFiles = IScriptFile[0];
+					ScriptFiles = new IScriptFile[0];
 				}
 			}
 		}
@@ -480,7 +480,7 @@ namespace Blamite.Blam.FourthGen
 			{
 				ITag scnr = _tags.GetGlobalTag(CharConstant.FromString("scnr"));
 				if (scnr != null)
-					_effects = EffectInterop(scnr, reader, MetaArea, Allocator, _buildInfo, _expander);
+					_effects = new EffectInterop(scnr, reader, MetaArea, Allocator, _buildInfo, _expander);
 			}
 		}
 

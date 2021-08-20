@@ -178,7 +178,7 @@ namespace Blamite.Blam.FourthGen.Structures
 
 			StructureLayout layout = _buildInfo.Layouts.GetLayout("external cache file table element");
 			StructureValueCollection[] entries = TagBlockReader.ReadTagBlock(reader, count, expand, layout, _metaArea);
-			return entries.Select(e => FourthGenCacheFileReference(e)).ToArray();
+			return entries.Select(e => new FourthGenCacheFileReference(e)).ToArray();
 		}
 
 		private ResourcePage LoadPage(StructureValueCollection values, int index, FourthGenCacheFileReference[] externalFiles)
