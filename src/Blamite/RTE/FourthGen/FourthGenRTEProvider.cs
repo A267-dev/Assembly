@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -55,7 +55,7 @@ namespace Blamite.RTE.Eldorado
 		/// <returns>
 		/// The stream if it was opened successfully, or null otherwise.
 		/// </returns>
-		public IStream GetMetaStream(ICacheFile cacheFile, ITag tag)
+		public override IStream GetMetaStream(ICacheFile cacheFile = null, ITag tag)
 		{
 			// Open a handle to the game process
 			var gameProcess = FindGameProcess();

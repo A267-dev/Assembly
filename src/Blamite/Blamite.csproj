@@ -114,6 +114,7 @@
     <Compile Include="Blam\FirstGen\Structures\FirstGenTag.cs" />
     <Compile Include="Blam\FirstGen\Structures\FirstGenTagGroup.cs" />
     <Compile Include="Blam\FirstGen\Structures\FirstGenTagTable.cs" />
+    <Compile Include="Blam\FourthGen\Structures\FourthGenHeader.cs" />
     <Compile Include="Blam\ITagInterop.cs" />
     <Compile Include="Blam\Localization\CachedLanguagePackLoader.cs" />
     <Compile Include="Blam\Resources\ResourcePageInjector.cs" />
@@ -437,7 +438,6 @@
     <Compile Include="Serialization\StructureWriter.cs" />
     <Compile Include="Serialization\Settings\XMLLayoutLoader.cs" />
     <Compile Include="Blam\ThirdGen\Structures\ThirdGenHeader.cs" />
-    <Compile Include="Blam\FourthGen\Structures\FouthGenHeader.cs" />
     <Compile Include="Blam\IndexedFileNameSource.cs" />
     <Compile Include="Blam\ThirdGen\Structures\ThirdGenTagTable.cs" />
     <Compile Include="Blam\ThirdGen\Localization\ThirdGenLanguage.cs" />
@@ -939,6 +939,24 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Formats\Reach\Reach_VertexBuffer.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Formats\HaloOnline\HO_LocaleSymbols.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Formats\HaloOnline\HO_Scripting.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Formats\HaloOnline\HO_StringIDs.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Formats\HaloOnline\Layouts\HO_Layouts_Core.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Formats\HaloOnline\Layouts\HO_Layouts_Scenario.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Formats\HaloOnline\Layouts\HO_Layouts_Shaders.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Formats\Stubbs\LayoutsPC\SPC_Layouts_Core.xml">

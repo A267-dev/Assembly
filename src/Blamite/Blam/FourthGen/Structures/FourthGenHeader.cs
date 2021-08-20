@@ -334,7 +334,7 @@ namespace Blamite.Blam.FourthGen.Structures
 					(uint)HeaderSize,
 					(uint)headerValues.GetInteger("tag buffer offset")); //bs the size for now
 
-				Sections = FourthGenInteropSection[] { debugSection, resourceSection, tagSection, localeSection };
+				Sections = new FourthGenInteropSection[] { debugSection, resourceSection, tagSection, localeSection };
 			}
 
 			DebugPointerConverter = MakePointerConverter(FourthGenInteropSectionType.Debug);

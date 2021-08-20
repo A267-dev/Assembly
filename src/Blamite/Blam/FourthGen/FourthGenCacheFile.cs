@@ -58,7 +58,7 @@ namespace Blamite.Blam.FourthGen
         public void SaveChanges(Istream stream)
         {
             _tags.SaveChanges(stream);
-            _stringIds.SaveChanges(stream)
+            _stringIds.SaveChanges(stream);
             if (_simulationDefinitions !=null)
                 _simulationDefinitions.SaveChanges(stream);
 			if (_effects != null)
