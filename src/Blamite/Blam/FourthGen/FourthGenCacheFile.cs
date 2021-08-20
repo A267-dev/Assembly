@@ -1,7 +1,10 @@
+using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Linq;
 using Blamite.Blam;
 using Blamite.Blam.Localization;
+using Blamite.Blam.Resources;
 using Blamite.Blam.Resources.Sounds;
 using Blamite.Blam.Scripting;
 using Blamite.Blam.Shaders;
@@ -12,6 +15,7 @@ using Blamite.Blam.FourthGen.Structures;
 using Blamite.Blam.Util;
 using Blamite.Serialization;
 using Blamite.IO;
+using Blamite.Native;
 using Blamite.Util;
 
 namespace Blamite.Blam.FourthGen
@@ -19,7 +23,7 @@ namespace Blamite.Blam.FourthGen
     /// <summary>
     ///     A Forth-Generation Blam (map/dat) cache file.
     /// </summary>
-    public class FourthGenCacheFile
+    public class FourthGenCacheFile : ICacheFile
     {
         private readonly EngineDescription _buildInfo;
         private readonly FileSegmenter _segmenter;

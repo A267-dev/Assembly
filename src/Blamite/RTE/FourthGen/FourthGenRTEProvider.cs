@@ -7,6 +7,8 @@ using System.Text;
 using Blamite.Blam;
 using Blamite.IO;
 using Blamite.Native;
+using Blamite.Util;
+using Blamite.Serialization;
 
 namespace Blamite.RTE.Eldorado
 {
@@ -34,7 +36,8 @@ namespace Blamite.RTE.Eldorado
 		}
 
 		/// <summary>
-		/// The type of connection that the provider will establish.
+		///     The type of connection that the provider will establish.
+		///     Always RTEConnectionType.LocalProcess.
 		/// </summary>
 		public RTEConnectionType ConnectionType
 		{
@@ -47,16 +50,18 @@ namespace Blamite.RTE.Eldorado
 		public string EXEName { get; set; }
 
 		/// <summary>
-		/// Obtains a stream which can be used to read and write a cache file's meta in realtime.
-		/// The stream will be set up such that offsets in the stream correspond to meta pointers in the cache file.
+		///     Obtains a stream which can be used to read and write a cache file's meta in realtime.
+		///     The stream will be set up such that offsets in the stream correspond to meta pointers in the cache file.
 		/// </summary>
 		/// <param name="cacheFile">The cache file to get a stream for.</param>
-		/// <param name="tag">The tag to get a stream for.</param>
 		/// <returns>
 		/// The stream if it was opened successfully, or null otherwise.
 		/// </returns>
-		public override IStream GetMetaStream(ICacheFile cacheFile = null, ITag tag)
+		public override IStream GetMetaStream(ICacheFile cacheFile = null)
 		{
+			if (!CheckBuildInfo())
+				return null;
+
 			// Open a handle to the game process
 			var gameProcess = FindGameProcess();
 			if (gameProcess == null)
