@@ -57,7 +57,7 @@ namespace Blamite.RTE.Eldorado
 		/// <returns>
 		/// The stream if it was opened successfully, or null otherwise.
 		/// </returns>
-		public override IStream GetMetaStream(ICacheFile cacheFile = null)
+		public IStream GetMetaStream(ICacheFile cacheFile = null)
 		{
 			if (!CheckBuildInfo())
 				return null;

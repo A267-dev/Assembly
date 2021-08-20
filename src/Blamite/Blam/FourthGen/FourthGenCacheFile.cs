@@ -23,7 +23,7 @@ namespace Blamite.Blam.FourthGen
     /// <summary>
     ///     A Forth-Generation Blam (map/dat) cache file.
     /// </summary>
-    public class FourthGenCacheFile : ICacheFile
+    public class FourthGenCacheFile : ICacheFile.SaveChanges(IStream)
     {
         private readonly EngineDescription _buildInfo;
         private readonly FileSegmenter _segmenter;
