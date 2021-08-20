@@ -293,9 +293,9 @@ namespace Blamite.Blam.FourthGen
             }
 			*/
 
-			_tags = new FourthGenTagTable(reader, Allocator, _buildInfo);
-            //_tags = FourthGenTagTable(reader, _header.IndexHeaderLocation, _header.MetaArea, Allocator, _buildInfo, _expander);
-            _//resourceMetaLoader = FourthGenResourceMetaLoader(_buildInfo, _header.MetaArea);
+			//_tags = new FourthGenTagTable(reader, Allocator, _buildInfo);
+            _tags = new FourthGenTagTable(reader, _header.IndexHeaderLocation, _header.MetaArea, Allocator, _buildInfo, _expander);
+            //_resourceMetaLoader = new FourthGenResourceMetaLoader(_buildInfo, _header.MetaArea);
 			_resourceMetaLoader = new FourthGenResourceMetaLoader(_buildInfo, null);
         }
 
@@ -332,7 +332,7 @@ namespace Blamite.Blam.FourthGen
 					return null;
 
 				// assuming here that the namespace is always 8 bits
-				var resolver = StringIDNamespaceResolver(StringIDLayout(firstNamespaceBit, 8, 32 - 8 - firstNamespaceBit));
+				var resolver = new StringIDNamespaceResolver(new StringIDLayout(firstNamespaceBit, 8, 32 - 8 - firstNamespaceBit));
 				int indexMask = (1 << firstNamespaceBit) - 1;
 
 				// register all but the first namespace as that needs the final count
