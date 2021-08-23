@@ -56,6 +56,9 @@ namespace Blamite.Blam
 				case EngineType.ThirdGeneration:
 					return new ThirdGenCacheFile(reader, engineInfo, filePath);
 
+				case EngineType.FourthGeneration:
+					return new FourthGenCacheFile(reader, engineInfo, filePath);
+
 				default:
 					throw new NotSupportedException("Engine not supported");
 			}

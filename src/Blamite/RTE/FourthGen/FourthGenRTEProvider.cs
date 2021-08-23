@@ -11,17 +11,17 @@ using Blamite.Util;
 using Blamite.Serialization;
 using Blamite.RTE.FourthGen;
 
-namespace Blamite.RTE.Eldorado
+namespace Blamite.RTE.FourthGen
 {
 	/// <summary>
 	/// A real-time editing provider which connects to Halo Online.
 	/// </summary>
-	public class EldoradoRTEProvider : MCCRTEProvider
+	public class FourthGenRTEProvider : IRTEProvider
 	{
 		/// <summary>
-		///     Constructs a new ThirdGenMCCRTEProvider.
+		///     Constructs a new FourthGenIRTEProvider.
 		/// </summary>
-		public EldoradoRTEProvider(EngineDescription engine) : base(engine)
+		public FourthGenRTEProvider(EngineDescription engine) : base(engine)
 		{ }
 
 		/// <summary>
@@ -65,7 +65,7 @@ namespace Blamite.RTE.Eldorado
 			return new EndianStream(metaStream, BitConverter.IsLittleEndian ? Endian.LittleEndian : Endian.BigEndian);
 		}
 	}
-	/* public class MS25RTEProvider : EldoradoRTEProvider
+	/* public class MS25RTEProvider : FourthGenRTEProvider
 	{
 		public MS25RTEProvider(string exeName) : base(exeName)
 		{
@@ -75,7 +75,7 @@ namespace Blamite.RTE.Eldorado
 		}
 	}
 
-	public class ZBTRTEProvider : EldoradoRTEProvider
+	public class ZBTRTEProvider : FourthGenRTEProvider
 	{
 		public ZBTRTEProvider(string exeName) : base(exeName)
 		{
@@ -85,7 +85,7 @@ namespace Blamite.RTE.Eldorado
 		}
 	}
 
-	public class ZBT70RTEProvider : EldoradoRTEProvider
+	public class ZBT70RTEProvider : FourthGenRTEProvider
 	{
 		public ZBT70RTEProvider(string exeName) : base(exeName)
 		{

@@ -122,4 +122,25 @@
 			<multiplayerObjects type="multiplayerObjects" path="Formats/MapInfo/Halo4/Halo4_MultiplayerObjects.xml" />
 		</databases>
 	</engine>
+	
+	<engine name="Halo Online" levlSize="UNK" version="3">
+		<shortName>HaloOnline</shortName>
+		<engineInfo>
+			<languageCount>UNK</languageCount>
+			<usesDefaultAuthor>false</usesDefaultAuthor>
+		</engineInfo>
+		<insertionPointInfo>
+			<usesVisibility>true</usesVisibility>
+			<usesUsage>false</usesUsage>
+			<zoneType>index</zoneType>
+			<count>UNK</count>
+			<size>UNK</size>
+			<nameOffset>UNK</nameOffset>
+			<descriptionOffset>UNK</descriptionOffset>
+		</insertionPointInfo>
+		<databases>
+			<maxTeams type="maxTeams" path="Formats/MapInfo/HaloOnline/HaloOnline_MaxTeams.xml" />
+			<multiplayerObjects type="multiplayerObjects" path="Formats/MapInfo/HaloOnline/HaloOnline_MultiplayerObjects.xml" />
+		</databases>
+	</engine>
 </engines>

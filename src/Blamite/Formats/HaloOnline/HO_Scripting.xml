@@ -2,7 +2,7 @@
 <!-- Base ODST Document by kornman00 as part of OpenSauce -->
 <!-- haloonline value types, scripts, and globals by Lord Zedd -->
 <!-- Reimplemtation by A267-->
-<BlamScript game="eldorado">
+<BlamScript game="Halo Online">
 	<scriptTypes>
 		<type opcode="0x0" name="startup" />
 		<type opcode="0x1" name="dormant" />
@@ -223,7 +223,7 @@
 
 	</valueTypes>
 
-	<definition game="eldorado" ext="hsc3a" maxDynamicSourceDataBytes="0x1000">
+	<definition game="Halo Online" ext="hsc3a" maxDynamicSourceDataBytes="0x1000">
 <!--hsc 3 atlas-->
 		<objectTypeMasks>
 			<object type="object" mask="0xFFFF" />
@@ -253,7 +253,7 @@
 		<function opcode="0x008" name="-" returnType="real" flags="200" group="Arithmetic" />
 		<function opcode="0x009" name="*" returnType="real" flags="200" group="Arithmetic" />
 		<function opcode="0x00A" name="/" returnType="real" flags="200" group="Arithmetic" />
-		<function opcode="0x00B" name="" returnType="real" flags="200" group="Arithmetic" /><!-- eldorado -->
+		<function opcode="0x00B" name="" returnType="real" flags="200" group="Arithmetic" /><!-- Halo Online -->
 		<function opcode="0x00C" name="" returnType="real" flags="200" group="Arithmetic" />
 		<function opcode="0x00D" name="" returnType="real" flags="200" group="Arithmetic" />
 		<function opcode="0x00E" name="=" returnType="boolean" flags="200" group="Equality" />
@@ -1095,7 +1095,7 @@
 			<arg type="unit" />
 			<arg type="boolean" />
 		</function>
-		<function opcode="0x104" name="" returnType="void" argc="3"><!-- eldorado -->
+		<function opcode="0x104" name="" returnType="void" argc="3"><!-- Halo Online -->
 			<arg type="unit" />
 			<arg type="unit_seat_mapping" />
 			<arg type="boolean" />
@@ -3210,22 +3210,22 @@
 		</function>
 		<function opcode="0x344" name="main_menu" returnType="void" />
 		<function opcode="0x345" name="main_halt" returnType="void" />
-		<function opcode="0x346" name="" returnType="void" argc="1"><!-- eldorado -->
+		<function opcode="0x346" name="" returnType="void" argc="1"><!-- Halo Online -->
 			<arg type="string" />
 		</function>
-		<function opcode="0x347" name="" returnType="void" argc="5"><!-- eldorado -->
+		<function opcode="0x347" name="" returnType="void" argc="5"><!-- Halo Online -->
 			<arg type="string" />
 			<arg type="long" />
 			<arg type="real" />
 			<arg type="real" />
 			<arg type="real" />
 		</function>
-		<function opcode="0x348" name="" returnType="void" argc="0" /><!-- eldorado -->
-		<function opcode="0x349" name="" returnType="void" argc="0" /><!-- eldorado -->
-		<function opcode="0x34A" name="map_name" returnType="void" argc="1"><!-- eldorado -->
+		<function opcode="0x348" name="" returnType="void" argc="0" /><!-- Halo Online -->
+		<function opcode="0x349" name="" returnType="void" argc="0" /><!-- Halo Online -->
+		<function opcode="0x34A" name="map_name" returnType="void" argc="1"><!-- Halo Online -->
 			<arg type="string" />
 		</function>
-		<function opcode="0x34B" name="" returnType="void" argc="0" /><!-- eldorado -->
+		<function opcode="0x34B" name="" returnType="void" argc="0" /><!-- Halo Online -->
 		<function opcode="0x34C" name="game_multiplayer" returnType="void" argc="1">
 			<arg type="string" />
 		</function>
@@ -3718,8 +3718,8 @@
 		<function opcode="0x3EC" name="game_save_immediate" returnType="void" />
 		<function opcode="0x3ED" name="game_saving" returnType="boolean" />
 		<function opcode="0x3EE" name="game_reverted" returnType="boolean" />
-		<function opcode="0x3EF" name="" returnType="void" argc="0" /><!-- eldorado -->
-		<function opcode="0x3F0" name="" returnType="void" argc="0" /><!-- eldorado -->
+		<function opcode="0x3EF" name="" returnType="void" argc="0" /><!-- Halo Online -->
+		<function opcode="0x3F0" name="" returnType="void" argc="0" /><!-- Halo Online -->
 		<function opcode="0x3F1" name="sound_set_tag_parameter_unsafe" returnType="void" argc="8">
 			<arg type="string" />
 			<arg type="string" />
@@ -3934,13 +3934,13 @@
 		<function opcode="0x42A" name="chud_show_compass" returnType="void" argc="1">
 			<arg type="boolean" />
 		</function>
-		<function opcode="0x42B" name="chud_show_stamina" returnType="void" argc="1"><!-- eldorado -->
+		<function opcode="0x42B" name="chud_show_stamina" returnType="void" argc="1"><!-- Halo Online -->
 			<arg type="boolean" />
 		</function>
-		<function opcode="0x42C" name="chud_show_energy_meters" returnType="void" argc="1"><!-- eldorado -->
+		<function opcode="0x42C" name="chud_show_energy_meters" returnType="void" argc="1"><!-- Halo Online -->
 			<arg type="boolean" />
 		</function>
-		<function opcode="0x42D" name="chud_show_consumables" returnType="void" argc="1"><!-- eldorado -->
+		<function opcode="0x42D" name="chud_show_consumables" returnType="void" argc="1"><!-- Halo Online -->
 			<arg type="boolean" />
 		</function>
 		<function opcode="0x42E" name="chud_cinematic_fade" returnType="void" argc="2">
@@ -5755,7 +5755,7 @@
 		<function opcode="0x672" name="chud_bonus_round_set_target_score" returnType="void" argc="1">
 			<arg type="long" />
 		</function>
-		<function opcode="0x673" name="" returnType="void" argc="0" /><!-- eldorado from here on -->
+		<function opcode="0x673" name="" returnType="void" argc="0" /><!-- Halo Online from here on -->
 		<function opcode="0x674" name="" returnType="void" argc="3">
 			<arg type="short" />
 			<arg type="short" />
